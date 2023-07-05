@@ -1,0 +1,12 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1536px;
+  height: 100vh;
+  margin: auto;
+}
+
+.main {
+  flex-grow: 1;
+}
