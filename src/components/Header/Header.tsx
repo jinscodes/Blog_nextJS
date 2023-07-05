@@ -1,5 +1,5 @@
 import Link from "next/link";
-import st from "./header.module.css";
+import st from "./header.module.scss";
 import Posts from "@/app/posts/page";
 
 const Header = () => {
