@@ -5,8 +5,10 @@
   max-width: 1536px;
   height: 100vh;
   margin: auto;
+  background-color: rgba($color: #e9edf9, $alpha: 1);
 }
 
 .main {
   flex-grow: 1;
+  margin-left: 180px;
 }
