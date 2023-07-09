@@ -1,6 +1,5 @@
 import { Open_Sans } from "next/font/google";
 import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
 import st from "./layout.module.scss";
 
 const sans = Open_Sans({ subsets: ["latin"] });
@@ -20,7 +19,6 @@ export default function RootLayout({
       <body className={st.body}>
         <Header />
         <main className={st.main}>{children}</main>
-        {/* <Footer /> */}
       </body>
     </html>
   );

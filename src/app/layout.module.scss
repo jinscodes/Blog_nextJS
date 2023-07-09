@@ -1,12 +1,14 @@
 .body {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 1536px;
   height: 100vh;
-  margin: auto;
+  margin: 0;
+  // background-color: rgba($color: #e9edf9, $alpha: 1);
+  font-size: 25px;
 }
 
 .main {
+  // border: 1px solid black;
   flex-grow: 1;
+  margin: 60px 450px 0;
 }

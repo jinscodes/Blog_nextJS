@@ -1,9 +1,9 @@
-import MyProfile from "@/components/MyProfile/MyProfile";
+import Home from "./Home/Home";
 
 export default function HomePage() {
   return (
     <>
-      <span>Home</span>
+      <Home />
     </>
   );
 }

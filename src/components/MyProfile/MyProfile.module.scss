@@ -18,6 +18,7 @@
 
 .position {
   margin: 0;
+  margin-bottom: -10px;
 }
 
 .link_container {
@@ -26,6 +27,7 @@
   flex-wrap: wrap;
   gap: 15px;
   width: 500px;
+  margin-top: 15px;
 }
 
 .link,
