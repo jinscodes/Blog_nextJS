@@ -1,19 +1,18 @@
 .section {
   position: absolute;
-  top: 70px;
+  top: 80px;
   left: 0;
   display: flex;
   justify-content: center;
-  width: 180px;
+  width: 270px;
   height: calc(100% - 70px);
   border-right: 1px solid rgba(0, 0, 139, 0.2);
-  // background-color: black;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 12px;
   margin-top: 30px;
   color: rgb(0, 0, 139);
   opacity: 0.5;
@@ -21,4 +20,18 @@
   div {
     cursor: pointer;
   }
+  button {
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    color: rgba(0, 0, 139, 0.6);
+    font-size: 18px;
+    border: none;
+  }
+}
+
+.clickedBtnColor {
+  color: rgba($color: #ffffff, $alpha: 0.8) !important;
+  background-color: rgba(0, 0, 139, 0.6);
+  border-radius: 12px;
 }

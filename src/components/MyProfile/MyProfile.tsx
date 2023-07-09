@@ -1,6 +1,4 @@
-import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 import st from "./MyProfile.module.scss";
 import profile from "../../../public/images/me.png";

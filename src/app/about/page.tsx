@@ -1,7 +1,7 @@
 import MyProfile from "@/components/MyProfile/MyProfile";
 import React from "react";
 
-const about = () => {
+const About = () => {
   return (
     <div>
       <MyProfile />
@@ -9,4 +9,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

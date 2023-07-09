@@ -1,6 +1,9 @@
-import MyProfile from "@/components/MyProfile/MyProfile";
-import st from "./home.module.scss";
+import Home from "./Home/Home";
 
 export default function HomePage() {
-  return <section className={st.section}>Home Page</section>;
+  return (
+    <>
+      <Home />
+    </>
+  );
 }
