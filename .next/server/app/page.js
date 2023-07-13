@@ -274,9 +274,6 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(6786);
-// EXTERNAL MODULE: ./src/app/Home/Home.module.scss
-var Home_module = __webpack_require__(1120);
-var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
 // EXTERNAL MODULE: ./node_modules/next/image.js
 var next_image = __webpack_require__(8421);
 var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
@@ -284,6 +281,9 @@ var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
 /* harmony default export */ const developer = ({"src":"/_next/static/media/developer.10f27b14.gif","height":600,"width":800,"blurWidth":0,"blurHeight":0});
 ;// CONCATENATED MODULE: ./public/svg/arrowDown.svg
 /* harmony default export */ const arrowDown = ({"src":"/_next/static/media/arrowDown.a48c12c8.svg","height":800,"width":800,"blurWidth":0,"blurHeight":0});
+// EXTERNAL MODULE: ./src/app/Home/Home.module.scss
+var Home_module = __webpack_require__(1120);
+var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
 ;// CONCATENATED MODULE: ./src/app/Home/Home.tsx
 /* __next_internal_client_entry_do_not_use__ default auto */ 
 
@@ -419,7 +419,7 @@ function HomePage() {
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [848,421,608], () => (__webpack_exec__(701)));
+var __webpack_exports__ = __webpack_require__.X(0, [848,421,111], () => (__webpack_exec__(701)));
 module.exports = __webpack_exports__;
 
 })();

@@ -1,10 +1,9 @@
 "use client";
 
-import st from "./Home.module.scss";
 import Image from "next/image";
 import gif from "../../../public/images/developer.gif";
 import arrow from "../../../public/svg/arrowDown.svg";
-import { useEffect, useState } from "react";
+import st from "./Home.module.scss";
 
 const recentPosts = ["Post1", "Post2", "Post3", "Post4", "Post5"];
 

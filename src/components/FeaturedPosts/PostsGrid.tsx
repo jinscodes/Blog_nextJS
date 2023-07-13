@@ -1,4 +1,6 @@
+import PostCard from "@/components/PostCard/PostCard";
 import { Post } from "@/service/posts";
+import st from "./PostGrid.module.scss";
 
 type PostsGridProps = {
   posts: Post[];
@@ -6,9 +8,11 @@ type PostsGridProps = {
 
 const PostsGrid = ({ posts }: PostsGridProps) => {
   return (
-    <ul>
+    <ul className={st.ul}>
       {posts.map((post) => (
-        <li key={post.path}>{post.title}</li>
+        <li key={post.path} className={st.li}>
+          <PostCard post={post} />
+        </li>
       ))}
     </ul>
   );

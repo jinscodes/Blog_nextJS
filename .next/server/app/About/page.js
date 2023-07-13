@@ -232,7 +232,7 @@ __webpack_require__.r(__webpack_exports__);
         'About',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6660)), "/Users/hanjinsung/Desktop/blog_nextJS/src/app/About/page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1583)), "/Users/hanjinsung/Desktop/blog_nextJS/src/app/About/page.tsx"],
           
         }]
       },
@@ -262,14 +262,15 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 4216:
+/***/ 2100:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 3912, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1629));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3430));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1629));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5901));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2562))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2562));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 7977, 23))
 
 /***/ }),
 
@@ -394,6 +395,18 @@ module.exports = {
 
 /***/ }),
 
+/***/ 4182:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"section": "PostGrid_section__4VuOH",
+	"ul": "PostGrid_ul__wkhRJ"
+};
+
+
+/***/ }),
+
 /***/ 5047:
 /***/ ((module) => {
 
@@ -414,7 +427,20 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6660:
+/***/ 3169:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"link": "PostCard_link__8DwL0",
+	"img": "PostCard_img__TcOMi",
+	"info_container": "PostCard_info_container__rt9mx"
+};
+
+
+/***/ }),
+
+/***/ 1583:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -440,13 +466,80 @@ const getAllPosts = async ()=>{
     const filePath = external_path_default().join(process.cwd(), "data", "posts.json");
     return (0,promises_namespaceObject.readFile)(filePath, "utf-8").then(JSON.parse).then((posts)=>posts.sort((a, b)=>a.date > b.date ? -1 : 1));
 };
+const getFeaturedPosts = async ()=>{
+    return getAllPosts() //
+    .then((posts)=>posts.filter((post)=>post.featured));
+};
+
+// EXTERNAL MODULE: ./src/components/FeaturedPosts/PostGrid.module.scss
+var PostGrid_module = __webpack_require__(4182);
+var PostGrid_module_default = /*#__PURE__*/__webpack_require__.n(PostGrid_module);
+// EXTERNAL MODULE: ./node_modules/next/image.js
+var next_image = __webpack_require__(993);
+var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
+// EXTERNAL MODULE: ./node_modules/next/link.js
+var next_link = __webpack_require__(4834);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
+// EXTERNAL MODULE: ./src/components/PostCard/PostCard.module.scss
+var PostCard_module = __webpack_require__(3169);
+var PostCard_module_default = /*#__PURE__*/__webpack_require__.n(PostCard_module);
+;// CONCATENATED MODULE: ./src/components/PostCard/PostCard.tsx
+
+
+
+
+const PostCard = ({ post })=>{
+    const { title, description, date, category, path } = post;
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)((link_default()), {
+        href: `/posts/${path}`,
+        className: (PostCard_module_default()).link,
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                src: `/images/posts/${path}.png`,
+                alt: title,
+                className: (PostCard_module_default()).img,
+                sizes: "100vw",
+                width: 0,
+                height: 200
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: (PostCard_module_default()).info_container,
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("time", {
+                                children: date.toString()
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                children: category
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                        children: title
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                        children: description
+                    })
+                ]
+            })
+        ]
+    });
+};
+/* harmony default export */ const PostCard_PostCard = (PostCard);
 
 ;// CONCATENATED MODULE: ./src/components/FeaturedPosts/PostsGrid.tsx
 
+
+
 const PostsGrid = ({ posts })=>{
     return /*#__PURE__*/ jsx_runtime_.jsx("ul", {
+        className: (PostGrid_module_default()).ul,
         children: posts.map((post)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
-                children: post.title
+                className: (PostGrid_module_default()).li,
+                children: /*#__PURE__*/ jsx_runtime_.jsx(PostCard_PostCard, {
+                    post: post
+                })
             }, post.path))
     });
 };
@@ -456,9 +549,11 @@ const PostsGrid = ({ posts })=>{
 
 
 
+
 const FeaturedPosts = async ()=>{
-    const posts = await getAllPosts();
+    const posts = await getFeaturedPosts();
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+        className: (PostGrid_module_default()).section,
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("h4", {
                 children: "Featured Posts"
@@ -471,9 +566,6 @@ const FeaturedPosts = async ()=>{
 };
 /* harmony default export */ const FeaturedPosts_FeaturedPosts = (FeaturedPosts);
 
-// EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(993);
-var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
 // EXTERNAL MODULE: ./src/components/MyProfile/MyProfile.module.scss
 var MyProfile_module = __webpack_require__(5047);
 var MyProfile_module_default = /*#__PURE__*/__webpack_require__.n(MyProfile_module);
@@ -554,10 +646,7 @@ const MyProfile = ()=>{
 };
 /* harmony default export */ const MyProfile_MyProfile = (MyProfile);
 
-// EXTERNAL MODULE: ./node_modules/next/dist/compiled/react/react.shared-subset.js
-var react_shared_subset = __webpack_require__(7887);
 ;// CONCATENATED MODULE: ./src/app/About/page.tsx
-
 
 
 
@@ -617,7 +706,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [848,421,684,608], () => (__webpack_exec__(4513)));
+var __webpack_exports__ = __webpack_require__.X(0, [848,421,684,111], () => (__webpack_exec__(4513)));
 module.exports = __webpack_exports__;
 
 })();

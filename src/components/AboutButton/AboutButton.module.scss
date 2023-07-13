@@ -12,6 +12,13 @@
   border-radius: 28px;
 }
 
+.link {
+  span {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+
 .github,
 .email_logo {
   width: 30px;
@@ -24,8 +31,6 @@
 }
 
 .email {
-  font-size: 16px;
-  font-family: inherit;
   background-color: rgb(9, 75, 162);
   border: 0px;
   cursor: pointer;
