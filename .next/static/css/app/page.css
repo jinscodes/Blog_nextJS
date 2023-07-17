@@ -1,0 +1,149 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/About/FeaturedPosts/PostGrid.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.PostGrid_section__d9ETB {
+  width: 100%;
+}
+.PostGrid_section__d9ETB .PostGrid_section_title__SbdJM {
+  margin-left: 1rem;
+}
+
+.PostGrid_ul__M04p9 {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+}
+.PostGrid_ul__M04p9 li {
+  width: 380px;
+  border-radius: 20px;
+  background-color: #f4f4f4;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/PostCard/PostCard.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.PostCard_link__8DwL0 {
+  text-decoration: none;
+  color: black;
+}
+
+.PostCard_img__TcOMi {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+}
+
+.PostCard_info_container__rt9mx {
+  padding: 0 24px 18px 24px;
+}
+.PostCard_info_container__rt9mx div {
+  display: flex;
+  justify-content: space-between;
+}
+.PostCard_info_container__rt9mx span {
+  font-size: 12px;
+  color: gray;
+}
+.PostCard_info_container__rt9mx time {
+  font-size: 12px;
+  color: gray;
+}
+.PostCard_info_container__rt9mx h3 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+.PostCard_info_container__rt9mx p {
+  font-size: 14px;
+  margin: 0;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Gif/Gif.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Gif_home_outline_container__Igv1o {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: calc(100vh - 60px);
+}
+
+.Gif_gif__1uaJN {
+  width: 100%;
+  object-fit: contain;
+}
+
+.Gif_scroll_container__6VNsY {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+  opacity: 0.7;
+}
+
+.Gif_arrow_animation__vcrs4 {
+  height: 30px;
+  width: 50px;
+}
+
+.Gif_arrow__L1O2p {
+  width: 100%;
+  height: 40px;
+  margin-top: -5px;
+  animation: Gif_arrowDown__KT2Xp 1.5s infinite;
+}
+
+@keyframes Gif_arrowDown__KT2Xp {
+  0% {
+    margin-top: -5px;
+  }
+  50% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -5px;
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/RecentPosts/RecentPosts.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.RecentPosts_postsContainer__dIx2M {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 100px;
+}
+
+.RecentPosts_cardsContainer__cHXnE {
+  display: flex;
+  gap: 20px;
+}
+
+.RecentPosts_card__N6_YG {
+  flex-grow: 1;
+  width: 380px;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/Home/Home.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Home_section__Io06f {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.Home_section__Io06f h2 {
+  position: absolute;
+  top: 560px;
+  margin: 0;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  font-weight: 300;
+  color: darkblue;
+  opacity: 0.5;
+}
