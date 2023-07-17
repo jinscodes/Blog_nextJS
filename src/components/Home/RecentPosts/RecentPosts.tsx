@@ -5,7 +5,6 @@ import st from "./RecentPosts.module.scss";
 const RecentPosts = async () => {
   const posts = await getRecentPosts();
   const recentPosts = ["Post1", "Post2", "Post3", "Post4", "Post5"];
-  console.log("posts datas: ", posts);
 
   return (
     <div className={st.postsContainer}>

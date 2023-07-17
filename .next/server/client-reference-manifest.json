@@ -40,14 +40,6 @@
         "async": false
       }
     },
-    "(app-client)/./node_modules/next/dist/client/link.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./node_modules/next/dist/client/image-component.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/image-component.js",
@@ -56,9 +48,25 @@
         "async": false
       }
     },
+    "(app-client)/./node_modules/next/dist/client/link.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./public/svg/arrowDown.svg": {
       "*": {
         "id": "(sc_client)/./public/svg/arrowDown.svg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/Header/header.module.scss": {
+      "*": {
+        "id": "(sc_client)/./src/components/Header/header.module.scss",
         "name": "*",
         "chunks": [],
         "async": false
@@ -179,54 +187,6 @@
       ],
       "async": false
     },
-    "/Users/hanjinsung/Desktop/blog_nextJS/node_modules/next/dist/client/link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/About/page:static/chunks/app/About/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/node_modules/next/dist/esm/client/link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/About/page:static/chunks/app/About/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Open_Sans\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"sans\"}": {
-      "id": "(app-client)/./node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Open_Sans\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"sans\"}",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/src/components/Footer/footer.module.scss": {
-      "id": "(app-client)/./src/components/Footer/footer.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/src/components/Header/header.module.scss": {
-      "id": "(app-client)/./src/components/Header/header.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/src/app/layout.module.scss": {
-      "id": "(app-client)/./src/app/layout.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
     "/Users/hanjinsung/Desktop/blog_nextJS/node_modules/next/dist/client/image-component.js": {
       "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
       "name": "*",
@@ -237,6 +197,22 @@
     },
     "/Users/hanjinsung/Desktop/blog_nextJS/node_modules/next/dist/esm/client/image-component.js": {
       "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
+      "name": "*",
+      "chunks": [
+        "app/About/page:static/chunks/app/About/page.js"
+      ],
+      "async": false
+    },
+    "/Users/hanjinsung/Desktop/blog_nextJS/node_modules/next/dist/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/About/page:static/chunks/app/About/page.js"
+      ],
+      "async": false
+    },
+    "/Users/hanjinsung/Desktop/blog_nextJS/node_modules/next/dist/esm/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
         "app/About/page:static/chunks/app/About/page.js"
@@ -291,6 +267,38 @@
       ],
       "async": false
     },
+    "/Users/hanjinsung/Desktop/blog_nextJS/src/app/layout.module.scss": {
+      "id": "(app-client)/./src/app/layout.module.scss",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hanjinsung/Desktop/blog_nextJS/src/components/Footer/footer.module.scss": {
+      "id": "(app-client)/./src/components/Footer/footer.module.scss",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hanjinsung/Desktop/blog_nextJS/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Open_Sans\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"sans\"}": {
+      "id": "(app-client)/./node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Open_Sans\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"sans\"}",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hanjinsung/Desktop/blog_nextJS/src/components/Header/header.module.scss": {
+      "id": "(app-client)/./src/components/Header/header.module.scss",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
     "/Users/hanjinsung/Desktop/blog_nextJS/public/images/me.png": {
       "id": "(app-client)/./public/images/me.png",
       "name": "*",
@@ -333,15 +341,15 @@
     }
   },
   "entryCSSFiles": {
-    "/Users/hanjinsung/Desktop/blog_nextJS/src/app/layout": [
-      "static/css/app/layout.css"
-    ],
     "/Users/hanjinsung/Desktop/blog_nextJS/src/app/page": [
       "static/css/app/page.css"
     ],
-    "/Users/hanjinsung/Desktop/blog_nextJS/src/app/Posts/page": [],
+    "/Users/hanjinsung/Desktop/blog_nextJS/src/app/layout": [
+      "static/css/app/layout.css"
+    ],
     "/Users/hanjinsung/Desktop/blog_nextJS/src/app/About/page": [
       "static/css/app/About/page.css"
-    ]
+    ],
+    "/Users/hanjinsung/Desktop/blog_nextJS/src/app/Posts/page": []
   }
 }

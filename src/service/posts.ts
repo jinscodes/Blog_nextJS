@@ -25,5 +25,5 @@ export const getFeaturedPosts = async (): Promise<Post[]> => {
 
 export const getRecentPosts = async (): Promise<Post[]> => {
   return getAllPosts() //
-    .then((posts) => posts.filter((post) => post.featured));
+    .then((posts) => posts.filter((post) => post.featured).slice(0, 3));
 };

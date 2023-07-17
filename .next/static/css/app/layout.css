@@ -122,9 +122,9 @@
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: calc(100% - 100px);
-  height: 70px;
+  height: 90px;
   padding: 0 50px;
   z-index: 99;
 }

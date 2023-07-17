@@ -4,9 +4,6 @@ import st from "./header.module.scss";
 const Header = () => {
   return (
     <header className={st.header}>
-      <Link className={st.link} href="/">
-        <h2 className={st.logo}>{"Jay"}</h2>
-      </Link>
       <nav className={st.nav}>
         <Link className={st.link} href="/">
           Home
