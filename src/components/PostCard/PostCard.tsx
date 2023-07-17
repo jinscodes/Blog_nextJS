@@ -17,8 +17,8 @@ const PostCard = ({ post }: PostCard) => {
         alt={title}
         className={st.img}
         sizes="100vw"
-        width={0}
-        height={200}
+        width="0"
+        height="0"
       />
       <div className={st.info_container}>
         <div>

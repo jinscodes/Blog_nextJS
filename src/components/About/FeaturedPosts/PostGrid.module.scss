@@ -1,0 +1,24 @@
+// FeaturedPosts.tsx
+.section {
+  width: 100%;
+
+  .section_title {
+    margin-left: 1rem;
+  }
+}
+
+// PostsGrid.tsx
+.ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+
+  li {
+    width: 380px;
+    border-radius: 20px;
+    background-color: #f4f4f4;
+  }
+}
