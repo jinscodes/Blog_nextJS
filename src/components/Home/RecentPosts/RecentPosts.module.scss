@@ -1,0 +1,33 @@
+.postsContainer {
+  width: 100%;
+  padding: 0;
+  border: 1px solid blue;
+}
+
+.recentPostUl {
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+}
+
+.post {
+  border: 1px solid black;
+  list-style: none;
+  width: 300px;
+  height: 400px;
+  border-radius: 12px;
+  // animation: carousel 8s infinite;
+}
+
+// 임시
+// @keyframes carousel {
+//   0% {
+//     transform: translateX(0);
+//   }
+//   50% {
+//     transform: translateX(-300%);
+//   }
+//   100% {
+//     transform: translateX(300%);
+//   }
+// }

@@ -1,5 +1,5 @@
-import FeaturedPosts from "@/components/FeaturedPosts/FeaturedPosts";
-import MyProfile from "@/components/MyProfile/MyProfile";
+import FeaturedPosts from "@/components/About/FeaturedPosts/FeaturedPosts";
+import MyProfile from "@/components/About/MyProfile/MyProfile";
 
 const About = () => {
   return (
