@@ -10,7 +10,7 @@ const Gif = () => {
         className={st.gif}
         src={gif}
         alt="gif"
-        // priority
+        priority
         width="0"
         height="0"
       />
