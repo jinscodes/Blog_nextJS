@@ -14,6 +14,11 @@ const Gif = () => {
         width="0"
         height="0"
       />
+      <h2 className={st.logo}>
+        {"Hi,"}
+        <br></br>
+        {"Jay's Blog"}
+      </h2>
       <div className={st.scroll_container}>
         <span>Scroll</span>
         <div className={st.arrow_animation}>
