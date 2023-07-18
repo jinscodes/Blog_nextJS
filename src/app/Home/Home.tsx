@@ -6,11 +6,6 @@ import st from "./Home.module.scss";
 const Home = async () => {
   return (
     <section className={st.section}>
-      <h2 className={st.logo}>
-        {"Hi,"}
-        <br></br>
-        {"Jay's Blog"}
-      </h2>
       <Gif />
       <RecentPosts />
       <FeaturedPosts />
