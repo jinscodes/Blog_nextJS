@@ -10,13 +10,6 @@ const FeaturedPosts = async () => {
       <div className={st.postsContainer}>
         <h4>Featured Posts</h4>
         <Carousel posts={posts} />
-        {/* <div className={st.cardsContainer}>
-          {posts.map((post, idx) => (
-            <div key={idx} className={st.card}>
-              <PostCard post={post} />
-            </div>
-          ))}
-        </div> */}
       </div>
     </div>
   );
