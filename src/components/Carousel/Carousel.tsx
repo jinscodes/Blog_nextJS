@@ -1,13 +1,13 @@
 "use client";
 
 import { Post } from "@/service/posts";
-import Image from "next/image";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import PostCard from "@/components/PostCard/PostCard";
 import st from "./Carousel.module.scss";
 
 interface CarouselPosts {
@@ -27,7 +27,7 @@ const Carousel = ({ posts }: CarouselPosts) => {
     >
       {posts.map((data: Post, idx: number) => (
         <SwiperSlide key={idx} className={st.swiper_slider}>
-          <Image
+          {/* <Image
             src={`/images/posts/${data.path}.png`}
             alt={data.title}
             className={st.img}
@@ -42,7 +42,8 @@ const Carousel = ({ posts }: CarouselPosts) => {
             </div>
             <h3>{data.title}</h3>
             <p>{data.description}</p>
-          </div>
+          </div> */}
+          <PostCard post={data} />
         </SwiperSlide>
       ))}
     </Swiper>

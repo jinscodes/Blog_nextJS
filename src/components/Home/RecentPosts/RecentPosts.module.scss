@@ -12,7 +12,12 @@
 .card {
   flex-grow: 1;
   width: 330px;
-  // min-width: 330px;
   background-color: rgba(128, 128, 128, 0.1);
   border-radius: 24px;
+}
+
+.card:hover {
+  height: 305px;
+  width: 335px;
+  box-shadow: 10px 12px 14px -3px rgba(0, 0, 0, 0.3);
 }
