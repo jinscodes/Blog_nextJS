@@ -367,43 +367,17 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Carousel/Carousel.module.scss ***!
   \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .Carousel_swiper__EYDtj {
-  padding: 0 50px 10px 50px;
+  padding: 33px 50px 30px 50px;
 }
 
 .Carousel_swiper_slider__PL8CS {
-  background-color: rgba(128, 128, 128, 0.1);
+  box-shadow: 10px 12px 14px -3px rgba(0, 0, 0, 0.1);
+  background-color: rgba(173, 173, 173, 0.1);
   border-radius: 24px;
 }
-.Carousel_swiper_slider__PL8CS .Carousel_img__CC0NG {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-top-right-radius: 24px;
-  border-top-left-radius: 24px;
-}
-.Carousel_swiper_slider__PL8CS .Carousel_post_info__K9enk {
-  display: block;
-  padding: 0 24px 18px 24px;
-}
-.Carousel_swiper_slider__PL8CS div {
-  display: flex;
-  justify-content: space-between;
-}
-.Carousel_swiper_slider__PL8CS span {
-  font-size: 12px;
-  color: gray;
-}
-.Carousel_swiper_slider__PL8CS time {
-  font-size: 12px;
-  color: gray;
-}
-.Carousel_swiper_slider__PL8CS h3 {
-  font-size: 20px;
-  margin: 5px 0;
-}
-.Carousel_swiper_slider__PL8CS p {
-  font-size: 14px;
-  margin: 0;
+
+.Carousel_swiper_slider__PL8CS:hover {
+  box-shadow: 10px 12px 14px -3px rgba(0, 0, 0, 0.2);
 }
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/Home/Home.module.scss ***!
@@ -437,19 +411,8 @@
   margin-bottom: 100px;
 }
 
-.FeaturedPosts_cardsContainer__h5YYJ {
-  border: 1px solid red;
-  display: flex;
-  width: 100vw;
-  gap: 20px;
-}
-
-.FeaturedPosts_card__UxYJa {
-  flex-grow: 1;
-  width: 380px;
-  min-width: 330px;
-  background-color: rgba(128, 128, 128, 0.1);
-  border-radius: 24px;
+.FeaturedPosts_title__h3l17 {
+  margin-bottom: 0;
 }
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Gif/Gif.module.scss ***!
@@ -515,12 +478,11 @@
 .RecentPosts_card__N6_YG {
   flex-grow: 1;
   width: 330px;
-  background-color: rgba(128, 128, 128, 0.1);
+  background-color: rgba(173, 173, 173, 0.1);
   border-radius: 24px;
+  box-shadow: 10px 12px 14px -3px rgba(0, 0, 0, 0.1);
 }
 
 .RecentPosts_card__N6_YG:hover {
-  height: 305px;
-  width: 335px;
-  box-shadow: 10px 12px 14px -3px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 12px 14px -3px rgba(0, 0, 0, 0.2);
 }

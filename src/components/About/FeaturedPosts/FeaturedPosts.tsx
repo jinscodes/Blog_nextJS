@@ -8,7 +8,7 @@ const FeaturedPosts = async () => {
   return (
     <div className={st.carousel_container}>
       <div className={st.postsContainer}>
-        <h4>Featured Posts</h4>
+        <h4 className={st.title}>Featured Posts</h4>
         <Carousel posts={posts} />
       </div>
     </div>
