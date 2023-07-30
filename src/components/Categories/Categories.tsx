@@ -1,3 +1,4 @@
+import st from "./Categories.module.scss";
 interface Props {
   categories: string[];
   selected: string;
@@ -5,8 +6,10 @@ interface Props {
 }
 
 export const Categories = ({ categories, selected, onClick }: Props) => {
+  console.log(selected);
+
   return (
-    <section>
+    <section className={st.section}>
       <h2>Category</h2>
       <ul>
         {categories.map((category) => (

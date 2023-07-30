@@ -87,6 +87,38 @@
         "chunks": [],
         "async": false
       }
+    },
+    "(app-client)/./public/images/me.png": {
+      "*": {
+        "id": "(sc_client)/./public/images/me.png",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./public/svg/github.svg": {
+      "*": {
+        "id": "(sc_client)/./public/svg/github.svg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./public/svg/gmail.svg": {
+      "*": {
+        "id": "(sc_client)/./public/svg/gmail.svg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/About/AboutButton/AboutButton.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/About/AboutButton/AboutButton.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
     }
   },
   "edgeSSRModuleMapping": {},
@@ -223,7 +255,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/About/page:static/chunks/app/About/page.js"
       ],
       "async": false
     },
@@ -231,7 +263,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/About/page:static/chunks/app/About/page.js"
       ],
       "async": false
     },
@@ -239,7 +271,7 @@
       "id": "(app-client)/./src/components/Carousel/Carousel.tsx",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/About/page:static/chunks/app/About/page.js"
       ],
       "async": false
     },
@@ -263,7 +295,7 @@
       "id": "(app-client)/./src/components/About/FeaturedPosts/FeaturedPosts.module.scss",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/About/page:static/chunks/app/About/page.js"
       ],
       "async": false
     },
@@ -298,6 +330,46 @@
         "app/Posts/page:static/chunks/app/Posts/page.js"
       ],
       "async": false
+    },
+    "/Users/hanjinsung/Desktop/blog_nextJS/public/images/me.png": {
+      "id": "(app-client)/./public/images/me.png",
+      "name": "*",
+      "chunks": [
+        "app/About/page:static/chunks/app/About/page.js"
+      ],
+      "async": false
+    },
+    "/Users/hanjinsung/Desktop/blog_nextJS/public/svg/github.svg": {
+      "id": "(app-client)/./public/svg/github.svg",
+      "name": "*",
+      "chunks": [
+        "app/About/page:static/chunks/app/About/page.js"
+      ],
+      "async": false
+    },
+    "/Users/hanjinsung/Desktop/blog_nextJS/public/svg/gmail.svg": {
+      "id": "(app-client)/./public/svg/gmail.svg",
+      "name": "*",
+      "chunks": [
+        "app/About/page:static/chunks/app/About/page.js"
+      ],
+      "async": false
+    },
+    "/Users/hanjinsung/Desktop/blog_nextJS/src/components/About/AboutButton/AboutButton.tsx": {
+      "id": "(app-client)/./src/components/About/AboutButton/AboutButton.tsx",
+      "name": "*",
+      "chunks": [
+        "app/About/page:static/chunks/app/About/page.js"
+      ],
+      "async": false
+    },
+    "/Users/hanjinsung/Desktop/blog_nextJS/src/components/About/MyProfile/MyProfile.module.scss": {
+      "id": "(app-client)/./src/components/About/MyProfile/MyProfile.module.scss",
+      "name": "*",
+      "chunks": [
+        "app/About/page:static/chunks/app/About/page.js"
+      ],
+      "async": false
     }
   },
   "entryCSSFiles": {
@@ -309,6 +381,9 @@
     ],
     "/Users/hanjinsung/Desktop/blog_nextJS/src/app/Posts/page": [
       "static/css/app/Posts/page.css"
+    ],
+    "/Users/hanjinsung/Desktop/blog_nextJS/src/app/About/page": [
+      "static/css/app/About/page.css"
     ]
   }
 }

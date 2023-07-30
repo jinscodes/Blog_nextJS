@@ -1,9 +1,12 @@
 "use client";
 
-import PostsGrid from "@/components/About/FeaturedPosts/PostsGrid";
 import { Categories } from "@/components/Categories/Categories";
 import { Post } from "@/service/posts";
 import { useState } from "react";
+
+import PostsGrid from "@/components/About/FeaturedPosts/PostsGrid";
+
+import st from "./FilterablePosts.module.scss";
 
 interface Props {
   posts: Post[];
@@ -20,7 +23,7 @@ export const FilterablePosts = ({ posts, categories }: Props) => {
       : posts.filter((post) => post.category === selected);
 
   return (
-    <section>
+    <section className={st.section}>
       <PostsGrid posts={filtered} />
       <Categories
         categories={[ALL_POSTS, ...categories]}
