@@ -7,17 +7,6 @@
   margin-bottom: 100px;
 }
 
-.cardsContainer {
-  border: 1px solid red;
-  display: flex;
-  width: 100vw;
-  gap: 20px;
-}
-
-.card {
-  flex-grow: 1;
-  width: 380px;
-  min-width: 330px;
-  background-color: rgba(128, 128, 128, 0.1);
-  border-radius: 24px;
+.title {
+  margin-bottom: 0;
 }
