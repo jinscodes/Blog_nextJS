@@ -1,38 +1,42 @@
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Categories/Categories.module.scss ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.Categories_section__DBaRj {
+.Categories_div__CCqVF {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  height: 100%;
   border-left: 1px solid rgba(0, 0, 139, 0.1);
-  padding: 0 10px;
+  padding: 0 10px 10px 10px;
 }
-.Categories_section__DBaRj h2 {
-  font-size: 16px;
+.Categories_div__CCqVF h2 {
+  font-size: 14px;
   padding: 0;
   color: darkblue;
-  opacity: 0.7;
 }
-.Categories_section__DBaRj ul {
+.Categories_div__CCqVF ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
   list-style: none;
-  font-size: 15px;
+  font-size: 11px;
   padding: 0;
   margin: 0;
-  color: darkblue;
+  color: rgb(0, 0, 213);
   opacity: 0.5;
 }
-.Categories_section__DBaRj ul li {
+.Categories_div__CCqVF ul li {
   display: flex;
   align-items: center;
-  width: calc(100% - 10px);
-  height: 30px;
+  width: 100px;
+  height: 25px;
   padding-left: 10px;
   border-radius: 8px;
-  border: 1px solid rgba(0, 0, 139, 0.6);
+  cursor: pointer;
+}
+
+.Categories_li__MkYrN {
+  color: white;
+  background-color: rgba(0, 0, 255, 0.6);
 }
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/PostCard/PostCard.module.scss ***!
@@ -100,6 +104,6 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/FilterablePosts/FilterablePosts.module.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .FilterablePosts_section__IY2Oh {
-  border: 1px solid black;
   display: flex;
+  justify-content: space-between;
 }

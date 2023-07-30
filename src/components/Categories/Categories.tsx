@@ -6,18 +6,20 @@ interface Props {
 }
 
 export const Categories = ({ categories, selected, onClick }: Props) => {
-  console.log(selected);
-
   return (
-    <section className={st.section}>
+    <div className={st.div}>
       <h2>Category</h2>
       <ul>
         {categories.map((category) => (
-          <li key={category} onClick={() => onClick(category)}>
+          <li
+            key={category}
+            onClick={() => onClick(category)}
+            className={category === selected ? st.li : ""}
+          >
             {category}
           </li>
         ))}
       </ul>
-    </section>
+    </div>
   );
 };
