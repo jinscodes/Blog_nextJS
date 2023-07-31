@@ -4,8 +4,7 @@ import { Categories } from "@/components/Categories/Categories";
 import { Post } from "@/service/posts";
 import { useState } from "react";
 
-import PostsGrid from "@/components/About/FeaturedPosts/PostsGrid";
-
+import PostCard from "@/components/PostCard/PostCard";
 import st from "./FilterablePosts.module.scss";
 
 interface Props {
@@ -24,7 +23,14 @@ export const FilterablePosts = ({ posts, categories }: Props) => {
 
   return (
     <section className={st.section}>
-      <PostsGrid posts={filtered} />
+      {/* <PostsGrid posts={filtered} /> */}
+      <ul className={st.ul}>
+        {filtered.map((post) => (
+          <li key={post.path} className={st.li}>
+            <PostCard post={post} />
+          </li>
+        ))}
+      </ul>
       <Categories
         categories={[ALL_POSTS, ...categories]}
         selected={selected}
