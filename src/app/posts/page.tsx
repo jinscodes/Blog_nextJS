@@ -6,7 +6,7 @@ const Posts = async () => {
   const categories = [...new Set(posts.map((post) => post.category))];
 
   return (
-    <div style={{ paddingTop: "30px" }}>
+    <div style={{ paddingTop: "30px", paddingBottom: "60px" }}>
       {/* <h2>Posts</h2> */}
       <FilterablePosts posts={posts} categories={categories} />
     </div>
