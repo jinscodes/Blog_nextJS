@@ -1,0 +1,33 @@
+.article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+
+  h1 {
+    margin-top: 100px;
+  }
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.section {
+  width: 100%;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+  }
+}
