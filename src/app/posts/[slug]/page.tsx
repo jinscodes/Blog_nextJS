@@ -17,14 +17,16 @@ const PostPage = async ({ params: { slug } }: Props) => {
   return (
     <article className={st.article}>
       <h1>{title}</h1>
-
-      <Image
-        className={st.img}
-        src={`/images/posts/${path}.png`}
-        alt="path"
-        width={0}
-        height={0}
-      />
+      <div className={st.img_frame}>
+        <Image
+          src={`/images/posts/${path}.png`}
+          alt="path"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className={st.img}
+        />
+      </div>
       <section className={st.section}>
         <div className={st.calendar}>
           <AiTwotoneCalendar />
