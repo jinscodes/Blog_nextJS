@@ -13,7 +13,7 @@ type Props = {
 
 const PostPage = async ({ params: { slug } }: Props) => {
   const post = await getPostData(slug);
-  const { title, description, date, path, content } = post;
+  const { title, path } = post;
 
   return (
     <article className={st.article}>
