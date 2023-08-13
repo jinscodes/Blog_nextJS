@@ -1,10 +1,9 @@
-import MarkdownViewer from "@/components/MarkdownViewer/MarkdownViewer";
 import { getPostData } from "@/service/posts";
 import Image from "next/image";
 
 import st from "./slug.module.scss";
 
-import { AiTwotoneCalendar } from "react-icons/ai";
+import PostContent from "@/components/PostContent/PostContent";
 
 type Props = {
   params: {
@@ -29,13 +28,7 @@ const PostPage = async ({ params: { slug } }: Props) => {
           className={st.img}
         />
       </div>
-      <section className={st.section}>
-        <div className={st.calendar}>
-          <AiTwotoneCalendar />
-          <p>{date.toString()}</p>
-        </div>
-        <MarkdownViewer content={content} />
-      </section>
+      <PostContent post={post} />
     </article>
   );
 };

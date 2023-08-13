@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
@@ -30,14 +31,14 @@ const MarkdownViewer = ({ content }: Prop) => {
             </code>
           );
         },
-        // img: (image) => (
-        //   <Image
-        //     src={image.src || ""}
-        //     alt={image.alt || ""}
-        //     width={500}
-        //     height={350}
-        //   />
-        // ),
+        img: (image) => (
+          <Image
+            src={image.src || ""}
+            alt={image.alt || ""}
+            width={300}
+            height={350}
+          />
+        ),
       }}
     >
       {content}
