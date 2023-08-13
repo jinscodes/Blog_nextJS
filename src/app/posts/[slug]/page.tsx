@@ -1,8 +1,10 @@
 import MarkdownViewer from "@/components/MarkdownViewer/MarkdownViewer";
 import { getPostData } from "@/service/posts";
 import Image from "next/image";
-import { AiTwotoneCalendar } from "react-icons/ai";
+
 import st from "./slug.module.scss";
+
+import { AiTwotoneCalendar } from "react-icons/ai";
 
 type Props = {
   params: {
