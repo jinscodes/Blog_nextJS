@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import st from "./slug.module.scss";
 
+import AdjacentPostCard from "@/components/AdjacentPostCard/AdjacentPostCard";
 import PostContent from "@/components/PostContent/PostContent";
 
 type Props = {
@@ -13,7 +14,7 @@ type Props = {
 
 const PostPage = async ({ params: { slug } }: Props) => {
   const post = await getPostData(slug);
-  const { title, path } = post;
+  const { title, path, next, prev } = post;
 
   return (
     <article className={st.article}>
@@ -29,6 +30,10 @@ const PostPage = async ({ params: { slug } }: Props) => {
         />
       </div>
       <PostContent post={post} />
+      <section className={st.adjacent}>
+        {prev && <AdjacentPostCard post={prev} type="prev" />}
+        {next && <AdjacentPostCard post={next} type="next" />}
+      </section>
     </article>
   );
 };

@@ -15,8 +15,6 @@ interface CarouselPosts {
 }
 
 const Carousel = ({ posts }: CarouselPosts) => {
-  console.log(posts);
-
   return (
     <Swiper
       className={st.swiper}
