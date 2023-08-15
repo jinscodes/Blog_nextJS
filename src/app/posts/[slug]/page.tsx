@@ -18,8 +18,8 @@ const PostPage = async ({ params: { slug } }: Props) => {
 
   return (
     <article className={st.article}>
-      <h1>{title}</h1>
       <div className={st.img_frame}>
+        <h1>{title}</h1>
         <Image
           src={`/images/posts/${path}.png`}
           alt="path"

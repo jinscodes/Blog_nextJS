@@ -23,12 +23,18 @@ const AdjacentPostCard = ({ post, type }: Props) => {
         height={100}
       />
       <div className={st.info_frame}>
-        {type === "prev" && <FaArrowLeft style={{ marginLeft: "50px" }} />}
+        {/* {type === "prev" && <FaArrowLeft style={{ marginLeft: "50px" }} />} */}
+        {type === "prev" && (
+          <FaArrowLeft style={{ top: "35px", left: "50px" }} />
+        )}
         <div>
           <h3>{title}</h3>
           <p>{description}</p>
         </div>
-        {type === "next" && <FaArrowRight style={{ marginRight: "50px" }} />}
+        {/* {type === "next" && <FaArrowRight style={{ marginRight: "50px" }} />} */}
+        {type === "next" && (
+          <FaArrowRight style={{ top: "35px", right: "50px" }} />
+        )}
       </div>
     </Link>
   );
