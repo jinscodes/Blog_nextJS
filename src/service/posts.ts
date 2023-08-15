@@ -42,8 +42,8 @@ export const getPostData = async (fileName: string): Promise<PostData> => {
   if (!post) throw Error(`Can't not find the post: ${fileName}`);
 
   const index = posts.indexOf(post);
-  const next = index > 0 ? posts[index - 1] : null;
-  const prev = index < posts.length ? posts[index + 1] : null;
+  const prev = index > 0 ? posts[index - 1] : null;
+  const next = index < posts.length ? posts[index + 1] : null;
   const content = await readFile(filePath, "utf-8");
   return { ...post, content, next, prev };
 };
