@@ -17,16 +17,9 @@
   ul {
     list-style: none;
 
-    li::after {
-      content: "";
-      top: 4px;
-      left: 0;
-      width: 10px;
-      height: 10px;
-      position: absolute;
-      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7K63tX5M3uqMo8mN2yPd_9j4JAlgJO9BizSsPqnzaRFBE5EdQ&usqp=CAU");
-      background-size: cover;
-      background-position: center;
+    li::before {
+      content: "🔵";
+      margin-right: 10px;
     }
   }
 }
