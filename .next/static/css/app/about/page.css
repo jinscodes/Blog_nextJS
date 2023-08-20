@@ -442,6 +442,9 @@
   width: 100%;
   margin-top: 70px;
 }
+.MyProfile_section__DbBfb p {
+  font-size: 1rem;
+}
 
 .MyProfile_profileImg__U7H9x {
   border-radius: 50%;
@@ -451,12 +454,13 @@
 
 .MyProfile_name__9BKeV {
   margin: 20px;
-  font-size: 2.22rem;
+  font-size: 2rem;
 }
 
 .MyProfile_position__0Sp_7 {
   margin: 0;
   margin-bottom: -10px;
+  font-size: 1.5rem;
 }
 
 .MyProfile_link_container__eiRzK {
@@ -499,4 +503,15 @@
   background-color: rgb(9, 75, 162);
   border: 0px;
   cursor: pointer;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/About/Introduction/Introduction.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Introduction_intro_container__SPy64 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(212, 212, 212, 0.7);
+  border-radius: 12px;
 }
