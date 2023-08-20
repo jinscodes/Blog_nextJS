@@ -10,7 +10,7 @@ interface Prop {
 }
 
 const PostContent = ({ post }: Prop) => {
-  const { title, description, date, path, content } = post;
+  const { date, content } = post;
 
   return (
     <section className={st.section}>
