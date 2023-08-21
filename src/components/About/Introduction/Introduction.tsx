@@ -14,7 +14,7 @@ export const Introduction = () => {
         <li>(주) 유니온 콘텐츠 (~now)</li>
       </ul>
       <h2>Skills</h2>
-      <ul className={st.skills}>
+      <ul>
         <li>React, Next, Node</li>
         <li>Git, Clean Code</li>
         <li>VS Code, IntelliJ</li>

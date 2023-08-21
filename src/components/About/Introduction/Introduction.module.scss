@@ -5,7 +5,7 @@
   width: 100%;
   background-color: rgba(212, 212, 212, 0.7);
   border-radius: 12px;
-  margin-bottom: 15px;
+  margin: 15px 0 18px;
 
   h2 {
     font-size: 25px;
@@ -19,12 +19,16 @@
   }
 
   ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
     margin: 0;
+    padding: 0;
     font-size: 14px;
   }
-}
 
-.skills {
-  padding-bottom: 15px;
+  ul:last-child {
+    margin-bottom: 15px;
+  }
 }
