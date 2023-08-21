@@ -1,0 +1,41 @@
+.section {
+  width: 90%;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  h2 {
+    border-bottom: 1.5px solid rgba($color: #6cb4e7, $alpha: 0.7);
+    padding-bottom: 12px;
+    padding-left: 10px;
+    margin: 80px 0 30px;
+  }
+
+  ul {
+    list-style: none;
+
+    li::before {
+      content: "🔵";
+      margin-right: 10px;
+    }
+  }
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 8px;
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.calendar_icon {
+  width: 15px;
+  height: 15px;
+}

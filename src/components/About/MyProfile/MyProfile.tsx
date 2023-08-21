@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { Introduction } from "@/components/About/Introduction/Introduction";
 import profile from "../../../../public/images/me.png";
 import github from "../../../../public/svg/github.svg";
 import gmail from "../../../../public/svg/gmail.svg";
@@ -20,6 +21,7 @@ const MyProfile = () => {
       <h2 className={st.name}>{"Jay Han"}</h2>
       <h3 className={st.position}>FE-Developer</h3>
       <p>{'"Make the value, Build the dream"'}</p>
+      <Introduction />
       <div className={st.link_container}>
         <AboutButton props={{ title: "GITHUB", src: github, link: true }} />
         <AboutButton

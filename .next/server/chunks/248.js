@@ -3,7 +3,7 @@ exports.id = 248;
 exports.ids = [248];
 exports.modules = {
 
-/***/ 7248:
+/***/ 47248:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -37,12 +37,12 @@ _export(exports, {
         return Document;
     }
 });
-const _react = /*#__PURE__*/ _interop_require_default(__webpack_require__(6689));
-const _constants = __webpack_require__(6724);
-const _getpagefiles = __webpack_require__(4140);
-const _htmlescape = __webpack_require__(9716);
-const _iserror = /*#__PURE__*/ _interop_require_default(__webpack_require__(676));
-const _htmlcontext = __webpack_require__(8743);
+const _react = /*#__PURE__*/ _interop_require_default(__webpack_require__(16689));
+const _constants = __webpack_require__(56724);
+const _getpagefiles = __webpack_require__(94140);
+const _htmlescape = __webpack_require__(89716);
+const _iserror = /*#__PURE__*/ _interop_require_default(__webpack_require__(80676));
+const _htmlcontext = __webpack_require__(18743);
 function _interop_require_default(obj) {
     return obj && obj.__esModule ? obj : {
         default: obj
@@ -514,7 +514,7 @@ class Head extends _react.default.Component {
             content: "width=device-width,minimum-scale=1,initial-scale=1"
         }), !hasCanonicalRel && /*#__PURE__*/ _react.default.createElement("link", {
             rel: "canonical",
-            href: canonicalBase + (__webpack_require__(6368).cleanAmpPath)(dangerousAsPath)
+            href: canonicalBase + (__webpack_require__(76368).cleanAmpPath)(dangerousAsPath)
         }), /*#__PURE__*/ _react.default.createElement("link", {
             rel: "preload",
             as: "script",
@@ -615,7 +615,7 @@ class NextScript extends _react.default.Component {
                 return (0, _htmlescape.htmlEscapeJsonString)(data);
             }
             const bytes =  false ? 0 : Buffer.from(data).byteLength;
-            const prettyBytes = (__webpack_require__(5955)/* ["default"] */ .Z);
+            const prettyBytes = (__webpack_require__(95955)/* ["default"] */ .Z);
             if (largePageDataBytes && bytes > largePageDataBytes) {
                 if (true) {
                     largePageDataWarnings.add(__NEXT_DATA__.page);
@@ -716,7 +716,7 @@ Document[_constants.NEXT_BUILTIN_DOCUMENT] = InternalFunctionDocument; //# sourc
 
 /***/ }),
 
-/***/ 676:
+/***/ 80676:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -738,7 +738,7 @@ _export(exports, {
         return getProperError;
     }
 });
-const _isplainobject = __webpack_require__(8524);
+const _isplainobject = __webpack_require__(78524);
 function isError(err) {
     return typeof err === "object" && err !== null && "name" in err && "message" in err;
 }
@@ -754,7 +754,7 @@ function getProperError(err) {
 
 /***/ }),
 
-/***/ 5955:
+/***/ 95955:
 /***/ ((__unused_webpack_module, exports) => {
 
 var __webpack_unused_export__;

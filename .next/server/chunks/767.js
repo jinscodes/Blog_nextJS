@@ -3,7 +3,7 @@ exports.id = 767;
 exports.ids = [767];
 exports.modules = {
 
-/***/ 1767:
+/***/ 11767:
 /***/ ((module, exports, __webpack_require__) => {
 
 
@@ -16,9 +16,9 @@ Object.defineProperty(exports, "default", ({
         return App;
     }
 }));
-const _interop_require_default = __webpack_require__(167);
-const _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(6689));
-const _utils = __webpack_require__(9232);
+const _interop_require_default = __webpack_require__(50167);
+const _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(16689));
+const _utils = __webpack_require__(59232);
 /**
  * `App` component is used for initialize of pages. It allows for overwriting and full control of the `page` initialization.
  * This allows for keeping state between navigation, custom error handling, injecting additional data.
@@ -52,7 +52,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 167:
+/***/ 50167:
 /***/ ((__unused_webpack_module, exports) => {
 
 

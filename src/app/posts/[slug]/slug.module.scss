@@ -4,30 +4,39 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 40px;
+  font-size: 16px;
+}
+
+.img_frame {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 380px;
+  margin-top: 80px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
 
   h1 {
-    margin-top: 100px;
+    position: absolute;
+    color: white;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 380px;
+    font-size: 35px;
+    background-color: rgba($color: #000000, $alpha: 0.5);
   }
 }
 
 .img {
-  display: flex;
-  justify-content: center;
-  border-radius: 12px;
-}
-
-.calendar {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.section {
   width: 100%;
+  height: 100%;
+}
 
-  img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 24px;
-  }
+.adjacent {
+  display: flex;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
 }

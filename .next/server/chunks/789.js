@@ -2,7 +2,7 @@ exports.id = 789;
 exports.ids = [789];
 exports.modules = {
 
-/***/ 9770:
+/***/ 79770:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -10,16 +10,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(56786);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(467);
+/* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(50467);
 /* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(swiper_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var swiper_css_navigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5287);
+/* harmony import */ var swiper_css_navigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(45287);
 /* harmony import */ var swiper_css_navigation__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(swiper_css_navigation__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var swiper_modules__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3519);
-/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5373);
-/* harmony import */ var _components_PostCard_PostCard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9152);
-/* harmony import */ var _Carousel_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(3979);
+/* harmony import */ var swiper_modules__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(83519);
+/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(25373);
+/* harmony import */ var _components_PostCard_PostCard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(29152);
+/* harmony import */ var _Carousel_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(53979);
 /* harmony import */ var _Carousel_module_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_Carousel_module_scss__WEBPACK_IMPORTED_MODULE_6__);
 /* __next_internal_client_entry_do_not_use__ default auto */ 
 
@@ -29,7 +29,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Carousel = ({ posts })=>{
-    console.log(posts);
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(swiper_react__WEBPACK_IMPORTED_MODULE_4__/* .Swiper */ .tq, {
         className: (_Carousel_module_scss__WEBPACK_IMPORTED_MODULE_6___default().swiper),
         spaceBetween: 50,
@@ -51,7 +50,7 @@ const Carousel = ({ posts })=>{
 
 /***/ }),
 
-/***/ 4917:
+/***/ 54917:
 /***/ ((module) => {
 
 // Exports
@@ -64,7 +63,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3979:
+/***/ 53979:
 /***/ ((module) => {
 
 // Exports
@@ -76,7 +75,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 4579:
+/***/ 64579:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -87,9 +86,9 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 // EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(6786);
+var jsx_runtime_ = __webpack_require__(56786);
 // EXTERNAL MODULE: ./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js
-var module_proxy = __webpack_require__(1313);
+var module_proxy = __webpack_require__(21313);
 ;// CONCATENATED MODULE: ./src/components/Carousel/Carousel.tsx
 
 const proxy = (0,module_proxy.createProxy)(String.raw`/Users/hanjinsung/Desktop/blog_nextJS/src/components/Carousel/Carousel.tsx`)
@@ -104,9 +103,9 @@ const __default__ = proxy.default;
 
 /* harmony default export */ const Carousel = (__default__);
 // EXTERNAL MODULE: ./src/service/posts.ts
-var service_posts = __webpack_require__(8957);
+var service_posts = __webpack_require__(38957);
 // EXTERNAL MODULE: ./src/components/About/FeaturedPosts/FeaturedPosts.module.scss
-var FeaturedPosts_module = __webpack_require__(4917);
+var FeaturedPosts_module = __webpack_require__(54917);
 var FeaturedPosts_module_default = /*#__PURE__*/__webpack_require__.n(FeaturedPosts_module);
 ;// CONCATENATED MODULE: ./src/components/About/FeaturedPosts/FeaturedPosts.tsx
 

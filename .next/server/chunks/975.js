@@ -2,13 +2,13 @@ exports.id = 975;
 exports.ids = [975];
 exports.modules = {
 
-/***/ 7937:
+/***/ 67937:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
 
-var deselectCurrent = __webpack_require__(8036);
+var deselectCurrent = __webpack_require__(98036);
 
 var clipboardToIE11Formatting = {
   "text/plain": "Text",
@@ -125,7 +125,7 @@ module.exports = copy;
 
 /***/ }),
 
-/***/ 61:
+/***/ 40061:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -138,9 +138,9 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.CopyToClipboard = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(8038));
+var _react = _interopRequireDefault(__webpack_require__(18038));
 
-var _copyToClipboard = _interopRequireDefault(__webpack_require__(7937));
+var _copyToClipboard = _interopRequireDefault(__webpack_require__(67937));
 
 var _excluded = ["text", "onCopy", "options", "children"];
 
@@ -246,13 +246,13 @@ _defineProperty(CopyToClipboard, "defaultProps", {
 
 /***/ }),
 
-/***/ 5975:
+/***/ 55975:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
 
-var _require = __webpack_require__(61),
+var _require = __webpack_require__(40061),
     CopyToClipboard = _require.CopyToClipboard;
 
 CopyToClipboard.CopyToClipboard = CopyToClipboard;
@@ -260,7 +260,7 @@ module.exports = CopyToClipboard;
 
 /***/ }),
 
-/***/ 8036:
+/***/ 98036:
 /***/ ((module) => {
 
 
