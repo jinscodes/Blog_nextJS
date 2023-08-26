@@ -449,20 +449,26 @@
   font-weight: 300;
   font-family: "Open Sans";
 }
-.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK img {
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK .Gif_heart__fQfsz {
   padding-bottom: 30px;
   margin-bottom: 20px;
   border-bottom: 2px solid #ffffff;
 }
 .Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK h1 {
+  display: flex;
   margin: 0;
-  font-size: 4rem;
+  font-size: 3.6rem;
   line-height: 1.2;
   font-weight: 300;
   letter-spacing: -0.1rem;
 }
 .Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK p {
   font-size: 1.2rem;
+}
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK .Gif_arrow_container__J7rrk {
+  position: absolute;
+  bottom: 30px;
+  animation: Gif_arrowDown__KT2Xp 1s infinite;
 }
 
 .Gif_scroll_container__6VNsY {
@@ -486,14 +492,15 @@
 }
 
 @keyframes Gif_arrowDown__KT2Xp {
-  0% {
-    margin-top: -5px;
+  60% {
+    opacity: 0.6;
   }
-  50% {
-    margin-top: 0;
+  80% {
+    opacity: 0.4;
   }
   100% {
-    margin-top: -5px;
+    transform: translateY(12px);
+    opacity: 0;
   }
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\

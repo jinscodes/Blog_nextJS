@@ -33,18 +33,6 @@ const Header = () => {
           TOTAL <span>1,234</span>
         </p>
       </section>
-
-      {/* <nav>
-        <Link className={st.link} href="/">
-          Home
-        </Link>
-        <Link className={st.link} href="/posts">
-          Posts
-        </Link>
-        <Link className={st.link} href="/about">
-          About
-        </Link>
-      </nav> */}
     </header>
   );
 };
