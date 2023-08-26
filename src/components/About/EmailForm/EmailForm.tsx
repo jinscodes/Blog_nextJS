@@ -2,6 +2,9 @@
 
 import { ChangeEvent, FormEvent, useState } from "react";
 
+import Banner from "@/components/About/Banner/Banner";
+import st from "./EmailForm.module.scss";
+
 type Form = {
   from: string;
   subject: string;
@@ -14,17 +17,18 @@ const EmailForm = () => {
     subject: "",
     message: "",
   });
+  const [airplane, setAirplane] = useState<boolean>(false);
   const onChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
   };
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(form);
+    setAirplane(true);
   };
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} className={st.form}>
       <label htmlFor="from">Your Email</label>
       <input
         type="email"
@@ -53,6 +57,7 @@ const EmailForm = () => {
         value={form.message}
         onChange={onChange}
       />
+      <Banner state={airplane} />
       <button>Submit</button>
     </form>
   );

@@ -1,0 +1,14 @@
+.submit_container {
+  width: 100%;
+  transition: all 4s;
+  transform: translateX(98%);
+}
+
+.container_hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+.icon {
+  transform: rotate(0.25turn);
+}
