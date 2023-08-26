@@ -1,6 +1,0 @@
-{
-  "/page": "/",
-  "/about/page": "/about",
-  "/posts/page": "/posts",
-  "/posts/[slug]/page": "/posts/[slug]"
-}
