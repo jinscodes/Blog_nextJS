@@ -18,6 +18,7 @@ export default function RootLayout({
     <html lang="en" className={sans.className}>
       <body className={st.body}>
         <Header />
+        <main className={st.main}>{children}</main>
         {/* <Header />
         <main className={st.main}>{children}</main>
         <Footer /> */}

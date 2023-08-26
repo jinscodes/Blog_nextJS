@@ -422,12 +422,28 @@
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  height: calc(100vh - 60px);
 }
-
-.Gif_gif__1uaJN {
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql {
+  position: relative;
   width: 100%;
-  object-fit: contain;
+  height: 100vh;
+  background-image: url(/_next/static/media/Rain_Gif.20d62e54.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK {
+  width: 50%;
+  height: 100px;
+  border: 1px solid white;
 }
 
 .Gif_scroll_container__6VNsY {

@@ -28,7 +28,11 @@ const Header = () => {
           </div>
         </div>
       </section>
-      <section></section>
+      <section className={st.posts}>
+        <p className={st.total}>
+          TOTAL <span>1,234</span>
+        </p>
+      </section>
 
       {/* <nav>
         <Link className={st.link} href="/">

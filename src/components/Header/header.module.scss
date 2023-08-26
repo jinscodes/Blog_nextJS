@@ -1,7 +1,9 @@
 @use "../../app/base.scss";
 
 .header {
+  position: fixed;
   width: 250px;
+  height: 100%;
   box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.1);
 
   nav {
@@ -55,7 +57,7 @@
 
       .svg_container {
         display: flex;
-        // align-items: center;
+        align-items: center;
         justify-content: space-around;
         width: 200px;
         height: 55px;
@@ -63,8 +65,23 @@
         border-radius: 24px;
       }
 
-      img {
-        border: 1px solid black;
+      img:hover {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  .posts {
+    margin-top: 4px;
+    .total {
+      margin-left: 20px;
+      font-size: 16px;
+      font-weight: 600;
+      color: base.$header-total-color;
+
+      span {
+        font-size: 20px;
       }
     }
   }
