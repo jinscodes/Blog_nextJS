@@ -12,3 +12,13 @@
 .icon {
   transform: rotate(0.25turn);
 }
+
+.msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 50px;
+  background-color: rgb(139, 159, 179);
+  border-radius: 12px;
+}

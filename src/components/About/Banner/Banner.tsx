@@ -8,9 +8,12 @@ type Prop = {
 
 const Banner = ({ state }: Prop) => {
   return (
-    <div className={state ? st.submit_container : st.container_hidden}>
-      <HiPaperAirplane className={st.icon} />
-    </div>
+    <>
+      <div className={state ? st.submit_container : st.container_hidden}>
+        <HiPaperAirplane className={st.icon} />
+      </div>
+      {/* <div className={st.msg}>전송 완료 ✅</div> */}
+    </>
   );
 };
 

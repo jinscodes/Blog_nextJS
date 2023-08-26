@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import { Open_Sans } from "next/font/google";
 import st from "./layout.module.scss";
@@ -19,8 +18,9 @@ export default function RootLayout({
     <html lang="en" className={sans.className}>
       <body className={st.body}>
         <Header />
+        {/* <Header />
         <main className={st.main}>{children}</main>
-        <Footer />
+        <Footer /> */}
       </body>
     </html>
   );
