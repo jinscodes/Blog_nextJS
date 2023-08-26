@@ -1,3 +1,6 @@
+import Image from "next/image";
+
+import heart from "../../../../public/svg/Heart.svg";
 import st from "./Gif.module.scss";
 
 const Gif = () => {
@@ -5,7 +8,11 @@ const Gif = () => {
     <div className={st.home_outline_container}>
       <div className={st.bg_img}>
         <div className={st.dark_bg_cover}>
-          <div className={st.quote}></div>
+          <div className={st.quote}>
+            <Image src={heart} alt="heart" />
+            <h1> CLEAN & SIMPLE</h1>
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+          </div>
         </div>
       </div>
       {/* <h2 className={st.logo}>

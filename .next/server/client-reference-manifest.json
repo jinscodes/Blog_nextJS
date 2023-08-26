@@ -64,6 +64,14 @@
         "async": false
       }
     },
+    "(app-client)/./public/svg/Heart.svg": {
+      "*": {
+        "id": "(sc_client)/./public/svg/Heart.svg",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./src/components/PostCard/PostCard.module.scss": {
       "*": {
         "id": "(sc_client)/./src/components/PostCard/PostCard.module.scss",
@@ -235,6 +243,14 @@
       ],
       "async": false
     },
+    "/Users/hanjinsung/Desktop/blog_nextJS/public/svg/Heart.svg": {
+      "id": "(app-client)/./public/svg/Heart.svg",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
     "/Users/hanjinsung/Desktop/blog_nextJS/src/app/Home/Home.module.scss": {
       "id": "(app-client)/./src/app/Home/Home.module.scss",
       "name": "*",
@@ -251,14 +267,6 @@
       ],
       "async": false
     },
-    "/Users/hanjinsung/Desktop/blog_nextJS/src/components/Home/Gif/Gif.module.scss": {
-      "id": "(app-client)/./src/components/Home/Gif/Gif.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
     "/Users/hanjinsung/Desktop/blog_nextJS/src/components/Home/RecentPosts/RecentPosts.module.scss": {
       "id": "(app-client)/./src/components/Home/RecentPosts/RecentPosts.module.scss",
       "name": "*",
@@ -269,6 +277,14 @@
     },
     "/Users/hanjinsung/Desktop/blog_nextJS/src/components/PostCard/PostCard.module.scss": {
       "id": "(app-client)/./src/components/PostCard/PostCard.module.scss",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/hanjinsung/Desktop/blog_nextJS/src/components/Home/Gif/Gif.module.scss": {
+      "id": "(app-client)/./src/components/Home/Gif/Gif.module.scss",
       "name": "*",
       "chunks": [
         "app/page:static/chunks/app/page.js"
