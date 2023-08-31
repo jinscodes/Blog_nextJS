@@ -33,17 +33,32 @@
   font-size: 36px;
 }
 .Categories_categories__N2HlC .Categories_container__90eq_ {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-gap: 30px;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
   margin-top: 60px;
 }
 .Categories_categories__N2HlC .Categories_container__90eq_ .Categories_box__h5ATv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 24px;
   width: 200px;
   height: 200px;
-  margin-bottom: 20px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_box__h5ATv .Categories_rank__GKs1y {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 25px;
+  height: 15px;
+  font-size: 15px;
+  border-radius: 12px;
 }
 .Categories_categories__N2HlC .Categories_container__90eq_ .Categories_box__h5ATv:hover {
   transform: scale(1.05);

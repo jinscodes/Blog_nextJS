@@ -7,6 +7,7 @@ const Home = async () => {
     <section className={st.section}>
       <Gif />
       <Categories />
+      <div style={{ marginTop: "60px" }}></div>
       {/* <RecentPosts />
       <FeaturedPosts /> */}
     </section>
