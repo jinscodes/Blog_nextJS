@@ -1,0 +1,11 @@
+/*  */
+@font-face {
+  font-family: "MapleBold";
+  font-style: normal;
+  src: url(/public/fonts/MaplestoryB.otf) format("otf");
+}
+@font-face {
+  font-family: "MapleLight";
+  font-style: normal;
+  src: url(/public/fonts/MaplestoryR.otf) format("otf");
+}

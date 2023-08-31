@@ -1,5 +1,6 @@
 import Header from "@/components/Header/Header";
 import { Open_Sans } from "next/font/google";
+import "../../.next/static/fonts/style.css";
 import st from "./layout.module.scss";
 
 const sans = Open_Sans({ subsets: ["latin"] });
