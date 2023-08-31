@@ -1,5 +1,7 @@
 import st from "./Categories.module.scss";
 
+import { maple } from "../../../app/layout";
+
 const Categories = () => {
   const categories = [
     "JavaScript",
@@ -16,13 +18,13 @@ const Categories = () => {
 
   return (
     <div className={st.categories}>
-      <p className={st.title}>공부한 카테고리</p>
+      <p className={`${st.title} ${maple.className}`}>Categories</p>
       <div className={st.container}>
         {categories.map((el, idx) => (
-          <div className={st.box}>
+          <div key={idx} className={st.box}>
             <p>게시글 카테고리</p>
             <div>
-              <div>#1</div>
+              <div>#{idx}</div>
               <img />
               <h5>title</h5>
               <h6>articles</h6>

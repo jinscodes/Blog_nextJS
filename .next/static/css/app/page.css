@@ -22,7 +22,6 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Categories/Categories.module.scss ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .Categories_categories__N2HlC {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +31,6 @@
 .Categories_categories__N2HlC .Categories_title__AVxO5 {
   margin: 0;
   font-size: 36px;
-  font-family: "MapleBold";
 }
 .Categories_categories__N2HlC .Categories_container__90eq_ {
   display: flex;
@@ -41,11 +39,15 @@
   margin-top: 60px;
 }
 .Categories_categories__N2HlC .Categories_container__90eq_ .Categories_box__h5ATv {
-  border: 1px solid black;
   border-radius: 24px;
   width: 200px;
   height: 200px;
   margin-bottom: 20px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_box__h5ATv:hover {
+  transform: scale(1.05);
+  transition: all ease-in-out 0.5s;
 }
 .Categories_categories__N2HlC .Categories_container__90eq_ h5,
 .Categories_categories__N2HlC .Categories_container__90eq_ h6 {

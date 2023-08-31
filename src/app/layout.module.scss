@@ -27,3 +27,15 @@
     border-radius: 18px;
   }
 }
+
+@font-face {
+  font-family: "mapleB";
+  font-weight: 700;
+  src: url("/public/fonts/MaplestoryBold.otf");
+}
+
+@font-face {
+  font-family: "mapleR";
+  font-weight: 500;
+  src: url("/public/fonts/MaplestoryLight.otf");
+}
