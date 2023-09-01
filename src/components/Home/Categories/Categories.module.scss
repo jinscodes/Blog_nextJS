@@ -20,44 +20,95 @@
     width: 100%;
     margin-top: 60px;
 
-    .box {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
+    // .box {
+    //   position: relative;
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    //   gap: 30px;
+    //   width: 200px;
+    //   height: 200px;
+    //   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+    //   border-radius: 24px;
+    //   transition: transform 1s;
+    //   transform-style: preserve-3d;
+
+    //   .rank {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     width: 25px;
+    //     height: 15px;
+    //     margin-top: 10px;
+    //     font-size: 10px;
+    //     border-radius: 12px;
+    //   }
+    // }
+
+    // .box:hover {
+    //   transform: rotateY(180deg);
+    //   backface-visibility: hidden;
+    // }
+
+    // .flip_back {
+    //   position: absolute;
+    //   width: 200px;
+    //   height: 200px;
+    //   backface-visibility: hidden;
+    //   transform: rotateY(180deg);
+    //   border-radius: 24px;
+    //   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+    // }
+
+    .flip_card {
+      overflow: hidden;
       width: 200px;
       height: 200px;
       box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
       border-radius: 24px;
-      transition: transform 1s;
-      transform-style: preserve-3d;
 
-      .rank {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 25px;
-        height: 15px;
-        margin-top: 10px;
-        font-size: 10px;
-        border-radius: 12px;
+      .flip_card_box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+
+        .card_front,
+        .card_back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+        }
+
+        .card_front {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 30px;
+        }
+
+        .card_back {
+          transform: rotateY(180deg);
+        }
+
+        .rank {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 25px;
+          height: 15px;
+          margin-top: 10px;
+          font-size: 10px;
+          border-radius: 12px;
+        }
       }
     }
 
-    .box:hover {
+    .flip_card:hover .flip_card_box {
       transform: rotateY(180deg);
-      backface-visibility: hidden;
-    }
-
-    .flip_back {
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      backface-visibility: hidden;
-      transform: rotateY(180deg);
-      border-radius: 24px;
-      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
     }
 
     img {
