@@ -42,27 +42,47 @@
   margin-top: 60px;
 }
 .Categories_categories__N2HlC .Categories_container__90eq_ .Categories_box__h5ATv {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 24px;
+  gap: 30px;
   width: 200px;
   height: 200px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
 }
 .Categories_categories__N2HlC .Categories_container__90eq_ .Categories_box__h5ATv .Categories_rank__GKs1y {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
   width: 25px;
   height: 15px;
-  font-size: 15px;
+  margin-top: 10px;
+  font-size: 10px;
   border-radius: 12px;
 }
 .Categories_categories__N2HlC .Categories_container__90eq_ .Categories_box__h5ATv:hover {
-  transform: scale(1.05);
-  transition: all ease-in-out 0.5s;
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_back__ib_zf {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: rotateY(180deg);
+  border-radius: 24px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 .Categories_categories__N2HlC .Categories_container__90eq_ h5,
 .Categories_categories__N2HlC .Categories_container__90eq_ h6 {
