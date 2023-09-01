@@ -53,7 +53,10 @@ const Categories = () => {
                 <Image src={el.img} alt={el.title} />
                 <h5>{el.title}</h5>
               </div>
-              <div className={st.card_back}>flip card</div>
+              <div className={st.card_back}>
+                <p>{el.title}</p>
+                <p>바로가기</p>
+              </div>
             </div>
           </div>
         ))}
