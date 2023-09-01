@@ -13,22 +13,57 @@
   }
 
   .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
     margin-top: 60px;
 
     .box {
-      border-radius: 24px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
       width: 200px;
       height: 200px;
-      margin-bottom: 20px;
       box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+      border-radius: 24px;
+      transition: transform 1s;
+      transform-style: preserve-3d;
+
+      .rank {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 15px;
+        margin-top: 10px;
+        font-size: 10px;
+        border-radius: 12px;
+      }
     }
 
     .box:hover {
-      transform: scale(1.05);
-      transition: all ease-in-out 0.5s;
+      transform: rotateY(180deg);
+      backface-visibility: hidden;
+    }
+
+    .flip_back {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      backface-visibility: hidden;
+      transform: rotateY(180deg);
+      border-radius: 24px;
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
     }
 
     h5,

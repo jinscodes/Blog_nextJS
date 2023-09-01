@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={sans.className}>
+    <html lang="en" className={maple.className}>
       <body className={st.body}>
         <Header />
         <main className={st.main}>{children}</main>
