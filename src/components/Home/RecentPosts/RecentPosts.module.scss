@@ -1,22 +1,15 @@
-.postsContainer {
-  width: 100%;
-  padding: 0;
-  margin-bottom: 100px;
-}
-
-.cardsContainer {
+.recent_posts {
   display: flex;
-  gap: 20px;
-}
+  flex-direction: column;
 
-.card {
-  flex-grow: 1;
-  width: 330px;
-  background-color: rgba(173, 173, 173, 0.1);
-  border-radius: 24px;
-  box-shadow: 10px 12px 14px -3px rgba(0, 0, 0, 0.1);
-}
+  .posts_container {
+    border: 1px solid black;
+    display: flex;
 
-.card:hover {
-  box-shadow: 10px 12px 14px -3px rgba(0, 0, 0, 0.2);
+    div:first-child {
+      border: 1px solid blue;
+      width: 50%;
+      height: 500px;
+    }
+  }
 }

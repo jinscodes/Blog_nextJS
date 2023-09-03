@@ -3,8 +3,8 @@ import Image from "next/image";
 
 import st from "./slug.module.scss";
 
-import AdjacentPostCard from "@/components/AdjacentPostCard/AdjacentPostCard";
-import PostContent from "@/components/PostContent/PostContent";
+import AdjacentPostCard from "@/components/Previous/AdjacentPostCard/AdjacentPostCard";
+import PostContent from "@/components/Previous/PostContent/PostContent";
 
 type Props = {
   params: {

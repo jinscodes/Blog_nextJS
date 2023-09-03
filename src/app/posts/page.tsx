@@ -1,4 +1,4 @@
-import { FilterablePosts } from "@/components/FilterablePosts/FilterablePosts";
+import { FilterablePosts } from "@/components/Previous/FilterablePosts/FilterablePosts";
 import { getAllPosts } from "@/service/posts";
 
 const Posts = async () => {

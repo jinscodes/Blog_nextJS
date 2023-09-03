@@ -1,6 +1,6 @@
-import { maple } from "../../../app/layout";
 import st from "./Categories.module.scss";
 
+import HomeTitle from "@/components/HomeTitle/HomeTitle";
 import Image, { StaticImageData } from "next/image";
 import ios from "../../../../public/images/Apple.jpeg";
 import codepen from "../../../../public/images/CodePen.webp";
@@ -35,7 +35,8 @@ const Categories = () => {
 
   return (
     <div className={st.categories}>
-      <p className={`${st.title} ${maple.className}`}>Categories</p>
+      {/* <p className={`${st.title} ${maple.className}`}>Categories</p> */}
+      <HomeTitle content="Categories" />
       <div className={st.container}>
         {categories.map((el, idx) => (
           <div className={st.flip_card}>

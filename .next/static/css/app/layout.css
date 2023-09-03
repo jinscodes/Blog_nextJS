@@ -131,31 +131,31 @@ font-display: swap;
   font-weight: 500;
   src: url("/public/fonts/MaplestoryLight.otf");
 }
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Header/header.module.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.header_header__3RG80 {
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Nav/Nav.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Nav_header__H7vAt {
   position: fixed;
   width: 250px;
   height: 100%;
   box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.1);
 }
-.header_header__3RG80 nav {
+.Nav_header__H7vAt nav {
   display: flex;
   flex-direction: column;
 }
-.header_header__3RG80 .header_profile__kf1if {
+.Nav_header__H7vAt .Nav_profile__sdGp5 {
   position: relative;
   width: 100%;
   height: 360px;
   border-bottom: 1px solid rgba(183, 169, 154, 0.3);
 }
-.header_header__3RG80 .header_profile__kf1if .header_img__emyvu {
+.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_img__RfcfG {
   height: 140px;
   background-image: url(/_next/static/media/jjanggu_profile_bg.8b920f9e.jpeg);
   background-size: contain;
 }
-.header_header__3RG80 .header_profile__kf1if .header_myself__SF5mB {
+.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_myself__2NWW6 {
   position: absolute;
   top: 90px;
   left: 75px;
@@ -165,25 +165,25 @@ font-display: swap;
   background-image: url(/_next/static/media/myself.e2bb6821.png);
   background-size: cover;
 }
-.header_header__3RG80 .header_profile__kf1if .header_name_container__bz5RF {
+.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_name_container__uZ_Yd {
   display: flex;
   flex-direction: column;
   margin-top: 70px;
   align-items: center;
 }
-.header_header__3RG80 .header_profile__kf1if .header_name_container__bz5RF span:first-child {
+.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_name_container__uZ_Yd span:first-child {
   font-size: 20px;
 }
-.header_header__3RG80 .header_profile__kf1if .header_name_container__bz5RF span:last-child {
+.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_name_container__uZ_Yd span:last-child {
   font-size: 14px;
   color: #868686;
 }
-.header_header__3RG80 .header_profile__kf1if .header_link_container__MiDfH {
+.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_link_container__8wiF8 {
   display: flex;
   justify-content: center;
   margin-top: 25px;
 }
-.header_header__3RG80 .header_profile__kf1if .header_link_container__MiDfH .header_svg_container__R45eP {
+.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_link_container__8wiF8 .Nav_svg_container__hyaU6 {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -192,19 +192,19 @@ font-display: swap;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
   border-radius: 24px;
 }
-.header_header__3RG80 .header_profile__kf1if .header_link_container__MiDfH img:hover {
+.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_link_container__8wiF8 img:hover {
   width: 25px;
   height: 25px;
 }
-.header_header__3RG80 .header_posts__G5j6n {
+.Nav_header__H7vAt .Nav_posts__HdF5d {
   margin-top: 4px;
 }
-.header_header__3RG80 .header_posts__G5j6n .header_total__FmjS9 {
+.Nav_header__H7vAt .Nav_posts__HdF5d .Nav_total__HA664 {
   margin-left: 20px;
   font-size: 0.9rem;
   font-weight: 500;
   color: #282939;
 }
-.header_header__3RG80 .header_posts__G5j6n .header_total__FmjS9 span {
+.Nav_header__H7vAt .Nav_posts__HdF5d .Nav_total__HA664 span {
   font-size: 1.2rem;
 }

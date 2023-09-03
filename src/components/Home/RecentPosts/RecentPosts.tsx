@@ -1,19 +1,16 @@
-import PostCard from "@/components/PostCard/PostCard";
-import { getRecentPosts } from "@/service/posts";
+import HomeTitle from "@/components/HomeTitle/HomeTitle";
 import st from "./RecentPosts.module.scss";
 
-const RecentPosts = async () => {
-  const posts = await getRecentPosts();
-
+const RecentPosts = () => {
   return (
-    <div className={st.postsContainer}>
-      <h4>Recent Posts</h4>
-      <div className={st.cardsContainer}>
-        {posts.map((post, idx) => (
-          <div key={idx} className={st.card}>
-            <PostCard post={post} />
-          </div>
-        ))}
+    <div className={st.recent_posts}>
+      <HomeTitle content="Recent Posts ⭐️" />
+      <div className={st.posts_container}>
+        <div>first post</div>
+        <div>
+          <div>second post</div>
+          <div>third post</div>
+        </div>
       </div>
     </div>
   );
