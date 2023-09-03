@@ -38,23 +38,27 @@ const Categories = () => {
       <p className={`${st.title} ${maple.className}`}>Categories</p>
       <div className={st.container}>
         {categories.map((el, idx) => (
-          <>
-            <div key={idx} className={st.box}>
-              <div
-                style={{
-                  color: `rgba(${el.color}, 0.8)`,
-                  backgroundColor: `rgba(${el.color}, 0.3)`,
-                }}
-                className={st.rank}
-              >
-                {idx < 5 && <>#{idx + 1}</>}
+          <div className={st.flip_card}>
+            <div key={idx} className={st.flip_card_box}>
+              <div className={st.card_front}>
+                <div
+                  style={{
+                    color: `rgba(${el.color}, 0.8)`,
+                    backgroundColor: `rgba(${el.color}, 0.3)`,
+                  }}
+                  className={st.rank}
+                >
+                  {idx < 5 && <>#{idx + 1}</>}
+                </div>
+                <Image src={el.img} alt={el.title} />
+                <h5>{el.title}</h5>
               </div>
-              <Image src={el.img} alt={el.title} />
-              <h5>{el.title}</h5>
-              {/* <h6>articles</h6> */}
-              <div className={st.flip_back}>flip card</div>
+              <div className={st.card_back}>
+                <p>{el.title}</p>
+                <p>바로가기</p>
+              </div>
             </div>
-          </>
+          </div>
         ))}
       </div>
     </div>
