@@ -1,4 +1,3 @@
-import { FilterablePosts } from "@/components/Previous/FilterablePosts/FilterablePosts";
 import { getAllPosts } from "@/service/posts";
 
 const Posts = async () => {
@@ -8,7 +7,8 @@ const Posts = async () => {
   return (
     <div style={{ paddingTop: "30px", paddingBottom: "60px" }}>
       {/* <h2>Posts</h2> */}
-      <FilterablePosts posts={posts} categories={categories} />
+      {/* <FilterablePosts posts={posts} categories={categories} /> */}
+      posts page
     </div>
   );
 };
