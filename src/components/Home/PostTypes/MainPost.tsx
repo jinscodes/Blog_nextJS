@@ -24,6 +24,20 @@ const MainPost = (posts: Prop) => {
         height="0"
         sizes="100vw"
       />
+      <section className={st.content_container}>
+        <div className={st.contents}>
+          <div className={st.category}>{category}</div>
+          <h3 className={st.title}>{title}</h3>
+          <p className={st.description}>{description}</p>
+        </div>
+        <div className={st.info}>
+          <div>
+            <div className={st.profile}></div>
+            <span>Jay_H</span>
+          </div>
+          <span className={st.date}>{date.toString()}</span>
+        </div>
+      </section>
     </Link>
   );
 };

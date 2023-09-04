@@ -4,18 +4,74 @@
 .MainPost_main_post__g97nN {
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   width: 550px;
   height: 500px;
   border-radius: 24px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
   transition: transform ease-in-out 0.2s;
   cursor: pointer;
+  text-decoration: none;
 }
 .MainPost_main_post__g97nN .MainPost_img__bcbZq {
   width: 100%;
   height: 210px;
   object-fit: cover;
+}
+.MainPost_main_post__g97nN .MainPost_content_container__nd0ts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  color: black;
+  padding: 24px;
+}
+.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_category___Vtv3 {
+  display: grid;
+  place-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  font-size: 10px;
+  background-color: rgba(0, 170, 255, 0.3);
+  color: rgba(0, 170, 255, 0.8);
+  border-radius: 24px;
+}
+.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_title__HQZ8p {
+  margin: 12px 0;
+  font-size: 32px;
+}
+.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_description__VA8We {
+  font-size: 12px;
+  color: darkgray;
+  margin-bottom: 12px;
+}
+.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_info__R9rKe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_info__R9rKe div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_info__R9rKe div .MainPost_profile__clPdh {
+  width: 50px;
+  height: 50px;
+  background-image: url(/_next/static/media/myself.e2bb6821.png);
+  background-size: cover;
+  border-radius: 50%;
+}
+.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_info__R9rKe div span {
+  font-size: 16px;
+}
+.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_info__R9rKe .MainPost_date__nhzu9 {
+  font-size: 16px;
+}
+.MainPost_main_post__g97nN div h3,
+.MainPost_main_post__g97nN div p {
+  margin: 0;
 }
 
 .MainPost_main_post__g97nN:hover {
@@ -41,46 +97,6 @@
   font-weight: 300;
   color: darkblue;
   opacity: 0.5;
-}
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/RecentPosts/RecentPosts.module.scss ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.RecentPosts_recent_posts__0uOw1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 60px;
-}
-.RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG {
-  display: flex;
-  gap: 40px;
-  width: 70%;
-}
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/HomeTitle/HomeTitle.module.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.HomeTitle_title__6iM97 {
-  margin: 60px 0;
-  font-size: 36px;
-}
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/OtherPosts.module.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.OtherPosts_other_posts__lzkBm {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  width: 550px;
-}
-.OtherPosts_other_posts__lzkBm div {
-  border: 1px solid red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 230px;
-  border-radius: 24px;
 }
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Categories/Categories.module.scss ***!
@@ -165,6 +181,13 @@
 .Categories_categories__N2HlC .Categories_container__90eq_ h6 {
   margin: 0;
 }
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/HomeTitle/HomeTitle.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.HomeTitle_title__6iM97 {
+  margin: 60px 0;
+  font-size: 36px;
+}
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Gif/Gif.module.scss ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -240,4 +263,37 @@
     transform: translateY(12px);
     opacity: 0;
   }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/RecentPosts/RecentPosts.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.RecentPosts_recent_posts__0uOw1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG {
+  display: flex;
+  gap: 40px;
+  width: 70%;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/OtherPosts.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.OtherPosts_other_posts__lzkBm {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 550px;
+}
+.OtherPosts_other_posts__lzkBm div {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 230px;
+  border-radius: 24px;
 }

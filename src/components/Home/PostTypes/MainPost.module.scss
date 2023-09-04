@@ -1,18 +1,85 @@
 .main_post {
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   width: 550px;
   height: 500px;
   border-radius: 24px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
   transition: transform ease-in-out 0.2s;
   cursor: pointer;
+  text-decoration: none;
 
   .img {
     width: 100%;
     height: 210px;
     object-fit: cover;
+  }
+
+  .content_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    color: black;
+    padding: 24px;
+
+    .category {
+      display: grid;
+      place-items: center;
+      width: fit-content;
+      padding: 5px 10px;
+      font-size: 10px;
+      background-color: rgba(0, 170, 255, 0.3);
+      color: rgba(0, 170, 255, 0.8);
+      border-radius: 24px;
+    }
+
+    .title {
+      margin: 12px 0;
+      font-size: 32px;
+    }
+
+    .description {
+      font-size: 12px;
+      color: darkgray;
+      margin-bottom: 12px;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .profile {
+          width: 50px;
+          height: 50px;
+          background-image: url("../../../../public/images/myself.png");
+          background-size: cover;
+          border-radius: 50%;
+        }
+
+        span {
+          font-size: 16px;
+        }
+      }
+
+      .date {
+        font-size: 16px;
+      }
+    }
+  }
+
+  div {
+    h3,
+    p {
+      margin: 0;
+    }
   }
 }
 
