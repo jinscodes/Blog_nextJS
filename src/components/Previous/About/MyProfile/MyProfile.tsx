@@ -5,13 +5,13 @@ import Image from "next/image";
 import { Introduction } from "@/components/Previous/About/Introduction/Introduction";
 import st from "./MyProfile.module.scss";
 
+import AboutButton from "@/components/Previous/About/AboutButton/AboutButton";
 import EmailForm from "@/components/Previous/About/EmailForm/EmailForm";
 import { useState } from "react";
-import profile from "../../../../public/images/me.png";
-import github from "../../../../public/svg/github.svg";
-import gmail from "../../../../public/svg/gmail.svg";
-import linkedin from "../../../../public/svg/linkedin.svg";
-import AboutButton from "../AboutButton/AboutButton";
+import profile from "../../../../../public/images/me.png";
+import github from "../../../../../public/svg/github.svg";
+import gmail from "../../../../../public/svg/gmail.svg";
+import linkedin from "../../../../../public/svg/linkedin.svg";
 
 const MyProfile = () => {
   const [onEmailForm, setOnEmailForm] = useState<boolean>(false);

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Dispatch, SetStateAction, useState } from "react";
 import CopyToClipboard from "react-copy-to-clipboard";
 
-import check from "../../../../public/svg/Check.svg";
+import check from "../../../../../public/svg/Check.svg";
 import st from "./AboutButton.module.scss";
 
 interface AboutButtonProps {
