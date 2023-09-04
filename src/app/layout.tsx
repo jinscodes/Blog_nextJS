@@ -1,4 +1,4 @@
-import Header from "@/components/Header/Header";
+import Header from "@/components/Nav/Nav";
 import { Open_Sans } from "next/font/google";
 
 import localFont from "next/font/local";

@@ -1,5 +1,6 @@
 import Categories from "@/components/Home/Categories/Categories";
 import Gif from "@/components/Home/Gif/Gif";
+import RecentPosts from "@/components/Home/RecentPosts/RecentPosts";
 import st from "./Home.module.scss";
 
 const Home = async () => {
@@ -7,7 +8,7 @@ const Home = async () => {
     <section className={st.section}>
       <Gif />
       <Categories />
-      <div style={{ marginTop: "60px" }}></div>
+      <RecentPosts />
       {/* <RecentPosts />
       <FeaturedPosts /> */}
     </section>
