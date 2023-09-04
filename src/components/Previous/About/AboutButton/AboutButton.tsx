@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Dispatch, SetStateAction, useState } from "react";
 import CopyToClipboard from "react-copy-to-clipboard";
 
-import check from "../../../../../public/svg/Check.svg";
+// import check from "../../../../../public/svg/Check.svg";
 import st from "./AboutButton.module.scss";
 
 interface AboutButtonProps {
@@ -70,7 +70,7 @@ const CopiedButton = (
 
   return (
     <CopyToClipboard text={copyText}>
-      <button
+      {/* <button
         className={`${st.link} ${st.email}`}
         onClick={() => {
           handleClick();
@@ -82,7 +82,7 @@ const CopiedButton = (
             <Image
               className={st.check_logo}
               src={check}
-              alt={check}
+              alt="check"
               width="0"
               height="0"
             />
@@ -100,7 +100,7 @@ const CopiedButton = (
             <span>{title}</span>
           </>
         )}
-      </button>
+      </button> */}
     </CopyToClipboard>
   );
 };
