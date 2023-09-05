@@ -1,10 +1,6 @@
 import { getPostData } from "@/service/posts";
-import Image from "next/image";
 
 import st from "./slug.module.scss";
-
-import AdjacentPostCard from "@/components/Previous/AdjacentPostCard/AdjacentPostCard";
-import PostContent from "@/components/Previous/PostContent/PostContent";
 
 type Props = {
   params: {
@@ -18,7 +14,8 @@ const PostPage = async ({ params: { slug } }: Props) => {
 
   return (
     <article className={st.article}>
-      <div className={st.img_frame}>
+      slug page
+      {/* <div className={st.img_frame}>
         <h1>{title}</h1>
         <Image
           src={`/images/posts/${path}.png`}
@@ -33,7 +30,7 @@ const PostPage = async ({ params: { slug } }: Props) => {
       <section className={st.adjacent}>
         {prev && <AdjacentPostCard post={prev} type="prev" />}
         {next && <AdjacentPostCard post={next} type="next" />}
-      </section>
+      </section> */}
     </article>
   );
 };

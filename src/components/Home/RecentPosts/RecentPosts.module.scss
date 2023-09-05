@@ -1,15 +1,13 @@
 .recent_posts {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 60px;
 
   .posts_container {
-    border: 1px solid black;
     display: flex;
-
-    div:first-child {
-      border: 1px solid blue;
-      width: 50%;
-      height: 500px;
-    }
+    gap: 40px;
+    width: 70%;
   }
 }
