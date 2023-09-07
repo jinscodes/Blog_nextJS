@@ -24,17 +24,6 @@
     color: black;
     padding: 24px;
 
-    .category {
-      display: grid;
-      place-items: center;
-      width: fit-content;
-      padding: 5px 10px;
-      font-size: 10px;
-      background-color: rgba(0, 170, 255, 0.3);
-      color: rgba(0, 170, 255, 0.8);
-      border-radius: 24px;
-    }
-
     .title {
       margin: 12px 0;
       font-size: 32px;
@@ -44,34 +33,6 @@
       font-size: 12px;
       color: darkgray;
       margin-bottom: 12px;
-    }
-
-    .info {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      div {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-
-        .profile {
-          width: 50px;
-          height: 50px;
-          background-image: url("../../../../public/images/myself.png");
-          background-size: cover;
-          border-radius: 50%;
-        }
-
-        span {
-          font-size: 16px;
-        }
-      }
-
-      .date {
-        font-size: 16px;
-      }
     }
   }
 

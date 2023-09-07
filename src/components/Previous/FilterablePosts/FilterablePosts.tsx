@@ -1,6 +1,6 @@
 "use client";
 
-import { Categories } from "@/components/Categories/Categories";
+import { Categories } from "@/components/Categories(prev)/Categories";
 import { Post } from "@/service/posts";
 import { useState } from "react";
 

@@ -1,0 +1,10 @@
+.category {
+  display: grid;
+  place-items: center;
+  width: fit-content;
+  padding: 5px 10px;
+  font-size: 10px;
+  background-color: rgba(0, 170, 255, 0.3);
+  color: rgba(0, 170, 255, 0.8);
+  border-radius: 24px;
+}

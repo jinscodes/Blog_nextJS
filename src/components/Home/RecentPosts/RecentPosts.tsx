@@ -13,8 +13,13 @@ const RecentPosts = async () => {
     <div className={st.recent_posts}>
       <HomeTitle content="Recent Posts ⭐️" />
       <div className={st.posts_container}>
-        <MainPost posts={posts[0]} />
-        <OtherPosts />
+        <MainPost post={posts[0]} />
+        <div className={st.other_posts_container}>
+          {posts.map((post, idx) => (
+            <>{idx !== 0 && <OtherPosts post={post} />}</>
+          ))}
+        </div>
+        {/* <OtherPosts post={posts} /> */}
       </div>
     </div>
   );
