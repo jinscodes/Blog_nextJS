@@ -12,6 +12,32 @@
   color: rgba(0, 170, 255, 0.8);
   border-radius: 24px;
 }
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/ProfileAndId/ProfileAndId.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.ProfileAndId_info__9z_AU {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ProfileAndId_info__9z_AU div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.ProfileAndId_info__9z_AU div .ProfileAndId_profile__Rv8AT {
+  width: 50px;
+  height: 50px;
+  background-image: url(/_next/static/media/myself.e2bb6821.png);
+  background-size: cover;
+  border-radius: 50%;
+}
+.ProfileAndId_info__9z_AU div span {
+  font-size: 16px;
+}
+.ProfileAndId_info__9z_AU .ProfileAndId_date__u68_N {
+  font-size: 16px;
+}
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/MainPost.module.scss ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -49,29 +75,6 @@
   color: darkgray;
   margin-bottom: 12px;
 }
-.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_info__R9rKe {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_info__R9rKe div {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_info__R9rKe div .MainPost_profile__clPdh {
-  width: 50px;
-  height: 50px;
-  background-image: url(/_next/static/media/myself.e2bb6821.png);
-  background-size: cover;
-  border-radius: 50%;
-}
-.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_info__R9rKe div span {
-  font-size: 16px;
-}
-.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_info__R9rKe .MainPost_date__nhzu9 {
-  font-size: 16px;
-}
 .MainPost_main_post__g97nN div h3,
 .MainPost_main_post__g97nN div p {
   margin: 0;
@@ -98,13 +101,24 @@
   transition: transform ease-in-out 0.2s;
 }
 .OtherPosts_other_posts__lzkBm .OtherPosts_img__w17gE {
-  width: 300px;
+  width: 250px;
   height: 100%;
   object-fit: cover;
 }
 .OtherPosts_other_posts__lzkBm .OtherPosts_content_container__Yq0lx {
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
   width: 100%;
+  padding: 0 15px;
+}
+.OtherPosts_other_posts__lzkBm .OtherPosts_content_container__Yq0lx .OtherPosts_pill_and_title__yTCg9 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.OtherPosts_other_posts__lzkBm .OtherPosts_content_container__Yq0lx .OtherPosts_profileId_container__uCyL4 {
+  padding-top: 25px;
 }
 
 .OtherPosts_other_posts__lzkBm:hover {

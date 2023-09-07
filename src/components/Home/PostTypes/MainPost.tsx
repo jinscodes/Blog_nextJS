@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import CategoryPill from "@/components/CategoryPill/CategoryPill";
+import ProfileAndId from "@/components/ProfileAndId/ProfileAndId";
 import { Post } from "@/service/posts";
 import st from "./MainPost.module.scss";
 
@@ -26,18 +27,11 @@ const MainPost = (post: Prop) => {
       />
       <section className={st.content_container}>
         <div className={st.contents}>
-          {/* <div className={st.category}>{category}</div> */}
           <CategoryPill category={category} />
           <h3 className={st.title}>{title}</h3>
           <p className={st.description}>{description}</p>
         </div>
-        <div className={st.info}>
-          <div>
-            <div className={st.profile}></div>
-            <span>Jay_H</span>
-          </div>
-          <span className={st.date}>{date.toString()}</span>
-        </div>
+        <ProfileAndId date={date} />
       </section>
     </Link>
   );

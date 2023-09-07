@@ -12,14 +12,27 @@
   transition: transform ease-in-out 0.2s;
 
   .img {
-    width: 300px;
+    width: 250px;
     height: 100%;
     object-fit: cover;
   }
 
   .content_container {
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     width: 100%;
+    padding: 0 15px;
+
+    .pill_and_title {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .profileId_container {
+      padding-top: 25px;
+    }
   }
 }
 
