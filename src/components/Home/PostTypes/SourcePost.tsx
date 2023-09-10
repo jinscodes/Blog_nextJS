@@ -7,19 +7,20 @@ interface Prop {
 }
 
 const SourcePost = ({ post }: Prop) => {
-  const { title, description, path } = post;
+  const { title, description, path, category } = post;
 
   return (
     <div
-      style={{ backgroundImage: `url('/post/${path}')` }}
+      style={{ backgroundImage: `url('/images/posts/${path}.png')` }}
       className={st.opensource_card}
     >
-      <img src={`post/`} alt="" />
-      <div className={st.content_container}>
-        <CategoryPill category="git" />
-        <div>
-          <div className={st.title}>{title}</div>
-          <p className={st.description}>{description}</p>
+      <div className={st.gradient_bg}>
+        <div className={st.content_container}>
+          <CategoryPill category={category} />
+          <div>
+            <div className={st.title}>{title}</div>
+            <p className={st.description}>{description}</p>
+          </div>
         </div>
       </div>
     </div>
