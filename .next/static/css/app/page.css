@@ -38,47 +38,6 @@
 .ProfileAndId_info__9z_AU .ProfileAndId_date__u68_N {
   font-size: 16px;
 }
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/OtherPosts.module.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.OtherPosts_other_posts__lzkBm {
-  overflow: hidden;
-  display: flex;
-  width: 550px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 24px;
-  text-decoration: none;
-  height: 230px;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-  color: black;
-  transition: transform ease-in-out 0.2s;
-}
-.OtherPosts_other_posts__lzkBm .OtherPosts_img__w17gE {
-  width: 250px;
-  height: 100%;
-  object-fit: cover;
-}
-.OtherPosts_other_posts__lzkBm .OtherPosts_content_container__Yq0lx {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  width: 100%;
-  padding: 0 15px;
-}
-.OtherPosts_other_posts__lzkBm .OtherPosts_content_container__Yq0lx .OtherPosts_pill_and_title__yTCg9 {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.OtherPosts_other_posts__lzkBm .OtherPosts_content_container__Yq0lx .OtherPosts_profileId_container__uCyL4 {
-  margin-top: 50px;
-}
-
-.OtherPosts_other_posts__lzkBm:hover {
-  transform: scale(1.005);
-  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
-}
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/MainPost.module.scss ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -124,6 +83,47 @@
 .MainPost_main_post__g97nN:hover {
   transform: scale(1.005);
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.3);
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/OtherPosts.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.OtherPosts_other_posts__lzkBm {
+  overflow: hidden;
+  display: flex;
+  width: 550px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  text-decoration: none;
+  height: 230px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  color: black;
+  transition: transform ease-in-out 0.2s;
+}
+.OtherPosts_other_posts__lzkBm .OtherPosts_img__w17gE {
+  width: 250px;
+  height: 100%;
+  object-fit: cover;
+}
+.OtherPosts_other_posts__lzkBm .OtherPosts_content_container__Yq0lx {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  padding: 0 15px;
+}
+.OtherPosts_other_posts__lzkBm .OtherPosts_content_container__Yq0lx .OtherPosts_pill_and_title__yTCg9 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.OtherPosts_other_posts__lzkBm .OtherPosts_content_container__Yq0lx .OtherPosts_profileId_container__uCyL4 {
+  margin-top: 50px;
+}
+
+.OtherPosts_other_posts__lzkBm:hover {
+  transform: scale(1.005);
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
 }
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/Home/Home.module.scss ***!
@@ -342,33 +342,34 @@
   align-items: center;
   margin-bottom: 60px;
 }
-.OpenSources_open_sources__gRaP6 .OpenSources_container__kaELX {
+.OpenSources_open_sources__gRaP6 .OpenSources_source_container__XZVOd {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 70%;
   gap: 30px;
 }
-.OpenSources_open_sources__gRaP6 .OpenSources_opensource_card__ZTAsm {
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/SourcePost.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.SourcePost_opensource_card__MQrXu {
   width: 520px;
   height: 300px;
   padding: 0 24px;
   border-radius: 24px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
 }
-.OpenSources_open_sources__gRaP6 .OpenSources_opensource_card__ZTAsm:hover {
-  transform: scale(1.005);
-  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
-}
-.OpenSources_open_sources__gRaP6 .OpenSources_content_container__lnEjI {
+.SourcePost_opensource_card__MQrXu .SourcePost_content_container__IetxT {
   display: flex;
   flex-direction: column;
   gap: 150px;
 }
-.OpenSources_open_sources__gRaP6 .OpenSources_content_container__lnEjI .OpenSources_title__QceH6 {
+.SourcePost_opensource_card__MQrXu .SourcePost_content_container__IetxT .SourcePost_title__syL3Q {
   font-size: 36px;
 }
-.OpenSources_open_sources__gRaP6 .OpenSources_content_container__lnEjI .OpenSources_description__V1VKX {
+.SourcePost_opensource_card__MQrXu .SourcePost_content_container__IetxT .SourcePost_description__gQyVp {
   font-size: 12px;
   color: darkgray;
+}
+
+.SourcePost_opensource_card__MQrXu:hover {
+  transform: scale(1.005);
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
 }

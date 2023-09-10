@@ -27,7 +27,7 @@
     "title": "Node 기초 정리",
     "description": "기본 적인 Node 사용법에 대해 전부 정리!",
     "date": "2022-08-21",
-    "category": "backend",
+    "category": "open source",
     "path": "node-basic",
     "featured": false
   },
@@ -43,7 +43,7 @@
     "title": "Node 프로 팁!",
     "description": "노드를 프로처럼 사용하기 위한 모든 팁들을 정리!",
     "date": "2023-04-10",
-    "category": "backend",
+    "category": "open source",
     "path": "node-pro-tips",
     "featured": true
   },
