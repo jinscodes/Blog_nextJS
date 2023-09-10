@@ -7,7 +7,6 @@ import st from "./RecentPosts.module.scss";
 
 const RecentPosts = async () => {
   const posts = await getRecentPosts();
-  console.log(posts);
 
   return (
     <section className={st.recent_posts}>
@@ -19,7 +18,6 @@ const RecentPosts = async () => {
             <>{idx !== 0 && <OtherPosts post={post} />}</>
           ))}
         </div>
-        {/* <OtherPosts post={posts} /> */}
       </div>
     </section>
   );

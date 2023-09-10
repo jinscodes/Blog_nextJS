@@ -1,0 +1,30 @@
+import CategoryPill from "@/components/CategoryPill/CategoryPill";
+import { Post } from "@/service/posts";
+import st from "./SourcePost.module.scss";
+
+interface Prop {
+  post: Post;
+}
+
+const SourcePost = ({ post }: Prop) => {
+  const { title, description, path, category } = post;
+
+  return (
+    <div
+      style={{ backgroundImage: `url('/images/posts/${path}.png')` }}
+      className={st.opensource_card}
+    >
+      <div className={st.gradient_bg}>
+        <div className={st.content_container}>
+          <CategoryPill category={category} />
+          <div>
+            <div className={st.title}>{title}</div>
+            <p className={st.description}>{description}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default SourcePost;

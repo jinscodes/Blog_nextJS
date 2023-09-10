@@ -47,3 +47,8 @@ export const getPostData = async (fileName: string): Promise<PostData> => {
   const content = await readFile(filePath, "utf-8");
   return { ...post, content, next, prev };
 };
+
+export const getOpenSourcePosts = async (): Promise<Post[]> => {
+  return getAllPosts() //
+    .then((posts) => posts.filter((post) => post.category === "open source"));
+};
