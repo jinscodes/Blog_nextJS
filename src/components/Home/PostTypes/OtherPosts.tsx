@@ -32,7 +32,7 @@ const OtherPosts = ({ post }: Prop) => {
           <div>{title}</div>
         </div>
         <div className={st.profileId_container}>
-          <ProfileAndId date={date} />
+          <ProfileAndId date={date} size="sm" />
         </div>
       </section>
     </Link>

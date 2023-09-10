@@ -10,7 +10,7 @@ const RecentPosts = async () => {
   console.log(posts);
 
   return (
-    <div className={st.recent_posts}>
+    <section className={st.recent_posts}>
       <HomeTitle content="Recent Posts ⭐️" />
       <div className={st.posts_container}>
         <MainPost post={posts[0]} />
@@ -21,7 +21,7 @@ const RecentPosts = async () => {
         </div>
         {/* <OtherPosts post={posts} /> */}
       </div>
-    </div>
+    </section>
   );
 };
 
