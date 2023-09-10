@@ -34,7 +34,7 @@ const Categories = () => {
   ];
 
   return (
-    <div className={st.categories}>
+    <section className={st.categories}>
       {/* <p className={`${st.title} ${maple.className}`}>Categories</p> */}
       <HomeTitle content="Categories" />
       <div className={st.container}>
@@ -62,7 +62,7 @@ const Categories = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
