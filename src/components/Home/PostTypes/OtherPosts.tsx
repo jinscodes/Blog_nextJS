@@ -29,7 +29,8 @@ const OtherPosts = ({ post }: Prop) => {
       <section className={st.content_container}>
         <div className={st.pill_and_title}>
           <CategoryPill category={category} />
-          <div>{title}</div>
+          <div className={st.title}>{title}</div>
+          <div className={st.description}>{description}</div>
         </div>
         <div className={st.profileId_container}>
           <ProfileAndId date={date} size="sm" />
