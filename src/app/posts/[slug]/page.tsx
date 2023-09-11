@@ -1,5 +1,4 @@
 import { getPostData } from "@/service/posts";
-
 import st from "./slug.module.scss";
 
 type Props = {

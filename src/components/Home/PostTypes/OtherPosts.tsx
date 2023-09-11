@@ -13,7 +13,6 @@ interface Prop {
 }
 
 const OtherPosts = ({ post }: Prop) => {
-  console.log(post);
   const { title, description, date, category, path } = post;
 
   return (
