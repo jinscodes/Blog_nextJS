@@ -1,7 +1,8 @@
 .other_posts {
   overflow: hidden;
   display: flex;
-  width: 550px;
+  width: 100%;
+  max-width: 500px;
   justify-content: center;
   align-items: center;
   border-radius: 24px;
@@ -12,7 +13,8 @@
   transition: transform ease-in-out 0.2s;
 
   .img {
-    width: 250px;
+    width: 50%;
+    max-width: 250px;
     height: 100%;
     object-fit: cover;
   }
@@ -20,14 +22,23 @@
   .content_container {
     display: flex;
     flex-direction: column;
-    gap: 50px;
     width: 100%;
     padding: 0 15px;
 
     .pill_and_title {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 10px;
+
+      .title {
+        font-size: 24px;
+      }
+
+      .description {
+        color: darkgray;
+        font-size: 12px;
+        height: 50px;
+      }
     }
 
     .profileId_container {

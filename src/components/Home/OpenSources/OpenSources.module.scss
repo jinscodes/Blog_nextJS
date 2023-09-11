@@ -7,6 +7,9 @@
 
   .source_container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
     gap: 30px;
   }
 }

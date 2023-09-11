@@ -1,7 +1,10 @@
 .opensource_card {
   overflow: hidden;
   position: relative;
-  width: 520px;
+  // width: 520px;
+  // height: 300px;
+  max-width: 520px;
+  width: 40%;
   height: 300px;
   padding: 0 24px;
   border-radius: 24px;
