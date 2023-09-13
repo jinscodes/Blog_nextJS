@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import NavCategory from "@/components/NavCategory/NavCategory";
 import house from "../../../public/svg/House.svg";
 import manifyGlass from "../../../public/svg/MagnifyGlass.svg";
 import person from "../../../public/svg/Person.svg";
@@ -28,11 +29,12 @@ const Nav = () => {
           </div>
         </div>
       </section>
-      <section className={st.posts}>
+      <NavCategory />
+      {/* <section className={st.posts}>
         <p className={st.total}>
           TOTAL <span>1,234</span>
         </p>
-      </section>
+      </section> */}
     </header>
   );
 };
