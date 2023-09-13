@@ -1,0 +1,12 @@
+@use "../../app/base.scss";
+
+.nav_category {
+  margin-top: 15px;
+
+  .total {
+    margin-left: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: base.$header-total-color;
+  }
+}

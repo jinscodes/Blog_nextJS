@@ -19,9 +19,11 @@ const ProfileAndId = ({ date, size }: Props) => {
             size && { width: convertSize[size], height: convertSize[size] }
           }
         ></div>
-        <span>Jay_H</span>
+        <span className={`${size === "sm" && st.sm_font}`}>Jay_H</span>
       </div>
-      <span className={st.date}>{date.toString()}</span>
+      <span className={`${size === "sm" ? st.sm_date : st.date}`}>
+        {date.toString()}
+      </span>
     </div>
   );
 };
