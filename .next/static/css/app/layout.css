@@ -243,14 +243,9 @@ font-display: swap;
   align-items: center;
   gap: 20px;
 }
-.NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_open_category_btn__wdDf0 svg {
-  transition: transform ease-in-out 0.3s;
-}
-.NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_open_category_btn__wdDf0 svg:hover {
-  transform: rotateY(90deg);
-}
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_open_category_btn__wdDf0:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  transform: rotateY(90deg);
 }
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH svg {
   width: 25px;
