@@ -160,89 +160,9 @@
         "async": false
       }
     },
-    "(app-client)/./public/svg/Apple.svg": {
+    "(app-client)/./src/components/NavCategory/NavCategory.tsx": {
       "*": {
-        "id": "(sc_client)/./public/svg/Apple.svg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/svg/Caret.svg": {
-      "*": {
-        "id": "(sc_client)/./public/svg/Caret.svg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/svg/Codepen.svg": {
-      "*": {
-        "id": "(sc_client)/./public/svg/Codepen.svg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/svg/Flutter.svg": {
-      "*": {
-        "id": "(sc_client)/./public/svg/Flutter.svg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/svg/Git.svg": {
-      "*": {
-        "id": "(sc_client)/./public/svg/Git.svg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/svg/Javascript.svg": {
-      "*": {
-        "id": "(sc_client)/./public/svg/Javascript.svg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/svg/Mysql.svg": {
-      "*": {
-        "id": "(sc_client)/./public/svg/Mysql.svg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/svg/Nextjs.svg": {
-      "*": {
-        "id": "(sc_client)/./public/svg/Nextjs.svg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/svg/Reactjs.svg": {
-      "*": {
-        "id": "(sc_client)/./public/svg/Reactjs.svg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/svg/Sass.svg": {
-      "*": {
-        "id": "(sc_client)/./public/svg/Sass.svg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./public/svg/Typescript.svg": {
-      "*": {
-        "id": "(sc_client)/./public/svg/Typescript.svg",
+        "id": "(sc_client)/./src/components/NavCategory/NavCategory.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -523,88 +443,8 @@
       ],
       "async": false
     },
-    "/Users/hanjinsung/Desktop/blog_nextJS/public/svg/Apple.svg": {
-      "id": "(app-client)/./public/svg/Apple.svg",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/public/svg/Caret.svg": {
-      "id": "(app-client)/./public/svg/Caret.svg",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/public/svg/Codepen.svg": {
-      "id": "(app-client)/./public/svg/Codepen.svg",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/public/svg/Flutter.svg": {
-      "id": "(app-client)/./public/svg/Flutter.svg",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/public/svg/Git.svg": {
-      "id": "(app-client)/./public/svg/Git.svg",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/public/svg/Javascript.svg": {
-      "id": "(app-client)/./public/svg/Javascript.svg",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/public/svg/Mysql.svg": {
-      "id": "(app-client)/./public/svg/Mysql.svg",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/public/svg/Nextjs.svg": {
-      "id": "(app-client)/./public/svg/Nextjs.svg",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/public/svg/Reactjs.svg": {
-      "id": "(app-client)/./public/svg/Reactjs.svg",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/public/svg/Sass.svg": {
-      "id": "(app-client)/./public/svg/Sass.svg",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/public/svg/Typescript.svg": {
-      "id": "(app-client)/./public/svg/Typescript.svg",
+    "/Users/hanjinsung/Desktop/blog_nextJS/src/components/NavCategory/NavCategory.tsx": {
+      "id": "(app-client)/./src/components/NavCategory/NavCategory.tsx",
       "name": "*",
       "chunks": [
         "app/layout:static/chunks/app/layout.js"
@@ -757,14 +597,6 @@
     },
     "/Users/hanjinsung/Desktop/blog_nextJS/src/components/Footer/Footer.module.scss": {
       "id": "(app-client)/./src/components/Footer/Footer.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/src/components/NavCategory/NavCategory.module.scss": {
-      "id": "(app-client)/./src/components/NavCategory/NavCategory.module.scss",
       "name": "*",
       "chunks": [
         "app/layout:static/chunks/app/layout.js"

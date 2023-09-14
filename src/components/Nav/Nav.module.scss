@@ -1,6 +1,7 @@
 @use "../../app/base.scss";
 
 .header {
+  overflow: scroll;
   position: fixed;
   width: 250px;
   height: 100%;

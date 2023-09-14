@@ -1,10 +1,11 @@
 @use "../../app/base.scss";
 
 .nav_category {
+  overflow: scroll;
   margin-top: 15px;
 
   .total {
-    margin-left: 20px;
+    margin: 15px 20px 25px;
     font-size: 0.9rem;
     font-weight: 500;
     color: base.$header-total-color;
@@ -12,7 +13,12 @@
 
   .btn_container {
     width: calc(100% - 24px);
-    margin: 0 12px;
+    margin: 0 12px 60px;
+
+    .title {
+      font-size: 18px;
+      margin: 10px 0;
+    }
 
     .open_category_btn {
       position: relative;
@@ -25,18 +31,25 @@
       background-color: transparent;
       border: none;
       border-radius: 12px;
-      transition: transform ease-in-out 0.3s;
+      transition: background-color ease-in-out 0.3s;
 
       div {
         display: flex;
         align-items: center;
         gap: 20px;
       }
+
+      .caret {
+        transition: transform ease-in-out 0.3s;
+      }
     }
 
     .open_category_btn:hover {
       background-color: rgba($color: #000000, $alpha: 0.1);
-      transform: rotateY(90deg);
+
+      .caret {
+        transform: rotate(90deg);
+      }
     }
 
     svg {
