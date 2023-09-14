@@ -221,6 +221,36 @@ font-display: swap;
   font-weight: 500;
   color: #282939;
 }
+.NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH {
+  width: calc(100% - 24px);
+  margin: 0 12px;
+}
+.NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_open_category_btn__wdDf0 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  padding-left: 16px;
+  background-color: transparent;
+  border: none;
+  border-radius: 12px;
+  transition: transform ease-in-out 0.3s;
+}
+.NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_open_category_btn__wdDf0 div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_open_category_btn__wdDf0:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: rotateY(90deg);
+}
+.NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH svg {
+  width: 25px;
+  height: 25px;
+}
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Footer/Footer.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
