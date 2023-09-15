@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import Apple from "../../../public/svg/Apple.svg";
 import Caret from "../../../public/svg/Caret.svg";
 import Codepen from "../../../public/svg/Codepen.svg";
@@ -18,25 +19,58 @@ interface DatasFromJson {
   class: string;
   menu: {
     title: string;
-    svg: string;
+    svg: any;
   }[];
 }
 
 const NavCategory = () => {
+  const [isOpenMenu, setIsOpenMenu] = useState<number | undefined>();
   const svgList = [
-    Javascript,
-    Sass,
-    Codepen,
-    Reactjs,
-    Nextjs,
-    Typescript,
-    Git,
-    Mysql,
-    Flutter,
-    Apple,
+    {
+      title: "Javascript",
+      src: Javascript,
+    },
+    {
+      title: "Sass",
+      src: Sass,
+    },
+    {
+      title: "Codepen",
+      src: Codepen,
+    },
+    {
+      title: "Reactjs",
+      src: Reactjs,
+    },
+    {
+      title: "Nextjs",
+      src: Nextjs,
+    },
+    {
+      title: "Typescript",
+      src: Typescript,
+    },
+    {
+      title: "Git",
+      src: Git,
+    },
+    {
+      title: "Mysql",
+      src: Mysql,
+    },
+    {
+      title: "Flutter",
+      src: Flutter,
+    },
+    {
+      title: "Apple",
+      src: Apple,
+    },
   ];
+
   const datasFromJson: DatasFromJson[] = require("./NavCategory.json");
-  console.log(datasFromJson);
+
+  console.log(svgList.find((obj) => obj.title == "Javascript" && obj.src));
 
   return (
     <section className={st.nav_category}>
@@ -44,14 +78,27 @@ const NavCategory = () => {
         TOTAL <span>1,234</span>
       </p>
       <div className={st.btn_container}>
-        {datasFromJson.map((el) => (
+        {datasFromJson.map((el, idx) => (
           <>
-            <p className={st.title}>{el.class}</p>
-            {el.menu.map((menu) => (
+            <div
+              className={st.title}
+              onClick={() => setIsOpenMenu((prev) => (idx === prev ? idx : 0))}
+            >
+              <p>{el.class}</p>
+              <Image
+                className={st.caret}
+                src={Caret}
+                alt="Caret"
+                width={20}
+                height={20}
+              />
+            </div>
+            {el.menu.map((menu, idx) => (
               <button className={st.open_category_btn}>
                 <div>
                   <Image
-                    src={Javascript}
+                    // src={svgList.find((obj) => obj.title === menu.svg)}
+                    src={""}
                     alt={menu.svg}
                     width={25}
                     height={25}
