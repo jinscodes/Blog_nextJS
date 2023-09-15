@@ -1,4 +1,4 @@
-import Header from "@/components/Nav/Nav";
+import Nav from "@/components/Nav/Nav";
 import { Open_Sans } from "next/font/google";
 
 import Footer from "@/components/Footer/Footer";
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={maple.className}>
       <body className={st.body}>
-        <Header />
+        <Nav />
         <main className={st.main}>
           {children}
           <Footer />

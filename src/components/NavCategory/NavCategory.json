@@ -1,14 +1,10 @@
 [
   {
-    "class": "FE",
+    "class": "Web",
     "menu": [
       {
-        "title": "Java Script",
+        "title": "JavaScript",
         "svg": "Javascript"
-      },
-      {
-        "title": "HTML & CSS",
-        "svg": "Sass"
       },
       {
         "title": "React Js",
@@ -17,6 +13,23 @@
       {
         "title": "Next Js",
         "svg": "Nextjs"
+      },
+      {
+        "title": "TypeScript",
+        "svg": "Typescript"
+      }
+    ]
+  },
+  {
+    "class": "Style Sheet",
+    "menu": [
+      {
+        "title": "CSS",
+        "svg": "Css"
+      },
+      {
+        "title": "Sass",
+        "svg": "Sass"
       }
     ]
   },
@@ -24,7 +37,39 @@
     "class": "Open Source",
     "menu": [
       {
-        "title": "Open Source"
+        "title": "Open Source",
+        "svg": "Codepen"
+      }
+    ]
+  },
+  {
+    "class": "App",
+    "menu": [
+      {
+        "title": "Flutter",
+        "svg": "Flutter"
+      },
+      {
+        "title": "IOS",
+        "svg": "Apple"
+      }
+    ]
+  },
+  {
+    "class": "DB",
+    "menu": [
+      {
+        "title": "MySQL",
+        "svg": "Mysql"
+      }
+    ]
+  },
+  {
+    "class": "DevOps",
+    "menu": [
+      {
+        "title": "GIT",
+        "svg": "Git"
       }
     ]
   }

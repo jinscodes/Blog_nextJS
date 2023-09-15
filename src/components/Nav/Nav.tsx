@@ -30,11 +30,6 @@ const Nav = () => {
         </div>
       </section>
       <NavCategory />
-      {/* <section className={st.posts}>
-        <p className={st.total}>
-          TOTAL <span>1,234</span>
-        </p>
-      </section> */}
     </header>
   );
 };
