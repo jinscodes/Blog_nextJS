@@ -23,54 +23,30 @@ interface DatasFromJson {
   }[];
 }
 
+interface SvgList {
+  [key: string]: string | HTMLImageElement;
+}
+
 const NavCategory = () => {
   const [isOpenMenu, setIsOpenMenu] = useState<number | undefined>();
-  const svgList = [
-    {
-      title: "Javascript",
-      src: Javascript,
-    },
-    {
-      title: "Sass",
-      src: Sass,
-    },
-    {
-      title: "Codepen",
-      src: Codepen,
-    },
-    {
-      title: "Reactjs",
-      src: Reactjs,
-    },
-    {
-      title: "Nextjs",
-      src: Nextjs,
-    },
-    {
-      title: "Typescript",
-      src: Typescript,
-    },
-    {
-      title: "Git",
-      src: Git,
-    },
-    {
-      title: "Mysql",
-      src: Mysql,
-    },
-    {
-      title: "Flutter",
-      src: Flutter,
-    },
-    {
-      title: "Apple",
-      src: Apple,
-    },
+  const svgList: SvgList[] = [
+    { Javascript: Javascript },
+    { Reactjs: Reactjs },
+    { Nextjs: Nextjs },
+    { Typescript: Typescript },
+    // {Css: Css},
+    { Scss: Sass },
+    { Codepen: Codepen },
+    { Flutter: Flutter },
+    { Apple: Apple },
+    { Mysql: Mysql },
+    { Git: Git },
   ];
 
-  const datasFromJson: DatasFromJson[] = require("./NavCategory.json");
+  console.log(Object.values(Reactjs)[0]);
+  console.log(Reactjs);
 
-  console.log(svgList.find((obj) => obj.title == "Javascript" && obj.src));
+  const datasFromJson: DatasFromJson[] = require("./NavCategory.json");
 
   return (
     <section className={st.nav_category}>
@@ -97,13 +73,15 @@ const NavCategory = () => {
               <button className={st.open_category_btn}>
                 <div>
                   <Image
-                    // src={svgList.find((obj) => obj.title === menu.svg)}
-                    src={""}
+                    // src={Object.values(menu.svg)[0] || ""}
+                    src={Object.values(menu.svg)[0]}
                     alt={menu.svg}
                     width={25}
                     height={25}
                   />
-                  <span>{menu.title}</span>
+                  <span>
+                    {menu.title} {menu.svg}
+                  </span>
                 </div>
                 <Image
                   className={st.caret}
