@@ -2,9 +2,11 @@
 
 import Image from "next/image";
 import { useState } from "react";
+
 import Apple from "../../../public/svg/Apple.svg";
 import Caret from "../../../public/svg/Caret.svg";
 import Codepen from "../../../public/svg/Codepen.svg";
+import Css from "../../../public/svg/Css.svg";
 import Flutter from "../../../public/svg/Flutter.svg";
 import Git from "../../../public/svg/Git.svg";
 import Javascript from "../../../public/svg/Javascript.svg";
@@ -13,6 +15,7 @@ import Nextjs from "../../../public/svg/Nextjs.svg";
 import Reactjs from "../../../public/svg/Reactjs.svg";
 import Sass from "../../../public/svg/Sass.svg";
 import Typescript from "../../../public/svg/Typescript.svg";
+
 import st from "./NavCategory.module.scss";
 
 interface DatasFromJson {
@@ -24,27 +27,27 @@ interface DatasFromJson {
 }
 
 interface SvgList {
-  [key: string]: string | HTMLImageElement;
+  [key: string]: string;
 }
 
 const NavCategory = () => {
   const [isOpenMenu, setIsOpenMenu] = useState<number | undefined>();
-  const svgList: SvgList[] = [
-    { Javascript: Javascript },
-    { Reactjs: Reactjs },
-    { Nextjs: Nextjs },
-    { Typescript: Typescript },
-    // {Css: Css},
-    { Scss: Sass },
-    { Codepen: Codepen },
-    { Flutter: Flutter },
-    { Apple: Apple },
-    { Mysql: Mysql },
-    { Git: Git },
-  ];
+  const svgList: SvgList = {
+    Javascript: Javascript,
+    Reactjs: Reactjs,
+    Nextjs: Nextjs,
+    Typescript: Typescript,
+    Css: Css,
+    Sass: Sass,
+    Codepen: Codepen,
+    Flutter: Flutter,
+    Apple: Apple,
+    Mysql: Mysql,
+    Git: Git,
+  };
 
-  console.log(Object.values(Reactjs)[0]);
-  console.log(Reactjs);
+  // console.log(Object.values(svgList[Reactjs])[0]);
+  console.log(svgList["Javascript"]);
 
   const datasFromJson: DatasFromJson[] = require("./NavCategory.json");
 
@@ -73,8 +76,8 @@ const NavCategory = () => {
               <button className={st.open_category_btn}>
                 <div>
                   <Image
-                    // src={Object.values(menu.svg)[0] || ""}
-                    src={Object.values(menu.svg)[0]}
+                    src={svgList[menu.svg]}
+                    // src={""}
                     alt={menu.svg}
                     width={25}
                     height={25}
