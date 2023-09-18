@@ -30,6 +30,10 @@
       .caret {
         transition: transform ease-in-out 0.3s;
       }
+
+      .changed_caret {
+        transform: rotate(90deg);
+      }
     }
 
     .title:hover {
@@ -37,6 +41,21 @@
 
       .caret {
         transform: rotate(90deg);
+      }
+    }
+
+    .menus_animation {
+      animation: menu_animation_keyframe 0.4s ease-in-out;
+      overflow: hidden;
+    }
+
+    @keyframes menu_animation_keyframe {
+      0% {
+        height: 0;
+      }
+
+      100% {
+        height: 200px;
       }
     }
 

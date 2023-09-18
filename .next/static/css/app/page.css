@@ -30,11 +30,26 @@
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_title__s7Mxz .NavCategory_caret__tZcHT {
   transition: transform ease-in-out 0.3s;
 }
+.NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_title__s7Mxz .NavCategory_changed_caret__jYzb6 {
+  transform: rotate(90deg);
+}
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_title__s7Mxz:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_title__s7Mxz:hover .NavCategory_caret__tZcHT {
   transform: rotate(90deg);
+}
+.NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_menus_animation__71BiE {
+  animation: NavCategory_menu_animation_keyframe__6t8bO 0.4s ease-in-out;
+  overflow: hidden;
+}
+@keyframes NavCategory_menu_animation_keyframe__6t8bO {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 200px;
+  }
 }
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_open_category_btn__wdDf0 {
   position: relative;
