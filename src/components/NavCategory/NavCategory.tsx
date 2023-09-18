@@ -69,7 +69,9 @@ const NavCategory = () => {
             >
               <p>{el.class}</p>
               <Image
-                className={st.caret}
+                className={`${st.caret} ${
+                  el.class === isOpenMenu && st.changed_caret
+                }`}
                 src={Caret}
                 alt="Caret"
                 width={20}

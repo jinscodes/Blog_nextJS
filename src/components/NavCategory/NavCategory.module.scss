@@ -30,6 +30,10 @@
       .caret {
         transition: transform ease-in-out 0.3s;
       }
+
+      .changed_caret {
+        transform: rotate(90deg);
+      }
     }
 
     .title:hover {

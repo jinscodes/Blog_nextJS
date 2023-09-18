@@ -30,6 +30,9 @@
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_title__s7Mxz .NavCategory_caret__tZcHT {
   transition: transform ease-in-out 0.3s;
 }
+.NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_title__s7Mxz .NavCategory_changed_caret__jYzb6 {
+  transform: rotate(90deg);
+}
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_title__s7Mxz:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
