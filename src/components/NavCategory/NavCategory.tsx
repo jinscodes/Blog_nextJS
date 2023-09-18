@@ -45,7 +45,6 @@ const NavCategory = () => {
     Mysql: Mysql,
     Git: Git,
   };
-
   console.log(svgList["Javascript"]);
 
   const datasFromJson: DatasFromJson[] = require("./NavCategory.json");
