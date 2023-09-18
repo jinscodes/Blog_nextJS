@@ -31,7 +31,7 @@ interface SvgList {
 }
 
 const NavCategory = () => {
-  const [isOpenMenu, setIsOpenMenu] = useState<number | undefined>();
+  const [isOpenMenu, setIsOpenMenu] = useState<string>();
   const svgList: SvgList = {
     Javascript: Javascript,
     Reactjs: Reactjs,
@@ -46,7 +46,6 @@ const NavCategory = () => {
     Git: Git,
   };
 
-  // console.log(Object.values(svgList[Reactjs])[0]);
   console.log(svgList["Javascript"]);
 
   const datasFromJson: DatasFromJson[] = require("./NavCategory.json");
@@ -57,11 +56,16 @@ const NavCategory = () => {
         TOTAL <span>1,234</span>
       </p>
       <div className={st.btn_container}>
-        {datasFromJson.map((el, idx) => (
+        {datasFromJson.map((el) => (
           <>
+            {/* title */}
             <div
               className={st.title}
-              onClick={() => setIsOpenMenu((prev) => (idx === prev ? idx : 0))}
+              onClick={() =>
+                setIsOpenMenu((prev) =>
+                  prev === el.class ? undefined : el.class
+                )
+              }
             >
               <p>{el.class}</p>
               <Image
@@ -72,29 +76,28 @@ const NavCategory = () => {
                 height={20}
               />
             </div>
-            {el.menu.map((menu, idx) => (
-              <button className={st.open_category_btn}>
-                <div>
+            {/* sub-title */}
+            {el.class === isOpenMenu &&
+              el.menu.map((menu) => (
+                <button className={st.open_category_btn}>
+                  <div>
+                    <Image
+                      src={svgList[menu.svg]}
+                      alt={menu.svg}
+                      width={25}
+                      height={25}
+                    />
+                    <span>{menu.title}</span>
+                  </div>
                   <Image
-                    src={svgList[menu.svg]}
-                    // src={""}
-                    alt={menu.svg}
-                    width={25}
-                    height={25}
+                    className={st.caret}
+                    src={Caret}
+                    alt="Caret"
+                    width={20}
+                    height={20}
                   />
-                  <span>
-                    {menu.title} {menu.svg}
-                  </span>
-                </div>
-                <Image
-                  className={st.caret}
-                  src={Caret}
-                  alt="Caret"
-                  width={20}
-                  height={20}
-                />
-              </button>
-            ))}
+                </button>
+              ))}
           </>
         ))}
       </div>
