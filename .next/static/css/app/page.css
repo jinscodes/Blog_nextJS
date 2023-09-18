@@ -39,6 +39,19 @@
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_title__s7Mxz:hover .NavCategory_caret__tZcHT {
   transform: rotate(90deg);
 }
+.NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_menus_animation__71BiE {
+  animation: NavCategory_menu_animation_keyframe__6t8bO 0.4s ease-in-out;
+  overflow: hidden;
+}
+@keyframes NavCategory_menu_animation_keyframe__6t8bO {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_open_category_btn__wdDf0 {
   position: relative;
   display: flex;
@@ -116,6 +129,53 @@
 .ProfileAndId_info__9z_AU .ProfileAndId_sm_date__S_xgC {
   font-size: 14px;
 }
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/MainPost.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.MainPost_main_post__g97nN {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 550px;
+  height: 500px;
+  border-radius: 24px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  transition: transform ease-in-out 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.MainPost_main_post__g97nN .MainPost_img__bcbZq {
+  width: 550px;
+  height: 210px;
+  object-fit: cover;
+}
+.MainPost_main_post__g97nN .MainPost_content_container__nd0ts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  color: black;
+  padding: 24px;
+}
+.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_title__HQZ8p {
+  margin: 12px 0;
+  font-size: 32px;
+}
+.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_description__VA8We {
+  font-size: 12px;
+  color: darkgray;
+  margin-bottom: 12px;
+}
+.MainPost_main_post__g97nN div h3,
+.MainPost_main_post__g97nN div p {
+  margin: 0;
+}
+
+.MainPost_main_post__g97nN:hover {
+  transform: scale(1.005);
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.3);
+}
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/OtherPosts.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -166,53 +226,6 @@
   transform: scale(1.005);
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
 }
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/MainPost.module.scss ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.MainPost_main_post__g97nN {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  max-width: 550px;
-  height: 500px;
-  border-radius: 24px;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-  transition: transform ease-in-out 0.2s;
-  cursor: pointer;
-  text-decoration: none;
-}
-.MainPost_main_post__g97nN .MainPost_img__bcbZq {
-  width: 550px;
-  height: 210px;
-  object-fit: cover;
-}
-.MainPost_main_post__g97nN .MainPost_content_container__nd0ts {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  color: black;
-  padding: 24px;
-}
-.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_title__HQZ8p {
-  margin: 12px 0;
-  font-size: 32px;
-}
-.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_description__VA8We {
-  font-size: 12px;
-  color: darkgray;
-  margin-bottom: 12px;
-}
-.MainPost_main_post__g97nN div h3,
-.MainPost_main_post__g97nN div p {
-  margin: 0;
-}
-
-.MainPost_main_post__g97nN:hover {
-  transform: scale(1.005);
-  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.3);
-}
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/Home/Home.module.scss ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -232,102 +245,6 @@
   font-weight: 300;
   color: darkblue;
   opacity: 0.5;
-}
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Categories/Categories.module.scss ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.Categories_categories__N2HlC {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 70%;
-}
-.Categories_categories__N2HlC .Categories_title__AVxO5 {
-  margin: 0;
-  font-size: 36px;
-}
-.Categories_categories__N2HlC .Categories_container__90eq_ {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 200px);
-  grid-gap: 30px;
-  gap: 30px;
-  justify-content: center;
-  width: 100%;
-}
-.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle {
-  width: 200px;
-  height: 200px;
-  border-radius: 24px;
-  perspective: 1000px;
-}
-.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_card_front__EjykI,
-.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_card_back__vIEoy {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 24px;
-  cursor: pointer;
-}
-.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_card_front__EjykI {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_card_back__vIEoy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.7);
-  transform: rotateY(180deg);
-}
-.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_rank__GKs1y {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25px;
-  height: 15px;
-  margin-top: 10px;
-  font-size: 10px;
-  border-radius: 12px;
-}
-.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle:hover .Categories_flip_card_box__kNAUY {
-  transform: rotateY(180deg);
-}
-.Categories_categories__N2HlC .Categories_container__90eq_ img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
-.Categories_categories__N2HlC .Categories_container__90eq_ h5,
-.Categories_categories__N2HlC .Categories_container__90eq_ h6 {
-  margin: 0;
-}
-
-@media only screen and (max-width: 1515px) {
-  .Categories_categories__N2HlC {
-    width: 100%;
-  }
-}
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/HomeTitle/HomeTitle.module.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.HomeTitle_title__6iM97 {
-  margin: 60px 0;
-  font-size: 36px;
 }
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Gif/Gif.module.scss ***!
@@ -422,6 +339,13 @@
   width: 70%;
   gap: 30px;
 }
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/HomeTitle/HomeTitle.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.HomeTitle_title__6iM97 {
+  margin: 60px 0;
+  font-size: 36px;
+}
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/SourcePost.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -462,6 +386,95 @@
 .SourcePost_opensource_card__MQrXu:hover {
   transform: scale(1.005);
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Categories/Categories.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Categories_categories__N2HlC {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+.Categories_categories__N2HlC .Categories_title__AVxO5 {
+  margin: 0;
+  font-size: 36px;
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-gap: 30px;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle {
+  width: 200px;
+  height: 200px;
+  border-radius: 24px;
+  perspective: 1000px;
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_card_front__EjykI,
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_card_back__vIEoy {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  cursor: pointer;
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_card_front__EjykI {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_card_back__vIEoy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: rotateY(180deg);
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_rank__GKs1y {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 15px;
+  margin-top: 10px;
+  font-size: 10px;
+  border-radius: 12px;
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle:hover .Categories_flip_card_box__kNAUY {
+  transform: rotateY(180deg);
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ h5,
+.Categories_categories__N2HlC .Categories_container__90eq_ h6 {
+  margin: 0;
+}
+
+@media only screen and (max-width: 1515px) {
+  .Categories_categories__N2HlC {
+    width: 100%;
+  }
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/RecentPosts/RecentPosts.module.scss ***!
