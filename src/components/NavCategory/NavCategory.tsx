@@ -84,7 +84,7 @@ const NavCategory = () => {
                   ? { maxHeight: `${50 * el.menu.length}px` }
                   : { maxHeight: "0" }
               }
-              className={`${el.class === isOpenMenu && st.menus_animation}`}
+              className={st.menus_animation}
             >
               {el.class === isOpenMenu &&
                 el.menu.map((menu) => (
