@@ -25,7 +25,7 @@ const Nav = () => {
             <Link href={"/about"}>
               <Image src={Person} alt="person" />
             </Link>
-            <Link href={"/post"}>
+            <Link href={"/posts"}>
               <Image src={Category} alt="Category" />
             </Link>
           </div>
