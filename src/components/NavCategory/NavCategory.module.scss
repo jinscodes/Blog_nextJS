@@ -46,7 +46,7 @@
       }
     }
 
-    .menus_animation {
+    .menus_animation_open {
       overflow: hidden;
       transition: max-height 0.3s ease-in-out;
     }
@@ -62,7 +62,6 @@
       background-color: transparent;
       border: none;
       border-radius: 12px;
-      transition: background-color ease-in-out 0.3s;
 
       div {
         display: flex;

@@ -82,9 +82,9 @@ const NavCategory = () => {
               style={
                 el.class === isOpenMenu
                   ? { maxHeight: `${50 * el.menu.length}px` }
-                  : { maxHeight: "0" }
+                  : { maxHeight: "0px" }
               }
-              className={st.menus_animation}
+              className={st.menus_animation_open}
             >
               {el.class === isOpenMenu &&
                 el.menu.map((menu) => (

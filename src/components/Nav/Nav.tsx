@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 import NavCategory from "@/components/NavCategory/NavCategory";
-import house from "../../../public/svg/House.svg";
-import manifyGlass from "../../../public/svg/MagnifyGlass.svg";
-import person from "../../../public/svg/Person.svg";
+import Category from "../../../public/svg/Category.svg";
+import House from "../../../public/svg/House.svg";
+import Person from "../../../public/svg/Person.svg";
 import st from "./Nav.module.scss";
 
 const Nav = () => {
@@ -20,12 +20,14 @@ const Nav = () => {
         <div className={st.link_container}>
           <div className={st.svg_container}>
             <Link href={"/"}>
-              <Image src={house} alt="house" />
+              <Image src={House} alt="house" />
             </Link>
             <Link href={"/about"}>
-              <Image src={person} alt="person" />
+              <Image src={Person} alt="person" />
             </Link>
-            <Image src={manifyGlass} alt="manifyGlass" />
+            <Link href={"/post"}>
+              <Image src={Category} alt="Category" />
+            </Link>
           </div>
         </div>
       </section>
