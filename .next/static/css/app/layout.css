@@ -12,8 +12,10 @@
   color: #282939;
 }
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH {
+  z-index: 1;
   width: calc(100% - 24px);
   margin: 0 12px 60px;
+  background-color: rgb(240, 247, 252);
 }
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_title__s7Mxz {
   display: flex;
@@ -39,17 +41,9 @@
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_title__s7Mxz:hover .NavCategory_caret__tZcHT {
   transform: rotate(90deg);
 }
-.NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_menus_animation__71BiE {
-  animation: NavCategory_menu_animation_keyframe__6t8bO 0.4s ease-in-out;
+.NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_menus_animation_open__JJ4hf {
   overflow: hidden;
-}
-@keyframes NavCategory_menu_animation_keyframe__6t8bO {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 200px;
-  }
+  transition: max-height 0.3s ease-in-out;
 }
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_open_category_btn__wdDf0 {
   position: relative;
@@ -62,7 +56,6 @@
   background-color: transparent;
   border: none;
   border-radius: 12px;
-  transition: background-color ease-in-out 0.3s;
 }
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_open_category_btn__wdDf0 div {
   display: flex;
@@ -216,6 +209,15 @@ font-display: swap;
   font-weight: 500;
   src: url("/public/fonts/MaplestoryLight.otf");
 }
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Footer/Footer.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Footer_footer__Q5T55 {
+  width: 100%;
+  height: 300px;
+  color: white;
+  background-color: rgba(87, 115, 99, 0.6);
+}
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Nav/Nav.module.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -277,6 +279,7 @@ font-display: swap;
   height: 55px;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
   border-radius: 24px;
+  padding-top: 5px;
 }
 .Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_link_container__8wiF8 img:hover {
   width: 25px;
@@ -293,13 +296,4 @@ font-display: swap;
 }
 .Nav_header__H7vAt .Nav_posts__HdF5d .Nav_total__HA664 span {
   font-size: 1.2rem;
-}
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Footer/Footer.module.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.Footer_footer__Q5T55 {
-  width: 100%;
-  height: 300px;
-  color: white;
-  background-color: rgba(87, 115, 99, 0.6);
 }

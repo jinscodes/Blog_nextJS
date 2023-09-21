@@ -78,7 +78,14 @@ const NavCategory = () => {
               />
             </div>
             {/* sub-title */}
-            <div className={`${el.class === isOpenMenu && st.menus_animation}`}>
+            <div
+              style={
+                el.class === isOpenMenu
+                  ? { maxHeight: `${50 * el.menu.length}px` }
+                  : { maxHeight: "0px" }
+              }
+              className={st.menus_animation_open}
+            >
               {el.class === isOpenMenu &&
                 el.menu.map((menu) => (
                   <button className={st.open_category_btn}>

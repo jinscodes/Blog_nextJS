@@ -12,8 +12,10 @@
   color: #282939;
 }
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH {
+  z-index: 1;
   width: calc(100% - 24px);
   margin: 0 12px 60px;
+  background-color: rgb(240, 247, 252);
 }
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_title__s7Mxz {
   display: flex;
@@ -39,17 +41,9 @@
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_title__s7Mxz:hover .NavCategory_caret__tZcHT {
   transform: rotate(90deg);
 }
-.NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_menus_animation__71BiE {
-  animation: NavCategory_menu_animation_keyframe__6t8bO 0.4s ease-in-out;
+.NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_menus_animation_open__JJ4hf {
   overflow: hidden;
-}
-@keyframes NavCategory_menu_animation_keyframe__6t8bO {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 200px;
-  }
+  transition: max-height 0.3s ease-in-out;
 }
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_open_category_btn__wdDf0 {
   position: relative;
@@ -62,7 +56,6 @@
   background-color: transparent;
   border: none;
   border-radius: 12px;
-  transition: background-color ease-in-out 0.3s;
 }
 .NavCategory_nav_category__yLiJD .NavCategory_btn_container__Y_ReH .NavCategory_open_category_btn__wdDf0 div {
   display: flex;
@@ -418,6 +411,27 @@
   }
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/RecentPosts/RecentPosts.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.RecentPosts_recent_posts__0uOw1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 70%;
+}
+.RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG .RecentPosts_other_posts_container__Ana5_ {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/OpenSources/OpenSources.module.scss ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .OpenSources_open_sources__gRaP6 {
@@ -474,25 +488,4 @@
 .SourcePost_opensource_card__MQrXu:hover {
   transform: scale(1.005);
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
-}
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/RecentPosts/RecentPosts.module.scss ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.RecentPosts_recent_posts__0uOw1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 60px;
-}
-.RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  width: 70%;
-}
-.RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG .RecentPosts_other_posts_container__Ana5_ {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
 }
