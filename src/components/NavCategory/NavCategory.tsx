@@ -16,6 +16,7 @@ import Reactjs from "../../../public/svg/Reactjs.svg";
 import Sass from "../../../public/svg/Sass.svg";
 import Typescript from "../../../public/svg/Typescript.svg";
 
+import Link from "next/link";
 import st from "./NavCategory.module.scss";
 
 interface DatasFromJson {
@@ -82,13 +83,16 @@ const NavCategory = () => {
               style={
                 el.class === isOpenMenu
                   ? { maxHeight: `${50 * el.menu.length}px` }
-                  : { maxHeight: "0px" }
+                  : { maxHeight: "0" }
               }
               className={st.menus_animation_open}
             >
               {el.class === isOpenMenu &&
                 el.menu.map((menu) => (
-                  <button className={st.open_category_btn}>
+                  <Link
+                    href={`/posts/${menu.title}`}
+                    className={st.open_category_btn}
+                  >
                     <div>
                       <Image
                         src={svgList[menu.svg]}
@@ -105,7 +109,7 @@ const NavCategory = () => {
                       width={20}
                       height={20}
                     />
-                  </button>
+                  </Link>
                 ))}
             </div>
           </>

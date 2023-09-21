@@ -48,7 +48,7 @@
 
     .menus_animation_open {
       overflow: hidden;
-      transition: max-height 0.3s ease-in-out;
+      transition: max-height 0.2s ease-in-out;
     }
 
     .open_category_btn {
@@ -56,9 +56,12 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 100%;
+      width: calc(100% - 16px);
       height: 50px;
-      padding-left: 16px;
+      padding-left: 12px;
+      font-size: 15px;
+      text-decoration: none;
+      color: black;
       background-color: transparent;
       border: none;
       border-radius: 12px;
@@ -66,10 +69,11 @@
       div {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 18px;
       }
 
       .caret {
+        margin-right: 10px;
         transition: transform ease-in-out 0.3s;
       }
     }
