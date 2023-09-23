@@ -7,11 +7,11 @@
         "svg": "Javascript"
       },
       {
-        "title": "React Js",
+        "title": "ReactJs",
         "svg": "Reactjs"
       },
       {
-        "title": "Next Js",
+        "title": "NextJs",
         "svg": "Nextjs"
       },
       {
@@ -21,7 +21,7 @@
     ]
   },
   {
-    "class": "Style Sheet",
+    "class": "StyleSheet",
     "menu": [
       {
         "title": "CSS",
@@ -34,7 +34,7 @@
     ]
   },
   {
-    "class": "Open Source",
+    "class": "OpenSource",
     "menu": [
       {
         "title": "Open Source",
