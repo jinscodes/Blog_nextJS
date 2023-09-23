@@ -1,4 +1,3 @@
-import { getPostData } from "@/service/posts";
 import st from "./slug.module.scss";
 
 type Props = {
@@ -8,12 +7,12 @@ type Props = {
 };
 
 const PostPage = async ({ params: { slug } }: Props) => {
-  const post = await getPostData(slug);
-  const { title, path, next, prev } = post;
+  // const post = await getPostData(slug);
+  // const { title, path, next, prev } = post;
 
   return (
     <article className={st.article}>
-      slug page
+      {slug} page
       {/* <div className={st.img_frame}>
         <h1>{title}</h1>
         <Image

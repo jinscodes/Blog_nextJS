@@ -1,10 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import { useState } from "react";
-
 import Apple from "../../../public/svg/Apple.svg";
-import Caret from "../../../public/svg/Caret.svg";
 import Codepen from "../../../public/svg/Codepen.svg";
 import Css from "../../../public/svg/Css.svg";
 import Flutter from "../../../public/svg/Flutter.svg";
@@ -16,10 +12,12 @@ import Reactjs from "../../../public/svg/Reactjs.svg";
 import Sass from "../../../public/svg/Sass.svg";
 import Typescript from "../../../public/svg/Typescript.svg";
 
-import Link from "next/link";
+import NavClass from "@/components/NavCategory/NavClass";
+import NavTotal from "@/components/NavCategory/NavTotal";
+import localFont from "next/font/local";
 import st from "./NavCategory.module.scss";
 
-interface DatasFromJson {
+export interface DatasFromJson {
   class: string;
   menu: {
     title: string;
@@ -27,12 +25,16 @@ interface DatasFromJson {
   }[];
 }
 
-interface SvgList {
+export interface SvgList {
   [key: string]: string;
 }
 
+export const maple = localFont({
+  src: "../../../public/fonts/MaplestoryLight.otf",
+});
+
 const NavCategory = () => {
-  const [isOpenMenu, setIsOpenMenu] = useState<string>();
+  // const [isOpenMenu, setIsOpenMenu] = useState<string>();
   const svgList: SvgList = {
     Javascript: Javascript,
     Reactjs: Reactjs,
@@ -46,19 +48,16 @@ const NavCategory = () => {
     Mysql: Mysql,
     Git: Git,
   };
-  console.log(svgList["Javascript"]);
 
   const datasFromJson: DatasFromJson[] = require("./NavCategory.json");
 
   return (
-    <section className={st.nav_category}>
-      <p className={st.total}>
-        TOTAL <span>1,234</span>
-      </p>
-      <div className={st.btn_container}>
+    <section className={`${maple.className} ${st.nav_category}`}>
+      <NavTotal total={99} />
+      <NavClass datas={datasFromJson} />
+      {/* <div className={st.btn_container}>
         {datasFromJson.map((el) => (
           <>
-            {/* title */}
             <div
               className={st.title}
               onClick={() =>
@@ -78,12 +77,15 @@ const NavCategory = () => {
                 height={20}
               />
             </div>
-            {/* sub-title */}
             <div
               style={
                 el.class === isOpenMenu
-                  ? { maxHeight: `${50 * el.menu.length}px` }
-                  : { maxHeight: "0" }
+                  ? {
+                      maxHeight: `${50 * el.menu.length}px`,
+                    }
+                  : {
+                      maxHeight: "0",
+                    }
               }
               className={st.menus_animation_open}
             >
@@ -114,7 +116,7 @@ const NavCategory = () => {
             </div>
           </>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };

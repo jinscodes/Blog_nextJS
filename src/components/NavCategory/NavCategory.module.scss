@@ -3,52 +3,45 @@
 .nav_category {
   overflow: scroll;
   margin-top: 15px;
-
-  .total {
-    margin: 15px 20px 25px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: base.$header-total-color;
-  }
+  font-family: "Open Sans";
 
   .btn_container {
-    z-index: 1;
-    width: calc(100% - 24px);
-    margin: 0 12px 60px;
-    background-color: rgb(240, 247, 252);
+    // z-index: 1;
+    // width: calc(100% - 24px);
+    // margin: 0 12px 60px;
+    // background-color: rgb(240, 247, 252);
 
-    .title {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 42px;
-      font-size: 18px;
-      margin: 10px 0;
-      padding: 0 12px;
-      border-bottom: 1px solid base.$light-gray;
-      border-radius: 8px;
-      transition: background-color ease-in-out 0.3s;
+    // .title {
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: space-between;
+    //   height: 42px;
+    //   font-size: 16px;
+    //   margin: 10px 0;
+    //   padding: 0 12px;
+    //   border-radius: 8px;
+    //   transition: background-color ease-in-out 0.3s;
 
-      .caret {
-        transition: transform ease-in-out 0.3s;
-      }
+    //   .caret {
+    //     transition: transform ease-in-out 0.3s;
+    //   }
 
-      .changed_caret {
-        transform: rotate(90deg);
-      }
-    }
+    //   .changed_caret {
+    //     transform: rotate(90deg);
+    //   }
+    // }
 
-    .title:hover {
-      background-color: rgba($color: #000000, $alpha: 0.1);
+    // .title:hover {
+    //   background-color: rgba($color: #000000, $alpha: 0.1);
 
-      .caret {
-        transform: rotate(90deg);
-      }
-    }
+    //   .caret {
+    //     transform: rotate(90deg);
+    //   }
+    // }
 
     .menus_animation_open {
       overflow: hidden;
-      transition: max-height 0.2s ease-in-out;
+      transition: max-height ease-in-out 0.3s;
     }
 
     .open_category_btn {
@@ -59,7 +52,7 @@
       width: calc(100% - 16px);
       height: 50px;
       padding-left: 12px;
-      font-size: 15px;
+      font-size: 12px;
       text-decoration: none;
       color: black;
       background-color: transparent;
