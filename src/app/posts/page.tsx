@@ -11,12 +11,12 @@ const Posts = async () => {
       <div className={st.background}>
         <div className={st.background_cover}>
           <div className={st.title}>
-            <span>Practice, </span>
-            <span>Practice, </span>
+            <span>Do, </span>
+            {/* <span>Practice, </span> */}
             <span>And Practice</span>
-            <p className={st.to_be}>
-              To Be A <div className={st.programmer}>"PROGRAMMER"</div>
-            </p>
+            <div className={st.to_be}>
+              To Be A <p className={st.programmer}>"PROGRAMMER"</p>
+            </div>
           </div>
         </div>
       </div>

@@ -37,7 +37,9 @@
 .PostPage_post_page__bxM5j .PostPage_background__9If69 .PostPage_background_cover___iFvS .PostPage_title__B4m2u .PostPage_to_be__Z0ut4 {
   display: flex;
   gap: 15px;
+  margin-top: 30px;
 }
 .PostPage_post_page__bxM5j .PostPage_background__9If69 .PostPage_background_cover___iFvS .PostPage_title__B4m2u .PostPage_to_be__Z0ut4 .PostPage_programmer__chyR0 {
   color: orange;
+  margin: 0;
 }
