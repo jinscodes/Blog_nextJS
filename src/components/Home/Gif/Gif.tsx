@@ -20,7 +20,6 @@ const Gif = () => {
               <Image src={closeBracket} alt="Close_bracket" />
             </h1>
             <p>LOREM IPSUM DOLOR SIT AMET</p>
-            {/* img */}
             <div className={st.arrow_container}>
               <Image src={downArrow} alt="arrow_down" />
             </div>

@@ -1,0 +1,44 @@
+.post_page {
+  width: 100%;
+  padding-bottom: 60px;
+
+  .background {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../../public/images/backgrounds/Reactjs.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+
+    .background_cover {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #000000, $alpha: 0.6);
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+
+        .to_be {
+          display: flex;
+          gap: 15px;
+          .programmer {
+            color: orange;
+          }
+        }
+      }
+    }
+  }
+}
