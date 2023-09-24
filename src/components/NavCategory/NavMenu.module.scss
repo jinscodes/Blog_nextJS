@@ -1,0 +1,44 @@
+.nav_menu {
+  overflow: hidden;
+  transition: max-height ease-in-out 0.3s;
+
+  .open_category_btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 16px);
+    height: 50px;
+    padding-left: 12px;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    border: none;
+    border-radius: 12px;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .caret {
+      margin-right: 10px;
+      transition: transform ease-in-out 0.3s;
+    }
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+.open_category_btn:hover {
+  background-color: rgba($color: #000000, $alpha: 0.1);
+
+  .caret {
+    transform: translateX(4px);
+  }
+}

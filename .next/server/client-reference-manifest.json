@@ -579,30 +579,6 @@
       ],
       "async": false
     },
-    "/Users/hanjinsung/Desktop/blog_nextJS/src/app/layout.module.scss": {
-      "id": "(app-client)/./src/app/layout.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/src/components/Footer/Footer.module.scss": {
-      "id": "(app-client)/./src/components/Footer/Footer.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/src/components/Nav/Nav.module.scss": {
-      "id": "(app-client)/./src/components/Nav/Nav.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
     "/Users/hanjinsung/Desktop/blog_nextJS/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Open_Sans\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"sans\"}": {
       "id": "(app-client)/./node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Open_Sans\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"sans\"}",
       "name": "*",
@@ -618,18 +594,42 @@
         "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
+    },
+    "/Users/hanjinsung/Desktop/blog_nextJS/src/app/layout.module.scss": {
+      "id": "(app-client)/./src/app/layout.module.scss",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hanjinsung/Desktop/blog_nextJS/src/components/Nav/Nav.module.scss": {
+      "id": "(app-client)/./src/components/Nav/Nav.module.scss",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hanjinsung/Desktop/blog_nextJS/src/components/Footer/Footer.module.scss": {
+      "id": "(app-client)/./src/components/Footer/Footer.module.scss",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
     }
   },
   "entryCSSFiles": {
     "/Users/hanjinsung/Desktop/blog_nextJS/src/app/page": [
       "static/css/app/page.css"
     ],
+    "/Users/hanjinsung/Desktop/blog_nextJS/src/app/Home/[slug]/page": [],
     "/Users/hanjinsung/Desktop/blog_nextJS/src/app/posts/[slug]/page": [
       "static/css/app/posts/[slug]/page.css"
     ],
     "/Users/hanjinsung/Desktop/blog_nextJS/src/app/layout": [
       "static/css/app/layout.css"
-    ],
-    "/Users/hanjinsung/Desktop/blog_nextJS/src/app/Home/[slug]/page": []
+    ]
   }
 }
