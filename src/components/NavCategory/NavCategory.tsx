@@ -15,6 +15,7 @@ import Typescript from "../../../public/svg/Typescript.svg";
 import NavClass from "@/components/NavCategory/NavClass";
 import NavTotal from "@/components/NavCategory/NavTotal";
 import localFont from "next/font/local";
+import { useState } from "react";
 import st from "./NavCategory.module.scss";
 
 export interface DatasFromJson {
@@ -34,7 +35,7 @@ export const maple = localFont({
 });
 
 const NavCategory = () => {
-  // const [isOpenMenu, setIsOpenMenu] = useState<string>();
+  const [isOpenMenu, setIsOpenMenu] = useState<string>();
   const svgList: SvgList = {
     Javascript: Javascript,
     Reactjs: Reactjs,
@@ -54,7 +55,11 @@ const NavCategory = () => {
   return (
     <section className={`${maple.className} ${st.nav_category}`}>
       <NavTotal total={99} />
-      <NavClass datas={datasFromJson} />
+      <NavClass
+        datas={datasFromJson}
+        isMenu={isOpenMenu || ""}
+        setIsMenu={setIsOpenMenu}
+      />
       {/* <div className={st.btn_container}>
         {datasFromJson.map((el) => (
           <>
