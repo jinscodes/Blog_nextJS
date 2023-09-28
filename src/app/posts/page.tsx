@@ -1,10 +1,12 @@
 import { getAllPosts } from "@/service/posts";
 
+import AllPost from "@/components/Post/AllPost/AllPost";
 import st from "./PostPage.module.scss";
 
 const Posts = async () => {
   const posts = await getAllPosts();
   const categories = [...new Set(posts.map((post) => post.category))];
+  console.log(categories);
 
   return (
     <div className={st.post_page}>
@@ -12,7 +14,6 @@ const Posts = async () => {
         <div className={st.background_cover}>
           <div className={st.title}>
             <span>Do, </span>
-            {/* <span>Practice, </span> */}
             <span>And Practice</span>
             <div className={st.to_be}>
               To Be A <p className={st.programmer}>"PROGRAMMER"</p>
@@ -20,9 +21,8 @@ const Posts = async () => {
           </div>
         </div>
       </div>
-      {/* <h2>Posts</h2> */}
       {/* <FilterablePosts posts={posts} categories={categories} /> */}
-      posts page
+      <AllPost />
     </div>
   );
 };

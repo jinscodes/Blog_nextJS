@@ -60,68 +60,6 @@ const NavCategory = () => {
         isMenu={isOpenMenu || ""}
         setIsMenu={setIsOpenMenu}
       />
-      {/* <div className={st.btn_container}>
-        {datasFromJson.map((el) => (
-          <>
-            <div
-              className={st.title}
-              onClick={() =>
-                setIsOpenMenu((prev) =>
-                  prev === el.class ? undefined : el.class
-                )
-              }
-            >
-              <p>{el.class}</p>
-              <Image
-                className={`${st.caret} ${
-                  el.class === isOpenMenu && st.changed_caret
-                }`}
-                src={Caret}
-                alt="Caret"
-                width={20}
-                height={20}
-              />
-            </div>
-            <div
-              style={
-                el.class === isOpenMenu
-                  ? {
-                      maxHeight: `${50 * el.menu.length}px`,
-                    }
-                  : {
-                      maxHeight: "0",
-                    }
-              }
-              className={st.menus_animation_open}
-            >
-              {el.class === isOpenMenu &&
-                el.menu.map((menu) => (
-                  <Link
-                    href={`/posts/${menu.title}`}
-                    className={st.open_category_btn}
-                  >
-                    <div>
-                      <Image
-                        src={svgList[menu.svg]}
-                        alt={menu.svg}
-                        width={25}
-                        height={25}
-                      />
-                      <span>{menu.title}</span>
-                    </div>
-                    <Image
-                      className={st.caret}
-                      src={Caret}
-                      alt="Caret"
-                      width={20}
-                      height={20}
-                    />
-                  </Link>
-                ))}
-            </div>
-          </>
-        ))}
-      </div> */}
     </section>
   );
 };
