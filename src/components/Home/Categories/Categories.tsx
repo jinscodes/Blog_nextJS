@@ -1,7 +1,8 @@
-import st from "./Categories.module.scss";
+import Image, { StaticImageData } from "next/image";
 
 import HomeTitle from "@/components/HomeTitle/HomeTitle";
-import Image, { StaticImageData } from "next/image";
+import st from "./Categories.module.scss";
+
 import ios from "../../../../public/images/Apple.jpeg";
 import codepen from "../../../../public/images/CodePen.webp";
 import css from "../../../../public/images/Css.png";
@@ -35,7 +36,6 @@ const Categories = () => {
 
   return (
     <section className={st.categories}>
-      {/* <p className={`${st.title} ${maple.className}`}>Categories</p> */}
       <HomeTitle content="Categories" />
       <div className={st.container}>
         {categories.map((el, idx) => (

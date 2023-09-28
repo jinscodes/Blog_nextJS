@@ -5,8 +5,7 @@ import st from "./PostPage.module.scss";
 
 const Posts = async () => {
   const posts = await getAllPosts();
-  const categories = [...new Set(posts.map((post) => post.category))];
-  console.log(categories);
+  // const categories = [...new Set(posts.map((post) => post.category))];
 
   return (
     <div className={st.post_page}>
@@ -21,8 +20,7 @@ const Posts = async () => {
           </div>
         </div>
       </div>
-      {/* <FilterablePosts posts={posts} categories={categories} /> */}
-      <AllPost />
+      <AllPost posts={posts} />
     </div>
   );
 };
