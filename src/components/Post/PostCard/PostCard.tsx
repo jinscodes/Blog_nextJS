@@ -1,3 +1,5 @@
+import CategoryPill from "@/components/CategoryPill/CategoryPill";
+import ProfileAndId from "@/components/ProfileAndId/ProfileAndId";
 import { Post } from "@/service/posts";
 import st from "./PostCard.module.scss";
 
@@ -11,11 +13,11 @@ const PostCard = ({ post }: Prop) => {
   return (
     <div className={st.post_card}>
       <img src={`/images/posts/${path}.png`} alt={path} className={st.img} />
-      <div>
-        <p>{title}</p>
-        <p>{description}</p>
-        <div>{category}</div>
-        <div>{String(date)}</div>
+      <div className={st.contents_container}>
+        <CategoryPill category={category} />
+        <p className={st.title}>{title}</p>
+        <p className={st.description}>{description}</p>
+        <ProfileAndId date={date} size="sm" />
       </div>
     </div>
   );
