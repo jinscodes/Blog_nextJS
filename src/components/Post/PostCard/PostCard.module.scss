@@ -1,8 +1,8 @@
 .post_card {
+  overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   width: 350px;
   height: 470px;
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
@@ -12,6 +12,28 @@
   .img {
     width: 350px;
     height: 220px;
+  }
+
+  .contents_container {
+    border: 1px solid black;
+    width: 100%;
+    margin: 0 24px;
+
+    .category {
+      margin-top: 16px;
+      margin-left: 24px;
+      font-size: 16px;
+    }
+
+    .title {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .description {
+      margin: 0;
+      font-size: 16px;
+    }
   }
 }
 
