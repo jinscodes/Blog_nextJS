@@ -11,16 +11,16 @@
     "title": "자바스크립트 기초 문법",
     "description": "기본 문법부터 사용하는 실전까지 최종정리",
     "date": "2022-05-08",
-    "category": "javascript",
-    "path": "javascript-basic",
+    "category": "JavaScript",
+    "path": "JavaScript-basic",
     "featured": false
   },
   {
     "title": "자바스크립트 10가지 프로팁!",
     "description": "프로처럼 자바스크립트 사용할 수 있는 10가지 팁",
     "date": "2022-06-15",
-    "category": "javascript",
-    "path": "javascript-10-tips",
+    "category": "JavaScript",
+    "path": "JavaScript-10-tips",
     "featured": true
   },
   {

@@ -25,7 +25,7 @@ export const Waves = () => {
                 xlinkHref="#gentle-wave"
                 x="48"
                 y="0"
-                fill="rgba(255,255,255,0.7"
+                fill="rgba(255,255,255,0.7)"
               />
               <use
                 xlinkHref="#gentle-wave"
@@ -39,7 +39,12 @@ export const Waves = () => {
                 y="5"
                 fill="rgba(255,255,255,0.3)"
               />
-              <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" />
+              <use
+                xlinkHref="#gentle-wave"
+                x="48"
+                y="7"
+                fill="rgba(108, 180, 231, 0.1)"
+              />
             </g>
           </svg>
         </div>
