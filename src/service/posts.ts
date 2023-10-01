@@ -24,10 +24,10 @@ export const getAllPosts = async (): Promise<Post[]> => {
     .then((posts) => posts.sort((a, b) => (a.date > b.date ? -1 : 1)));
 };
 
-export const getFeaturedPosts = async (): Promise<Post[]> => {
-  return getAllPosts() //
-    .then((posts) => posts.filter((post) => post.featured));
-};
+// export const getFeaturedPosts = async (): Promise<Post[]> => {
+//   return getAllPosts() //
+//     .then((posts) => posts.filter((post) => post.featured));
+// };
 
 export const getRecentPosts = async (): Promise<Post[]> => {
   return getAllPosts() //
@@ -53,4 +53,9 @@ export const getOpenSourcePosts = async (): Promise<Post[]> => {
     .then((posts) =>
       posts.filter((post) => post.category === "open source").slice(0, 4)
     );
+};
+
+export const getClassedPosts = async (classedFile: string): Promise<Post[]> => {
+  return getAllPosts() //
+    .then((posts) => posts.filter((post) => post.category === classedFile));
 };

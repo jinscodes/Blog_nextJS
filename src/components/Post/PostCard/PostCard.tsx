@@ -1,8 +1,10 @@
+import Image from "next/image";
+import Link from "next/link";
+
 import CategoryPill from "@/components/CategoryPill/CategoryPill";
 import ProfileAndId from "@/components/ProfileAndId/ProfileAndId";
 import { Post } from "@/service/posts";
-import Image from "next/image";
-import Link from "next/link";
+
 import st from "./PostCard.module.scss";
 
 interface Prop {
@@ -14,7 +16,14 @@ const PostCard = ({ post }: Prop) => {
 
   return (
     <Link href={`/posts/${path}`} className={st.post_card}>
-      <Image src={`/images/posts/${path}.png`} alt={path} className={st.img} />
+      <Image
+        src={`/images/posts/${path}.png`}
+        alt={path}
+        className={st.img}
+        sizes="auto"
+        width={0}
+        height={0}
+      />
       <div className={st.contents_container}>
         <div className={st.category}>
           <CategoryPill category={category} />

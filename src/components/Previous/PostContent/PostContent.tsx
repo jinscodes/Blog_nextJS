@@ -1,8 +1,8 @@
-import MarkdownViewer from "@/components/Previous/MarkdownViewer/MarkdownViewer";
 import { AiTwotoneCalendar } from "react-icons/ai";
 
 import { PostData } from "@/service/posts";
 
+import MarkdownViewer from "@/components/Post/MarkdownViewer/MarkdownViewer";
 import st from "./PostContent.module.scss";
 
 interface Prop {
