@@ -1,3 +1,4 @@
+import MarkdownViewer from "@/components/Post/MarkdownViewer/MarkdownViewer";
 import { Waves } from "@/components/Waves/Waves";
 import { getPostData } from "@/service/posts";
 import st from "./slug.module.scss";
@@ -12,13 +13,17 @@ const PostPage = async ({ params: { slug } }: Props) => {
   // const post = await getPostData(slug);
   // const { title, path, next, prev } = post;
   const post = await getPostData(slug);
-  const { title, path, next, prev } = post;
+  const { title, path, next, prev, content } = post;
 
   return (
     <article className={st.article}>
-      <img src={`/images/posts/${path}.png`} alt={path} className={st.img} />
-      {slug} page
-      <Waves />
+      <div className={st.img_container}>
+        <img src={`/images/posts/${path}.png`} alt={path} className={st.img} />
+        <Waves />
+      </div>
+      <section>
+        <MarkdownViewer content={content} />
+      </section>
     </article>
   );
 };
