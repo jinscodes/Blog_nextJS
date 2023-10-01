@@ -1,3 +1,4 @@
+import { Waves } from "@/components/Waves/Waves";
 import { getPostData } from "@/service/posts";
 import st from "./slug.module.scss";
 
@@ -17,6 +18,7 @@ const PostPage = async ({ params: { slug } }: Props) => {
     <article className={st.article}>
       <img src={`/images/posts/${path}.png`} alt={path} className={st.img} />
       {slug} page
+      <Waves />
     </article>
   );
 };
