@@ -8,8 +8,6 @@ interface Prop {
 }
 
 const AllPost = ({ posts }: Prop) => {
-  console.log(posts);
-
   return (
     <div className={st.all_post}>
       <ClassificationText content="분류 전체 보기" />
