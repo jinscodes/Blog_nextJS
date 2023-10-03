@@ -51,7 +51,7 @@ export const getPostData = async (fileName: string): Promise<PostData> => {
 export const getOpenSourcePosts = async (): Promise<Post[]> => {
   return getAllPosts() //
     .then((posts) =>
-      posts.filter((post) => post.category === "open source").slice(0, 4)
+      posts.filter((post) => post.category === "OpenSource").slice(0, 4)
     );
 };
 

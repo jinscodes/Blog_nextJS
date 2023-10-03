@@ -86,5 +86,13 @@
     "category": "OpenSource",
     "path": "blob-2023",
     "featured": true
+  },
+  {
+    "title": "OPENSOURCE에 관하여",
+    "description": "꼭 한번 정리해야하는 Blob. 나를 괴롭혔던 Blob... 정체가 무엇이냐",
+    "date": "2023-12-25",
+    "category": "OpenSource",
+    "path": "blob-2023",
+    "featured": true
   }
 ]
