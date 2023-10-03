@@ -30,19 +30,19 @@ export const Waves = () => {
               <use
                 xlinkHref="#gentle-wave"
                 x="48"
-                y="3"
+                y="0"
                 fill="rgba(255,255,255,0.5)"
               />
               <use
                 xlinkHref="#gentle-wave"
                 x="48"
-                y="5"
+                y="0"
                 fill="rgba(255,255,255,0.3)"
               />
               <use
                 xlinkHref="#gentle-wave"
                 x="48"
-                y="7"
+                y="0"
                 fill="rgba(108, 180, 231, 0.1)"
               />
             </g>

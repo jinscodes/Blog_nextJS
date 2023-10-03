@@ -22,7 +22,13 @@ const PostPage = async ({ params: { slug } }: Props) => {
   return (
     <article className={st.article}>
       <div className={st.img_container}>
-        <div className={st.bg_cover}></div>
+        <div className={st.bg_cover}>
+          <p>WRITE, </p>
+          <p>READ, </p>
+          <span>
+            AND&nbsp;&nbsp;<p>UNDERSTAND</p>
+          </span>
+        </div>
         <Image
           src={bg}
           alt={"1"}
@@ -33,8 +39,8 @@ const PostPage = async ({ params: { slug } }: Props) => {
         />
         <Waves />
       </div>
-      <div>
-        <AllPost posts={classedPost} />
+      <div className={st.posts_container}>
+        <AllPost posts={classedPost} title={slug} />
       </div>
     </article>
   );

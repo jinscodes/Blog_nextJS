@@ -27,7 +27,7 @@
     "title": "Node 기초 정리",
     "description": "기본 적인 Node 사용법에 대해 전부 정리!",
     "date": "2022-08-21",
-    "category": "open source",
+    "category": "OpenSource",
     "path": "node-basic",
     "featured": false
   },
@@ -35,7 +35,7 @@
     "title": "2022년 리뷰",
     "description": "2022년 한해 동안 배운 기술들, 생각들 정리",
     "date": "2022-12-31",
-    "category": "my story",
+    "category": "ReactJs",
     "path": "review-2022",
     "featured": false
   },
@@ -43,7 +43,7 @@
     "title": "Node 프로 팁!",
     "description": "노드를 프로처럼 사용하기 위한 모든 팁들을 정리!",
     "date": "2023-04-10",
-    "category": "open source",
+    "category": "OpenSource",
     "path": "node-pro-tips",
     "featured": true
   },
@@ -51,7 +51,7 @@
     "title": "리액트 Best Practice!",
     "description": "리액트를 정확하게 사용하는 방법들을 정리",
     "date": "2023-04-15",
-    "category": "frontend",
+    "category": "ReactJs",
     "path": "best-react-practices",
     "featured": true
   },
@@ -59,7 +59,7 @@
     "title": "리액트 18버전!",
     "description": "리액트 18에 추가된 사항들 정리",
     "date": "2023-05-02",
-    "category": "frontend",
+    "category": "ReactJs",
     "path": "react18-walkthrough",
     "featured": true
   },
@@ -67,7 +67,7 @@
     "title": "2023년 리뷰",
     "description": "2023년 한해 동안 배운 기술들, 생각들 정리",
     "date": "2023-12-31",
-    "category": "my story",
+    "category": "NextJs",
     "path": "review-2023",
     "featured": true
   },
@@ -75,7 +75,7 @@
     "title": "Binary에 관하여",
     "description": "꼭 한번 정리해야하는 Binary. Binary란 무엇인가?",
     "date": "2023-12-31",
-    "category": "open source",
+    "category": "TypeScript",
     "path": "binary-2023",
     "featured": true
   },
@@ -83,7 +83,7 @@
     "title": "Blob에 관하여",
     "description": "꼭 한번 정리해야하는 Blob. 나를 괴롭혔던 Blob... 정체가 무엇이냐",
     "date": "2023-12-25",
-    "category": "open source",
+    "category": "OpenSource",
     "path": "blob-2023",
     "featured": true
   }

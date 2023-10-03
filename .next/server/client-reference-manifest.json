@@ -327,7 +327,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
       "name": "*",
       "chunks": [
-        "app/posts/[slug]/page:static/chunks/app/posts/[slug]/page.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -335,7 +335,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
       "name": "*",
       "chunks": [
-        "app/posts/[slug]/page:static/chunks/app/posts/[slug]/page.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -343,7 +343,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/posts/[slug]/page:static/chunks/app/posts/[slug]/page.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -351,7 +351,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/posts/[slug]/page:static/chunks/app/posts/[slug]/page.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -427,11 +427,11 @@
       ],
       "async": false
     },
-    "/Users/hanjinsung/Desktop/blog_nextJS/src/app/posts/PostPage.module.scss": {
-      "id": "(app-client)/./src/app/posts/PostPage.module.scss",
+    "/Users/hanjinsung/Desktop/blog_nextJS/src/app/posts/[slug]/slug.module.scss": {
+      "id": "(app-client)/./src/app/posts/[slug]/slug.module.scss",
       "name": "*",
       "chunks": [
-        "app/posts/page:static/chunks/app/posts/page.js"
+        "app/posts/[slug]/page:static/chunks/app/posts/[slug]/page.js"
       ],
       "async": false
     },
@@ -439,7 +439,7 @@
       "id": "(app-client)/./src/components/Post/AllPost/AllPost.module.scss",
       "name": "*",
       "chunks": [
-        "app/posts/[slug]/page:static/chunks/app/posts/[slug]/page.js"
+        "app/posts/page:static/chunks/app/posts/page.js"
       ],
       "async": false
     },
@@ -447,7 +447,7 @@
       "id": "(app-client)/./src/components/ClassificationText/ClassificationText.module.scss",
       "name": "*",
       "chunks": [
-        "app/posts/[slug]/page:static/chunks/app/posts/[slug]/page.js"
+        "app/posts/page:static/chunks/app/posts/page.js"
       ],
       "async": false
     },
@@ -455,7 +455,7 @@
       "id": "(app-client)/./src/components/Post/PostCard/PostCard.module.scss",
       "name": "*",
       "chunks": [
-        "app/posts/[slug]/page:static/chunks/app/posts/[slug]/page.js"
+        "app/posts/page:static/chunks/app/posts/page.js"
       ],
       "async": false
     },
@@ -463,7 +463,7 @@
       "id": "(app-client)/./src/components/CategoryPill/CategoryPill.module.scss",
       "name": "*",
       "chunks": [
-        "app/posts/[slug]/page:static/chunks/app/posts/[slug]/page.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -471,7 +471,23 @@
       "id": "(app-client)/./src/components/ProfileAndId/ProfileAndId.module.scss",
       "name": "*",
       "chunks": [
+        "app/posts/page:static/chunks/app/posts/page.js"
+      ],
+      "async": false
+    },
+    "/Users/hanjinsung/Desktop/blog_nextJS/src/components/Waves/Waves.module.scss": {
+      "id": "(app-client)/./src/components/Waves/Waves.module.scss",
+      "name": "*",
+      "chunks": [
         "app/posts/[slug]/page:static/chunks/app/posts/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/hanjinsung/Desktop/blog_nextJS/src/app/posts/PostPage.module.scss": {
+      "id": "(app-client)/./src/app/posts/PostPage.module.scss",
+      "name": "*",
+      "chunks": [
+        "app/posts/page:static/chunks/app/posts/page.js"
       ],
       "async": false
     },
@@ -658,36 +674,20 @@
         "app/page:static/chunks/app/page.js"
       ],
       "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/src/app/posts/[slug]/slug.module.scss": {
-      "id": "(app-client)/./src/app/posts/[slug]/slug.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/posts/[slug]/page:static/chunks/app/posts/[slug]/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/blog_nextJS/src/components/Waves/Waves.module.scss": {
-      "id": "(app-client)/./src/components/Waves/Waves.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/posts/[slug]/page:static/chunks/app/posts/[slug]/page.js"
-      ],
-      "async": false
     }
   },
   "entryCSSFiles": {
     "/Users/hanjinsung/Desktop/blog_nextJS/src/app/layout": [
       "static/css/app/layout.css"
     ],
+    "/Users/hanjinsung/Desktop/blog_nextJS/src/app/posts/[slug]/page": [
+      "static/css/app/posts/[slug]/page.css"
+    ],
     "/Users/hanjinsung/Desktop/blog_nextJS/src/app/posts/page": [
       "static/css/app/posts/page.css"
     ],
     "/Users/hanjinsung/Desktop/blog_nextJS/src/app/page": [
       "static/css/app/page.css"
-    ],
-    "/Users/hanjinsung/Desktop/blog_nextJS/src/app/posts/[slug]/page": [
-      "static/css/app/posts/[slug]/page.css"
     ]
   }
 }

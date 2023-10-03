@@ -5,12 +5,13 @@ import st from "./AllPost.module.scss";
 
 interface Prop {
   posts: Post[];
+  title: string;
 }
 
-const AllPost = ({ posts }: Prop) => {
+const AllPost = ({ posts, title }: Prop) => {
   return (
     <div className={st.all_post}>
-      <ClassificationText content="분류 전체 보기" />
+      <ClassificationText content={title} />
       <div className={st.postcard_container}>
         {posts.map((post) => (
           <>
