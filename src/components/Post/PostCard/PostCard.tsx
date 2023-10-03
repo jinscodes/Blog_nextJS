@@ -15,7 +15,7 @@ const PostCard = ({ post }: Prop) => {
   const { title, path, description, category, date } = post;
 
   return (
-    <Link href={`/posts/${path}`} className={st.post_card}>
+    <Link href={`/posts/${category}/${path}`} className={st.post_card}>
       <Image
         src={`/images/posts/${path}.png`}
         alt={path}
