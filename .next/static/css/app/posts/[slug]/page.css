@@ -8,13 +8,34 @@
 }
 .slug_article__aqLUb .slug_img_container__NPsd9 .slug_bg_cover__L4jsw {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
+  gap: 5px;
+  font-size: 36px;
+  font-family: "Times New Roman", Times, serif;
+  color: darkgray;
   background-color: rgba(0, 0, 0, 0.6);
+}
+.slug_article__aqLUb .slug_img_container__NPsd9 .slug_bg_cover__L4jsw p {
+  margin: 0;
+}
+.slug_article__aqLUb .slug_img_container__NPsd9 .slug_bg_cover__L4jsw span {
+  border: 1px solid white;
+  display: flex;
+}
+.slug_article__aqLUb .slug_img_container__NPsd9 .slug_bg_cover__L4jsw span > p {
+  color: white;
 }
 .slug_article__aqLUb .slug_img_container__NPsd9 .slug_img__7IQWF {
   width: 100%;
   height: 100%;
+}
+.slug_article__aqLUb .slug_posts_container__i00CR {
+  margin-bottom: 120px;
 }
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Post/AllPost/AllPost.module.scss ***!
@@ -163,12 +184,13 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 80px;
   background: transparent;
 }
 .Waves_header__20ixi .Waves_waves__EV7gH {
   position: relative;
   width: 100%;
-  height: 15vh;
+  height: 2vh;
   margin-bottom: -7px;
   min-height: 100px;
   max-height: 150px;

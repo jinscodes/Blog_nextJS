@@ -4,6 +4,7 @@ import closeBracket from "../../../../public/svg/Close_bracket.svg";
 import downArrow from "../../../../public/svg/Down_arrow.svg";
 import heart from "../../../../public/svg/Heart.svg";
 import openBracket from "../../../../public/svg/Open_bracket.svg";
+
 import st from "./Gif.module.scss";
 
 const Gif = () => {
