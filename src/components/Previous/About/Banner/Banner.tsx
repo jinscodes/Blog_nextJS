@@ -1,20 +1,20 @@
-import { HiPaperAirplane } from "react-icons/hi";
+// import { HiPaperAirplane } from "react-icons/hi";
 
-import st from "./Banner.module.scss";
+// import st from "./Banner.module.scss";
 
-type Prop = {
-  state: boolean;
-};
+// type Prop = {
+//   state: boolean;
+// };
 
-const Banner = ({ state }: Prop) => {
-  return (
-    <>
-      <div className={state ? st.submit_container : st.container_hidden}>
-        <HiPaperAirplane className={st.icon} />
-      </div>
-      {/* <div className={st.msg}>전송 완료 ✅</div> */}
-    </>
-  );
-};
+// const Banner = ({ state }: Prop) => {
+//   return (
+//     <>
+//       <div className={state ? st.submit_container : st.container_hidden}>
+//         <HiPaperAirplane className={st.icon} />
+//       </div>
+//       {/* <div className={st.msg}>전송 완료 ✅</div> */}
+//     </>
+//   );
+// };
 
-export default Banner;
+// export default Banner;

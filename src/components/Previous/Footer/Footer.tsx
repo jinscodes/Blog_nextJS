@@ -1,11 +1,11 @@
-import st from "./footer.module.scss";
+// import st from "./footer.module.scss";
 
-const Footer = () => {
-  return (
-    <footer className={st.footer}>
-      <p></p>
-    </footer>
-  );
-};
+// const Footer = () => {
+//   return (
+//     <footer className={st.footer}>
+//       <p></p>
+//     </footer>
+//   );
+// };
 
-export default Footer;
+// export default Footer;
