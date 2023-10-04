@@ -5,7 +5,6 @@ import { Waves } from "@/components/Waves/Waves";
 import { getClassedPosts } from "@/service/posts";
 import bg from "../../../../public/images/backgrounds/1.gif";
 
-import { log } from "console";
 import st from "./slug.module.scss";
 
 type Props = {
@@ -19,7 +18,6 @@ const PostPage = async ({ params: { postPage } }: Props) => {
   // const { title, path, next, prev } = post;
 
   // const post = await getPostData(slug);
-  log(postPage);
   const classedPost = await getClassedPosts(postPage);
 
   return (
