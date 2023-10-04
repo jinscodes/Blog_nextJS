@@ -1,6 +1,8 @@
+"use client";
+
 import Image from "next/image";
-import ReactMarkdown from "react-markdown";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import Markdown from "react-markdown";
+import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import remarkGfm from "remark-gfm";
 
@@ -9,20 +11,23 @@ interface Prop {
 }
 
 const MarkdownViewer = ({ content }: Prop) => {
+  console.log("markdown", content);
+
   return (
-    <ReactMarkdown
+    <Markdown
       remarkPlugins={[remarkGfm]}
       components={{
         code({ node, inline, className, children, ...props }) {
           const match = /language-(\w+)/.exec(className || "");
           return !inline && match ? (
             <SyntaxHighlighter
-              {...props}
-              children={String(children).replace(/\n$/, "")}
-              style={materialDark}
               language={match[1]}
               PreTag="div"
-            />
+              {...props}
+              style={materialDark}
+            >
+              {String(children).replace(/\n$/, "")}
+            </SyntaxHighlighter>
           ) : (
             <code {...props} className={className}>
               {children}
@@ -40,7 +45,7 @@ const MarkdownViewer = ({ content }: Prop) => {
       }}
     >
       {content}
-    </ReactMarkdown>
+    </Markdown>
   );
 };
 
