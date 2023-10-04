@@ -6,6 +6,7 @@ import Link from "next/link";
 import CategoryPill from "@/components/CategoryPill/CategoryPill";
 import ProfileAndId from "@/components/ProfileAndId/ProfileAndId";
 import { Post } from "@/service/posts";
+
 import st from "./MainPost.module.scss";
 
 interface Prop {
