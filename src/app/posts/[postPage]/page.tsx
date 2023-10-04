@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import AllPost from "@/components/Post/AllPost/AllPost";
+import AllPost from "@/components/Post/AllPost/AllPosts";
 import { Waves } from "@/components/Waves/Waves";
 import { getClassedPosts } from "@/service/posts";
 import bg from "../../../../public/images/backgrounds/1.gif";
@@ -14,10 +14,6 @@ type Props = {
 };
 
 const PostPage = async ({ params: { postPage } }: Props) => {
-  // const post = await getPostData(slug);
-  // const { title, path, next, prev } = post;
-
-  // const post = await getPostData(slug);
   const classedPost = await getClassedPosts(postPage);
 
   return (
