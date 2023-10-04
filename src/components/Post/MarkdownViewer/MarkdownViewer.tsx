@@ -11,8 +11,6 @@ interface Prop {
 }
 
 const MarkdownViewer = ({ content }: Prop) => {
-  console.log("markdown", content);
-
   return (
     <Markdown
       remarkPlugins={[remarkGfm]}
