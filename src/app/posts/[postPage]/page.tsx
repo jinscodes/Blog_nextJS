@@ -14,10 +14,6 @@ type Props = {
 };
 
 const PostPage = async ({ params: { postPage } }: Props) => {
-  // const post = await getPostData(slug);
-  // const { title, path, next, prev } = post;
-
-  // const post = await getPostData(slug);
   const classedPost = await getClassedPosts(postPage);
 
   return (
