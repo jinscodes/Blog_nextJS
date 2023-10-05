@@ -16,6 +16,7 @@ interface Prop {
 const MarkdownViewer = ({ content }: Prop) => {
   return (
     <Markdown
+      className={st.markdown}
       remarkPlugins={[remarkGfm]}
       components={{
         code({ node, inline, className, children, ...props }) {
@@ -45,6 +46,7 @@ const MarkdownViewer = ({ content }: Prop) => {
             className={st.image}
           />
         ),
+        h2: "h2",
       }}
     >
       {content}

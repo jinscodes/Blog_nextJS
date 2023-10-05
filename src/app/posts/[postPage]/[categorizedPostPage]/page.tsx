@@ -6,7 +6,6 @@ import { getPostData } from "@/service/posts";
 
 import st from "./slug.module.scss";
 
-import { log } from "console";
 import gif_bg_1 from "../../../../../public/images/backgrounds/1.gif";
 import gif_bg_10 from "../../../../../public/images/backgrounds/10.gif";
 import gif_bg_11 from "../../../../../public/images/backgrounds/11.gif";
@@ -48,8 +47,6 @@ const CategorizedPostPage = async ({
     gif_bg_12,
   ];
   const randomIdx = Math.floor(Math.random() * gifBgArr.length);
-
-  log(file);
 
   return (
     <section className={st.categorized_post_page}>
