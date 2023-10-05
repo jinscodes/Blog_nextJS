@@ -1,24 +1,72 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Post/MarkdownViewer/StyledMarkdown/H2Underline.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.H2Underline_h2_container__DSe9A {
+  margin: 100px 0 40px;
+}
+.H2Underline_h2_container__DSe9A .H2Underline_h2__OZ0s1 {
+  position: relative;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+  padding-left: 24px;
+}
+.H2Underline_h2_container__DSe9A .H2Underline_h2_underline__VwApI {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.H2Underline_h2_container__DSe9A .H2Underline_h2_underline__VwApI > div:first-child {
+  height: 15px;
+  width: 1px;
+  border-left: 3px solid darkblue;
+  border-radius: 4px;
+}
+.H2Underline_h2_container__DSe9A .H2Underline_h2_underline__VwApI > div:nth-child(2) {
+  width: 1px;
+  height: 12px;
+  border-left: 3px solid darkblue;
+  border-radius: 4px;
+}
+.H2Underline_h2_container__DSe9A .H2Underline_bottom_line__yrg0h {
+  height: 1px;
+  width: 100%;
+  border-bottom: 3px solid darkblue;
+  border-radius: 4px;
+}
+.H2Underline_h2_container__DSe9A .H2Underline_h2_underline__VwApI > div:nth-child(4) {
+  width: 10%;
+  height: 10px;
+  background-color: darkblue;
+  border-radius: 24px;
+}
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Post/MarkdownViewer/MarkdownViewer.module.scss ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .MarkdownViewer_markdown__VX352 {
   font-family: "Noto Sans";
+  font-size: 20px;
 }
 .MarkdownViewer_markdown__VX352 .MarkdownViewer_image__ZEedT {
   width: 100%;
   height: 350px;
   border-radius: 12px;
 }
-.MarkdownViewer_markdown__VX352 h2 {
-  font-size: 36px;
-  font-weight: normal;
-  padding-bottom: 8px;
-  border-bottom: 3px solid darkblue;
+.MarkdownViewer_markdown__VX352 .MarkdownViewer_pre_container__sA01Y > div {
+  border-radius: 12px;
 }
-.MarkdownViewer_markdown__VX352 .MarkdownViewer_h2__UqRMW {
-  width: 5px;
-  height: 5px;
-  border: 1px solid black;
+.MarkdownViewer_markdown__VX352 p {
+  line-height: 30px;
+  vertical-align: middle;
+}
+.MarkdownViewer_markdown__VX352 p > code {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.2em 0.4em;
+  color: #eb5757;
+  background: rgba(135, 131, 120, 0.15);
+  font-size: 85%;
+  border-radius: 4px;
 }
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/posts/[postPage]/[categorizedPostPage]/slug.module.scss ***!

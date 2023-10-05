@@ -11,7 +11,7 @@ class HelloMessage extends React.Component {
   }
 }
 
-root.render(<HelloMessage name='Taylor' />);
+root.render(<HelloMessage name="Taylor" />);
 ```
 
 ## Declarative

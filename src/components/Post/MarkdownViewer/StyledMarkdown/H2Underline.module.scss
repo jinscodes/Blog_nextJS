@@ -1,0 +1,45 @@
+.h2_container {
+  margin: 100px 0 40px;
+
+  .h2 {
+    position: relative;
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0;
+    padding-left: 24px;
+  }
+
+  .h2_underline {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .h2_underline > div:first-child {
+    height: 15px;
+    width: 1px;
+    border-left: 3px solid darkblue;
+    border-radius: 4px;
+  }
+
+  .h2_underline > div:nth-child(2) {
+    width: 1px;
+    height: 12px;
+    border-left: 3px solid darkblue;
+    border-radius: 4px;
+  }
+
+  .bottom_line {
+    height: 1px;
+    width: 100%;
+    border-bottom: 3px solid darkblue;
+    border-radius: 4px;
+  }
+
+  .h2_underline > div:nth-child(4) {
+    width: 10%;
+    height: 10px;
+    background-color: darkblue;
+    border-radius: 24px;
+  }
+}
