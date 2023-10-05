@@ -6,7 +6,6 @@ import { getPostData } from "@/service/posts";
 
 import st from "./slug.module.scss";
 
-import { log } from "console";
 import gif_bg_1 from "../../../../../public/images/backgrounds/1.gif";
 import gif_bg_10 from "../../../../../public/images/backgrounds/10.gif";
 import gif_bg_11 from "../../../../../public/images/backgrounds/11.gif";
@@ -19,6 +18,8 @@ import gif_bg_6 from "../../../../../public/images/backgrounds/6.gif";
 import gif_bg_7 from "../../../../../public/images/backgrounds/7.gif";
 import gif_bg_8 from "../../../../../public/images/backgrounds/8.gif";
 import gif_bg_9 from "../../../../../public/images/backgrounds/9.gif";
+import Bookmark from "../../../../../public/svg/Bookmark.svg";
+import Calendar from "../../../../../public/svg/Calendar.svg";
 
 type Prop = {
   params: {
@@ -30,7 +31,7 @@ const CategorizedPostPage = async ({
   params: { categorizedPostPage },
 }: Prop) => {
   const file = await getPostData(categorizedPostPage);
-  const { title, content, next, prev } = file;
+  const { title, category, content, date, next, prev } = file;
   const gifBgArr = [
     gif_bg_1,
     gif_bg_2,
@@ -47,13 +48,19 @@ const CategorizedPostPage = async ({
   ];
   const randomIdx = Math.floor(Math.random() * gifBgArr.length);
 
-  log(file);
-
   return (
     <section className={st.categorized_post_page}>
       <div className={st.img_container}>
         <div className={st.bg_cover}>
-          <p>{title}</p>
+          <p className={st.category}>{category}</p>
+          <div className={st.bg_cover_title}>
+            <Image src={Bookmark} alt="bookmark" />
+            <p>{title}</p>
+          </div>
+          <div className={st.bg_cover_date}>
+            <Image src={Calendar} alt="calendar" />
+            <p className={st.date}>{String(date)}</p>
+          </div>
         </div>
         <Image
           src={gifBgArr[randomIdx]}
