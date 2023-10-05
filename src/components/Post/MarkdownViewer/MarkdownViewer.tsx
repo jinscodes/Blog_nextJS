@@ -64,6 +64,7 @@ const MarkdownViewer = ({ content }: Prop) => {
         pre: ({ node, ...props }) => (
           <pre className={st.pre_container} {...props}></pre>
         ),
+        blockquote: ({ node, ...props }) => <blockquote {...props} />,
       }}
     >
       {content}
