@@ -11,15 +11,43 @@
     .bg_cover {
       position: absolute;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 100%;
       height: 100%;
+      font-size: 36px;
       background-color: rgba($color: #000000, $alpha: 0.6);
 
-      p {
+      .bg_cover_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .bg_cover_title > p {
         color: white;
         font-family: "Times New Roman", Times, serif;
+      }
+
+      .category {
+        font-size: 18px;
+        color: white;
+        border: 1px solid white;
+        padding: 3px 6px;
+        border-radius: 8px;
+      }
+
+      .bg_cover_date {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .date {
+          font-size: 16px;
+          color: white;
+        }
       }
     }
 

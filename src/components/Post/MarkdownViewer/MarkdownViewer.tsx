@@ -1,10 +1,13 @@
 "use client";
 
 import Image from "next/image";
+
 import Markdown from "react-markdown";
-import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
+import SyntaxHighlighter from "react-syntax-highlighter";
 import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import remarkGfm from "remark-gfm";
+
+import st from "./MarkdownViewer.module.scss";
 
 interface Prop {
   content: string;
@@ -36,8 +39,10 @@ const MarkdownViewer = ({ content }: Prop) => {
           <Image
             src={image.src || ""}
             alt={image.alt || ""}
-            width={300}
-            height={350}
+            width={0}
+            height={0}
+            sizes="auto"
+            className={st.image}
           />
         ),
       }}
