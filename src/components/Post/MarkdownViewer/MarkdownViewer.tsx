@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
-
 import Markdown from "react-markdown";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { ocean } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import remarkGfm from "remark-gfm";
+
+import H2Underline from "@/components/Post/MarkdownViewer/StyledMarkdown/H2Underline";
 
 import st from "./MarkdownViewer.module.scss";
 
@@ -23,17 +24,30 @@ const MarkdownViewer = ({ content }: Prop) => {
           const match = /language-(\w+)/.exec(className || "");
           return !inline && match ? (
             <SyntaxHighlighter
+              showLineNumbers={true}
+              showInlineLineNumbers={false}
+              lineNumberStyle={{
+                paddingRight: "1em",
+                textAlign: "right",
+                userSelect: "none",
+                opacity: "0.3",
+              }}
               language={match[1]}
               PreTag="div"
               {...props}
-              style={materialDark}
+              customStyle={{
+                fontSize: "16px",
+                padding: "20px 20px",
+                lineHeight: "22px",
+                margin: "30px 0",
+              }}
+              style={ocean}
+              className="custom-syntax-highlighter"
             >
               {String(children).replace(/\n$/, "")}
             </SyntaxHighlighter>
           ) : (
-            <code {...props} className={className}>
-              {children}
-            </code>
+            <code {...props}>{children}</code>
           );
         },
         img: (image) => (
@@ -46,7 +60,11 @@ const MarkdownViewer = ({ content }: Prop) => {
             className={st.image}
           />
         ),
-        h2: "h2",
+        h2: ({ node, ...props }) => <H2Underline props={props} />,
+        pre: ({ node, ...props }) => (
+          <pre className={st.pre_container} {...props}></pre>
+        ),
+        blockquote: ({ node, ...props }) => <blockquote {...props} />,
       }}
     >
       {content}

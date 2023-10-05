@@ -1,5 +1,6 @@
 .markdown {
   font-family: "Noto Sans";
+  font-size: 20px;
 
   .image {
     width: 100%;
@@ -7,16 +8,21 @@
     border-radius: 12px;
   }
 
-  h2 {
-    font-size: 36px;
-    font-weight: normal;
-    padding-bottom: 8px;
-    border-bottom: 3px solid darkblue;
+  .pre_container > div {
+    border-radius: 12px;
   }
 
-  .h2 {
-    width: 5px;
-    height: 5px;
-    border: 1px solid black;
+  p {
+    line-height: 30px;
+    vertical-align: middle;
+  }
+
+  p > code {
+    width: fit-content;
+    padding: 0.2em 0.4em;
+    color: #eb5757;
+    background: rgba(135, 131, 120, 0.15);
+    font-size: 85%;
+    border-radius: 4px;
   }
 }
