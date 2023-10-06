@@ -1,8 +1,0 @@
-{
-  "/page": "/",
-  "/about/page": "/about",
-  "/posts/page": "/posts",
-  "/posts/[postPage]/page": "/posts/[postPage]",
-  "/Home/[slug]/page": "/Home/[slug]",
-  "/posts/[postPage]/[categorizedPostPage]/page": "/posts/[postPage]/[categorizedPostPage]"
-}
