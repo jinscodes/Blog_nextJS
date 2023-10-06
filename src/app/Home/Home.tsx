@@ -11,8 +11,6 @@ const Home = async () => {
       <Categories />
       <RecentPosts />
       <OpenSources />
-      {/* <RecentPosts />
-      <FeaturedPosts /> */}
     </section>
   );
 };
