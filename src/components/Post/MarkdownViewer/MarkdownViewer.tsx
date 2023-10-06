@@ -9,6 +9,7 @@ import remarkGfm from "remark-gfm";
 import H2Underline from "@/components/Post/MarkdownViewer/StyledMarkdown/H2Underline";
 
 import Blockquote from "@/components/Post/MarkdownViewer/StyledMarkdown/Blockquote";
+import OlAndLi from "@/components/Post/MarkdownViewer/StyledMarkdown/OlAndLi";
 import UlAndLi from "@/components/Post/MarkdownViewer/StyledMarkdown/UlAndLi";
 import st from "./MarkdownViewer.module.scss";
 
@@ -68,6 +69,7 @@ const MarkdownViewer = ({ content }: Prop) => {
         ),
         blockquote: ({ node, ...props }) => <Blockquote props={props} />,
         ul: ({ node, ...props }) => <UlAndLi props={props} />,
+        ol: ({ node, ...props }) => <OlAndLi props={props} />,
       }}
     >
       {content}
