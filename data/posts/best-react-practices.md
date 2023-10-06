@@ -30,6 +30,13 @@ A paragraph with _emphasis_ and **strong importance**.
 2. list1
 3. list2
 
+---
+
+// code
+링크: [Google](https://google.com, "google link")
+
+---
+
 ## Component-Based
 
 Build encapsulated components that manage their own state, then compose them to make complex UIs.

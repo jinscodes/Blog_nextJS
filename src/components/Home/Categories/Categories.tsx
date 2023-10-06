@@ -3,6 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import HomeTitle from "@/components/HomeTitle/HomeTitle";
 import st from "./Categories.module.scss";
 
+import Link from "next/link";
 import ios from "../../../../public/images/icons/Apple.jpeg";
 import codepen from "../../../../public/images/icons/CodePen.webp";
 import css from "../../../../public/images/icons/Css.png";
@@ -15,6 +16,7 @@ import react from "../../../../public/images/icons/React.png";
 import typescript from "../../../../public/images/icons/TypeScript.png";
 
 type CategoriesList = {
+  path?: string;
   title: string;
   img: StaticImageData;
   color?: string;
@@ -23,12 +25,12 @@ type CategoriesList = {
 const Categories = () => {
   const categories: CategoriesList[] = [
     { title: "JavaScript", img: js, color: "255, 102, 0" },
-    { title: "HTML&CSS", img: css, color: "0, 170, 255" },
-    { title: "Codepen", img: codepen, color: "0, 193, 157" },
-    { title: "React", img: react, color: "144, 0, 255" },
+    { path: "CSS", title: "HTML&CSS", img: css, color: "0, 170, 255" },
+    { title: "OpenSources", img: codepen, color: "0, 193, 157" },
+    { path: "ReactJs", title: "React", img: react, color: "144, 0, 255" },
     { title: "NextJs", img: next, color: "255, 0, 102" },
     { title: "TypeScript", img: typescript },
-    { title: "Git", img: git },
+    { path: "GIT", title: "Git", img: git },
     { title: "MySQL", img: mysql },
     { title: "Flutter", img: flutter },
     { title: "IOS", img: ios },
@@ -39,7 +41,10 @@ const Categories = () => {
       <HomeTitle content="Categories" />
       <div className={st.container}>
         {categories.map((el, idx) => (
-          <div className={st.flip_card}>
+          <Link
+            href={el.path ? `/posts/${el.path}` : `/posts/${el.title}`}
+            className={st.flip_card}
+          >
             <div key={idx} className={st.flip_card_box}>
               <div className={st.card_front}>
                 <div
@@ -59,7 +64,7 @@ const Categories = () => {
                 <p>바로가기</p>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
