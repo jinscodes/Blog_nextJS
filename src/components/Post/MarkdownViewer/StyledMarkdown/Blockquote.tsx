@@ -5,11 +5,7 @@ type Prop = {
 };
 
 const Blockquote = ({ props }: Prop) => {
-  return (
-    <blockquote {...props} className={st.blockquote}>
-      Blockquote
-    </blockquote>
-  );
+  return <blockquote {...props} className={st.blockquote}></blockquote>;
 };
 
 export default Blockquote;

@@ -26,6 +26,10 @@ A paragraph with _emphasis_ and **strong importance**.
 - [ ] todo
 - [x] done
 
+1. Ordered List
+2. list1
+3. list2
+
 ## Component-Based
 
 Build encapsulated components that manage their own state, then compose them to make complex UIs.
