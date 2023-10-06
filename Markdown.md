@@ -64,3 +64,32 @@ HR
 ```
 <hr />: ---
 ```
+
+LINK
+
+```
+	[link keyword][id]
+
+	[id]: URL "Optional Title Here"
+
+	// code
+	Link: [Google][googlelink]
+
+	[googlelink]: https://google.com "Go google"
+```
+
+IMAGE
+
+```
+	![Alt text](/path/to/img.png)
+	![React Office desk](/path/to/img.png)
+```
+
+줄바꿈
+
+```
+	3칸 이상 띄어쓰기( )를 하면 줄이 바뀐다.
+
+	ex. 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.___\\ 띄어쓰기
+
+```

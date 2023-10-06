@@ -72,6 +72,7 @@ const MarkdownViewer = ({ content }: Prop) => {
         ul: ({ node, ...props }) => <UlAndLi props={props} />,
         ol: ({ node, ...props }) => <OlAndLi props={props} />,
         hr: ({ node, ...props }) => <HrLine />,
+        a: ({ node, ...props }) => <a {...props} className={st.a}></a>,
       }}
     >
       {content}
