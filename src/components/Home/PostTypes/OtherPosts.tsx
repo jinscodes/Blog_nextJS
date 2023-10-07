@@ -16,7 +16,7 @@ const OtherPosts = ({ post }: Prop) => {
   const { title, description, date, category, path } = post;
 
   return (
-    <Link href={`/post/${path}`} className={st.other_posts}>
+    <Link href={`/posts/${category}/${path}`} className={st.other_posts}>
       <Image
         className={st.img}
         height="0"

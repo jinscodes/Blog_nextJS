@@ -1,3 +1,108 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/NavCategory/NavMenu.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.NavMenu_nav_menu__38pvH {
+  overflow: hidden;
+  transition: max-height ease-in-out 0.3s;
+}
+.NavMenu_nav_menu__38pvH .NavMenu_open_category_btn__k_irr {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 16px);
+  height: 50px;
+  padding-left: 12px;
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+  background-color: transparent;
+  border: none;
+  border-radius: 12px;
+}
+.NavMenu_nav_menu__38pvH .NavMenu_open_category_btn__k_irr div {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.NavMenu_nav_menu__38pvH .NavMenu_open_category_btn__k_irr .NavMenu_caret__ZfqW3 {
+  margin-right: 10px;
+  transition: transform ease-in-out 0.3s;
+}
+.NavMenu_nav_menu__38pvH .NavMenu_open_category_btn__k_irr svg {
+  width: 25px;
+  height: 25px;
+}
+
+.NavMenu_open_category_btn__k_irr:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.NavMenu_open_category_btn__k_irr:hover .NavMenu_caret__ZfqW3 {
+  transform: translateX(4px);
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/NavCategory/NavClass.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.NavClass_nav_class__wj3_M {
+  width: calc(100% - 24px);
+  margin: 0 12px 60px;
+  background-color: rgb(240, 247, 252);
+}
+.NavClass_nav_class__wj3_M .NavClass_title__4BSyO {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 42px;
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 0 12px;
+  border-radius: 8px;
+  transition: background-color ease-in-out 0.3s;
+}
+.NavClass_nav_class__wj3_M .NavClass_title__4BSyO .NavClass_caret__m_Hmq {
+  transition: transform ease-in-out 0.3s;
+}
+.NavClass_nav_class__wj3_M .NavClass_title__4BSyO .NavClass_active_caret__efSqp {
+  transform: rotate(90deg);
+}
+.NavClass_nav_class__wj3_M .NavClass_active_menu__LbUfr {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.NavClass_title__4BSyO:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.NavClass_title__4BSyO:hover .NavClass_caret__m_Hmq {
+  transform: rotate(90deg);
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/NavCategory/NavTotal.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.NavTotal_total__JsDXi {
+  margin: 15px 20px 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #282939;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[3].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src/components/NavCategory/NavCategory.tsx","import":"","arguments":[{"src":"../../../public/fonts/MaplestoryLight.otf"}],"variableName":"maple"} ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+font-family: '__maple_022690';
+src: url(/_next/static/media/1390ed7ad69257b2-s.p.otf) format('opentype');
+font-display: swap;
+}@font-face {font-family: '__maple_Fallback_022690';src: local("Arial");ascent-override: 75.55%;descent-override: 23.55%;line-gap-override: 0.00%;size-adjust: 112.51%
+}.__className_022690 {font-family: '__maple_022690', '__maple_Fallback_022690'
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/NavCategory/NavCategory.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.NavCategory_nav_category__yLiJD {
+  overflow: scroll;
+  margin-top: 15px;
+  font-family: "Open Sans";
+}
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/CategoryPill/CategoryPill.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -141,111 +246,6 @@
   transform: scale(1.005);
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
 }
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/NavCategory/NavMenu.module.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.NavMenu_nav_menu__38pvH {
-  overflow: hidden;
-  transition: max-height ease-in-out 0.3s;
-}
-.NavMenu_nav_menu__38pvH .NavMenu_open_category_btn__k_irr {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: calc(100% - 16px);
-  height: 50px;
-  padding-left: 12px;
-  font-size: 12px;
-  text-decoration: none;
-  color: black;
-  background-color: transparent;
-  border: none;
-  border-radius: 12px;
-}
-.NavMenu_nav_menu__38pvH .NavMenu_open_category_btn__k_irr div {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-.NavMenu_nav_menu__38pvH .NavMenu_open_category_btn__k_irr .NavMenu_caret__ZfqW3 {
-  margin-right: 10px;
-  transition: transform ease-in-out 0.3s;
-}
-.NavMenu_nav_menu__38pvH .NavMenu_open_category_btn__k_irr svg {
-  width: 25px;
-  height: 25px;
-}
-
-.NavMenu_open_category_btn__k_irr:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.NavMenu_open_category_btn__k_irr:hover .NavMenu_caret__ZfqW3 {
-  transform: translateX(4px);
-}
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/NavCategory/NavClass.module.scss ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.NavClass_nav_class__wj3_M {
-  width: calc(100% - 24px);
-  margin: 0 12px 60px;
-  background-color: rgb(240, 247, 252);
-}
-.NavClass_nav_class__wj3_M .NavClass_title__4BSyO {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 42px;
-  font-size: 16px;
-  margin: 10px 0;
-  padding: 0 12px;
-  border-radius: 8px;
-  transition: background-color ease-in-out 0.3s;
-}
-.NavClass_nav_class__wj3_M .NavClass_title__4BSyO .NavClass_caret__m_Hmq {
-  transition: transform ease-in-out 0.3s;
-}
-.NavClass_nav_class__wj3_M .NavClass_title__4BSyO .NavClass_active_caret__efSqp {
-  transform: rotate(90deg);
-}
-.NavClass_nav_class__wj3_M .NavClass_active_menu__LbUfr {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.NavClass_title__4BSyO:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.NavClass_title__4BSyO:hover .NavClass_caret__m_Hmq {
-  transform: rotate(90deg);
-}
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/NavCategory/NavTotal.module.scss ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.NavTotal_total__JsDXi {
-  margin: 15px 20px 25px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #282939;
-}
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[3].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src/components/NavCategory/NavCategory.tsx","import":"","arguments":[{"src":"../../../public/fonts/MaplestoryLight.otf"}],"variableName":"maple"} ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-@font-face {
-font-family: '__maple_022690';
-src: url(/_next/static/media/1390ed7ad69257b2-s.p.otf) format('opentype');
-font-display: swap;
-}@font-face {font-family: '__maple_Fallback_022690';src: local("Arial");ascent-override: 75.55%;descent-override: 23.55%;line-gap-override: 0.00%;size-adjust: 112.51%
-}.__className_022690 {font-family: '__maple_022690', '__maple_Fallback_022690'
-}
-
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/NavCategory/NavCategory.module.scss ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.NavCategory_nav_category__yLiJD {
-  overflow: scroll;
-  margin-top: 15px;
-  font-family: "Open Sans";
-}
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/Home/Home.module.scss ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -265,168 +265,6 @@ font-display: swap;
   font-weight: 300;
   color: darkblue;
   opacity: 0.5;
-}
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Gif/Gif.module.scss ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.Gif_home_outline_container__Igv1o {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-}
-.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-image: url(/_next/static/media/Rain_Gif.20d62e54.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 835px;
-  color: #ffffff;
-  font-weight: 300;
-  font-family: "Open Sans";
-}
-.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK .Gif_heart__fQfsz {
-  padding-bottom: 30px;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #ffffff;
-}
-.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK h1 {
-  display: flex;
-  margin: 0;
-  font-size: 3.6rem;
-  line-height: 1.2;
-  font-weight: 300;
-  letter-spacing: -0.1rem;
-}
-.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK p {
-  font-size: 1.2rem;
-}
-.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK .Gif_arrow_container__J7rrk {
-  position: absolute;
-  bottom: 30px;
-  animation: Gif_arrowDown__KT2Xp 1s infinite;
-}
-
-.Gif_arrow__L1O2p {
-  width: 100%;
-  height: 40px;
-  margin-top: -5px;
-  animation: Gif_arrowDown__KT2Xp 1.5s infinite;
-}
-
-@keyframes Gif_arrowDown__KT2Xp {
-  60% {
-    opacity: 0.6;
-  }
-  80% {
-    opacity: 0.4;
-  }
-  100% {
-    transform: translateY(12px);
-    opacity: 0;
-  }
-}
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/RecentPosts/RecentPosts.module.scss ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.RecentPosts_recent_posts__0uOw1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 60px;
-}
-.RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  width: 70%;
-}
-.RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG .RecentPosts_other_posts_container__Ana5_ {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/HomeTitle/HomeTitle.module.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.HomeTitle_title__6iM97 {
-  margin: 60px 0;
-  font-size: 36px;
-}
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/OpenSources/OpenSources.module.scss ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.OpenSources_open_sources__gRaP6 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  margin-bottom: 60px;
-}
-.OpenSources_open_sources__gRaP6 .OpenSources_source_container__XZVOd {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 70%;
-  gap: 30px;
-}
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/SourcePost.module.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.SourcePost_opensource_card__MQrXu {
-  overflow: hidden;
-  position: relative;
-  max-width: 520px;
-  width: 40%;
-  height: 300px;
-  padding: 0 24px;
-  border-radius: 24px;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-}
-.SourcePost_opensource_card__MQrXu .SourcePost_gradient_bg__KUz4a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 98%);
-}
-.SourcePost_opensource_card__MQrXu .SourcePost_content_container__IetxT {
-  display: flex;
-  flex-direction: column;
-  gap: 150px;
-  padding: 24px;
-}
-.SourcePost_opensource_card__MQrXu .SourcePost_content_container__IetxT .SourcePost_title__syL3Q {
-  font-size: 36px;
-  color: white;
-}
-.SourcePost_opensource_card__MQrXu .SourcePost_content_container__IetxT .SourcePost_description__gQyVp {
-  font-size: 12px;
-  color: darkgray;
-}
-
-.SourcePost_opensource_card__MQrXu:hover {
-  transform: scale(1.005);
-  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
 }
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Categories/Categories.module.scss ***!
@@ -517,4 +355,166 @@ font-display: swap;
   .Categories_categories__N2HlC {
     width: 100%;
   }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/HomeTitle/HomeTitle.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.HomeTitle_title__6iM97 {
+  margin: 60px 0;
+  font-size: 36px;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Gif/Gif.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Gif_home_outline_container__Igv1o {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/_next/static/media/Rain_Gif.20d62e54.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 835px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Open Sans";
+}
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK .Gif_heart__fQfsz {
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffffff;
+}
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK h1 {
+  display: flex;
+  margin: 0;
+  font-size: 3.6rem;
+  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: -0.1rem;
+}
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK p {
+  font-size: 1.2rem;
+}
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK .Gif_arrow_container__J7rrk {
+  position: absolute;
+  bottom: 30px;
+  animation: Gif_arrowDown__KT2Xp 1s infinite;
+}
+
+.Gif_arrow__L1O2p {
+  width: 100%;
+  height: 40px;
+  margin-top: -5px;
+  animation: Gif_arrowDown__KT2Xp 1.5s infinite;
+}
+
+@keyframes Gif_arrowDown__KT2Xp {
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/OpenSources/OpenSources.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.OpenSources_open_sources__gRaP6 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.OpenSources_open_sources__gRaP6 .OpenSources_source_container__XZVOd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  gap: 30px;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/SourcePost.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.SourcePost_opensource_card__MQrXu {
+  overflow: hidden;
+  position: relative;
+  max-width: 520px;
+  width: 40%;
+  height: 300px;
+  padding: 0 24px;
+  border-radius: 24px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.SourcePost_opensource_card__MQrXu .SourcePost_gradient_bg__KUz4a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 98%);
+}
+.SourcePost_opensource_card__MQrXu .SourcePost_content_container__IetxT {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  padding: 24px;
+}
+.SourcePost_opensource_card__MQrXu .SourcePost_content_container__IetxT .SourcePost_title__syL3Q {
+  font-size: 36px;
+  color: white;
+}
+.SourcePost_opensource_card__MQrXu .SourcePost_content_container__IetxT .SourcePost_description__gQyVp {
+  font-size: 12px;
+  color: darkgray;
+}
+
+.SourcePost_opensource_card__MQrXu:hover {
+  transform: scale(1.005);
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/RecentPosts/RecentPosts.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.RecentPosts_recent_posts__0uOw1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 70%;
+}
+.RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG .RecentPosts_other_posts_container__Ana5_ {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }

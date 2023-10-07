@@ -1,5 +1,6 @@
 import CategoryPill from "@/components/CategoryPill/CategoryPill";
 import { Post } from "@/service/posts";
+import Link from "next/link";
 import st from "./SourcePost.module.scss";
 
 interface Prop {
@@ -10,7 +11,8 @@ const SourcePost = ({ post }: Prop) => {
   const { title, description, path, category } = post;
 
   return (
-    <div
+    <Link
+      href={`/posts/${category}/${path}`}
       style={{ backgroundImage: `url('/images/posts/${path}.png')` }}
       className={st.opensource_card}
     >
@@ -23,7 +25,7 @@ const SourcePost = ({ post }: Prop) => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
