@@ -320,8 +320,20 @@ font-display: swap;
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Footer/Footer.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .Footer_footer__Q5T55 {
+  position: relative;
   width: 100%;
   height: 300px;
   color: white;
-  background-color: rgba(87, 115, 99, 0.6);
+  background-color: black;
+  z-index: 1;
+}
+.Footer_footer__Q5T55 .Footer_footer_style_container__wfnPx {
+  position: relative;
+  width: 100%;
+  height: 30px;
+}
+.Footer_footer__Q5T55 .Footer_footer_style_container__wfnPx .Footer_svg__EkLP7 {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
