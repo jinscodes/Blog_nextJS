@@ -3,12 +3,31 @@
   width: 100%;
   height: 300px;
   color: white;
-  background-color: black;
+  // background-color: black;
   z-index: 1;
 
   .footer_style_container {
     position: relative;
     width: 100%;
-    height: 30px;
+
+    .waves {
+      width: 100%;
+      height: 50px;
+    }
+  }
+
+  .footer_content_container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+    .waves {
+      position: absolute;
+      top: -50px;
+      left: 0;
+      width: 100%;
+      height: 50px;
+    }
   }
 }

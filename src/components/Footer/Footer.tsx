@@ -1,3 +1,6 @@
+// import Image from "next/image";
+
+import { FooterWaves } from "@/components/Waves/FooterWaves";
 import st from "./Footer.module.scss";
 
 const Footer = () => {
@@ -5,7 +8,21 @@ const Footer = () => {
     <div className={st.footer}>
       <div className={st.footer_style_container}>
         {/*  */}
-        {/* <FooterWaves /> */}
+        <FooterWaves />
+      </div>
+      <div className={st.footer_content_container}>
+        <svg
+          className={st.waves}
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <g className="parallax">
+            <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(0,0,0,1)" />
+          </g>
+        </svg>
       </div>
     </div>
   );
