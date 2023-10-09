@@ -1,14 +1,10 @@
 import { FooterWaves } from "@/components/Waves/FooterWaves";
 import { getFeaturedPosts, getRecentPosts } from "@/service/posts";
-import { log } from "console";
 import st from "./Footer.module.scss";
 
 const Footer = async () => {
   const recentPosts = await getRecentPosts();
   const popularPosts = await getFeaturedPosts();
-
-  log("recent: ", recentPosts);
-  log("popular: ", popularPosts);
 
   return (
     <div className={st.footer}>

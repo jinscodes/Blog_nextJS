@@ -237,6 +237,85 @@ font-display: swap;
   font-weight: 500;
   src: url("/public/fonts/MaplestoryLight.otf");
 }
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Nav/Nav.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Nav_header__H7vAt {
+  overflow: scroll;
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.Nav_header__H7vAt nav {
+  display: flex;
+  flex-direction: column;
+}
+.Nav_header__H7vAt .Nav_profile__sdGp5 {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  border-bottom: 1px solid rgba(183, 169, 154, 0.3);
+}
+.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_img__RfcfG {
+  height: 140px;
+  background-image: url(/_next/static/media/jjanggu_profile_bg.8b920f9e.jpeg);
+  background-size: contain;
+}
+.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_myself__2NWW6 {
+  position: absolute;
+  top: 90px;
+  left: 75px;
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  background-image: url(/_next/static/media/myself.e2bb6821.png);
+  background-size: cover;
+}
+.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_name_container__uZ_Yd {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  align-items: center;
+}
+.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_name_container__uZ_Yd span:first-child {
+  font-size: 20px;
+}
+.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_name_container__uZ_Yd span:last-child {
+  font-size: 14px;
+  color: #868686;
+}
+.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_link_container__8wiF8 {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_link_container__8wiF8 .Nav_svg_container__hyaU6 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+  height: 55px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  padding-top: 5px;
+}
+.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_link_container__8wiF8 img:hover {
+  width: 25px;
+  height: 25px;
+}
+.Nav_header__H7vAt .Nav_posts__HdF5d {
+  margin-top: 4px;
+}
+.Nav_header__H7vAt .Nav_posts__HdF5d .Nav_total__HA664 {
+  margin-left: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #282939;
+}
+.Nav_header__H7vAt .Nav_posts__HdF5d .Nav_total__HA664 span {
+  font-size: 1.2rem;
+}
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Footer/Footer.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -331,83 +410,4 @@ font-display: swap;
   100% {
     transform: translate3d(85px, 0, 0);
   }
-}
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Nav/Nav.module.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.Nav_header__H7vAt {
-  overflow: scroll;
-  position: fixed;
-  width: 250px;
-  height: 100%;
-  box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.1);
-}
-.Nav_header__H7vAt nav {
-  display: flex;
-  flex-direction: column;
-}
-.Nav_header__H7vAt .Nav_profile__sdGp5 {
-  position: relative;
-  width: 100%;
-  height: 360px;
-  border-bottom: 1px solid rgba(183, 169, 154, 0.3);
-}
-.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_img__RfcfG {
-  height: 140px;
-  background-image: url(/_next/static/media/jjanggu_profile_bg.8b920f9e.jpeg);
-  background-size: contain;
-}
-.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_myself__2NWW6 {
-  position: absolute;
-  top: 90px;
-  left: 75px;
-  width: 100px;
-  height: 100px;
-  border-radius: 12px;
-  background-image: url(/_next/static/media/myself.e2bb6821.png);
-  background-size: cover;
-}
-.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_name_container__uZ_Yd {
-  display: flex;
-  flex-direction: column;
-  margin-top: 70px;
-  align-items: center;
-}
-.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_name_container__uZ_Yd span:first-child {
-  font-size: 20px;
-}
-.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_name_container__uZ_Yd span:last-child {
-  font-size: 14px;
-  color: #868686;
-}
-.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_link_container__8wiF8 {
-  display: flex;
-  justify-content: center;
-  margin-top: 25px;
-}
-.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_link_container__8wiF8 .Nav_svg_container__hyaU6 {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 200px;
-  height: 55px;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 24px;
-  padding-top: 5px;
-}
-.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_link_container__8wiF8 img:hover {
-  width: 25px;
-  height: 25px;
-}
-.Nav_header__H7vAt .Nav_posts__HdF5d {
-  margin-top: 4px;
-}
-.Nav_header__H7vAt .Nav_posts__HdF5d .Nav_total__HA664 {
-  margin-left: 20px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #282939;
-}
-.Nav_header__H7vAt .Nav_posts__HdF5d .Nav_total__HA664 span {
-  font-size: 1.2rem;
 }
