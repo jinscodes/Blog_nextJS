@@ -1,15 +1,14 @@
-// import Image from "next/image";
-
 import { FooterWaves } from "@/components/Waves/FooterWaves";
+import { getFeaturedPosts, getRecentPosts } from "@/service/posts";
 import st from "./Footer.module.scss";
 
-const Footer = () => {
+const Footer = async () => {
+  const recentPosts = await getRecentPosts();
+  const popularPosts = await getFeaturedPosts();
+
   return (
     <div className={st.footer}>
-      <div className={st.footer_style_container}>
-        {/*  */}
-        <FooterWaves />
-      </div>
+      <FooterWaves />
       <div className={st.footer_content_container}>
         <svg
           className={st.waves}
@@ -23,6 +22,18 @@ const Footer = () => {
             <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(0,0,0,1)" />
           </g>
         </svg>
+        <div className={st.content_container}>
+          <div className={st.recent_posts}>
+            {recentPosts.map((post) => (
+              <div>{post.title}</div>
+            ))}
+          </div>
+          <div className={st.popular_posts}>
+            {popularPosts.map((post) => (
+              <div>{post.title}</div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

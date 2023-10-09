@@ -326,14 +326,6 @@ font-display: swap;
   color: white;
   z-index: 1;
 }
-.Footer_footer__Q5T55 .Footer_footer_style_container__wfnPx {
-  position: relative;
-  width: 100%;
-}
-.Footer_footer__Q5T55 .Footer_footer_style_container__wfnPx .Footer_waves__j4Xjc {
-  width: 100%;
-  height: 50px;
-}
 .Footer_footer__Q5T55 .Footer_footer_content_container___Zesy {
   position: relative;
   height: 100%;
@@ -347,12 +339,38 @@ font-display: swap;
   width: 100%;
   height: 50px;
 }
+.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_content_container__hBs20 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-family: "Times New Roman", Times, serif;
+}
+.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_content_container__hBs20 .Footer_recent_posts__M3QdO {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 100%;
+}
+.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_content_container__hBs20 .Footer_popular_posts__94y28 {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 100%;
+}
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Waves/FooterWaves.module.scss ***!
   \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .FooterWaves_header__9aOz0 {
   position: absolute;
-  top: -150px;
+  top: -90px;
   left: 0;
   width: 100%;
   height: 80px;
@@ -367,9 +385,6 @@ font-display: swap;
   margin-bottom: -7px;
   min-height: 100px;
   max-height: 150px;
-}
-.FooterWaves_header__9aOz0 use {
-  animation: FooterWaves_move_forever__gI5i8 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
 .FooterWaves_header__9aOz0 use:nth-child(1) {
   animation-delay: -2s;

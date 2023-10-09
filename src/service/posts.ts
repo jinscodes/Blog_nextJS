@@ -24,14 +24,14 @@ export const getAllPosts = async (): Promise<Post[]> => {
     .then((posts) => posts.sort((a, b) => (a.date > b.date ? -1 : 1)));
 };
 
-// export const getFeaturedPosts = async (): Promise<Post[]> => {
-//   return getAllPosts() //
-//     .then((posts) => posts.filter((post) => post.featured));
-// };
+export const getFeaturedPosts = async (): Promise<Post[]> => {
+  return getAllPosts() //
+    .then((posts) => posts.filter((post) => post.featured).slice(0, 5));
+};
 
 export const getRecentPosts = async (): Promise<Post[]> => {
   return getAllPosts() //
-    .then((posts) => posts.slice(0, 3));
+    .then((posts) => posts.slice(0, 5));
 };
 
 export const getPostData = async (fileName: string): Promise<PostData> => {

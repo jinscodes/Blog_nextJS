@@ -21,29 +21,17 @@ export const FooterWaves = () => {
               />
             </defs>
             <g className="parallax">
-              {/* <use
+              <use
                 xlinkHref="#gentle-wave"
-                x="48"
+                x="10"
                 y="0"
-                fill="rgba(255,255,255,0.7)"
+                fill="rgba(0, 0, 0, 0.1)"
               />
               <use
                 xlinkHref="#gentle-wave"
-                x="48"
-                y="0"
-                fill="rgba(255,255,255,0.5)"
-              />
-              <use
-                xlinkHref="#gentle-wave"
-                x="48"
-                y="0"
-                fill="rgba(255,255,255,0.3)"
-              /> */}
-              <use
-                xlinkHref="#gentle-wave"
-                x="48"
-                y="0"
-                fill="rgba(108, 180, 231, 0.1)"
+                x="80"
+                y="5"
+                fill="rgba(0, 0, 0, 0.1)"
               />
             </g>
           </svg>
