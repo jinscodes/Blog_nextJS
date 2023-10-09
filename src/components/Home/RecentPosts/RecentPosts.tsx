@@ -15,7 +15,7 @@ const RecentPosts = async () => {
         <MainPost post={posts[0]} />
         <div className={st.other_posts_container}>
           {posts.map((post, idx) => (
-            <>{idx !== 0 && <OtherPosts post={post} />}</>
+            <>{idx !== 0 && idx < 3 && <OtherPosts post={post} />}</>
           ))}
         </div>
       </div>

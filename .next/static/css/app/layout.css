@@ -237,6 +237,101 @@ font-display: swap;
   font-weight: 500;
   src: url("/public/fonts/MaplestoryLight.otf");
 }
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Footer/Footer.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Footer_footer__Q5T55 {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  color: white;
+  z-index: 1;
+}
+.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_waves__j4Xjc {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_content_container__hBs20 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-family: "Times New Roman", Times, serif;
+}
+.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_content_container__hBs20 .Footer_recent_posts__M3QdO {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 100%;
+}
+.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_content_container__hBs20 .Footer_popular_posts__94y28 {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 100%;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Waves/FooterWaves.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.FooterWaves_header__9aOz0 {
+  position: absolute;
+  top: -90px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: transparent;
+  z-index: -1;
+}
+.FooterWaves_header__9aOz0 .FooterWaves_waves__h_2Hz {
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  height: 1vh;
+  margin-bottom: -7px;
+  min-height: 100px;
+  max-height: 150px;
+}
+.FooterWaves_header__9aOz0 use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.FooterWaves_header__9aOz0 use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.FooterWaves_header__9aOz0 use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.FooterWaves_header__9aOz0 use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes FooterWaves_move_forever__gI5i8 {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Nav/Nav.module.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -315,84 +410,4 @@ font-display: swap;
 }
 .Nav_header__H7vAt .Nav_posts__HdF5d .Nav_total__HA664 span {
   font-size: 1.2rem;
-}
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Footer/Footer.module.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.Footer_footer__Q5T55 {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  color: white;
-  z-index: 1;
-}
-.Footer_footer__Q5T55 .Footer_footer_style_container__wfnPx {
-  position: relative;
-  width: 100%;
-}
-.Footer_footer__Q5T55 .Footer_footer_style_container__wfnPx .Footer_waves__j4Xjc {
-  width: 100%;
-  height: 50px;
-}
-.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-}
-.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_waves__j4Xjc {
-  position: absolute;
-  top: -50px;
-  left: 0;
-  width: 100%;
-  height: 50px;
-}
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Waves/FooterWaves.module.scss ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.FooterWaves_header__9aOz0 {
-  position: absolute;
-  top: -150px;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  background: transparent;
-  z-index: -1;
-}
-.FooterWaves_header__9aOz0 .FooterWaves_waves__h_2Hz {
-  z-index: -1;
-  position: relative;
-  width: 100%;
-  height: 1vh;
-  margin-bottom: -7px;
-  min-height: 100px;
-  max-height: 150px;
-}
-.FooterWaves_header__9aOz0 use {
-  animation: FooterWaves_move_forever__gI5i8 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-}
-.FooterWaves_header__9aOz0 use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-.FooterWaves_header__9aOz0 use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-.FooterWaves_header__9aOz0 use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-.FooterWaves_header__9aOz0 use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-
-@keyframes FooterWaves_move_forever__gI5i8 {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-  }
-  100% {
-    transform: translate3d(85px, 0, 0);
-  }
 }
