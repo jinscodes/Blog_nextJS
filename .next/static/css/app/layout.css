@@ -345,25 +345,77 @@ font-display: swap;
   align-items: center;
   width: 100%;
   height: 100%;
-  font-family: "Times New Roman", Times, serif;
+  gap: 10px;
+  font-family: "Open Sans";
 }
 .Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_content_container__hBs20 .Footer_recent_posts__M3QdO {
-  border: 1px solid white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  gap: 10px;
   width: 420px;
   height: 100%;
 }
+.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_content_container__hBs20 .Footer_recent_posts__M3QdO div {
+  display: flex;
+}
+.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_content_container__hBs20 .Footer_recent_posts__M3QdO div .Footer_img__QuO1W {
+  width: 50px;
+  height: 35px;
+  border-radius: 4px;
+  margin: 0 10px;
+}
+.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_content_container__hBs20 .Footer_recent_posts__M3QdO div div {
+  display: flex;
+  flex-direction: column;
+}
+.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_content_container__hBs20 .Footer_recent_posts__M3QdO p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 350px;
+  margin: 0;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_content_container__hBs20 .Footer_recent_posts__M3QdO p:last-child {
+  font-size: 12px;
+  color: darkgray;
+}
 .Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_content_container__hBs20 .Footer_popular_posts__94y28 {
-  border: 1px solid white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   width: 420px;
   height: 100%;
+}
+.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_content_container__hBs20 .Footer_popular_posts__94y28 div {
+  display: flex;
+}
+.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_content_container__hBs20 .Footer_popular_posts__94y28 div .Footer_img__QuO1W {
+  width: 50px;
+  height: 35px;
+  border-radius: 4px;
+  margin: 0 10px;
+}
+.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_content_container__hBs20 .Footer_popular_posts__94y28 div div {
+  display: flex;
+  flex-direction: column;
+}
+.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_content_container__hBs20 .Footer_popular_posts__94y28 p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 350px;
+  margin: 0;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.Footer_footer__Q5T55 .Footer_footer_content_container___Zesy .Footer_content_container__hBs20 .Footer_popular_posts__94y28 p:last-child {
+  font-size: 12px;
+  color: darkgray;
 }
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Waves/FooterWaves.module.scss ***!

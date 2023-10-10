@@ -1,5 +1,6 @@
 import { FooterWaves } from "@/components/Waves/FooterWaves";
 import { getFeaturedPosts, getRecentPosts } from "@/service/posts";
+import Image from "next/image";
 import st from "./Footer.module.scss";
 
 const Footer = async () => {
@@ -25,12 +26,38 @@ const Footer = async () => {
         <div className={st.content_container}>
           <div className={st.recent_posts}>
             {recentPosts.map((post) => (
-              <div>{post.title}</div>
+              <div>
+                <Image
+                  src={`/images/posts/${post.path}.png`}
+                  alt={post.title}
+                  className={st.img}
+                  width={0}
+                  height={0}
+                  sizes="auto"
+                />
+                <div>
+                  <p>{post.title}</p>
+                  <p>{String(post.date)}</p>
+                </div>
+              </div>
             ))}
           </div>
           <div className={st.popular_posts}>
             {popularPosts.map((post) => (
-              <div>{post.title}</div>
+              <div>
+                <Image
+                  src={`/images/posts/${post.path}.png`}
+                  alt={post.title}
+                  className={st.img}
+                  width={0}
+                  height={0}
+                  sizes="auto"
+                />
+                <div>
+                  <p>{post.title}</p>
+                  <p>{String(post.date)}</p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
