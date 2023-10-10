@@ -62,6 +62,8 @@ const Footer = async () => {
           </div>
         </div>
       </div>
+
+      <p className={st.reference}>© Copyright 2023 Jay Han</p>
     </div>
   );
 };
