@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   height: 300px;
+  margin-top: 300px;
   color: white;
   z-index: 1;
 
@@ -109,5 +110,12 @@
         }
       }
     }
+  }
+
+  .reference {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    font-size: 8px;
   }
 }
