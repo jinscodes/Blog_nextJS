@@ -32,10 +32,6 @@ export default function RootLayout({
           {children}
           <Footer />
         </main>
-
-        {/* <Header />
-        <main className={st.main}>{children}</main>
-        <Footer /> */}
       </body>
     </html>
   );
