@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import MarkdownViewer from "@/components/Post/MarkdownViewer/MarkdownViewer";
-import { Waves } from "@/components/Waves/Waves";
-import { getPostData } from "@/service/posts";
+import MarkdownViewer from "components/Post/MarkdownViewer/MarkdownViewer";
+import { Waves } from "components/Waves/Waves";
+import { getPostData } from "service/posts";
 
 import st from "./slug.module.scss";
 

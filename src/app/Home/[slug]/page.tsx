@@ -1,4 +1,4 @@
-import { getAllPosts } from "@/service/posts";
+import { getAllPosts } from "service/posts";
 
 const Posts = async () => {
   const posts = await getAllPosts();

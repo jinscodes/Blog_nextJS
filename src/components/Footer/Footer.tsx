@@ -1,6 +1,7 @@
-import { FooterWaves } from "@/components/Waves/FooterWaves";
-import { getFeaturedPosts, getRecentPosts } from "@/service/posts";
+import { FooterWaves } from "components/Waves/FooterWaves";
 import Image from "next/image";
+import { getFeaturedPosts, getRecentPosts } from "service/posts";
+
 import st from "./Footer.module.scss";
 
 const Footer = async () => {

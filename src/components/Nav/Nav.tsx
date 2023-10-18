@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import NavCategory from "@/components/NavCategory/NavCategory";
+import NavCategory from "components/NavCategory/NavCategory";
+
+import Myself from "assets/images/myself.png";
 import Category from "../../../public/svg/Category.svg";
 import House from "../../../public/svg/House.svg";
 import Person from "../../../public/svg/Person.svg";
@@ -12,7 +14,14 @@ const Nav = () => {
     <header className={st.header}>
       <section className={st.profile}>
         <div className={st.img}></div>
-        <div className={st.myself}></div>
+        <Image
+          src={Myself}
+          alt="myself"
+          sizes="auto"
+          width={0}
+          height={0}
+          className={st.myself}
+        />
         <div className={st.name_container}>
           <span>Jay Han🧑🏻‍💻</span>
           <span>제이_</span>

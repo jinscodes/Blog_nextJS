@@ -1,6 +1,6 @@
 ## Before looking at the React, Framework Versus Library
 
-![React Office desk](/data/postsImages/react_basic1.png)
+![React_basic1](/assets/images/React_basic1.png)
 
 ## React Basic - What's React?
 

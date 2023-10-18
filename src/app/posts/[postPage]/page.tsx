@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import AllPost from "@/components/Post/AllPost/AllPosts";
-import { Waves } from "@/components/Waves/Waves";
-import { getClassedPosts } from "@/service/posts";
+import AllPost from "components/Post/AllPost/AllPosts";
+import { Waves } from "components/Waves/Waves";
+import { getClassedPosts } from "service/posts";
 import bg from "../../../../public/images/backgrounds/1.gif";
 
 import st from "./slug.module.scss";
