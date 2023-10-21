@@ -1,10 +1,11 @@
 "use client";
 
-import { DatasFromJson } from "@/components/NavCategory/NavCategory";
 import Image from "next/image";
 import { Dispatch, SetStateAction } from "react";
 
-import NavMenu from "@/components/NavCategory/NavMenu";
+import { DatasFromJson } from "components/NavCategory/NavCategory";
+import NavMenu from "components/NavCategory/NavMenu";
+
 import Caret from "../../../public/svg/Caret.svg";
 import st from "./NavClass.module.scss";
 

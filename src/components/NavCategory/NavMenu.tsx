@@ -15,7 +15,7 @@ import Sass from "../../../public/svg/Sass.svg";
 import Typescript from "../../../public/svg/Typescript.svg";
 import st from "./NavMenu.module.scss";
 
-import { DatasFromJson } from "@/components/NavCategory/NavCategory";
+import { DatasFromJson } from "components/NavCategory/NavCategory";
 
 interface Props {
   datas: DatasFromJson;
