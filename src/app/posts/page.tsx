@@ -1,6 +1,7 @@
 import { getAllPosts } from "service/posts";
 
 import AllPost from "components/Post/AllPost/AllPosts";
+
 import st from "./PostPage.module.scss";
 
 const Posts = async () => {

@@ -1,6 +1,9 @@
-import CategoryPill from "@/components/CategoryPill/CategoryPill";
-import { Post } from "@/service/posts";
 import Link from "next/link";
+
+import { Post } from "service/posts";
+
+import CategoryPill from "components/CategoryPill/CategoryPill";
+
 import st from "./SourcePost.module.scss";
 
 interface Prop {

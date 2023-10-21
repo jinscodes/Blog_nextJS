@@ -4,9 +4,10 @@ import Link from "next/link";
 import NavCategory from "components/NavCategory/NavCategory";
 
 import Myself from "assets/images/myself.png";
-import Category from "../../../public/svg/Category.svg";
-import House from "../../../public/svg/House.svg";
-import Person from "../../../public/svg/Person.svg";
+import Category from "assets/svg/Category.svg";
+import House from "assets/svg/House.svg";
+import Person from "assets/svg/Person.svg";
+
 import st from "./Nav.module.scss";
 
 const Nav = () => {

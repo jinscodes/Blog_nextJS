@@ -1,25 +1,25 @@
+import MarkdownViewer from "components/Post/MarkdownViewer/MarkdownViewer";
 import Image from "next/image";
 
-import MarkdownViewer from "components/Post/MarkdownViewer/MarkdownViewer";
 import { Waves } from "components/Waves/Waves";
+
 import { getPostData } from "service/posts";
 
+import gif_bg_1 from "assets/images/backgrounds/1.gif";
+import gif_bg_10 from "assets/images/backgrounds/10.gif";
+import gif_bg_11 from "assets/images/backgrounds/11.gif";
+import gif_bg_12 from "assets/images/backgrounds/12.gif";
+import gif_bg_2 from "assets/images/backgrounds/2.gif";
+import gif_bg_3 from "assets/images/backgrounds/3.gif";
+import gif_bg_4 from "assets/images/backgrounds/4.gif";
+import gif_bg_5 from "assets/images/backgrounds/5.gif";
+import gif_bg_6 from "assets/images/backgrounds/6.gif";
+import gif_bg_7 from "assets/images/backgrounds/7.gif";
+import gif_bg_8 from "assets/images/backgrounds/8.gif";
+import gif_bg_9 from "assets/images/backgrounds/9.gif";
+import Bookmark from "assets/svg/Bookmark.svg";
+import Calendar from "assets/svg/Calendar.svg";
 import st from "./slug.module.scss";
-
-import gif_bg_1 from "../../../../../public/images/backgrounds/1.gif";
-import gif_bg_10 from "../../../../../public/images/backgrounds/10.gif";
-import gif_bg_11 from "../../../../../public/images/backgrounds/11.gif";
-import gif_bg_12 from "../../../../../public/images/backgrounds/12.gif";
-import gif_bg_2 from "../../../../../public/images/backgrounds/2.gif";
-import gif_bg_3 from "../../../../../public/images/backgrounds/3.gif";
-import gif_bg_4 from "../../../../../public/images/backgrounds/4.gif";
-import gif_bg_5 from "../../../../../public/images/backgrounds/5.gif";
-import gif_bg_6 from "../../../../../public/images/backgrounds/6.gif";
-import gif_bg_7 from "../../../../../public/images/backgrounds/7.gif";
-import gif_bg_8 from "../../../../../public/images/backgrounds/8.gif";
-import gif_bg_9 from "../../../../../public/images/backgrounds/9.gif";
-import Bookmark from "../../../../../public/svg/Bookmark.svg";
-import Calendar from "../../../../../public/svg/Calendar.svg";
 
 type Prop = {
   params: {

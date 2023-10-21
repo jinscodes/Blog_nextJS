@@ -1,10 +1,9 @@
 import Image from "next/image";
 
-import closeBracket from "../../../../public/svg/Close_bracket.svg";
-import downArrow from "../../../../public/svg/Down_arrow.svg";
-import heart from "../../../../public/svg/Heart.svg";
-import openBracket from "../../../../public/svg/Open_bracket.svg";
-
+import closeBracket from "assets/svg/Close_bracket.svg";
+import downArrow from "assets/svg/Down_arrow.svg";
+import heart from "assets/svg/Heart.svg";
+import openBracket from "assets/svg/Open_bracket.svg";
 import st from "./Gif.module.scss";
 
 const Gif = () => {

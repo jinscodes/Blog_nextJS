@@ -1,4 +1,4 @@
-import { maple } from "@/app/layout";
+import { maple } from "app/layout";
 import st from "./HomeTitle.module.scss";
 
 type Prop = {

@@ -1,6 +1,6 @@
 ## Before looking at React, Framework Versus Library
 
-![React_basic1]()
+![](/data/posts/react-basic.png)
 
 ## React Basic - What's React?
 
