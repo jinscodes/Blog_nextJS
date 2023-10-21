@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Markdown from "react-markdown";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { ocean } from "react-syntax-highlighter/dist/esm/styles/hljs";
@@ -12,6 +11,7 @@ import Blockquote from "components/Post/MarkdownViewer/StyledMarkdown/Blockquote
 import HrLine from "components/Post/MarkdownViewer/StyledMarkdown/HrLine";
 import OlAndLi from "components/Post/MarkdownViewer/StyledMarkdown/OlAndLi";
 import UlAndLi from "components/Post/MarkdownViewer/StyledMarkdown/UlAndLi";
+import Image from "next/image";
 import st from "./MarkdownViewer.module.scss";
 
 interface Prop {
@@ -55,14 +55,24 @@ const MarkdownViewer = ({ content }: Prop) => {
           );
         },
         img: (image) => (
-          <Image
-            src={image.src || ""}
-            alt={image.alt || ""}
-            width={0}
-            height={0}
-            sizes="auto"
-            className={st.image}
-          />
+          // <Image
+          //   src={image.src || ""}
+          //   alt={image.alt || ""}
+          //   width={0}
+          //   height={0}
+          //   sizes="auto"
+          //   className={st.image}
+          // />
+          <>
+            <Image
+              src={image.src || ""}
+              alt={image.alt || ""}
+              width={0}
+              height={0}
+              sizes="auto"
+              className={st.image}
+            />
+          </>
         ),
         h2: ({ node, ...props }) => <H2Underline props={props} />,
         pre: ({ node, ...props }) => (

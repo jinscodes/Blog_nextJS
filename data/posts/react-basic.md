@@ -1,6 +1,6 @@
 ## Before looking at React, Framework Versus Library
 
-![](/data/posts/react-basic.png)
+![](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a643f8b7-cf70-4664-a3c4-eacb8a0fcbc7)   
 
 ## React Basic - What's React?
 
