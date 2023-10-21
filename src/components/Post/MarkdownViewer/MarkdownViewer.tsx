@@ -6,12 +6,12 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { ocean } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import remarkGfm from "remark-gfm";
 
-import H2Underline from "@/components/Post/MarkdownViewer/StyledMarkdown/H2Underline";
+import H2Underline from "components/Post/MarkdownViewer/StyledMarkdown/H2Underline";
 
-import Blockquote from "@/components/Post/MarkdownViewer/StyledMarkdown/Blockquote";
-import HrLine from "@/components/Post/MarkdownViewer/StyledMarkdown/HrLine";
-import OlAndLi from "@/components/Post/MarkdownViewer/StyledMarkdown/OlAndLi";
-import UlAndLi from "@/components/Post/MarkdownViewer/StyledMarkdown/UlAndLi";
+import Blockquote from "components/Post/MarkdownViewer/StyledMarkdown/Blockquote";
+import HrLine from "components/Post/MarkdownViewer/StyledMarkdown/HrLine";
+import OlAndLi from "components/Post/MarkdownViewer/StyledMarkdown/OlAndLi";
+import UlAndLi from "components/Post/MarkdownViewer/StyledMarkdown/UlAndLi";
 import st from "./MarkdownViewer.module.scss";
 
 interface Prop {

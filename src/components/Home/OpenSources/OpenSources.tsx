@@ -1,6 +1,8 @@
-import SourcePost from "@/components/Home/PostTypes/SourcePost";
-import HomeTitle from "@/components/HomeTitle/HomeTitle";
-import { getOpenSourcePosts } from "@/service/posts";
+import { getOpenSourcePosts } from "service/posts";
+
+import SourcePost from "components/Home/PostTypes/SourcePost";
+import HomeTitle from "components/HomeTitle/HomeTitle";
+
 import st from "./OpenSources.module.scss";
 
 const OpenSources = async () => {

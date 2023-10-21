@@ -1,9 +1,11 @@
 "use client";
 
-import NavClass from "@/components/NavCategory/NavClass";
-import NavTotal from "@/components/NavCategory/NavTotal";
-import localFont from "next/font/local";
 import { useState } from "react";
+
+import NavClass from "components/NavCategory/NavClass";
+import NavTotal from "components/NavCategory/NavTotal";
+import localFont from "next/font/local";
+
 import st from "./NavCategory.module.scss";
 
 export interface DatasFromJson {

@@ -1,19 +1,19 @@
 import Image, { StaticImageData } from "next/image";
-
-import HomeTitle from "@/components/HomeTitle/HomeTitle";
-import st from "./Categories.module.scss";
-
 import Link from "next/link";
-import ios from "../../../../public/images/icons/Apple.jpeg";
-import codepen from "../../../../public/images/icons/CodePen.webp";
-import css from "../../../../public/images/icons/Css.png";
-import flutter from "../../../../public/images/icons/Flutter.png";
-import git from "../../../../public/images/icons/Git.png";
-import js from "../../../../public/images/icons/JavaScript.png";
-import mysql from "../../../../public/images/icons/MySQL.png";
-import next from "../../../../public/images/icons/NextJs.png";
-import react from "../../../../public/images/icons/React.png";
-import typescript from "../../../../public/images/icons/TypeScript.png";
+
+import HomeTitle from "components/HomeTitle/HomeTitle";
+
+import ios from "assets/images/icons/Apple.jpeg";
+import codepen from "assets/images/icons/CodePen.webp";
+import css from "assets/images/icons/Css.png";
+import flutter from "assets/images/icons/Flutter.png";
+import git from "assets/images/icons/Git.png";
+import js from "assets/images/icons/JavaScript.png";
+import mysql from "assets/images/icons/MySQL.png";
+import next from "assets/images/icons/NextJs.png";
+import react from "assets/images/icons/React.png";
+import typescript from "assets/images/icons/TypeScript.png";
+import st from "./Categories.module.scss";
 
 type CategoriesList = {
   path?: string;

@@ -1,7 +1,8 @@
-import MainPost from "@/components/Home/PostTypes/MainPost";
-import OtherPosts from "@/components/Home/PostTypes/OtherPosts";
-import HomeTitle from "@/components/HomeTitle/HomeTitle";
-import { getRecentPosts } from "@/service/posts";
+import { getRecentPosts } from "service/posts";
+
+import MainPost from "components/Home/PostTypes/MainPost";
+import OtherPosts from "components/Home/PostTypes/OtherPosts";
+import HomeTitle from "components/HomeTitle/HomeTitle";
 
 import st from "./RecentPosts.module.scss";
 

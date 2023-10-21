@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
-import Footer from "@/components/Footer/Footer";
-import Nav from "@/components/Nav/Nav";
+import Footer from "components/Footer/Footer";
+import Nav from "components/Nav/Nav";
 
 import { Open_Sans } from "next/font/google";
 import localFont from "next/font/local";
