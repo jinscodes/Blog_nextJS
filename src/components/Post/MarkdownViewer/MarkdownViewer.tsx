@@ -55,24 +55,14 @@ const MarkdownViewer = ({ content }: Prop) => {
           );
         },
         img: (image) => (
-          // <Image
-          //   src={image.src || ""}
-          //   alt={image.alt || ""}
-          //   width={0}
-          //   height={0}
-          //   sizes="auto"
-          //   className={st.image}
-          // />
-          <>
-            <Image
-              src={image.src || ""}
-              alt={image.alt || ""}
-              width={0}
-              height={0}
-              sizes="auto"
-              className={st.image}
-            />
-          </>
+          <Image
+            src={image.src || ""}
+            alt={image.alt || ""}
+            width={0}
+            height={0}
+            sizes="auto"
+            className={st.image}
+          />
         ),
         h2: ({ node, ...props }) => <H2Underline props={props} />,
         pre: ({ node, ...props }) => (
