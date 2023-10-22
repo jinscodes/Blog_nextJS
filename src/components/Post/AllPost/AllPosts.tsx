@@ -1,6 +1,7 @@
-import ClassificationText from "@/components/ClassificationText/ClassificationText";
-import PostCard from "@/components/Post/PostCard/PostCard";
-import { Post } from "@/service/posts";
+import ClassificationText from "components/ClassificationText/ClassificationText";
+import PostCard from "components/Post/PostCard/PostCard";
+import { Post } from "service/posts";
+
 import st from "./AllPosts.module.scss";
 
 interface Prop {
