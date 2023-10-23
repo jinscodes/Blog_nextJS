@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import CategoryPill from "@/components/CategoryPill/CategoryPill";
-import ProfileAndId from "@/components/ProfileAndId/ProfileAndId";
-import { Post } from "@/service/posts";
+import { Post } from "service/posts";
+
+import CategoryPill from "components/CategoryPill/CategoryPill";
+import ProfileAndId from "components/ProfileAndId/ProfileAndId";
 
 import st from "./PostCard.module.scss";
 
