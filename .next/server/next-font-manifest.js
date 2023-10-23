@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/hanjinsung/Desktop/blog_nextJS/src/app/page":["static/media/1390ed7ad69257b2-s.p.otf"],"/Users/hanjinsung/Desktop/blog_nextJS/src/app/layout":["static/media/cdbcea0e589a6ff7-s.p.woff2","static/media/1390ed7ad69257b2-s.p.otf","static/media/1390ed7ad69257b2-s.p.otf"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{},\"appUsingSizeAdjust\":false,\"pagesUsingSizeAdjust\":false}"
