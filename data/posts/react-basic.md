@@ -1,6 +1,7 @@
 ## Before looking at React, Framework Versus Library
 
-![](https://github.com/jinscodes/Blog_nextJS/assets/87598134/7a8da2bd-7bdb-4f21-b081-ac7032c7dc92)   
+![](https://github.com/jinscodes/Blog_nextJS/assets/87598134/fa70f4d0-a074-4a8d-bffd-b4f0e1bc8c49)   
+![](.images/react-basic.png)
 
 Frameworks provide a comprehensive solution for application development, covering various aspects. They have less flexibility and come with more rules to follow. 
 
