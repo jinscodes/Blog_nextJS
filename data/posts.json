@@ -8,6 +8,14 @@
     "feautred": true
   },
   {
+    "title": "React Basic (2)",
+    "description": "How to create the project using React. Checking the basic tools for programming with React.",
+    "date": "2022-08-20",
+    "category": "ReactJs",
+    "path": "react-basic2",
+    "featured": false
+  },
+  {
     "title": "2021년 리뷰(example)",
     "description": "2021년 한해 동안 배운 기술들, 생각들 정리",
     "date": "2021-12-31",
