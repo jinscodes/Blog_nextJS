@@ -1,11 +1,10 @@
 ## Before looking at React, Framework Versus Library
 
-![](https://github.com/jinscodes/Blog_nextJS/assets/87598134/fa70f4d0-a074-4a8d-bffd-b4f0e1bc8c49)   
-![](.images/react-basic.png)
+![](https://github.com/jinscodes/Blog_nextJS/assets/87598134/fba1f45f-3b11-4816-920f-023b92bec777)   
 
 Frameworks provide a comprehensive solution for application development, covering various aspects. They have less flexibility and come with more rules to follow. 
 
-Libraries are more focused and provide specific functionality, allowing for greater flexibility and a relatively lower learning curve.
+A library is a collection of reusable code or functions that provide specific functionality, allowing for greater flexibility and a relatively lower learning curve.
 
 ## React Basic - What's React?
 
