@@ -117,5 +117,5 @@ IMAGE
 9. 여러번 띄어쓰기
 전각 공백 (　) < 한국 키보드에서 입력 불가하므로 괄호안 복사하여 사용
 
-& nbsp; =   Non-breaking space의 약자
+&nbsp; =   Non-breaking space의 약자
 :=     160;

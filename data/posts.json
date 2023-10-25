@@ -16,6 +16,14 @@
     "featured": false
   },
   {
+    "title": "React Basic (3)",
+    "description": "Very very simple concepts of React. This post is about js, ts, JSX, and TSX, about props, about useState and useEffect.",
+    "date": "2022-08-27",
+    "category": "ReactJs",
+    "path": "react-basic3",
+    "featured": false
+  },
+  {
     "title": "2021년 리뷰(example)",
     "description": "2021년 한해 동안 배운 기술들, 생각들 정리",
     "date": "2021-12-31",
