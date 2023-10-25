@@ -107,7 +107,7 @@
 }
 .MarkdownViewer_markdown__VX352 .MarkdownViewer_image__ZEedT {
   width: 100%;
-  height: 350px;
+  height: auto;
   border-radius: 12px;
 }
 .MarkdownViewer_markdown__VX352 .MarkdownViewer_pre_container__sA01Y > div {
@@ -126,10 +126,22 @@
   font-size: 85%;
   border-radius: 4px;
 }
-.MarkdownViewer_markdown__VX352 .MarkdownViewer_a__uNBWo {
-  -webkit-text-decoration-color: darkblue;
-          text-decoration-color: darkblue;
-  color: darkblue;
+.MarkdownViewer_markdown__VX352 a {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 15px 20px;
+  font-size: 20px;
+  -webkit-text-decoration-color: black;
+          text-decoration-color: black;
+  text-decoration: none;
+  color: black;
+  border-radius: 12px;
+  border: 1px solid lightblue;
+  cursor: pointer;
+}
+.MarkdownViewer_markdown__VX352 a:hover {
+  background-color: rgba(173, 216, 230, 0.1);
 }
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/posts/[postPage]/[categorizedPostPage]/slug.module.scss ***!

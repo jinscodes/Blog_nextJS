@@ -75,7 +75,7 @@ LINK
 	// code
 	Link: [Google][googlelink]
 
-	[googlelink]: https://google.com "Go google"
+	[googlelink](https://google.com "Go google")
 ```
 
 IMAGE
@@ -107,3 +107,15 @@ IMAGE
 	* 기울여쓰기 *
 	_ 기울여쓰기 _
 ```
+
+앞뒤 * 기울기
+앞뒤 _ 기울기
+앞뒤 ** 굵게
+앞뒤 __ 굵게
+앞뒤 ~~ 취소선
+
+9. 여러번 띄어쓰기
+전각 공백 (　) < 한국 키보드에서 입력 불가하므로 괄호안 복사하여 사용
+
+& nbsp; =   Non-breaking space의 약자
+:=     160;

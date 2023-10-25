@@ -32,3 +32,5 @@ When I heard the above two quotes, I realized that I needed to change my attitud
 In my case, I couldn't always meet the standards while building the structure for the websites. Also, it's so hard for me to expect the codes that will be repeated or not and grant single responsibilty to my codes. Alough I couldn't expect the DRY and give SR to my codes or components, I've tried to remind and keep the criteria. Whenever I faced some problems of repeating or complex responsibility, I immediately fixed the structures of the components or codes. 
 
 > We are not perfect and can make mistakes. However, we must always try to have a conservative attitude toward our code. Reminding and Trying to keep the criteira for making clean and neat codes.
+
+---
