@@ -1,4 +1,4 @@
-// File: /Users/hanjinsung/Desktop/blog_nextJS/src/app/posts/[postPage]/[categorizedPostPage]/page.tsx
+// File: /Users/hanjinsung/Desktop/Blog_nextJS/src/app/posts/[postPage]/[categorizedPostPage]/page.tsx
 import * as entry from '../../../../../../src/app/posts/[postPage]/[categorizedPostPage]/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
