@@ -16,11 +16,11 @@
     "featured": false
   },
   {
-    "title": "React Basic (3)",
+    "title": "All about JSX",
     "description": "Very very simple concepts of React. This post is about js, ts, JSX, and TSX, about props, about useState and useEffect.",
     "date": "2022-08-27",
     "category": "ReactJs",
-    "path": "react-basic3",
+    "path": "all-about-jsx",
     "featured": false
   },
   {
