@@ -89,6 +89,40 @@ By using CDN, the browser handles the JSX on its own if JSX is directly designat
 </script>
 ```
 
+## JSX transformation
+Before the browser is launched, JSX is converted to JavaScript form using Barbel in the process of bundling code.
+		
+Let's check the below codes
+```jsx
+	import React from 'react';
+
+	function App() {
+	  return <h1>Hello World!</h1>;
+	}
+```
+JSX transform turns it into regular JavaScript:
+```javascript
+	import React from 'react';
+
+	function App() {
+	  return React.createElement('h1', null, 'Hello World!');
+	}
+```
+
+Components can be rendered by using the React.createElement() function without JSX. However, this method is more inconvenient than using JSX. JSX makes it easy and easy to render the UI.
+
+## Upgrade to the New JSX Transform
+### Create React App
+Use 4.0.0+ version
+
+### Next.js
+Use 9.5.3+ version
+
+### Gatsby
+Use 2.24.5+ version
+
+### Barbel
+
 ---
 - `https://legacy.reactjs.org/docs/introducing-jsx.html`
 - `https://velog.io/@gyumin_2/React-JSX%EB%9E%80%EC%A0%95%EC%9D%98-%EC%9E%A5%EC%A0%90-%EB%AC%B8%EB%B2%95-%ED%8A%B9%EC%A7%95-%EB%93%B1`

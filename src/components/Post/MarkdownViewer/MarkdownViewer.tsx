@@ -29,7 +29,6 @@ const MarkdownViewer = ({ content }: Prop) => {
           return !inline && match ? (
             <SyntaxHighlighter
               showLineNumbers={true}
-              showInlineLineNumbers={false}
               lineNumberStyle={{
                 paddingRight: "1em",
                 textAlign: "right",
