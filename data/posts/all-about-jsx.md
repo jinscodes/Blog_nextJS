@@ -89,6 +89,10 @@ By using CDN, the browser handles the JSX on its own if JSX is directly designat
 </script>
 ```
 
+## JSX transforming
+
+
 ---
 - `https://legacy.reactjs.org/docs/introducing-jsx.html`
 - `https://velog.io/@gyumin_2/React-JSX%EB%9E%80%EC%A0%95%EC%9D%98-%EC%9E%A5%EC%A0%90-%EB%AC%B8%EB%B2%95-%ED%8A%B9%EC%A7%95-%EB%93%B1`
+- `https://ko.legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html`
