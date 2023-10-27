@@ -9,6 +9,15 @@ JSX is a syntax extension to JavaScript and helps extract full power of JavaScri
 
 > If you want to use React, I think JSX or TSX is almost necessary
 
+## Create JSX file
+자바스크립트 이름 -> filename.**js**   
+
+리액트 컴포넌트 이름 -> filename.**jsx**   
+
+타입스크립트 이름 -> filename.**ts**   
+
+리액트 타입스크립트 컴포넌트 이름 -> filename.**tsx**
+
 ## JSX's workflow
 Regardless of frameworks, the most important is that the web can understand our code, meaning the end result should be a combination of HTML, CSS, and JS.
 
