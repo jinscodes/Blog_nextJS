@@ -122,6 +122,61 @@ Use 9.5.3+ version
 Use 2.24.5+ version
 
 ### Barbel
+Use 7.9.0 + version   
+If you are using ```@babel/plugin-transform-ract-jsx```
+```bash
+// npm
+npm update @babel/core @babel/plugin-transform-react-jsx
+// yarn
+yarn upgrade @babel/core @babel/plugin-transform-react-jsx
+```
+If you are using ```@babel/preset-react```
+```bash
+// npm
+npm update @babel/core @babel/preset-react
+// yarn
+yarn upgrade @babel/core @babel/preset-react
+```
+The old transform ```{"runtime": "classic"}``` is the default.   
+```{"runtime": "automatic"}``` is an option to enable the new transform.   
+
+```bash
+// If you are using @babel/preset-react
+{
+ "presets": [
+  ["@babel/preset-react", {
+   "runtime": "automatic"
+  }]
+ ]
+}
+```
+
+```bash
+// If you're using @babel/plugin-transform-react-jsx
+{
+ "plugins": [
+  ["@babel/plugin-transform-react-jsx", {
+   "runtime": "automatic"
+  }]
+ ]
+}
+```
+
+### ESLint
+If you are using ESLint plugin, ```react/jsx-uses-react``` and ```react/react-in-jsx-scope``` are no longer needed, so turn off it.
+```json
+{
+ // ...
+ "rules": {
+  // ...
+  "react/jsx-uses-react": "off",
+  "react/react-in-jsx-scope": "off"
+ }
+}
+```
+
+### TypeScript
+Use 4.1+ version
 
 ---
 - `https://legacy.reactjs.org/docs/introducing-jsx.html`
