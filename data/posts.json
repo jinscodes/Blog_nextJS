@@ -32,11 +32,11 @@
     "featured": false
   },
   {
-    "title": "React Basic (3)",
-    "description": "If you want to use React, you should know useState and useEffect. Let's check it.",
+    "title": "React Hook (1)",
+    "description": "useState & useEffect. If you want to use React, you should know useState and useEffect. Let's check it.",
     "date": "2022-09-05",
     "category": "ReactJs",
-    "path": "react-basic3",
+    "path": "react-hook1",
     "featured": true
   },
   {
