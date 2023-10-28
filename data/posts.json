@@ -32,6 +32,14 @@
     "featured": false
   },
   {
+    "title": "React Basic (3)",
+    "description": "If you want to use React, you should know useState and useEffect. Let's check it.",
+    "date": "2022-09-05",
+    "category": "ReactJs",
+    "path": "react-basic3",
+    "featured": true
+  },
+  {
     "title": "2021년 리뷰(example)",
     "description": "2021년 한해 동안 배운 기술들, 생각들 정리",
     "date": "2021-12-31",
