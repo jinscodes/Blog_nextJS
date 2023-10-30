@@ -13,6 +13,7 @@ import Nextjs from "../../../public/svg/Nextjs.svg";
 import Reactjs from "../../../public/svg/Reactjs.svg";
 import Sass from "../../../public/svg/Sass.svg";
 import Typescript from "../../../public/svg/Typescript.svg";
+import WebCS from "../../../public/svg/WebCS.svg";
 import st from "./NavMenu.module.scss";
 
 import { DatasFromJson } from "components/NavCategory/NavCategory";
@@ -39,6 +40,7 @@ const NavMenu = ({ datas, isMenu }: Props) => {
     Apple: Apple,
     Mysql: Mysql,
     Git: Git,
+    WebCS: WebCS,
   };
 
   return (
