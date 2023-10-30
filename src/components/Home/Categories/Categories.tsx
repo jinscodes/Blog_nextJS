@@ -5,7 +5,6 @@ import HomeTitle from "components/HomeTitle/HomeTitle";
 
 import ios from "assets/images/icons/Apple.jpeg";
 import codepen from "assets/images/icons/CodePen.webp";
-import css from "assets/images/icons/Css.png";
 import flutter from "assets/images/icons/Flutter.png";
 import git from "assets/images/icons/Git.png";
 import js from "assets/images/icons/JavaScript.png";
@@ -13,6 +12,7 @@ import mysql from "assets/images/icons/MySQL.png";
 import next from "assets/images/icons/NextJs.png";
 import react from "assets/images/icons/React.png";
 import typescript from "assets/images/icons/TypeScript.png";
+import css from "assets/images/icons/WebCS.png";
 import st from "./Categories.module.scss";
 
 type CategoriesList = {
@@ -25,7 +25,7 @@ type CategoriesList = {
 const Categories = () => {
   const categories: CategoriesList[] = [
     { title: "JavaScript", img: js, color: "255, 102, 0" },
-    { path: "CSS", title: "HTML&CSS", img: css, color: "0, 170, 255" },
+    { path: "WebCs", title: "Web CS", img: css, color: "0, 170, 255" },
     { title: "OpenSources", img: codepen, color: "0, 193, 157" },
     { path: "ReactJs", title: "React", img: react, color: "144, 0, 255" },
     { title: "NextJs", img: next, color: "255, 0, 102" },

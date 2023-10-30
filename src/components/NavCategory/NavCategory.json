@@ -21,6 +21,15 @@
     ]
   },
   {
+    "class": "CS",
+    "menu": [
+      {
+        "title": "WebCS",
+        "svg": "WebCS"
+      }
+    ]
+  },
+  {
     "class": "StyleSheet",
     "menu": [
       {

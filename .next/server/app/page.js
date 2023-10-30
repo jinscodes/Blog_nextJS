@@ -245,7 +245,7 @@ __webpack_require__.r(__webpack_exports__);
         '',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 22675)), "/Users/hanjinsung/Desktop/Blog_nextJS/src/app/page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 58275)), "/Users/hanjinsung/Desktop/Blog_nextJS/src/app/page.tsx"],
           
         }]
       },
@@ -269,32 +269,32 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 662:
+/***/ 81190:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 63912, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 38847));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 63));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 82488));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 69954));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 27977, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 94657));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 77334));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 39110));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 33654));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 48511));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 44887));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 61794));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9737));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 34651));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 93913));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 16410));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 43755));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2410));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 42957));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 49946));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 43755));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3700));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 43890));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 87090));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 38847));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 63));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 69954));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 82488));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 61794));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9737))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 38225))
 
 /***/ }),
 
@@ -680,7 +680,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 22675:
+/***/ 58275:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -721,8 +721,6 @@ const HomeTitle = ({ content })=>{
 /* harmony default export */ const Apple = ({"src":"/_next/static/media/Apple.6b00f807.jpeg","height":400,"width":400,"blurDataURL":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKCgoKCgsMDAsPEA4QDxYUExMUFiIYGhgaGCIzICUgICUgMy03LCksNy1RQDg4QFFeT0pPXnFlZXGPiI+7u/sBCgoKCgoKCwwMCw8QDhAPFhQTExQWIhgaGBoYIjMgJSAgJSAzLTcsKSw3LVFAODhAUV5PSk9ecWVlcY+Ij7u7+//CABEIAAgACAMBIgACEQEDEQH/xAAnAAEBAAAAAAAAAAAAAAAAAAAABwEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAAjIP/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/9oACAEBAAE/AH//xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oACAECAQE/AH//xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oACAEDAQE/AH//2Q==","blurWidth":8,"blurHeight":8});
 ;// CONCATENATED MODULE: ./src/assets/images/icons/CodePen.webp
 /* harmony default export */ const CodePen = ({"src":"/_next/static/media/CodePen.abeac83e.webp","height":200,"width":200,"blurDataURL":"data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAABQAgCdASoIAAgAAkA4JaQAD2O9IAPqusnUdgAAzgK9K/jm0QgP/4TN5oBITnv956JX/5fpTJ0G1t6bz+JmmY/0ET/f/QV9E/xK/oV5+s8/KxMUAIQAAA==","blurWidth":8,"blurHeight":8});
-;// CONCATENATED MODULE: ./src/assets/images/icons/Css.png
-/* harmony default export */ const Css = ({"src":"/_next/static/media/Css.2cb018fc.png","height":720,"width":720,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAyklEQVR42mOAAae5170kpl6ZKwTEzkA2AzKwmHWtTXX61f9Ri2/+j11y87/ytKv/LYFiYElXoGq5aVf+N2y69//8/Q+/Lz34+LseyJYHioHkGNznXZ/L0H/p/4Grb34fv/n2/+Hrb/4fBLJBYmA5t7lAYsLl/6tPPv+98+Kr/+tOP/+/8sSz3yAxsJzfghteDJMv/5+w6+H/x6+//X7w6utvEBskBpYDAZCD9GZc/Z+/+vb/AiDWnwF3JALYzgY6aOLluSBsOxvhTQAwGopYi8YAWwAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 ;// CONCATENATED MODULE: ./src/assets/images/icons/Flutter.png
 /* harmony default export */ const Flutter = ({"src":"/_next/static/media/Flutter.e01babbe.png","height":1000,"width":1000,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAwUlEQVR42mMAgeCjPxhDjv5gYgCCkKPfs4KPfN8H5AdCJI8AJY/8YIZKFgcf/f4fKHkMqIkXquA7I0TyRxmQ/R+IVzFAQTBII1SyHiQZevTH4tBDX2SA7DCgmCkDDAAF+oCS67S3fNYLOvrzN1Dyb+DBr/oMyEBm/Qcxte0//lhu/fA/9tA7BQYgcFp+m5XBed93RtsZJ8A+0Nj4vpoxc8V/BtcJuzVa9/ExwIDxgpuMMDaT7+Rclqi5BxhCZ4G9CQCE4WIR+JCHkgAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 ;// CONCATENATED MODULE: ./src/assets/images/icons/Git.png
@@ -737,6 +735,8 @@ const HomeTitle = ({ content })=>{
 /* harmony default export */ const React = ({"src":"/_next/static/media/React.3eead7ec.png","height":512,"width":512,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAM1BMVEUAvNQAu9QAu9MAu9MAu9MAu9MAu9MAu9MAu9MAu9MAu9MAu9MAu9MAu9MAu9MAu9MAu9P6S8ZTAAAAEXRSTlMAAAANL0FjZm56hpCYm7Cxw7CrupYAAAA5SURBVHjaRYu5DQAwCMQO8n/A/tMGlCKdJdsASkqFCJzHnCMzuC3V1Ri12znWa8DeDqFEXP347aALPs4BvKaE8Y4AAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
 ;// CONCATENATED MODULE: ./src/assets/images/icons/TypeScript.png
 /* harmony default export */ const TypeScript = ({"src":"/_next/static/media/TypeScript.07763ada.png","height":1200,"width":1200,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA40lEQVR42iXJMUrDYBjH4d8/+dJaaDGYJRWxS8HFglMXu7p5Bo/g6kG8gAdwyeLqZBAcRHArgi1qg6CNNmiFr3lFfNZHeyf5DCwFGZj4Z4CQCveXgUQjQEJ4A0CRYFmTulCyz5VpXHpA0BCdUCwWnn4cmfvwpkHsOB5uYAYv8x/K7xWjnXWy23e5GqgN9ncTttM2F/kzh6Mtru5eaYYi6DZl2WRJlhdMZhVHZ1PuH+Z0kxYukAXeEA2RdCLWmiHDfovxU0Vvs83BIJbzNUWvFaQ3j5WVX17eIG5Hdn451en1W/ELHl9WJB2hUPoAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
+;// CONCATENATED MODULE: ./src/assets/images/icons/WebCS.png
+/* harmony default export */ const WebCS = ({"src":"/_next/static/media/WebCS.7f5046c9.png","height":512,"width":512,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAABBklEQVR42h3Pv0rDQADH8d9dLlfbkNCAlVodREGXIKKDWSy4CX0D9QmEvosuQd/BwdmtVSSzOukQRO0tkthGk/Ty5wx+5u/yJagdn48cojFPo8RVCigq5aOQZwCeyenFyOmYrXHHatoaIaCUQNWVmGbRV/zbZwXl3rrN7Z3FSEa5xrOkhGUwqcvKnsTMYw1G3bLMcXtzzcXHJ4JXAaPX5fuDE6ShcllZAVxn2N7dQ295BUubITZW1zBbaOF7+g7WoMqfxNWB1d6Sg8MjLuc5Hh4DGbwIbnLdJ8OreydR+jidS7urQkiZ4Un8wORa1G6QPkFteHnnQG96syR1I/EGQ6t8RvG/+QfB+GtF3Yx6YAAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
 // EXTERNAL MODULE: ./src/components/Home/Categories/Categories.module.scss
 var Categories_module = __webpack_require__(38415);
 var Categories_module_default = /*#__PURE__*/__webpack_require__.n(Categories_module);
@@ -764,9 +764,9 @@ const Categories = ()=>{
             color: "255, 102, 0"
         },
         {
-            path: "CSS",
-            title: "HTML&CSS",
-            img: Css,
+            path: "WebCs",
+            title: "Web CS",
+            img: WebCS,
             color: "0, 170, 255"
         },
         {
@@ -1157,18 +1157,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 16410:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/Css.2cb018fc.png","height":720,"width":720,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAyklEQVR42mOAAae5170kpl6ZKwTEzkA2AzKwmHWtTXX61f9Ri2/+j11y87/ytKv/LYFiYElXoGq5aVf+N2y69//8/Q+/Lz34+LseyJYHioHkGNznXZ/L0H/p/4Grb34fv/n2/+Hrb/4fBLJBYmA5t7lAYsLl/6tPPv+98+Kr/+tOP/+/8sSz3yAxsJzfghteDJMv/5+w6+H/x6+//X7w6utvEBskBpYDAZCD9GZc/Z+/+vb/AiDWnwF3JALYzgY6aOLluSBsOxvhTQAwGopYi8YAWwAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
-
-/***/ }),
-
 /***/ 43755:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1253,6 +1241,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ 38225:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/WebCS.7f5046c9.png","height":512,"width":512,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAABBklEQVR42h3Pv0rDQADH8d9dLlfbkNCAlVodREGXIKKDWSy4CX0D9QmEvosuQd/BwdmtVSSzOukQRO0tkthGk/Ty5wx+5u/yJagdn48cojFPo8RVCigq5aOQZwCeyenFyOmYrXHHatoaIaCUQNWVmGbRV/zbZwXl3rrN7Z3FSEa5xrOkhGUwqcvKnsTMYw1G3bLMcXtzzcXHJ4JXAaPX5fuDE6ShcllZAVxn2N7dQ295BUubITZW1zBbaOF7+g7WoMqfxNWB1d6Sg8MjLuc5Hh4DGbwIbnLdJ8OreydR+jidS7urQkiZ4Un8wORa1G6QPkFteHnnQG96syR1I/EGQ6t8RvG/+QfB+GtF3Yx6YAAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":8});
+
+/***/ }),
+
 /***/ 38847:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1308,7 +1308,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [160,812], () => (__webpack_exec__(11556)));
+var __webpack_exports__ = __webpack_require__.X(0, [160,593], () => (__webpack_exec__(11556)));
 module.exports = __webpack_exports__;
 
 })();

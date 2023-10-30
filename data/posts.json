@@ -40,12 +40,12 @@
     "featured": true
   },
   {
-    "title": "2021년 리뷰(example)",
-    "description": "2021년 한해 동안 배운 기술들, 생각들 정리",
-    "date": "2021-12-31",
+    "title": "React Hook (2)",
+    "description": "useEffect and life cycle of React component.",
+    "date": "2022-09-11",
     "category": "ReactJs",
-    "path": "review-2021",
-    "featured": false
+    "path": "react-hook2",
+    "featured": true
   },
   {
     "title": "자바스크립트 기초 문법(example)",
@@ -72,35 +72,11 @@
     "featured": false
   },
   {
-    "title": "2022년 리뷰(example)",
-    "description": "2022년 한해 동안 배운 기술들, 생각들 정리",
-    "date": "2022-12-31",
-    "category": "ReactJs",
-    "path": "review-2022",
-    "featured": false
-  },
-  {
     "title": "Node 프로 팁!(example)",
     "description": "노드를 프로처럼 사용하기 위한 모든 팁들을 정리!",
     "date": "2023-04-10",
     "category": "OpenSource",
     "path": "node-pro-tips",
-    "featured": true
-  },
-  {
-    "title": "리액트 Best Practice!(example)",
-    "description": "리액트를 정확하게 사용하는 방법들을 정리",
-    "date": "2023-04-15",
-    "category": "ReactJs",
-    "path": "best-react-practices",
-    "featured": true
-  },
-  {
-    "title": "리액트 18버전!(example)",
-    "description": "리액트 18에 추가된 사항들 정리",
-    "date": "2023-05-02",
-    "category": "ReactJs",
-    "path": "react18-walkthrough",
     "featured": true
   },
   {
