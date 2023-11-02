@@ -48,6 +48,14 @@
     "featured": true
   },
   {
+    "title": "Internet Netword and URI",
+    "description": "For programmers, Internet network is so important to understand the flow of their work. This post is about knowledge of internet network and URI.",
+    "date": "2022-09-17",
+    "category": "WebCS",
+    "path": "internet-network",
+    "featured": false
+  },
+  {
     "title": "자바스크립트 기초 문법(example)",
     "description": "기본 문법부터 사용하는 실전까지 최종정리",
     "date": "2022-05-08",
