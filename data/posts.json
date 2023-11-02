@@ -40,11 +40,11 @@
     "featured": true
   },
   {
-    "title": "React Hook (2)",
-    "description": "useEffect and life cycle of React component.",
+    "title": "React Lifecycle",
+    "description": "About life cycle of React component.",
     "date": "2022-09-11",
     "category": "ReactJs",
-    "path": "react-hook2",
+    "path": "react-lifecycle",
     "featured": true
   },
   {
