@@ -41,7 +41,7 @@
   },
   {
     "title": "React Lifecycle",
-    "description": "About life cycle of React component.",
+    "description": "About life cycle of React component. And it's related to useEffect.",
     "date": "2022-09-11",
     "category": "ReactJs",
     "path": "react-lifecycle",
