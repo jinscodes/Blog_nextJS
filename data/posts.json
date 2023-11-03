@@ -48,11 +48,19 @@
     "featured": true
   },
   {
-    "title": "Internet Netword and URI",
-    "description": "For programmers, Internet network is so important to understand the flow of their work. This post is about knowledge of internet network and URI.",
+    "title": "Internet Netword: IP",
+    "description": "1st. For programmers, Internet network is so important to understand the flow of their work: Internet Network and IP.",
     "date": "2022-09-17",
     "category": "WebCS",
-    "path": "internet-network",
+    "path": "internet-network-ip",
+    "featured": true
+  },
+  {
+    "title": "Internet Netword: TCP",
+    "description": "2nd. How to sovle the problems from IP. Let's check what is the TCP.",
+    "date": "2022-09-26",
+    "category": "WebCS",
+    "path": "internet-network-tcp",
     "featured": false
   },
   {
