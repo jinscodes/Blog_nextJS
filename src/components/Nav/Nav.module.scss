@@ -88,3 +88,11 @@
     }
   }
 }
+
+// 테블릿 (맥북 해상도 이하)
+@media screen and (max-width: 1512px) {
+  .header {
+    width: 0;
+    height: 0;
+  }
+}

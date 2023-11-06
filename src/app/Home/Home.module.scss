@@ -16,3 +16,14 @@
     opacity: 0.5;
   }
 }
+
+// 모바일
+@media all and (max-width: 767px) {
+  .section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}

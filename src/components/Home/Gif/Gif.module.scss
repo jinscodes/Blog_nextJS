@@ -80,3 +80,10 @@
     opacity: 0;
   }
 }
+
+// 테블릿 (맥북 해상도 이하)
+@media screen and (max-width: 1512px) {
+  .home_outline_container {
+    width: 100%;
+  }
+}

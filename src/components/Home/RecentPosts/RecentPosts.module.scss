@@ -2,14 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 1300px;
   margin-bottom: 60px;
 
   .posts_container {
     display: flex;
     justify-content: center;
     gap: 40px;
-    width: 70%;
 
     .other_posts_container {
       display: flex;
