@@ -92,12 +92,37 @@
 // 테블릿 (맥북 해상도 이하)
 @media screen and (max-width: 1512px) {
   .header {
-    border: 2px solid red;
-    overflow: auto;
-    position: absolute;
+    top: 30px;
     display: flex;
+    align-items: center;
     width: 80%;
-    height: 80px;
+    height: 50px;
+    background-color: rgba($color: white, $alpha: 0.9);
+    border-radius: 24px;
     z-index: 999;
+
+    .nav {
+      border: 1px solid white;
+    }
+
+    .profile {
+      height: 100%;
+
+      .myself,
+      .name_container,
+      .img {
+        display: none;
+        width: 0;
+        height: 0;
+      }
+
+      .link_container {
+        margin: 0;
+
+        .svg_container {
+          box-shadow: none;
+        }
+      }
+    }
   }
 }
