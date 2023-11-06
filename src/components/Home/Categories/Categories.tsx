@@ -25,7 +25,7 @@ type CategoriesList = {
 const Categories = () => {
   const categories: CategoriesList[] = [
     { title: "JavaScript", img: js, color: "255, 102, 0" },
-    { path: "WebCs", title: "Web CS", img: css, color: "0, 170, 255" },
+    { path: "WebCS", title: "Web CS", img: css, color: "0, 170, 255" },
     { title: "OpenSources", img: codepen, color: "0, 193, 157" },
     { path: "ReactJs", title: "React", img: react, color: "144, 0, 255" },
     { title: "NextJs", img: next, color: "255, 0, 102" },
