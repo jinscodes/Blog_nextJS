@@ -195,6 +195,12 @@ font-display: swap;
   transform: scale(1.005);
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.3);
 }
+
+@media all and (max-width: 767px) {
+  .MainPost_main_post__g97nN {
+    max-width: none;
+  }
+}
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/OtherPosts.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -244,6 +250,42 @@ font-display: swap;
 .OtherPosts_other_posts__lzkBm:hover {
   transform: scale(1.005);
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media all and (max-width: 767px) {
+  .OtherPosts_other_posts__lzkBm {
+    max-width: none;
+  }
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/Home/Home.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Home_section__Io06f {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.Home_section__Io06f h2 {
+  margin: -100px 0 0;
+  text-align: center;
+  font-size: 55px;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  font-weight: 300;
+  color: darkblue;
+  opacity: 0.5;
+}
+
+@media all and (max-width: 767px) {
+  .Home_section__Io06f {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
 }
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Categories/Categories.module.scss ***!
@@ -329,6 +371,12 @@ font-display: swap;
 .Categories_categories__N2HlC .Categories_container__90eq_ h6 {
   margin: 0;
 }
+
+@media screen and (max-width: 1512px) {
+  .Categories_categories__N2HlC {
+    width: 100%;
+  }
+}
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/HomeTitle/HomeTitle.module.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -412,9 +460,21 @@ font-display: swap;
     opacity: 0;
   }
 }
-@media screen and (max-width: 1512px) {
+@media screen and (max-width: 767px) {
   .Gif_home_outline_container__Igv1o {
     width: 100%;
+  }
+  .Gif_home_outline_container__Igv1o .Gif_heart__fQfsz {
+    padding-bottom: 15px !important;
+    margin-bottom: 20px;
+  }
+  .Gif_home_outline_container__Igv1o h1 {
+    display: flex;
+    margin: 0;
+    font-size: 2.5rem !important;
+    line-height: 1.65 !important;
+    font-weight: 300;
+    letter-spacing: -0.1rem;
   }
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -433,6 +493,16 @@ font-display: swap;
   justify-content: center;
   width: 1300px;
   gap: 30px;
+}
+
+@media all and (max-width: 767px) {
+  .OpenSources_open_sources__gRaP6 {
+    width: 100%;
+  }
+  .OpenSources_open_sources__gRaP6 .OpenSources_source_container__XZVOd {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/SourcePost.module.scss ***!
@@ -463,7 +533,7 @@ font-display: swap;
   padding: 24px;
 }
 .SourcePost_opensource_card__MQrXu .SourcePost_content_container__IetxT .SourcePost_title__syL3Q {
-  font-size: 36px;
+  font-size: 2rem;
   color: white;
 }
 .SourcePost_opensource_card__MQrXu .SourcePost_content_container__IetxT .SourcePost_description__gQyVp {
@@ -495,33 +565,12 @@ font-display: swap;
   flex-direction: column;
   gap: 40px;
 }
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/Home/Home.module.scss ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.Home_section__Io06f {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 50px;
-}
-.Home_section__Io06f h2 {
-  margin: -100px 0 0;
-  text-align: center;
-  font-size: 55px;
-  font-family: "Courier New", Courier, monospace;
-  font-style: italic;
-  font-weight: 300;
-  color: darkblue;
-  opacity: 0.5;
-}
 
 @media all and (max-width: 767px) {
-  .Home_section__Io06f {
-    position: relative;
-    display: flex;
+  .RecentPosts_recent_posts__0uOw1 {
+    width: 100%;
+  }
+  .RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG {
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
   }
 }
