@@ -5,3 +5,12 @@
   margin-top: 15px;
   font-family: "Open Sans";
 }
+
+// 테블릿 (맥북 해상도 이하)
+@media screen and (max-width: 1512px) {
+  .nav_category {
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+  }
+}

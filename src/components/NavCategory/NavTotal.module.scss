@@ -6,3 +6,12 @@
   font-weight: 500;
   color: base.$header-total-color;
 }
+
+// 테블릿 (맥북 해상도 이하)
+@media screen and (max-width: 1512px) {
+  .total {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
