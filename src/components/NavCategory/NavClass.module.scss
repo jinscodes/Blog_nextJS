@@ -39,11 +39,12 @@
 // 테블릿 (맥북 해상도 이하)
 @media screen and (max-width: 1512px) {
   .nav_class {
-    border: 1px solid red;
     display: flex;
     align-items: center;
+    width: 100%;
     height: 100%;
     margin: 0;
+    background-color: transparent;
 
     .title {
       margin: 0;

@@ -89,9 +89,18 @@
   }
 }
 
+.copyright {
+  display: none;
+}
+
+.caret {
+  display: none;
+}
+
 // 테블릿 (맥북 해상도 이하)
 @media screen and (max-width: 1512px) {
   .header {
+    overflow: visible;
     top: 30px;
     display: flex;
     align-items: center;
@@ -101,12 +110,9 @@
     border-radius: 24px;
     z-index: 999;
 
-    .nav {
-      border: 1px solid white;
-    }
-
     .profile {
       height: 100%;
+      width: 400px;
 
       .myself,
       .name_container,
@@ -121,8 +127,62 @@
 
         .svg_container {
           box-shadow: none;
+          padding: 0;
+          height: 50px;
+
+          a {
+            height: 22px;
+          }
         }
       }
+    }
+  }
+
+  .copyright {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    font-size: 0.7rem;
+    color: darkgray;
+    right: 5px;
+  }
+}
+
+// 모바일
+@media screen and (max-width: 767px) {
+  .copyright {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  .header {
+    .profile {
+      width: 180px;
+
+      .link_container {
+        width: 180px;
+      }
+    }
+  }
+
+  .caret {
+    position: absolute;
+    display: block;
+    right: -30px;
+    animation: arrowDown 1s infinite;
+  }
+
+  @keyframes arrowDown {
+    60% {
+      opacity: 0.6;
+    }
+    80% {
+      opacity: 0.4;
+    }
+    100% {
+      transform: translatex(5px);
+      opacity: 0;
     }
   }
 }
