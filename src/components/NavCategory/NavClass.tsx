@@ -19,7 +19,7 @@ const NavClass = ({ datas, isMenu, setIsMenu }: Props) => {
   return (
     <div className={st.nav_class}>
       {datas.map((el) => (
-        <>
+        <div className={st.visible_menu}>
           <div
             className={`${st.title} ${el.class === isMenu && st.active_menu}`}
             onClick={() =>
@@ -39,7 +39,7 @@ const NavClass = ({ datas, isMenu, setIsMenu }: Props) => {
           </div>
 
           <NavMenu datas={el} isMenu={isMenu} />
-        </>
+        </div>
       ))}
     </div>
   );

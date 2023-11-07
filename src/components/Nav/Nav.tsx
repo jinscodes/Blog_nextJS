@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Caret from "../../../public/svg/Caret.svg";
 
 import NavCategory from "components/NavCategory/NavCategory";
 
@@ -42,6 +43,14 @@ const Nav = () => {
         </div>
       </section>
       <NavCategory />
+      <p className={st.copyright}>🧑🏻‍💻 Jay</p>
+      <Image
+        className={st.caret}
+        src={Caret}
+        alt="Caret"
+        width={20}
+        height={20}
+      />
     </header>
   );
 };
