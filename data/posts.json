@@ -65,10 +65,18 @@
   },
   {
     "title": "Internet Netword: PORT",
-    "description": "3nd. Port is numbered endpoint on a computer or device used to facilitate data exchange.",
+    "description": "3rd. Port is numbered endpoint on a computer or device used to facilitate data exchange.",
     "date": "2022-11-01",
     "category": "WebCS",
     "path": "internet-network-port",
+    "featured": false
+  },
+  {
+    "title": "Internet Netword: DNS",
+    "description": "4th. DNS (Domain Name System) is a decentralized system that translates human-readable domain names.",
+    "date": "2022-11-08",
+    "category": "WebCS",
+    "path": "internet-network-dns",
     "featured": false
   },
   {

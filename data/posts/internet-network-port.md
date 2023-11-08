@@ -7,6 +7,14 @@
 
 A port, in the context of networking and communication protocols, is a numbered endpoint on a computer or device used to facilitate data exchange between different devices or services, ensuring proper routing and delivery of information. Ports are essential for managing network traffic and enabling various applications to communicate effectively.
 
+### PORT Number
+- 0 ~ 65535: Assignable
+- 0 ~ 1023: Well-known Port, It's not recommended   
+	- FTP: 20, 21
+	- TELNET: 23
+	- HTTP: 80
+	- HTTPS: 443
+
 ## Origin Port & Destination Port
 
 As in the image above, the client IP uses the starting port and the destination port to solve the problem that arises when each data packet must be sent to multiple server IPs.
@@ -18,3 +26,6 @@ The origin port and destination port are included in TCP. In other words, there 
 ![](https://github.com/jinscodes/Blog_nextJS/assets/87598134/aebb4180-6dc9-40ea-84b5-a0343a34d2e2)
 
 For example, as shown in the picture above, the client has 8090 ports to the game server's port 11220, 21000 ports to the messenger server's port 32202, and the last 100100 ports to the web browser server's port 80. Data is transmitted to the corresponding Ip and port.
+
+---
+- `https://mingeonho1.tistory.com/entry/%EC%9D%B8%ED%84%B0%EB%84%B7-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC`
