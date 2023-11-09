@@ -87,50 +87,6 @@
   height: 6px;
   background-color: darkblue;
 }
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Post/PostCard/PostCard.module.scss ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.PostCard_post_card__gqqNr {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 350px;
-  height: 450px;
-  text-decoration: none;
-  color: black;
-  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 18px;
-  transition: transform ease-in-out 0.2s;
-}
-.PostCard_post_card__gqqNr .PostCard_img__JvBoD {
-  width: 350px;
-  height: 220px;
-}
-.PostCard_post_card__gqqNr .PostCard_contents_container__IxE_e {
-  width: 300px;
-  margin-top: 16px;
-}
-.PostCard_post_card__gqqNr .PostCard_contents_container__IxE_e .PostCard_category___Eb16 {
-  font-size: 16px;
-  margin-bottom: 12px;
-}
-.PostCard_post_card__gqqNr .PostCard_contents_container__IxE_e .PostCard_title__czxsS {
-  margin: 0;
-  margin-bottom: 16px;
-  font-size: 22px;
-}
-.PostCard_post_card__gqqNr .PostCard_contents_container__IxE_e .PostCard_description__3_Nc1 {
-  height: 80px;
-  margin: 0;
-  margin-bottom: 12px;
-  font-size: 14px;
-  color: darkgray;
-}
-
-.PostCard_post_card__gqqNr:hover {
-  transform: scale(1.01);
-}
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/CategoryPill/CategoryPill.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -176,6 +132,51 @@
 }
 .ProfileAndId_info__9z_AU .ProfileAndId_sm_date__S_xgC {
   font-size: 14px;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Post/PostCard/PostCard.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.PostCard_post_card__gqqNr {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 480px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 18px;
+  transition: transform ease-in-out 0.2s;
+}
+.PostCard_post_card__gqqNr .PostCard_img__JvBoD {
+  width: 350px;
+  height: 220px;
+}
+.PostCard_post_card__gqqNr .PostCard_contents_container__IxE_e {
+  width: 300px;
+  margin-top: 16px;
+}
+.PostCard_post_card__gqqNr .PostCard_contents_container__IxE_e .PostCard_category___Eb16 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.PostCard_post_card__gqqNr .PostCard_contents_container__IxE_e .PostCard_title__czxsS {
+  height: 50px;
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+.PostCard_post_card__gqqNr .PostCard_contents_container__IxE_e .PostCard_description__3_Nc1 {
+  height: 80px;
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: darkgray;
+}
+
+.PostCard_post_card__gqqNr:hover {
+  transform: scale(1.01);
 }
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Waves/Waves.module.scss ***!
