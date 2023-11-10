@@ -130,3 +130,4 @@ There are pros and cons of using **Component Composition**
 
 ---
 - `https://ko.legacy.reactjs.org/docs/context.html`
+- `https://ko.legacy.reactjs.org/docs/composition-vs-inheritance.html`
