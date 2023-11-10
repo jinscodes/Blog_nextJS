@@ -80,11 +80,19 @@
     "featured": false
   },
   {
-    "title": "React Context: Detail and Usage",
-    "description": "In React, context is a feature that allows data to be passed down the component tree without explicitly passing it through each intermediate component.",
+    "title": "React Context: Concept and Detail",
+    "description": "1st. In React, context is a feature that allows data to be passed down the component tree without explicitly passing it through each intermediate component.",
     "date": "2022-11-10",
     "category": "ReactJs",
     "path": "react-context",
+    "featured": false
+  },
+  {
+    "title": "React Context: Usage",
+    "description": "2nd. Let make React Context: context & hook",
+    "date": "2022-11-12",
+    "category": "ReactJs",
+    "path": "react-usage",
     "featured": false
   },
   {
