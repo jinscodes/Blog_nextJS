@@ -1,1 +1,0 @@
-vc-domain-verify=jayhan-blog.vercep.app,d496848dd42e07bda9b1
