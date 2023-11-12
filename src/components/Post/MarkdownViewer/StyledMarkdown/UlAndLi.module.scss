@@ -7,10 +7,16 @@
     padding-bottom: 16px;
     font-size: 18px;
     color: rgba(0, 0, 139, 0.7);
+    height: min-content;
 
     ul {
-      margin-top: 20px;
-      margin: 25px 20px;
+      // margin-top: 20px;
+      margin: 25px 20px 0;
+
+      li {
+        margin: 0;
+        padding: 0;
+      }
 
       li::before {
         content: "";
