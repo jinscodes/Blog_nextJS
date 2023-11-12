@@ -173,6 +173,12 @@ Unlike React context, useContext hook uses `useContext()`. We just allocate the 
 
 > 💡 You can either use the consumer component directly or the useContext hook, depending on which pattern you prefer.
 
+## Replacement of React Context
+
+- Redux
+- Zustang State
+- Recoil
+
 ---
 - `https://www.freecodecamp.org/news/react-context-for-beginners/`
 - `https://ko.legacy.reactjs.org/docs/context.html`
