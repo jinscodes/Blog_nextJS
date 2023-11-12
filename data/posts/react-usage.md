@@ -7,6 +7,16 @@ There are two ways to use Context.
 - React Context
 - useContext Hook
 
+## React Concept: Umbrella
+
+![](https://github.com/jinscodes/Blog_nextJS/assets/87598134/2a561d78-635c-4976-9445-743089332101)
+
+> **Umbrella** is a concept of to handle the range of the **context** when the specific data is needed under the specific areas.
+
+Factors that affect all contexts, such as dark mode or language, can affect all lower contexts by placing the umbrella at the top (blue umbrella). 
+
+Or, if there is data commonly applied to a specific context or less (pink & yellow umbrella), it can be made to affect all contexts below that specific context by putting an umbrella on that particular context.
+
 ## React Context
 There are four steps to using React Context
 
