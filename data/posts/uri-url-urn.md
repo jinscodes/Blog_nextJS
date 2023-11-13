@@ -39,5 +39,19 @@ If the URL specifies the location where the resource is located, the URN gives t
 
 💡 At first glance, the location of the resource (URL) and the identifier (URI) of the resource on the Internet seem to mean the same thing. But keep in mind that the 'location of resources' eventually represents 'one file location'.
 
+For example, let take a look the link:   
+`http://www.google.com/index.html?page=1&id=99`
+
+The **index.html** page located on the **`http://www.naver.com/`** server displays various screen results depending on the value of the query string page.
+
+At this point, URL is **`http://www.naver.com/index.html`**. **?page=1&id=99** is identifier to reach information that user wants. 
+
+In other words, **`http://www.naver.com/index.html?page=1&id=99`** is URI   
+and, **`http://www.naver.com/index.html`** is URL
+
+The reason is that the URL indicates the location of the resource, and the URI is the identifier of the resource. 
+**?page=1&id=99** This part does not indicate the location, but identifies that the page value is 1 and the id is 99.
+Of course, it is usually roughly referred to as URL, but strictly speaking, it is right to call it URI.
+
 ---
 - `https://inpa.tistory.com/entry/WEB-%F0%9F%8C%90-URL-URI-%EC%B0%A8%EC%9D%B4`
