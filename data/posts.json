@@ -104,7 +104,7 @@
     "featured": false
   },
   {
-    "title": "Making Hook in React",
+    "title": "Making Custom Hook in React",
     "description": "Let's make custom hook.",
     "date": "2022-11-17",
     "category": "ReactJs",

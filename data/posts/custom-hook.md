@@ -17,7 +17,7 @@ Building your own Hooks lets you extract component logic into reusable functions
     ↳ customHook.js || customHook.jsx
 ```
 
-## Step 1.
+### Step 1.
 
 In my case, I just write the code in the component. And then, trying to divide the code from the component.
 
@@ -70,7 +70,7 @@ function FriendListItem(props) {
 
 The above codes are overlapped. Instead of using these codes, we'd like to share the logic that is overlapped bewteen `FriendStatus` and `FriendListItem`.
 
-## Step 2.
+### Step 2.
 
 After checking the overlapped codes, the next step is to extract the code to custom hook.
 
@@ -113,7 +113,7 @@ function useFriendStatus(friendId) {
 }
 ```
 
-## Stpe 3.
+### Stpe 3.
 
 After extracting the hook from the component, the last step is to use the custom hook wherever you want.
 

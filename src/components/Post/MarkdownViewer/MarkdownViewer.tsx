@@ -8,6 +8,7 @@ import remarkGfm from "remark-gfm";
 import H2Underline from "components/Post/MarkdownViewer/StyledMarkdown/H2Underline";
 
 import Blockquote from "components/Post/MarkdownViewer/StyledMarkdown/Blockquote";
+import H3Underline from "components/Post/MarkdownViewer/StyledMarkdown/H3Underline";
 import HrLine from "components/Post/MarkdownViewer/StyledMarkdown/HrLine";
 import OlAndLi from "components/Post/MarkdownViewer/StyledMarkdown/OlAndLi";
 import UlAndLi from "components/Post/MarkdownViewer/StyledMarkdown/UlAndLi";
@@ -64,6 +65,7 @@ const MarkdownViewer = ({ content }: Prop) => {
           />
         ),
         h2: ({ node, ...props }) => <H2Underline props={props} />,
+        h3: ({ node, ...props }) => <H3Underline props={props} />,
         pre: ({ node, ...props }) => (
           <pre className={st.pre_container} {...props}></pre>
         ),
