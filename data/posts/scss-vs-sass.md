@@ -210,3 +210,63 @@ You can use '@use' to build modularity of certain css files and properties.
 Mixin can bind common attributes and values through `@mixin` and use `@include`. It seems very useful when common values have to be duplicated and used in many places.
 
 In addition, not only can you group and use values, but you can also assign them to properties using default parameters as a function. In other words, you can assign a specific value to a variable and receive it as a factor value from the mixin and use it
+
+### Extend/Inheritance
+
+**HTML & Sass(Scss)**:
+```css
+/* html */
+<div class="error error--serious">
+  Oh no! You've been hacked!
+</div>
+
+/* scss 1 */
+.error {
+  border: 1px #f00;
+  background-color: #fdd;
+
+  &--serious {
+    @extend .error;
+    border-width: 3px;
+  }
+}
+
+/* scss 2 */
+.error:hover {
+  background-color: #fee;
+}
+
+.error {
+	background-color: #eee;
+	border-width: 5px;
+}
+
+.error--serious {
+  @extend .error;
+  border-width: 3px;
+}
+```
+
+### Operator
+
+**HTML & Sass(Scss)**:
+```css
+@use "sass:math";
+
+div {
+ display: flex;
+}
+
+.imgInDiv {
+	width: math.div(600px, 960px) * 100%;
+}
+
+.spanInDiv {
+	width: math.div(300px, 960px) * 100%;
+  margin-left: auto;
+}
+```
+
+If multiple operations are required, the css file can resolve itself. 
+
+Previously, the value was calculated using calc, but in the case of scss, '@use "sass:math' is called and calculated through various functions of math. Math has various mathematical functions such as div(division), sin(sign), cos(cosine), tan(tangent), random, max, min, etc
