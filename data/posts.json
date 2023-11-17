@@ -3,7 +3,7 @@
     "title": "React Basic (1)",
     "description": "Simple knowledge and definition of the 'React'. Framework versus Libaray. What's React? Why React? How to create React project?",
     "date": "2022-08-18",
-    "category": "ReactJs",
+    "category": ["ReactJs"],
     "path": "react-basic",
     "feautred": true
   },
@@ -11,7 +11,7 @@
     "title": "React Basic (2)",
     "description": "How to create the project using React. Checking the basic tools for programming with React.",
     "date": "2022-08-20",
-    "category": "ReactJs",
+    "category": ["ReactJs"],
     "path": "react-basic2",
     "featured": false
   },
@@ -19,7 +19,7 @@
     "title": "All about JSX",
     "description": "Very very simple concepts of React. This post is about js, ts, JSX, and TSX, about props, about useState and useEffect.",
     "date": "2022-08-27",
-    "category": "ReactJs",
+    "category": ["ReactJs"],
     "path": "all-about-jsx",
     "featured": true
   },
@@ -27,7 +27,7 @@
     "title": "Components and Props",
     "description": "Looking through the React basic. The basic concept: Props, useState, and useEffect",
     "date": "2022-09-01",
-    "category": "ReactJs",
+    "category": ["ReactJs"],
     "path": "component-and-prop",
     "featured": false
   },
@@ -35,7 +35,7 @@
     "title": "React Hook (1)",
     "description": "useState & useEffect. If you want to use React, you should know useState and useEffect. Let's check it.",
     "date": "2022-09-05",
-    "category": "ReactJs",
+    "category": ["ReactJs"],
     "path": "react-hook1",
     "featured": true
   },
@@ -43,7 +43,7 @@
     "title": "React Lifecycle",
     "description": "About life cycle of React component. And it's related to useEffect.",
     "date": "2022-09-11",
-    "category": "ReactJs",
+    "category": ["ReactJs"],
     "path": "react-lifecycle",
     "featured": true
   },
@@ -51,7 +51,7 @@
     "title": "Internet Netword: IP",
     "description": "1st. For programmers, Internet network is so important to understand the flow of their work: Internet Network and IP.",
     "date": "2022-09-17",
-    "category": "WebCS",
+    "category": ["WebCS"],
     "path": "internet-network-ip",
     "featured": true
   },
@@ -59,7 +59,7 @@
     "title": "Internet Netword: TCP",
     "description": "2nd. How to sovle the problems from IP. Let's check what is the TCP.",
     "date": "2022-09-26",
-    "category": "WebCS",
+    "category": ["WebCS"],
     "path": "internet-network-tcp",
     "featured": false
   },
@@ -67,7 +67,7 @@
     "title": "Internet Netword: PORT",
     "description": "3rd. Port is numbered endpoint on a computer or device used to facilitate data exchange.",
     "date": "2022-11-01",
-    "category": "WebCS",
+    "category": ["WebCS"],
     "path": "internet-network-port",
     "featured": false
   },
@@ -75,7 +75,7 @@
     "title": "Internet Netword: DNS",
     "description": "4th. DNS (Domain Name System) is a decentralized system that translates human-readable domain names.",
     "date": "2022-11-08",
-    "category": "WebCS",
+    "category": ["WebCS"],
     "path": "internet-network-dns",
     "featured": false
   },
@@ -83,7 +83,7 @@
     "title": "React Context: Concept and Detail",
     "description": "1st. In React, context is a feature that allows data to be passed down the component tree without explicitly passing it through each intermediate component.",
     "date": "2022-11-10",
-    "category": "ReactJs",
+    "category": ["ReactJs"],
     "path": "react-context",
     "featured": false
   },
@@ -91,7 +91,7 @@
     "title": "React Context: Usage",
     "description": "2nd. Let make React Context: context & hook",
     "date": "2022-11-12",
-    "category": "ReactJs",
+    "category": ["ReactJs"],
     "path": "react-usage",
     "featured": false
   },
@@ -99,7 +99,7 @@
     "title": "Web: URI and URL",
     "description": "What's the different between URI and URL? What is URN?",
     "date": "2022-11-15",
-    "category": "WebCS",
+    "category": ["WebCS"],
     "path": "uri-url-urn",
     "featured": false
   },
@@ -107,7 +107,7 @@
     "title": "Making Custom Hook in React",
     "description": "Let's make custom hook.",
     "date": "2022-11-17",
-    "category": "ReactJs",
+    "category": ["ReactJs"],
     "path": "custom-hook",
     "featured": false
   },
@@ -115,15 +115,15 @@
     "title": "CSS for React",
     "description": "Before starting React project, which CSS library or framework is the best?",
     "date": "2022-11-18",
-    "category": "CSS",
+    "category": ["CSS"],
     "path": "css-for-react",
     "featured": false
   },
   {
-    "title": "Scss Vs. Sass",
+    "title": "CSS Vs. Sass(Scss)",
     "description": "Developers consider which tools are better. Here is the answer. Let check Scss and Sass.",
     "date": "2022-11-21",
-    "category": "CSS",
+    "category": ["CSS", "Sass"],
     "path": "scss-vs-sass",
     "featured": false
   },
@@ -131,7 +131,7 @@
     "title": "Sass(Scss) Vs. Less",
     "description": "Some library is written by Less. What is Less? And how does we use it?",
     "date": "2022-11-24",
-    "category": "CSS",
+    "category": ["Sass"],
     "path": "sass-vs-less",
     "featured": false
   },
@@ -139,7 +139,7 @@
     "title": "자바스크립트 기초 문법(example)",
     "description": "기본 문법부터 사용하는 실전까지 최종정리",
     "date": "2022-05-08",
-    "category": "JavaScript",
+    "category": ["JavaScript"],
     "path": "javascript-basic",
     "featured": false
   },
@@ -147,7 +147,7 @@
     "title": "자바스크립트 10가지 프로팁!(example)",
     "description": "프로처럼 자바스크립트 사용할 수 있는 10가지 팁",
     "date": "2022-06-15",
-    "category": "JavaScript",
+    "category": ["JavaScript"],
     "path": "javascript-10-tips",
     "featured": true
   },
@@ -155,7 +155,7 @@
     "title": "Node 기초 정리(example)",
     "description": "기본 적인 Node 사용법에 대해 전부 정리!",
     "date": "2022-08-21",
-    "category": "OpenSource",
+    "category": ["OpenSource"],
     "path": "node-basic",
     "featured": false
   },
@@ -163,7 +163,7 @@
     "title": "Node 프로 팁!(example)",
     "description": "노드를 프로처럼 사용하기 위한 모든 팁들을 정리!",
     "date": "2023-04-10",
-    "category": "OpenSource",
+    "category": ["OpenSource"],
     "path": "node-pro-tips",
     "featured": true
   },
@@ -171,7 +171,7 @@
     "title": "2023년 리뷰(example)",
     "description": "2023년 한해 동안 배운 기술들, 생각들 정리",
     "date": "2023-12-31",
-    "category": "NextJs",
+    "category": ["NextJs"],
     "path": "review-2023",
     "featured": true
   },
@@ -179,7 +179,7 @@
     "title": "Binary에 관하여(example)",
     "description": "꼭 한번 정리해야하는 Binary. Binary란 무엇인가?",
     "date": "2023-12-31",
-    "category": "TypeScript",
+    "category": ["TypeScript"],
     "path": "binary-2023",
     "featured": true
   },
@@ -187,7 +187,7 @@
     "title": "Blob에 관하여(example)",
     "description": "꼭 한번 정리해야하는 Blob. 나를 괴롭혔던 Blob... 정체가 무엇이냐",
     "date": "2023-12-25",
-    "category": "OpenSource",
+    "category": ["OpenSource"],
     "path": "blob-2023",
     "featured": true
   },
@@ -195,7 +195,7 @@
     "title": "OPENSOURCE에 관하여(example)",
     "description": "꼭 한번 정리해야하는 Blob. 나를 괴롭혔던 Blob... 정체가 무엇이냐",
     "date": "2023-12-25",
-    "category": "OpenSource",
+    "category": ["OpenSource"],
     "path": "blob-2023",
     "featured": true
   }
