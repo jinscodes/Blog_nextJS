@@ -5,7 +5,7 @@ export type Post = {
   title: string;
   description: string;
   date: Date;
-  category: string;
+  category: string[];
   path: string;
   featured: boolean;
 };
@@ -51,15 +51,16 @@ export const getPostData = async (fileName: string): Promise<PostData> => {
 export const getOpenSourcePosts = async (): Promise<Post[]> => {
   return getAllPosts() //
     .then((posts) =>
-      posts.filter((post) => post.category === "OpenSource").slice(0, 4)
+      posts.filter((post) => post.category.includes("OpenSource")).slice(0, 4)
     );
 };
 
 export const getClassedPosts = async (classedFile: string): Promise<Post[]> => {
-  const dividedPosts = getAllPosts().then((posts) =>
-    posts.filter((post) => post.category === classedFile)
+  const allPost = await getAllPosts();
+
+  const filteredPosts = allPost.filter((posts) =>
+    posts.category.includes(classedFile)
   );
 
-  return getAllPosts() //
-    .then((posts) => posts.filter((post) => post.category === classedFile));
+  return filteredPosts;
 };
