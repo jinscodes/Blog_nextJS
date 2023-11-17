@@ -56,6 +56,10 @@ export const getOpenSourcePosts = async (): Promise<Post[]> => {
 };
 
 export const getClassedPosts = async (classedFile: string): Promise<Post[]> => {
+  const dividedPosts = getAllPosts().then((posts) =>
+    posts.filter((post) => post.category === classedFile)
+  );
+
   return getAllPosts() //
     .then((posts) => posts.filter((post) => post.category === classedFile));
 };
