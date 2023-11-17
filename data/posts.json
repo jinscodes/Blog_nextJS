@@ -128,6 +128,14 @@
     "featured": false
   },
   {
+    "title": "Sass(Scss) Vs. Less",
+    "description": "Some library is written by Less. What is Less? And how does we use it?",
+    "date": "2022-11-24",
+    "category": "CSS",
+    "path": "sass-vs-less",
+    "featured": false
+  },
+  {
     "title": "자바스크립트 기초 문법(example)",
     "description": "기본 문법부터 사용하는 실전까지 최종정리",
     "date": "2022-05-08",
