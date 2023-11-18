@@ -21,8 +21,20 @@
     margin-top: 16px;
 
     .category {
+      display: flex;
+      gap: 8px;
       font-size: 16px;
       margin-bottom: 12px;
+    }
+
+    .category div:nth-child(2) {
+      background-color: rgba(0, 34, 255, 0.3);
+      color: rgba(0, 34, 255, 0.8);
+    }
+
+    .category div:nth-child(3) {
+      background-color: rgba(144, 0, 255, 0.3);
+      color: rgba(144, 0, 255, 0.8);
     }
 
     .title {

@@ -87,6 +87,20 @@
   height: 6px;
   background-color: darkblue;
 }
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/CategoryPill/CategoryPill.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.CategoryPill_category__2utt9 {
+  display: grid;
+  place-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  font-size: 10px;
+  background-color: rgba(0, 170, 255, 0.3);
+  color: rgba(0, 170, 255, 0.8);
+  border-radius: 24px;
+}
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Post/PostCard/PostCard.module.scss ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -112,8 +126,18 @@
   margin-top: 16px;
 }
 .PostCard_post_card__gqqNr .PostCard_contents_container__IxE_e .PostCard_category___Eb16 {
+  display: flex;
+  gap: 8px;
   font-size: 16px;
   margin-bottom: 12px;
+}
+.PostCard_post_card__gqqNr .PostCard_contents_container__IxE_e .PostCard_category___Eb16 div:nth-child(2) {
+  background-color: rgba(0, 34, 255, 0.3);
+  color: rgba(0, 34, 255, 0.8);
+}
+.PostCard_post_card__gqqNr .PostCard_contents_container__IxE_e .PostCard_category___Eb16 div:nth-child(3) {
+  background-color: rgba(144, 0, 255, 0.3);
+  color: rgba(144, 0, 255, 0.8);
 }
 .PostCard_post_card__gqqNr .PostCard_contents_container__IxE_e .PostCard_title__czxsS {
   height: 50px;
@@ -131,20 +155,6 @@
 
 .PostCard_post_card__gqqNr:hover {
   transform: scale(1.01);
-}
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/CategoryPill/CategoryPill.module.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.CategoryPill_category__2utt9 {
-  display: grid;
-  place-items: center;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 5px 10px;
-  font-size: 10px;
-  background-color: rgba(0, 170, 255, 0.3);
-  color: rgba(0, 170, 255, 0.8);
-  border-radius: 24px;
 }
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/ProfileAndId/ProfileAndId.module.scss ***!

@@ -179,7 +179,7 @@
     "title": "2023년 리뷰(example)",
     "description": "2023년 한해 동안 배운 기술들, 생각들 정리",
     "date": "2023-12-31",
-    "category": ["NextJs"],
+    "category": ["NextJs", "ReactJs"],
     "path": "review-2023",
     "featured": true
   },
@@ -187,7 +187,7 @@
     "title": "Binary에 관하여(example)",
     "description": "꼭 한번 정리해야하는 Binary. Binary란 무엇인가?",
     "date": "2023-12-31",
-    "category": ["TypeScript"],
+    "category": ["TypeScript", "JavaScript"],
     "path": "binary-2023",
     "featured": true
   },
@@ -195,7 +195,7 @@
     "title": "Blob에 관하여(example)",
     "description": "꼭 한번 정리해야하는 Blob. 나를 괴롭혔던 Blob... 정체가 무엇이냐",
     "date": "2023-12-25",
-    "category": ["OpenSource"],
+    "category": ["OpenSource", "TypeScript"],
     "path": "blob-2023",
     "featured": true
   },
@@ -203,7 +203,7 @@
     "title": "OPENSOURCE에 관하여(example)",
     "description": "꼭 한번 정리해야하는 Blob. 나를 괴롭혔던 Blob... 정체가 무엇이냐",
     "date": "2023-12-25",
-    "category": ["OpenSource"],
+    "category": ["OpenSource", "CSS"],
     "path": "blob-2023",
     "featured": true
   }

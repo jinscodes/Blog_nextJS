@@ -21,7 +21,11 @@ const SourcePost = ({ post }: Prop) => {
     >
       <div className={st.gradient_bg}>
         <div className={st.content_container}>
-          <CategoryPill category={category} />
+          <div className={st.pill_container}>
+            {category.map((el) => (
+              <CategoryPill category={el} />
+            ))}
+          </div>
           <div>
             <div className={st.title}>{title}</div>
             <p className={st.description}>{description}</p>
