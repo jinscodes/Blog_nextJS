@@ -75,11 +75,23 @@
   \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .OlAndLi_ol__HL126 {
   padding-left: 20px;
+  padding-bottom: 16px;
 }
 .OlAndLi_ol__HL126 li {
   margin: 10px 5px;
-  padding-bottom: 16px;
   font-size: 18px;
+}
+.OlAndLi_ol__HL126 li ol {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0;
+  gap: 16px;
+}
+.OlAndLi_ol__HL126 li ol li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: gray;
 }
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Post/MarkdownViewer/StyledMarkdown/UlAndLi.module.scss ***!
@@ -100,8 +112,10 @@
   margin: 25px 20px 0;
 }
 .UlAndLi_ul__821kn li ul li {
+  list-style: none;
   margin: 0;
   padding: 0;
+  color: rgba(0, 0, 0, 0.6);
 }
 .UlAndLi_ul__821kn li ul li::before {
   content: "";
@@ -110,8 +124,8 @@
   padding: 0.2em;
   margin-right: 12px;
   border-radius: 50%;
-  border: 4px solid rgba(0, 0, 93, 0.3);
-  background-color: rgba(75, 75, 255, 0.3);
+  border: 4px solid rgba(114, 114, 183, 0.3);
+  background-color: rgba(178, 178, 255, 0.3);
   display: inline-block;
   vertical-align: middle;
   text-indent: 0;

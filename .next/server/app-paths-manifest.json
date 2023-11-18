@@ -1,5 +1,3 @@
 {
-  "/page": "app/page.js",
-  "/posts/[postPage]/page": "app/posts/[postPage]/page.js",
   "/posts/[postPage]/[categorizedPostPage]/page": "app/posts/[postPage]/[categorizedPostPage]/page.js"
 }

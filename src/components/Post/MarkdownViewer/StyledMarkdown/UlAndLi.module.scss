@@ -11,12 +11,13 @@
     line-height: 25px;
 
     ul {
-      // margin-top: 20px;
       margin: 25px 20px 0;
 
       li {
+        list-style: none;
         margin: 0;
         padding: 0;
+        color: rgba($color: #000000, $alpha: 0.6);
       }
 
       li::before {
@@ -26,8 +27,8 @@
         padding: 0.2em;
         margin-right: 12px;
         border-radius: 50%;
-        border: 4px solid rgba(0, 0, 93, 0.3);
-        background-color: rgba(75, 75, 255, 0.3);
+        border: 4px solid rgba(114, 114, 183, 0.3);
+        background-color: rgba(178, 178, 255, 0.3);
         display: inline-block;
         vertical-align: middle;
         text-indent: 0;

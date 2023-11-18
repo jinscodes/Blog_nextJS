@@ -1,9 +1,23 @@
 .ol {
   padding-left: 20px;
+  padding-bottom: 16px;
 
   li {
     margin: 10px 5px;
-    padding-bottom: 16px;
     font-size: 18px;
+
+    ol {
+      display: flex;
+      flex-direction: column;
+      margin: 14px 0;
+      gap: 16px;
+
+      li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        color: gray;
+      }
+    }
   }
 }
