@@ -37,6 +37,21 @@
       font-size: 12px;
       color: darkgray;
     }
+
+    .pill_container {
+      display: flex;
+      gap: 12px;
+    }
+
+    .pill_container div:nth-child(2) {
+      background-color: rgba(0, 34, 255, 0.3);
+      color: rgba(0, 34, 255, 0.8);
+    }
+
+    .pill_container div:nth-child(3) {
+      background-color: rgba(144, 0, 255, 0.3);
+      color: rgba(144, 0, 255, 0.8);
+    }
   }
 }
 

@@ -29,7 +29,11 @@ const MainPost = (post: Prop) => {
       />
       <section className={st.content_container}>
         <div className={st.contents}>
-          <CategoryPill category={category} />
+          <div className={st.pill_container}>
+            {category.map((el) => (
+              <CategoryPill category={el} key={el} />
+            ))}
+          </div>
           <h3 className={st.title}>{title}</h3>
           <p className={st.description}>{description}</p>
         </div>

@@ -27,7 +27,9 @@ const PostCard = ({ post }: Prop) => {
       />
       <div className={st.contents_container}>
         <div className={st.category}>
-          <CategoryPill category={category} />
+          {category.map((el) => (
+            <CategoryPill category={el} key={el} />
+          ))}
         </div>
         <p className={st.title}>{title}</p>
         <p className={st.description}>{description}</p>

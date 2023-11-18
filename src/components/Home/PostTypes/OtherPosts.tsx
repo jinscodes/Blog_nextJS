@@ -29,7 +29,11 @@ const OtherPosts = ({ post }: Prop) => {
       />
       <section className={st.content_container}>
         <div className={st.pill_and_title}>
-          <CategoryPill category={category} />
+          <div className={st.pill_container}>
+            {category.map((el) => (
+              <CategoryPill category={el} key={el} />
+            ))}
+          </div>
           <div className={st.title}>{title}</div>
           <div className={st.description}>{description}</div>
         </div>
