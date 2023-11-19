@@ -30,31 +30,24 @@ But, Nextjs is not only using SSR but also CSR, SSG, and ISR.
 	1. Converting components to DOM elements
 	2. Painting the converted DOM elements to the browser
 
+- 안녕하세요
+
 ### Advantages of CSR
 - Once loaded the page, UX can be provided quickly
-
 	- Once loaded, when the rendering is needed, such as pressing the button, it requests datas in part, receives a partial response, and updates the page in part rather than rendering whole page.
-
 - Low server load
 	- Less burden on servers, partly because data is requested and responded to
 
 ### Disadvantages of CSR
-
-- The page loading time(TTV) is long = It takes a long time to FCP
-
-
 - The page loading time(TTV) is long = It takes a long time to FCP
 	- TTV stands for "Time To View", which means the time it takes for users to view pages for the first time
 	- FCP stands for "First Contentful Paint", which means the time to display the meaningful paint to the browser
-
 - Javascript activation is necessary
 	- If Javascript is unactivated, users cannot even see the first page
 	- Web page doesn't work properly
 	- It's hard to optimize SEO
-
 - Weakness of security
 	- Because it downloads all the code to the client and runs it on the client
-
 - Not cached on the CDN
 	- CDN is "Content Delivery Network"
 	- It is difficult to cache HTML to CDN because HTML files are empty by default and clients need to download the source files from React or JS
