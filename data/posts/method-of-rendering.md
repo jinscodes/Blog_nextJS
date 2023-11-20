@@ -1,3 +1,5 @@
+## Intro..
+
 I knew that there are four method of rendering while preparing for my blog project using NextJs. Nextjs is a framework that allows React to perform server side rendering.
 
 But, Nextjs is not only using SSR but also CSR, SSG, and ISR.
@@ -97,5 +99,58 @@ But, Nextjs is not only using SSR but also CSR, SSG, and ISR.
 	- It simply prints pages that have already been created on screen, so you can't dynamically receive and insert data
 - **Difficulty in providing user-specific information**
 	- Unable to dynamically import data, making it difficult to provide user-specific information
+
+## ISR: Incremental Static Regeneration
+> A word that refers to a method in which the subject of rendering is a server and files are periodically rendered
+
+### How ISR works: principle
+1. Same as the SSG
+
+2. Create new pages by periodically rendering
+	1. Applies to the page when changes occur, such as data changes
+
+### Advantages of ISR
+- **Having the advantages of SSG intact**
+- **Data updated periodically**
+
+### Disadvantages of ISR
+- **Not real-time data**
+	- Because datas are not real-time, the client cannot know whether or not datas are changed. The client can verify the changed datas after waiting for the rendering period and page is reloaded.
+- **Difficulty in providing user-specific information**
+	- It can check the information periodically updated than SSG, but still can't reflect user-specific data
+
+## SSR: Server Side Rendering
+> A word that refers to a method in which the subject of rendering is a server and is rendered whenever requested
+
+### How SSR works: principle
+※ Suppose you have a file in the Next.js + React format that you deployed
+
+1. The client requests server for a page
+
+2. The Requested server runs needed codes
+	1. If datas from DB or cloud, the server does every process
+
+3. Create an HTML file and send it to the client when the request is received from the server
+
+### Advantages of SSR
+- **It has the same advantages as SSG & ISR**
+	- Exclude CDN Cache Advantages
+- **Use real-time data**
+	- Get HTML files that always reflect the latest data
+- **Use the data required by user**
+	- Because it renders every time it is requested, it allows you to use the right data for your users, depending on who made the request
+
+### Disadvantages of SSR
+- **Relatively slow**
+	- Relatively slow because it creates HTML files when requested, rather than simply sending HTML files created like SSG or ISR
+- **Server may be overloaded**
+	- If there are 1000 or 10000 users, the more users, the more servers become overloaded because the number of users is requested and all requested pages must be created
+	- This problem will increase the time users access the website
+	- This phenomenon is called to overhead
+	- CDN is not cached because page is created when requested
+- **Unable to cache to CDN**
+	- Because the page is made when the client requests, it cannot cache to CDN
+
+> 💡 Instead of one rendering method, a project should be constructed by selecting a rendering method that fits the characteristics of each page (hybrid).
 
 ---
