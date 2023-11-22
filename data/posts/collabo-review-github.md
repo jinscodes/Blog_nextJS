@@ -45,3 +45,7 @@ Paste the URL to Github Desktop
 **Result:**
 
 ![4-r](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b8d1f063-1217-4c4e-b92e-80dae443738f)
+
+## 5. Do publish branch, commit, and push
+
+
