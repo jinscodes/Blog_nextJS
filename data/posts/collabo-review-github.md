@@ -49,3 +49,4 @@ Paste the URL to Github Desktop
 ## 5. Do publish branch, commit, and push
 
 ![5-1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ebece2a0-02e8-475c-82c3-9a788690a8c8)
+![5-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/38e9cc40-b845-4a60-a534-f05d1b15a0a0)
