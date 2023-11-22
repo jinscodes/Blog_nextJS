@@ -71,3 +71,16 @@ Paste the URL to Github Desktop
 
 **Result:**
 ![7-r](https://github.com/jinscodes/Blog_nextJS/assets/87598134/899ad71c-6f5a-4075-9d66-898a283b1b94)
+
+## Comment on someone else's PR
+> Many companies often conduct code reviews for better code and their own development.
+
+![8-1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a3d0cb10-2b48-4665-98ca-143aab038b0f)
+![8-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a654a86f-f4ec-4a6a-bbbe-b3e5e8045512)
+![8-3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9872cba2-589c-4a70-bb53-c7ea0a669241)
+
+**Result:**
+
+![8-r](https://github.com/jinscodes/Blog_nextJS/assets/87598134/67115fa5-ee7c-4fed-9b4d-07509ff3fff1)
+
+---
