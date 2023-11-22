@@ -48,4 +48,26 @@ Paste the URL to Github Desktop
 
 ## 5. Do publish branch, commit, and push
 
+![5-1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ebece2a0-02e8-475c-82c3-9a788690a8c8)
+![5-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/38e9cc40-b845-4a60-a534-f05d1b15a0a0)
+![5-3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/14bdfa00-8c0e-422c-93ce-38ae9f705e73)
 
+**Result:**
+
+![5-4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/24ca5a24-8e94-437b-8df3-90ecb08dc0a7)
+
+## 6. Add reviewer 
+
+![6-1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a6a5931c-0cb0-4c08-b0a4-5fcb6610bce5)
+
+**Result:**
+
+![6-r](https://github.com/jinscodes/Blog_nextJS/assets/87598134/48c7a7e8-9cc5-4f0a-aa98-f85527ea98ed)
+
+## 7. Marge
+
+![7-1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/392eff8e-24b9-4fe2-81de-dc77d6c56d0e)
+![7-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/5e9789cb-05d6-4b14-b634-c4408b648b01)
+
+**Result:**
+![7-r](https://github.com/jinscodes/Blog_nextJS/assets/87598134/899ad71c-6f5a-4075-9d66-898a283b1b94)
