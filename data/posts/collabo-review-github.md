@@ -79,8 +79,13 @@ Paste the URL to Github Desktop
 ![8-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a654a86f-f4ec-4a6a-bbbe-b3e5e8045512)
 ![8-3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9872cba2-589c-4a70-bb53-c7ea0a669241)
 
+- comment: Just comment
+- Approve: When I feel like I can merge it like this
+- Request changes: If there's something that needs to be fixed before you merge
+
 **Result:**
 
 ![8-r](https://github.com/jinscodes/Blog_nextJS/assets/87598134/67115fa5-ee7c-4fed-9b4d-07509ff3fff1)
 
 ---
+

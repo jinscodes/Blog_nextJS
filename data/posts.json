@@ -150,5 +150,13 @@
     "category": ["GIT"],
     "path": "collabo-review-github",
     "featured": true
+  },
+  {
+    "title": "Unintended styled: flex-wrap; justify-between",
+    "description": "Let's learn about common errors when configuring screens.",
+    "date": "2022-12-05",
+    "category": ["CSS"],
+    "path": "unintended-wrap-justify",
+    "featured": false
   }
 ]
