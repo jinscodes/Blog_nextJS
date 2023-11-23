@@ -151,3 +151,4 @@ In other words, the `repeat(5, 1fr)` in the above code is equal to `1fr 1fr 1fr 
 
 - `https://heeyamsec.tistory.com/37`
 - `https://yamoo9.gitbook.io/css-grid/css-grid-guide/minmax-function`
+- `https://studiomeal.com/archives/533`
