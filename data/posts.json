@@ -158,5 +158,13 @@
     "category": ["CSS"],
     "path": "unintended-wrap-justify",
     "featured": false
+  },
+  {
+    "title": "About Comment - Which is good or bad?",
+    "description": "This post is based on the book named `clean code`. In the book, this post is only about the comment. Let's check it!",
+    "date": "2022-12-10",
+    "category": ["WebCS", "OpenSource"],
+    "path": "comments",
+    "featured": false
   }
 ]
