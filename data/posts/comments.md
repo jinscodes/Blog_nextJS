@@ -13,116 +13,116 @@ This post is based on the Book name **"clean code"** written by Robert C. Martin
 1. **Legal comments**
 	1. Indicate specific comments for legal reasons in line with implementation standards established by the company
 
-```java
-// Copyright (C) 2003,2004,2005 by Object Mentor, Inc. All rights reserved.
-// GNU General Public License 
-```
+	```java
+	// Copyright (C) 2003,2004,2005 by Object Mentor, Inc. All rights reserved.
+	// GNU General Public License 
+	```
 
 2. **Comments providing information**
 	1. It's convenient to provide basic information in comments (if possible, it's better to put information in function name)
 
-```java
-// Return Responder instance being tested
-Protected abstract Responder responderInstance();
-```
+	```java
+	// Return Responder instance being tested
+	Protected abstract Responder responderInstance();
+	```
 
-or
+	or
 
-```java
-// kk:mm:ss EEE, MMM dd, yyyy formation
-Pattern timeMatcher = Pattern.compile(
-	"\\d*:\\d*:\\d* \\w*, \\w* \\d*, \\d*"
-);
-```
+	```java
+	// kk:mm:ss EEE, MMM dd, yyyy formation
+	Pattern timeMatcher = Pattern.compile(
+		"\\d*:\\d*:\\d* \\w*, \\w* \\d*, \\d*"
+	);
+	```
 
 3. **Comments describing intention**
 	1. Beyond the line to help you understand the codes, explain the intent behind the decision
 
-```java
-public int compareTo(Object o) {
-  if(o instanceof WikiPagePath) {
-    WikiPagePath p = (WikiPagePath) o;
-    String compressedName = StringUtil.join(names, "");
-    String compressedArgumentName = StringUtil.join(p.names, "");
-    return compressedName.compareTo(compressedArgumentName);
+	```java
+	public int compareTo(Object o) {
+		if(o instanceof WikiPagePath) {
+			WikiPagePath p = (WikiPagePath) o;
+			String compressedName = StringUtil.join(names, "");
+			String compressedArgumentName = StringUtil.join(p.names, "");
+			return compressedName.compareTo(compressedArgumentName);
+		}
+		return 1; // It's the right type, so the ranking is higher
 	}
-  return 1; // It's the right type, so the ranking is higher
-}
-```
+	```
 
-or
+	or
 
-```java
-// It attempts to create a competitive condition by generating threads in large quantities.
-for(int i = 0; i < 25000; i++) {
-  WidgetBuilderThread widgetBuilderThread = new WidgetBuilderThread(widgetBuilder, text, parent, failFlag);
-  Thread thread = new Thread(widgetBuilderThread);
-	thread.start();
-}
-```
+	```java
+	// It attempts to create a competitive condition by generating threads in large quantities.
+	for(int i = 0; i < 25000; i++) {
+		WidgetBuilderThread widgetBuilderThread = new WidgetBuilderThread(widgetBuilder, text, parent, failFlag);
+		Thread thread = new Thread(widgetBuilderThread);
+		thread.start();
+	}
+	```
 
 4. **Comments informing the meaning clearly**
 	1. Ambiguous arguments or return values become easier to understand if the meaning is expressed in a readable way
 	2. but, there is a significant risk of incorrect annotation
 	3. In other words, use it when there is no better way
 
-```java
-assertTrue(a.compareTo(a) == 0); // a == a
-assertTrue(a.compareTo(b) != 0); // a != a
-assertTrue(ab.compareTo(ab) == 0); // ab == ab
-assertTrue(a.compareTo(b) == -1); // a < b
-assertTrue(aa.compareTo(ab) == -1); // aa < ab
-assertTrue(ba.compareTo(bb) == -1); // ba < bb
-assertTrue(b.compareTo(a) == 1); // b > a
-assertTrue(ab.compareTo(aa) == 1); // ab > aa
-assertTrue(bb.compareTo(ba) == 1); // bb > ba
-```
+	```java
+	assertTrue(a.compareTo(a) == 0); // a == a
+	assertTrue(a.compareTo(b) != 0); // a != a
+	assertTrue(ab.compareTo(ab) == 0); // ab == ab
+	assertTrue(a.compareTo(b) == -1); // a < b
+	assertTrue(aa.compareTo(ab) == -1); // aa < ab
+	assertTrue(ba.compareTo(bb) == -1); // ba < bb
+	assertTrue(b.compareTo(a) == 1); // b > a
+	assertTrue(ab.compareTo(aa) == 1); // ab > aa
+	assertTrue(bb.compareTo(ba) == 1); // bb > ba
+	```
 
 5. **Comments warning the result**
 	1. Of course, these days, we can turn off the test case using the @ignore property
 	2. There may be better solutions, but warning comments are very reasonable
 
-```java
-// If you don't have enough free time, don't run it
-public void _testWithReallyBigFile() {
-  writeLinesToFile(10000000);
-	...
-}
-```
+	```java
+	// If you don't have enough free time, don't run it
+	public void _testWithReallyBigFile() {
+		writeLinesToFile(10000000);
+		...
+	}
+	```
 
-or
+	or
 
-```java
-public static SimpleDateFormat makeStandardHttpDateFormat() {
-  // SimpleDateFormat() is not safe to threads
-	// Therefore, each instance must be created independently
-	SimpleDateFormat df = new SimpleDateFormat("EEE, dd MMM  yyyy HH:mm:ss z");
-	df.setTimeZone(TimeZone.getTimeZone("GMT"));
-	return df;
-}
-```
+	```java
+	public static SimpleDateFormat makeStandardHttpDateFormat() {
+		// SimpleDateFormat() is not safe to threads
+		// Therefore, each instance must be created independently
+		SimpleDateFormat df = new SimpleDateFormat("EEE, dd MMM  yyyy HH:mm:ss z");
+		df.setTimeZone(TimeZone.getTimeZone("GMT"));
+		return df;
+	}
+	```
 
 6. **TODO comments**
 	1. It's good to leave a future event or something that needs to be modified
 	2. However, there is a hassle of checking and erasing periodically without forgetting
 (If you forget and don't erase it, it's just a slap in the face…)
 
-```java
-// TODO: MdM is not need now
-// If importing the checkout model, function is not needed
-```
+	```java
+	// TODO: MdM is not need now
+	// If importing the checkout model, function is not needed
+	```
 
 7. **Comments emphasizing the importance**
 	1. Not-emphasizing the importance of any code
 	2. Useful when emphasizing the importance of something that might be considered insignificant
 
-```java
-String listItemContent = match.group(3).trim();
-// At this point, trim is very important. trim() erases the starting spaces from the string
-// This is because if there is a start space in the string, it is recognized as another string
-new ListItemWidget(this, listItemContent, this.level + 1);
-return buildList(text.substring(match.end()));
-```
+	```java
+	String listItemContent = match.group(3).trim();
+	// At this point, trim is very important. trim() erases the starting spaces from the string
+	// This is because if there is a start space in the string, it is recognized as another string
+	new ListItemWidget(this, listItemContent, this.level + 1);
+	return buildList(text.substring(match.end()));
+	```
 
 ## Bad Comments (Un-necessary Comments)
 1. **Rambling comment**
@@ -150,3 +150,27 @@ return buildList(text.substring(match.end()));
 8. **Location Comments**
 	1. It can be useful to use location comments during developing. But, it should be erased.
 	2. If it's not removed, it's a trash
+
+9. **Comments after ), }, ] (close brackets)**
+	1. If it is a superimposed and lengthy function, it may be meaningful
+	2. But, like these days, these kinds of comments are useless because functions are small and encapsulated
+
+10. **Comments that credits or expresses the author**
+
+11. **Commented codes**
+	1. If other developers see commented codes, they'll hesitate to erase it even the useless.
+	2. Delete obsolete codes, not commented
+
+12. **HTML codes**
+	1. "In the source code, the Html annotation is abhorrent itself" from "clean code"
+
+13. **Global information**
+	1. If we need to comment, only write the code near it
+
+14. **Too much information**
+	1. It's probably useless
+
+15. **Ambiguous relationship**
+	1. If the relationship between codes and comments is not clear, it will make it harder for the reader to understand
+
+16. **Function header**

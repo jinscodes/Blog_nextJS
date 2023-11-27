@@ -6,11 +6,27 @@
     margin: 10px 5px;
     font-size: 18px;
 
+    pre {
+      margin: 0 !important;
+
+      div {
+        margin: 0 0 30px !important;
+      }
+    }
+
     ol {
       display: flex;
       flex-direction: column;
       margin: 14px 0;
       gap: 16px;
+
+      pre {
+        margin: -30px !important;
+
+        div {
+          margin: 0 !important;
+        }
+      }
 
       li {
         list-style: none;
