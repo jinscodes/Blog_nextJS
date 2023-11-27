@@ -10,7 +10,7 @@ This post is based on the Book name **"clean code"** written by Robert C. Martin
 - Express intentions with code itself rather than comments
 
 ## Good Comments (Necessary Comments)
-1. Legal Comments
+1. **Legal comments**
 	1. Indicate specific comments for legal reasons in line with implementation standards established by the company
 
 ```java
@@ -18,7 +18,7 @@ This post is based on the Book name **"clean code"** written by Robert C. Martin
 // GNU General Public License 
 ```
 
-2. Comments Providing Information
+2. **Comments providing information**
 	1. It's convenient to provide basic information in comments (if possible, it's better to put information in function name)
 
 ```java
@@ -35,7 +35,7 @@ Pattern timeMatcher = Pattern.compile(
 );
 ```
 
-3. Comments describing intention
+3. **Comments describing intention**
 	1. Beyond the line to help you understand the codes, explain the intent behind the decision
 
 ```java
@@ -61,7 +61,7 @@ for(int i = 0; i < 25000; i++) {
 }
 ```
 
-4. Comments informing the meaning clearly
+4. **Comments informing the meaning clearly**
 	1. Ambiguous arguments or return values become easier to understand if the meaning is expressed in a readable way
 	2. but, there is a significant risk of incorrect annotation
 	3. In other words, use it when there is no better way
@@ -78,7 +78,7 @@ assertTrue(ab.compareTo(aa) == 1); // ab > aa
 assertTrue(bb.compareTo(ba) == 1); // bb > ba
 ```
 
-5. Comments Warning the result
+5. **Comments warning the result**
 	1. Of course, these days, we can turn off the test case using the @ignore property
 	2. There may be better solutions, but warning comments are very reasonable
 
@@ -102,7 +102,7 @@ public static SimpleDateFormat makeStandardHttpDateFormat() {
 }
 ```
 
-6. TODO Comments
+6. **TODO comments**
 	1. It's good to leave a future event or something that needs to be modified
 	2. However, there is a hassle of checking and erasing periodically without forgetting
 (If you forget and don't erase it, it's just a slap in the face…)
@@ -112,7 +112,7 @@ public static SimpleDateFormat makeStandardHttpDateFormat() {
 // If importing the checkout model, function is not needed
 ```
 
-7. Comments emphasizing the importance
+7. **Comments emphasizing the importance**
 	1. Not-emphasizing the importance of any code
 	2. Useful when emphasizing the importance of something that might be considered insignificant
 
@@ -124,4 +124,29 @@ new ListItemWidget(this, listItemContent, this.level + 1);
 return buildList(text.substring(match.end()));
 ```
 
-## 
+## Bad Comments (Un-necessary Comments)
+1. **Rambling comment**
+	1. Comments reluctantly written in a sense of duty for no particular reason
+	2. The value of the comments' existance is diminished
+
+2. **Comments that overlap the same story**
+	1. It's not effective to write overlapped comments on the codes because it takes a long time to read
+	2. The overlapped comments tarnish the code
+
+3. **Comments that can be misunderstood**
+	1. Because of the slightly incorrect (or misleading) information in the comments, other developers may make an error without knowing why
+
+4. **Mandatory comments**
+
+5. **Comments to record career**
+	1. Very few these days
+
+6. **An Unremarkable Comment**
+	1. Comments that mentions obvious fact and fails to provide any new information
+
+7. **Comments that can be expressed as a function or variable**
+	1. If we are programmer, we should express our intention as a function or variable
+
+8. **Location Comments**
+	1. It can be useful to use location comments during developing. But, it should be erased.
+	2. If it's not removed, it's a trash
