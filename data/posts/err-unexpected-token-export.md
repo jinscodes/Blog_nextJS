@@ -71,3 +71,5 @@ If you are fetching modules from a different origin, you might encounter Cross-O
 	```javascript
 	npm init -y
 	```
+
+2. Secondly, using export to class or method that you want
