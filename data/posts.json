@@ -166,5 +166,13 @@
     "category": ["WebCS", "OpenSource"],
     "path": "comments",
     "featured": false
+  },
+  {
+    "title": "🚨Error: Unexpected token 'export'",
+    "description": "Error series. Uncaught SyntaxError: Unexpected token 'export'. What's the problem and how to solve it.",
+    "date": "2022-12-17",
+    "category": ["JavaScript", "Error"],
+    "path": "err-unexpected-toekn-export",
+    "featured": false
   }
 ]
