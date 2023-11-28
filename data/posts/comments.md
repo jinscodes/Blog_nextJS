@@ -129,48 +129,223 @@ This post is based on the Book name **"clean code"** written by Robert C. Martin
 	1. Comments reluctantly written in a sense of duty for no particular reason
 	2. The value of the comments' existance is diminished
 
+	```java
+	try {
+	  String propertiesPath = propertiesLocation + "/" + PROPERTISE_FILE;
+	  FileInputStream propertiesStream = new FileInputStream(propertiesPath);
+	  loadedProperties.load(propertiesStream);
+	} catch (IOException) {
+	  // If there is no properties file, it means that default value is read to memory
+	}
+	```
+
 2. **Comments that overlap the same story**
 	1. It's not effective to write overlapped comments on the codes because it takes a long time to read
 	2. The overlapped comments tarnish the code
 
+	```java
+	// This is the utility method when the this.closed is true
+	// When it reaches timeout, exception is thrown
+	public synchronized void waitForClose(final long timeoutMillis) {
+	  throw Exception {
+	    if (!closed) {
+	      wait(timeoutMillis);
+	      if (!closed) {
+	        throw new Exception("MockResponseSender could not be closed");
+	      }
+	    }
+	  }
+	}
+	```
+
+	or 
+
+	```java
+	// delay value
+	protected int backgroundProcessorDelay = -1;
+
+	// lifecycle to support the component
+	protected LifecycleSupport lifecycle = new LifecycleSupport(this);
+
+	// Logger that is related to container
+	protected Loader loader = null;
+	```
+
 3. **Comments that can be misunderstood**
 	1. Because of the slightly incorrect (or misleading) information in the comments, other developers may make an error without knowing why
 
+	```java
+	// This is the utility method when the this.closed is true
+	// When it reaches timeout, exception is thrown
+	public synchronized void waitForClose(final long timeoutMillis) {
+	  throw Exception {
+	    if (!closed) {
+	      wait(timeoutMillis);
+	      if (!closed) {
+	        throw new Exception("MockResponseSender could not be closed");
+	      }
+	    }
+	  }
+	}
+	```
+
+	This is the same code of **Comments that overlap the same story**'s example. In other words, the above code is both **Comments that overlap the same story** and **Comments that can be misunderstood**
+
 4. **Mandatory comments**
 
-5. **Comments to record career**
+	```java
+	/**
+	 * @param title CD title
+	 * @param author CD autor
+	 * @param tracks number of CD tracks
+	 */
+
+	public void addCD(String title, String author, int tracks) {
+	  CD cd = new CD();
+		cd.title = title;
+		cd.author = author;
+		cd.tracks = tracks;
+
+		cdList.add(cd);
+	}
+	```
+
+5. **Comments to record history**
 	1. Very few these days
+
+	```java
+	/**
+	 * History ( since 11-Oct-2020 )
+	 * -----------------------------
+	 * 11-Oct-2020 : Create new Package
+	 * 05-Nov-2020 : Add getDescription() method and remove NotableData class
+	 * 12-Nov-2020 : Fix the bug from SpreadsheetDate class
+	 * 13-Mar-2020 : Fix the bug from Checkstyle
+	 */
+	```
 
 6. **An Unremarkable Comment**
 	1. Comments that mentions obvious fact and fails to provide any new information
 
+	```java
+	// day of month
+	private int dayOffMonth;
+
+	// return day of month
+	// @return day of month
+	public int getDayOfMonth() {
+	  return dayOfMonth;
+	}
+	```
+
+	or
+
+	```java
+	try {
+	  doSending();
+	} catch (SocketException e) {
+	  // Well, someone ceased the request
+	} catch (Exception e) {
+	  try {
+	    response.add(ErrorResponder.makeExceptionString(e));
+	    response.closeAll();
+	  } catch (Exception e1) {
+	    // What is that?
+	  }
+	}
+	```
+
 7. **Comments that can be expressed as a function or variable**
 	1. If we are programmer, we should express our intention as a function or variable
+
+	```java
+	// Does the module in the global list <smodule> depend on the subsystem we belong to?
+	if (smodule.getDependSubsystems().contains(subSysMod.getSubSystem()));
+	```
 
 8. **Location Comments**
 	1. It can be useful to use location comments during developing. But, it should be erased.
 	2. If it's not removed, it's a trash
 
+	```java
+	// Actions ///////////////////////////////////////
+	```
+
 9. **Comments after ), }, ] (close brackets)**
 	1. If it is a superimposed and lengthy function, it may be meaningful
 	2. But, like these days, these kinds of comments are useless because functions are small and encapsulated
 
+	```java
+	try {
+	  while ((line = in.readLine()) != null) {
+	    ...
+	  } // while
+	  ...
+	} // try
+	```
+
 10. **Comments that credits or expresses the author**
+	```java
+	// Jay added
+	```
 
 11. **Commented codes**
 	1. If other developers see commented codes, they'll hesitate to erase it even the useless.
 	2. Delete obsolete codes, not commented
+	```java
+	InputStreamResponse response = new InputStreamResponse();
+	response.setBody(formatter.getResultStream(), formatter.getByteCount());
+	// InputStream resultStream = formatter.getReultStream();
+	// StreamReader reader = new StreamReader(resultStream);
+	```
 
 12. **HTML codes**
 	1. "In the source code, the Html annotation is abhorrent itself" from "clean code"
+	```java
+	/**
+	 * This is for the test
+	 * This task returns the results from the test
+	 * <pre>
+	 *  <p>
+	 *    ...
+	 *  </p>
+	 * </pre>
+	```
 
 13. **Global information**
 	1. If we need to comment, only write the code near it
 
+	```java
+	/**
+	 * Test Port: <b>8082</b>
+	 * 
+	 * @param fitnessPort
+	 */
+	public void setFitnessePort(int fitnessePort) {
+	  this.fitnessePort = fitnessePort;
+	}
+	```
+
 14. **Too much information**
 	1. It's probably useless
+	```java
+	/*
+	  Too much information shared in the workplace. Irrelevant information exchanged
+	  at work. A lack of alignment between all the discussions going on at the same 
+	  time in the workplace. Not enough time given to the employees to process the
+	  information they receive.
+	*/
+	```
 
 15. **Ambiguous relationship**
 	1. If the relationship between codes and comments is not clear, it will make it harder for the reader to understand
+
+	```java
+	/**
+	 * Array is started with enough size to put every pixels in it.
+	 * And, 200 bytes are added for header information.
+	 */
+	this.pngBytes = new byte[((this.width + 1) * this.height * 3) + 200];
+	```
 
 16. **Function header**
