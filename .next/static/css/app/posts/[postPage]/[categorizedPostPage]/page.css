@@ -176,7 +176,7 @@
   line-height: 30px;
   vertical-align: middle;
 }
-.MarkdownViewer_markdown__VX352 p > code {
+.MarkdownViewer_markdown__VX352 code {
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.2em 0.4em;
@@ -186,21 +186,31 @@
   border-radius: 4px;
 }
 .MarkdownViewer_markdown__VX352 a {
-  display: block;
+  overflow: hidden;
+  display: flex;
   width: 100%;
-  height: 100px;
-  padding: 15px 20px;
+  height: 130px;
+  align-items: center;
+  padding-left: 20px;
   font-size: 20px;
   -webkit-text-decoration-color: black;
           text-decoration-color: black;
   text-decoration: none;
-  color: black;
   border-radius: 12px;
   border: 1px solid lightblue;
+  color: rgb(126, 122, 142);
+  font-family: "__maple_022690", "__maple_Fallback_022690";
   cursor: pointer;
 }
+.MarkdownViewer_markdown__VX352 a img {
+  right: 0;
+  width: 380px;
+  height: 100%;
+  opacity: 0.8;
+}
 .MarkdownViewer_markdown__VX352 a:hover {
-  background-color: rgba(173, 216, 230, 0.1);
+  background-color: rgba(173, 216, 230, 0.2);
+  color: rgba(126, 122, 142, 0.7);
 }
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/posts/[postPage]/[categorizedPostPage]/slug.module.scss ***!

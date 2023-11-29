@@ -73,3 +73,19 @@ If you are fetching modules from a different origin, you might encounter Cross-O
 	```
 
 2. Secondly, using export to class or method that you want
+	1. If `export` doesn’t work properly, using `module.exprots = {className or methodName};`
+
+3. Thirdly, putting `import` to the top of the file which you want
+	1. There are several ways to use import
+	2. 1️⃣ `import { GetDataApi } from 'filepath';`
+	3. 2️⃣ `const {Person} = require('./index.js');`
+
+4. Lastly, the type of script must be changed from `text/javascript` to `module`
+	```javascript
+	// html file
+	// before
+	<script type="text/javascript" src="filepath"></script>
+
+	// after
+	<script type="module" src="filepath"></script>
+	```
