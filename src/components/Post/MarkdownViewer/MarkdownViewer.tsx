@@ -76,6 +76,7 @@ const MarkdownViewer = ({ content }: Prop) => {
         hr: ({ node, ...props }) => <HrLine />,
         a: ({ node, href, ...props }) => (
           <a {...props} className={st.a}>
+            URL: <br />
             {href}
             <Image src={AImg} alt="aImg" />
           </a>
