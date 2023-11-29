@@ -256,6 +256,12 @@ font-display: swap;
   margin: 0;
   font-size: 25px;
   background-color: rgba(108, 180, 231, 0.1);
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.layout_body__0PUh0::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }
 
 .layout_main__Hcx_E {
@@ -604,7 +610,7 @@ font-display: swap;
   .Nav_caret__hXEf0 {
     position: absolute;
     display: block;
-    right: -30px;
+    right: -20px;
     animation: Nav_arrowDown__yPMMH 1s infinite;
   }
   @keyframes Nav_arrowDown__yPMMH {
