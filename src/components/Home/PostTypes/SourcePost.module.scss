@@ -63,6 +63,10 @@
 // 모바일
 @media all and (max-width: 767px) {
   .opensource_card {
-    width: 100%;
+    width: 80%;
+
+    .content_container {
+      gap: 120px;
+    }
   }
 }

@@ -45,6 +45,10 @@
           line-height: 1.2;
           font-weight: 300;
           letter-spacing: -0.1rem;
+
+          .svg_quote {
+            display: none;
+          }
         }
 
         p {
@@ -84,6 +88,8 @@
 // 모바일
 @media screen and (max-width: 767px) {
   .home_outline_container {
+    display: flex;
+    justify-content: center;
     width: 100%;
 
     .heart {
@@ -92,12 +98,30 @@
     }
 
     h1 {
-      display: flex;
       margin: 0;
-      font-size: 2.5rem !important;
+      font-size: 1.8rem !important;
       line-height: 1.65 !important;
       font-weight: 300;
       letter-spacing: -0.1rem;
+
+      .bracket {
+        display: none;
+      }
+
+      .svg_quote {
+        display: block !important;
+        width: 15px;
+        height: 15px;
+      }
+
+      .open_quote {
+        margin-left: 10px;
+        margin-right: 3px;
+      }
+
+      .close_quote {
+        margin-left: 5px;
+      }
     }
   }
 }
