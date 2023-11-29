@@ -174,5 +174,13 @@
     "category": ["JavaScript", "Error"],
     "path": "err-unexpected-token-export",
     "featured": false
+  },
+  {
+    "title": "Using Module: Import / Export in JS",
+    "description": "We are using Import and Export without being particularly consicous of",
+    "date": "2022-12-19",
+    "category": ["JavaScript", "WebCS"],
+    "path": "module",
+    "featured": true
   }
 ]

@@ -7,6 +7,7 @@ import remarkGfm from "remark-gfm";
 
 import H2Underline from "components/Post/MarkdownViewer/StyledMarkdown/H2Underline";
 
+import AImg from "assets/images/programming.png";
 import Blockquote from "components/Post/MarkdownViewer/StyledMarkdown/Blockquote";
 import H3Underline from "components/Post/MarkdownViewer/StyledMarkdown/H3Underline";
 import HrLine from "components/Post/MarkdownViewer/StyledMarkdown/HrLine";
@@ -73,7 +74,12 @@ const MarkdownViewer = ({ content }: Prop) => {
         ul: ({ node, ...props }) => <UlAndLi props={props} />,
         ol: ({ node, ...props }) => <OlAndLi props={props} />,
         hr: ({ node, ...props }) => <HrLine />,
-        a: ({ node, href, ...props }) => <a {...props} className={st.a}></a>,
+        a: ({ node, href, ...props }) => (
+          <a {...props} className={st.a}>
+            {href}
+            <Image src={AImg} alt="aImg" />
+          </a>
+        ),
       }}
     >
       {content}
