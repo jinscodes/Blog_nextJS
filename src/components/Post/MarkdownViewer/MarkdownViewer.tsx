@@ -73,8 +73,14 @@ const MarkdownViewer = ({ content }: Prop) => {
         blockquote: ({ node, ...props }) => <Blockquote props={props} />,
         ul: ({ node, ...props }) => <UlAndLi props={props} />,
         ol: ({ node, ...props }) => <OlAndLi props={props} />,
-        hr: ({ node, ...props }) => <HrLine />,
-        a: ({ node, href, ...props }) => <A props={props} href={href || ""} />,
+        hr: () => <HrLine />,
+        a: ({ href }) => <A href={href || ""} />,
+        // a: ({ node, href, ...props }) => (
+        //   <>
+        //     <a>aa</a>
+        //     <span></span>
+        //   </>
+        // ),
       }}
     >
       {content}
