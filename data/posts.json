@@ -182,5 +182,13 @@
     "category": ["JavaScript", "WebCS"],
     "path": "module-basic",
     "featured": true
+  },
+  {
+    "title": "Using Module Intermediate: dynamic / browser",
+    "description": "If you have learned about basic modules such as import and export, let's go deeper about them",
+    "date": "2022-12-22",
+    "category": ["JavaScript", "WebCS"],
+    "path": "module-intermediate",
+    "featured": false
   }
 ]
