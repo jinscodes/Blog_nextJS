@@ -19,7 +19,7 @@ If we apply special indicator export and import to the module, it's possbile to 
 💡 imports default and only export of the file name in the receiving file is up to you
 
 ## Module Export
-It's used to export the file, function in the module, and object.
+> It's used to export the file, function in the module, and object.
 
 `export` has two way
 - Named exports
@@ -102,4 +102,91 @@ The above code is same as the below code
 ```javascript
 	import foo from 'app.js';
 	export foo;
+```
+
+## Module Import
+> It's used to import an exported function, object, of an external script or an external module.
+
+`import` also has two way
+- Named imports
+- Default imports
+
+```JavaScript
+// named
+import * as name from "moudle-name";
+import name from "module-name";
+import { member } from "module-name";
+import { member as alias } from "moudle-name";
+import { member1, member2 } from "moudle-name";
+import { member1, member2 as alias2, [...] } from "moudle-name";
+
+// default
+import defaultMember, { member [, [...]]} from "module-name";
+import defaultMember, * as alias from "moudle-name";
+import defaultMember from "moudle-name";
+import "moudle-name";
+```
+
+- **name**: The name of the object to receive the imported value
+- **member, memberN**: The name of member in exported module
+- **defaultMember**: The default name of exported module
+- **alias, aliasN**: The name that specifies the name of the exported member
+- **module-name**: The name of the module to be imported (filename)
+
+## How to use Import
+### Bringing entire module
+
+```javascript
+import * as myModule from "my-module.js";
+
+myModule.sayHello();
+```
+
+### Bringing one member (function or variable)
+
+```javascript
+import { myMember } from "my-module.js";
+```
+
+### Bringing serveral members
+
+```javascript
+import { foo, bar } from "my-module.js";
+```
+
+### Bringing the member as the different name
+
+You can specify a member with a different name when importing a member.
+
+When exported member names are long or complicated, you can specify members by any name
+
+```javascript
+import {reallyReallyLongModuleMemberName as shortName} from "my-module.js";
+import {reallyReallyLongModuleMemberName as shortName, anotherLongModuleName as short} from "my-module.js";
+```
+
+### No-binding, just executing the module
+If the purpose is to simply import and run a specific module, it is recommended to use only the import.
+
+```javascript
+import "my-module.js";
+```
+
+### Bringing default export value
+Through default export, we can get exported values
+
+❗️ At this time, no **{ }**
+
+```javascript
+import myModule from "my-module.js";
+```
+
+It can be use with the basic syntax described above.
+
+At this point, the part that gets the default value (default exported value) must be declared first.
+
+```javascript
+import myDefault, * as myModule from "my-module.js";
+// or
+import myDefault, { foo, bar } from "my-module.js";
 ```
