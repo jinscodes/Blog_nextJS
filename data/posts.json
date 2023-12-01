@@ -190,5 +190,13 @@
     "category": ["JavaScript", "WebCS"],
     "path": "module-intermediate",
     "featured": false
+  },
+  {
+    "title": "🚨Error: array.map Cannot read property 'map' of undefined",
+    "description": "When we use map, we can face to the error of 'array.map Cannot read property 'map' of undefine'. Analyze the error and solution.",
+    "date": "2022-12-29",
+    "category": ["ReactJs", "Error"],
+    "path": "err-map-undefined",
+    "featured": false
   }
 ]
