@@ -1,8 +1,9 @@
 "use client";
 
 import Markdown from "react-markdown";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { ocean } from "react-syntax-highlighter/dist/esm/styles/hljs";
+// import SyntaxHighlighter from "react-syntax-highlighter";
+// import { ocean } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import remarkGfm from "remark-gfm";
 
 import H2Underline from "components/Post/MarkdownViewer/StyledMarkdown/H2Underline";
@@ -14,6 +15,7 @@ import HrLine from "components/Post/MarkdownViewer/StyledMarkdown/HrLine";
 import OlAndLi from "components/Post/MarkdownViewer/StyledMarkdown/OlAndLi";
 import UlAndLi from "components/Post/MarkdownViewer/StyledMarkdown/UlAndLi";
 import Image from "next/image";
+import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import st from "./MarkdownViewer.module.scss";
 
 interface Prop {
@@ -46,7 +48,7 @@ const MarkdownViewer = ({ content }: Prop) => {
                 lineHeight: "22px",
                 margin: "30px 0",
               }}
-              style={ocean}
+              style={atomDark}
               className="custom-syntax-highlighter"
             >
               {String(children).replace(/\n$/, "")}
@@ -75,12 +77,6 @@ const MarkdownViewer = ({ content }: Prop) => {
         ol: ({ node, ...props }) => <OlAndLi props={props} />,
         hr: () => <HrLine />,
         a: ({ href }) => <A href={href || ""} />,
-        // a: ({ node, href, ...props }) => (
-        //   <>
-        //     <a>aa</a>
-        //     <span></span>
-        //   </>
-        // ),
       }}
     >
       {content}
