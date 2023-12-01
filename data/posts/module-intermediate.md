@@ -172,5 +172,106 @@ The below code is script, not module script. Let's compare both.
 ### Module Asynchronous Processing
 After loading the script tag with the async property, it runs immediately without waiting for other scripts or HTML documents to be processed. In the module script, async is available for inline script.
 
+After the import (./analytics.js) operation, the module runs immediately, even if HTML parsing is not finished or another script is on standby.
+
+These features can be useful when implementing features that are not subordinate to anywhere, such as advertising, document-level event listeners, or counters.
+
+```js
+	// After loading the needed module(analytics.js)
+	// Runs immediately without waiting for documents or other <scripts> to load.
+	<script async type="module">
+		import { counter } from './analytics.js';
+
+		counter.count();
+	</script>
+```
+
+### Module must route
+If the path(route) is not designated, it must cause error.
+
+```js
+	import { path } from 'path'; // cuasing error!
+
+	import { path } from 'path.js'; // good
+```
+
+### Module evaluated only once
+Although the same module is used in multiple locations, the module runs only once on initial calls.
+
+After running, the results are exported to all modules that we want to import.
+
+Let's try to get the module(alert.js) with alert function. Log appears once.
+
+```js
+	// alert.js
+	console.log("module is evaluated!");
+```
+
+```js
+	// getAlert1.js
+	import './alert.js'; // "module is evaluated" is printed on the log
+
+	// getAlert2.js
+	import './alert.js'; // nothing happens
+```
+
+In practice, top-level modules are usually used to create data structures that are initialized or used internally, and to export and reuse them.
+
+Let's make the module that exports the object
+
+```js
+	export let admin = {
+	  name: "Jay"
+	}
+```
+
+This module is evaluated only once during the initial call even if the several files import this module serveral times.
+
+During evaluating, admin object is created and then this object is delivered to all modules that imports it.
+
+> 💡 In other words,  **the same admin object is delievered to each module.**
+
+```js
+	getAlert1.js
+	import { admin } from './admin.js';
+	admin.name = "Han"; // Changing the Jay name to Han that is already setted in the module
+```
+
+Modifying the admin object in one module allows you to see the changes in another module because the module runs only once and the modules that run are shared where necessary.
+
+## Example of Browser Module
+
+**index.html**
+```js
+	<body>
+	  <script type="module" src="./go.js"></script>
+	  // <script type="module" src="./mod.js"></script> we don't have to declare the module.
+	</body>
+```
+
+**mod.js**
+```js
+	// module js
+	export const arrs = [10, 20, 30, 40];
+	export { arrs2, getName };
+
+	const arrs2 = [100, 200, 300, 400];
+
+	function getName() {
+	  return "aaaaaaaaaa";
+	}
+```
+
+**go.js**
+```js
+	// running js
+	import { arrs, arrs2, getName } from './mod.js';
+
+	console.log(arrs);
+	console.log(arrs2);
+	console.log(getName());
+```
+
 ---
 [](https://k6.io/docs/using-k6-browser/overview/)
+[](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-import-export-%EC%A0%95%EB%A6%AC)
