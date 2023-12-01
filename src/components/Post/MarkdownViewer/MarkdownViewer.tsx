@@ -47,6 +47,7 @@ const MarkdownViewer = ({ content }: Prop) => {
                 padding: "20px 20px",
                 lineHeight: "22px",
                 margin: "30px 0",
+                borderRadius: "12px",
               }}
               style={atomDark}
               className="custom-syntax-highlighter"
