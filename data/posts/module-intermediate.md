@@ -112,8 +112,52 @@ app();
 
 > 💡 dynamic import works in normal script. `script type="module"` is not needed.
 
-> 💡 import() has similarity as function call and grammar, but it's not function call.
+> 💡 `import()` has similarity as function call and grammar, but it's not function call.
 	It's one of the special grammar using brackets like super().
 	Therefore, it's impossible to copy to variables or use call/apply. This is because it's not function!
 
 ## Using Module in Browser
+Because modules are used with special keywords or functions, you must set properties such as `<script type="module">` to allow your browser to know that the script is a module.
+
+```javascript
+<!DOCTYPE html>
+
+<script type="module">
+  import { appJs } from './app.js';
+
+  document.body.innerHTML = appJs("10")'
+</script>
+```
+
+```jsx
+function createStyleObject (classNames, style) {
+  return classNames.reduce((styleObject, className) => {
+    return {...styleObject, ...style[className]};
+  }, {});
+}
+
+// This comment is here to demonstrate an extremely long line lenght, well beyond what you should probably allow in your own code
+```
+
+
+```java
+function createStyleObject(classNames, style) {
+  return classNames.reduce((styleObject, className) => {
+    return {...styleObject, ...style[className]};
+  }, {});
+}
+
+// This comment is here to demonstrate an extremely long line lenght, well beyond what you should probably allow in your own code
+```
+
+```javascript
+function createStyleObject(classNames, style) {
+  return classNames.reduce((styleObject, className) => {
+    return {...styleObject, ...style[className]};
+  }, {});
+
+	
+}
+
+// This comment is here to demonstrate an extremely long line lenght, well beyond what you should probably allow in your own code
+```

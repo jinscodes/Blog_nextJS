@@ -10,13 +10,13 @@ JSX is a syntax extension to JavaScript and helps extract full power of JavaScri
 > If you want to use React, I think JSX or TSX is almost necessary
 
 ## Create JSX file
-자바스크립트 이름 -> filename.**js**   
+JavaScript name -> filename.**js**   
 
-리액트 컴포넌트 이름 -> filename.**jsx**   
+React component name -> filename.**jsx**   
 
-타입스크립트 이름 -> filename.**ts**   
+TypeScript name -> filename.**ts**   
 
-리액트 타입스크립트 컴포넌트 이름 -> filename.**tsx**
+React TypeScript component name -> filename.**tsx**
 
 ## JSX's workflow
 Regardless of frameworks, the most important is that the web can understand our code, meaning the end result should be a combination of HTML, CSS, and JS.
@@ -84,17 +84,17 @@ By using CDN, the browser handles the JSX on its own if JSX is directly designat
 2. Because of the performance deterioration, it doesn't be used in real-world web development
 
 ```HTML
-<!-- 스크립트 태그 추가 - CDN -->
+<!-- Add script tag - CDN -->
 <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
 
-<!-- JSX를 JS로 변환시켜주는 바벨 추가 -->
+<!-- Add Barbel that converts from JSX to JS -->
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-<!-- body 태그 닫히기 전에 리액트 코드 작성 -->
-<!-- 바벨이 트랜스파일링 할 수 있도록 type 속성 지정 -->
+<!-- Before closing the body tag, writing the react code -->
+<!-- Specify type properties for barbells to transfile -->
 <script type="text/babel">
-	// React 코드 작성
+	// Write React code
 </script>
 ```
 
@@ -188,5 +188,5 @@ If you are using ESLint plugin, ```react/jsx-uses-react``` and ```react/react-in
 Use 4.1+ version
 
 ---
-- `https://legacy.reactjs.org/docs/introducing-jsx.html`
-- `https://velog.io/@gyumin_2/React-JSX%EB%9E%80%EC%A0%95%EC%9D%98-%EC%9E%A5%EC%A0%90-%EB%AC%B8%EB%B2%95-%ED%8A%B9%EC%A7%95-%EB%93%B1`
+[](https://legacy.reactjs.org/docs/introducing-jsx.html)
+[](https://velog.io/@gyumin_2/React-JSX%EB%9E%80%EC%A0%95%EC%9D%98-%EC%9E%A5%EC%A0%90-%EB%AC%B8%EB%B2%95-%ED%8A%B9%EC%A7%95-%EB%93%B1)
