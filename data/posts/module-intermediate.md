@@ -20,7 +20,7 @@ What are the constraints and how should I address them?
 1. The First constraint is that dynamic parameteres are not available for import statements.
 
 	```javascript
-	import ... from getModule(); // causing error
+		import ... from getModule(); // causing error
 	```
 
 	1. Because the module path can only contain raw strings, it was not possible to write the result value of the function call as the path.
@@ -28,13 +28,13 @@ What are the constraints and how should I address them?
 2. The second constraint is the module cannot be imported dependingo on the run-time or condition
 
 	```javascript
-	if (...) {
-		import ...; // causing error
-	}
+		if (...) {
+			import ...; // causing error
+		}
 
-	{
-		import ...; // causing error
-	}
+		{
+			import ...; // causing error
+		}
 	```
 
 	1. Because the module cannot be imported conditionally (first example) and cannot be placed inside the brackets (second example).
@@ -45,17 +45,17 @@ What are the constraints and how should I address them?
 `import(module)` can be used dynamically anywhere.
 
 ```javascript
-let modulePath = prompt("which module do you want?");
+	let modulePath = prompt("which module do you want?");
 
-import (modulePath)
-  .then(obj => "<Module Object>")
-  .catch(e => "<Loading error... There is no matched module>");
+	import (modulePath)
+		.then(obj => "<Module Object>")
+		.catch(e => "<Loading error... There is no matched module>");
 ```
 
 It can be used in `async` function
 
 ```js
-let module = await import(modulePath);
+	let module = await import(modulePath);
 ```
 
 ### Example of import module dynamically
@@ -63,51 +63,51 @@ let module = await import(modulePath);
 Let's make module using app.js
 
 ```js
-// app.js
-export function alphabet() {
-  alert("a b c d e f g");
-}
+	// app.js
+	export function alphabet() {
+		alert("a b c d e f g");
+	}
 
-export function number() {
-  alert("1 2 3 4 5 6 7");
-}
+	export function number() {
+		alert("1 2 3 4 5 6 7");
+	}
 ```
 
 we can import the module dynamically following the below code
 
 ```js
-let app = await import('./app.js');
-app.alphabet();
-app.number();
+	let app = await import('./app.js');
+	app.alphabet();
+	app.number();
 
-let {alphabet, number} = await import('./app.js');
-alphabet();
-number();
+	let {alphabet, number} = await import('./app.js');
+	alphabet();
+	number();
 ```
 
 Trying to add default export to app.js
 
 ```js
-export default function() {
-	alert("Bring the module that is export default");
-}
+	export default function() {
+		alert("Bring the module that is export default");
+	}
 ```
 
 To use default export module, using default property like below
 
 ```js
-let obj = await import('./app.js');
-let app = obj.default;
+	let obj = await import('./app.js');
+	let app = obj.default;
 
-app();
+	app();
 ```
 
 or 
 
 ```js
-let {default: app} = await import('./app.js');
+	let {default: app} = await import('./app.js');
 
-app();
+	app();
 ```
 
 > 💡 dynamic import works in normal script. `script type="module"` is not needed.
@@ -116,48 +116,61 @@ app();
 	It's one of the special grammar using brackets like super().
 	Therefore, it's impossible to copy to variables or use call/apply. This is because it's not function!
 
+
 ## Using Module in Browser
 Because modules are used with special keywords or functions, you must set properties such as `<script type="module">` to allow your browser to know that the script is a module.
 
 ```javascript
-<!DOCTYPE html>
+	<!DOCTYPE html>
 
-<script type="module">
-  import { appJs } from './app.js';
+	<script type="module">
+		import { appJs } from './app.js';
 
-  document.body.innerHTML = appJs("10")'
-</script>
+		document.body.innerHTML = appJs("10")'
+	</script>
 ```
 
-```jsx
-function createStyleObject (classNames, style) {
-  return classNames.reduce((styleObject, className) => {
-    return {...styleObject, ...style[className]};
-  }, {});
-}
+> 💡 Modules do not operate in local files, but only through HTTP or HTTPS protocols. 
 
-// This comment is here to demonstrate an extremely long line lenght, well beyond what you should probably allow in your own code
-```
+>	💡 When you open a webpage locally using the file:// protocol, the import/export indicator does not work
 
+## Features of Browser Module
+- Module scripts are always delayed
+- Module Asynchronous Processing
+- Module must route
+- Module evaluated only once
 
-```java
-function createStyleObject(classNames, style) {
-  return classNames.reduce((styleObject, className) => {
-    return {...styleObject, ...style[className]};
-  }, {});
-}
+Let's learn more about the features of the browser module above.
 
-// This comment is here to demonstrate an extremely long line lenght, well beyond what you should probably allow in your own code
-```
+### Module scripts are always delayed
+When we download the outside module script `<script type="module" src="">`, the HTML process of browser doesn't stop.
+
+The module script waits until the HTML document is fully prepared and runs after HTML document is completely created. Even if the module is so small that it's loaded faster than HTML.
 
 ```javascript
-function createStyleObject(classNames, style) {
-  return classNames.reduce((styleObject, className) => {
-    return {...styleObject, ...style[className]};
-  }, {});
+	<script type="module">
+		alert(typeof button); 
+		// module script is always delayed. So, after the page is fully loaded, alert function is executed.
+		// On the alert, object is displayed without problems. Module script is able to 'see' the below button components.
+	</script>
 
-	
-}
-
-// This comment is here to demonstrate an extremely long line lenght, well beyond what you should probably allow in your own code
+	<button id="button">Button</button>
 ```
+
+The below code is script, not module script. Let's compare both.
+
+```javascript
+	<script>
+		alert(typeof button)
+		// Normal script is executed even if the page is not fully built.
+		// Becuase alert fucntion tries to accesss the button before the button is not created on the page, undefined is printed.
+	</script>
+
+	<button id="button">Button</button>
+```
+
+### Module Asynchronous Processing
+After loading the script tag with the async property, it runs immediately without waiting for other scripts or HTML documents to be processed. In the module script, async is available for inline script.
+
+---
+[](https://k6.io/docs/using-k6-browser/overview/)
