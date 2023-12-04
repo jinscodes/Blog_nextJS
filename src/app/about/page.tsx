@@ -1,11 +1,5 @@
 const About = () => {
-  return (
-    <div>
-      about
-      {/* <MyProfile />
-      <FeaturedPosts /> */}
-    </div>
-  );
+  return <div>Preparing...</div>;
 };
 
 export default About;
