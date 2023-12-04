@@ -20,7 +20,7 @@ const Posts = async () => {
           </div>
         </div>
       </div>
-      <AllPost posts={posts} title="분류 전체 보기" />
+      <AllPost posts={posts} title="All Posts" />
     </div>
   );
 };

@@ -26,6 +26,10 @@
       {
         "title": "WebCS",
         "svg": "WebCS"
+      },
+      {
+        "title": "Error",
+        "svg": "Error"
       }
     ]
   },
