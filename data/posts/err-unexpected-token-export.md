@@ -89,3 +89,5 @@ If you are fetching modules from a different origin, you might encounter Cross-O
 	// after
 	<script type="module" src="filepath"></script>
 	```
+
+---
