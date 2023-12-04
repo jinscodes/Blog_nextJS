@@ -198,5 +198,13 @@
     "category": ["ReactJs", "Error"],
     "path": "err-map-undefined",
     "featured": false
+  },
+  {
+    "title": "Everything is HTTP",
+    "description": "We can't said about the computer science without HTTP. What is it? What is it for? Let's study it together!",
+    "date": "2023-01-01",
+    "category": ["WebCS"],
+    "path": "http",
+    "featured": false
   }
 ]
