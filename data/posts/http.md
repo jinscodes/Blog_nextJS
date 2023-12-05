@@ -138,3 +138,5 @@ Substituting the situation of the above conversation into the client and server,
 The server does not store or have any information about any work. That's why when a client sends a request to a server, it must always send all the information needed for the task.
 
 > As such, one of the characteristics of HTTP is "stateless" that the server does not store the state and the client must always send the state.
+
+### Connectionless
