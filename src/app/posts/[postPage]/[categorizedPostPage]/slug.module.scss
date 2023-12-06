@@ -59,6 +59,7 @@
   }
 
   .content_container {
+    width: 860px;
     margin-top: 200px;
     margin-bottom: 120px;
   }
@@ -66,6 +67,7 @@
 
 @media all and (max-width: 767px) {
   .content_container {
+    width: auto !important;
     padding: 0 25px;
   }
 }
