@@ -336,12 +336,14 @@
   background-size: cover;
 }
 .slug_categorized_post_page__ib_VH .slug_content_container__92knb {
+  width: 860px;
   margin-top: 200px;
   margin-bottom: 120px;
 }
 
 @media all and (max-width: 767px) {
   .slug_content_container__92knb {
+    width: auto !important;
     padding: 0 25px;
   }
 }
