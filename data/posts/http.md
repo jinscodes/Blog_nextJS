@@ -39,14 +39,14 @@ Before we start studying HTTP in earnest, let's take a brief look at the history
 
 ![http1 1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a9029702-cc94-40af-9b21-b07949112775)
 
-## Features of HTTP
+### Features of HTTP
 - Client Server structure
 - Stateful, Stateless
 - Connectionless
 - HTTP message
 - Simple and Extendable
 
-### Client Server Structure
+## Client Server Structure
 - Request Response structure
 - Client requests to the server and waits for response
 - Server makes the result that is corresponded with the request and respond to the client.
@@ -55,7 +55,7 @@ Before we start studying HTTP in earnest, let's take a brief look at the history
 
 If you're new to state management, these two concepts can be confusing. Let's take a look at what the concepts of stateful and stateless are and what are the differences
 
-### Stateful
+## Stateful
 > The server preserving the client's previous state is called **stateful**.
 
 Here is the example of the **stateful**. Customer is the client, and clerk is the server.
@@ -111,7 +111,7 @@ Clerk: The payment of $2,000 has been completed. **( state1: laptop, state2: two
 
 ---
 
-### Stateless
+## Stateless
 > The server that doesn't preserver the client's previous state is called **stateless**.
 
 Here is the example of the **stateless**. Customer is the client, and clerk is the server.
@@ -139,4 +139,52 @@ The server does not store or have any information about any work. That's why whe
 
 > As such, one of the characteristics of HTTP is "stateless" that the server does not store the state and the client must always send the state.
 
-### Connectionless
+## Connectionless
+Before studying the concepts or features of the **connectionless**, we need to know the background of the **connectionless**.
+
+First of all, let's compare the two models shown in the pictures below.
+
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/2f1c084f-4df5-4a8e-95ee-e39b4db78fa9)
+
+The above picture shows the situation in which the server exchanges req and res with client1 and client2, receives a request from client3, and processes it as a response.
+
+The above server remains connected throughout the entire process. And the server consumes the resources steadily to keep the connection.
+
+Compare to the model that keeps the server connected, how does the model that doesn't keep connected work?
+
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/33a016ac-b87f-4f67-b2d9-80e8fc7503e5)
+
+As shown in the figure above, the server does not maintain a connection to consume minimal resources.
+
+Only when a request is received from the client, the connection with the client is maintained, and after responding to the request, the connection with the client is disconnected.
+
+If another request comes from another client, connect with that client. Again, when the response to the request is finished, the connection is disconnected.
+
+### Features of Connectionless
+
+- HTTP is a model whose default does not hold a connection
+- Typically responding at a faster rate of less than seconds
+- Even if thousands of people use the service in an hour, the number of requests that are simultaneously processed by real servers is very small, with no more than a few dozen
+	- Ex) The web browser does not press the search button continuously.
+- Server resources can be used very efficiently
+
+### Limits and Overcoming
+Limits:
+
+- New TCP/IP connection required - 3 way handshake time increased
+- When you request a site with a web browser, you download a lot of resources, including JavaScript, css, and additional images, as well as HTML
+
+Overcoming:
+
+- Solveing the problem now with **HTTP persistent connectivity**
+- More optimization with **HTTP/2** & **HTTP/3**
+
+In the early days of HTTP...
+
+![3-1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/4b8f2969-88bb-4d75-8b49-fbe125546d55)
+
+It is now replaced by **Persistent Connections**, which supplemented the problems of HTTP in the past.
+
+Here is the **Persistent Connections**.
+
+![3-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b8706689-ea18-471c-bd85-fb13c0ff0338)
