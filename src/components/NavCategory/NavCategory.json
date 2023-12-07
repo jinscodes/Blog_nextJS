@@ -85,5 +85,14 @@
         "svg": "Git"
       }
     ]
+  },
+  {
+    "class": "Server",
+    "menu": [
+      {
+        "title": "Express",
+        "svg": "Express"
+      }
+    ]
   }
 ]

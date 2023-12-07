@@ -6,6 +6,7 @@ import Caret from "../../../public/svg/Caret.svg";
 import Codepen from "../../../public/svg/Codepen.svg";
 import Css from "../../../public/svg/Css.svg";
 import Error from "../../../public/svg/Error.svg";
+import Express from "../../../public/svg/Express.svg";
 import Flutter from "../../../public/svg/Flutter.svg";
 import Git from "../../../public/svg/Git.svg";
 import Javascript from "../../../public/svg/Javascript.svg";
@@ -43,6 +44,7 @@ const NavMenu = ({ datas, isMenu }: Props) => {
     Git: Git,
     WebCS: WebCS,
     Error: Error,
+    Express: Express,
   };
 
   return (
