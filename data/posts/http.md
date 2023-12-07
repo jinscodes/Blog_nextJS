@@ -188,3 +188,10 @@ It is now replaced by **Persistent Connections**, which supplemented the problem
 Here is the **Persistent Connections**.
 
 ![3-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b8706689-ea18-471c-bd85-fb13c0ff0338)
+
+## HTTP Message
+HTTP Message has two different way: HTTP Request Message & HTTP Respond Message.
+
+Those two HTTP Message also has different structures.
+
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/3ad2edbe-3c80-45c5-a908-378b67f00119)
