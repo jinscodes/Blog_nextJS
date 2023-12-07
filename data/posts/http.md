@@ -233,3 +233,6 @@ HTTP Message consists of 4 sections.
 ![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/6a91f43e-eeb6-4a60-9569-884043f2fd64)
 
 ## Simple and Extendable
+- HTTP is simple
+- HTTP Message is also simple
+- A standard technology that is highly successful is simple but scalable
