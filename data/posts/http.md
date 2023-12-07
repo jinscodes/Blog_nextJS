@@ -195,3 +195,41 @@ HTTP Message has two different way: HTTP Request Message & HTTP Respond Message.
 Those two HTTP Message also has different structures.
 
 ![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/3ad2edbe-3c80-45c5-a908-378b67f00119)
+
+These two types of messages are very similar. Indeed, these two messages have a similar structure. However, there are also distinctly different differences.
+
+Let's learn about the structure of the messages.
+
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/fc178e56-ee23-42b7-8277-8a2acbbd432e)
+
+HTTP Message consists of 4 sections.
+
+1. It begins with "start-line" 
+	1. start-line = request-line || start-line = status-line
+		1. request-line = method SP(space) request-target SP HTTP-version CRLF(enter) ↓
+		2. GET /search?q=hello&lang=ko HTTP/1.1
+	2. "start-line" contains methods and queries in the request message, and HTTP and status in the response message
+		1. HTTP Method (Get, Post, etc...)
+		2. Query (ex. /search?q=hello&lang=ko)
+		3. HTTP Version
+
+2. The second element in the HTTP Message structure is "header" 
+	1. The "header" contains the every information needed for each response and request.
+	2. There are so many standard header
+	3. If needed, it's possible to add temporary header
+		1. ex. helloword: hihi
+	4. header-field = field-name ":" OWS(enable space) field-value OWS
+		1. ex. Host: `www.google.com`
+		2. ex. Content-Type: text/html;charset=UTF-8
+		3. ex. Content-Length: 3424
+
+3. The third is the common and essential "empty line"
+	1. HTTP Messages must include the "empty line". CRLF, or line modification, must be required for this "empty line."
+
+4. "Message body" is the last of HTTP Message Structure. 
+	1. Actual data to be sent
+	2. Any data expressed in bytes, such as HTML document, image, video, JSON, and etc., can be tranferred
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/6a91f43e-eeb6-4a60-9569-884043f2fd64)
+
+## Simple and Extendable
