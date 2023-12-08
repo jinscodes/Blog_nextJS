@@ -214,5 +214,13 @@
     "category": ["Express"],
     "path": "start-express",
     "featured": false
+  },
+  {
+    "title": "🚨Error: Invalid hook call",
+    "description": "What should we do if we design the two hooks to interlock with each other and make an error?",
+    "date": "2023-01-08",
+    "category": ["Error", "ReactJs"],
+    "path": "err-invalid-hook",
+    "featured": false
   }
 ]
