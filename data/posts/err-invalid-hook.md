@@ -106,5 +106,11 @@ function useWindowWidth() {
 }
 ```
 
+// useState와 같은 훅들도 커스텀 훅에서 쓸수있다. 그럼 왜 내 코드에서 에러가 났는가?
+
+// 내 코드에서 에러가 난 이유는 Top-level이 아니기 때문에다.
+// 즉, 내가 만든 커스텀 훅 자체는 문제가 없다.
+// 하지만, 내가 만든 커스텀 훅이 useEffect나 useMemo, useReducer와 같은 훅들 안에서 쓰이기 때문에 invalid 에러가 발생한 것이다.
+
 ---
 [](https://legacy.reactjs.org/warnings/invalid-hook-call-warning.html)
