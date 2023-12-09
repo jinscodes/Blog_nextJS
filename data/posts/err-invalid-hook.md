@@ -106,6 +106,71 @@ function useWindowWidth() {
 }
 ```
 
+To avoid confusion, it’s not supported to call Hooks in other cases:
+
+- 🚨 Do not call Hooks in class components
+- 🚨 Do not call in event handlers
+- 🚨 Do not call Hooks inside functions passed to useMemo, useReducer, or useEffect
+
+```jsx
+function BadExample1() {
+  function handleClick() {
+    const theme = useContext(ThemeContext);
+  }
+  // ...
+}
+
+function BadExample2() {
+  const style = useMemo(() => {
+    const theme = useContext(ThemeContext);
+    return createStyle(theme);
+  })
+  // ...
+}
+
+class BadExample3 extends React.Component {
+  render() {
+    useEffect(() => {...})
+    // ...
+  }
+}
+```
+
+> You can use the eslint-plugin-react-hooks plugin to catch some of these mistakes.
+
+## Duplicate React
+In order for Hooks to work, the react import from your application code needs to resolve to the same module as the react import from inside the react-dom package.
+
+If these react imports resolve to two different exports objects, you will see this warning. This may happen if you accidentally end up with two copies of the react package.
+
+If you use Node for package management, you can run this check in your project folder:
+
+```bash
+	$ npm ls react
+```
+
+If you see more than one React, you’ll need to figure out why this happens and fix your dependency tree. For example, maybe a library you’re using incorrectly specifies react as a dependency (rather than a peer dependency). Until that library is fixed, Yarn resolutions is one possible workaround.
+
+You can also try to debug this problem by adding some logs and restarting your development server:
+
+```js
+	// Add this in node_modules/react-dom/index.js
+	window.React1 = require("react");
+
+	// Add this in your component file
+	require("react-dom");
+	window.React2 = require("react");
+	console.log(window.React1 === window.React2);
+```
+
+If it prints false then you might have two Reacts and need to figure out why that happened.
+
+This problem can also come up when you use npm link or an equivalent. In that case, your bundler might “see” two Reacts — one in application folder and one in your library folder.
+
+Assuming myapp and mylib are sibling folders, one possible fix is to run npm link ../myapp/node_modules/react from mylib. This should make the library use the application’s React copy.
+
+## MY CASE
+
 // useState와 같은 훅들도 커스텀 훅에서 쓸수있다. 그럼 왜 내 코드에서 에러가 났는가?
 
 // 내 코드에서 에러가 난 이유는 Top-level이 아니기 때문에다.
