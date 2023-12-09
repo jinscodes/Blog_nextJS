@@ -170,12 +170,13 @@ This problem can also come up when you use npm link or an equivalent. In that ca
 Assuming myapp and mylib are sibling folders, one possible fix is to run npm link ../myapp/node_modules/react from mylib. This should make the library use the application’s React copy.
 
 ## MY CASE
+Hooks like useState can also be written in custom hooks. So why is there an error in my code?
 
-// useState와 같은 훅들도 커스텀 훅에서 쓸수있다. 그럼 왜 내 코드에서 에러가 났는가?
+The reason for the error in my code is that it is not Top-level. In other words, there is no problem with the custom hook I made.
 
-// 내 코드에서 에러가 난 이유는 Top-level이 아니기 때문에다.
-// 즉, 내가 만든 커스텀 훅 자체는 문제가 없다.
-// 하지만, 내가 만든 커스텀 훅이 useEffect나 useMemo, useReducer와 같은 훅들 안에서 쓰이기 때문에 invalid 에러가 발생한 것이다.
+However, an invalid error has occurred because the custom hook I made is used in hooks such as useEffect, useMemo, and useReducer.
+
+
 
 ---
 [](https://legacy.reactjs.org/warnings/invalid-hook-call-warning.html)
