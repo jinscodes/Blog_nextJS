@@ -222,5 +222,13 @@
     "category": ["Error", "ReactJs"],
     "path": "err-invalid-hook",
     "featured": false
+  },
+  {
+    "title": "How to Create NextJS Project?",
+    "description": "Nowadays, many webs are made using NextJS. Let's start new project with NextJS!",
+    "date": "2023-01-12",
+    "category": ["NextJs"],
+    "path": "start-nextjs",
+    "featured": false
   }
 ]
