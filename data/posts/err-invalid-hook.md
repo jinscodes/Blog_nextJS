@@ -138,7 +138,7 @@ class BadExample3 extends React.Component {
 
 > You can use the eslint-plugin-react-hooks plugin to catch some of these mistakes.
 
-## Duplicate React
+### Duplicate React
 In order for Hooks to work, the react import from your application code needs to resolve to the same module as the react import from inside the react-dom package.
 
 If these react imports resolve to two different exports objects, you will see this warning. This may happen if you accidentally end up with two copies of the react package.
@@ -171,6 +171,9 @@ Assuming myapp and mylib are sibling folders, one possible fix is to run npm lin
 
 ## MY CASE
 Hooks like `useState` can also be written in custom hooks. So why is there an error in my code?
+
+
+### Analyze Problem
 
 The reason for the error in my code is that it is not Top-level. In other words, there is no problem with the custom hook I made.
 
@@ -216,6 +219,49 @@ If there is no problem with the code above, we should check the place where the 
 `Filename()` is used in `useEffect()`. In this case, the error, invalid hook, is caused because **Breaking the Rules of Hooks**.
 
 So, to solve the problem, we need to get rid of the Filname() from the useEffect() and use it in another top-level component.
+
+### How Did I Solve The Problem?
+For me, I couldn't get rid of the custom hook from the `useEffect()`. This is because my custom hook must be executed when the component rendered at first. So, I did another way to solve the problem. 
+
+I gave up using cookie hook.
+
+And then, I made file named cookie and three functions.
+1. setCookie
+2. getCookie
+3. removeCookie
+
+```ts
+	// cookie.ts
+	import {Cookie} from 'react-cookie';
+	import {CookieSetOptions} from 'universal-cooki';
+
+	const cookies = new Cookies();
+
+	export const setCookie = (name:string, value: any, options: CookieOptions | undefined) => {
+		return cookies.set(name, value, { ...options });
+	}
+
+	export const getCookie = (name: string) => {
+		return cookies.get(name);
+	}
+
+	export const removeCookie = (name: string) => {
+		return cookies.remove(name);
+	}
+```
+
+This three functions are represented as a `useCookie()`. In fact...
+
+Compare three functions to `useCookie()`
+
+```ts
+const [cookie, setCookie, rmCookie] = useCookie();
+```
+
+- cookie (useCookie) = getCookie (cookie.ts)
+- setCookie (useCookie) = setCookie (cookie.ts)
+- rmCookie (useCookie) = removeCookie (cookie.ts)
+
 
 ---
 [](https://legacy.reactjs.org/warnings/invalid-hook-call-warning.html)
