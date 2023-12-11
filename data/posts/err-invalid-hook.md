@@ -170,13 +170,52 @@ This problem can also come up when you use npm link or an equivalent. In that ca
 Assuming myapp and mylib are sibling folders, one possible fix is to run npm link ../myapp/node_modules/react from mylib. This should make the library use the application’s React copy.
 
 ## MY CASE
-Hooks like useState can also be written in custom hooks. So why is there an error in my code?
+Hooks like `useState` can also be written in custom hooks. So why is there an error in my code?
 
 The reason for the error in my code is that it is not Top-level. In other words, there is no problem with the custom hook I made.
 
 However, an invalid error has occurred because the custom hook I made is used in hooks such as useEffect, useMemo, and useReducer.
 
+Let's check it through the code.
 
+```jsx
+	// filename.jsx
+	import { useCookie } from "react-cookie";
+
+	const Filename = () => {
+		const [cookie, setCookie, rmCookie] = useCookie(["loginToken"]);
+
+		if (login is successful) {
+			setCookie(loginToken)
+		}
+
+		return (
+			...
+		)
+	}
+
+	export default Filename;
+```
+
+The above custom hook doesn't have any error.
+
+If there is no problem with the code above, we should check the place where the Filename.jsx was used.
+
+```jsx
+	import Filename from './Filename.jsx';
+
+	const Login = () => {
+	  useEffect(() => {
+	    Filename();
+	  }, [])
+
+	  ...
+	}
+```
+
+`Filename()` is used in `useEffect()`. In this case, the error, invalid hook, is caused because **Breaking the Rules of Hooks**.
+
+So, to solve the problem, we need to get rid of the Filname() from the useEffect() and use it in another top-level component.
 
 ---
 [](https://legacy.reactjs.org/warnings/invalid-hook-call-warning.html)
