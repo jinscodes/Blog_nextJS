@@ -31,5 +31,107 @@ A framework can solve these problems. **Next.js** provides a solution to all of 
 - API routes to build API endpoints with Serverless Functions
 - Fully extendable
 
+## Setup
+To start NextJS, we need Node.js.
+
+We can check the node and node version.
+
+```bash
+	$ node -v
+```
+
+![node version](https://github.com/jinscodes/Blog_nextJS/assets/87598134/78d6f96a-e24d-4566-8d5e-be6187e212f4)
+
+If you don't have any node, you can install it from here: 
+
+[here](https://nodejs.org/en/)
+
+## Create a NextJS Project
+To create NextJS project,
+
+firstly, we need to go to the directory where we'd like to create the file.
+
+```bash
+	# Move to desktop folder
+	$ cd desktop
+
+	or 
+
+	$ cd directoryYouWant
+```
+
+After this, run the following command:
+
+```bash
+	$ npx create-next-app@lastest
+
+	or 
+
+	$ yarn create next-app
+```
+
+For using typescript, just add `--typescript` end of the command
+
+```bash
+	$ npx create-next-app@latest --typescript
+
+	or 
+
+	$ yarn create next-app --typescript
+```
+
+💡 But, we don't need to create the project with `--typescript`.
+
+💡 This is because even if we just create the project with `npx create-next-app@latest`, we can set serveral things including typescript.
+
+![create-next](https://github.com/jinscodes/Blog_nextJS/assets/87598134/8fbd36b4-bea6-47cd-8973-0cfde1d3a0d0)
+
+### Setting
+1. Typescript
+	1. If we want to apply a typescript to our project, select *yes*
+2. ESLint
+	1. If we want to apply a ESLint, select *yes*
+3. Tailwind CSS
+	1. If we want to apply a TailwindCSS, select *yes*
+	2. Tailwind CSS is the tool relating to the CSS.
+	3. It can make the CSS creation convenient.
+4. `src/` directory
+	1. If we want to apply a `src/`, select *yes*
+	2. `src` is needed for the project anyway.
+5. App Router
+	1. If we want to apply a App Router, select *yes*
+
+## Run the server
+Now, we have a NextJS project directory. 
+
+Move to the directory we made and then start the server.
+
+```bash
+	# Move to the directory
+	$ cd folder-name
+```
+
+```bash
+	# Start the server
+	$ npm run dev
+```
+
+
+💡 If you cannot turn the server on, you need node version up to 18.17.0
+
+![](https://github.com/jinscodes/Blog_nextJS/assets/87598134/830fc01e-86c6-4f42-8092-d0e262618ac3)
+
+
+![npmrundev](https://github.com/jinscodes/Blog_nextJS/assets/87598134/960c66cd-212a-481b-8c78-7bf5987b7395)
+
+**WE TURN THE SERVER ON!!**
+
+## Final Result
+![initial](https://github.com/jinscodes/Blog_nextJS/assets/87598134/492794c8-2c5d-44c4-a5d0-af71fce22a40)
+
 ---
+[](https://nextjs.org/docs/getting-started/installation)
+
 [](https://nextjs.org/learn-pages-router/basics/create-nextjs-app/setup)
+
+[](https://velog.io/@scroll0908/Node.js-%EC%84%A4%EC%B9%98Mac)
