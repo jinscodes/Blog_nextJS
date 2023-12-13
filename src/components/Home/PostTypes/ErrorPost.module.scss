@@ -1,0 +1,68 @@
+.errorPost {
+  overflow: hidden;
+  display: flex;
+  width: calc(100% - 40px);
+  height: 200px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  transition: transform ease-in-out 0.1s;
+  color: black;
+  text-decoration: none;
+
+  .inner_post_container {
+    width: 70%;
+    height: 100%;
+    padding: 15px;
+
+    .category_container {
+      display: flex;
+      gap: 12px;
+    }
+
+    .category_container > div:nth-child(2) {
+      background-color: rgba(0, 34, 255, 0.3);
+      color: rgba(0, 34, 255, 0.8);
+    }
+
+    p:first-child {
+      margin: 15px 0;
+    }
+
+    p:nth-child(2) {
+      width: 70%;
+      height: 40px;
+      font-size: 15px;
+      color: grey;
+    }
+  }
+
+  .img {
+    width: 30%;
+    height: 100%;
+  }
+}
+
+// 모바일
+@media all and (max-width: 767px) {
+  .errorPost {
+    height: 250px;
+
+    .inner_post_container {
+      width: 60%;
+
+      p:first-child {
+        height: 50px;
+        font-size: 19px;
+      }
+
+      p:nth-child(2) {
+        height: 75px;
+        font-size: 14px;
+      }
+    }
+
+    .img {
+      width: 40%;
+    }
+  }
+}

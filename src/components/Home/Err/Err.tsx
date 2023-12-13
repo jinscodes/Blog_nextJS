@@ -1,3 +1,4 @@
+import ErrorPost from "components/Home/PostTypes/ErrorPost";
 import HomeTitle from "components/HomeTitle/HomeTitle";
 import { getErrorPosts } from "service/posts";
 import st from "./Err.module.scss";
@@ -12,7 +13,7 @@ const Err = async () => {
       <HomeTitle content="Error 🚨" />
       <div className={st.err_container}>
         {posts.map((post) => (
-          <div>{post.title}</div>
+          <ErrorPost post={post} />
         ))}
       </div>
     </section>
