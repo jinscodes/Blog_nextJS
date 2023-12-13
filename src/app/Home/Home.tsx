@@ -3,6 +3,7 @@ import Gif from "components/Home/Gif/Gif";
 import OpenSources from "components/Home/OpenSources/OpenSources";
 import RecentPosts from "components/Home/RecentPosts/RecentPosts";
 
+import Err from "components/Home/Err/Err";
 import st from "./Home.module.scss";
 
 const Home = async () => {
@@ -12,6 +13,7 @@ const Home = async () => {
       <Categories />
       <RecentPosts />
       <OpenSources />
+      <Err />
     </section>
   );
 };
