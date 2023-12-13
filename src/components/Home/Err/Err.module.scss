@@ -1,0 +1,16 @@
+.err {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 60px;
+
+  .err_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1300px;
+    gap: 30px;
+  }
+}

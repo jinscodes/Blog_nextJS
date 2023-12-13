@@ -55,6 +55,13 @@ export const getOpenSourcePosts = async (): Promise<Post[]> => {
     );
 };
 
+export const getErrorPosts = async (): Promise<Post[]> => {
+  return getAllPosts() //
+    .then((posts) =>
+      posts.filter((post) => post.category.includes("Error")).slice(0, 4)
+    );
+};
+
 export const getClassedPosts = async (classedFile: string): Promise<Post[]> => {
   const allPost = await getAllPosts();
 
