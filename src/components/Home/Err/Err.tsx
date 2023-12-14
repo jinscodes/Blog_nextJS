@@ -6,8 +6,6 @@ import st from "./Err.module.scss";
 const Err = async () => {
   const posts = await getErrorPosts();
 
-  console.log(posts);
-
   return (
     <section className={st.err}>
       <HomeTitle content="Error 🚨" />
