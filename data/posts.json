@@ -230,5 +230,13 @@
     "category": ["NextJs"],
     "path": "start-nextjs",
     "featured": false
+  },
+  {
+    "title": "HTTP Status codes",
+    "description": "There are many kinds of status codes. It's one of the main concepts among HTTP. Let's find out everything from typical status codes like 404, 200, and 201 to occasional status codes like 304",
+    "date": "2023-01-22",
+    "category": ["WebCS"],
+    "path": "http-status-code",
+    "featured": true
   }
 ]
