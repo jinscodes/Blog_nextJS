@@ -238,5 +238,13 @@
     "category": ["WebCS"],
     "path": "http-status-code",
     "featured": true
+  },
+  {
+    "title": "useEffect VS useLayoutEffect",
+    "description": "One day a co-worker asked me if I knew the difference between useEffect and useLayoutEffect. Let's learn about the difference between these two in this post",
+    "date": "2023-01-25",
+    "category": ["ReactJs"],
+    "path": "useeffect-uselayouteffect",
+    "featured": false
   }
 ]
