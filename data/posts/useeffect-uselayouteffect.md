@@ -6,7 +6,7 @@ That's why I'm writing this post.
 This post is an article about the concepts and differences between useEffect and useLayoutEffect.
 
 ## useEffect
-> useEffect is a hook in React that allows you to perform side effects in function components. 
+> `useEffect` is a hook in React that allows you to perform side effects in function components. 
 
 Side effects can include things like data fetching, subscriptions, manual DOM manipulations, and more. The useEffect hook is called after the component has rendered, and it can be used to manage the lifecycle of your component.
 
@@ -38,8 +38,52 @@ For example:
 
 2. The second argument is an array of dependencies.
 	1. If any of the dependencies change between renders, the effect will be re-run. If you don't provide a second argument, the effect will run after every render.
+	
+## useLayoutEffect
+> `useLayoutEffect` in React is similar to useEffect, but it fires synchronously after all DOM mutations. 
+
+It's useful when you need to perform actions that require accurate measurements of the DOM layout before the browser paints. However, it should be used sparingly, as it can potentially lead to performance issues.
+
+```jsx
+	import { useState, useRef, useLayoutEffect } from 'react';
+
+	function Tooltip() {
+		const ref = useRef(null);
+		const [tooltipHeight, setTooltipHeight] = useState(0);
+
+		useLayoutEffect(() => {
+			const { height } = ref.current.getBoundingClientRect();
+			setTooltipHeight(height);
+		}, []);
+		// ...
+```
+
+1. setup: The function with your Effect’s logic. 
+	1. Your setup function may also optionally return a cleanup function. 
+	2. Before your component is added to the DOM, React will run your setup function. 
+	3. After every re-render with changed dependencies, React will first run the cleanup function (if you provided it) with the old values, and then run your setup function with the new values. 
+	4. Before your component is removed from the DOM, React will run your cleanup function.
+
+2. optional dependencies: The list of all reactive values referenced inside of the setup code. 
+	1. Reactive values include props, state, and all the variables and functions declared directly inside your component body. 
+	2. If your linter is configured for React, it will verify that every reactive value is correctly specified as a dependency. 
+	3. The list of dependencies must have a constant number of items and be written inline like [dep1, dep2, dep3]. React will compare each dependency with its previous value using the Object.is comparison. 
+	4. If you omit this argument, your Effect will re-run after every re-render of the component.
+
+## Differences between useEffect and useLayoutEffect
+> With the emergence of React Hooks announced at the React Conf in October 2018, it is moving from class component to functional component base.
+
+> Among many hooks, there are many cases where the difference between useEffect and useLayoutEffect cannot be clearly distinguished, so this post will explain the difference between useEffect and useLayoutEffect.
+
+💡 Important things
+
+- Render: The process of calculating style attributes for each element to construct a DOM Tree
+- Paint: The process of displaying and updating Layout on the actual screen
+
 
 ---
 [](https://medium.com/@jnso5072/react-useeffect-%EC%99%80-uselayouteffect-%EC%9D%98-%EC%B0%A8%EC%9D%B4%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C-e1a13adf1cd5)
 
 [](https://legacy.reactjs.org/docs/hooks-effect.html)
+
+[](https://react.dev/reference/react/useLayoutEffect)
