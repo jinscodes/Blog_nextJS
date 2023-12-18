@@ -77,9 +77,66 @@ It's useful when you need to perform actions that require accurate measurements 
 
 💡 Important things
 
-- Render: The process of calculating style attributes for each element to construct a DOM Tree
-- Paint: The process of displaying and updating Layout on the actual screen
+- **Render**: The process of calculating style attributes for each element to construct a DOM Tree
+- **Paint**: The process of displaying and updating Layout on the actual screen
 
+### useEffect
+useEffect runs after the components are painted with the renderer. It runs asynchronously. Since it runs after being painted, if there is a code inside the useEffect that affects dom, the user will see a flicker of the screen.
+
+![useeffect](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a1fc0f69-6f1a-4d06-af3a-d20364201660)
+
+### useLayoutEffect
+The useLayoutEffect runs after the components become renders, and then becomes a paint. This is synchronously run. Since it runs before the paint, the user does not experience blinking even if there is a code that manipulates the dom.
+
+![uselayouteffect](https://github.com/jinscodes/Blog_nextJS/assets/87598134/8fb1a097-a925-4ea5-a22d-5a17730f6d65)
+
+## Conclusion: useEffect Vs. useLayoutEffect
+useLayoutEffect runs synchronously and goes through painting after all the internal code is executed. Therefore, if the logic is complicated, there is a disadvantage that it takes a long time for the user to see the layout, so basically, we recommend using useEffect only all the time.
+
+For example, using `useEffect`
+
+- Data Fetch
+- Event Handler
+- State Reset
+
+```jsx
+const Test = () => {
+  const [value, setValue] = useState(0);
+
+  useEffect(() => {
+    document.title = `You clicked ${value} times`
+  });
+
+  return (
+    <div>
+      <p>Count: {value}</p>
+      <button onClick={() => setCount(count+1)}>
+        Click
+      </button>
+    </div>
+  );
+}
+```
+
+When the screen is blinking, for example, the state exists as below, and when the state needs to be rendered differently during the first painting, it is desirable to use the useLayoutEffect because when using the useEffect, the 0 is first seen, then re-rendered, and the screen is blinking.
+
+```jsx
+const Test = () => {
+  const [value, setValue] = useState(0);
+
+  useEffect(() => {
+    if (value === 0) {
+      setValue(10 + Math.random() * 200);
+    }
+  }, []);
+
+  return (
+    <button onClick={() => setValue(0)}>
+      value: {value}
+    </button>
+  );
+};
+```
 
 ---
 [](https://medium.com/@jnso5072/react-useeffect-%EC%99%80-uselayouteffect-%EC%9D%98-%EC%B0%A8%EC%9D%B4%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C-e1a13adf1cd5)
@@ -87,3 +144,5 @@ It's useful when you need to perform actions that require accurate measurements 
 [](https://legacy.reactjs.org/docs/hooks-effect.html)
 
 [](https://react.dev/reference/react/useLayoutEffect)
+
+[](https://pubudu2013101.medium.com/what-is-the-real-difference-between-react-useeffect-and-uselayouteffect-51723096dc19)
