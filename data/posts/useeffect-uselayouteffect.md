@@ -91,9 +91,10 @@ The useLayoutEffect runs after the components become renders, and then becomes a
 ![uselayouteffect](https://github.com/jinscodes/Blog_nextJS/assets/87598134/8fb1a097-a925-4ea5-a22d-5a17730f6d65)
 
 ## Conclusion: useEffect Vs. useLayoutEffect
-useLayoutEffect runs synchronously and goes through painting after all the internal code is executed. Therefore, if the logic is complicated, there is a disadvantage that it takes a long time for the user to see the layout, so basically, we recommend using useEffect only all the time.
+### useEffect
+`useLayoutEffect` runs synchronously and goes through painting after all the internal code is executed. Therefore, if the logic is complicated, there is a disadvantage that it takes a long time for the user to see the layout, so basically, we recommend using `useEffect` only all the time.
 
-For example, using `useEffect`
+Below things are an example of using `useEffect`
 
 - Data Fetch
 - Event Handler
@@ -118,7 +119,8 @@ const Test = () => {
 }
 ```
 
-When the screen is blinking, for example, the state exists as below, and when the state needs to be rendered differently during the first painting, it is desirable to use the useLayoutEffect because when using the useEffect, the 0 is first seen, then re-rendered, and the screen is blinking.
+### useLayoutEffect
+When the screen is blinking, for example, the state exists as below, and when the state needs to be rendered differently during the first painting, it is desirable to use the `useLayoutEffect` because when using the `useEffect`, the 0 is first seen, then re-rendered, and the screen is blinking.
 
 ```jsx
 const Test = () => {
@@ -137,6 +139,65 @@ const Test = () => {
   );
 };
 ```
+
+## Examples
+If you look directly at the two examples, it will be a little easier to understand.
+
+### useEffect
+
+```jsx
+	import { useState, useEffect } from "react";
+
+
+	const Introduction = () => {
+		const [name, setName] = useState<string>("");
+
+		useEffect(() => {
+			setName("Jay");
+		});
+
+		return (
+			<section>
+				<div>Hi, my name is {name}</div>
+				<div>Hi, my name is {name}</div>
+				<div>Hi, my name is {name}</div>
+				<div>Hi, my name is {name}</div>
+				<div>Hi, my name is {name}</div>
+				<div>Hi, my name is {name}</div>
+			</section>
+		)
+	}
+```
+
+![1-1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c51b67a7-e0c8-4756-a196-2b4070b6c438)
+
+### useLayoutEffect
+
+```jsx
+	import { useState, useLayoutEffect } from "react";
+
+
+	const Introduction = () => {
+		const [name, setName] = useState<string>("");
+
+		useLayoutEffect(() => {
+			setName("Jay");
+		});
+
+		return (
+			<section>
+				<div>Hi, my name is {name}</div>
+				<div>Hi, my name is {name}</div>
+				<div>Hi, my name is {name}</div>
+				<div>Hi, my name is {name}</div>
+				<div>Hi, my name is {name}</div>
+				<div>Hi, my name is {name}</div>
+			</section>
+		)
+	}
+```
+
+![1-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/8a41989a-4832-45c3-8b84-d4d94720fc35)
 
 ---
 [](https://medium.com/@jnso5072/react-useeffect-%EC%99%80-uselayouteffect-%EC%9D%98-%EC%B0%A8%EC%9D%B4%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C-e1a13adf1cd5)
