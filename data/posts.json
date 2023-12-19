@@ -246,5 +246,13 @@
     "category": ["ReactJs"],
     "path": "useeffect-uselayouteffect",
     "featured": false
+  },
+  {
+    "title": "HTTP Header - Normal Header",
+    "description": "Let's learn about HTTP headers.",
+    "date": "2023-01-28",
+    "category": ["WebCS"],
+    "path": "http-header",
+    "featured": false
   }
 ]
