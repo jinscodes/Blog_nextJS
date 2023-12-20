@@ -32,6 +32,11 @@ This article is a post about HTTP's header
 
 💡 RFC2616 is now discarded, and versions RFC7230 to RFC7235 are now in use.
 
+## Recent Version of HTTP Header (RFC723x)
+- Entity -> Representation
+- Representation = Metadata Representation + Data Representation 
+
+
 ## HTTP Header
 > HTTP headers are metadata elements transmitted between the client and the server in HTTP message. They convey information about the request, response, or the communication channel, facilitating proper data interpretation and handling by both parties.
 
@@ -49,3 +54,23 @@ If you want to know more information about standard field, visit **below** 👇�
 1. Case-insensitive
 2. For example, 
 	1. ![](https://github.com/jinscodes/Blog_nextJS/assets/87598134/95b9b782-309b-44e0-b1ce-3b86d7c2db31)
+
+## HTTP Body
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/30537e54-df7f-4bfc-beec-539749779718)
+
+- Send data representation through message body
+- Message body = payload
+- Representation is the actual data to pass through in the request or response
+- Header representation  provides information to interpret the data representation 
+	- Data form (html, json), data length, Compression information, and etc...
+- 💡 Header representation divides metaddata representation and layload message, but it's difficult
+
+### Representation
+- **Content-Type**: Format of data representation 
+- **Content-Encoding**: Compression Method of data representation 
+- **Content-Language**: Natural Language of data representation 
+- **Content-Length**: Length of data representation 
+
+💡 Header representation can be use in both request and response
+
+---
