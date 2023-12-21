@@ -248,11 +248,19 @@
     "featured": false
   },
   {
-    "title": "HTTP Header - Normal Header",
+    "title": "HTTP Header - Header Outline",
     "description": "Let's learn about HTTP headers.",
     "date": "2023-01-28",
     "category": ["WebCS"],
     "path": "http-header",
+    "featured": false
+  },
+  {
+    "title": "HTTP Header - Header Details",
+    "description": "Let's learn about HTTP headers.",
+    "date": "2023-02-01",
+    "category": ["WebCS"],
+    "path": "http-header-details",
     "featured": false
   }
 ]
