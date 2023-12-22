@@ -67,3 +67,33 @@ This header allows the client to know the size of the data it's receiving, which
 	- Content-Length should not be used because Transfer-Encoding contains various information
 	- More details are later...
 
+## Content Negotiations
+Content negotiation in HTTP is a process where the client and server work together to determine the most suitable format of a resource based on the client's preferences and capabilities.
+
+This is achieved through headers like Accept, Accept-Language, Accept-Encoding, which specify the client's preferred formats, languages, and encodings.
+
+> 💡 In fact, Content Negotiations is client's preferred expression request.
+
+- **Accept**: Deliver the media type preferred by the client
+- **Accept-Charset**: Encoding the text preferred by the client
+- **Accept-Encoding**: Compression encoding preferred by the client
+- **Accept-Language**: Natural language preferred by the client
+
+There is an example of the Content Negotiations. The below example is about Accept-Language.
+
+Before adopting Accept-Language:
+
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/168cf565-1152-4f37-8ef7-3371c334de6a)
+
+Without Accept-Language, the server will not know what the preferred language from the client.   
+Of course, the server will respond in the default language.
+
+After adopting Accept-Language:
+
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9d7b5637-fdeb-4256-9e95-2d8628bb5053)
+
+By requesting in the Accept-Language, the server can know which language the client prefers, which means that the server can respond in the language the client prefers.
+
+If so, what if the language sent in the Accept-Language is not on the server?
+
+## Negotiation and Priority
