@@ -66,3 +66,4 @@ This header allows the client to know the size of the data it's receiving, which
 - If using Transfer-Encoding, Content-Length is un-available
 	- Content-Length should not be used because Transfer-Encoding contains various information
 	- More details are later...
+
