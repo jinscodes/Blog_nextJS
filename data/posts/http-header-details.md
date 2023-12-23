@@ -97,3 +97,4 @@ By requesting in the Accept-Language, the server can know which language the cli
 If so, what if the language sent in the Accept-Language is not on the server?
 
 ## Negotiation and Priority
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a8421852-c8f6-4028-87fa-9c18594f428f)
