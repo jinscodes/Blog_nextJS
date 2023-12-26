@@ -22,8 +22,8 @@ The Content-Type header in HTTP is used to indicate the media type of the resour
 
 It tells the client what the content type of the returned content is, such as text/html for HTML documents, application/json for JSON data, or image/jpeg for JPEG images. This header is crucial for the client to correctly process and display the received data.
 
-- Media type, text encoding
-- Examples
+- **Media type, text encoding**
+- **Examples**
 	- text/html; charset=utf-8
 	- application/json
 	- image/png
@@ -35,10 +35,10 @@ The Content-Encoding header in HTTP is used to specify the type of encoding used
 
 This header informs the client about the compression method applied, such as gzip or deflate, enabling the client to properly decompress and interpret the data. It's essential for efficient data transmission, particularly for reducing the size of larger resources like images or scripts.
 
-- Use to compress data representation
-- Add post-compression encoding headers where data is delivered
-- Data read side decompresses to information in the encoding header
-- Examples
+- **Use to compress data representation**
+- **Add post-compression encoding headers where data is delivered**
+- **Data read side decompresses to information in the encoding header**
+- **Examples**
 	- gzip
 	- deflate
 	- identity
@@ -50,8 +50,8 @@ The `Content-Language` header in HTTP indicates the language(s) of the content b
 
 This header helps the client understand the language context of the resource, which is particularly useful for content like text or websites that can be presented in multiple languages. It aids in content localization and providing a more tailored user experience based on language preferences.
 
-- Representation of the natural language of the data representation
--Examples
+- **Representation of the natural language of the data representation**
+- **Examples**
 	- ko
 	- en
 	- en-US
@@ -62,8 +62,8 @@ The `Content-Length` header in HTTP specifies the exact size of the response bod
 
 This header allows the client to know the size of the data it's receiving, which is crucial for connection management and ensuring complete data transfer. It's particularly important for the efficient handling of both large downloads and streaming data.
 
-- Byte unit
-- If using Transfer-Encoding, Content-Length is un-available
+- **Byte unit**
+- **If using Transfer-Encoding, Content-Length is un-available**
 	- Content-Length should not be used because Transfer-Encoding contains various information
 	- More details are later...
 
@@ -96,5 +96,54 @@ By requesting in the Accept-Language, the server can know which language the cli
 
 If so, what if the language sent in the Accept-Language is not on the server?
 
-## Negotiation and Priority
-![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a8421852-c8f6-4028-87fa-9c18594f428f)
+## Negotiation and Priority, Quality Values(q)
+
+### Accept-Language
+![3-1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/5104d079-20a8-4574-aa74-6c8d51b6b1bb)
+
+As shown in the picture above, if the client requested ko through the header's accept-language, but there is no information about ko on the server, it will be ambiguous which response should go.
+
+There are negotiations and priorities, aka Quality Values(q), as a means of solving these problems
+
+![3-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/14753ddb-6d91-450e-a240-19af3f3a8418)
+
+![3-3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/0c5e4751-1979-46e6-a0d2-4ab9c0c8a4c5)
+
+- **Using Quality Values (q)**
+- **0~1, Higher priority for larger**
+- **If you omit it, 1**
+- **Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7**
+	- ko-KR;q=1 (q is omitted)
+	- ko;q=0.9
+	- en-US;q=0.8
+	- en:q=0.7
+
+Example of Quality Values: 
+
+![3-4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9fa87524-3539-40cd-89a2-dd3423a74721)
+
+### Accept
+![4-1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9d56fc9d-5e17-44f5-ae78-59f4452e0495)
+
+If the client sends a request without specifying a quality value as shown in the picture above, confusion may occur when the server responds. Therefore, it is better to prioritize and send it as in Accept-Language above.
+
+![4-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/7a336704-efd8-4292-95c6-7a29ac37b462)
+
+- **The specificity takes precedence**
+	- Set the media type based on specific things
+- **Accept: text/*;q=0.3, text/html;q=0.7, text/html;level=1, text/html;level=2;q=0.4, */*;q=0.5**
+	- text/html;level=1;q=1
+	- text/html;q=0.7
+	- text/plain;q=0.3
+	- text/jpeg;q=0.5
+	- text/html;level=2;q=0.4
+	- text/html;level=3;q=0.7
+
+Example of Quality Values: 
+
+![4-3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/52002f9f-d6dc-4177-998d-d4e56d8da903)
+
+---
+[](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language)
+
+[](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Accept)
