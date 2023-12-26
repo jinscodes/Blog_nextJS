@@ -118,7 +118,7 @@ There are negotiations and priorities, aka Quality Values(q), as a means of solv
 	- en-US;q=0.8
 	- en:q=0.7
 
-Example of Quality Values: 
+Example of Quality Values:
 
 ![3-4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9fa87524-3539-40cd-89a2-dd3423a74721)
 
@@ -139,7 +139,7 @@ If the client sends a request without specifying a quality value as shown in the
 	- text/html;level=2;q=0.4
 	- text/html;level=3;q=0.7
 
-Example of Quality Values: 
+Example of Quality Values:
 
 ![4-3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/52002f9f-d6dc-4177-998d-d4e56d8da903)
 
