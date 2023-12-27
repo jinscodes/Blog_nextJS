@@ -262,5 +262,13 @@
     "category": ["WebCS"],
     "path": "http-header-details",
     "featured": false
+  },
+  {
+    "title": "Introducing and Configuring TypeScript",
+    "description": "JavaScript is an incomplete language. It is a type script that aids incomplete JavaScript. This post is about typeScript.",
+    "date": "2023-02-04",
+    "category": ["TypeScript"],
+    "path": "typescript",
+    "featured": false
   }
 ]
