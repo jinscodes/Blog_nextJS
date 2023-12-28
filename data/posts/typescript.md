@@ -104,6 +104,8 @@ If local environment configuration is difficult right now, simple type script co
 
 ![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/35038ae4-de7c-4adb-8cfb-622122ada0b6)
 
+> ❗️ When it comes to compiling TypeScript into JavaScript, many people are confused about the idea that if there is an error in the TypeScript, it cannot be compiled. Because it has been the case with C or JAVA. However, it is important to note that TypeScript error type checking and compilation work separately. So, even though there is an error in the TypeScript grammar, if you run the tsc command, you can see that it converts to JavaScript without any problems. Of course, that JavaScript does not work.
+
 ---
 [](https://www.w3schools.com/typescript/typescript_intro.php)
 
