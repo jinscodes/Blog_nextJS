@@ -58,6 +58,52 @@ And the compiled JavaScript code runs at runtime, such as a browser or node.js. 
 
 Usually, in the case of C or JAVA, compilation is done by the engine, but TypeScript has the disadvantage of compilation speed or very slow speed because compilation is done by the library.
 
+## Setup
+
+### Install TypeScript Compiler
+Firstly, we need to install TypeScript.
+
+**Install TypeScript as a global like installing the node package. ( if you want to specify the version, just add `@` )**
+
+```bash
+	$ npm i -g typescript
+	
+	$ npm i -g typescript@5.3.3
+```
+
+**And then, make `.ts` file for test**
+
+```ts
+	// index.ts
+	const msg: string = "Hello World";
+	console.log(msg)
+```
+
+**Open the terminal and run compiler command `tsc` on the path where the file resides.**
+
+*( tsc: type script compile )*
+
+**after tsc command, `.ts` file converted to `.js` file**
+
+```ts
+	tsc index.ts
+```
+
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/10aa356e-f4d7-425c-aa01-77fecca5a088)
+
+**And if you execute the compiled JavaScript file in node, you can get the result of executing the TypeScript.**
+
+![1-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/bf81a5bc-f0ad-4f24-a890-02f6c410116b)
+
+## Online Editor
+There is an online editor for TypeScript.
+
+If local environment configuration is difficult right now, simple type script code practice is also possible in an online editor.
+
+[](https://www.typescriptlang.org/play)
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/35038ae4-de7c-4adb-8cfb-622122ada0b6)
+
 ---
 [](https://www.w3schools.com/typescript/typescript_intro.php)
 
