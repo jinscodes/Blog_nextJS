@@ -59,6 +59,9 @@ And the compiled JavaScript code runs at runtime, such as a browser or node.js. 
 Usually, in the case of C or JAVA, compilation is done by the engine, but TypeScript has the disadvantage of compilation speed or very slow speed because compilation is done by the library.
 
 ## Setup
+- TypeScript Compiler
+- TS-Node 
+- Setting TypeScript Compile
 
 ### Install TypeScript Compiler
 Firstly, we need to install TypeScript.
@@ -94,6 +97,8 @@ Firstly, we need to install TypeScript.
 **And if you execute the compiled JavaScript file in node, you can get the result of executing the TypeScript.**
 
 ![1-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/bf81a5bc-f0ad-4f24-a890-02f6c410116b)
+
+### Install TS-Node
 
 ## Online Editor
 There is an online editor for TypeScript.
