@@ -272,7 +272,7 @@
     "featured": false
   },
   {
-    "title": "TypeScript Compilation Settings",
+    "title": "TypeScript Compile Settings",
     "description": "Let's try to set the tsconfig to use TypeScript more efficiently. - tsconfig Options Summary",
     "date": "2023-02-09",
     "category": ["TypeScript"],
