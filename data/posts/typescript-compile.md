@@ -22,3 +22,55 @@ $ tsc --init
 ```
 
 ![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c6b0b8bc-3725-42cc-8245-3af79b1eac91)
+
+### tsconfig Global Attributes
+The tsconfig global attribute refers to attributes located at the top of the file.
+
+```json
+{
+  // Properties that specify options for the TypeScript compiler
+  "compilerOptions": { 
+    "target": "es5", 
+    "module": "commonjs", 
+    "strict": true, 
+    "sourceMap": true
+    // ... so many options
+  },
+
+  // Properties that specify an individual list of files to be compiled
+  "files": ["src/main.ts", "src/utils.ts"],
+
+  // Properties that specify the files to be compiled
+  "include": [ "src/**/*.ts" ], 
+    
+  // Properties that specify which files to exclude from compilation
+  "exclude": [ "node_modules", "**/*.test.ts" ], 
+    
+  // Properties that allow the settings to be reused by inheriting other tsconfig.json files
+  "extends": "./configs/base.json", 
+    
+  // Properties that specify dependencies for projects made up of multiple subprojects
+  "references": [ 
+    { "path": "./subproject1" }, 
+    { "path": "./subproject2" } 
+  ], 
+    
+  // Properties that specify options related to type acquisition
+  "typeAcquisition": { 
+    "enable": true, 
+    "include": ["jquery"], 
+    "exclude": ["react"] 
+  }, 
+        
+  // Properties that specify options related to watch mode
+  "watchOptions": { 
+    "watchFile": "useFsEvents", 
+    "watchDirectory": "useFsEvents", 
+    "fallbackPolling": "dynamicPriority"
+  }
+}
+```
+
+There are so many global attributes, but the five-visible attributes that are mainly used among them are compiler Options, files, inclusion, exclusion, and extents.
+
+#### files
