@@ -74,3 +74,67 @@ The tsconfig global attribute refers to attributes located at the top of the fil
 There are so many global attributes, but the five-visible attributes that are mainly used among them are compiler Options, files, inclusion, exclusion, and extents.
 
 #### files
+It is a property that explicitly specifies a list of files to be compiled in a project.
+ 
+The files attribute has a higher priority than the exclude to be learned below. If this attribute is omitted, the include and exclude attributes determine the compilation target.
+
+```json
+{
+  "files": [ // You have to write the file extension correctly
+    "src/main.ts",
+    "src/utils.ts",
+    "src/types.d.ts"
+  ]
+}
+```
+
+#### extends
+extents is an option that allows you to import and reuse the settings of other tsconfig.json files. Usually, the extents attribute is located at the top of the tsconfig.json file.
+
+For example, if the property setting of the config/base.json file fits the format of the current tsconfig.json file, the setting of the base file will be inherited.
+
+```json
+// config/base.json
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "strictNullChecks": true
+  }
+}
+```
+
+```json
+{
+  "extends": "./configs/base",
+  "compilerOptions": {
+    "strictNullChecks": false
+  },
+  "files": [
+    "src/main.ts",
+    "src/utils.ts",
+    "src/types.d.ts"
+  ]
+}
+```
+
+#### include
+The inclusion attribute is a property that designates files to be compiled in a project, such as the files attribute, but it differs in that it is designated as a wild card pattern. In addition, unlike the files attribute, inclusion is weaker than inclusion, so even if it is specified in inclusion, it can be excluded.
+
+```json
+{
+  "compilerOptions": {
+    ...
+  },
+  "include": [
+    "src/*.ts", // src 디렉토리에 있는 모든 .ts 파일
+    "dist/test?.ts" // dist 디렉토리에 있는 test1.ts, test2.ts , test3.ts ..등에 일치
+    "test/**/*.spec.ts" // test 디렉토리와 그 하위 디렉토리에 있는 모든 .spec.ts 파일
+  ]
+}
+```
+
+The wild card pattern can be seen as a symbol that groups and matches files or directories that can be used for inclusion or exclusion attributes in the tsconfig.json file.
+
+- * : All files in that directory
+- ? : If you include at least one letter of the names of the files in the directory, that is appropriate
+- ** : Includes all files from subdirectories in that directory
