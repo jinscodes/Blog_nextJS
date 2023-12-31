@@ -20,3 +20,5 @@ To generate tsconfig.json, run the code below.
 ```bash
 $ tsc --init
 ```
+
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c6b0b8bc-3725-42cc-8245-3af79b1eac91)
