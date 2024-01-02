@@ -54,3 +54,11 @@ The value set automatically when the lib property is not specified is as follows
 ```
 
 #### experimentalDecorators / emitDecoratorMetadata
+To use typeScript's @decorator, experimentalDecorators and emitDecoratorMetadata must be true.
+
+```json
+"compilerOptions": {
+    "experimentalDecorators": true /* ES7 데코레이터(decorators) 실험 기능 지원 설정 */
+    "emitDecoratorMetadata": true /* 데코레이터를 위한 유형 메타데이터 방출 실험 기능 지원 설정 */
+}
+```
