@@ -58,7 +58,7 @@ To use typeScript's @decorator, experimentalDecorators and emitDecoratorMetadat
 
 ```json
 "compilerOptions": {
-    "experimentalDecorators": true /* ES7 데코레이터(decorators) 실험 기능 지원 설정 */
-    "emitDecoratorMetadata": true /* 데코레이터를 위한 유형 메타데이터 방출 실험 기능 지원 설정 */
+    "experimentalDecorators": true /* ES7 Decorators Experimental Function Support Settings */
+    "emitDecoratorMetadata": true /* Setting up Type Metadata Release Experiment Support for Decorators */
 }
 ```
