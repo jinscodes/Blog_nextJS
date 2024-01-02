@@ -29,3 +29,36 @@ The target property also automatically determines the default value of the lib p
  	// 'es3', 'es5', 'es2015', 'es2016', 'es2017','es2018', 'esnext'
 }
 ```
+
+#### lib
+lib option can specify the build-in JavaScript library required for compile. Math API and document API is the one of the examples.
+
+If this property is not specified, information on necessary type definitions is automatically specified according to the version specified in the target property.
+
+For example, if the target property is designated as an ES6 or higher version, and if the lib property is not specified, the type information can be basically referenced globally because libraries such as ES2015 (lib.es 2015.d.ts file) are automatically designated in the lib property.
+
+The value set automatically when the lib property is not specified is as follows.   
+- If target is "es3", lib.d.ts is used as a default
+- If target is "es5", dom, es5, and scripthost is used as a default
+- If target is "es6", dom, es6, dom.iterable, and scripthost is used as a default
+
+```json
+"compilerOptions": {
+	"lib": ["es5", "es2015.promise", "dom"], // Set up library files to be used in the compilation process
+    /*
+    es5: to use global type(Array, Boolean, Function, and etc...)
+    es2015.promise: to use Promise
+    dom: to use functions supported by dom, such as setTimeout, console.log
+    */
+}
+```
+
+#### experimentalDecorators / emitDecoratorMetadata
+To use typeScript's @decorator, experimentalDecorators and emitDecoratorMetadata must be true.
+
+```json
+"compilerOptions": {
+    "experimentalDecorators": true /* ES7 Decorators Experimental Function Support Settings */
+    "emitDecoratorMetadata": true /* Setting up Type Metadata Release Experiment Support for Decorators */
+}
+```
