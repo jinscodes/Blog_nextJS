@@ -278,5 +278,13 @@
     "category": ["TypeScript"],
     "path": "typescript-compile",
     "featured": false
+  },
+  {
+    "title": "TypeScript: compilerOptions",
+    "description": "",
+    "date": "2023-02-13",
+    "category": ["TypeScript"],
+    "path": "ts-compiler-options",
+    "featured": false
   }
 ]
