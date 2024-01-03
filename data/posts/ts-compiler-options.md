@@ -126,3 +126,47 @@ If module is commonjs, it means that it operates in the node environmnent. So, m
 	"moduleResolution": "node", /* Set module analysis method: 'node' (Node.js) or 'classical' (TypeScript pre-1.6). */
 }
 ```
+
+#### baseURL / paths
+Specify the reference path when interpreting the module of the `import` syntax.
+
+During development, in addition to the node package, there are times when it is necessary to import a self-made source file. So, at the top of the file, it is imported based on the global path and the relative path.
+
+```jsx
+import styled from 'styled-components'; // Automatic recognition of the node_modules folder on the top path if it is a node package
+import { TextField } from '../../../../components/textfield'; // If you have a source file you created yourself, you must import it to the relative path.
+
+...
+```
+
+Importing like '../../../ index.ts' is not pretty, but there is no problem working for now, but it may cause problems when writing or refactoring projects in the future.
+
+For example, if you try to import the same module by creating a file in another path, the location reference point will be different, making it very cumbersome to find the relative path differently because the relative path can vary.
+
+At this time, if you set the baseUrl attribute and the paths attribute, you can import it as an absolute path. Then, you can write it neatly as an absolute path as follows.
+
+```jsx
+import styled from 'styled-components'; 
+import { TextField } from '@components/textfield';
+
+...
+```
+
+First, set the default path to the baseUrl attribute and specify the paths you want to specify the absolute path to the paths attribute immediately below it. In addition, it also sets outDir.
+
+```json
+{
+  "compilerOptions": {
+    "baseUrl": "./", // 절대 경로 모듈이 아닌, 모듈이 기본적으로 위치한 디렉토리 설정
+    "paths": { // 'baseUrl'을 기준으로 상대 위치로 가져오기를 다시 매핑하는 항목 설정
+      "@components/*": [
+        "src/components/*" // import {} from '@components/파일' 할때 어느 경로로 찾아들어갈지 paths 설정
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+    },
+    "outDir": "./dist", // 컴파일할때 js 파일 위치 경로 지정
+  },
+}
+```
