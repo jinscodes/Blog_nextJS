@@ -62,3 +62,67 @@ To use typeScript's @decorator, experimentalDecorators and emitDecoratorMetadat
     "emitDecoratorMetadata": true /* Setting up Type Metadata Release Experiment Support for Decorators */
 }
 ```
+
+```jsx
+function methodDecorator() {
+	console.log('method');
+	return function (target: any, property: any, descriptor: any) {};
+}
+
+function propertyDecorator(writable: boolean = true) {
+	console.log('property');
+	return function (target: any, decoratedPropertyName: any): any {};
+}
+
+class Test {
+	@propertyDecorator()
+	property = 'property';
+
+	@methodDecorator()
+	test(param1: string) {
+		console.log('test1');
+	}
+}
+```
+
+#### jsx
+Compilation results of the .tsx extension determine how JSX code should be compiled.
+
+- react: compiled to .js file (JSX code is converted to a call of the React.createElement() function)
+- react-jsx: compiled to .js file (JSX code is converted to a call of the _jsx() function)
+- react-jsxdev: compiled to .js file (JSX code is converted to a call of the _jsx() function)
+- Preserve: compiled to .jsx file (JSX code remains the same)
+- react-native: compiled into .js file (JSX code remains the same)
+
+```json
+"compilerOptions": {
+	"jsx": "preserve" // How to compile tsx files into jsx 'preserve', 'react-native', 'react'
+}
+```
+
+### Module Options
+
+#### rootDir
+Change the root directory criteria. Could affect js output path.
+
+#### module / moduleResolution
+Determine the module system to be used in the program.
+
+When `import` syntax is compiled as es6, it is the same as compiling `import`. Because of this, an error can occur when executing a node in the commonJS environment. 
+
+Therefore, when `import` syntax needs to be compiled into `require` syntax, the module attribute value can be specified as commonJS.
+
+- CommonJS (default value when the target property is specified as ES3 or ES5)
+- ES6/ES2015 (default value when the target property is specified as ES6 or the upper version of ES6)
+- Others.. (ES2020, ESNext, AMD, UMD, System, None)
+
+💡 module property decides the default value of moduleResolution property.
+
+If module is commonjs, it means that it operates in the node environmnent. So, moduleResoultion's key value is node. If module is amd(web), moduleResoultion is set to classic.
+
+```json
+"compilerOptions": {
+	"module": "commonjs", /* Set module code to be created: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext' */
+	"moduleResolution": "node", /* Set module analysis method: 'node' (Node.js) or 'classical' (TypeScript pre-1.6). */
+}
+```
