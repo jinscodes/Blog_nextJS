@@ -200,3 +200,56 @@ And then, adding the additional setting as a global type like below to tsconfig.
   }
 }
 ```
+
+> 🚨 Caution: One thing to watch out for is that when you receive and use a library that starts with @ over npm, you should register it without overlapping the alias name.
+
+After that, if executing the command `ts-node index.ts`, it finds the right path. In the case of a build in a deployment environment, the compile command can be used as follows.
+
+```bash
+$ tsc && tsc-alias
+```
+
+It's good to set package.json's script
+
+```json
+"scripts": {
+	"build": "tsc --project tsconfig.json && npx tsc-alias -p tsconfig.json",
+}
+```
+
+#### types / typeRoots
+Basically, tsconfig excludes node_modules folder, but it automatically includes the @types folder that defines the library types. If changing the default path of @types, follow like below: 
+
+```json
+"compilerOptions": {
+		"typeRoots": ["./my-tslib"], // Standard directory for packages to automatically include in the compilation list
+	// Change the folder to read the .d.ts file from node_modules/@types to node_modules/my-tslib
+
+	"types": ["node", "jest", "express"], // Which packages in the typeRoot directory are included in the compiler list
+	// If types are not specified, all packages in typeRoots are automatically included in compiler list
+}
+```
+
+#### resolveJsonModule
+This is a setting that allows the import of modules with .json extensions. If you think about it, you will recall that the Node.js JavaScript project imported the json configuration file and used it frequently. I think type script is also possible, but it can be used only when the sprout type of json's properties is specified.
+
+This option automatically sets the type of json, allowing you to use json file data directly from type scripts without any conversion.
+
+For example, let's say we have json data as follows.
+
+```json
+{
+   "name": "Rosie",
+   "age": 54,
+   "height": 170,
+   "married": false
+}
+```
+
+Originally, it's blocked from being used in ts files like this.
+
+![1-1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/8b720b27-a38e-4fe3-987b-bb58a96a58dd)
+
+If the `reserveJsonModule` option is set to true, the types are automatically mapped and available as follows.
+
+![1-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/bfed24ca-d6a5-41cd-a418-997d1962a400)
