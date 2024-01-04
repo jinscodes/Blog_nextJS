@@ -252,4 +252,4 @@ Originally, it's blocked from being used in ts files like this.
 
 If the `reserveJsonModule` option is set to true, the types are automatically mapped and available as follows.
 
-![1-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/bfed24ca-d6a5-41cd-a418-997d1962a400)
+![1-1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/dafd159d-5c65-4cc0-a069-7d9ca3fdccde)
