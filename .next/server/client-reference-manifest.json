@@ -739,8 +739,24 @@
       ],
       "async": false
     },
+    "/Users/hanjinsung/Desktop/Blog_nextJS/src/app/posts/[postPage]/[categorizedPostPage]/slug.module.scss": {
+      "id": "(app-client)/./src/app/posts/[postPage]/[categorizedPostPage]/slug.module.scss",
+      "name": "*",
+      "chunks": [
+        "app/posts/[postPage]/[categorizedPostPage]/page:static/chunks/app/posts/[postPage]/[categorizedPostPage]/page.js"
+      ],
+      "async": false
+    },
     "/Users/hanjinsung/Desktop/Blog_nextJS/src/components/Post/MarkdownViewer/MarkdownViewer.tsx": {
       "id": "(app-client)/./src/components/Post/MarkdownViewer/MarkdownViewer.tsx",
+      "name": "*",
+      "chunks": [
+        "app/posts/[postPage]/[categorizedPostPage]/page:static/chunks/app/posts/[postPage]/[categorizedPostPage]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/hanjinsung/Desktop/Blog_nextJS/src/components/Waves/Waves.module.scss": {
+      "id": "(app-client)/./src/components/Waves/Waves.module.scss",
       "name": "*",
       "chunks": [
         "app/posts/[postPage]/[categorizedPostPage]/page:static/chunks/app/posts/[postPage]/[categorizedPostPage]/page.js"
@@ -757,22 +773,6 @@
     },
     "/Users/hanjinsung/Desktop/Blog_nextJS/src/assets/svg/Calendar.svg": {
       "id": "(app-client)/./src/assets/svg/Calendar.svg",
-      "name": "*",
-      "chunks": [
-        "app/posts/[postPage]/[categorizedPostPage]/page:static/chunks/app/posts/[postPage]/[categorizedPostPage]/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/Blog_nextJS/src/app/posts/[postPage]/[categorizedPostPage]/slug.module.scss": {
-      "id": "(app-client)/./src/app/posts/[postPage]/[categorizedPostPage]/slug.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/posts/[postPage]/[categorizedPostPage]/page:static/chunks/app/posts/[postPage]/[categorizedPostPage]/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/Blog_nextJS/src/components/Waves/Waves.module.scss": {
-      "id": "(app-client)/./src/components/Waves/Waves.module.scss",
       "name": "*",
       "chunks": [
         "app/posts/[postPage]/[categorizedPostPage]/page:static/chunks/app/posts/[postPage]/[categorizedPostPage]/page.js"

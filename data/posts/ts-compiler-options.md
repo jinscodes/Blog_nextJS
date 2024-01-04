@@ -157,16 +157,46 @@ First, set the default path to the baseUrl attribute and specify the paths you w
 ```json
 {
   "compilerOptions": {
-    "baseUrl": "./", // 절대 경로 모듈이 아닌, 모듈이 기본적으로 위치한 디렉토리 설정
-    "paths": { // 'baseUrl'을 기준으로 상대 위치로 가져오기를 다시 매핑하는 항목 설정
+    "baseUrl": "./", // Set the directory where the module is located by default, not the absolute path module
+    "paths": { // Set item to remap import to relative location based on 'baseUrl'
       "@components/*": [
-        "src/components/*" // import {} from '@components/파일' 할때 어느 경로로 찾아들어갈지 paths 설정
+        "src/components/*" // Set paths to which path to go when you import {} from `@components/file`
       ],
       "@utils/*": [
         "src/utils/*"
       ],
     },
-    "outDir": "./dist", // 컴파일할때 js 파일 위치 경로 지정
+    "outDir": "./dist", // Specify js file location path when compiling
   },
+}
+```
+
+However, error occurs if running the source file using real ts-node. Because the tsconfig.json setting only gave the path alias, not the actual path changed.
+
+Therefore, modules called **tsconfig-paths** and **tsc-alias** must be installed separately.
+
+> 💡 **[tsconfig-paths]**   
+	Library to help actually call modules specified in baseurl or paths fields within tsconfig.json
+
+> 💡 **[tsc-alias]**   
+	When compiled into an js file, the path specified in the baseurl or paths field is transfiled as it is, causing the js module not to be recognized, and this package can be solved by changing the compiled path to a relative path.
+
+```bash
+$ npm i -D tsconfig-paths tsc-allias
+```
+
+And then, adding the additional setting as a global type like below to tsconfig.json file.
+
+```json
+{
+  "compilerOptions": {
+    "baseUrl": "./"
+    "path": ...
+  },
+  
+  // global type
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
 }
 ```
