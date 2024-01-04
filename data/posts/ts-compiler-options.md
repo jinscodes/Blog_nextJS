@@ -21,7 +21,7 @@ Since most browsers support all ES6, they are usually used as ES6.
 
 The target property also automatically determines the default value of the lib property. Therefore, the target property and the lib property can be directly matched in the recommended manner, but only the target property can be specified for convenience. Among the target property values, there is an ESNext option value, which refers to the JavaScript version of the most recent function. This setting should be used carefully because the version ESNext points to may vary depending on the current version of TypeScript.
 
-🚨 However, if there is a Promise code in the type script source code, it is not supported by ES5, so compiling TypeScript causes errors, so be aware of this.
+🚨 However, if there is a Promise code in the TypeScript source code, it is not supported by ES5, so compiling TypeScript causes errors, so be aware of this.
 
 ```json
 "compilerOptions": {
@@ -231,9 +231,9 @@ Basically, tsconfig excludes node_modules folder, but it automatically includes 
 ```
 
 #### resolveJsonModule
-This is a setting that allows the import of modules with .json extensions. If you think about it, you will recall that the Node.js JavaScript project imported the json configuration file and used it frequently. I think type script is also possible, but it can be used only when the sprout type of json's properties is specified.
+This is a setting that allows the import of modules with .json extensions. If you think about it, you will recall that the Node.js JavaScript project imported the json configuration file and used it frequently. I think TypeScript is also possible, but it can be used only when the sprout type of json's properties is specified.
 
-This option automatically sets the type of json, allowing you to use json file data directly from type scripts without any conversion.
+This option automatically sets the type of json, allowing you to use json file data directly from TypeScripts without any conversion.
 
 For example, let's say we have json data as follows.
 
@@ -252,4 +252,34 @@ Originally, it's blocked from being used in ts files like this.
 
 If the `reserveJsonModule` option is set to true, the types are automatically mapped and available as follows.
 
+```json
+"compilerOptions": {
+	"resolveJsonModule": true, // Accept json import in ts file
+}
+```
+
 ![1-1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/dafd159d-5c65-4cc0-a069-7d9ca3fdccde)
+
+### Interop Constraints Options
+
+#### esModuleInterop
+Among the libraries, there is a library implemented on the premise of the amd (web) method, which can be confusing in TS operating in the commonjs method. In order to use it interoperably, it is recommended to designate it as true as possible and perform TypeScript coding.
+
+```json
+"compilerOptions": {
+	"esModuleInterop": true, /* Provides interoperability between CommonJS and ES modules by creating namespace objects for all imports */
+}
+```
+
+```ts
+// esModuleInterop: if true, possible
+import React from 'react';
+
+// if false, import like this
+import * from React from 'react';
+```
+
+#### forceConsistentCasingInFileNames
+Option to determine the name of the file in case.
+In the programming world, it is recommended to use this option as true as possible because even the same alphabet is case sensitive.
+
