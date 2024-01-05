@@ -353,5 +353,24 @@ If there is anything wrong with the TypeScript file directly like this, we can d
 #### downlevelIteration
 Options for using generator `function* {}, child...` in TypeScript.
 
+Compiling code to an earlier version of js and working with for loop may not work properly, so setting this attribute will increase accuracy, but it will increase the amount of js code, so it is recommended to use it only when the loop is not working as intended.
+
+```json
+"compilerOptions": {
+    "downlevelIteration": true, /* Set Iterables 'for-of', 'spread', and 'destructuring' full support when setting 'ES5' or 'ES3' targets */
+}
+```
+
+#### removeComments
+Set to remove all annotations from type script sources during compilation.
+
+```json
+"compilerOptions": {
+    "removeComments": true, // If true, remove all existing annotations from compiled js
+}
+```
+
+#### noEmitOnError
+
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-tsconfigjson-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC)
