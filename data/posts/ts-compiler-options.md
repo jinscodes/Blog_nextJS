@@ -15,7 +15,7 @@ Among the many options, I focused on gathering and organizing useful options.
 ### Language and Environment Options
 
 #### target
-Specifies which version of JavaScript code to compile. If the code is distributed in an old environment, a lower version should be specified, and if there is a guarantee that it will be distributed only in a new environment, it can be specified as a higher target. (If you do not include a JavaScript version specification, it will be compiled as es5 by default.)
+Specifies which version of JavaScript code to compile. If the code is distributed in an old environment, a lower version should be specified, and if there is a guarantee that it will be distributed only in a new environment, it can be specified as a higher target. (If we do not include a JavaScript version specification, it will be compiled as es5 by default.)
 
 Since most browsers support all ES6, they are usually used as ES6. 
 
@@ -141,9 +141,9 @@ import { TextField } from '../../../../components/textfield'; // If you have a s
 
 Importing like '../../../ index.ts' is not pretty, but there is no problem working for now, but it may cause problems when writing or refactoring projects in the future.
 
-For example, if you try to import the same module by creating a file in another path, the location reference point will be different, making it very cumbersome to find the relative path differently because the relative path can vary.
+For example, if we try to import the same module by creating a file in another path, the location reference point will be different, making it very cumbersome to find the relative path differently because the relative path can vary.
 
-At this time, if you set the baseUrl attribute and the paths attribute, you can import it as an absolute path. Then, you can write it neatly as an absolute path as follows.
+At this time, if we set the baseUrl attribute and the paths attribute, we can import it as an absolute path. Then, we can write it neatly as an absolute path as follows.
 
 ```jsx
 import styled from 'styled-components'; 
@@ -152,7 +152,7 @@ import { TextField } from '@components/textfield';
 ...
 ```
 
-First, set the default path to the baseUrl attribute and specify the paths you want to specify the absolute path to the paths attribute immediately below it. In addition, it also sets outDir.
+First, set the default path to the baseUrl attribute and specify the paths we want to specify the absolute path to the paths attribute immediately below it. In addition, it also sets outDir.
 
 ```json
 {
@@ -201,7 +201,7 @@ And then, adding the additional setting as a global type like below to tsconfig.
 }
 ```
 
-> 🚨 Caution: One thing to watch out for is that when you receive and use a library that starts with @ over npm, you should register it without overlapping the alias name.
+> 🚨 Caution: One thing to watch out for is that when we receive and use a library that starts with @ over npm, we should register it without overlapping the alias name.
 
 After that, if executing the command `ts-node index.ts`, it finds the right path. In the case of a build in a deployment environment, the compile command can be used as follows.
 
@@ -231,9 +231,9 @@ Basically, tsconfig excludes node_modules folder, but it automatically includes 
 ```
 
 #### resolveJsonModule
-This is a setting that allows the import of modules with .json extensions. If you think about it, you will recall that the Node.js JavaScript project imported the json configuration file and used it frequently. I think TypeScript is also possible, but it can be used only when the sprout type of json's properties is specified.
+This is a setting that allows the import of modules with .json extensions. If we think about it, we will recall that the Node.js JavaScript project imported the json configuration file and used it frequently. I think TypeScript is also possible, but it can be used only when the sprout type of json's properties is specified.
 
-This option automatically sets the type of json, allowing you to use json file data directly from TypeScripts without any conversion.
+This option automatically sets the type of json, allowing we to use json file data directly from TypeScripts without any conversion.
 
 For example, let's say we have json data as follows.
 
@@ -283,3 +283,72 @@ import * from React from 'react';
 Option to determine the name of the file in case.
 In the programming world, it is recommended to use this option as true as possible because even the same alphabet is case sensitive.
 
+### JavaScript Support Options
+#### allowJs
+This is a setting that allows JavaScript files to be used in TypeScript projects. If `allowJs: true`, JavaScript files can also be imported from TypeScript projects.
+
+TypeScript does not allow .js extensions by default. So, if a project to turn JavaScript into TypeScript is in progress, it will be difficult. Therefore, this attribute is used to gradually convert JavaScript projects when attempting to convert them into TypeScript projects.
+
+```json
+"compilerOptions": {
+  "allowJs": true,
+}
+```
+
+#### checkJs
+The option is to report errors in the js file as well as the ts file. It is usually used with the allowJS attribute.
+
+```json
+"compilerOptions": {
+  "allowJs": true, // import and write js files from ts
+  "checkJs": true, // error check for normal js files
+}
+```
+
+### Emit Options
+#### outFile
+It cannot be made into a single file in a general form, but it is supported in the form of a bundler and made into one.
+
+However, since the module must be supported in the form of a system or amd to make the file one, it is an option of low importance because it rather uses a separate web pack and does not use this function.
+
+#### outDir
+Basically, when we proceed with compile, we create a .js result in the same path as .ts, and we can modify the path with the outDir option to specify a folder to contain the compiled js files.
+
+```json
+"compilerOptions": {
+  "outDir": "./dist"
+}
+```
+
+#### noEmit
+When a TypeScript is compiled, it is a setting that prevents the creation of JavaScript conversion files. 
+
+This means that TypeScripts are only used as tools or source code type checkers to provide editor integration functions.
+
+If another tool, such as Babel or swc, is in charge of the conversion task instead, understand it as an option used.
+
+```json
+"compilerOptions": {
+  "noEmit": true,
+}
+```
+
+#### sourceMap
+`.js.map` file is made in the compiled file directory.
+
+This source map file tells us where the converted js code corresponds to in ts. It's useful for debugging.
+
+```json
+"compilerOptions": {
+  "sourceMap": true, // Setting the creation of sourcemap '.map' file
+}
+```
+
+In fact, if we deploy a TypeScript project and look at the source tab using developer mode in our browser, we can see that the browser only recognizes js but recognizes ts files by mapping files.
+
+If there is anything wrong with the TypeScript file directly like this, we can directly debug it.
+
+![](https://github.com/jinscodes/Blog_nextJS/assets/87598134/5516e8d6-c60c-4e0c-ad77-bcbf989678d2)
+
+---
+[](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-tsconfigjson-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC)
