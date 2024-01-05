@@ -394,7 +394,30 @@ If we use an object and a function, we may customize the type. At this time, we 
 
 ### Type Checking Options
 #### strict
+Activate all type checking operations of TypeScript.
 
+In fact, not using this option is like not using a type script. Therefore, it is enabled by default.
+
+```json
+"compilerOptions": {
+    "strict": true
+}
+```
+
+If this property is specified as true, it is the same as specifying all strict mode family properties as true.
+
+If it's uncomfortable to draw too many red lines even in the smallest part, you can optionally set a few strict mode family properties as false.
+
+**[strict mode family properties]**
+- alwaysStrict property
+- strictNullChecks property
+- strictBindCallApply property
+- strictFunctionTypes property
+- strictPropertyInitialization property
+- nolmplicitAny property
+- noImplicitThis property
+
+#### noImplicitAny
 
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-tsconfigjson-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC)
