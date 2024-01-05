@@ -350,5 +350,8 @@ If there is anything wrong with the TypeScript file directly like this, we can d
 
 ![](https://github.com/jinscodes/Blog_nextJS/assets/87598134/5516e8d6-c60c-4e0c-ad77-bcbf989678d2)
 
+#### downlevelIteration
+Options for using generator `function* {}, child...` in TypeScript.
+
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-tsconfigjson-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC)
