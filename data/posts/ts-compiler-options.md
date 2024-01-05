@@ -362,7 +362,7 @@ Compiling code to an earlier version of js and working with for loop may not wor
 ```
 
 #### removeComments
-Set to remove all annotations from type script sources during compilation.
+Set to remove all annotations from TypeScript sources during compilation.
 
 ```json
 "compilerOptions": {
@@ -371,6 +371,30 @@ Set to remove all annotations from type script sources during compilation.
 ```
 
 #### noEmitOnError
+Originally, even if a syntax error occurs in the TypeScript, it creates a js file when compiled, but if the above setting is set to true, the ts file where the error occurred blocks compile.
+
+```json
+"compilerOptions": {
+    "noEmitOnError": true, // If there are some compile error, js doesn't be compiled.
+}
+```
+
+#### declaration
+If this option is true, the d.ts file is created along with the JS file in the process of compiling the TS file into JS.
+
+If we use an object and a function, we may customize the type. At this time, we can put the types in a ts file, but it is better to separate them because they have different uses. In that case, we can create a d.ts file and manage only the type separately, which is an option used in this case.
+
+```json
+"compilerOptions": {
+    "declaration": true, //Automatically create .d.ts files together when compiling (file with all types currently defined)
+}
+```
+
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b21a66ef-7df3-40a2-ad91-6de4f45b612b)
+
+### Type Checking Options
+#### strict
+
 
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-tsconfigjson-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC)
