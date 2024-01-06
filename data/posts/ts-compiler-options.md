@@ -418,6 +418,83 @@ If it's uncomfortable to draw too many red lines even in the smallest part, you 
 - noImplicitThis property
 
 #### noImplicitAny
+If `any` type that is not explicit is specified, errors occur when used in expressions and declarations.
+
+For example, if the TypeScript fails reasoning and is designated as any, a red line will appear, and at this time, the red line will disappear only if it is directly designated as any.
+
+
+If the above `strict` option is true, the `noImplicitAny` option is also automatically true, and if this option is specified as false, the error disappears even if the any type is not explicitly specified as follows.
+
+```json
+"compilerOptions": {
+    "strict": true,
+    "noImplicitAny": false /* Error in using expressions and declarations with non-exclusive type 'any' */
+}
+```
+
+```jsx
+function methodDecorator() {
+   console.log('method');
+   return function (target, property, descriptor) {}; // If noImplicitAny is false, no errors 
+}
+```
+
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/93aefcc2-0ac5-44ad-8b89-252d881705ae)
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/438b7ac4-eeab-444b-829d-0eb460d40eda)
+
+#### suppressImplicitAnyIndexErrors
+When nolmplicitAny is used, an error is excluded if the index object does not have an index signature.
+
+For example, if the `suppressImplicitAnyindexError` option is set to true, person['age'] does not give an error even if the person object does not have the property of age.
+
+```json
+"compilerOptions": {
+    "strict": true,
+    "suppressImplicitAnyIndexErrors": true,
+}
+```
+
+```jsx
+typescriptconst person = {
+   name: '홍길동',
+};
+
+console.log(person['age']); // If suppressImplicitAnyIndexErrors is true, print just undefined
+```
+
+#### noImplicitThis
+Error occurs in this expression with implicit any type.
+
+Originally, this will solve the error, but if you allow any to come to this, you can clear the red line by specifying this option as false.
+
+```json
+"compilerOptions": {
+    "strict": true,
+    "noImplicitThis": false, /* Error when using expression 'this' with type 'any' that is not explicit */
+}
+```
+
+```jsx
+class Rectangle {
+   width: number;
+   height: number;
+
+   constructor(width: number, height: number) {
+      this.width = width;
+      this.height = height;
+   }
+
+   getAreaFunction() {
+      return function () {
+         return this.width * this.height; // Rae should write explicitly this, but you don't have to write "noImplicitThis": false.
+      };
+   }
+}
+```
+
+![](https://github.com/jinscodes/Blog_nextJS/assets/87598134/d03fd9ea-29dd-4d20-92ef-3bc5fe010fb8)
+
+#### strictNullChecks
 
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-tsconfigjson-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC)
