@@ -495,6 +495,15 @@ class Rectangle {
 ![](https://github.com/jinscodes/Blog_nextJS/assets/87598134/d03fd9ea-29dd-4d20-92ef-3bc5fe010fb8)
 
 #### strictNullChecks
+Option to adjust the type for null and undefined values.
+
+Applying strictNullChecks, all types cannot have null, underdefined values, and to have them, they must be specified directly as union type.
+
+However, basically, null and undefined allocation is possible for any, and undefined allocation is possible for void.
+
+From the time the function is declared, it has the effect of specifying the exact type of parameter and return value.
+
+If strictNullChecks is not applied, all types can be assigned null, undefined values.
 
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-tsconfigjson-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC)
