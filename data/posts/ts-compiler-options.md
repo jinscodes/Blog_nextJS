@@ -505,5 +505,81 @@ From the time the function is declared, it has the effect of specifying the exac
 
 If strictNullChecks is not applied, all types can be assigned null, undefined values.
 
+```json
+"compilerOptions": {
+    "strict": true,
+    "strictNullChecks": false, /* use strict null check */
+}
+```
+
+It's better to activate this option because it catches errors in advance as follows.
+
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/d4f53a7b-aa1c-40bd-8344-38101e951db9)
+
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/553c219c-bf9a-496b-a429-e2e5a4debac7)
+
+#### strictFunctionTypes
+TypeScript basically follows a covariant rule, but only the parameters of the function have a bivariant structure. 
+
+Therefore, even if the parameter types are different, a phenomenon that can only be substituted occurs, and this is set as anti-contrast variable to solve the error of abnormalities.
+
+However, since JavaScript frequently transfers each other's callbacks to functions as factors, it can be annoying to activate this option, which can turn off anti-communism if it is false.
+
+```json
+"compilerOptions": {
+    "strict": true,
+    "strictFunctionTypes": false, /* use strict function types check */
+}
+```
+
+```ts
+function fn(x: string) {
+   console.log('Hello, ' + x.toLowerCase());
+}
+
+type StringOrNumberFunc = (ns: string | number) => void;
+
+// Unsafe assignment
+let func: StringOrNumberFunc = fn;
+
+func(10); // Unsafe call - will crash
+```
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/12e1709e-190c-48f2-8601-61c083e35c91)
+
+#### strictPropertyInitialization
+Verify that the properties of the undefined class are initialized in the constructor.
+
+For example, in the constructor of the UserAccount class, only the name property was initialized and the email property was declared, but at this time, if you feel too strong type checking, you can solve the red line by giving this option as false.
+
+```json
+"compilerOptions": {
+    "strict": true,
+    "strictPropertyInitialization": false, /* Enable property initialization strict checking in a class */
+}
+```
+
+```ts
+class UserAccount {
+   name: string; 
+   accountType = 'user'; 
+   address: string | undefined; 
+
+   email: string; // strictPropertyInitialization: false로 하면 빨간줄이 사라진다.
+
+   constructor(name: string) {
+      this.name = name;
+   }
+}
+```
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/2ef67e5b-f2c9-4998-b220-7c45493d3942)
+
+we can use the non-null affirmative operator to solve it.
+
+```ts
+email!: string; // It means to ignore the error because it will be assigned from somewhere
+```
+
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-tsconfigjson-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC)
