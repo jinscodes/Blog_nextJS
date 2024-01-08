@@ -581,5 +581,7 @@ we can use the non-null affirmative operator to solve it.
 email!: string; // It means to ignore the error because it will be assigned from somewhere
 ```
 
+#### strictBindCallApply
+
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-tsconfigjson-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC)
