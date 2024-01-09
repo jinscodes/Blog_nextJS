@@ -582,6 +582,52 @@ email!: string; // It means to ignore the error because it will be assigned from
 ```
 
 #### strictBindCallApply
+It is an option to check more strictly when using the built-in functions of the function, bind, call, and apply.
+
+```json
+"compilerOptions": {
+    "strict": true,
+    "strictBindCallApply": false, /* Use strict 'bind', 'call', and 'apply' function methods */
+}
+```
+
+```ts
+function fn(x: string) {
+   return parseInt(x);
+}
+
+const n1 = fn.call(undefined, '10');
+
+const n2 = fn.call(undefined, false); 
+```
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/40a6f648-1b74-4c3c-aaaa-ac3f8cf28800)
+
+#### alwaysStrict
+Specify using the "use strict" mode in the compiled JavaScript file. If the strict option is enabled, it is enabled by default, and if it's specified as false, the strict mode is not used in the compiled JavaScript file.
+
+```json
+"compilerOptions": {
+    "strict": true,
+    "alwaysStrict": false, /* After parsing in strict mode, output "use strict" code in each source file */
+}
+```
+
+Below are independent additional inspection options that are not limited to the strict property.
+
+#### noUnusedLocals
+Error if there is a local variable that is not being used
+
+#### noUnusedParameters
+Error if there is a parameter we do not use
+
+#### noImplicitReturns
+Error if return is omitted from the function
+
+#### noFallthroughCasesInSwitch
+Error if switch statement is abnormal.
+
+For example, if the case is not empty in the switch door, an error will be made to terminate the case with a break or return door. This can prevent bugs caused by unintended fall through cases.
 
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-tsconfigjson-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC)
