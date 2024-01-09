@@ -1,8 +1,8 @@
-// File: /Users/hanjinsung/Desktop/Blog_nextJS/src/app/posts/[postPage]/page.tsx
-import * as entry from '../../../../../src/app/posts/[postPage]/page.js'
+// File: /Users/hanjinsung/Desktop/Blog_nextJS/src/app/page.tsx
+import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../../src/app/posts/[postPage]/page.js')
+type TEntry = typeof import('../../../src/app/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{
