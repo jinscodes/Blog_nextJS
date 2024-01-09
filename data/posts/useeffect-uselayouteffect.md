@@ -83,12 +83,12 @@ It's useful when you need to perform actions that require accurate measurements 
 ### useEffect
 useEffect runs after the components are painted with the renderer. It runs asynchronously. Since it runs after being painted, if there is a code inside the useEffect that affects dom, the user will see a flicker of the screen.
 
-![useeffect](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a1fc0f69-6f1a-4d06-af3a-d20364201660)
+![useEffect](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b55c4228-b493-47d1-bd5a-12032f385851)
 
 ### useLayoutEffect
 The useLayoutEffect runs after the components become renders, and then becomes a paint. This is synchronously run. Since it runs before the paint, the user does not experience blinking even if there is a code that manipulates the dom.
 
-![uselayouteffect](https://github.com/jinscodes/Blog_nextJS/assets/87598134/8fb1a097-a925-4ea5-a22d-5a17730f6d65)
+![useLayoutEffect](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e8690f5e-bf92-46c2-8a17-c7d1a77a5708)
 
 ## Conclusion: useEffect Vs. useLayoutEffect
 ### useEffect
