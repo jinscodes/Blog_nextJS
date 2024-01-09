@@ -361,7 +361,100 @@ if (typeof valueNum === "number") {
 In this way, if the unknown type is used instead of any, there will be many codes that need to be checked, but since it can prevent problematic parts in advance, it is possible to develop a stable application compared to any type.
 
 ### Type - Null / Undefined
+Just as underdefined was a data type and value in JavaScript, there are null and underdefined types in typeScript.
 
+```ts
+let nullable: null = null;
+let undefinedable: undefined = undefined;
+```
+
+By default, null and underdefined are considered as all other types of subtypes, which means that null and underdefined can be assigned to any of several types.
+
+However, it is only possible if it is not in strict mode in tsconfig.json.
+
+```ts
+/* enable only when not in strict mode */
+let num: number = undefined;
+let str: string = null;
+let obj: { a: 1, b: false } = undefined;
+let arr: any[] = null;
+let und: undefined = null;
+let nul: null = undefined;
+let voi: void = null;
+```
+
+> 💡 Using the compile options --stricks or --strictNullChecks, null and underdefined are only allocable to any and their respective types. This option helps prevent many unspecified common errors, so --strictNullChecks is recommended where possible.
+
+> 💡 Undefined is exceptionally allocable to voids
+
+### Type - Never
+The never type is not a type to contain any data type values, such as number or string.
+
+The never type is a keyword to tell you what is wrong in the type script, and it can be considered to represent a type that can never occur.
+ 
+Usually, when an empty array is incorrectly declared as a type, you can see never.
+
+This is the most common mistake that type script beginners make, so be sure to keep that in mind.
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ce978726-0a1c-43b3-89af-e13d6cd35e5c)
+
+Never can also be used as a return type that always causes an error or never returns an error in a function expression that returns an error.
+
+```ts
+// Generates a custom never type function that generates an error
+function error(message: string): never {
+    throw new Error(message);
+}
+
+function fail() {
+    return error("Something failed");
+}
+
+const result = fail(); // The type of return is inferred as never.
+```
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/0b096c65-f267-49ae-be53-c49aff2cdb7b)
+
+The never type is also a subtype that can be assigned to all types, such as null or undefined.
+
+However, on the contrary, no type can be assigned to never(except for never himself).
+
+```ts
+function getError(): never {
+   throw new Error('ERROR');
+}
+
+let never_type: never;
+
+never_type = 99; // Error occurred: numeric value cannot be assigned to a never-type variable.
+
+// No error occurs because the return value of the function is of the never type.
+never_type = getError();
+```
+
+### Type - Void
+Since void indicates that no type can exist, it can be considered the opposite type of any.
+
+Therefore, it can be considered that void is usually used to express the type of return when there is no return value in the function.
+
+```ts
+// function without return value
+function hello(n: number): void {
+  let sum: number = n + 1;
+}
+
+const hi: void = hello(1); // Functions that do not return values actually return underdefined
+console.log(hi); // undefined
+```
+
+If void is defined as a variable type rather than a function, only underdefined and null can be assigned to void type variables.
+
+In other words, it can be considered that it is not useful to declare void as a type variable.
+
+```ts
+let unusable: void = undefined;
+unusable = null; // Success, only when not using stricNullChecks option in tsconfig
+```
 
 ---
 [](https://www.tektutorialshub.com/typescript/typescript-data-types/)
