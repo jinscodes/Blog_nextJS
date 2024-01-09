@@ -286,5 +286,13 @@
     "category": ["TypeScript"],
     "path": "ts-compiler-options",
     "featured": false
+  },
+  {
+    "title": "TypeScript's Types",
+    "description": "In order to use a TypeScript 100 percent, we need to know about the types that the TypeScript supports. This post is about types of TypeScript.",
+    "date": "2023-02-25",
+    "category": ["TypeScript"],
+    "path": "ts-types",
+    "featured": false
   }
 ]
