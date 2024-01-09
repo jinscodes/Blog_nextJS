@@ -629,5 +629,17 @@ Error if switch statement is abnormal.
 
 For example, if the case is not empty in the switch door, an error will be made to terminate the case with a break or return door. This can prevent bugs caused by unintended fall through cases.
 
+### Completeness Options
+#### skipLibCheck
+It is a setting that allows you to skip type checking. 
+
+Wonder what would be the point of not checking TypeScript, but if the size of the project is large, the library's declaration files will be very vast, and checking them again every time is quite time consuming. Therefore, it is a property to reduce compilation time by omitting the type check of declaration files by specifying this option as true.
+
+```json
+"compilerOptions": {
+    "skipLibCheck": true, /* Skipping Declaration File Type Inspection */
+}
+```
+
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-tsconfigjson-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC)
