@@ -294,5 +294,13 @@
     "category": ["TypeScript"],
     "path": "ts-types",
     "featured": false
+  },
+  {
+    "title": "TypeScript: Enum",
+    "description": "",
+    "date": "2023-02-29",
+    "category": ["TypeScript"],
+    "path": "ts-types-enum",
+    "featured": false
   }
 ]
