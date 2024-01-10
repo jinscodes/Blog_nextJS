@@ -612,6 +612,167 @@ Because the compiler is unsure whether the result variable is a string or number
 
 > 💡 This can be solved through function overloading.
 
+### Type - Intersection
+If using &(ampersand) to combine two or more types, this is called Intersection.
+
+If understanding the union learned above as if **or**, we can look at the intersection as if **and**.
+
+Intersections are useful because they can combine existing types without creating new types, but they are not a frequently used method.
+
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b8b62e95-ac94-455b-b337-b2fd7bb8d1d8)
+
+```ts
+type Person = {
+   name: string;
+   age: number;
+};
+type Developer = {
+   name: string;
+   skill: number;
+};
+
+const heropy: Person = {
+  name: 'Heropy',
+  age: 36,
+  skill: 11 // Error - { The format 'name: string; age: number; skill: number; }' cannot be assigned to the format 'person'. 
+  // Object literal can only specify known properties and does not have 'skill' in type 'person' 
+};
+
+// The two types of aliases are combined to form one type: {name: string, age: number, skill: number}.
+const neo: Person & Developer = {
+   name: 'Neo',
+   age: 85,
+   skill: 11,
+};
+```
+
+> 💡 Rather than inferring the type by type & intersection as above, it is recommended to just create and allocate a new type.
+
+### Type - Type Alias
+A type alias is a type variable defined by a user.
+
+If defining a complicated and long type in a single line as follows, it is not readable, so it can be seen as a method of grouping the types with a type alias and declaring the alias as a type name.
+
+> 💡 The national rule is to capitalize the variable names of type alias and interface.
+
+
+```ts
+let Dom: {version:string, el:(selector:string)=>void, css:(prop:string)=>void} = {
+  version: '0.0.1',
+  el(){},
+  css(){}
+};
+```
+
+```ts
+type Operation = {
+	version: string, 
+    el: (selector:string) => void, 
+    css: (prop:string) => void
+}
+
+let Dom: Operation = {
+  version: '0.0.1',
+  el(){},
+  css(){}
+};
+```
+
+If we can't remember what type of bundle this type alias was, we can check it as preview status on the editor.
+
+![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/4e60ebd4-6850-4b12-9002-335583883520)
+
+The way to declare type alias is similar to variables.
+
+Declare the data type named type and put value of the type.
+
+```java
+int num = 123123;
+
+string str = "hello";
+```
+
+```ts
+// type name = type;
+type Name = string;
+type Age = number;
+
+let name: Name = 'Tom';
+let age: Age = 20;
+```
+
+### Type - Interface
+The interface refers to a promise or rule defined between each other.
+
+To put it more simply, it can be said that it is an object type that combines the things that define the type. That is why it is called the shell or blueprint of an object.
+
+Interfaces in type scripts can usually define appointments in the following categories
+
+- Specification of the object(type of attributes and attributes)
+- Parameter of the function
+- Specification of the function(parameters, return type, or etc...)
+- The way to access to array and object
+- class
+
+Like this, interface has advantages of not only type designation but also self-expanding to increase utilization.
+
+```ts
+interface Person {
+  name: string;
+  age: number;
+}
+
+interface Developer extends Person { // Interface Inheritance
+  skill: string;
+}
+
+function logUser(obj: Developer) {
+  console.log(obj.name);
+  console.log(obj.age);
+  console.log(obj.skill);
+}
+
+let person = { 
+  name: 'Capt', 
+  age: 28, 
+  skill: 'typescript, javascript' 
+};
+
+logUser(person);
+```
+
+> 💡 [preference: type alias vs. interface] Type aliases and interfaces look similar at first glance, but the biggest difference between them is whether the type is expandable/non-expandable. While the interface can be expanded in various ways, type aliases are not. Therefore, when using a simple set of types, it is recommended to use type aliases and declare them as possible interfaces.
+
+### Type - Generic
+We can think of generics as variable types.
+
+The reason why we use data in a box called a variable rather than directly dealing with it is to increase **reusability**.
+
+In this way, it is understood that the type created to increase **reusability** by substituting the type later like a function parameter is a generic type.
+
+Generic is used by using angle brackets like <T>. T in angle brackets is the name of type, so it can be changed.
+
+```ts
+type IsArray<T> = T[];
+
+const numberArr: IsArray<number> = [1, 2, 3, 4, 5];
+const stringArr: IsArray<string> = ['a', 'b', 'c', 'd', 'e'];
+const mixArr: IsArray<string | number> = ['a', 2, 'c', 4, 'e'];
+```
+
+```ts
+function getText<T>(text: T): T {
+   return text;
+}
+
+getText<string>('hi'); // 'hi'
+getText<number>(10); // 10
+getText<boolean>(true); // true
+```
+
+## Type Table
+![8](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f2c64e62-aaeb-4256-9616-654cbe436bca)
+
 ---
 [](https://www.tektutorialshub.com/typescript/typescript-data-types/)
 
