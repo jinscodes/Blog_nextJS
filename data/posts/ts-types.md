@@ -456,6 +456,75 @@ let unusable: void = undefined;
 unusable = null; // Success, only when not using stricNullChecks option in tsconfig
 ```
 
+### Type - Literal
+We may think that only data types such as number, string, and array are put in because of the type, but only for strings and numbers, the value itself can be declared as a type.
+
+#### Numeric Literal Types
+For example, there is a constant like below. What type of this constant?
+
+```ts
+const num = 3;
+```
+
+Since it has an integer value, you may think it is a number, but if you check it, it has a type 3.
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/42a513d3-fb84-437b-8e34-2d9caa2f8424)
+
+As mentioned above, the type of TS can specify not only the data type but also the value itself(limited to numbers and letters). This is because the basis of TS is to specify types as accurately as possible.
+
+Organically, this is a legitimate judgment. The value of the const constant does not change once it is initialized.
+
+So, we can omit the type because it's a constant anyway.
+
+```ts
+const num: 3 = 3;
+
+const num3 = 3; // type omitted
+```
+
+In addition to the cosnt constant, other applications can be used like this. (You can just use the number type, but when you want to decide the return type more clearly.)
+
+```ts
+// A function that returns a number of dice from 1 to 6 (a dice cannot contain more than 7 digits)
+function rollDice(): 1 | 2 | 3 | 4 | 5 | 6 {
+  // ...
+}
+```
+
+#### String Literal Types
+The string literal type is used to accurately specify a value for a string.
+
+```ts
+type Easing = 'ease-in' | 'ease-out' | 'ease-in-out';
+
+function animate(dx: number, dy: number, easing: Easing) {
+   if (easing === 'ease-in') {
+      // ...
+   } else if (easing === 'ease-out') {
+   } else if (easing === 'ease-in-out') {
+   } else {
+      // filtering null and undefined
+   }
+}
+
+animate(0, 0, 'ease-in');
+animate(0, 0, 'uneasy'); // Error: unacceptable "uneasy"
+```
+
+String literal types can be used in the same way to distinguish the overload of object-oriented functions to be learned later.
+
+```ts
+function createElement(tagName: "img"): HTMLImageElement;
+function createElement(tagName: "input"): HTMLInputElement;
+// ... more overload ...
+function createElement(tagName: string): Element {
+    // ...
+}
+```
+
+### Type - Union
+
+
 ---
 [](https://www.tektutorialshub.com/typescript/typescript-data-types/)
 
