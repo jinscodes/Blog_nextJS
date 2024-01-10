@@ -523,7 +523,94 @@ function createElement(tagName: string): Element {
 ```
 
 ### Type - Union
+If more than one type is allowed, it is called Union. It is also used in the sense of OR. Types are distinguished by | (pipes), and parentheses are not necessary for a single type, but should be overwritten for an array.
 
+```ts
+let union: string | number;
+union = "Hello type!";
+union = 123;
+union = false; // error!
+```
+
+```ts
+// Only string and number are allowed in the array, but it is free unlike tuple
+// To express type as union, use parentheses (if not, string | number[] -> string and number array)
+let array: (string | number)[] = ['Apple', 1, 2, 'Banana', 'Mango', 3];
+// Or
+let array: Array<string | number> = ['Apple', 1, 2, 'Banana', 'Mango', 3];
+```
+
+```ts
+function padLeft(value: string, padding: boolean | number) {
+  // ...
+}
+
+let indentedString = padLeft("Hello world", true);
+```
+
+#### 🚨 Cuation
+As follows, the parameter types of the `introduce()` function were combined into `Person` and `Developer` type aliases into Union.
+
+We may think that the union type is a type that can be A or B, so we can use age or skill, which are attributes provided by these interfaces, in the function, but from a TS point of view, it is impossible to know whether a `Person` type will come or a `Developer` type will come at the time of invoking the `introduce()` function.
+
+```ts
+type Person = {
+  name: string;
+  age: number;
+}
+
+type Developer = {
+  name: string;
+  skill: string;
+}
+
+function introduce(someone: Person | Developer) {
+  someone.name; // O
+  someone.age; // X Type error
+  someone.skill; // X Type error
+}
+```
+
+In other words, tsc has the characteristic of reliably inferring types in the direction where no error occurs, no matter which type comes in.
+
+As a result, only the `name`, which is an attribute common to both `Person` and `Developer`, is accessible.
+ 
+If we use the return value as a union even in a function, it emits an error.
+
+Considering the number of all cases, the return value varies depending on whether the number or string enters the x and y parameters, so the union is specified, but it is not correct from the compiler's point of view.
+
+```ts
+function add(x: string | number, y: string | number): string | number {
+   return x + y;
+}
+
+add(1, 2);
+add('1', '2');
+add(1, '2');
+```
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/d7bfef59-52bb-4a6c-9f4e-cac8c80c3840)
+
+This part is a natural principle.
+
+In the code below, the value of add(1, 2) is received for the result variables of the string and number types. It is also logically correct from the Union's point of view.
+
+```ts
+function add(x: string | number, y: string | number): string | number {
+   return x + y;
+}
+
+const result: string | number = add(1, 2);
+result.charAt(1);
+```
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/dbc2a405-ed1c-4888-9de4-60006d0e7225)
+
+However, it also cuases errors as follows.
+
+Because the compiler is unsure whether the result variable is a string or number, it warns about executing charAt(), a string method.
+
+> 💡 This can be solved through function overloading.
 
 ---
 [](https://www.tektutorialshub.com/typescript/typescript-data-types/)
