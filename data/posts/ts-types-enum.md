@@ -135,3 +135,36 @@ enum Priority {
    Low,
 }
 ```
+
+At this time, we can use the computed property grammar, which is an attribute variable function provided by JS as a standard.
+
+```ts
+enum Priority {
+   High,
+   Medium,
+   Low,
+}
+
+// Mapping to Output Priority Enum Type in Korean
+export const PRIORITY_NAME_MAP = {
+   [Priority.High]: '높음',
+   [Priority.Medium]: '중간',
+   [Priority.Low]: '낮음',
+};
+
+class Todo {
+   priority;
+
+   constructor(priority: Priority) {
+      this.priority = priority;
+   }
+
+   getPriority() {
+      console.log(`${PRIORITY_NAME_MAP[this.priority]}`); // Give enum value with object properties mapped in Korean
+   }
+}
+
+const t: Todo = new Todo(Priority.High);
+t.getPriority(); // 높음
+```
+
