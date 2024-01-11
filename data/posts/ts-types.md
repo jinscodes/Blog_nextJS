@@ -180,6 +180,10 @@ let hero: Avengers = Avengers[2]; // SpiderMan
 let hero: Avengers = Avengers[5]; // Hulk
 ```
 
+More details about Enum ⬇️
+
+[](https://jay-h-blog.vercel.app/posts/TypeScript/ts-types-enum)
+
 ### Type - Object
 In JS, objects include not only objects but also arrays and functions as objects.
 
