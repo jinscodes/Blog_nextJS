@@ -304,3 +304,9 @@ Replace Enum with a familiar const object not to use it, but in order to use it 
  
 Let's refer to the following post for transformation grammar.
 
+[](https://jay-h-blog.vercel.app/posts/TypeScript/ts-typeof-keyof)
+
+--- 
+[](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-enum-%EC%A0%95%EB%A6%AC)
+
+[](https://typescript-kr.github.io/pages/enums.html)
