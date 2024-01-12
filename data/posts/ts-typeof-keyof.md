@@ -6,7 +6,7 @@ What is the `keyof` and `typeof`?
 ## TypeScript - keyof / typeof
 
 ### typeof operator
-- typeof: An operator that converts object data into an object type
+> typeof: An operator that converts object data into an object type
 
 Since `obj` in the code below is an object, of course, the object itself cannot be used as a type.
 
@@ -72,7 +72,8 @@ const cc: Class_Type = {
 };
 ```
 
-## 
+## keyof Operator
+> keyof : an operator that extracts only properties of an object type and makes it a union type
 
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-keyof-typeof-%EC%82%AC%EC%9A%A9%EB%B2%95)
