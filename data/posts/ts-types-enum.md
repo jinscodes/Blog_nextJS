@@ -252,3 +252,55 @@ let value2 = Bool[3]; // ERROR! - A const enum member can only be accessed using
 
 In summary, it can be seen that raw enum is only used when reverse mapping is required, and in other cases, it is better to use it as a `const enum`. (In practice, `const enum` is preferred because there is no use of reverse mapping unless it is a good situation.)
 
+### Replace Enum
+In this way, Enum is used when we want to group multiple variables into one group, but just as examples don't come to our mind right now, it's actually not a necessary data type that must be used in practice.
+
+There is even a way to completely replace Enum.
+
+```ts
+const enum EDirection {
+   Up,
+   Down,
+   Left,
+   Right,
+}
+
+const ODirection = {
+   Up: 0,
+   Down: 1,
+   Left: 2,
+   Right: 3,
+} as const;
+
+console.log(EDirection.Left); // 2
+console.log(ODirection.Right); // 3
+
+// Use Enum as a Type
+function walk(dir: EDirection) {
+   console.log(dir);
+}
+
+// In order to use an object as a type, the typeof and keyof parameters must be used
+type Direction = typeof ODirection[keyof typeof ODirection];
+function run(dir: Direction) {
+   console.log(dir);
+}
+
+walk(EDirection.Left); // 2
+run(ODirection.Right); // 3
+```
+
+In this way, we can imitate Enum by declaring the const object and using the `as const` type affirmation afterwards.
+
+However, in the case of the `const enum` object, it disappears when compiled, but in the case of the `as const` object, it does not disappear even when it is compiled because it is JS. Still, the capacity after compile is smaller than that of Enum.
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/70c5d724-7766-4e4d-a6f8-ec38562efb8c)
+
+What principle is that type of form composed of?
+
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b5fe406c-f3e1-436c-9058-be810d566dad)
+
+Replace Enum with a familiar const object not to use it, but in order to use it as a type in a function, the parameters of `typeof` and `keyof` must be combined and used in that way.
+ 
+Let's refer to the following post for transformation grammar.
+

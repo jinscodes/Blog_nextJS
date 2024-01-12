@@ -302,5 +302,13 @@
     "category": ["TypeScript"],
     "path": "ts-types-enum",
     "featured": false
+  },
+  {
+    "title": "Convert Object to Type: keyof / typeof",
+    "description": "",
+    "date": "2023-03-08",
+    "category": ["TypeScript"],
+    "path": "ts-typeof-keyof",
+    "featured": false
   }
 ]
