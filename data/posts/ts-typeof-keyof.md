@@ -118,5 +118,45 @@ let ob4: Key = 'cucumber';
 
 ![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ad15fce6-b333-4507-addd-1c3e6d9c1ae3)
 
+### Use keyof / typeof
+#### Constant type that replaces Enum
+If we don't want to use Enum, we can replace it to constant type.
+
+```ts
+enum EDirection {
+   Up,
+   Down,
+   Left,
+   Right,
+}
+
+const ODirection = {
+   Up: 0,
+   Down: 1,
+   Left: 2,
+   Right: 3,
+} as const;
+
+console.log(EDirection.Left); // 2
+console.log(ODirection.Right); // 3
+
+// use Enum as a type
+function walk(dir: EDirection) {
+   console.log(dir);
+}
+
+// In order to use an object as a type, the typeof and keyof parameters must be used
+type Direction = typeof ODirection[keyof typeof ODirection];
+function run(dir: Direction) {
+   console.log(dir);
+}
+
+walk(EDirection.Left); // 2
+run(ODirection.Right); // 3
+```
+
+#### Use generic
+
+
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-keyof-typeof-%EC%82%AC%EC%9A%A9%EB%B2%95)
