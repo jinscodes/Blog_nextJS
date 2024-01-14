@@ -222,7 +222,7 @@
 .MarkdownViewer_markdown__VX352 .MarkdownViewer_image__ZEedT {
   width: auto;
   height: auto;
-  min-height: 100%;
+  min-height: 50px;
   max-width: 100%;
   border-radius: 12px;
 }
