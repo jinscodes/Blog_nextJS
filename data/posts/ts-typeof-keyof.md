@@ -39,7 +39,7 @@ let obj2: Fruit = {
 };
 ```
 
-![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/6c2fe13f-51f2-4f38-8f14-275aa030b899)
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/1cb562af-32c0-4e85-82f5-ac4eddf04672)
 
 Functions can also be converted into types and reused.
 
@@ -156,7 +156,18 @@ run(ODirection.Right); // 3
 ```
 
 #### Use generic
+If the parameter key of the function must exist in the generic type T of the parameter obj, keyof T can collect the key values of the object and make it a union type.
 
+```ts
+function getProperty<T, K extends keyof T>(obj: T, key: K) {
+    return obj[key];
+}
+
+let x = { a: 1, b: 2, c: 3, d: 4 };
+
+getProperty(x, "a"); // done
+getProperty(x, "m"); // error: The type 'm' of the argument does not correspond to 'a' | 'b' | 'c' | 'd'.
+```
 
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-keyof-typeof-%EC%82%AC%EC%9A%A9%EB%B2%95)
