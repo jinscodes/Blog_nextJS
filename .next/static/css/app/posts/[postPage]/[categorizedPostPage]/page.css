@@ -221,9 +221,9 @@
 }
 .MarkdownViewer_markdown__VX352 .MarkdownViewer_image__ZEedT {
   width: auto;
-  min-height: 30px;
-  max-width: 100%;
   height: auto;
+  min-height: 100%;
+  max-width: 100%;
   border-radius: 12px;
 }
 .MarkdownViewer_markdown__VX352 .MarkdownViewer_pre_container__sA01Y > div {
