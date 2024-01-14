@@ -39,7 +39,7 @@ let obj2: Fruit = {
 };
 ```
 
-![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b246497e-1203-4717-9b6b-f53183ed7013)
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/6c2fe13f-51f2-4f38-8f14-275aa030b899)
 
 Functions can also be converted into types and reused.
 
@@ -105,6 +105,18 @@ let ob4: Color = 'green';
 ![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/74b65daa-f8e7-47b9-ac6a-1082c042786c)
 
 Conversely, if we want to use apple, banana, and cucumber as constant types, we can use them as follows.
+
+```ts
+const obj = { red: 'apple', yellow: 'banana', green: 'cucumber' } as const;
+
+type Key = typeof obj[keyof typeof obj]; // Get only the values of the object and use the constant type
+
+let ob2: Key = 'apple';
+let ob3: Key = 'banana';
+let ob4: Key = 'cucumber';
+```
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ad15fce6-b333-4507-addd-1c3e6d9c1ae3)
 
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-keyof-typeof-%EC%82%AC%EC%9A%A9%EB%B2%95)
