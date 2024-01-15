@@ -310,5 +310,13 @@
     "category": ["TypeScript"],
     "path": "ts-typeof-keyof",
     "featured": false
+  },
+  {
+    "title": "Use TypeScript's interface",
+    "description": "",
+    "date": "2023-03-12",
+    "category": ["TypeScript"],
+    "path": "ts-interface",
+    "featured": false
   }
 ]

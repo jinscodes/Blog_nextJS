@@ -311,7 +311,7 @@
 
 @media all and (max-width: 767px) {
   .slug_content_container__92knb {
-    width: 767px !important;
+    width: calc(100% - 50px) !important;
     padding: 0 25px;
   }
 }
