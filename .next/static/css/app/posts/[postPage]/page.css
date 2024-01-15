@@ -1,3 +1,50 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Waves/Waves.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Waves_header__20ixi {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: transparent;
+}
+.Waves_header__20ixi .Waves_waves__EV7gH {
+  position: relative;
+  width: 100%;
+  height: 1vh;
+  margin-bottom: -7px;
+  min-height: 100px;
+  max-height: 150px;
+}
+.Waves_header__20ixi use {
+  animation: Waves_move_forever__ZwCcM 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.Waves_header__20ixi use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.Waves_header__20ixi use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.Waves_header__20ixi use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.Waves_header__20ixi use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes Waves_move_forever__ZwCcM {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/posts/[postPage]/slug.module.scss ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -143,20 +190,6 @@
   transform: scale(1.01);
 }
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/CategoryPill/CategoryPill.module.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.CategoryPill_category__2utt9 {
-  display: grid;
-  place-items: center;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 5px 10px;
-  font-size: 10px;
-  background-color: rgba(0, 170, 255, 0.3);
-  color: rgba(0, 170, 255, 0.8);
-  border-radius: 24px;
-}
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/ProfileAndId/ProfileAndId.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .ProfileAndId_info__9z_AU {
@@ -188,50 +221,17 @@
 .ProfileAndId_info__9z_AU .ProfileAndId_sm_date__S_xgC {
   font-size: 14px;
 }
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Waves/Waves.module.scss ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.Waves_header__20ixi {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  background: transparent;
-}
-.Waves_header__20ixi .Waves_waves__EV7gH {
-  position: relative;
-  width: 100%;
-  height: 1vh;
-  margin-bottom: -7px;
-  min-height: 100px;
-  max-height: 150px;
-}
-.Waves_header__20ixi use {
-  animation: Waves_move_forever__ZwCcM 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-}
-.Waves_header__20ixi use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-.Waves_header__20ixi use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-.Waves_header__20ixi use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-.Waves_header__20ixi use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-
-@keyframes Waves_move_forever__ZwCcM {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-  }
-  100% {
-    transform: translate3d(85px, 0, 0);
-  }
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/CategoryPill/CategoryPill.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.CategoryPill_category__2utt9 {
+  display: grid;
+  place-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  font-size: 10px;
+  background-color: rgba(0, 170, 255, 0.3);
+  color: rgba(0, 170, 255, 0.8);
+  border-radius: 24px;
 }

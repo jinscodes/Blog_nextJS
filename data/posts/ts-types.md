@@ -747,6 +747,10 @@ logUser(person);
 
 > 💡 [preference: type alias vs. interface] Type aliases and interfaces look similar at first glance, but the biggest difference between them is whether the type is expandable/non-expandable. While the interface can be expanded in various ways, type aliases are not. Therefore, when using a simple set of types, it is recommended to use type aliases and declare them as possible interfaces.
 
+More details about Interface ↓
+
+[interface](https://jay-h-blog.vercel.app/posts/TypeScript/ts-interface)
+
 ### Type - Generic
 We can think of generics as variable types.
 
