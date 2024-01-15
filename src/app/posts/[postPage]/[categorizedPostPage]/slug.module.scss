@@ -67,7 +67,7 @@
 
 @media all and (max-width: 767px) {
   .content_container {
-    width: 767px !important;
+    width: calc(100% - 50px) !important;
     padding: 0 25px;
   }
 }
