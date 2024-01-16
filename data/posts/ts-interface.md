@@ -121,6 +121,46 @@ And if we need to bundle a single type rather than an object type into a union o
  
 However, because the ideal feature of the software is open to extension, it may be seen as the right side to use the interface rather than type aliases if possible.
 
+## Optional Properties (?:)
+When using interface, the flexibility of the code disappears if all of the properties defined in the interface must be used.   
+If considering it too strongly, we may have to create an interface for each structure.
+
+Optional Properties is the operator to solve it.
+
+**Colon(:)** with **question mark(?)** make the properties optional
+
+```ts
+interface CraftBeer {
+  name: string;
+  hope?: number; // hope property is optional
+}
+
+function brewBeer(beer: CraftBeer) {
+  console.log(beer.name);
+}
+
+let myBeer = { name: 'Saporo' }; // no specification of hope property
+brewBeer(myBeer); // Saporo : work well
+```
+
+```ts
+interface User {
+   name: string;
+   age: number;
+   gender?: string;
+}
+
+let user: User = {
+   name: 'jeff',
+   age: 30,
+};
+
+user.age = 10;
+user.gender = "male"; // according to the optional property, being able to add the value of the property later
+
+user.lalala = ''; // However, cannot freely insert properties that are not even defined at all.
+```
+
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%F0%9F%92%AF-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0)
 
