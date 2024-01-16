@@ -161,6 +161,25 @@ user.gender = "male"; // according to the optional property, being able to add t
 user.lalala = ''; // However, cannot freely insert properties that are not even defined at all.
 ```
 
+The principle of the optional properties is simple.
+
+When a player object has a `name` but may or may not have an `age`, it can be written as follows, which is in fact the same as the `number | underdefined` declaration in Union type.
+
+```ts
+// both are same
+interface IUser {
+   name: string;
+   age?: number;
+}
+
+type TUser = {
+   name: string;
+   age: number | undefiened;
+}
+```
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/7c871aea-06c8-41a6-bacc-1153763ae1da)
+
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%F0%9F%92%AF-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0)
 
