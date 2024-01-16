@@ -178,9 +178,15 @@ type TUser = {
 }
 ```
 
-![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f7bf9bf5-02b4-438b-a8df-fc991c0c982f)
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/80bd645e-9780-4614-a653-fe05ffd975b2)
 
+However, it's important to note that since age is an optional property, if we make the logic with age property, the compiler emits an error. This is because it cannot infer whether the age property is used reliably or not.
 
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c3e6ef63-9584-43f5-88d9-c2b4faa31242)
+
+In this case, as a type guard technique, it can be solved by simply squeezing the logic to compare conditional expressions only when the player.age attribute exists.
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/759cb6aa-c656-4e2e-82de-d255069e7787)
 
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%F0%9F%92%AF-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0)
