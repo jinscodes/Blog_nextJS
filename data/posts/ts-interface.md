@@ -188,6 +188,119 @@ In this case, as a type guard technique, it can be solved by simply squeezing th
 
 ![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/759cb6aa-c656-4e2e-82de-d255069e7787)
 
+## Readonly Property
+Read-only property literally refers to a property that allocates a value only when an object is first created by an interface and cannot be changed thereafter.
+
+If we put the readonly property in front of it as follows, it is simply applied.
+
+There is no problem when declaring an object through the interface for the first time and substituting a value. However, if we approach the property separately and try to correct it, an error will occur.
+
+```ts
+interface User {
+   name: string;
+   age: number;
+   gender?: string;
+   readonly birthYear: number; // read-only property
+}
+
+let user: User = {
+   name: 'jeff',
+   age: 30,
+   birthYear: 2010, // Can only be assigned when initializing a value
+};
+
+user.birthYear = 1999; // Error - You can't modify it afterwards
+```
+
+> 💡 **[readonly vs const]**   
+Readonly and const are similar in that the value is declared only when initialized, and then the value cannot be modified.
+
+> However, it is important to remember that these two are used differently, but the variable uses const and the property uses readonly.
+
+#### Utilize readonly
+If all properties are read-only, we don't need to treat each property as readonly. We can handle it as a Utility or Assertion type.
+
+```ts
+// readonly each property
+interface IUser {
+  readonly name: string,
+  readonly age: number
+}
+
+let user: IUser = {
+  name: 'Neo',
+  age: 36
+};
+
+user.age = 85; // Error
+user.name = 'Evan'; // Error
+```
+
+```ts
+// Use Readonly Utility
+interface IUser {
+  name: string,
+  age: number
+}
+
+let user: Readonly<IUser> = { // thinking of it as a separate data type called Readonly like Array
+  name: 'Neo',
+  age: 36
+};
+
+user.age = 85; // Error
+user.name = 'Evan'; // Error
+```
+
+```ts
+// Type assertion
+let user = {
+  name: 'Neo',
+  age: 36
+} as const; // If as const is attached to the object data itself without using a separate interface, this itself becomes a literal type.
+
+user.age = 85; // Error
+user.name = 'Evan'; // Error
+```
+
+#### Readonly Array
+If using `ReadonlyArray<T>` utility type, we can create Read-only array.
+
+Can define the value only when the declaring, after that cannot fix the content of the array.
+
+```ts
+let arr: ReadonlyArray<number> = [1,2,3]; // read-only array
+
+arr.splice(0,1); // error
+arr.push(4); // error
+arr[0] = 100; // error
+```
+
+## Interface Compatibility
+Can make multiple interfaces with the same name.
+
+When they overlap, it can be seen that the declared properties in the plan are combined into one.
+
+It is a technique that is usefully frequently used when adding content to an existing interface.
+
+```ts
+interface IFullName {
+  firstName: string,
+  lastName: string
+}
+
+interface IFullName {
+  middleName: string
+}
+
+const fullName: IFullName = {
+  firstName: 'Tomas',
+  middleName: 'Sean',
+  lastName: 'Connery'
+};
+```
+
+
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%F0%9F%92%AF-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0)
 
