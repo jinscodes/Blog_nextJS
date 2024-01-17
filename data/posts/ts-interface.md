@@ -441,6 +441,38 @@ In fact, if looking at the predefined TS interface file lib.es5.d.ts, we can see
 
 ![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/15054b77-2ed8-4ca4-ab90-e196bbe8ffae)
 
+## Interface Class Type
+Like C# and Java, type rules can be set so that classes meet certain conditions in TS.
+
+If defining a class by interface, we can paste it next to the class definition using the implements keyword.
+
+```ts
+interface IUser {
+   name: string;
+   getName(): string;
+}
+
+// When the IUser interface is implemented, the property structure of the User class must follow the definition of the IUser.
+// That is, the name variable and getName() method must be implemented as default values in the class.
+class User implements IUser {
+   name: string;
+
+   constructor(name: string) {
+      this.name = name;
+   }
+
+   getName() {
+      return this.name;
+   }
+}
+
+const neo = new User('Neo');
+neo.getName(); // Neo
+```
+
+![8](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a4d6e500-debf-4ba2-9435-0cf09c81c141)
+
+
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%F0%9F%92%AF-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0)
 
