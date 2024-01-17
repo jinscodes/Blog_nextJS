@@ -472,6 +472,33 @@ neo.getName(); // Neo
 
 ![8](https://github.com/jinscodes/Blog_nextJS/assets/87598134/aac22df1-a048-49f4-bf72-c93b4971668a)
 
+### Construct Signature
+If the above call signature defines the function type structure, the construct signature defines 
+the `new class()` generator function type structure.
+
+By applying this, it is possible to receive a class of function parameters and proceed with initialization instead.
+
+```ts
+interface ICatConstructor {
+  new (name: string): Cat; // construct signature
+}
+
+class Cat {
+  constructor(public name: string) {}
+}
+
+// function that receives the class as param and reset it
+function makeKitten(c: ICatConstructor, n: string) {
+  return new c(n); // ok
+}
+
+const kitten = makeKitten(Cat, "Lucy");
+console.log(kitten.name); // Lucy
+```
+
+![9](https://github.com/jinscodes/Blog_nextJS/assets/87598134/458cfc83-9983-45d6-bd71-df4919919553)
+
+
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%F0%9F%92%AF-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0)
 
