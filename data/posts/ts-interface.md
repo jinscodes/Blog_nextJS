@@ -501,7 +501,7 @@ console.log(kitten.name); // Lucy
 ## Indexable Type
 The interfaces used so far have been used by specifying the types of direct attributes one by one.
 
-However, if there are a lot of attributes to be defined in the interface, difficulties can arise, and if there is a rule, the interface can utilize it just as we place a value in a variable and use it organically.
+However, if there are so many attributes to be defined in the interface, there can be difficulties. At this time, if there is an attribute with a rule, the interface can utilize it, just as we place a value in a place called a variable and use it organically.
  
 For example, if **grade-specific(first to fourth grade) scores** are implemented through the interface **(A to F)**, it can be as follows.
 
@@ -528,6 +528,40 @@ const user3: User = {
    2: 'B',
 };
 ```
+
+Set name of the key placed in large bracket [], and also set the key type to a number.
+
+And the value type of the key was designated as the string literal type.
+
+Then, objects can be configured more systematially as above.
+
+Array also can be typed as indexable.
+
+```ts
+interface IItem {
+  [itemIndex: number]: string // Index signature
+}
+
+let item: IItem = ['a', 'b', 'c']; // Indexable type
+
+console.log(item[0]); 
+console.log(item[1]); 
+console.log(item['0']); // Error
+```
+
+```ts
+interface IItem {
+  [itemIndex: number]: string | boolean | number[] // union several types
+}
+
+let item: IItem = ['Hello', false, [1, 2, 3]];
+
+console.log(item[0]); // Hello
+console.log(item[1]); // false
+console.log(item[2]); // [1, 2, 3]
+```
+
+This configuration is possible because the arrangement of JS is also a type of object, so the index numbers are automatically filled in the key part.
 
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%F0%9F%92%AF-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0)
