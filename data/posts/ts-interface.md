@@ -426,7 +426,108 @@ console.log(obj.getShortKeys()); // ['a', 'bb', 'ccc']
 ```
 
 #### Interface Function Overload
+Multi-function can be implemented by overloading the function's own type even within the interface.
 
+```ts
+interface Add {
+  (x: number, y: number): number;
+  (x: string, y: string): string;
+}
+
+const add:Add = (x: any, y: any) => x + y;
+```
+
+In fact, if looking at the predefined TS interface file lib.es5.d.ts, we can see that two filter functions in JS are defined as overloads.
+
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/15054b77-2ed8-4ca4-ab90-e196bbe8ffae)
+
+## Interface Class Type
+Like C# and Java, type rules can be set so that classes meet certain conditions in TS.
+
+If defining a class by interface, we can paste it next to the class definition using the implements keyword.
+
+```ts
+interface IUser {
+   name: string;
+   getName(): string;
+}
+
+// When the IUser interface is implemented, the property structure of the User class must follow the definition of the IUser.
+// That is, the name variable and getName() method must be implemented as default values in the class.
+class User implements IUser {
+   name: string;
+
+   constructor(name: string) {
+      this.name = name;
+   }
+
+   getName() {
+      return this.name;
+   }
+}
+
+const neo = new User('Neo');
+neo.getName(); // Neo
+```
+
+![8](https://github.com/jinscodes/Blog_nextJS/assets/87598134/aac22df1-a048-49f4-bf72-c93b4971668a)
+
+### Construct Signature
+If the above call signature defines the function type structure, the construct signature defines 
+the `new class()` generator function type structure.
+
+By applying this, it is possible to receive a class of function parameters and proceed with initialization instead.
+
+```ts
+interface ICatConstructor {
+  new (name: string): Cat; // construct signature
+}
+
+class Cat {
+  constructor(public name: string) {}
+}
+
+// function that receives the class as param and reset it
+function makeKitten(c: ICatConstructor, n: string) {
+  return new c(n); // ok
+}
+
+const kitten = makeKitten(Cat, "Lucy");
+console.log(kitten.name); // Lucy
+```
+
+![9](https://github.com/jinscodes/Blog_nextJS/assets/87598134/458cfc83-9983-45d6-bd71-df4919919553)
+
+## Indexable Type
+The interfaces used so far have been used by specifying the types of direct attributes one by one.
+
+However, if there are a lot of attributes to be defined in the interface, difficulties can arise, and if there is a rule, the interface can utilize it just as we place a value in a variable and use it organically.
+ 
+For example, if **grade-specific(first to fourth grade) scores** are implemented through the interface **(A to F)**, it can be as follows.
+
+```ts
+type Score = 'A' | 'B' | 'C' | 'D' | 'F';
+
+interface User {
+   name: string;
+   [grade: number]: Score; // indexable type
+}
+
+const user1: User = {
+   name: '홍길동',
+   1: 'A',
+};
+
+const user2: User = {
+   name: '임꺾정',
+   3: 'F',
+};
+
+const user3: User = {
+   name: '박혁거세',
+   2: 'B',
+};
+```
 
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%F0%9F%92%AF-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0)
