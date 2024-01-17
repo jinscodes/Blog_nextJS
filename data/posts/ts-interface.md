@@ -498,6 +498,36 @@ console.log(kitten.name); // Lucy
 
 ![9](https://github.com/jinscodes/Blog_nextJS/assets/87598134/458cfc83-9983-45d6-bd71-df4919919553)
 
+## Indexable Type
+The interfaces used so far have been used by specifying the types of direct attributes one by one.
+
+However, if there are a lot of attributes to be defined in the interface, difficulties can arise, and if there is a rule, the interface can utilize it just as we place a value in a variable and use it organically.
+ 
+For example, if **grade-specific(first to fourth grade) scores** are implemented through the interface **(A to F)**, it can be as follows.
+
+```ts
+type Score = 'A' | 'B' | 'C' | 'D' | 'F';
+
+interface User {
+   name: string;
+   [grade: number]: Score; // indexable type
+}
+
+const user1: User = {
+   name: '홍길동',
+   1: 'A',
+};
+
+const user2: User = {
+   name: '임꺾정',
+   3: 'F',
+};
+
+const user3: User = {
+   name: '박혁거세',
+   2: 'B',
+};
+```
 
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%F0%9F%92%AF-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0)
