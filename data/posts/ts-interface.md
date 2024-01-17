@@ -300,6 +300,131 @@ const fullName: IFullName = {
 };
 ```
 
+## Interface Extends
+Like the class, interfaces can be expanded between interfaces.
+
+When inheriting from the JavaScript class, the `extents` keyword is used, but we can also use it in the interface.
+
+```ts
+interface Person {
+  name: string;
+}
+
+interface Developer extends Person {
+  skill: string;
+}
+
+let fe: Developer = { name: "jay", skill: "TS" };
+```
+
+If implementing the extends of interfaces, using interaction type (&).
+
+```ts
+type Person = { name: string };
+
+type Developer = Person & { skill: string };
+
+let fe: Developer = { name: "jay", skill: "TS" };
+```
+
+The peculiar thing is that the interface extension allows multiple extensions. (Class only can do one `extends`)
+
+```ts
+interface Person {
+  name: string;
+  age: string;
+}
+
+interface Programmar {
+  favoriteProgrammingLanguage: string;
+}
+
+interface Korean extends Person, Programmar {
+  isLiveInSeoul: boolean;
+}
+
+const person: Korean = {
+  name: "Jay Han",
+  age: 26,
+  favoriteProgrammingLanguage: "kor",
+  isLiveInSeoul: true,
+}
+```
+
+## Interface Function Type
+#### Call Signature
+
+Interface can be used to declare the function type.
+
+Just as in JAVA, the method shape was added when defining the interface as follows, it is understood that the interface also defines the shape (type) of the function.
+
+This is called a call signature in technical terms.
+
+```java
+public interface login {
+  public Boolean loginUser(); // only function name in java
+}
+```
+
+```ts
+interface login {
+  (username: string, password: string): boolean; // not function name, but function shape(parameters, return) in ts
+}
+
+// parameters name doesn't need to match the interface
+// Also, there is no need to write a type in a function to be declared through type inference
+let loginUser: login = function(id, pw) {
+  console.log("login");
+  return true;
+}
+``` 
+
+Function can have attribute value in JS.
+
+When we define the function type as it is through interface, function attributes also can do.
+
+```ts
+interface GetText {
+  (name: string, age: number): string;
+  totalCall?: number; // define function attribute value
+}
+
+const getText: GetText = function (name, age) {
+  if (getText.totalCall !== undefine){
+    getText.totalCall += 1;
+    console.log(`totalCall: ${getText.totalCall}`);
+  }
+  return '';
+}
+
+getText.totalCall = 0; // function attribute value
+getText('', 0); // 1
+getText('', 0); // 2
+```
+
+Call signautre is usefully used to register additional method to prototype of object of js.
+
+The following example registers a new method called `getshortKeys()` as a prototype in the main object of JavaScript: Object.
+
+```ts
+interface Object {
+  getShortKeys(this: object): string[];
+}
+
+Object.prototype.getShortKeys = function () {
+  return Object.keys(this).filter((key) => key.length <= 3>);
+};
+
+const obj = {
+  a: 1,
+  bb: 2,
+  ccc: 3,
+  dddd: 4,
+};
+
+console.log(obj.getShortKeys()); // ['a', 'bb', 'ccc']
+```
+
 
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%F0%9F%92%AF-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0)
