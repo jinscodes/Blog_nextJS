@@ -318,5 +318,13 @@
     "category": ["TypeScript"],
     "path": "ts-interface",
     "featured": false
+  },
+  {
+    "title": "📱 How to Start Flutter project? Let's Make it!",
+    "description": "",
+    "date": "2023-03-15",
+    "category": ["Flutter"],
+    "path": "flutter-settings",
+    "featured": false
   }
 ]
