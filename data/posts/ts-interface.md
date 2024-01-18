@@ -514,17 +514,17 @@ interface User {
 }
 
 const user1: User = {
-   name: '홍길동',
+   name: 'jay',
    1: 'A',
 };
 
 const user2: User = {
-   name: '임꺾정',
+   name: 'roise',
    3: 'F',
 };
 
 const user3: User = {
-   name: '박혁거세',
+   name: 'aron',
    2: 'B',
 };
 ```
@@ -563,7 +563,97 @@ console.log(item[2]); // [1, 2, 3]
 
 This configuration is possible because the arrangement of JS is also a type of object, so the index numbers are automatically filled in the key part.
 
+> Note that only string and number can be specified for the type **[indexer]**.   
+This is a natural principle when we think about it, because key is only a letter (object.key) and array is a number (array[0]).
+
+If using indexable signature(indexable type), it's useful when using organically the properties that is not undefined in the interface.(terminal, the property must have a return value defined to index signal defined in index signature)
+
+```ts
+interface IUser {
+  name: string;
+  age: number;
+  [userProp: string]: string | number;
+}
+
+let user: IUser = {
+  name: "jay",
+  age: 123,
+  email: "jay@gmail.com",
+  gender: "M",
+  height: 180,
+};
+
+console.log(user.email);
+console.log(user.height);
+```
+
+Index signature(indexable type) is unfamiliar concept so more examples are needed.
+
+```ts
+interface DictIndex {
+  [whatever: string]: {id: number; name: string};
+}
+
+const dict: DictIndex = {
+  first: {id: 1, name: "jay"},
+  second: {id: 2, name: "rosie"},
+};
+```
+
+```ts
+interface StringRegexDict {
+  [key: string]: RegExp;
+}
+
+const Object: StringRegexDict = {
+  sth: /abc/,
+};
+```
+
+```ts
+interface StringArray {
+  [index: number]: string | number;
+}
+
+let array: StringArray = [];
+
+array[0] = "hi";
+array[1] = 3;
+```
+
+```ts
+interface PhoneNumberDictionary {
+   [phone: string]: { // Indexable signatures that receive the string as a key and consist of object type value
+      num: string;
+   };
+}
+
+interface Contact {
+   name: string; 
+   address: string; 주소
+   phones: PhoneNumberDictionary;
+}
+
+const inform = {
+   name: 'Tony',
+   address: 'Malibu',
+
+   // [phone: string]: { num: number };
+   phones: {
+      home: {
+         num: '033-1111-1111',
+      },
+      office: {
+         num: '011-1111-1222',
+      },
+   },
+};
+```
+
+
 ---
+[](https://typescript-kr.github.io/pages/interfaces.html)
+
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%F0%9F%92%AF-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0)
 
 [](https://ts.dev/style/)
