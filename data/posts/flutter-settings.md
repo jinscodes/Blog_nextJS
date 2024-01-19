@@ -15,10 +15,10 @@ Official:
 Flutter dev:   
 [flutter-dev](https://docs.flutter.dev/get-started/install)
 
-## Settings
+## Settings: VScode, Xcode, and Android Studio
 It's necessary to do a lot of settings to develop the app using Flutter. 
 
-#### VScode
+### VScode
 Most developers may have experience using VScode or may be using it.
 
 To use Flutter via VScode, we need to install extensions.
@@ -32,7 +32,7 @@ To use Flutter via VScode, we need to install extensions.
 **Flutter Wdiget Snippets Extension (Not Necessary, But Recommended)**:
 ![flutter-sni](https://github.com/jinscodes/Blog_nextJS/assets/87598134/06e40af4-ba9c-4d97-bf2c-80688f09491e)
 
-## Xcode
+### Xcode
 Flutter is a cross-platform for mobile application, so we can make ios application using flutter.
 
 When developing ios app, using ios simulator and releasing it through Xcode. Therefore, Xcode is needed when developing the app.
@@ -41,6 +41,60 @@ When developing ios app, using ios simulator and releasing it through Xcode. The
 	1. [](https://developer.apple.com/xcode/ "Web")
 2. Xcode: Mac App Store
 	1. [](https://apps.apple.com/us/app/xcode/id497799835 "Mac App Store")
+
+After the installing the Xcode throught the above link, do next as follow.
+
+```bash
+$ sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+$ sudo xcodebuild -runFirstLaunch
+$ sudo xcodebuild -license
+$ sudo gem install cocoapods
+```
+
+### Android Studio
+Surely, an android application can be developed using flutter. However, unlike ios, android studio is needed to use android emulator and release the app.
+
+1. Android Studio
+	1. [](https://developer.android.com/studio)
+
+
+## Install Flutter SDK 
+To make application with flutter, we need to install flutter SDK. 
+
+Firstly, make the folder for installing the flutter SDK. 
+
+```bash
+$ mkdir ~/development
+$ cd ~/development
+```
+
+If we have created a folder to download the Flutter SDK, use the command below to clone the Flutter SDK.
+
+```bash
+$ git clone https://github.com/flutter/flutter.git -b stable
+```
+
+Alternatively, we can download the Flutter SDK that we distribute over the web using the following command.
+
+```bash
+$ curl -O https://storage.googleapis.com/flutter_infra/releases/stable/macos/flutter_macos_2.0.3-stable.zip
+$ unzip flutter_macos_2.0.3-stable.zip
+```
+
+## Setting Path
+To use the Flutter SDK, we must set the path to the Flutter SDK. Use the following command to modify the file for adding the path.
+
+```bash
+$ code ~/.zshrc
+```
+
+And, add the following to the bottom of the file.
+
+```md
+...
+export PATH=$HOME/development/flutter/bin:$PATH
+```
+
 
 ---
 [](https://deku.posstree.com/ko/flutter/installation/)
