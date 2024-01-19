@@ -110,6 +110,42 @@ When the run is complete, we can see the following results.
 
 We can check what flutter SDKs we need through the `flutter doctor` command.
 
+## Create Flutter Project
+If there are no problems (flutter doctor), we can create flutter app project.
+
+```bash
+$ flutter create my_app
+```
+
+And then, run Android emulator or iOS simulator, and then run the app generated through the command.
+
+**Open IOS Simulator**
+
+```bash
+	open -a Simulator
+```
+
+**Open Android Simulator**
+
+```bash
+	emulator -list-avds
+	emulator -avd @name-of-your-emulator
+```
+
+**Start flutter project**
+
+```bash
+	cd my_app
+	flutter run
+```
+
+### Result
+#### Simulator
+![simulator](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9d9215f5-5e25-4f30-a127-e876079255c8)
+
+#### Run Flutter
+![runflutter](https://github.com/jinscodes/Blog_nextJS/assets/87598134/fcf5a35b-f261-4f1b-b9ed-bb456c682b94)
+
 ---
 [](https://deku.posstree.com/ko/flutter/installation/)
 
