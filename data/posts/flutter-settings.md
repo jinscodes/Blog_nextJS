@@ -95,6 +95,20 @@ And, add the following to the bottom of the file.
 export PATH=$HOME/development/flutter/bin:$PATH
 ```
 
+## Dependency Installation
+We need to install the SDK and Tools needed to develop the app with Flutter. Run the following command to install what we need to develop the app with Flutter.
+
+```bash
+flutter doctor
+```
+
+If copy the Flutter SDK to git clone, it takes a lot of time to build the SDK. If download the SDK from the web, it also includes what was built, so we can proceed a little faster.
+
+When the run is complete, we can see the following results.
+
+![flutterdoctor](https://github.com/jinscodes/Blog_nextJS/assets/87598134/024fbb46-3dac-4242-aec6-73ab00cff5c7)
+
+We can check what flutter SDKs we need through the `flutter doctor` command.
 
 ---
 [](https://deku.posstree.com/ko/flutter/installation/)
