@@ -108,9 +108,7 @@ When the run is complete, we can see the following results.
 
 ![flutterdoctor](https://github.com/jinscodes/Blog_nextJS/assets/87598134/024fbb46-3dac-4242-aec6-73ab00cff5c7)
 
-
-
-
+We can check what flutter SDKs we need through the `flutter doctor` command.
 
 ---
 [](https://deku.posstree.com/ko/flutter/installation/)
