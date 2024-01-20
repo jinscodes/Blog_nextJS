@@ -326,5 +326,13 @@
     "category": ["Flutter"],
     "path": "flutter-settings",
     "featured": false
+  },
+  {
+    "title": "🚨Error: Error that may occur during flutter doctor",
+    "description": "",
+    "date": "2023-03-18",
+    "category": ["Flutter", "Error"],
+    "path": "flutter-doctor-error",
+    "featured": false
   }
 ]
