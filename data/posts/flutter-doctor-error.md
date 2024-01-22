@@ -6,8 +6,20 @@ Most errors can be recognized through the `flutter doctor`, and can be solved ba
 ![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/3abcb2a7-3d4e-40ff-b159-00e2a9e97cf9)
 
 ## Flutter Doctor
-Certainly! `flutter doctor` is a command-line tool provided by Flutter that checks your development environment for compatibility with Flutter. It examines dependencies and configurations required for Flutter development. 
+Flutter Doctor is a command-line tool provided by the Flutter framework. It is used to diagnose and troubleshoot issues related to the Flutter installation and configuration in your development environment. When you run the “flutter doctor” command in your terminal or command prompt, it performs a series of checks and provides feedback on the status of your Flutter installation, as well as any potential issues that need to be addressed.
 
-After running `flutter doctor`, you'll receive a summary that indicates whether your system is set up correctly or if there are any issues that need attention. The output may suggest actions to resolve any identified problems, ensuring a smooth Flutter development experience.
+```bash
+$ flutter doctor
+```
 
-When you run `flutter doctor` and encounter an error, it means that there are issues with your Flutter development environment. The error message provides information about what specifically went wrong, such as missing dependencies or misconfigurations. To resolve the error, you typically need to follow the suggestions provided in the error message, which may involve installing missing dependencies or adjusting settings on your system. The goal is to address the issues identified by `flutter doctor` so that your Flutter development environment is properly set up.
+However, when we do flutter doctor, we can face a lot of error.
+
+### 🚨 Error: Android toolcahin - Unable to locate Android SDK
+If we are encountering the error "Unable to locate Android SDK" while working with the Android toolchain, here are some steps you can take to resolve the issue:
+
+1. Check Android Studio Installation:
+	1. Make sure you have Android Studio installed on your machine. Android Studio is the official IDE for Android development and comes bundled with the Android SDK.
+	2. ![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/6545b9a8-2cc1-4a08-88d0-66dc81f08e47)
+	3. ![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/328e34af-7b55-4f0b-a7c8-27d3c97a5d0e)
+
+2. Verify SDK Location in Android Studio: 
