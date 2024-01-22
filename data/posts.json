@@ -328,11 +328,11 @@
     "featured": false
   },
   {
-    "title": "🚨Error: Error that may occur during flutter doctor",
+    "title": "🚨Error: android toolchain - unable to locate Android SDK",
     "description": "",
     "date": "2023-03-18",
     "category": ["Flutter", "Error"],
-    "path": "flutter-doctor-error",
+    "path": "err-flutter-android",
     "featured": false
   }
 ]
