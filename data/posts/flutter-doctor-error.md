@@ -23,3 +23,6 @@ If we are encountering the error "Unable to locate Android SDK" while working wi
 	3. ![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/328e34af-7b55-4f0b-a7c8-27d3c97a5d0e)
 
 2. Verify SDK Location in Android Studio: 
+	1. Open Android Studio and go to "File" > "Project Structure."
+	2. Under "SDK Location," verify the path to the Android SDK. This is the location that your development environment needs to be aware of.
+	3. ![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/23439f98-c20f-4f63-bdc5-67fd17139649)
