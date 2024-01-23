@@ -77,3 +77,5 @@ $ flutter doctor
 [](https://stackoverflow.com/questions/44485848/android-sdk-cannot-be-found-by-flutter)
 
 [](https://richz.tistory.com/entry/Flutter-Doctor-%EC%8B%A4%ED%96%89%EC%8B%9C-%EB%B0%9C%EC%83%9D%ED%95%A0-%EC%88%98-%EC%9E%88%EB%8A%94-%EC%98%A4%EB%A5%98%EB%93%A4)
+
+[](https://moonnight0.tistory.com/77)
