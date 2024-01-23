@@ -334,5 +334,13 @@
     "category": ["Flutter", "Error"],
     "path": "err-flutter-android",
     "featured": false
+  },
+  {
+    "title": "🚨Error: android licenses have not been accepted",
+    "description": "",
+    "date": "2023-03-20",
+    "category": ["Flutter", "Error"],
+    "path": "err-flutter-license",
+    "featured": false
   }
 ]
