@@ -38,10 +38,16 @@
     }
 
     .title {
+      width: 100%;
       height: 50px;
       margin: 0;
       margin-bottom: 16px;
       font-size: 22px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
     }
 
     .description {
