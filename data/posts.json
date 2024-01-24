@@ -342,5 +342,13 @@
     "category": ["Flutter", "Error"],
     "path": "err-flutter-license",
     "featured": false
+  },
+  {
+    "title": "🚨Error: CocoaPods not installed or not in valid state.",
+    "description": "One day a cocoapod error suddenly came to me. The flutter that was working well didn't work and I had to fix the error.",
+    "date": "2023-03-21",
+    "category": ["Flutter", "Error"],
+    "path": "err-flutter-cocoapod",
+    "featured": false
   }
 ]
