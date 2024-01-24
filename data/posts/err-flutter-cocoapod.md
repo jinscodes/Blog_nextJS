@@ -77,8 +77,66 @@ If wants to specify the version, follow the below command
 $ sudo gem install cocoapods -v 1.11.2
 ```
 
-## 🚨 
-I installed ruby thorugh homebrew and upgraded it to the lastest version. However, I checked the version of ruby in terminal, ruby version is not upraded. like this ruby 2.6.10p210 (2022-04-12 revision 67958) [universal.arm64e-darwin21].
+## 🚨 The last version of activesupport (>= 5.0,  < 8) to support your Ruby & RubyGems was ~
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c69a36c0-c4f5-47e0-85bc-b9fac9dcfc6a)
+
+I installed ruby thorugh homebrew and upgraded it to the lastest version.
+
+```bash
+$ brew install ruby
+$ ruby --version
+```
+
+However, I checked the version of ruby in terminal, ruby version is not upraded like this `ruby 2.6.10p210 (2022-04-12 revision 67958) [universal.arm64e-darwin21]`.
+
+This is an error that occurs because Ruby is built into Mac and the version of Ruby is set to default.
+
+Several steps are needed to change the settings for the Ruby version on Mac.
+
+#### 1. Install Ruby with Homebrew
+Firstly, install or check the version of the ruby installed by homebrew.
+
+If no version of ruby installed, install it with homebrew
+
+```bash
+$ brew install ruby
+```
+
+And, check the ruby version. Through brew info ruby, I checked and noted the path of the ruby because it is used later.
+
+```bash
+$ brew info ruby
+```
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9ac4d2ee-f07c-44f6-8210-c8e7eb3da6a3)
+
+
+
+#### 2. Update Shell Configuration
+Need to update shell configuration. 
+
+> 💡 shell configuration means `~/.bash_profile`, `~/.zshrc`, or `~/.bashrc`
+
+```bash
+open ~/.zshrc
+
+or 
+
+vim ~/.zshrc
+```
+
+Add the following line, replacing /usr/local/opt/ruby/bin (or nothing in the .zshrc file) with the actual path obtained from the Homebrew info command.
+
+```bash
+$ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+```
+
+Result is like below.
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/4c4b6892-1b04-4e52-a1cb-db93afee4723)
+
+
+
 
 --- 
 [](https://stackoverflow.com/questions/20939568/error-error-installing-cocoapods-error-failed-to-build-gem-native-extension)
@@ -92,3 +150,5 @@ I installed ruby thorugh homebrew and upgraded it to the lastest version. Howeve
 [](https://github.com/rbenv/ruby-build/discussions/2127)
 
 [](https://stackoverflow.com/questions/76938956/installed-latest-ruby-on-mac-but-still-showing-old-in-terminal)
+
+[](https://mac.install.guide/faq/change-ruby-version/index.html)
