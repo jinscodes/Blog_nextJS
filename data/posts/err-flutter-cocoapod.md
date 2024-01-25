@@ -24,6 +24,8 @@ $ brew install cocoapods
 
 But, `brew install` didn't work properly because of the authority. So, I used `sudo gen install`
 
+Error message: "You don't have write permissions for the /Library/Ruby/Gems/2.6.0 directory"
+
 ```bash
 $ sudo gem install cocoapods
 ```
@@ -77,6 +79,8 @@ If wants to specify the version, follow the below command
 $ sudo gem install cocoapods -v 1.11.2
 ```
 
+But, `sudo gem install cocoapods` doesn't work because of the ruby version.
+
 ## 🚨 The last version of activesupport (>= 5.0,  < 8) to support your Ruby & RubyGems was ~
 ![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c69a36c0-c4f5-47e0-85bc-b9fac9dcfc6a)
 
@@ -111,7 +115,6 @@ $ brew info ruby
 ![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9ac4d2ee-f07c-44f6-8210-c8e7eb3da6a3)
 
 
-
 #### 2. Update Shell Configuration
 Need to update shell configuration. 
 
@@ -131,11 +134,29 @@ Add the following line, replacing /usr/local/opt/ruby/bin (or nothing in the .zs
 $ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 ```
 
-Result is like below.
+Like this,
 
 ![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/4c4b6892-1b04-4e52-a1cb-db93afee4723)
 
+#### 3. Restart Terminal or Source the Configuration
+Restart the terminal and run the following command to apply the changes.
 
+```bash
+source ~/.zshrc
+```
+
+This ensures that the updated Ruby path takes effect.
+
+And then, check the version of the `ruby --version`
+
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/57827984-cffc-49ab-aab6-a4b7d28070f7)
+
+**Done**
+
+## Another Solution
+In fact, if the ruby is installed with homebrew and the ruby installed through path setting is set as the default, the cocoapods should be well installed and the flutter should run well.
+
+In my case, however, the cocoa pod was installed, but the flutter didn't run well.
 
 
 --- 
