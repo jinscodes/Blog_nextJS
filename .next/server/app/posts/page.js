@@ -371,7 +371,7 @@ const Posts = async ()=>{
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [160,798,277,175], () => (__webpack_exec__(37)));
+var __webpack_exports__ = __webpack_require__.X(0, [160,653,277,175], () => (__webpack_exec__(37)));
 module.exports = __webpack_exports__;
 
 })();

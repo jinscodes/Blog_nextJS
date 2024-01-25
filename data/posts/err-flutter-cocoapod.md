@@ -156,7 +156,26 @@ And then, check the version of the `ruby --version`
 ## Another Solution
 In fact, if the ruby is installed with homebrew and the ruby installed through path setting is set as the default, the cocoapods should be well installed and the flutter should run well.
 
-In my case, however, the cocoa pod was installed, but the flutter didn't run well.
+In my case, however, the cocoa pod was installed, but the flutter didn't run well. So, I looked to see if there were other reasons why the flutter wouldn't run.
+
+When building the ios app with the flutter project, I found that there are some cases where errors occur on m1 and m2 Mac devices. The solution is below:
+
+```bash
+$ sudo arch -x86_64 gem install ffi
+$ cd ios
+$ rm -rf build
+$ rm -rf Pods
+$ rm -rf Podfile.lock
+$ rm -rf ~/.pub-cache/hosted/pub.dartlang.org
+$ pod cache clean --all
+$ flutter clean
+$ flutter pub get
+$ arch -x86_64 pod repo update
+$ arch -x86_64 pod install
+```
+
+## 📱 Result!!
+![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/aa59c7a9-7a31-4f3d-b9da-3b950a347f6d)
 
 
 --- 
