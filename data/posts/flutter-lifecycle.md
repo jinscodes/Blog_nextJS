@@ -10,7 +10,15 @@ The Stateful widget has a lifecycle.
 
 In the Flutter app, the lifecycle of widgets from creation to destruction is managed, and specific methods are called at a specific point in the life cycle. 
 
-Understanding the state of this lifecycle enables precise control of widgets. The build method and initState method that we use without being aware of when creating widgets are also related to the lifecycle.
+Understanding the state of this lifecycle enables precise control of widgets. The **build method** and **initState method** that we use without being aware of when creating widgets are also related to the lifecycle.
+
+- createState
+- initState
+- build
+- setState
+- dispose
+
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/887715a8-5a0f-443c-a881-24c500cafb60)
 
 
 ---
