@@ -58,6 +58,9 @@ This method is required and creates a State object for the widget. It holds all 
 
 ![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/2d4deb25-37af-4511-bbd2-789280a6f35e)
 
+### initState()
+
+
 ---
 [](https://nomadcoders.co/flutter-for-beginners/lobby?utm_source=free_course&utm_campaign=flutter-for-beginners&utm_medium=site)
 
