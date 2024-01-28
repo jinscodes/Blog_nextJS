@@ -52,8 +52,11 @@ The lifecycle of a stateful widget in Flutter consists of seven cycles.
 Understanding these cycles is essential for managing the state and controlling the behavior of the widget. Let’s explore each cycle.
 
 ### CreateState()
-![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/2e2cd513-db5c-4866-ba58-fcd4472ffa00)
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/1bd9fe9b-ef39-4c02-a583-b21b6a76e05f)
 
+This method is required and creates a State object for the widget. It holds all the mutable state for that widget. The State object is associated with the BuildContext by setting the mounted property to true.
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/2d4deb25-37af-4511-bbd2-789280a6f35e)
 
 ---
 [](https://nomadcoders.co/flutter-for-beginners/lobby?utm_source=free_course&utm_campaign=flutter-for-beginners&utm_medium=site)
