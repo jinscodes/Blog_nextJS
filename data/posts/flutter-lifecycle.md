@@ -59,6 +59,12 @@ This method is required and creates a State object for the widget. It holds all 
 ![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/2d4deb25-37af-4511-bbd2-789280a6f35e)
 
 ### initState()
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/375706c4-9941-4014-bf6d-774ef0e75c2b)
+
+This method is automatically called after the widget is inserted into the tree. It is executed only once when the state object is created for the first time. Use this method for initializing variables and subscribing to data sources.
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f8a36a54-7944-4808-8c3d-4cdfbf9380d7)
+
 
 
 ---
