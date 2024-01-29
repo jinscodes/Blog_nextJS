@@ -111,7 +111,12 @@ This method is called when the State object is permanently removed from the widg
 
 After the dispose() method, the State object is no longer in the tree, and the mounted property is set to false. The state object cannot be remounted.
 
+## Conclusion...
+![18](https://github.com/jinscodes/Blog_nextJS/assets/87598134/d8ceeb78-062f-4a9c-8a4a-2386051d8760)
+
 > 💡 The constructor function is not part of the lifecycle as the state of the widget property is empty during that time.
+
+Understanding these lifecycle cycles helps in managing state changes, handling dependencies, and updating the UI effectively in stateful widgets.
 
 ---
 [](https://nomadcoders.co/flutter-for-beginners/lobby?utm_source=free_course&utm_campaign=flutter-for-beginners&utm_medium=site)
