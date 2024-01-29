@@ -52,20 +52,23 @@ The lifecycle of a stateful widget in Flutter consists of seven cycles.
 Understanding these cycles is essential for managing the state and controlling the behavior of the widget. Let’s explore each cycle.
 
 ### CreateState()
-![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/1bd9fe9b-ef39-4c02-a583-b21b6a76e05f)
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a43131a4-6136-4dd7-99bb-039ce31f248c)
 
 This method is required and creates a State object for the widget. It holds all the mutable state for that widget. The State object is associated with the BuildContext by setting the mounted property to true.
 
 ![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/2d4deb25-37af-4511-bbd2-789280a6f35e)
 
 ### initState()
-![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/375706c4-9941-4014-bf6d-774ef0e75c2b)
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9b9099a2-c250-4ff7-a92a-32f852645dba)
 
 This method is automatically called after the widget is inserted into the tree. It is executed only once when the state object is created for the first time. Use this method for initializing variables and subscribing to data sources.
 
 ![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f8a36a54-7944-4808-8c3d-4cdfbf9380d7)
 
+### didChangeDependencies()
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/1aed97ba-6035-48f3-880a-6e9fbc0e4c4a)
 
+The framework calls this method immediately after initState(). It is also called when an object that the widget depends on changes. Use this method to handle changes in dependencies, but it is rarely needed as the build method is always called after this.
 
 ---
 [](https://nomadcoders.co/flutter-for-beginners/lobby?utm_source=free_course&utm_campaign=flutter-for-beginners&utm_medium=site)
