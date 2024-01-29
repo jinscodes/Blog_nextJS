@@ -68,7 +68,12 @@ This method is automatically called after the widget is inserted into the tree. 
 ### didChangeDependencies()
 ![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/1aed97ba-6035-48f3-880a-6e9fbc0e4c4a)
 
-The framework calls this method immediately after initState(). It is also called when an object that the widget depends on changes. Use this method to handle changes in dependencies, but it is rarely needed as the build method is always called after this.
+The framework calls this method immediately after initState(). 
+
+It is also called when an object that the widget depends on changes. Use this method to handle changes in dependencies, but it is rarely needed as the build method is always called after this.
+
+### build()
+
 
 ---
 [](https://nomadcoders.co/flutter-for-beginners/lobby?utm_source=free_course&utm_campaign=flutter-for-beginners&utm_medium=site)
