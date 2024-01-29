@@ -72,8 +72,46 @@ The framework calls this method immediately after initState().
 
 It is also called when an object that the widget depends on changes. Use this method to handle changes in dependencies, but it is rarely needed as the build method is always called after this.
 
-### build()
+![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/fadbe097-3c63-477c-98a7-1671beae6a8d)
 
+### build()
+![8](https://github.com/jinscodes/Blog_nextJS/assets/87598134/7f6c70f4-78a8-4de7-b959-9e50ff59ce71)
+
+This method is required and is called many times during the lifecycle. It is called after didChangeDependencies() and whenever the widget needs to be rebuilt. Update the UI of the widget in this method.
+
+![9](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e22a155d-0ccf-4aab-9b97-064007ea17b8)
+
+### didUpdateWidget()
+![10](https://github.com/jinscodes/Blog_nextJS/assets/87598134/cc4f5744-4365-4472-a45a-021ea81c186e)
+
+This method is called when the parent widget changes its configuration and requires the widget to rebuild. It receives the old widget as an argument, allowing you to compare it with the new widget. Use this method to handle changes in the widget's configuration.
+
+![11](https://github.com/jinscodes/Blog_nextJS/assets/87598134/3b883d97-1462-4a57-b823-42a8638b8852)
+
+### setState()
+![12](https://github.com/jinscodes/Blog_nextJS/assets/87598134/d8650714-69ce-4b49-80bd-2f4d8d35ec42)
+
+The setState() method notifies the framework that the internal state of the widget has changed and needs to be updated. Whenever you modify the state, use this method to trigger a rebuild of the widget's UI.
+
+![13](https://github.com/jinscodes/Blog_nextJS/assets/87598134/7290c3af-5863-4fcf-95b1-046e8d553bb8)
+
+### deactivate()
+![14](https://github.com/jinscodes/Blog_nextJS/assets/87598134/fce3326d-65a3-41cd-9711-baef9263bbc9)
+
+This method is called when the widget is removed from the widget tree but can be reinserted before the current frame changes are finished. Use this method for any cleanup or pausing ongoing operations.
+
+![15](https://github.com/jinscodes/Blog_nextJS/assets/87598134/3e53f69a-b508-49b2-8741-9be39544eca1)
+
+### dispose()
+![16](https://github.com/jinscodes/Blog_nextJS/assets/87598134/dec15a8f-c04a-43fe-bd28-d9c6a17aade2)
+
+This method is called when the State object is permanently removed from the widget tree. Use this method for cleaning up resources, such as data listeners or closing connections.
+
+![17](https://github.com/jinscodes/Blog_nextJS/assets/87598134/dcd362d6-4095-47dd-b26b-ea7b6dd1c152)
+
+After the dispose() method, the State object is no longer in the tree, and the mounted property is set to false. The state object cannot be remounted.
+
+> 💡 The constructor function is not part of the lifecycle as the state of the widget property is empty during that time.
 
 ---
 [](https://nomadcoders.co/flutter-for-beginners/lobby?utm_source=free_course&utm_campaign=flutter-for-beginners&utm_medium=site)
