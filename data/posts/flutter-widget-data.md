@@ -9,10 +9,10 @@ I tried to convey the variables through the constructor, but the statefulWidget 
 
 ![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e8a8c98a-61ef-4f3d-9694-f14d5a0530f1)
 
-## Passing Data to StatefulWidget: Auth
+## Passing Data to StatefulWidget
 The first thing that I wanted to do is to make login widget.
 
-I divided the login functions into three dart files: **auth.dart & login.dart & signup**
+I divided the login functions into three dart files: **auth.dart & login.dart & signup.dart** (I'm not gonna deal with the signup.dart in this post.)
 
 In auth.dart, it has two main things. 
 
@@ -42,7 +42,7 @@ class _AuthState extends State<Auth> {
     	context,
       MaterialPageRoute(
         builder: (context) =>
-          Login(token: loginToken, setToken: setToken)));
+          Login(token: loginToken, setToken: setToken))); // !!!!!
   }
 
 	 Widget build(BuildContext context) {
@@ -50,7 +50,7 @@ class _AuthState extends State<Auth> {
 			...
 			Navbutton(
 				title: login,
-				setState: setToken,
+				setState: loginClick,
 			),
 		);
 	}
@@ -59,15 +59,46 @@ class _AuthState extends State<Auth> {
 
 To check the presence or absence of tokens, declare loginToken and setToken.
 
-Send declared 'loginToken' and 'setToken' to 'NavButton' as Param.
+And then, I tried to send the declared 'loginToken' and 'setToken' to *Login* as Param.
 
-At this time, I thought that if I simply sent it like that, I could use loginToken and setToken right away. However, it was possible to send variables and functions to NavButton, but using it was different from my expectations.
+At this time, I thought that if I sent it like above, I could use `loginToken` and `setToken` right away. However, it was possible to send variables and functions to *Login*, but using it was different from my expectations.
 
-The reason was that stateful Widget is divided into two classes.
+The reason was that statefulWidget is divided into two classes.
 
-![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/33bed845-d3a9-46fe-8b0c-634ebdf8c774)
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/0f83e719-4594-4a11-b04d-87a86839d34b)
 
-## Passing Data to StatefulWidget: Login
+To be precise, if `{title: login, setState: setToken}` in *auth* is sent to *Login*, I got it in Login's first class(StatefulWidget class). However, the place where I wanted to use the received param is the second class.
+
+Here I stopped and thought.
+
+How did I use `{title: login, setState: setToken}` in the second class(_LoginState).
+
+- Send it to _loginState using same method
+- Another way
+
+## Receiving Data to StatefulWidget
+
+### Consturctor
+The first way I tried is the same way I sent parameters from auth to login.
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/760a6883-fb88-4f30-aa69-37c5aa70084a)
+
+Surely, it worked. However, warning occurs.
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c46ab0c8-1ee8-4fc9-bc80-b8f0703471db)
+
+After seeing this error, I speculated that there must be another way to use data sent to statefulWidget from *Auth* in the subclass.
+
+### Widget
+Also, of course, there was a way to use the data passed to the statefulWidget from *Auth* in the subclass that extends the statefulWidget.
+
+It's `widget`!
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/cf1dcc93-0ea1-47da-bd14-711de672efb4)
+
+💡 
 
 ---
 [](https://stackoverflow.com/questions/50287995/passing-data-to-statefulwidget-and-accessing-it-in-its-state-in-flutter)
+
+[](https://docs.flutter.dev/cookbook/navigation/passing-data)
