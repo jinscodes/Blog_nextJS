@@ -358,5 +358,13 @@
     "category": ["Flutter"],
     "path": "flutter-lifecycle",
     "featured": false
+  },
+  {
+    "title": "📱 Flutter Data Passing: Widget",
+    "description": "It is always important to know the lifecycle no matter what framework we study. Let's study flutter widget lifecycle.",
+    "date": "2023-04-05",
+    "category": ["Flutter"],
+    "path": "flutter-widget-data",
+    "featured": false
   }
 ]
