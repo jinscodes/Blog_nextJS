@@ -89,109 +89,52 @@ Even at a glance, using constructor twice is inconvenient and inefficient.
 
 Even, the above code causes warning.
 
----
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e8db3dd3-e844-424c-b2b4-5aef6067dd86)
 
+## Passing Data Through Widget Keyword
+Using the keyword **widget**, the above warning can be solved.
 
+In addition, it is more efficient than code to deliver data using a constructor.
 
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/cf1dcc93-0ea1-47da-bd14-711de672efb4)
 
-
-
-
-
-
-
-
-
-## Passing Data to StatefulWidget
-The first thing that I wanted to do is to make login widget.
-
-I divided the login functions into three dart files: **auth.dart & login.dart & signup.dart** (I'm not gonna deal with the signup.dart in this post.)
-
-In auth.dart, it has two main things. 
-
-1. Check the token to see if being logged in.
-
-2. Go to the login page or signup page.
+Here's the example of using widget:
 
 ```dart
-class Auth extends StatefulWidget {
-  const Auth({super.key});
+// Login.dart
+class Login extends StatefulWidget {
+	final String token;
+	final Function setState;
 
-  @override
-  State<Auth> createState() => _AuthState();
+	Login({super.key, required this.token, required this.setToken}); // constructor
+
+	@override
+  State<Login> createState() => _LoginState();
 }
 
-class _AuthState extends State<Auth> {
-  late String loginToken = "";
+class _LoginState extends State<Login> {
+  @override
+  Widget build(BuildContext context) {
+		String token = widget.token; // widget
+		Function setToken = widget.setToken; // widget
 
-  setToken(token) {
-    setState(() {
-      loginToken = token;
-    });
-  }
-
-	loginClick() {
-    return Navigator.push(
-    	context,
-      MaterialPageRoute(
-        builder: (context) =>
-          Login(token: loginToken, setToken: setToken))); // !!!!!
-  }
-
-	 Widget build(BuildContext context) {
-    return Builder(
+		return const Scaffold(
 			...
-			Navbutton(
-				title: login,
-				setState: loginClick,
-			),
-		);
+		)
 	}
 }
 ```
 
-To check the presence or absence of tokens, declare loginToken and setToken.
+Like the above, with wedget, we don't have to use the constructor twice. In addition, the length of the code can be reduced because it can be used directly without allocation.
 
-And then, I tried to send the declared 'loginToken' and 'setToken' to *Login* as Param.
-
-At this time, I thought that if I sent it like above, I could use `loginToken` and `setToken` right away. However, it was possible to send variables and functions to *Login*, but using it was different from my expectations.
-
-The reason was that statefulWidget is divided into two classes.
-
-![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/0f83e719-4594-4a11-b04d-87a86839d34b)
-
-To be precise, if `{title: login, setState: setToken}` in *auth* is sent to *Login*, I got it in Login's first class(StatefulWidget class). However, the place where I wanted to use the received param is the second class.
-
-Here I stopped and thought.
-
-How did I use `{title: login, setState: setToken}` in the second class(_LoginState).
-
-- Send it to _loginState using same method
-- Another way
-
-## Receiving Data to StatefulWidget
-
-### Consturctor
-The first way I tried is the same way I sent parameters from auth to login.
-
-![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/760a6883-fb88-4f30-aa69-37c5aa70084a)
-
-Surely, it worked. However, warning occurs.
-
-![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c46ab0c8-1ee8-4fc9-bc80-b8f0703471db)
-
-After seeing this error, I speculated that there must be another way to use data sent to statefulWidget from *Auth* in the subclass.
-
-### Widget
-Also, of course, there was a way to use the data passed to the statefulWidget from *Auth* in the subclass that extends the statefulWidget.
-
-It's `widget`!
-
-![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/cf1dcc93-0ea1-47da-bd14-711de672efb4)
-
-💡 
+> 💡 If we want to allocate data with *widget* keyword, we must write the type in front.   
+> At this time, the type must match the original existing data type.
 
 ---
 [](https://stackoverflow.com/questions/50287995/passing-data-to-statefulwidget-and-accessing-it-in-its-state-in-flutter)
 
 [](https://docs.flutter.dev/cookbook/navigation/passing-data)
+
+[](https://medium.com/flutter-community/simple-ways-to-pass-to-and-share-data-with-widgets-pages-f8988534bd5b)
+
+[](https://www.youtube.com/watch?v=cuT1koj18yU)
