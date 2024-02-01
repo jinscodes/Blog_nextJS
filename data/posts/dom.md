@@ -18,12 +18,36 @@ It exists at the top of the tree and must be through the document node to access
 That is, it is an entry point for accessing the DOM tree.
 
 #### Element Node
+An element node represents an HTML element.
 
+To access attributes and text nodes, we must first find and access element nodes. All element nodes consist of objects that inherit HTMLElement objects to express the characteristics of each element.
+
+```javascript
+document.getElementById(id) // Select one element node with id attribute value
+```
 
 #### Attribute Node
+The attribute node represents an attribute of an HTML element.
+
+The attribute node is represented as part of the element, not as a child of the specified element.
+Therefore, by finding and accessing the corresponding element node, you can refer to and modify the attribute.
+
+```javascript
+document.querySelector('h1').id = 'heading'; // Change the value of the id attribute
+```
 
 #### Text Node
+The text node represents the text of the HTML element.
 
+Text nodes are children of element nodes and cannot have their own child nodes.
+
+That is, the text node is the final lower end of the DOM tree.
+
+The text of the element is stored on a text node. A procedure is required to access the text node.
+
+> 💡 <>~</> A pair of brackets is one node object.
+
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e0f1494b-044f-42c0-ab1b-463bbe561154)
 
 
 ---
