@@ -49,6 +49,43 @@ The text of the element is stored on a text node. A procedure is required to acc
 
 ![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e0f1494b-044f-42c0-ab1b-463bbe561154)
 
+## Javascript Browser DOM Grammar
+#### Select DOM Element
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/731c3469-dfd5-460f-9d73-ccce53ba823f)
+
+```js
+var selectedItem = document.getElementsByTagName("li"); // Select all <li> elelments
+
+for (var i = 0; i < selectedItem.length; i++) {
+    console.log(selectedItem[i]); // Touring the tag arrangements
+}
+```
+
+```js
+document.getElementById("idname"); // Bring id value
+document.getElementsByClassName("classname")[0]; // First element among seleted elements => index 0
+document.getElementsByTagName("button")[0];
+
+// Get all <div>tags and the first div tag among them, the first choice among those whose class is button
+document.getElementsByClassName("div")[0].getElementsByClassName("button")[0];
+
+document.querySelector("#idname"); // Select Selected Query Statement
+document.querySelector("#idname, .classname"); // Multiple properties to choose from!!
+document.querySelectorAll(".classname")[0];
+```
+
+```html
+ <div id="login-form">
+      <input type="text" placeholder="what is your name?" />
+      <button>Log In</button>
+ </div>
+
+ <script>
+      const $loginForm = document.querySelector('#login-form');
+      const $loginInput = $loginForm.querySelector('input'); // Query to select children of <div> tag
+      const $loginButton = $loginForm.querySelector('button');
+ </script>
+```
 
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-DOM-%EB%AC%B8%EB%B2%95-%F0%9F%92%AF-%EC%B4%9D%EC%A0%95%EB%A6%AC)
