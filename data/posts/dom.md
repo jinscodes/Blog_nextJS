@@ -111,6 +111,7 @@ console.log([...elems]); // [li#one.red, li#two.red, li#three.red]
 ![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/0c2b5678-7743-4dc5-a91b-f788eaa3b06e)
 
 #### HTML Select Query Statement
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e0104b39-be03-4a45-ba99-92dbdce7e8ad)
 
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-DOM-%EB%AC%B8%EB%B2%95-%F0%9F%92%AF-%EC%B4%9D%EC%A0%95%EB%A6%AC)
