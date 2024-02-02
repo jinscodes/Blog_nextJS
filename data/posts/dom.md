@@ -113,5 +113,74 @@ console.log([...elems]); // [li#one.red, li#two.red, li#three.red]
 #### HTML Select Query Statement
 ![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e0104b39-be03-4a45-ba99-92dbdce7e8ad)
 
+## Exploring DOM Elements
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/fc72885f-9409-4619-9555-996e13963b93)
+
+![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/fe1969f8-57cc-4aca-86fc-d7b6c6903d21)
+
+There are examples:
+
+**Example 1**
+
+```HTML
+<html>
+  <head>
+  </head>
+  <body>
+    <ul id="languages">
+      <li class="html">HTML</li>
+      <li class="css">CSS</li>
+      <li class="js">JS</li>
+    </ul>
+    <script>
+      const $css = document.querySelector('.css');
+      
+      console.log($css.previousSibling);
+      console.log($css.nextSibling);
+      console.log($css.previousElementSibling);
+      console.log($css.nextElementSibling);
+    </script>
+  </body>
+</html>
+```
+
+**Result:**
+
+![8](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ef7eb815-72d6-4076-b598-b614e3125fee)
+
+**Examle 2**
+
+```HTML
+<html>
+  <head>
+  </head>
+  <body>
+    <ul id="languages">
+      <li class="html">HTML</li>
+      <li class="css">CSS</li>
+      <li class="js">JS</li>
+    </ul>
+    <script>
+      const $languages = document.getElementById('languages');
+      
+      console.log($languages);
+      console.log($languages.childNodes);
+      console.log($languages.children);
+      console.log($languages.firstChild);
+      console.log($languages.lastChild);
+      console.log($languages.firstElementChild);
+      console.log($languages.lastElementChild);
+      console.log($languages.hasChildNodes());
+      console.log($languages.children.length);
+      console.log($languages.childElementCount);
+    </script>
+  </body>
+</html>
+```
+
+**Result:**
+
+![9](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ebd89e69-be92-4cc5-a5a9-d60f5e2f2c46)
+
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-DOM-%EB%AC%B8%EB%B2%95-%F0%9F%92%AF-%EC%B4%9D%EC%A0%95%EB%A6%AC)
