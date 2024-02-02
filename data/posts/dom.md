@@ -87,5 +87,30 @@ document.querySelectorAll(".classname")[0];
  </script>
 ```
 
+#### Elemental Arrangement Circuit
+The return value of the getElementsByClassName method is **HTMLCollection**.
+
+The list returned by **HTMLCollection** is a real-time pseudo-array.
+
+It reflects the change in the state of the node in real time, so care should be taken if a loop is needed. (If we remove or change the array value in the middle, it automatically aligns the index.)
+
+--> Solution: It is copied to an array somewhere and used as that.
+
+```js
+const elems = document.getElementsByClassName('red');
+
+// Copy and convert HTMLCollection, a pseudo-array object, into an array.
+// HTML Collection converted into an array is no longer live.
+// Even if copy the array values, there is no problem because it is connected to the dom as a reference.
+console.log([...elems]); // [li#one.red, li#two.red, li#three.red]
+
+[...elems].forEach(elem => elem.className = 'blue');
+```
+
+#### HTMLCollection vs NodeList
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/0c2b5678-7743-4dc5-a91b-f788eaa3b06e)
+
+#### HTML Select Query Statement
+
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-DOM-%EB%AC%B8%EB%B2%95-%F0%9F%92%AF-%EC%B4%9D%EC%A0%95%EB%A6%AC)
