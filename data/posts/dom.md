@@ -182,5 +182,63 @@ There are examples:
 
 ![9](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ebd89e69-be92-4cc5-a5a9-d60f5e2f2c46)
 
+## Adjust DOM Element Properties
+![10](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ecd8f3d8-8a9e-457f-ba7e-2aa44bde2628)
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+  <input type="text">
+  <script>
+     const input = document.querySelector('input[type=text]');
+     console.log(input);
+
+     if (!input.hasAttribute('value')) {  // if there is no value attribute
+       //  Add value attribute and set 'hello!' as value
+       input.setAttribute('value', 'hello!');
+     }
+
+     // value 어트리뷰트 값을 취득
+     console.log(input.getAttribute('value')); // hello!
+
+     // value 어트리뷰트를 제거
+     input.removeAttribute('value');
+
+  </script>
+  </body>
+</html>
+```
+
+![11](https://github.com/jinscodes/Blog_nextJS/assets/87598134/72c36b70-a1e0-4799-acca-57ac745c85c3)
+
+```html
+<form> 
+  <input type="password" name="input"/> 
+</form>
+```
+
+```css
+input { 
+  display: block; 
+  background-color: red; 
+  width: 200px; 
+  height: 10px; 
+}
+```
+
+```js
+const input = document.querySelector("input"); 
+
+input.style.display = "none"; 
+input.style.width = "100px"; 
+input.name = "output";
+input.id = "input_id";
+input.style['font-size'] = '2rem';
+
+// Note that the value of the css property must be enclosed in quotation marks and substituted in the form of a string.
+```
+
+
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-DOM-%EB%AC%B8%EB%B2%95-%F0%9F%92%AF-%EC%B4%9D%EC%A0%95%EB%A6%AC)
