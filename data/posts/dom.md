@@ -245,6 +245,54 @@ Node: Each element of the HTML page (html, head, body . . ., etc.)
 - Element Node: HTML Tag
 - Text Node: Characters within element nodes
 
+![12](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b9bc8dbd-67e4-4f15-868f-38ad2765b6a3)
+
+```html
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Node Access</title>
+</head>
+
+<body>
+	<h1>nodeName property</h1>
+	<p id="document"></p>
+	<p id="html"></p>
+	<h1 id="heading">nodeValue property</h1>
+	<p id="text1">text</p>
+
+	<script>
+		// The first child node in the document is <!DOCTYPE html> and the second child node is <html>.
+		console.log(document.childNodes[1].nodeName)
+
+		// The first child of the document's second child node html is the head node.
+		console.log(document.childNodes[1].childNodes[0].nodeName)
+
+		// The first child node text node of the third child node body of the second child node html of the document
+		console.log(document.childNodes[1].childNodes[2].childNodes[0].nodeName)
+
+		// Select the node value of the first child node (text node) of the element with ID "heading".
+		console.log(document.getElementById("heading").firstChild.nodeValue)
+	</script>
+</body>
+
+</html>
+```
+
+![](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b8793d2f-13aa-4c68-89fd-ac4c5e06c631)
+
+### 💡 Processing of empty text nodes
+Currently, most major web browsers support the W3CDOM model, but there are some differences in how they are handled.
+
+Among them, the biggest difference is how spacing and line changes are handled.
+ 
+Firefox and other browsers treat spacing or line changes as text nodes.
+However, Explorer does not treat spacing or line changes as text nodes.
+ 
+Therefore, if we try to access the desired node using a child node or a sibling node, there will be a difference between browsers.
+The easiest way to eliminate this difference is to use nodeType properties to examine the type of selected element.
 
 
 
