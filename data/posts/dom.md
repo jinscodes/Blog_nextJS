@@ -239,6 +239,14 @@ input.style['font-size'] = '2rem';
 // Note that the value of the css property must be enclosed in quotation marks and substituted in the form of a string.
 ```
 
+## Check DOM Node
+Node: Each element of the HTML page (html, head, body . . ., etc.)
+
+- Element Node: HTML Tag
+- Text Node: Characters within element nodes
+
+
+
 
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-DOM-%EB%AC%B8%EB%B2%95-%F0%9F%92%AF-%EC%B4%9D%EC%A0%95%EB%A6%AC)
