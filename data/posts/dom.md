@@ -294,7 +294,100 @@ However, Explorer does not treat spacing or line changes as text nodes.
 Therefore, if we try to access the desired node using a child node or a sibling node, there will be a difference between browsers.
 The easiest way to eliminate this difference is to use nodeType properties to examine the type of selected element.
 
+## Using DOM
+Access to an element allows us to access and change various properties of the element.
 
+- 💡 Adding content containing markups is vulnerable to XSS(Cross-Site Scripting Attacks)
+
+![13](https://github.com/jinscodes/Blog_nextJS/assets/87598134/8c221bcb-498c-4525-9fe9-93029697c422)
+
+```html
+<div id="test">TEST</div>
+ 
+<script type="text/javascript">
+	alert(document.getElementById('test').innerHTML);
+	// Resut is TEST
+ 
+	alert(document.getElementById('test').outerHTML);
+	// Result is <div id="test">TEST</div>
+
+</script>
+```
+
+```js
+const one = document.getElementById('one');
+
+// Obtain content with markup
+console.log(one.innerHTML); // Seoul
+
+// Change content with markup
+one.innerHTML += '<em class="blue">, Korea</em>';
+
+// Obtain content with markup
+console.log(one.innerHTML); // Seoul <em class="blue">, Korea</em>
+```
+
+```html
+<div>
+  <h1>Cities</h1>
+  <ul>
+     <li id="one" class="red">Seoul</li>
+     <li id="two" class="red">London</li>
+     <li id="three" class="red">Newyork</li>
+     <li id="four">Tokyo</li>
+  </ul>
+</div>
+
+<script>
+    const ul = document.querySelector('ul');
+    console.log(ul.textContent); // Acquiring text from an element
+    /*
+            Seoul
+            London
+            Newyork
+            Tokyo
+    */
+    
+    const one = document.getElementById('one');
+    console.log(one.textContent); // Acquiring text from an element // Seoul
+    
+    one.textContent += ', Korea'; // Changing text from an element
+    console.log(one.textContent); // Seoul, Korea
+
+    // Change the content that contains markup of an element.
+    one.textContent = '<h1>Heading</h1>';
+    
+    // Markup is displayed as a string.
+    console.log(one.textContent); // <h1>Heading</h1>
+</script>
+```
+
+![14](https://github.com/jinscodes/Blog_nextJS/assets/87598134/062d2879-437f-4cbb-81db-6282330cf538)
+
+```html
+<body>
+  <ul id="languages">
+    <li class="html">HTML</li>
+    <li class="css">CSS</li>
+    <li class="js">JS</li>
+  </ul>
+  
+  <script>
+    const $languages = document.getElementById('languages');
+    
+    $languages.insertAdjacentHTML('beforebegin', '<p>Insert into beforebegin</p>');
+    $languages.insertAdjacentHTML('afterbegin', '<p>Insert into afterbegin</p>');
+    $languages.insertAdjacentHTML('beforeend', '<p>Insert into beforeend</p>');
+    $languages.insertAdjacentHTML('afterend', '<p>Insert into afterend</p>');
+  </script>
+</body>
+```
+
+![15](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e782f58c-ac73-4a94-88ff-3c973a00544c)
+
+> 🚨 innerHTML and insertAdjacentHTML() are vulnerable to XSS (Cross-Site Scripting Attacks).
+
+> When adding or changing text, textContent is used, and when adding or deleting a new element, the DOM operation method is used.
 
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-DOM-%EB%AC%B8%EB%B2%95-%F0%9F%92%AF-%EC%B4%9D%EC%A0%95%EB%A6%AC)
