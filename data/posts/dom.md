@@ -389,5 +389,16 @@ console.log(one.innerHTML); // Seoul <em class="blue">, Korea</em>
 
 > When adding or changing text, textContent is used, and when adding or deleting a new element, the DOM operation method is used.
 
+## Add/Delete DOM
+A way to add new content without using innerHTML properties is to manipulate DOM directly.
+
+1. Create an element node using CreateElement() method to create a new element node. Pass the tag name as a argument of the createElement() method.
+
+2. Create new Text Node using the createTextNode() method. In some cases, it may be omitted, but if omitted, the content becomes an empty element.
+
+3. Add nodes created using the appendChild() method to the DOM tree. Alternatively, nodes can be deleted from DOM tree using the removeChild() method.
+
+![16](https://github.com/jinscodes/Blog_nextJS/assets/87598134/5a824b20-f204-4c18-99d2-465a5efa6351)
+
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-DOM-%EB%AC%B8%EB%B2%95-%F0%9F%92%AF-%EC%B4%9D%EC%A0%95%EB%A6%AC)
