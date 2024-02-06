@@ -586,5 +586,67 @@ let originalp = document.getElementById('paragraphid'); // Select an element to 
 let oldp = originalp.parentNode.replaceChild(p, originalp); // Replace child element from parent tag of element to be replaced
 ```
 
+## Change DOM Element Style
+The Element.prototype.style method discussed earlier may not work properly in practice.
+
+This is because it only returns inline styles.
+
+In practice, CSS styles are often changed externally, such as external *.css files, external *.js files, media queries, events, and the use of css preprocessors.
+​
+At this time, if the window.getCompleteStyle method is used, all types of styles applied globally to the corresponding element can be returned.
+
+And this method almost omits the second argument, but if passing the :after/:before virtual selector, we can see everything about it.
+
+The window.getCompleteStyle method returns all CSS property values of a given element as a factor.
+
+```html
+<html>
+<head>
+  <style>
+    .box {
+      width: 100px;
+      height: 50px;
+      background-color: red;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+  <script>
+    const box = document.querySelector('.box');
+
+    const width = getStyle(box, 'width');
+    const height = getStyle(box, 'height');
+    const backgroundColor = getStyle(box, 'background-color');
+    const border = getStyle(box, 'border');
+
+    console.log('width: ' + width);
+    console.log('height: ' + height);
+    console.log('backgroundColor: ' + backgroundColor);
+    console.log('border: ' + border);
+
+    /*
+     *  Return css property applied to the element.
+     * @param {HTTPElement} elem - target element node.
+     * @param {string} prop - Target CSS property.
+     * @returns {string} CSS property value.
+     */
+    function getStyle(elem, prop) {
+      return window.getComputedStyle(elem, null).getPropertyValue(prop);
+    }
+  </script>
+</body>
+</html>
+```
+
+![24](https://github.com/jinscodes/Blog_nextJS/assets/87598134/7a276c5b-0673-4d32-ba95-7a5966ea3eaf)
+
+
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-DOM-%EB%AC%B8%EB%B2%95-%F0%9F%92%AF-%EC%B4%9D%EC%A0%95%EB%A6%AC)
+
+[](https://tcpschool.com/javascript/js_dom_element)
+
+[](https://poiemaweb.com/js-dom)
