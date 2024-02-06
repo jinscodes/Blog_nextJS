@@ -468,7 +468,123 @@ A way to add new content without using innerHTML properties is to manipulate DOM
 
 ![18](https://github.com/jinscodes/Blog_nextJS/assets/87598134/bdb6af8c-d115-4d53-b66b-2966358810bd)
 
-## 
+#### Create HTML Document
+```js
+// Create HTML Document
+let newdoc = document.implementation.createHTMLDocument("HTML Document");
+
+// Created content in the div tag.
+let div = newdoc.createElement("div");
+div.innerHTML = "<span>HTML 문서 샘플</span>";
+newdoc.body.appendChild(div); // Attaching child to document body
+
+// Get an eyeframe reference to paste HTML document
+targetdoc = document.getElementById('newframe').contentDocument;
+// Copy new node to paste
+let newnode = targetdoc.importNode(newdoc.documentElement, true);
+// Replace i-frame document with new node
+targetdoc.replaceChild(newnode, targetdoc.documentElement);
+```
+
+#### Create Element
+```js
+let div = document.createElement('div'); // Create div tag
+let span = document.createElement('span'); // Create span tag
+span.textContent = 'HTML 문서 샘플'; // Put text in span tag 
+
+div.appendChild(span); // Inherit span tag as div child
+document.body.appendChild(div); // Inherit div tag as body child -> add tag
+```
+
+#### Delete Element
+```js
+document.getElementById('delid').remove(); // Delete selected tag self 
+
+let parent = document.getElementById('parentdiv');
+let child = document.getElementById('childspan');
+parent.removeChild(child); // delete child within parent in format: parentElement.removeChild(childElement);
+```
+
+#### Insert and Move Element
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Elemetnt Insert</title>
+</head>
+<body>
+  <ul id="friends">
+    <li class="animal">lion</li>
+    <li class="fruit">apeach</li>
+    <li class="animal">prodo</li>
+    <li class="alien">con
+      <ul class="keyword">
+        <li>3</li>
+        <li>short leg</li>
+        <li>green monster</li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="icons">
+    <li>
+      <span>small</span>
+      <span>medium</span>
+      <span>big</span>
+    </li>
+  </ul>
+  <ul id="newfriends">
+  </ul>
+</body>
+</html>
+```
+
+![21](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f3659fbc-381f-4998-8ed9-70eae3a645f9)
+
+```js
+/* javascript */
+
+// Create new <li> Element
+let li = document.createElement('li');
+let litext = document.createTextNode('muji');
+li.appendChild(litext);
+
+
+// Select target parent to place new <li> element 
+let targetul = document.getElementById('friends');
+targetul.appendChild(li); // Put the newly created <li> tag at the end of the ul children with the friends ID.
+```
+
+![22](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ec3e41f5-eaca-4579-8e16-26cad56f99cd)
+
+```js
+// Select an element to move
+let sourceli = document.querySelector('ul#friends li:first-child');
+// Select the element by position to insert
+let targetli =  document.querySelector('ul#friends li:last-child');
+
+// Be careful where you attach it
+// 1 depth, ul Attached to the end of the nested internal ul, not the last element.
+targetli.after(sourceli);
+
+// The reason why the word "muji" is added to the script is because the word "muji" is the end of the word "green monster" in the original comment
+```
+
+![23](https://github.com/jinscodes/Blog_nextJS/assets/87598134/8654666e-ae77-4877-ab36-fb00cbbb3893)
+
+#### Replacement Element
+You can replace the selected element itself with a newly created element or another selected element.\
+
+The replaceChild() method replaces one child element under the current element with a new element.
+
+```js
+let p = document.createElement('p'); // Create <p> element
+let ptext = document.createTextNode('문단 텍스트 내용'); // Create paragraph content text
+p.appendChild(ptext); // Fill in text with paragraph content in <p>
+
+let originalp = document.getElementById('paragraphid'); // Select an element to replace
+
+let oldp = originalp.parentNode.replaceChild(p, originalp); // Replace child element from parent tag of element to be replaced
+```
 
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-DOM-%EB%AC%B8%EB%B2%95-%F0%9F%92%AF-%EC%B4%9D%EC%A0%95%EB%A6%AC)
