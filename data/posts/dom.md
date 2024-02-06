@@ -239,7 +239,67 @@ input.style['font-size'] = '2rem';
 // Note that the value of the css property must be enclosed in quotation marks and substituted in the form of a string.
 ```
 
-## Check DOM Node
+## Adjust DOM Class Property
+![19](https://github.com/jinscodes/Blog_nextJS/assets/87598134/1c5c7520-933c-4d91-8587-b46c917e5306)
+
+```html
+<p id="a11" class="document, aa, bb, cc, dd"></p>
+
+<script>
+    let a = document.querySelector("#a11");
+    console.log(a.className) // "document, aa, bb, cc, dd"
+
+    let arr = a.className.split(", "); // [ 'document', 'aa', 'bb', 'cc', 'dd' ]
+</script>
+```
+
+![20](https://github.com/jinscodes/Blog_nextJS/assets/87598134/83cca16b-aa60-4d7c-8366-95e319dc9a06)
+
+```js
+var element = document.createElement('tagName');
+
+var addClass = element.classList.add('className'); // Add class
+var removeClass = element.classList.remove('className'); // Delete class
+var toggleClass = element.classList.toggle('className'); // Toggle class
+// If class exists, remove it. if not, add class.
+```
+
+```js
+const div = document.createElement('div');
+div.className = 'foo';
+
+// our starting state: <div class="foo"></div>
+console.log(div.outerHTML);
+
+// use the classList API to remove and add classes
+div.classList.remove("foo");
+div.classList.add("anotherclass");
+
+// <div class="anotherclass"></div>
+console.log(div.outerHTML);
+
+// if visible is set remove it, otherwise add it
+div.classList.toggle("visible");
+
+// add/remove visible, depending on test conditional, i less than 10
+div.classList.toggle("visible", i < 10 );
+
+console.log(div.classList.contains("foo"));
+
+// add or remove multiple classes
+div.classList.add("foo", "bar", "baz");
+div.classList.remove("foo", "bar", "baz");
+
+// add or remove multiple classes using spread syntax
+const cls = ["foo", "bar"];
+div.classList.add(...cls);
+div.classList.remove(...cls);
+
+// replace class "foo" with class "bar"
+div.classList.replace("foo", "bar");
+```
+
+## Make an Inquiry DOM Node
 Node: Each element of the HTML page (html, head, body . . ., etc.)
 
 - Element Node: HTML Tag
@@ -407,6 +467,8 @@ A way to add new content without using innerHTML properties is to manipulate DOM
 > It is recommended to control the DOM using the before(), after() method as much as possible.
 
 ![18](https://github.com/jinscodes/Blog_nextJS/assets/87598134/bdb6af8c-d115-4d53-b66b-2966358810bd)
+
+## 
 
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-DOM-%EB%AC%B8%EB%B2%95-%F0%9F%92%AF-%EC%B4%9D%EC%A0%95%EB%A6%AC)
