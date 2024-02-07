@@ -13,6 +13,15 @@ If we used this in React, displaying 1000 elements would require in the order of
 ![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/cade6415-606b-4069-b5e0-134855bd2b08)
 
 ## Diffing Algorithm
+When comparing the two trees(diffing two trees), React firstly compares the two **root** elements. After comparing the root elements, next step depends on the root element type.
+
+### Different types of elements
+If the type of the root elements is different, React abandons the old tree and builds a whole new tree.   
+For example, `<a>` -> `<img>` | `<Article>` -> `<Comment>` | `<Button>` -> `<div>`
+
+When the tree is teared down, previous DOM nodes are destroyed. And then, component instances receive componentWillUnmount(). 
+
+When building a new tree, new DOM nodes are inserted into a DOM.
 
 ---
 [](https://legacy.reactjs.org/docs/reconciliation.html)
