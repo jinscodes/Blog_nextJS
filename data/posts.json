@@ -374,5 +374,13 @@
     "category": ["WebCS", "JavaScript"],
     "path": "dom",
     "featured": false
+  },
+  {
+    "title": "Reconcillation",
+    "description": "",
+    "date": "2023-04-20",
+    "category": ["WebCS", "ReactJs"],
+    "path": "react-reconcillation",
+    "featured": false
   }
 ]
