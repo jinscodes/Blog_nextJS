@@ -1,0 +1,7 @@
+{
+  "/page": "/",
+  "/posts/page": "/posts",
+  "/about/page": "/about",
+  "/posts/[postPage]/page": "/posts/[postPage]",
+  "/posts/[postPage]/[categorizedPostPage]/page": "/posts/[postPage]/[categorizedPostPage]"
+}
