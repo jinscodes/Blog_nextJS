@@ -77,6 +77,8 @@ Visualize the it:
 
 ![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c4aa5117-a19e-45d2-bf0b-72d2779e5108)
 
+
+
 When updating style, React also knows to update only the properties that changed.
 
 ```html
@@ -101,6 +103,8 @@ Next, the render() method is called and the diff algorithm recurses on the previ
 >	- UNSAFE_componentWillReceiveProps()
 
 ## Recursing On Children
+By default, when recursing the children of the DOM node, React just iterates over both lists of children at the same time. After that, whenever there's a difference, React generates a mutation. 
+
 
 
 
