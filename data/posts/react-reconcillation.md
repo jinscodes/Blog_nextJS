@@ -21,7 +21,28 @@ For example, `<a>` -> `<img>` | `<Article>` -> `<Comment>` | `<Button>` -> `<div
 
 When the tree is teared down, previous DOM nodes are destroyed. And then, component instances receive componentWillUnmount(). 
 
-When building a new tree, new DOM nodes are inserted into a DOM.
+When building a new tree, new DOM nodes are inserted into the DOM. Component instance receives UNSAFE_componentWillMount() and then componentDidMount(). 
+
+**Any state associated with the old tree is lost.**
+
+Every components under the root element are unmounted, and the state is gone too. For example,
+
+```html
+<div>
+	<Counter />
+</div>
+
+<span>
+	<Counter />
+</span>
+```
+
+This will destroy the old Counter and remount a new one.
+
+> 🚨 **CUATUION**:   
+> This method is considered legacy and should be avoided to use it in new code
+
+> - UNSAFE_componentWillMount()
 
 ---
 [](https://legacy.reactjs.org/docs/reconciliation.html)
