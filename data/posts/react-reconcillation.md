@@ -77,7 +77,17 @@ Visualize the it:
 
 ![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c4aa5117-a19e-45d2-bf0b-72d2779e5108)
 
+React builds the new DOM tree with changed node whenevere there is a change. 
 
+🚨 Remind: Virtual DOM is just object to present the UI. It means that there's nothing on the screen. 
+
+React builds a new virtual DOM tree and then uses a diffing mechanism to compare it to the previous snapshot to determine what modifications are required. **Reconciliation** is the name given to this procedure. 
+
+React employs a renderer library like ReactDOM after the reconciliation process, which uses the updated app information to update the rendered app. This module guarantees that the changed node or nodes are the only ones sent to and painted by the actual DOM
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/42eeadc8-6989-480d-8e85-82266620fa20)
+
+Only the node whose data changes gets repainted in the actual DOM, as can be seen in the image above.
 
 When updating style, React also knows to update only the properties that changed.
 
@@ -100,6 +110,7 @@ Next, the render() method is called and the diff algorithm recurses on the previ
 > These methods are considered legacy and you should avoid them in new code
 
 > - UNSAFE_componentWillUpdate()
+
 >	- UNSAFE_componentWillReceiveProps()
 
 ## Recursing On Children
