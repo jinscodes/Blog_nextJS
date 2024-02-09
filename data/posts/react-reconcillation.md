@@ -28,10 +28,12 @@ When building a new tree, new DOM nodes are inserted into the DOM. Component ins
 Every components under the root element are unmounted, and the state is gone too. For example,
 
 ```html
+// original code
 <div>
 	<Counter />
 </div>
 
+// changed code
 <span>
 	<Counter />
 </span>
@@ -50,8 +52,11 @@ When comparing two React DOM elements of same type, React looks at the attribute
 Here is the Example: 
 
 ```html
+// original
 <div className="before" title="stuff" />
 
+
+// changed
 <div className="after" title="stuff" />
 ```
 
@@ -60,14 +65,14 @@ By comparing these two elements, React knows to only modify the `className` on t
 Visualize the it:
 
 ```html
+// original
 <div>
 	<h3>H3<h3>
 	<form></form>
 	<span>before</span>
 </div>
 
-	-->
-
+// changed
 <div>
 	<h3>H3<h3>
 	<form></form>
@@ -92,8 +97,10 @@ Only the node whose data changes gets repainted in the actual DOM, as can be see
 When updating style, React also knows to update only the properties that changed.
 
 ```html
+// original
 <div style={{color: 'red', fontWeight: 'bold'}} />
 
+// changed
 <div style={{color: 'green', fontWeight: 'bold'}} />
 ```
 
@@ -116,8 +123,43 @@ Next, the render() method is called and the diff algorithm recurses on the previ
 ## Recursing On Children
 By default, when recursing the children of the DOM node, React just iterates over both lists of children at the same time. After that, whenever there's a difference, React generates a mutation. 
 
+For example, when adding an element at the end of the children, converting between these two trees works well
 
+```html
+// original
+<ul>
+	<li>first</li>
+	<li>second</li>
+</ul>
 
+// changed
+<ul>
+	<li>first</li>
+	<li>second</li>
+	<li>third</li>
+</ul>
+```
+
+React wil match the two `<li>first</li>`, match the two `<li>second</li>`, and then insert the `<li>third</li>`.
+
+However, if adding an element at the beginning of the children, performance is not good. 
+
+```html
+// original
+<ul>
+	<li>Jay</li>
+	<li>Rosie</li>
+<ul>
+
+// changed
+<ul>
+	<li>Duke</li>
+	<li>Jay</li>
+	<li>Rosie</li>
+<ul>
+```
+
+In the case of the above code, React will mutate every child instead of realizing it can keep the <li>Duke</li> and <li>Villanova</li> subtrees intact. This inefficiency can be a problem.
 
 ---
 [](https://legacy.reactjs.org/docs/reconciliation.html)
