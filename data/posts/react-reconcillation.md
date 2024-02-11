@@ -200,6 +200,35 @@ If the array is rearranged during using the index as a key, errors relating to t
 
 *🚨 As a result, component state for things like uncontrolled inputs can get mixed up and updated in unexpected ways.*
 
+## Summary
+React treats every elements, whether functional or class, as a separate component. A state may be present in a component. React refreshes its virtual DOM tree whenever making a change to the JSX file or whenever the state of any component changes. Although it would appear to be inefficient, updating the react virtual DOM doesn't need much time. Therefore, the cost is not substantial.
+
+It analyses that React virtual DOM before and after the update to determine exactly what has changes.
+
+**"Diffing"** is the process of contrasting the most recent virtual DOM tree with the oldest. React updates only those objects on the real DOM after it determines precisely what has changed. Updates to the real DOM are transmitted rather than a single update for every time a component's state changes. *React accomplishes this effectively by guranteeing that the real DOM receives batch changes to re-render the UI.* 
+
+Re-rendering the user interface is the most expensive component of the process. 
+
+💡 **Reconciliation refers to the full process of converting changes to the actual DOM.**
+
+This dramatically boosts performance, which is the key factor in why developers from all over the world adore React and its virtual DOM.
+
+Reconciliation, as mentioned above, is the process of synchronizing the VDOM with the actual DOM. React builds a tree starting at the root node for this to occur.
+
+The true DOM, which has four nodes, is represented as a tree in the diagram below.
+
+**Real DOM**
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b8091e03-6174-4e1b-90f7-7944e062d7c2)
+
+*React compares the root components* in the react virtual DOM and actual DOM because the app's state changes using its diffing method. *It disassembles the affected nodes and remounts them* whenever it comes across root elements that have changed. 
+
+The nodes that get remounted in this example are those that are highlighted in green in the tree representation below.
+
+**Virtual DOM**
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/25a1ed19-f55a-4e7a-99ee-d689495e17df)
+
 ---
 [](https://legacy.reactjs.org/docs/reconciliation.html)
 
