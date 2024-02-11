@@ -161,6 +161,34 @@ However, if adding an element at the beginning of the children, performance is n
 
 In the case of the above code, React will mutate every child instead of realizing it can keep the <li>Duke</li> and <li>Villanova</li> subtrees intact. This inefficiency can be a problem.
 
+## Keys
+To solve the inefficiency mentioned above, React supports key attribute.
+
+If children have a key, React uses the key to match chlidren in the original tree with children in subsequent tree.
+
+```html
+// original
+<ul>
+	<li key="2015">Jay</li>
+	<li key="2016">Rosie</li>
+<ul>
+
+// changed
+<ul>
+	<li key="2014">Duke</li>
+	<li key="2015">Jay</li>
+	<li key="2016">Rosie</li>
+<ul>
+```
+
+Like the above code, the element that has the key "2014" is added, and the elements that have the key "2015" and "2016" are just needed to move.
+
+In practice, it's not difficult to find the key. The element that is needed to be displayed may have an unique ID, so the key can just come from the data.
+
+```html
+<li key={item.id}>{item.name}</li>
+```
+
 ---
 [](https://legacy.reactjs.org/docs/reconciliation.html)
 
