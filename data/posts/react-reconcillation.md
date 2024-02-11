@@ -189,6 +189,17 @@ In practice, it's not difficult to find the key. The element that is needed to b
 <li key={item.id}>{item.name}</li>
 ```
 
+### Exception
+When that's not the case, we can add a new ID property to the model or hash some parts of the contetn to generate a key. The key only has to be unique among its siblings, not need to be globally unique. 
+
+*As a last resort, index of the item in the array can be used for the key.*
+
+If the items are not reordered, it works well. However, if the items are reordered, it works inefficiently.
+
+If the array is rearranged during using the index as a key, errors relating to the state of components can happen. Component instance is updated and reused based on the key. If the key is an index, moving an item changes it. 
+
+*🚨 As a result, component state for things like uncontrolled inputs can get mixed up and updated in unexpected ways.*
+
 ---
 [](https://legacy.reactjs.org/docs/reconciliation.html)
 
