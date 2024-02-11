@@ -44,3 +44,10 @@
     }
   }
 }
+
+// 모바일
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 2.8rem !important;
+  }
+}
