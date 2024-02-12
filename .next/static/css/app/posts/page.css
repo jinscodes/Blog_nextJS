@@ -1,3 +1,54 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/posts/PostPage.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.PostPage_post_page__bxM5j {
+  width: 100%;
+  padding-bottom: 60px;
+}
+.PostPage_post_page__bxM5j .PostPage_background__9If69 {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url(/_next/static/media/CategoryPageBg.d75823d2.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+.PostPage_post_page__bxM5j .PostPage_background__9If69 .PostPage_background_cover___iFvS {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.PostPage_post_page__bxM5j .PostPage_background__9If69 .PostPage_background_cover___iFvS .PostPage_title__B4m2u {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+.PostPage_post_page__bxM5j .PostPage_background__9If69 .PostPage_background_cover___iFvS .PostPage_title__B4m2u .PostPage_to_be__Z0ut4 {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+.PostPage_post_page__bxM5j .PostPage_background__9If69 .PostPage_background_cover___iFvS .PostPage_title__B4m2u .PostPage_to_be__Z0ut4 .PostPage_programmer__chyR0 {
+  color: orange;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .PostPage_title__B4m2u {
+    font-size: 2.8rem !important;
+  }
+}
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Post/AllPost/AllPosts.module.scss ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -153,55 +204,4 @@
 }
 .ProfileAndId_info__9z_AU .ProfileAndId_sm_date__S_xgC {
   font-size: 14px;
-}
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/posts/PostPage.module.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.PostPage_post_page__bxM5j {
-  width: 100%;
-  padding-bottom: 60px;
-}
-.PostPage_post_page__bxM5j .PostPage_background__9If69 {
-  overflow: hidden;
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-image: url(/_next/static/media/CategoryPageBg.d75823d2.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-bottom-left-radius: 24px;
-  border-bottom-right-radius: 24px;
-}
-.PostPage_post_page__bxM5j .PostPage_background__9If69 .PostPage_background_cover___iFvS {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-.PostPage_post_page__bxM5j .PostPage_background__9If69 .PostPage_background_cover___iFvS .PostPage_title__B4m2u {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 4rem;
-  color: white;
-  font-family: "Times New Roman", Times, serif;
-}
-.PostPage_post_page__bxM5j .PostPage_background__9If69 .PostPage_background_cover___iFvS .PostPage_title__B4m2u .PostPage_to_be__Z0ut4 {
-  display: flex;
-  gap: 15px;
-  margin-top: 30px;
-}
-.PostPage_post_page__bxM5j .PostPage_background__9If69 .PostPage_background_cover___iFvS .PostPage_title__B4m2u .PostPage_to_be__Z0ut4 .PostPage_programmer__chyR0 {
-  color: orange;
-  margin: 0;
-}
-
-@media screen and (max-width: 767px) {
-  .PostPage_title__B4m2u {
-    font-size: 2.8rem !important;
-  }
 }

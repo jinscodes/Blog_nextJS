@@ -376,11 +376,19 @@
     "featured": false
   },
   {
-    "title": "Reconcillation",
-    "description": "",
+    "title": "React DOM Reconcillation",
+    "description": "Let's take a look at React's DOM Reconciliation!",
     "date": "2023-04-20",
     "category": ["WebCS", "ReactJs"],
     "path": "react-reconcillation",
+    "featured": true
+  },
+  {
+    "title": "About Text-Overflow With CSS",
+    "description": "I use text overflow and ellipsis really often, but I felt like I needed a record of what I always forget and look for.",
+    "date": "2023-04-28",
+    "category": ["CSS"],
+    "path": "text-overflow",
     "featured": false
   }
 ]
