@@ -390,5 +390,13 @@
     "category": ["CSS"],
     "path": "text-overflow",
     "featured": false
+  },
+  {
+    "title": "🚨Error: Not Applied Ellipsis Using It With Library",
+    "description": "In my case, I had to take a screenshot with html2canvas, but elipsis was not applied at this time. This post is about the cause and simple solutions.",
+    "date": "2023-04-30",
+    "category": ["Error", "CSS"],
+    "path": "err-ellipsis",
+    "featured": false
   }
 ]
