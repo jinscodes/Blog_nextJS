@@ -6,6 +6,26 @@ In this article, we will learn how to use both `FutureBuilder` and `ListViewBuil
 ## What are Future Operations?
 Future operations are the operations which take time to perform and return the result later. To handle this problem, we use Asynchronous functions.
 
+#### Asynchronous Functions
+Asynchronous operations let your program continue other operations while the current operation is being performed. Dart uses Future objects (futures) to represent the results of asynchronous operations. To handle these operations, we can use Async/await, but it is not possible to integrate async and await on widgets. So it is quite tricky to handle futures in widgets. To solve this problem flutter provided a widget called Future Builder.
+
+## Future Builder
+In future builder, it calls the future function to wait for the result, and as soon as it produces the result it calls the builder function where we build the widget.
+
+```dart
+class ProjectModel {
+	String id;
+	List routines;
+
+	ProjectModel ({
+		this.id,
+		this.routines
+	});
+}
+```
+
+Create a model “ProjectModel”.
+
 ---
 [](https://blog.nonstopio.com/flutter-future-builder-with-list-view-builder-d7212314e8c9)
 
