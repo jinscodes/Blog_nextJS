@@ -398,5 +398,13 @@
     "category": ["Error", "CSS"],
     "path": "err-ellipsis",
     "featured": false
+  },
+  {
+    "title": "📱 Flutter Future Builder And ListView Builder",
+    "description": "",
+    "date": "2023-05-05",
+    "category": ["Flutter"],
+    "path": "flutter-futurebuilder-listview",
+    "featured": false
   }
 ]

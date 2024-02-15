@@ -1,0 +1,14 @@
+## Intro...
+It is convenient to use `FutureBuilder` to receive data in Future format using a database or the Internet and display the list on the screen. 
+
+In this article, we will learn how to use both `FutureBuilder` and `ListViewBuilder`.
+
+## What are Future Operations?
+Future operations are the operations which take time to perform and return the result later. To handle this problem, we use Asynchronous functions.
+
+---
+[](https://blog.nonstopio.com/flutter-future-builder-with-list-view-builder-d7212314e8c9)
+
+[](https://jabhak-dasik.com/2023/03/27/flutter-future-builder%EC%99%80-listview-builder-%EA%B0%99%EC%9D%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/)
+
+[](https://www.youtube.com/watch?v=D7TYjCQfBNk)
