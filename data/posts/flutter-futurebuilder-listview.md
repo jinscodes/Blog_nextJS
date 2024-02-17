@@ -26,6 +26,43 @@ class ProjectModel {
 
 Create a model “ProjectModel”.
 
+In the below example, I have used the future builder and for a list, I have used List view builder.
+
+```dart
+Future getProjectDetails() async {
+  var result = await http.get('https://getProjectList');
+  return result;    
+}
+```
+
+Implement the widget to display the list of projects with the future builder.
+
+```dart
+Widget projectWidget() {
+  return FutureBuilder(
+    builder: (context, projectSnap) {
+      if (projectSnap.connectionState == ConnectionState.none &&
+          projectSnap.hasData == null) {
+        //print('project snapshot data is: ${projectSnap.data}');
+        return Container();
+      }
+      return ListView.builder(
+        itemCount: projectSnap.data.length,
+        itemBuilder: (context, index) {
+          ProjectModel project = projectSnap.data[index];
+          return Column(
+            children: <Widget>[
+              // Widget to display the list of project
+            ],
+          );
+        },
+      );
+    },
+    future: getProjectDetails(),
+  );
+}
+```
+
 ---
 [](https://blog.nonstopio.com/flutter-future-builder-with-list-view-builder-d7212314e8c9)
 
