@@ -406,5 +406,13 @@
     "category": ["Flutter"],
     "path": "flutter-futurebuilder-listview",
     "featured": false
+  },
+  {
+    "title": "Use TypeScript's Generic",
+    "description": "",
+    "date": "2023-05-10",
+    "category": ["TypeScript"],
+    "path": "ts-generic",
+    "featured": false
   }
 ]
