@@ -59,7 +59,20 @@ add('hello', 'world'); // 'helloworld'
 
 However, as the number of types allowed increases, the code becomes longer, making it less readable.
 
+This is why **generics** came out because of these limitations.
 
+By designating it as a angle brackets and a capital letter T variable as follows, the type declared in the code through generics can be converted into a variable, and the type can be flexibly used later.
+
+```ts
+function add<T>(x: T, y: T): T { // Generic: Expressions using the angle brackets and the letter T. T is a variable name.
+   return x + y;
+}
+
+add<number>(1, 2); // When calling a generic type function, if it is determined as <number>, the T part of the function is changed to number and executed.
+add<string>('hello', 'world'); // 'helloworld'
+```
+
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/6446d040-67fe-46d3-b770-0f0811110f97)
 
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Generic-%ED%83%80%EC%9E%85-%EC%A0%95%EB%B3%B5%ED%95%98%EA%B8%B0)
