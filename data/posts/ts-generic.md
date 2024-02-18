@@ -36,6 +36,31 @@ Thus, the compiler catches these things smartly and informs us of the errors wit
 
 ![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b1548ae1-026b-471a-8799-8a9b685570c1)
 
+How do we solve this? 
+
+This multi-method was declared as a union type, which became a problem. Then, we only need to separate the function and distribute it so that only one role is played in one function type.
+
+In TypeScript, this is called the **function overload**.
+
+```ts
+function add(x: string, y: string): string;
+function add(x: number, y: number): number;
+function add(x: any, y: any) {
+   return x + y;
+}
+
+add(1, 2); // 3
+add('hello', 'world'); // 'helloworld'
+
+// Overloading does not allow the next function call to occur.
+// add(1, '2');
+// add('1', '2');
+```
+
+However, as the number of types allowed increases, the code becomes longer, making it less readable.
+
+
+
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Generic-%ED%83%80%EC%9E%85-%EC%A0%95%EB%B3%B5%ED%95%98%EA%B8%B0)
 
