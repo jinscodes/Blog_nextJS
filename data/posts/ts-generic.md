@@ -99,6 +99,86 @@ The above picture is the ts library related to cookie. There is a generic type.
 
 > And the generic name does not have to be T. I can attach it as I want, but I customarily process it in one capital letter. (T, U, K...)
 
+
+```ts
+// a method of receiving arguments and making them into an array
+function toArray<T>(a: T, b: T): T[] {
+   return [a, b];
+}
+
+// If the generics are expressed as arrow functions, it becomes as follows.
+const toArray2 = <T>(a: T, b: T): T[] => { ... }
+
+
+toArray<number>(1, 2); // numeric arrangement
+toArray<string>('1', '2'); // Character arrangement
+toArray<string | number>(1, '2'); // Mixed arrangement
+
+// In fact, compilers infer on their own by looking at the type of argument they transfer, so they infer on their own even if they do not use generics when calling a function.
+toArray(1, 2);
+toArray('1', '2');
+toArray<string | number>(1, '2'); // However, sometimes automatic type inference is not well done, so have to declare generics.
+```
+
+> Usually, the second method of the code above, which omits generics when calling a generic function, is commonly used because of its readability. 
+
+> However, if the code is complicated and the compiler is stupidly poor at type inference, we may have to specify the generics yourself.
+
+It should be noted that if an argument is received in an array from a generic, the generic should be `T[]` or `Array<T>` separately. In the case of general types and objects, we can receive them without any separate processing.
+
+```ts
+function loggingIdentity<T>(arg: T[]): T[] {
+   console.log(arg.length); // The array has .length, so there is no error.
+   return arg; // Return Array
+}
+
+function loggingIdentity2<T>(arg: Array<T>): Array<T> {
+   console.log(arg.length);
+   return arg;
+}
+
+loggingIdentity([1, 2, 3]);
+loggingIdentity2([1, 2, 3]);
+```
+
+Generics, in particular, are used a lot with interfaces.
+
+```ts
+// generic interface
+interface Mobile<T> { 
+   name: string;
+   price: number;
+   option: T; // Generic Type - Assuming that the option attribute contains a variety of data
+}
+
+// A literal pate type can also be assigned to the generics themselves.
+const m1: Mobile<{ color: string; coupon: boolean }> = {
+   name: 's21',
+   price: 1000,
+   option: { color: 'read', coupon: false }, // Option attributes are flexibly assigned by generic types
+};
+
+const m2: Mobile<string> = {
+   name: 's20',
+   price: 900,
+   option: 'good', // Option attributes are flexibly assigned by generic types
+};
+```
+
+It also goes well with type alias.
+
+```ts
+type TG<T> = T[] | T;
+
+const number_arr: TG<number> = [1, 2, 3, 4, 5];
+const number_arr2: TG<number> = 12345;
+
+const string_arr: TG<string> = ['1', '2', '3', '4', '5'];
+const string_arr2: TG<string> = '12345';
+```
+
+## Generic Constraints (extends)
+
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Generic-%ED%83%80%EC%9E%85-%EC%A0%95%EB%B3%B5%ED%95%98%EA%B8%B0)
 
