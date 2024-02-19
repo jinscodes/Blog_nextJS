@@ -74,6 +74,31 @@ add<string>('hello', 'world'); // 'helloworld'
 
 ![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/6446d040-67fe-46d3-b770-0f0811110f97)
 
+## Advanced Type - Generics
+In this way, the Generic type provides a way to declare a type at the time of use, not at the time of declaration of a function or class.
+
+It is a principle that variables or function interfaces can be reused in various types by simply writing down variable characters when declaring and determining the type used at the time of creation.
+
+The characteristics of generics are listed as follows.
+
+- It prevents the type from being fixed and can declare reusable elements.
+- Ensure type stability by conducting type checks at compilation time.
+- Casting-related codes can be removed.
+- Generic logic can be used to create reuse codes that can receive different types.
+
+Generic is originally a type that is often used to create highly reusable components in languages such as C# and Java. In particular, it is used to create components that operate in more than one type.
+
+In fact, if looking at the method type form of the Typescript library, it is all composed of generics.
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/858ba0f1-0b86-4226-860a-d99259e2d0f1)
+
+The above picture is the ts library related to cookie. There is a generic type.
+
+> **💡 NOTE**   
+> If the deflection <> symbol is used in front of the variable name and the function name, it becomes a 'type affirmation'.    Therefore, in order to implement a generic, you must write a deflection parenthesis after the variable name and the function name.
+
+> And the generic name does not have to be T. I can attach it as I want, but I customarily process it in one capital letter. (T, U, K...)
+
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Generic-%ED%83%80%EC%9E%85-%EC%A0%95%EB%B3%B5%ED%95%98%EA%B8%B0)
 
