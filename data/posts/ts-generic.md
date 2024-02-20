@@ -178,6 +178,51 @@ const string_arr2: TG<string> = '12345';
 ```
 
 ## Generic Constraints (extends)
+Generics determine the type at the time of use, so it doesn't matter if you put virtually any type.
+
+```ts
+function identity<T>(p1: T): T {
+   return p1;
+}
+
+identity(1);
+identity('a');
+identity(true);
+identity([]);
+identity({});
+```
+
+Although flexibility with the input value has been secured, it is necessary to limit the input value depending on where it is used for each function.
+
+As the most representative example, if a method called `forEach()` is used to create it, this `forEach()` is a higher-order function that traverses the array, so it is necessary to receive the original value in the array.
+
+In addition, even when implementing methods for libraries such as React, input values are created by limiting the range. For example, only object types are allowed for the entire attribute value of React.
+ 
+*To this end, the generics of TypeScript provide the ability to limit the types of types applied.*
+
+When the `extents` keyword is used for generics as follows, the types of types that may be input as generics may be limited.
+
+> 💡 **NOTE**   
+> Generic's `extends` is slightly different in definition from interface or class `extends`.   
+> Class `extends` have the definition of **extension** as a meaning of inheritance, but the difference is that generic `extends` have the meaning of **restriction**. 
+
+> Therefore, if there is a generic in the form of `<T extensions K>`, it can be defined that T should be allocable to K.
+
+```ts
+type numOrStr = number | string;
+
+// only number and string
+function identity<T extends numOrStr>(p1: T): T {
+   return p1;
+}
+
+identity(1);
+identity('a');
+
+identity(true); //! ERROR
+identity([]); //! ERROR
+identity({}); //! ERROR
+```
 
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Generic-%ED%83%80%EC%9E%85-%EC%A0%95%EB%B3%B5%ED%95%98%EA%B8%B0)
