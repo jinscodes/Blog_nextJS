@@ -224,6 +224,48 @@ identity([]); //! ERROR
 identity({}); //! ERROR
 ```
 
+### Property constraints
+In addition to simply limiting generic types for usability, there are also cases where they have to be forced to be limited by logic.
+
+For example, if looking at the following code, we get an error saying that `T doesn't have a .length property`, because from the point of view of the compiler, the compiler don't know what the T type is.
+
+```ts
+function loggingIdentity<T>(arg: T): T {
+   console.log(arg.length);
+   return arg;
+}
+```
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e7d918af-9ee2-4704-bfcc-46138cf11df2)
+
+In this case, there is a way to branch through the conditional statement with a type guard,
+
+```ts
+function loggingIdentity<T>(arg: T): T {
+   if(typeof arg === "string" || Array.isArray(arg)) console.log(arg.length);
+   return arg;
+}
+```
+
+If it's a user custom property, not a default property such as length, the generic type property must be specified to include that property.
+
+```ts
+interface Lengthwise {
+   length: number;
+}
+
+// Generic T must contain the {length: number} property type.
+function loggingIdentity<T extends Lengthwise>(arg: T): T {
+   console.log(arg.length); // Now it knows there is .length property, it will no longer get an error.
+   return arg;
+}
+
+loggingIdentity(3); // Error, number does not have a .length property.
+loggingIdentity({ length: 10, value: 3 });
+```
+
+
+
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Generic-%ED%83%80%EC%9E%85-%EC%A0%95%EB%B3%B5%ED%95%98%EA%B8%B0)
 
