@@ -358,6 +358,59 @@ const num = translate((a) => { return +a; }, '10');
 console.log('num: ', num); // num : 10
 ```
 
+## Generic Function Type
+We learned that the TypeScript function itself can be specified as a type.
+
+For example, it was possible to establish a systematic logic so that only functions suitable for this function type structure could be assigned, and the function type structure could be determined as follows.
+
+```ts
+// Specify a function type as an interface
+interface Add {
+   (x: number, y: number): number;
+}
+
+let myFunc: Add = (x, y) => {
+   return x + y;
+};
+```
+
+Generic functions are also made into function's own type structure, so allocation restrictions are possible.
+
+```ts
+interface GenericIdentityFn {
+   <T>(arg: T): T; // Generic function type structure
+}
+
+function identity<T>(arg: T): T {
+   return arg;
+}
+
+let myIdentity: GenericIdentityFn = identity;
+
+myIdentity<number>(100);
+myIdentity<string>('100');
+```
+
+It can also be used in other ways to determine generics when allocating functions altogether.
+
+We can see that the generic <T> has moved next to the interface name.
+
+```ts
+interface GenericIdentityFn<T> {
+   (arg: T): T;
+}
+
+function identity<T>(arg: T): T {
+   return arg;
+}
+
+let myIdentity: GenericIdentityFn<number> = identity;
+let myIdentity2: GenericIdentityFn<string> = identity;
+
+myIdentity(100);
+myIdentity2('100');
+```
+
 
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Generic-%ED%83%80%EC%9E%85-%EC%A0%95%EB%B3%B5%ED%95%98%EA%B8%B0)
