@@ -264,6 +264,99 @@ loggingIdentity(3); // Error, number does not have a .length property.
 loggingIdentity({ length: 10, value: 3 });
 ```
 
+### Parametric Constraints
+Multiple generics can be specified and used in a single function.
+
+Using this, different generic type condition restrictions can be imposed for each parameter.
+
+```ts
+function myfunc<T extends string, K extends number>(arg1: T, arg2: K): void {
+   console.log(typeof arg1); // string
+   console.log(typeof arg2); // number
+}
+myfunc('1', 2);
+```
+
+If we apply this, we can write the logic as follows.
+
+There is a method called `getProperty`, and this function receives object and key names as arguments, and if a key name that does not exist in the object is inputted, it emits an error.
+
+It may be solved by conditional branching, but we can limit the type in the generics themselves.
+
+The key here is the `K extents keyof T` generic type, and generic T has an x variable(object), and only the key value of this object is extracted and made into a union type `'a' | 'b' | 'c' | 'd'` through the keyof and restricted to the K generic.
+
+Then K generics can only come with `'a' | 'b' | 'c' | 'd'` constant type. This is a way of logic in type scripts to hang type guard devices.
+
+About keyof/typeof, below the link👇🏼   
+[](https://jay-h-blog.vercel.app/posts/TypeScript/ts-typeof-keyof)
+
+```ts
+function getProperty<T, K extends keyof T>(obj: T, key: K) {
+   return obj[key];
+}
+
+let x = { a: 1, b: 2, c: 3, d: 4 };
+
+getProperty(x, 'a'); // done
+getProperty(x, 'm'); // error: type 'm' is not included in 'a' | 'b' | 'c' | 'd'
+```
+
+In the second example, the `swapProperty` method is a function that receives object types and swaps the value of each other's keys.
+
+The shape of the object type to be delivered is `{name: string, age: number, liveInSeoul: boolean}` and there will be no problem if it is delivered as an argument in the form of this object, but if the user misrepresented the object property, it is necessary to limit the contrast generics.
+
+Therefore, it is possible to create a `name | age` union type through a `keyof Person` and do *extends* it to a generic to limit it within the method to include the key property in the type of generic T.
+
+```ts
+interface Person {
+   name: string;
+   age: number;
+}
+interface Korean extends Person {
+   liveInSeoul: boolean;
+}
+
+// type T1 = keyof Person;
+function swapProperty<T extends Person, K extends keyof Person>(p1: T, p2: T, key: K): void {
+   // A function that swaps the value of a key in a p1 object with the value of a key in a p2 object
+   // However, since the key in the p1 object must also exist in p2, limit the generic K of the key factor to (key of Person)
+   const temp = p1[key];
+   p1[key] = p2[key];
+   p2[key] = temp;
+}
+
+const p1: Korean = {
+   name: 'Jay',
+   age: 27,
+   liveInSeoul: true,
+};
+const p2: Korean = {
+   name: 'Rosie',
+   age: 25,
+   liveInSeoul: false,
+};
+
+swapProperty(p1, p2, 'age'); // Swap the value of the object's age key with each other
+/*
+{ name: 'Jay', age: 27, liveInSeoul: true }
+{ name: 'Roise', age: 25, liveInSeoul: false }
+*/
+```
+
+### Functional constraints
+If the function itself, rather than the normal type or interface, is restricted to receive from the generic factor, how do we declare it?
+
+When accepting a callback function as a parameter, the generic constraint can be made as follows.
+
+```ts
+function translate<T extends (a: string) => number, K extends string>(x: T, y: K): number {
+   return x(y);
+}
+
+// A function that converts characters into integers
+const num = translate((a) => { return +a; }, '10');
+console.log('num: ', num); // num : 10
+```
 
 
 ---
