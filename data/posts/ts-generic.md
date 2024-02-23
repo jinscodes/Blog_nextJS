@@ -532,6 +532,13 @@ class A {}
 add(A);
 ```
 
+## Create A Generic Library
+Generics allow the use of types in classes or functions by dynamically setting type parameters.
+
+Now, let's take a moment to practice using this generic to add the `forEach()` and `map()` higher-order functions of JavaScript so that it can be used in TypeScript as well.
+
+Most TypeScript libraries have also been replaced in this way, and jQuery and React are typically supported by adding generics from existing JavaScript codes so that they can be used in TypeScript.
+
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Generic-%ED%83%80%EC%9E%85-%EC%A0%95%EB%B3%B5%ED%95%98%EA%B8%B0)
 
