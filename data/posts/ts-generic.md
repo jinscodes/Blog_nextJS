@@ -411,6 +411,22 @@ myIdentity(100);
 myIdentity2('100');
 ```
 
+Alternatively, it is possible to declare the function's own type directly literal without using the interface. (However, it is not used much because of its poor readability.)
+
+```ts
+function logText<T>(text: T): T {
+  return text;
+}
+
+// #1
+let str: <T>(text: T) => T = logText;
+
+// #2 : To improve readability, use braces for expression
+let str: {<T>(text: T): T} = logText;
+```
+
+> 💡 **NOTE**   
+> However, enum and namespace cannot be generated as generics.
 
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Generic-%ED%83%80%EC%9E%85-%EC%A0%95%EB%B3%B5%ED%95%98%EA%B8%B0)
