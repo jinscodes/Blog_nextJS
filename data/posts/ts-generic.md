@@ -428,6 +428,110 @@ let str: {<T>(text: T): T} = logText;
 > 💡 **NOTE**   
 > However, enum and namespace cannot be generated as generics.
 
+## Generic Class Type
+Even in the generic class, generics can be used to flexibly designate the type to be dealt with in the class.
+
+It can be viewed as similar to the generic interface discussed earlier. In this way, a generic class can also ensure that the properties defined in the class operate well in a predetermined type.
+
+```ts
+class GenericNumber<T> {
+   zeroValue: T;
+   add: (x: T, y: T) => T;
+
+   constructor(v: T, cb: (x: T, y: T) => T) {
+      this.zeroValue = v;
+      this.add = cb;
+   }
+}
+
+let myGenericNumber = new GenericNumber<number>(0, (x, y) => {
+   return x + y;
+});
+
+let myGenericString = new GenericNumber<string>('0', (x, y) => {
+   return x + y;
+});
+
+myGenericNumber.zeroValue; // 0
+myGenericNumber.add(1, 2); // 3
+
+myGenericString.zeroValue; // '0'
+myGenericString.add('hello ', 'world'); // 'hello world'
+```
+
+> 💡 **NOTE**   
+> However, when managing a class as a generic, it is important to note that static static members cannot be managed as a generic.
+
+### Data structure generics utilization
+Generics are also widely used in data structures because they give diversity to data types.
+
+The following is an example of configuring stacks and queues into generics and object orientations.
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/7d66e094-e496-407b-8a95-17feb465d2a3)
+
+```ts
+class MyArray<A> {
+   // Take generic types from children and apply array types
+   constructor(protected items: A[]) {}
+}
+
+class Stack<S> extends MyArray<S> {
+   // save
+   push(item: S) {
+      this.items.push(item);
+   }
+   // call
+   pop() {
+      return this.items.pop();
+   }
+}
+
+class Queue<Q> extends MyArray<Q> {
+   // save
+   offer(item: any) {
+      this.items.push(item);
+   }
+   // extract
+   poll() {
+      return this.items.shift();
+   }
+}
+
+const numberStack = new Stack<number>([]);
+numberStack.push(1);
+numberStack.push(2);
+const data_numberStack = numberStack.pop(); // 2
+
+const stringStack = new Stack<string>([]);
+stringStack.push('a');
+stringStack.push('b');
+const data_stringStack = stringStack.pop(); // 'b'
+
+const numberQueue = new Queue<number>([]);
+numberQueue.offer(1)
+numberQueue.offer(2)
+const data_numberQueue = numberQueue.poll(); // 1
+
+const stringQueue = new Queue<string>([]);
+stringQueue.offer('a');
+stringQueue.offer('b');
+const data_stringQueue = stringQueue.poll(); // 'a'
+```
+
+### Constructor Parameters
+When limiting generics to a function factor so that only the constructor comes, the following can be written.
+
+```ts
+// Parameters x limit generics so that only the constructor type can come
+function add<T extends abstract new (...args: any) => any>(x: T): T {
+   return x;
+}
+
+class A {}
+
+add(A);
+```
+
 ---
 [](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Generic-%ED%83%80%EC%9E%85-%EC%A0%95%EB%B3%B5%ED%95%98%EA%B8%B0)
 
