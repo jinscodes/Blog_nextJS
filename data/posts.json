@@ -414,5 +414,13 @@
     "category": ["TypeScript"],
     "path": "ts-generic",
     "featured": false
+  },
+  {
+    "title": "🚨 Error: Cannot find module '.png' or its corresponding type declarations.",
+    "description": "The above errors often occurred when importing images or files using TypeScript. This post is about TS error resolution.",
+    "date": "2023-05-20",
+    "category": ["Error", "TypeScript"],
+    "path": "err-cannot-find-module",
+    "featured": false
   }
 ]
