@@ -34,7 +34,33 @@ declare module '*.jpeg';
 
 ![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/42b2745a-6a74-4ab5-912a-87fd2b9a6dc0)
 
+Of course, there are other ways.
 
+We can also use the type in more detail to declare each extension of the image.
+
+```ts
+declare module "*.svg" {
+	import * as React from "react";
+
+	export const ReactComponent: React.FuncctionComponent<
+		React.SVGProps<SVGVGElement> & {title?: string }
+	>;
+
+	const src: string;
+	export default src;
+}
+
+declare module "*.png" {
+	const png: string;
+	export default png;
+}
+```
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ab835c47-b612-4b36-ba51-7eff6211701a)
+
+Both of the above examples work fine as normal.
+
+> 💡 If the error persists after declaring each extension in the d.ts file as above, try turning off and on the vsCode.
 
 ---
 [](https://epiphany0421.tistory.com/169#google_vignette)
