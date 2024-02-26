@@ -422,5 +422,13 @@
     "category": ["Error", "TypeScript"],
     "path": "err-cannot-find-module",
     "featured": false
+  },
+  {
+    "title": "What Is Grid?",
+    "description": "Let's find out about grid, not flex.",
+    "date": "2023-05-22",
+    "category": ["CSS"],
+    "path": "grid",
+    "featured": false
   }
 ]
