@@ -75,7 +75,70 @@ There is a greate image to explain the grid.
 - Grid Item
 	- Children elements of grid container
 	- These items are arranged by the grid rule
-	- The above code `<div class="item"></div>` is the grid item
+	- The above code `<div class="item"></div>` is the grid item 
+- Grid Track
+	- Grid's **Row** or **Column**
+- Grid Cell
+	- One section of Grid
+	- A real html element like <div> is a grid item, and grid cell is the **virtual space (frame)**
+- Grid Line
+	- The line that divide the cell
+- Grid Number
+	- Grid line's number
+- Grid Gap
+	- Gap between grid's cell
+- Grid Area
+	- A square area surrounded by a grid line, which is a collection of grid cells.
+
+Grid's properties are similar to flex, it's divided into two:
+
+1. Properties that apply to containers
+2. Properties that apply to item
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/87ccf6d5-c550-4e23-bb3e-8490e53216b3)
+
+## Properties
+#### display: grid;
+It starts with applying display: grid; to Grid containers.
+
+If the items are block elements, there is no particular change with just this one line.
+
+```css
+.container {
+	display: grid;
+	/* display: inline-grid; */
+}
+```
+
+> 💡 **Note**   
+> There is also inline-grid, and it's related to the relationship between block and inline-block.   
+> Rather than having to do with the placement of the item, it's the value that determines how the container will blend in with the surrounding elements. 
+
+> The inline-grid works like an inline-block.
+
+#### gird-template-rows & grid-template-columns
+Properties that specify the size of the Grid track in the container.
+
+We can use different units or mix them.
+
+```css
+.container {
+	grid-template-columns: 200px 200px 500px;
+	/* grid-template-columns: 1fr 1fr 1fr; */
+	/* grid-template-columns: repeat(3, 1fr); */
+	/* grid-template-columns: 200px 1fr; */
+	/* grid-template-columns: 100px 200px auto; */
+
+	grid-template-rows: 200px 200px 500px;
+	/* grid-template-rows: 1fr 1fr 1fr; */
+	/* grid-template-rows: repeat(3, 1fr); */
+	/* grid-template-rows: 200px 1fr; */
+	/* grid-template-rows: 100px 200px auto; */
+}
+```
+
+- grid-template-rows is the arrangement of row
+- grid-template-columns is the arrangement of column
 
 ---
 [](https://studiomeal.com/archives/533)
