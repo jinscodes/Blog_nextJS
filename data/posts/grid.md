@@ -140,6 +140,52 @@ We can use different units or mix them.
 - grid-template-rows is the arrangement of row
 - grid-template-columns is the arrangement of column
 
+For example...
+
+```css
+grid-template-columns: 200px 200px 500px;
+```
+
+The above code means to make the gird 200px 200px, and 500px.
+
+```css
+grid-template-columns: 1fr 1fr 1fr;
+```
+
+`fr` is the fraction, which divides the size of the track by the number ratio.
+
+In other words, the above 1fr 1fr 1fr means that we will make three columns with a uniform 1:1:1 ratio.
+
+Like this. ↓
+
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/72978d3d-a650-470c-9d66-3b6270091ecf)
+
+It can be used by mixing fixed and variable sizes.
+
+For example, the first column on the left is fixed at 100px, and the other second and third columns are flexible at a ratio of 2:1.
+
+```css
+grid-template-columns: 100px 2fr 1fr;
+```
+
+![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/275b99c4-de31-4916-b877-51f0a55005eb)
+
+#### repeat()
+```css
+.container {
+	grid-template-columns: repeat(5, 1fr);
+	/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr */
+}
+```
+
+Repeat is a function that automatically processes repeated values.
+
+repeat (number of repetitions, repetition value)
+
+In other words, the repeat(5, 1fr) of the above code is equal to 1fr 1fr 1fr 1fr.
+
+Repeat (3, 1fr 4fr 2fr); this kind of pattern is also possible.
+
 ---
 [](https://studiomeal.com/archives/533)
 
