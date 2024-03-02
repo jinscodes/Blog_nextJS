@@ -186,6 +186,26 @@ In other words, the repeat(5, 1fr) of the above code is equal to 1fr 1fr 1fr 1fr
 
 Repeat (3, 1fr 4fr 2fr); this kind of pattern is also possible.
 
+#### minmax()
+It's a function that specify the minimum and maximum values.
+
+`minmax(100px, auto)` means that minimum value is 100px and maximum value is automactically adjust. 
+
+In other words, no matter how small the content is, at least 100px is secured, and if the content exceeds 100px, it's increased on its own.
+
+```css
+.container {
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, minmax(100px, auto));
+}
+```
+
+**<AUTO>**:   
+![8](https://github.com/jinscodes/Blog_nextJS/assets/87598134/642b1a83-1183-4771-a3c0-fb5f72704846)
+
+**<repeat(3, minmax(100px, auto))>**:
+![9](https://github.com/jinscodes/Blog_nextJS/assets/87598134/84b94613-bb0a-426f-a505-1e5ec630631a)
+
 ---
 [](https://studiomeal.com/archives/533)
 
