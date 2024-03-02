@@ -116,6 +116,8 @@ If the items are block elements, there is no particular change with just this on
 
 > The inline-grid works like an inline-block.
 
+### Grid form definition
+
 #### gird-template-rows & grid-template-columns
 Properties that specify the size of the Grid track in the container.
 
@@ -205,6 +207,104 @@ In other words, no matter how small the content is, at least 100px is secured, a
 
 **<repeat(3, minmax(100px, auto))>**:
 ![9](https://github.com/jinscodes/Blog_nextJS/assets/87598134/84b94613-bb0a-426f-a505-1e5ec630631a)
+
+#### auto-fill and auto-fit
+Auto-fill and auto-fit fill the cell as much as possible as the set width allows without predetermined number of columns.
+
+About auto-fill..
+
+```css
+.container {
+	grid-template-columns: repeat(auto-fill, minmax(20%, auto));
+}
+```
+
+Because `auto-fill` is set to 20 percent, One row contains five cells.
+
+![10](https://github.com/jinscodes/Blog_nextJS/assets/87598134/5a5123dc-7e0c-409f-92b6-e4c788376829)
+
+If the number of cells is less than five, the space is left like this ↓
+
+![11](https://github.com/jinscodes/Blog_nextJS/assets/87598134/11bb13f9-d97c-4d10-aca1-aeaa85ca84a3)
+
+If using `auto-fit` instead of `auto-fill`, it fills the remaining space.
+
+This is the difference between ↓ `auto-fill` and `auto-fit`.
+
+![12](https://github.com/jinscodes/Blog_nextJS/assets/87598134/16a68615-968e-4a2c-bd12-83dd9456f319)
+
+### Create an interval
+#### row-gap & column gap & gap
+Sets the interval between grid cells.
+
+```css
+/* row's gap is 10px and column's gap is 20px */
+.container {
+	row-gap: 10px;
+	column-gap: 20px;
+}
+```
+
+```css
+/* row-gap:10px; and column-gap: 20px; */
+.container {
+	gap: 10px, 20px;
+}
+```
+
+```css
+/* row-gap: 20px; and column-gap: 20px */
+.container {
+	gap: 20;
+}
+```
+
+**Example:**
+gap: 0 & gap: 10px & gap: 2rem
+
+![13](https://github.com/jinscodes/Blog_nextJS/assets/87598134/27df4db4-4005-465f-9c2d-ef966b8ef268)
+
+In the beginning, it was grid-gap, grid-row-gap, and grid-column-gap, but to expand the browser compatibility, we also use both the previous and current versions of the name as below.
+
+```css
+.container {
+	grid-gap: 20px;
+	gap: 20px;
+}
+```
+
+> 🚨 **NOTE**
+> In IE, there is no alternative property of gap, so if you want to unify the structure with IE, it is easier to design the structure without using gap from the beginning.
+
+### Automatically define grid form
+#### grid-auto-columns & grid-auto-rows
+Properties that specify the size of a track that is outside the control of grid-template-columns (or grid-template-rows).
+
+What does "out of control" mean? Do you remember this code earlier?
+
+```css
+.container {
+	grid-template-rows: repeat(3, minmax(100px, auto));
+}
+```
+
+This code means that it make sure that each cell has a height of at least 100px, and that the content automatically increases when it exceeds 100px.
+
+However, what if the number of rows is not known in advance? 
+
+The answer is `grid-auto-rows`.
+
+```css
+.container {
+	grid-auto-rows: minmax(100px, auto);
+}
+```
+
+![14](https://github.com/jinscodes/Blog_nextJS/assets/87598134/7ab650c1-93bf-48a6-9762-278bebaaaf96)
+
+It will be processed automatically without having to repeat it by setting a number of times.
+
+In other words, all the rows here are out of control of the grid-template-rows because they don't pre-set as grid-template-rows, and the grid-auto-rows take care of it.
 
 ---
 [](https://studiomeal.com/archives/533)
