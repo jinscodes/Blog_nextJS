@@ -206,6 +206,31 @@ In other words, no matter how small the content is, at least 100px is secured, a
 **<repeat(3, minmax(100px, auto))>**:
 ![9](https://github.com/jinscodes/Blog_nextJS/assets/87598134/84b94613-bb0a-426f-a505-1e5ec630631a)
 
+#### auto-fill and auto-fit
+Auto-fill and auto-fit fill the cell as much as possible as the set width allows without predetermined number of columns.
+
+About auto-fill..
+
+```css
+.container {
+	grid-template-columns: repeat(auto-fill, minmax(20%, auto));
+}
+```
+
+Because `auto-fill` is set to 20 percent, One row contains five cells.
+
+![10](https://github.com/jinscodes/Blog_nextJS/assets/87598134/5a5123dc-7e0c-409f-92b6-e4c788376829)
+
+If the number of cells is less than five, the space is left like this ↓
+
+![11](https://github.com/jinscodes/Blog_nextJS/assets/87598134/11bb13f9-d97c-4d10-aca1-aeaa85ca84a3)
+
+If using `auto-fit` instead of `auto-fill`, it fills the remaining space.
+
+This is the difference between ↓ `auto-fill` and `auto-fit`.
+
+![12](https://github.com/jinscodes/Blog_nextJS/assets/87598134/16a68615-968e-4a2c-bd12-83dd9456f319)
+
 ---
 [](https://studiomeal.com/archives/533)
 
