@@ -27,6 +27,22 @@ Here is the example ↓
 
 ![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c5b45429-a659-4330-86ee-48135d8f14d5)
 
+#### Navigator.pushReplacement
+`Navigator.pushReplacement` is a literal replacement. In other words, new screen replaces the existing screen, not builds it on the existing screen.
+
+The previous screen cannot exist because it does not stack unlike `Navigator.push`.
+
+Of course, the Back button is not generated in AppBar either.
+
+Here is the example ↓
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/62cbc1eb-50b1-47e9-9953-3ff63e5f12f8)
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/abd831ce-aa46-443b-a084-65fb118cf4c7)
+
+## Situation To Use Navigator.push Or Navigator.pushReplacement
+
+
 
 ---
 [](https://titann.tistory.com/49)
