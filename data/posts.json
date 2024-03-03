@@ -430,5 +430,13 @@
     "category": ["CSS"],
     "path": "grid",
     "featured": false
+  },
+  {
+    "title": "📱 Flutter Navigator.push And .pushReplacement",
+    "description": "What's the difference between Navigator.push and Navigator.pushReplacement?",
+    "date": "2023-05-28",
+    "category": ["Flutter"],
+    "path": "flutter-navigator",
+    "featured": false
   }
 ]
