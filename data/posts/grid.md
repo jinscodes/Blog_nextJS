@@ -306,6 +306,51 @@ It will be processed automatically without having to repeat it by setting a numb
 
 In other words, all the rows here are out of control of the grid-template-rows because they don't pre-set as grid-template-rows, and the grid-auto-rows take care of it.
 
+### Specify the area for each cell
+#### grid-column-start & grid-column-end & grid-column & grid-row-start & grid-row-end & grid-row
+These properties are the properties that apply to Grid items, specifying the area of each cell.
+
+![15](https://github.com/jinscodes/Blog_nextJS/assets/87598134/d4d60257-0a19-448f-b026-1bb106bad2d1)
+
+There are Grid line numbers from 1 to 4, which are used to determine the range of columns and rows.
+
+If looking at the column, grid-column-end is the starting number, grid-column-end is the ending number. Grid-column is an abbreviation for writing the start and end properties at once.
+
+The red area above is shown in the code below.
+
+```css
+.item:nth-child(1) {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+```
+
+```css
+.item:nth-child(1) {
+	grid-column: 1 / 3;
+	grid-row: 1 / 2;
+}
+```
+
+These two codes specify the same area ↓
+
+![16](https://github.com/jinscodes/Blog_nextJS/assets/87598134/3f0672e1-a92e-4215-8589-50aa6e0612da)
+
+In addition to specifying the start/end number, we can also specify how many cells we want to occupy.
+
+```css
+.item:nth-child(1) {
+	/* 2 sections on the first line */
+	grid-column: 1 / span 2;
+	/* 3 sections on the first line */
+	grid-row: 1 / span 3;
+}
+```
+
+![17](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f44886cf-6b1d-4527-9001-d72608d959fc)
+
 ---
 [](https://studiomeal.com/archives/533)
 
