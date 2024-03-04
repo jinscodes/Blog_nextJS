@@ -41,7 +41,31 @@ Here is the example ↓
 ![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/abd831ce-aa46-443b-a084-65fb118cf4c7)
 
 ## Situation To Use Navigator.push Or Navigator.pushReplacement
+It looks like we can use anything because the screen changes with either one.
 
+But we should never use anything.
+
+#### Navigator.push
+
+`Navigator.push` gets a previous screen. So, it should be used when it should be able to go back to the previous screen.
+
+Let's take an example of a screen where we sign up.
+
+In most apps these days, signup is divided into several steps. Let's assume that step1 is a name, step2 is an ID password, and step3 is an e-mail.   
+If we realize that the name of the first step is wrong in the second stage, we need to go back to the first step.   
+
+As such, screens that are divided into steps or should be able to go back should use `Naviagtor.push`.
+
+#### Navigator.pushReplacement
+`Navigator.pushReplacement` can be used in the opposite situation.
+
+In other words, it can be used mainly in situations where you cannot go back to the previous screen.
+
+Alternatively, if the Back icon is created in AppBar and the screen structure is broken, we should use `Navigator.pushReplacement`.
+
+For example, there is an onboarding screen.
+
+In most cases, the on-boarding screen does not need a backward function. In addition, when the on-boarding screen is over and the main screen comes out, the on-boarding screen should not appear again.
 
 
 ---
