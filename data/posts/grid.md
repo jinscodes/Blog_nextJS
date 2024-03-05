@@ -351,6 +351,61 @@ In addition to specifying the start/end number, we can also specify how many cel
 
 ![17](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f44886cf-6b1d-4527-9001-d72608d959fc)
 
+Grid-auto-column is a rule that determines the placement of columns that are not controlled by grid-template-column, and we can use this grid-column to create 'uncontrolled' columns.
+
+```css
+.container {
+	grid-template-columns: 50px;
+	grid-auto-columns: 1fr 2fr;
+}
+.item:nth-child(1) { grid-column: 2; }
+.item:nth-child(2) { grid-column: 3; }
+.item:nth-child(3) { grid-column: 4; }
+.item:nth-child(4) { grid-column: 5; }
+.item:nth-child(5) { grid-column: 6; }
+.item:nth-child(6) { grid-column: 7; }
+```
+
+This way, only the first column(G) is controlled by the grid-template-column to 50px, and the remaining columns repeat a ratio of 1:2 according to the grid-auto-column rule.
+
+Like this ↓
+
+![18](https://github.com/jinscodes/Blog_nextJS/assets/87598134/149dc4d6-1d73-40c2-a3f4-741c56911ffc)
+
+### Define Grid By Area Name
+#### grid-template-areas
+It is a method of naming each Grid Area and placing it using that name.
+
+It's really an intuitive way to do it.
+
+![19](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a2d1b188-44b2-4fc0-834f-d65931ed692f)
+
+```css
+.container {
+	grid-template-areas:
+		"header header header"
+		"   a    main    b   "
+		"   .     .      .   "
+		"footer footer footer";
+}
+```
+
+In the above form, we can write the name in the location as many as the number of cells it occupies.   
+Put a space in each cell and distinguish it.   
+We can use a period or "none" for blanks, and we can use multiple periods.
+
+We can name the item element with the grid-area attribute!   
+Like ↓
+
+```css
+.header { grid-area: header; }
+.sidebar-a { grid-area: a; }
+.main-content { grid-area: main; }
+.sidebar-b { grid-area: b; }
+.footer { grid-area: footer; }
+/* Please note that the name value does not contain quotes */
+```
+
 ---
 [](https://studiomeal.com/archives/533)
 
