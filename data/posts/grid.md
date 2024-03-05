@@ -406,6 +406,42 @@ Like ↓
 /* Please note that the name value does not contain quotes */
 ```
 
+### Automatic Placement
+#### grid-auto-flow
+Properties that determine the flow in which an item is placed automatically.
+
+```css
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(25%, auto));
+	grid-template-rows: repeat(5, minmax(50px,auto));
+	grid-auto-flow: dense;
+}
+
+item:nth-child(2) { grid-column: auto / span 3; }
+item:nth-child(5) { grid-column: auto / span 3; }
+item:nth-child(7) { grid-column: auto / span 2; }
+```
+
+B, E, and G set each cell to occupy three or two cells, but because of that, there was no room for cells, so there were empty cells.
+
+The default setting for Grid placement is that items are placed in order based on row, and if there is no room to enter, the space is left blank and placed down.
+
+Dense is basically an algorithm that fills empty cells, and the criteria vary depending on the row and column.
+
+**<row>**
+![20-row](https://github.com/jinscodes/Blog_nextJS/assets/87598134/827dcc5d-2ca4-49a1-8e00-1472e02f8cb1)
+
+**<dense & row dense>**
+![20-row-dense](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a6349b3d-0636-484a-9ee7-5a706afb889d)
+
+**<column & column dense>**
+![20-col-dense](https://github.com/jinscodes/Blog_nextJS/assets/87598134/906b6b4e-05b2-4ce7-a70f-512914710310)
+
+### Vertical Alignment
+#### align-items
+Sorts items vertically (column axis) and applies to containers.
+
 ---
 [](https://studiomeal.com/archives/533)
 
