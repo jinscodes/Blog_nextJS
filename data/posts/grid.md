@@ -539,6 +539,147 @@ Sort the Grid items as a whole when the combined height of the Grid items is les
 **<space-evenly>**
 ![23-evenly](https://github.com/jinscodes/Blog_nextJS/assets/87598134/8d3d7ede-6001-46a6-a314-792826facb2c)
 
+### Item Group Horizontal Alignment
+#### justify-content
+Sort the Grid items as a whole when the combined width of the Grid items is less than the width of the Grid container.
+
+```css
+.container {
+	justify-content: stretch;
+	/* justify-content: start; */
+	/* justify-content: center; */
+	/* justify-content: end; */
+	/* justify-content: space-between; */
+	/* justify-content: space-around; */
+	/* justify-content: space-evenly; */
+}
+```
+
+**<stretch>**
+![24-stretch](https://github.com/jinscodes/Blog_nextJS/assets/87598134/1fe18d1b-ef98-4125-a9d8-2aa749a0542a)
+
+**<start>**
+![24-start](https://github.com/jinscodes/Blog_nextJS/assets/87598134/01671e07-2f49-42f5-be11-e6f4ae15dff0)
+
+**<center>**
+![24-center](https://github.com/jinscodes/Blog_nextJS/assets/87598134/35ada97d-8392-4224-a090-3040e3d70358)
+
+**<end>**
+![24-end](https://github.com/jinscodes/Blog_nextJS/assets/87598134/91c8b687-f469-475a-a262-047d398b4d60)
+
+**<space-between>**
+![24-between](https://github.com/jinscodes/Blog_nextJS/assets/87598134/3362566f-f898-4047-9f34-fabe2dbf004d)
+
+**<space-around>**
+![24-around](https://github.com/jinscodes/Blog_nextJS/assets/87598134/50b93ca0-f9d2-404c-b457-c8e63c9332fd)
+
+**<space-evenly>**
+![24-evenly](https://github.com/jinscodes/Blog_nextJS/assets/87598134/96b5f438-6668-4c48-a450-9ca1d06be51e)
+
+#### place-content
+It is a shortened property that allows you to use both alignment-content and justify-content.
+
+Write in the order of alignment-content, justify-content, and write only one value to apply to both properties.
+
+```css
+.container {
+	place-content: space-between center;
+}
+```
+
+### Each Item Vertical Alignment
+#### align-self
+Sorts the corresponding item in the column-axis direction. Applies to the item.
+
+```css
+.item {
+	align-self: stretch;
+	/* align-self: start; */
+	/* align-self: center; */
+	/* align-self: end; */
+}
+```
+
+**<stretch>**
+![25-stretch](https://github.com/jinscodes/Blog_nextJS/assets/87598134/0359071c-1fb5-4327-9ddf-6e7a2d5f1dd6)
+
+**<start>**
+![25-start](https://github.com/jinscodes/Blog_nextJS/assets/87598134/68fcca04-206c-4e2a-a94b-1c09a5df1752)
+
+**<center>**
+![25-center](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e8fa8c9e-9eb8-4571-a902-d5ff2383081e)
+
+**<end>**
+![25-end](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e00608f5-b047-4b69-82b5-193cb92f4943)
+
+### Each Item Horizontal Alignment
+#### justify-self
+Aligns the item in the horizontal direction (row axis) Applies to the item.
+
+```css
+.item {
+	justify-self: stretch;
+	/* justify-self: start; */
+	/* justify-self: center; */
+	/* justify-self: end; */
+}
+```
+
+**<stretch>**
+![26-stretch](https://github.com/jinscodes/Blog_nextJS/assets/87598134/daf8c7ba-7914-4c0e-b18b-49feb3da45c8)
+
+**<start>**
+![26-start](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a8b4f51f-2f4d-4607-94db-af629fa114e8)
+
+**<center>**
+![26-center](https://github.com/jinscodes/Blog_nextJS/assets/87598134/87aec63d-daab-4c93-b203-61329a408ad4)
+
+**<end>**
+![26-end](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a614b699-9233-4c6e-a403-f468f23c087d)
+
+#### place-self
+It is a shortened property that allows you to use both alignment-self and just-self.
+
+Write in the order of alignment-self, just-self, and write only one value to apply to both properties.
+
+```css
+.item {
+	place-self: start center;
+}
+```
+
+### Order Of Items
+#### order
+It is a property that determines the visual order of each item.
+
+The number value is entered, and the smaller the number, the first it is placed.
+
+It is only a "visual" order and does not change the structure of HTML itself, so be careful about its use in terms of accessibility. 
+
+When reading a screen with a screen reader used by blind people, remember that there is no point in changing the order using the order.
+
+```css
+.item:nth-child(1) { order: 3; } /* A */
+.item:nth-child(2) { order: 1; } /* B */
+.item:nth-child(3) { order: 2; } /* C */
+```
+
+#### z-index
+We can align the Z-axis with the z-index. The larger the number, the higher it goes.
+(We can think of it the same as the z-index in the position.)
+
+```css
+.item:nth-child(5) {
+	z-index: 1;
+	transform: scale(2);
+}
+
+/* It's 0 if you don't set z-index, so even if you set 1, the rest of the items come up higher */
+```
+
+![28](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c7c06ed2-57e1-4621-bee3-15a8aba84cd9)
+
+
 ---
 [](https://studiomeal.com/archives/533)
 
