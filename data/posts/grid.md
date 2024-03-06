@@ -438,8 +438,12 @@ Dense is basically an algorithm that fills empty cells, and the criteria vary de
 **<column & column dense>**
 ![20-col-dense](https://github.com/jinscodes/Blog_nextJS/assets/87598134/906b6b4e-05b2-4ce7-a70f-512914710310)
 
-### Vertical Alignment
-#### align-items
+## Alignment
+Let's learn about the alignment of the contents in each cell or in the container
+
+### Alignment In The Cell
+
+#### align-items: Vertical 
 Sorts items vertically (column axis) and applies to containers.
 
 ```css
@@ -463,8 +467,7 @@ Sorts items vertically (column axis) and applies to containers.
 **<end>**
 ![21-end](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c70bb992-c708-45ae-ba4b-7d97d122347e)
 
-### Horizontal Alignment
-#### justify-items
+#### justify-items: Horizontal
 Arrange items in a row-axis direction; apply to containers.
 
 ```cs
@@ -487,6 +490,54 @@ Arrange items in a row-axis direction; apply to containers.
 
 **<end>**
 ![22-end](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a2a4b5e4-49ac-469b-9aa5-0ae50ae1af39)
+
+#### place-items
+It is a shortcut property that allows you to use both alignment-items and justify-items.
+
+Write in the order of alignment-items, justify-items, and write only one value to apply to both properties.
+
+```css
+.container {
+	place-items: center start;
+}
+```
+
+### Item Group Vertical Alignment
+#### align-content
+Sort the Grid items as a whole when the combined height of the Grid items is less than the height of the Grid container.
+
+```css
+.container {
+	align-content: stretch;
+	/* align-content: start; */
+	/* align-content: center; */
+	/* align-content: end; */
+	/* align-content: space-between; */
+	/* align-content: space-around; */
+	/* align-content: space-evenly; */
+}
+```
+
+**<stretch>**
+![23-stretch](https://github.com/jinscodes/Blog_nextJS/assets/87598134/2599ac7c-7625-49ac-ab1e-f4b4248f48d1)
+
+**<start>**
+![23-start](https://github.com/jinscodes/Blog_nextJS/assets/87598134/3681af7a-1f74-431e-9ac4-ccbb644e7389)
+
+**<center>**
+![23-center](https://github.com/jinscodes/Blog_nextJS/assets/87598134/303ac1c5-59cd-4dfa-8d35-8c7d8c5fc25b)
+
+**<end>**
+![23-end](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ce6ae510-1c5c-426c-bf7e-aacf466216d8)
+
+**<space-between>**
+![23-between](https://github.com/jinscodes/Blog_nextJS/assets/87598134/7cdee1d2-1e03-4a19-ae2a-0fa77ab7bec1)
+
+**<space-around>**
+![23-around](https://github.com/jinscodes/Blog_nextJS/assets/87598134/8a482cc5-9db6-4bda-9c23-e521ab9c4e63)
+
+**<space-evenly>**
+![23-evenly](https://github.com/jinscodes/Blog_nextJS/assets/87598134/8d3d7ede-6001-46a6-a314-792826facb2c)
 
 ---
 [](https://studiomeal.com/archives/533)
