@@ -442,6 +442,52 @@ Dense is basically an algorithm that fills empty cells, and the criteria vary de
 #### align-items
 Sorts items vertically (column axis) and applies to containers.
 
+```css
+.container {
+	align-items: stretch;
+	/* align-items: start; */
+	/* align-items: center; */
+	/* align-items: end; */
+}
+```
+
+**<stretch>**
+![21-stretch](https://github.com/jinscodes/Blog_nextJS/assets/87598134/d5376278-f6ca-470c-bfbe-56c06e72c7e4)
+
+**<start>**
+![21-start](https://github.com/jinscodes/Blog_nextJS/assets/87598134/412e9c05-ca27-4578-881a-942c133cf867)
+
+**<center>**
+![21-center](https://github.com/jinscodes/Blog_nextJS/assets/87598134/db01bf30-c37e-48e5-9bb2-38bd3bac64d0)
+
+**<end>**
+![21-end](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c70bb992-c708-45ae-ba4b-7d97d122347e)
+
+### Horizontal Alignment
+#### justify-items
+Arrange items in a row-axis direction; apply to containers.
+
+```cs
+.container {
+	justify-items: stretch;
+	/* justify-items: start; */
+	/* justify-items: center; */
+	/* justify-items: end; */
+}
+```
+
+**<stretch>**
+![22-stretch](https://github.com/jinscodes/Blog_nextJS/assets/87598134/8b97c99c-bf55-4f7c-8e1e-e45451ae3dd0)
+
+**<start>**
+![22-start](https://github.com/jinscodes/Blog_nextJS/assets/87598134/6baa8a9a-39d4-4e52-8d9a-cf24ca588bd3)
+
+**<center>**
+![22-center](https://github.com/jinscodes/Blog_nextJS/assets/87598134/750cb186-eeb6-4d2b-a928-2a103babd627)
+
+**<end>**
+![22-end](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a2a4b5e4-49ac-469b-9aa5-0ae50ae1af39)
+
 ---
 [](https://studiomeal.com/archives/533)
 
