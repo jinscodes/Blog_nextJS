@@ -438,5 +438,13 @@
     "category": ["Flutter"],
     "path": "flutter-navigator",
     "featured": false
+  },
+  {
+    "title": "📱 Flutter Splash Screen",
+    "description": "How to make the splash screen? ",
+    "date": "2023-06-01",
+    "category": ["Flutter"],
+    "path": "flutter-splashscreen",
+    "featured": false
   }
 ]
