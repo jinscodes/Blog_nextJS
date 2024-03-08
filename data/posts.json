@@ -452,7 +452,7 @@
     "description": "What is changed from V5 to V6?",
     "date": "2023-06-03",
     "category": ["ReactJs", "NextJs"],
-    "path": "react-dom-router-v6",
+    "path": "react-router-dom-v6",
     "featured": false
   }
 ]
