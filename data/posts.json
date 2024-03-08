@@ -446,5 +446,13 @@
     "category": ["Flutter"],
     "path": "flutter-splashscreen",
     "featured": false
+  },
+  {
+    "title": "React-router-dom Updates: V5 to V6",
+    "description": "What is changed from V5 to V6?",
+    "date": "2023-06-03",
+    "category": ["ReactJs", "NextJs"],
+    "path": "react-router-dom-v6",
+    "featured": false
   }
 ]
