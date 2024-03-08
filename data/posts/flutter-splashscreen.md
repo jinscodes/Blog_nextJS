@@ -131,6 +131,52 @@ This is the example ↓
 
 ![splashscreen2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/1e93fd69-2c95-4706-a9c8-f74f71ee8916)
 
+### Using Library
+This time, we will implement the screen using the flutter_native_splash package.
+
+### Install Package And Create yaml File
+Check the latest version of the flutter_native_splash package and add the package version to the dependencies location of the pubspec.yaml file to proceed with the installation.
+
+[](https://pub.dev/packages/flutter_native_splash)
+
+```yaml
+dependencies:
+  flutter_native_splash: ^2.2.7
+```
+
+Create a new file named flutter_native_splash.yaml in the app project root path and add the code below. 
+
+The code can be found on the package site.
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/5df28669-d838-4d32-888b-867ed5c6c90c)
+
+Package option values are as follows.
+
+- color: background color of splash screen
+- background_image: background image of splash screen
+- image: main image of splash screen
+- color_dark: background color in dark mode
+- background_image_dart: background image in dark mode
+- image_dart: main image in dark mode
+- android_gravity: image location on Android
+- ios_content_mode: image location in ios
+- fullscreen: full screen of splashscreen
+
+### Insert Image and Create Image
+Save the image to be used by Splash Screen to the asset/splash.png location.
+
+Now run the following command to create a splash screen image.
+
+```bash
+flutter pub run flutter_native_splash:create
+```
+
+💡 If you want to remove the image, run the following command
+
+```bash
+flutter pub run flutter_native_splash:create
+```
+
 --- 
 [](https://box-world.tistory.com/75)
 
