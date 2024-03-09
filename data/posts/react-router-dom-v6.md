@@ -36,8 +36,29 @@ V6:
 
 
 ## No Need To Install “react-router-config” Separately
+React-router-config allowed the path to be defined as a JavaScript object instead of a React element, and all features have now moved to the core React Router v6.
+
+V5: 
+
+![3-1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a64d29a3-a060-410a-9012-4474eaba816f)
+
+V6:
+
+![3-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ed57cd65-1d3b-4394-9c01-6d46bcd2b32d)
+
 
 ## Use “useNavigate” instead of “useHistory”
+React Router v6 introduces a new navigation API that is synonymous with <Link> and provides better compatibility with suspense-enabled apps.
+
+V5:
+
+![4-1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/54a496e2-2a78-4baa-a23f-0cea52582e3d)
+
+v6 requires rewriting this app to use the navigation API. In most cases this means changing useHistory to useNavigate.
+
+V6:
+
+![4-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/268fc051-a7e8-4550-916f-db1a61287f7c)
 
 ## Replace “Redirect” with “Navigate”
 
