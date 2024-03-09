@@ -22,6 +22,18 @@ V6:
 ![1-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/7558310a-e58d-4d69-8b0b-00256a186d04)
 
 ## <Route element> VS <Route children>
+The component that should be rendered on matching a route can not be written as children of the “Route component”, but it takes a prop called “element” where we have to pass a JSX component to be rendered. 
+
+Another important reason for using the “element” prop in v6 is that <Route children> is reserved for nesting routes.
+
+V5:
+
+![2-1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/953c89fb-00be-4ef6-8ff1-789d0c81ab21)
+
+V6:
+
+![2-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/d2caa33d-eb80-425a-885f-819d042220b9)
+
 
 ## No Need To Install “react-router-config” Separately
 
