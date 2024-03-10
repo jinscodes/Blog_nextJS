@@ -61,9 +61,28 @@ V6:
 ![4-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/268fc051-a7e8-4550-916f-db1a61287f7c)
 
 ## Replace “Redirect” with “Navigate”
+Redirection is no longer exported from React-Router-dom.
+
+Instead, you can use Navigate to achieve the same functionality.
+
+V5:
+
+![5-1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/09592f91-7173-46fc-8ddb-f4fbc9dfbf14)
+
+V6: 
+
+![5-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a09353e2-5494-4045-bc1c-d0aedc6d12ce)
+
+Do note that the replace prop is passed inside the element of the Route which signifies that we are replacing the current navigation stack.
+
+Without replace, it would mean we are just pushing the component in the existing navigation stack.
 
 ## You don’t need the “exact” Prop anymore
+React router’s better path matching algorithm enables us to match a particular route match without the “exact” prop. 
 
+Earlier, without “exact”, any URL starting with the concerned keyword would be loaded, as the matching process was done from top to down the route definitions.
+
+We don’t need to worry about that now as React Router has a better algorithm for loading the best route for a particular URL, the order of defining does not really matter now.
 
 ---
 [](https://imnirmaljoshi.medium.com/upgrade-from-react-router-v5-to-react-router-v6-166b8aa1f12e)

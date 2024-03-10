@@ -8,7 +8,7 @@
       "static/chunks/712-f8c1c9e6e1ee54b7.js",
       "static/chunks/477-e25cb46287ba59b1.js",
       "static/css/554361ce3e5d9e00.css",
-      "static/chunks/app/page-da9b630bcc36b32e.js"
+      "static/chunks/app/page-d4bc66bd51785ac5.js"
     ],
     "/layout": [
       "static/chunks/webpack-cd4dd1ed4337a477.js",
@@ -55,7 +55,7 @@
       "static/chunks/712-f8c1c9e6e1ee54b7.js",
       "static/chunks/609-1a96b49d59cc5bc7.js",
       "static/css/e173ba5b9a42c9bf.css",
-      "static/chunks/app/posts/[postPage]/[categorizedPostPage]/page-f97e4b69a34b36be.js"
+      "static/chunks/app/posts/[postPage]/[categorizedPostPage]/page-f3ecdd490f7be28f.js"
     ]
   }
 }
