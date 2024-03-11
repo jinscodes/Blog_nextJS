@@ -454,5 +454,13 @@
     "category": ["ReactJs", "NextJs"],
     "path": "react-router-dom-v6",
     "featured": false
+  },
+  {
+    "title": "Put Local Project To GitHub",
+    "description": "How To Put The Local Projects On GitHub? Easy~",
+    "date": "2023-06-06",
+    "category": ["GIT"],
+    "path": "local-to-github",
+    "featured": false
   }
 ]
