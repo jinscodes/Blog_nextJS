@@ -72,9 +72,11 @@ Most of the time, on the Internet, it's used on top of the App component in inde
 However, in my case, if I used it in Index.tsx, I only got a black screen. Also, App.js didn't work as well.
 
 Maybe App.js isn't just a component, it's a hub to route somewhere else.   
-(Of course, this analysis is not 100% accurate. This is why I thought to myself based on my previous experience. I asked stackoverflow to find out the underlying cause. ↓)
+*(Of course, this analysis is not 100% accurate. This is why I thought to myself based on my previous experience. I asked stackoverflow to find out the underlying cause. ↓)*
 
 [](https://stackoverflow.com/questions/78144708/im-using-react-router-dom-v6-to-adjust-the-scroll-position-after-page-is-moved)
+
+*(If I get the correct answer, I'll organize it separately and post it)*
 
 I don't know how `<ScrollRestoration />` is structured, but based on my custom component, `<ScrollToTop />`, when the screen is first rendered through useEffect, it takes the x and y axes of the screen and sets it to 0,0
 
