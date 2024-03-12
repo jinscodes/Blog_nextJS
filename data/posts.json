@@ -462,5 +462,13 @@
     "category": ["GIT"],
     "path": "local-to-github",
     "featured": false
+  },
+  {
+    "title": "Scroll To Top Of The React Page",
+    "description": "This post deals with one of the routing issues: scrolling does not move to the top.",
+    "date": "2023-06-08",
+    "category": ["ReactJs", "NextJs", "Error"],
+    "path": "err-react-scroll",
+    "featured": false
   }
 ]
