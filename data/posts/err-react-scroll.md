@@ -62,8 +62,29 @@ If the above first or second one was applied correctly, it would work normally a
 
 ![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/7ae6f838-ba0b-4894-a83a-b6583995c87a)
 
-## Component Placement Location
+### Where To Place It
+It doesn't mean we use it anywhere, we have to use it in a specific location to work properly. If we use it incorrectly, the screen just comes out black...
+
+Most of the time, on the Internet, it's used on top of the App component in index.tsx, as shown in the picture below. 
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/1c9610e2-923b-4e41-af9e-0e74d0b0fd76)
+
+However, in my case, if I used it in Index.tsx, I only got a black screen. Also, App.js didn't work as well.
+
+Maybe App.js isn't just a component, it's a hub to route somewhere else.   
+(Of course, this analysis is not 100% accurate. This is why I thought to myself based on my previous experience. I asked stackoverflow to find out the underlying cause. ↓)
+
+[](https://stackoverflow.com/questions/78144708/im-using-react-router-dom-v6-to-adjust-the-scroll-position-after-page-is-moved)
+
+I don't know how `<ScrollRestoration />` is structured, but based on my custom component, `<ScrollToTop />`, when the screen is first rendered through useEffect, it takes the x and y axes of the screen and sets it to 0,0
+
+I think it's right to use it on top of the components that the screen is finally rendered,   
+so instead of index.tsx (taking App.js and simply putting it in the class "root" of index.html) or App.js (which is not actually rendering, but acting as a hub according to url), we have to put it on the outlet of Root.tsx that is finally rendering the screen.
+
 
 ---
 [](https://medium.com/@glasshost/scroll-to-the-top-of-the-page-in-react-js-85a891158736)
 
+[](https://stackoverflow.com/questions/78144708/im-using-react-router-dom-v6-to-adjust-the-scroll-position-after-page-is-moved)
+
+[](https://reactrouter.com/en/main/components/scroll-restoration)
