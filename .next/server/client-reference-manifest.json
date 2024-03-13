@@ -56,6 +56,14 @@
         "async": false
       }
     },
+    "(app-client)/./node_modules/next/font/local/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"\",\"arguments\":[{\"src\":\"../../public/fonts/MaplestoryLight.otf\"}],\"variableName\":\"maple\"}": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/font/local/target.css?{\"path\":\"src/components/NavCategory/NavCategory.tsx\",\"import\":\"\",\"arguments\":[{\"src\":\"../../../public/fonts/MaplestoryLight.otf\"}],\"variableName\":\"maple\"}",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./public/svg/Caret.svg": {
       "*": {
         "id": "(sc_client)/./public/svg/Caret.svg",
@@ -88,14 +96,6 @@
         "async": false
       }
     },
-    "(app-client)/./src/assets/svg/House.svg": {
-      "*": {
-        "id": "(sc_client)/./src/assets/svg/House.svg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./src/assets/svg/Person.svg": {
       "*": {
         "id": "(sc_client)/./src/assets/svg/Person.svg",
@@ -104,9 +104,9 @@
         "async": false
       }
     },
-    "(app-client)/./node_modules/next/font/local/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"\",\"arguments\":[{\"src\":\"../../public/fonts/MaplestoryLight.otf\"}],\"variableName\":\"maple\"}": {
+    "(app-client)/./src/assets/svg/House.svg": {
       "*": {
-        "id": "(sc_client)/./node_modules/next/font/local/target.css?{\"path\":\"src/components/NavCategory/NavCategory.tsx\",\"import\":\"\",\"arguments\":[{\"src\":\"../../../public/fonts/MaplestoryLight.otf\"}],\"variableName\":\"maple\"}",
+        "id": "(sc_client)/./src/assets/svg/House.svg",
         "name": "*",
         "chunks": [],
         "async": false
@@ -251,6 +251,22 @@
       ],
       "async": false
     },
+    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Open_Sans\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"sans\"}": {
+      "id": "(app-client)/./node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Open_Sans\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"sans\"}",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/node_modules/next/font/local/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"\",\"arguments\":[{\"src\":\"../../public/fonts/MaplestoryLight.otf\"}],\"variableName\":\"maple\"}": {
+      "id": "(app-client)/./node_modules/next/font/local/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"\",\"arguments\":[{\"src\":\"../../public/fonts/MaplestoryLight.otf\"}],\"variableName\":\"maple\"}",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
     "/Users/hanjinsung/Desktop/Repository/blog_nextJS/public/svg/Caret.svg": {
       "id": "(app-client)/./public/svg/Caret.svg",
       "name": "*",
@@ -283,14 +299,6 @@
       ],
       "async": false
     },
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/assets/svg/House.svg": {
-      "id": "(app-client)/./src/assets/svg/House.svg",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
     "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/assets/svg/Person.svg": {
       "id": "(app-client)/./src/assets/svg/Person.svg",
       "name": "*",
@@ -299,16 +307,8 @@
       ],
       "async": false
     },
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Open_Sans\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"sans\"}": {
-      "id": "(app-client)/./node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Open_Sans\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"sans\"}",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/node_modules/next/font/local/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"\",\"arguments\":[{\"src\":\"../../public/fonts/MaplestoryLight.otf\"}],\"variableName\":\"maple\"}": {
-      "id": "(app-client)/./node_modules/next/font/local/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"\",\"arguments\":[{\"src\":\"../../public/fonts/MaplestoryLight.otf\"}],\"variableName\":\"maple\"}",
+    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/assets/svg/House.svg": {
+      "id": "(app-client)/./src/assets/svg/House.svg",
       "name": "*",
       "chunks": [
         "app/layout:static/chunks/app/layout.js"
@@ -347,6 +347,14 @@
       ],
       "async": false
     },
+    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/components/Waves/Waves.module.scss": {
+      "id": "(app-client)/./src/components/Waves/Waves.module.scss",
+      "name": "*",
+      "chunks": [
+        "app/posts/[postPage]/[categorizedPostPage]/page:static/chunks/app/posts/[postPage]/[categorizedPostPage]/page.js"
+      ],
+      "async": false
+    },
     "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/components/Post/MarkdownViewer/MarkdownViewer.tsx": {
       "id": "(app-client)/./src/components/Post/MarkdownViewer/MarkdownViewer.tsx",
       "name": "*",
@@ -373,14 +381,6 @@
     },
     "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/app/posts/[postPage]/[categorizedPostPage]/slug.module.scss": {
       "id": "(app-client)/./src/app/posts/[postPage]/[categorizedPostPage]/slug.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/posts/[postPage]/[categorizedPostPage]/page:static/chunks/app/posts/[postPage]/[categorizedPostPage]/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/components/Waves/Waves.module.scss": {
-      "id": "(app-client)/./src/components/Waves/Waves.module.scss",
       "name": "*",
       "chunks": [
         "app/posts/[postPage]/[categorizedPostPage]/page:static/chunks/app/posts/[postPage]/[categorizedPostPage]/page.js"
