@@ -470,5 +470,13 @@
     "category": ["ReactJs", "NextJs", "Error"],
     "path": "err-react-scroll",
     "featured": false
+  },
+  {
+    "title": "📱 Flutter Manage Color And Theme",
+    "description": "How to manage the color and them?",
+    "date": "2023-06-11",
+    "category": ["Flutter"],
+    "path": "flutter-color-theme",
+    "featured": false
   }
 ]
