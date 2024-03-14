@@ -74,14 +74,38 @@ However, in my case, if I used it in Index.tsx, I only got a black screen. Also,
 Maybe App.js isn't just a component, it's a hub to route somewhere else.   
 *(Of course, this analysis is not 100% accurate. This is why I thought to myself based on my previous experience. I asked stackoverflow to find out the underlying cause. ↓)*
 
-[](https://stackoverflow.com/questions/78144708/im-using-react-router-dom-v6-to-adjust-the-scroll-position-after-page-is-moved)
-
-*(If I get the correct answer, I'll organize it separately and post it)*
-
 I don't know how `<ScrollRestoration />` is structured, but based on my custom component, `<ScrollToTop />`, when the screen is first rendered through useEffect, it takes the x and y axes of the screen and sets it to 0,0
 
 I think it's right to use it on top of the components that the screen is finally rendered,   
 so instead of index.tsx (taking App.js and simply putting it in the class "root" of index.html) or App.js (which is not actually rendering, but acting as a hub according to url), we have to put it on the outlet of Root.tsx that is finally rendering the screen.
+
+## Question And Answer
+Q: Is there a standard for the location or file that uses it(ScrollToTop)? If so, what are the criteria?
+A: Straight from the ScrollRestoration docs:
+
+> ⚠️ IMPORTANT   
+> This feature only works if using a data router, see Picking a Router
+
+  > You should only render one of these and it's recommended you render it in the root route of your app:
+
+  ```dart
+  import { ScrollRestoration } from "react-router-dom";
+
+  function RootRouteComponent() {
+    return (
+      <div>
+        {/* ... */}
+        <ScrollRestoration />
+      </div>
+    );
+  }
+  ```
+
+The `ScrollRestoration` didn't work in your `index.tsx` or `App component` because you rendered it outside the data router, i.e. outside RouterProvider.
+
+It worked when you moved it into your root Root layout route component inside the RouterProvider.
+
+[](https://stackoverflow.com/questions/78144708/im-using-react-router-dom-v6-to-adjust-the-scroll-position-after-page-is-moved)
 
 
 ---
