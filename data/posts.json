@@ -478,5 +478,13 @@
     "category": ["Flutter"],
     "path": "flutter-color-theme",
     "featured": false
+  },
+  {
+    "title": "Add items to array (push, difference between concat)",
+    "description": "push VS concat",
+    "date": "2023-06-15",
+    "category": ["ReactJs", "JavaScript", "NextJs"],
+    "path": "push-concat",
+    "featured": false
   }
 ]
