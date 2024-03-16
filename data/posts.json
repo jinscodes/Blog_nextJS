@@ -486,5 +486,13 @@
     "category": ["ReactJs", "JavaScript", "NextJs"],
     "path": "push-concat",
     "featured": false
+  },
+  {
+    "title": "How To Remove Unused Imports In VSCode",
+    "description": "Sometimes you don't write or modify the code and organize unused imports. Let's find out how to automatically determine unused imports",
+    "date": "2023-06-17",
+    "category": ["WebCS"],
+    "path": "vscode-rm-import",
+    "featured": false
   }
 ]
