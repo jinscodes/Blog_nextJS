@@ -28,5 +28,12 @@ Sometimes modals with left and right margins are used.
 
 ![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/7667203b-4261-48f0-b30b-dd592ff14d8b)
 
+> There is also a way to use a library other than the showModalBottomSheet. 
+
+> A library called *modal_bottom_sheet* exists:   
+> [](https://pub.dev/packages/modal_bottom_sheet)
+
 ---
 [](https://dev-nam.tistory.com/29)
+
+[](https://api.flutter.dev/flutter/material/showModalBottomSheet.html)
