@@ -494,5 +494,13 @@
     "category": ["WebCS"],
     "path": "vscode-rm-import",
     "featured": false
+  },
+  {
+    "title": "📱 Flutter Modal Bottom Sheet Widget",
+    "description": "Let's learn about widgets that come up from the bottom of the screen.",
+    "date": "2023-06-19",
+    "category": ["Flutter"],
+    "path": "flutter-modal-bottom",
+    "featured": false
   }
 ]
