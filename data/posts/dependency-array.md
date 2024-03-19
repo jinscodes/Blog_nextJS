@@ -22,4 +22,24 @@ The purposes of the dependency array are...
 
 `useEffect` is executed whenever the component is rendered. 
 
-Therefore, when using `useEffect`, conditions are needed to prevent unnecessary executions.
+Therefore, when using `useEffect`, conditions are needed to prevent unnecessary executions. What is used at this time is the dependency array.
+
+For example, in the following code, `useEffect` specifies a dependency array so that it runs only when the count changes.
+
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/745af611-4b4a-4efb-ba1d-9a4dff569086)
+
+#### useCallback
+
+In the above code, [count] is the conditon of the `useEffect`, `useEffect` is only executed when the count is changed.
+
+In other words, if count doesn't change, `useEffect` will not be executed.
+
+There is another example, `useCallback`. 
+
+When using useCallback, unnecessary operations may be prevented by specifying a dependency array so that the function is re-generated only when the callback function is changed.
+
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/1d84fac8-cd97-40e1-b3d0-3a4e02a8ec23)
+
+In the above code, [count, onClick] is a condition for the handleClick function to be executed, designating that the function is re-generated only when the count and onClick are changed. 
+
+In this way, unnecessary function generation may be prevented unless the count and onClick are changed.
