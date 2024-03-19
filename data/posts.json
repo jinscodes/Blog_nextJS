@@ -502,5 +502,13 @@
     "category": ["Flutter"],
     "path": "flutter-modal-bottom",
     "featured": false
+  },
+  {
+    "title": "What Is Dependency Array In React??",
+    "description": "If you've used useEffect in React, you've heard of dependency array. What is dependency array?",
+    "date": "2023-06-20",
+    "category": ["ReactJs", "NextJs"],
+    "path": "dependency-array",
+    "featured": false
   }
 ]
