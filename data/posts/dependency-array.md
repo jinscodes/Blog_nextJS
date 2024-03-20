@@ -43,3 +43,19 @@ When using useCallback, unnecessary operations may be prevented by specifying a 
 In the above code, [count, onClick] is a condition for the handleClick function to be executed, designating that the function is re-generated only when the count and onClick are changed. 
 
 In this way, unnecessary function generation may be prevented unless the count and onClick are changed.
+
+#### useMemo
+In general, when a component is rerendered, variables and functions present in the component are re-executed because they are reevaluated.
+
+If it takes a long time or a lot of memory to generate specific data, it's certainly inefficient. 
+
+React provides a way to cache values through `useMemo` so that values calculated in the past can be used repeatedly for this purpose.
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/1770bdf2-8a68-4deb-8691-89017aead3be)
+
+---
+[](https://www.dhiwise.com/post/understanding-the-importance-of-the-useeffect-dependency-array-in-react)
+
+[](https://devtrium.com/posts/dependency-arrays)
+
+[](https://chamdom.blog/what-is-dependency-array/)
