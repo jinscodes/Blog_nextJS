@@ -22,3 +22,5 @@ Therefore, even if the property of obj2 is modified and obj1 is outputted, it is
 [](https://www.geeksforgeeks.org/what-is-shallow-copy-and-deep-copy-in-javascript/)
 
 [](https://www.linkedin.com/pulse/understanding-difference-between-shallow-copy-deep-python-torabi-nnh5e/)
+
+[](https://hanamon.kr/javascript-shallow-copy-deep-copy/)
