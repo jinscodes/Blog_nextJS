@@ -36,6 +36,29 @@ Through the `Object.assign()` method, an empty {} object is assigned as the firs
 
 Now obj1 and obj2 have a different address (but only up to 1 depth).
 
+### ❗️WARNING
+Spread grammar works effectively at 1 level depth when copying arrays. 
+
+Therefore, it may not be suitable for copying multi-dimensional arrays as in the following example.
+
+- Neither the Object.assign() method nor the spread operator is perfect deep copy.
+- Because the objects are different, deep copies are not made.
+- Up to one depth, it's definitely deep copy.
+- Shallow copy if it's more than 2 depth.
+
+Surely, there is a way to do deep copy through spread operator.
+
+**Copy up to one depth via spread operator**
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b2097ffb-d1ec-4359-bee0-840ba2f735fa)
+
+### 💡 Another way for perfect deep copy
+
+- Performs a recursively deep copy
+- Using Lodash's cloneDeep function
+- Using `JSON.parse()` and `JSON.stringify()` functions
+
+
 ---
 [](https://www.geeksforgeeks.org/what-is-shallow-copy-and-deep-copy-in-javascript/)
 
