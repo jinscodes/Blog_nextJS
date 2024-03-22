@@ -16,7 +16,11 @@ The above two objects have the same data(address), so they refer to the same add
 Therefore, even if the property of obj2 is modified and obj1 is outputted, it is the same as the obj2 value.
 
 ## Deep Copy
+**What is deeo copy?**
 
+**1️⃣ Copy via ... (spread operator)**
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/4c51102b-6236-41a5-a762-9bfe99707aae)
 
 ---
 [](https://www.geeksforgeeks.org/what-is-shallow-copy-and-deep-copy-in-javascript/)
