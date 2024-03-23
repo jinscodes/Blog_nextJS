@@ -513,7 +513,7 @@
   },
   {
     "title": "Shallow Copy and Deep Copy",
-    "description": "",
+    "description": "There are deep and shallow radiation. What is the difference?",
     "date": "2023-06-23",
     "category": ["JavaScript", "ReactJs"],
     "path": "shallow-deep-copy",
@@ -521,7 +521,7 @@
   },
   {
     "title": "Perfect Deep Copy",
-    "description": "",
+    "description": "Other than the spread operator and Object.assign(), there are ways to make deep copies. They are a little more perfect. Let's find out in this post.",
     "date": "2023-06-25",
     "category": ["JavaScript", "ReactJs"],
     "path": "perfect-deep-copy",
