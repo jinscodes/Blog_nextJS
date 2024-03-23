@@ -518,5 +518,13 @@
     "category": ["JavaScript", "ReactJs"],
     "path": "shallow-deep-copy",
     "featured": false
+  },
+  {
+    "title": "Perfect Deep Copy",
+    "description": "",
+    "date": "2023-06-25",
+    "category": ["JavaScript", "ReactJs"],
+    "path": "perfect-deep-copy",
+    "featured": false
   }
 ]
