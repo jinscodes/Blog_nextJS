@@ -58,6 +58,7 @@ Surely, there is a way to do deep copy through spread operator.
 - Using Lodash's cloneDeep function
 - Using `JSON.parse()` and `JSON.stringify()` functions
 
+👉🏻 Content for perfect deep copy will be in the next post...
 
 ---
 [](https://www.geeksforgeeks.org/what-is-shallow-copy-and-deep-copy-in-javascript/)
