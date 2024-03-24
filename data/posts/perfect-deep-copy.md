@@ -14,9 +14,23 @@ However, the above two methods do not completely make deep copies. Also, limitat
 #### What are some ways to make sure and perfectly deep copy?
 - Performs a recursively deep copy
 - Using Lodash's cloneDeep function
-- Using JSON.parse() and JSON.stringify() functions
+- Using `JSON.parse()` and `JSON.stringify()` functions
 
 ### Recursive Function
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/dc090fdc-1ea9-4ee5-84fc-23f9bed7ee10)
+
+Repeated copy of content if inside is an object.
+
+The disadvantage is that it is complicated if deep radiation is done through the recursive function.
+
+### JSON.parse && JSON.stringify
+`JSON.stringify()` converts an object to a json string, which breaks all references to the original object.
+
+After converting the object to a json string, use `JSON.parse()` to make it the original object (java script object) again.
+
+This method is the simplest and easiest, but it is slow compared to other methods, and if the object is function, it is treated as undefined.
+
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c6221b33-190f-465c-ab65-fbf351897cf4)
 
 ---
 [](https://velog.io/@katej927/JavaScript-%EC%96%95%EC%9D%80-%EB%B3%B5%EC%82%AC%EC%99%80-%EA%B9%8A%EC%9D%80-%EB%B3%B5%EC%82%AC)
