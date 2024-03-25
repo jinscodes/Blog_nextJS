@@ -32,5 +32,16 @@ This method is the simplest and easiest, but it is slow compared to other method
 
 ![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c6221b33-190f-465c-ab65-fbf351897cf4)
 
+### Lodash Library
+Libraries make deep copy easier and safer. 
+
+The downside is that it needs to be installed and that it will be efficient for general development, but it cannot be used for coding tests.
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/13dace24-705f-4950-bf83-8babe4153608)
+
 ---
 [](https://velog.io/@katej927/JavaScript-%EC%96%95%EC%9D%80-%EB%B3%B5%EC%82%AC%EC%99%80-%EA%B9%8A%EC%9D%80-%EB%B3%B5%EC%82%AC)
+
+[](https://bbangson.tistory.com/78)
+
+[](http://localhost:3000/posts/JavaScript,ReactJs/shallow-deep-copy)
