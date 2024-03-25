@@ -526,5 +526,13 @@
     "category": ["JavaScript", "ReactJs"],
     "path": "perfect-deep-copy",
     "featured": false
+  },
+  {
+    "title": "What Is Differences Between <a> And <Link> In React?",
+    "description": "There are some way to do router in react: a tag and Link tag. What's the differences?",
+    "date": "2023-06-27",
+    "category": ["ReactJs", "NextJs"],
+    "path": "react-routers",
+    "featured": false
   }
 ]
