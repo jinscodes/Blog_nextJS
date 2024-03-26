@@ -534,5 +534,13 @@
     "category": ["ReactJs", "NextJs"],
     "path": "react-routers",
     "featured": false
+  },
+  {
+    "title": "📱 Flutter File Structure",
+    "description": "How to set the file structure? Let get it!",
+    "date": "2023-06-30",
+    "category": ["Flutter"],
+    "path": "flutter-folder",
+    "featured": false
   }
 ]
