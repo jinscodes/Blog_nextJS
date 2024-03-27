@@ -542,5 +542,13 @@
     "category": ["Flutter"],
     "path": "flutter-folder",
     "featured": false
+  },
+  {
+    "title": "📱 Flutter Provider",
+    "description": "",
+    "date": "2023-06-32",
+    "category": ["Flutter"],
+    "path": "flutter-provider",
+    "featured": false
   }
 ]
