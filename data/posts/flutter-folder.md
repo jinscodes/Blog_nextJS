@@ -48,9 +48,38 @@ One which stored the flash screen and onboarding pages such as login/sign-up scr
 
 > The reason I did this was that I had a habit of classifying each component while using react, so this was more comfortable.
 
+#### Providers (Interaction outside the app)
+This directory is supposed to hold all the interactions that transact the data from outside the app. 
+
+This is different from the cloud functions, in regards to that none of the code in this directory will interact will cloud storage or server. 
+
+Considering the weather app, a good example is having to translate the JSON-type location data received from the weather and API to use it.
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/754889b9-e455-4958-96f2-929675daeefe)
+
+Please refer to the link below for information on the provider.
+
+[](https://totally-developer.tistory.com/83)
+
+#### Utilities (Function or logic used in the app)
+This directory will hold all the app logic or business logic of our entire application. 
+
+Again a good example in the weather app would be when a user selects a different location the weather data should also change accordingly.   
+Or in the case of the social media app when logins the app data should also change accordingly.
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/afb783d8-f182-45cb-bd80-23a510e6ebf6)
+
+#### Widgets (Widgets & Layout)
+It becomes clear all by the name itself that this folder will hold all the static widgets or the widgets that are used multiple times in the application. 
+
+#### Models (Collection of data)
+Models are the collection of data that are usually sourced from the servers, users, or external APIs, these are used in combination with widgets to complete the user interface of the app. 
+
 ---
 [](https://www.geeksforgeeks.org/flutter-file-structure/)
 
 [](https://en.wikipedia.org/wiki/Separation_of_concerns)
 
 [](https://couldi.tistory.com/34)
+
+[](https://totally-developer.tistory.com/83#google_vignette)
