@@ -15,5 +15,28 @@ However, this *Consumer* is the same as using `Provider.of` and the difference i
 
 *(Of course, even in the case of Provider.of(context), setting the parameter to listen: false can prevent rebuilding.)*
 
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/2adcda20-2aa4-40d7-b7c2-f0aab64c9c96)
+
+#### STEP1
+Configure folders and files as follows.
+
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/74f45641-6ba3-46de-ba69-c90bff035d3a)
+
+#### STEP2
+Write *http* and *provider* in the pubspec.yaml file and `flutter pub get` or save in the terminal.
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f685781b-98ff-4a00-8621-1af1d6a2b1cc)
+
+#### STEP3
+Make the album.dart in model folder.
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/03e276f1-33bd-4d1c-a018-712b8107c6e4)
+
+#### STEP4
+Write the code of album_provider.dart in provider folder.
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/6eb2a509-3d7f-48b2-9994-b373f4bdba40)
+
+
 ---
 [](https://totally-developer.tistory.com/83)
