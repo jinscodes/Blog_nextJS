@@ -75,6 +75,8 @@ It becomes clear all by the name itself that this folder will hold all the stati
 #### Models (Collection of data)
 Models are the collection of data that are usually sourced from the servers, users, or external APIs, these are used in combination with widgets to complete the user interface of the app. 
 
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/2ea7741e-2efe-49f3-81ee-f6ba64e44c64)
+
 ---
 [](https://www.geeksforgeeks.org/flutter-file-structure/)
 

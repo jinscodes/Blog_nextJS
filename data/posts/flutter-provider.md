@@ -27,6 +27,12 @@ Write *http* and *provider* in the pubspec.yaml file and `flutter pub get` or sa
 
 ![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f685781b-98ff-4a00-8621-1af1d6a2b1cc)
 
+**Provider**
+[](https://pub.dev/packages/provider)
+
+**http**
+[](https://pub.dev/packages/http)
+
 #### STEP3
 Make the album.dart in model folder.
 
@@ -37,6 +43,21 @@ Write the code of album_provider.dart in provider folder.
 
 ![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/6eb2a509-3d7f-48b2-9994-b373f4bdba40)
 
+#### STEP5
+Write the code of album_view.dart in view folder like below. And then, print the all datas through *Consumer* widget and `ListView.builder`.
+
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/0aab63d2-2cee-4a46-8206-4e4fb9e5599d)
+
+#### STEP6
+Lastly, follow the below code for main.dart. It's important to wrap it with `ChangeNotifierProvider`.
+
+![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/362fb017-f1a0-4849-a710-3e211e706602)
+
+DONE!!
 
 ---
+[](https://pub.dev/packages/provider)
+
 [](https://totally-developer.tistory.com/83)
+
+[](https://www.youtube.com/watch?v=KZv1EDGbHFU)
