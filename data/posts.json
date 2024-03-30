@@ -550,5 +550,13 @@
     "category": ["Flutter"],
     "path": "flutter-provider",
     "featured": false
+  },
+  {
+    "title": "📱 Flutter: Factory Constructor in Dart",
+    "description": "The factory method pattern is a generation design pattern in which object generation is encapsulated into a factory class to be generated instead.",
+    "date": "2023-07-05",
+    "category": ["Flutter", "WebCS"],
+    "path": "factory",
+    "featured": false
   }
 ]
