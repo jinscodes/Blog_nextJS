@@ -3,7 +3,16 @@ Factory constructor is one of the confusing topics for beginners in dart. To und
 ## What Is Factory Design Pattern
 In a Factory pattern, we create objects without exposing the creation logic to the client and refer to newly created objects using a common interface.
 
-It's not easy to accept this definition 
+It's not easy to accept this definition. Explain it via code and factory construct.
+
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/06cda4b1-7cec-40b7-bcd1-b8c36d07a7a1)
+
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b2ad3672-28b2-4b21-ae68-2d61b658ea33)
+
+If we need to create the object of these subclasses with the following criteria,
+
+1. Give `Golden` instance, if the user wants a dog to guard
+2. Give `Labrador` instance, otherwise.
 
 ---
 [](https://medium.com/nerd-for-tech/factory-constructor-in-dart-part-1-1bbdf0d0f7f0)
