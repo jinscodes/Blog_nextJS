@@ -14,6 +14,30 @@ If we need to create the object of these subclasses with the following criteria,
 1. Give `Golden` instance, if the user wants a dog to guard
 2. Give `Labrador` instance, otherwise.
 
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/5b7bbdcd-a674-46b5-b8a2-f152517c319c)
+
+What if you want this logic in multiple places?
+
+If repeating if-else many times, you can use logic in Multiple places. 
+
+However, a code that repeats if-else many times is unacceptable because there is a very good chance that there are other better ways to do this. 
+
+So, how can we make this simple?
+
+It's the factory constructor!
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/7939bf5c-8277-46e2-95b8-45acdb4ad67d)
+
+Now we have moved the instance creation logic to the parent class.
+
+To use it
+
+![5-1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f4f94cad-fa38-4883-a236-4d9dfde75f18)
+
+or
+
+![5-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9b0239a4-51e4-470f-bbd6-2ae21e1b6f33)
+
 ---
 [](https://medium.com/nerd-for-tech/factory-constructor-in-dart-part-1-1bbdf0d0f7f0)
 
