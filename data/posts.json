@@ -558,5 +558,13 @@
     "category": ["Flutter", "WebCS"],
     "path": "factory",
     "featured": false
+  },
+  {
+    "title": "📱 Flutter: Save Data In Local",
+    "description": "What should I do when I want to store data locally?",
+    "date": "2023-07-10",
+    "category": ["Flutter"],
+    "path": "flutter-save-local",
+    "featured": false
   }
 ]
