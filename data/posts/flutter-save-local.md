@@ -26,7 +26,7 @@ depedencies:
 
 ### Write & Read & Remove Data
 
-#### Write
+**Write**
 ```dart
 final SharedPreferences prefs = await SharedPreferences.getInstance();
 
@@ -73,6 +73,90 @@ final SharedPreferences prefs = await SharedPreferences.getInstance();
 // remove data
 await prefs.remove('counter');
 ```
+
+## SQLite
+It is used when a relational database is needed in the flutter.
+
+We can store and manage complex data structures and relationships, and we can search, sort, and filter data using queries. We can use it when we want to store and manage data in a table form.
+
+1️⃣ However, because it is a relational database, defining initial settings and table structure can be complicated.
+
+2️⃣ Also, overhead can be large compared to simple data storage. There are limitations to storing and managing non-relational data.
+
+[](https://pub.dev/packages/sqflite)
+
+**Example of using SQLite**
+
+```json
+depedencies:
+	flutter:
+		sdk: flutter
+	sqflite: 
+```
+
+### Open & Close
+
+```dart
+var db = await openDatabase('my_db.db');
+
+await db.close();
+```
+
+```dart
+// Get a location
+var databasePath = await getDatabasePath();
+String path = join(databasesPath, 'demo.db');
+
+// Delete the database
+await deleteDatabases(path);
+
+// Open the database
+Database database = await openDatabases(path, version: 1, onCreate: (Database db, int version) async {
+	await db.execute('CREATE TABLE Test');
+});
+
+// Insert records in a transaction
+await database.transaction((txn) async {
+	int id1 = await txn.rawInsert('INSERT INTO TEST');
+	print('inserted1: $id1');
+	 int id2 = await txn.rawInsert(
+      'INSERT INTO Test(name, value, num) VALUES(?, ?, ?)',
+      ['another name', 12345678, 3.1416]);
+  print('inserted2: $id2');
+});
+
+// Update record
+int count = await database.rawUpdate(
+	'UPDATE Test Set name',
+	['updated name', 1234567, 3.1416]
+);
+print('updated $count');
+
+// Get record
+List<Map> list = await database.rawQuery('SELECT * FROM Test');
+List<Map> expectedList = [
+	{'name': 'updated name', 'id': 1, 'value': 9876, 'num': 456.789},
+	{'name': 'another name', 'id': 2, 'value': 1234, 'num': 3.14},
+];
+print(list);
+print(expectedList);
+assert(const DeepCollectionEquality().equals(list, expectedList));
+
+// Count record
+count = Sqflite.firstIntValue(await database.rawQuery('SELECT COUNT(*) FROM Test'));
+assert(count == 2);
+
+// Delete a record
+count = await database
+    .rawDelete('DELETE FROM Test WHERE name = ?', ['another name']);
+assert(count == 1);
+
+// Close the database
+await database.close();
+```
+
+## path_provider
+
 
 ---
 [](https://toyou101.tistory.com/9)
