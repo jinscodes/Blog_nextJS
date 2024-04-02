@@ -94,7 +94,7 @@ depedencies:
 	sqflite: 
 ```
 
-### Open & Close
+### Open & Close & Use
 
 ```dart
 var db = await openDatabase('my_db.db');
@@ -156,7 +156,44 @@ await database.close();
 ```
 
 ## path_provider
+path_provider is used when you want to store data directly on a local file system. 
 
+It allows the storage of various types of data such as images, text, binary, etc. 
+
+It's a good way to handle file-managed data.
+
+1️⃣ However, since file storage requires direct access to the file system, you need to pay more attention to data management. 
+For example, you need to manage file names or paths, or prepare for errors that may occur when reading and writing files. 
+
+2️⃣ Also, searching, sorting, and filtering can be relatively difficult and complicated when storing data using files.
+
+File storage using path_provider is also easy to use. This package creates files in a directory that can only be accessed inside the app, so you can keep your data secure. 
+
+Creating files using the app's internal path also solves file rights issues.
+
+[](https://pub.dev/packages/path_provider)
+
+```dart
+dependencies:
+  path_provider: ^2.0.5
+
+```
+
+### Use
+
+```dart
+final Directroy tempDir = await getTemporaryDirectory();
+
+final Directory appDocumentsDir = await getApplicationDocumentsDirectory();
+
+final Directory? downloadsDir = await getDownloadsDirectory();
+```
+
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ead0784c-dbde-48ab-8c10-8d39267a3a39)
+
+The storage location is saved to the path above by default. 
+
+However, it's a directory that can only be accessed from inside the app, so it's generally not available. After connecting the device from Android Studio, it can only be accessed from Device File Explorer.
 
 ---
 [](https://toyou101.tistory.com/9)
