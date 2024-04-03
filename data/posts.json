@@ -566,5 +566,13 @@
     "category": ["Flutter"],
     "path": "flutter-save-local",
     "featured": false
+  },
+  {
+    "title": "📱 Flutter: WillPopScope Deprecated - PopScope",
+    "description": "WillPopScope for blocking going to previous page is deprecated. What has it been replaced by?",
+    "date": "2023-07-13",
+    "category": ["Flutter"],
+    "path": "flutter-willpopscope",
+    "featured": false
   }
 ]
