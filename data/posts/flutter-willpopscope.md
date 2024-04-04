@@ -30,3 +30,17 @@ Users couldn't know in advance that their touch was misrecognized as a backward 
 To solve these problems, Predictive Back Feature, ahead-of-time, appears. 
 
 ## WillPopScope Deprecated
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/bf7bb722-16ff-4f01-8d53-b03ac2a89e79)
+
+First of all, WillPopScope is a class that provides customization for backward movement to the default widget. `OnWillPop` is a callback function that runs when a user presses a back button and is used to define the logic that should run when the back button is pressed.
+
+If onWillPop returns true, the current screen will pop and move to the previous screen, but if it returns false, the pop action will not be performed.
+
+It is often implemented in this way to prevent the back button from going backward by pressing the back button at the bottom of the screen. *(If you want to show any action, not just block the back button action, you can define the action you want on WillPop and return false.)*
+
+However, in the case of WillPopScope, it is not compatible with Predictive Back Feature, which is supported on Android 14, so Flutter will offer PopScope as an alternative.
+
+## PopScope Introduced
+
+---
+[](https://velog.io/@jeongminji4490/Flutter-WillPopScope-Deprecated)
