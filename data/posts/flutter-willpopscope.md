@@ -41,6 +41,22 @@ It is often implemented in this way to prevent the back button from going backwa
 However, in the case of WillPopScope, it is not compatible with Predictive Back Feature, which is supported on Android 14, so Flutter will offer PopScope as an alternative.
 
 ## PopScope Introduced
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/426c9262-a3b6-44e1-8684-666010737dc6)
+
+PopScope is a new ahead-of-time API to support Predictive Back Feature, supported by Android 14, replacing WillPopScope and Navigator.willPop, which were previously used to manage back press action.
+
+**canPop**
+- Boolean type parameter that controls the backward action
+- Default value is true
+- If value is true, backward action works well, and vice versa
+
+**onPopInvoked**
+- Callback function called when a backward action occurs, whether successful of not
+- Even if canPop is false, onPopInvoked is still called, and didPop is false. On the other hand, if canPop is true, didPop is also true.
+
+
 
 ---
 [](https://velog.io/@jeongminji4490/Flutter-WillPopScope-Deprecated)
+
+[](https://docs.flutter.dev/release/breaking-changes/android-predictive-back#migration-guide)
