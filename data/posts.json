@@ -574,5 +574,13 @@
     "category": ["Flutter"],
     "path": "flutter-willpopscope",
     "featured": false
+  },
+  {
+    "title": "WEB: Base64 / Blob / ArrayBuffer / File",
+    "description": "Handle kinds of datas.",
+    "date": "2023-07-15",
+    "category": ["WebCS", "JavaScript"],
+    "path": "web-datas",
+    "featured": false
   }
 ]
