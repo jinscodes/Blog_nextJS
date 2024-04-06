@@ -36,6 +36,12 @@ Data consisting of 0 and 1 converts to the format that is based on base64 text, 
 
 ![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/117d2cd8-e13a-449e-9e18-71b1f54f71ac)
 
+There is an example. Bring images to the source code and deal with them.
+
+In general, we bring the image from the local folder or fetching it into relative path through the file system provided by the code.
+
+However, files are no different from eventually fetching the stepping stones stored in the OS like url.
+
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Base64-Blob-ArrayBuffer-File-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%A0%95%EB%A7%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85)
 
