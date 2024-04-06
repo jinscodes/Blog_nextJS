@@ -16,6 +16,31 @@ Binary refers to the base system for representing numbers using only 0 and 1 and
 ![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ac7e2634-872b-4016-93d2-0fe0090e4f2b)
 
 ## Base64
+The computer stores all data as 0 and 1. The browser also consists of 0 and 1, and the folders and files are also made of binary data.
+
+To get data from computer, we can use **variable**.
+
+We allocate the data which consists of 0 and 1 to the variable and use it.
+
+How do complex multimedia files such as images and videos, rather than numbers or strings, be stored in memory in variables?
+
+Saving an image url in a variable stores a stepping stone called a link, not the image data itself.
+
+The concept of Base64 appears at this time. Base64 refers to encoding binary data (binary) consisting of 0 and 1 and converting it into a text format.
+
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ec8395da-7d8e-4fb5-afcc-34d2d61b784a)
+
+For example, like the below image, we can see the long code("data:image/png;base64") in html instead of img's src or image url. This is the base64. 
+
+Data consisting of 0 and 1 converts to the format that is based on base64 text, so that we can handle the image itself.
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/117d2cd8-e13a-449e-9e18-71b1f54f71ac)
+
+There is an example. Bring images to the source code and deal with them.
+
+In general, we bring the image from the local folder or fetching it into relative path through the file system provided by the code.
+
+However, files are no different from eventually fetching the stepping stones stored in the OS like url.
 
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Base64-Blob-ArrayBuffer-File-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%A0%95%EB%A7%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85)
