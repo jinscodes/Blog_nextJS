@@ -54,6 +54,24 @@ Usually, the case of dealing with the base64 image format directly in the html a
 
 ![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/2a886907-18e8-4d28-9b01-da8183945968)
 
+In this way, converting to base64 directly deals with binary, but there is a disadvantage in that the amount of data increases by 33% compared to binary data through 64-digit encoding that converts binary data into text. 
+
+However, even as the length of the data increases, the main reason for using Base64 is that Binary data can be handled in a text-based standard.
+
+It is also much easier to transfer/storage than it remains in pure binary form (binary data is more likely to be corrupted).
+
+When encoding, since only A-Z, a-z, 0–9,/+ are used for the character format, it may be transmitted stably between systems that may damage data due to different character formats.
+
+To summarize above,
+
+**Pros**
+- No need for a separate image file, because base64 data itself is an image.
+- When rendering a browser, it loads like loading a document, so it is loaded constantly. There is also a point in which images can be loaded with the above characteristics even if the network is not good.
+
+**Cons**
+- The string is very, very long, which makes it less readable.
+- If Base64 encoding is used, the capacity is 33% larger than that of the original, which can reduce the loading speed if abused.
+
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Base64-Blob-ArrayBuffer-File-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%A0%95%EB%A7%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85)
 
