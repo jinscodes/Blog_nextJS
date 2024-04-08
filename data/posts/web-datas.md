@@ -72,6 +72,31 @@ To summarize above,
 - The string is very, very long, which makes it less readable.
 - If Base64 encoding is used, the capacity is 33% larger than that of the original, which can reduce the loading speed if abused.
 
+### How to convert image url to base64
+Let's converting!
+
+#### 1️⃣ Using the encoding site
+The simplest way is using onlie site. It converts image to base64 withiout any special work.
+
+[](https://elmah.io/tools/base64-image-encoder/)
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/77adfd0a-6c25-41fc-a7a7-fee3f70db141)
+
+#### Programming
+There is another way to convert image to base64 with JavaScript.
+
+Firstly, read the image using fetch api and convert it to blob format. After that, read and convert blob data in base64 format through FileReader object.
+
+> 💡 **NOTE**   
+> FileReader is an object used for the purpose of reading data from data-type objects such as Blob or File. The read data mainly uses events to deliver the data at the necessary time.
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/78952522-d274-48ea-a4cb-12a9c6865aea)
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/6e04e92f-af55-45b7-924f-3fbe56764e65)
+
+## Blob (Binary Large Object)
+BLOB stands for Binary Large Object, which means that multi-media file binaries such as images, audio, and video are mainly stored in the form of objects.
+
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Base64-Blob-ArrayBuffer-File-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%A0%95%EB%A7%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85)
 
