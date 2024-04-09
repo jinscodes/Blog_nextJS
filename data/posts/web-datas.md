@@ -95,7 +95,35 @@ Firstly, read the image using fetch api and convert it to blob format. After tha
 ![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/6e04e92f-af55-45b7-924f-3fbe56764e65)
 
 ## Blob (Binary Large Object)
-BLOB stands for Binary Large Object, which means that multi-media file binaries such as images, audio, and video are mainly stored in the form of objects.
+BLOB stands for Binary Large Object, which means that multi-media file binaries such as images, audio, and video are mainly stored in the form of objects. 
+
+Since most multimedia files are often large in capacity, they can be viewed as data types designed to effectively store them in a database. (Just as there is a string type and number type, understand that there is a blob type.)
+
+For example, when you want to store an image file as data in a database, you convert it into a blob format and save it. 
+
+Even in a browser environment, JavaScript can be used to access and use these blob data. It is mainly used in JavaScript to deal with multimedia data such as text, images, sound, and video.
+
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e765f831-8167-4f5e-95fd-66116f43b464)
+
+What's the different between blob and base64?
+
+- Base64 was said to be a format stored in the form of text(string) to deal with binary data
+- Blob stores objects to handle binary data
+
+Previously, to express the image binary file in the browser in base64 format, it was possible to convert it using the FileReader object and put it into the src property of the <img> tag. 
+
+However, the string is very long, so it is not only bad for readability, but it also has the disadvantage of taking a lot of time to load the document itself (33% larger).
+
+However, the blob data can be used in the browser simply as follows by converting it into an object url properly. And since blob is an object, it has various code utilization, so it can be converted to base64 or a buffer.
+
+![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/29750419-0cd6-4914-b178-c6ceb9e067d0)
+
+## Deal With blob Image
+The following is a code that receives images as fetch api and converts them into blob format.
+
+![8](https://github.com/jinscodes/Blog_nextJS/assets/87598134/84113838-c929-43bc-9b66-11b974bb11af)
+
+![9](https://github.com/jinscodes/Blog_nextJS/assets/87598134/6bf12d48-3abf-4992-ad2f-9dd4287abb02)
 
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Base64-Blob-ArrayBuffer-File-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%A0%95%EB%A7%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85)
