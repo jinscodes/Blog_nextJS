@@ -125,6 +125,15 @@ The following is a code that receives images as fetch api and converts them into
 
 ![9](https://github.com/jinscodes/Blog_nextJS/assets/87598134/6bf12d48-3abf-4992-ad2f-9dd4287abb02)
 
+### Blob -> ObjectUrl 
+Blob objects created through the above code are not immediately available, but must be converted separately into url types that can be used for src attributes of <a> and <img> tags.
+
+![10](https://github.com/jinscodes/Blog_nextJS/assets/87598134/642352f0-9402-4bec-b77b-fafb28b4c686)
+
+Unique URL can be created with a Blob object by using `URL.createObjectURL` method. At this time, the generated URL takes the form of `blob:/`. And, the converted URL can be used in all HTML tags and CSS properties with source(src) as an attribute.
+
+Since the type (image/png) is separately specified in the Blob object, the content-type in the network request is naturally matched with the specified type in the process of downloading/uploading the Blob object.
+
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Base64-Blob-ArrayBuffer-File-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%A0%95%EB%A7%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85)
 
