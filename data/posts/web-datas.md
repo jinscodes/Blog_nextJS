@@ -132,7 +132,29 @@ Blob objects created through the above code are not immediately available, but m
 
 Unique URL can be created with a Blob object by using `URL.createObjectURL` method. At this time, the generated URL takes the form of `blob:/`. And, the converted URL can be used in all HTML tags and CSS properties with source(src) as an attribute.
 
-Since the type (image/png) is separately specified in the Blob object, the content-type in the network request is naturally matched with the specified type in the process of downloading/uploading the Blob object.
+Since the type(image/png) is separately specified in the Blob object, the content-type in the network request is naturally matched with the specified type in the process of downloading/uploading the Blob object.
+
+![11](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f754df7d-0029-4c9b-b0c0-33d98a1ebac5)
+
+At this time, the converted URL is stored in the browser memory of the current tab, and the stored URL is in the form of referring to the mapped Blob object.
+
+Because of this principle, unlike base64, the original Blob object can be accessed with only a short character string and files such as images can be imported accordingly. 
+
+**So, the converted URL is always valid only in the current document. (Because it is currently loaded in browser memory. If you want to refresh the current document or use it on another page, you can't use the converted URL properly.)**   
+ 
+However, memory issues related to this are precarious.
+
+If a Blob object is converted into a URL and stored in memory with a mapping, the browser determines that the URL is valid until the URL is explicitly released, so garbage collection is not carried out on the JavaScript engine.
+
+Therefore, after using the blob URL, it is recommended to explicitly release it when it is determined that it is no longer used.
+
+![12](https://github.com/jinscodes/Blog_nextJS/assets/87598134/bbabd9fc-1ca8-484f-be29-9bd058a71488)
+
+The conversion was carried out through the `URL.createObjectURL` method, and the `URL.revokeObjectURL` method is used for the revoke.
+
+This is a method of erasing internally mapped references, which may erase Blob objects residing in memory.
+
+For example, if you use blob only for image download rather than output to the screen, you can prevent memory leakage by revoking the dynamically created blob object because it is only needed at the moment of download click and not after that.
 
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Base64-Blob-ArrayBuffer-File-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%A0%95%EB%A7%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85)
