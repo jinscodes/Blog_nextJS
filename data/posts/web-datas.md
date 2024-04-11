@@ -191,6 +191,16 @@ If base64 and blob are processed data types that are easy for humans to read and
 
 The created buffer object occupies a consecutive 16 byte memory space, and all initial values are filled with zero.
 
+> **💡 NOTE**   
+> Although it has an "array" in the name, ArrayBuffer is not the array of JavaScript. ArrayBuffer is jsut like an abstract memory layer that occupies a continuous space in memory.
+
+> ArrayBuffer has the differences compared to JavaScript array.   
+	- It has a fixed length, and cannot be stretched or redeuced.   
+	- It takes up space in memory that is exactly the sizse specified.   
+	- In order to access each byte, it cannot be accessed through an index like buffer[index] like normal array Instead, you must create and access a separate object called a view.
+
+
+
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Base64-Blob-ArrayBuffer-File-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%A0%95%EB%A7%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85)
 
