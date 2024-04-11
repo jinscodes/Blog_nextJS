@@ -156,7 +156,44 @@ This is a method of erasing internally mapped references, which may erase Blob o
 
 For example, if you use blob only for image download rather than output to the screen, you can prevent memory leakage by revoking the dynamically created blob object because it is only needed at the moment of download click and not after that.
 
+### Blob -> Base64
+As mentioned earlier, it is possible to convert it into a Blob object in the form of base64, and the converted string can be used directly as src. These URLs are usually called data url, but the converted base64 URL can be used anywhere, unlike the format converted through the URL.createObjectURL method above. (Because the string itself is image data.)
+
+The method of encoding and using Blob objects as base64 was discussed in the introduction part of base64 above.
+
+![13](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a95606c9-96ec-4127-b617-4c7aa39946d5)
+
+> 💡 **NOTE**   
+> Both methods of converting Blob objects into URLs are highly utilized. However, when encoding with base64, the string can be very long and it is slower than the `URL.craeteObjectUR` method, while the converted data url has the advantage of being valid not only in documents on the current tab but also anywhere.
+
+## ArrayBuffuer
+The ArrayBuffer object was introduced to address chunks of multimedia data such as images and videos in standard JavaScript(browser).
+
+In general, when transmitting video content, such as real-time broadcasting, real-time data called videos must be continuously delivered so that users can see this. 
+
+In other words, there is a situation in which large data must be divided and transmitted in some way.
+
+![14](https://github.com/jinscodes/Blog_nextJS/assets/87598134/d4b2022c-60cc-40e2-8c67-653c6ac1d480)
+
+A buffer in JavaScript is an object that stores **"binary data"** in a **"memory space of a specific size"**.
+
+Therefore, as the use of JavaScript diversifies, it is necessary to deal with binary data such as audio and video, so it is necessary to have the flexibility to properly allocate and use the necessary memory space to create ArrayBuffer.
+
+
+
+ArrayBuffer is used in JavaScript as a means of dealing directly with raw data(binary data), which allows developers to manually manage memory.
+
+If base64 and blob are processed data types that are easy for humans to read and handle, they are closer to the original than ArrayBuffer. It is a reference type, and serves to inform that it will allocate and use continuous memory space of a fixed length.
+
+*In particular, when dealing with performance-sensitive issues, or when dealing with large amounts of file data such as Blob, ArrayBuffer can be used to work flexibly and efficiently.*
+
+![15](https://github.com/jinscodes/Blog_nextJS/assets/87598134/14bb3d72-1f7a-499f-95a5-648c23f3b293)
+
+The created buffer object occupies a consecutive 16 byte memory space, and all initial values are filled with zero.
+
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Base64-Blob-ArrayBuffer-File-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%A0%95%EB%A7%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85)
 
 [](https://dev.to/ionic/converting-a-base64-string-to-a-blob-in-javascript-35kl)
+
+[](https://curryyou.tistory.com/441)
