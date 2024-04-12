@@ -14,7 +14,7 @@ This project is made with NEXTJS and SCSS
 
 ## Visit my blog!! 
 
-[here!!👉🏻](https://jay-h-blog.vercel.app/)
+[here!!👈🏻](https://jay-h-blog.vercel.app/)
 
 ## Emailed me if you want!
 
