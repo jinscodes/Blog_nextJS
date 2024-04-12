@@ -225,6 +225,24 @@ The following are the types of view objects that deal with each byte in the Arra
 > 💡 **NOTE**   
 > The object implemented by ArrayBuffer represents the part of the data, and the view object provides the context to convert it into a real data formatting array.
 
+### Base64 -> ArrayBuffer -> Blob
+ArrayBuffer is used as an intermediate process to convert base64 data into blob.
+
+![18](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ba8b6cf4-dffd-4580-8578-780f5c4f4d6e)
+
+### Blob → ArrayBuffer
+It can convert to FileReader
+
+![19](https://github.com/jinscodes/Blog_nextJS/assets/87598134/48cca047-3f98-4b8c-b9b6-9a00f60f973b)
+
+In the case of a large-capacity blob, asynchronous processing can be performed using Promise.
+
+![20](https://github.com/jinscodes/Blog_nextJS/assets/87598134/63cd2a6d-43a4-4a38-a476-8f27364cce6b)
+
+There is also a method of converting blob into ObjectURL and requesting fetch and converting it into array buffer at once.
+
+![21](https://github.com/jinscodes/Blog_nextJS/assets/87598134/507c606e-a1a0-4b7a-8f73-d894a47edd09)
+
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Base64-Blob-ArrayBuffer-File-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%A0%95%EB%A7%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85)
 
