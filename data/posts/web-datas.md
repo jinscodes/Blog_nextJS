@@ -199,7 +199,31 @@ The created buffer object occupies a consecutive 16 byte memory space, and all i
 	- It takes up space in memory that is exactly the sizse specified.   
 	- In order to access each byte, it cannot be accessed through an index like buffer[index] like normal array Instead, you must create and access a separate object called a view.
 
+In general, in the case of Array, you can simply access and manipulate the data in the array, but access and manipulation to ArrayBuffer must always be performed by creating a separate object called a "view".
 
+The view object does not store any data on its own, but simply uses it as a means to look inside the ArrayBuffer(They are commonly referred to as TypedArray).
+
+The following are the types of view objects that deal with each byte in the ArrayBuffer individually.
+
+- Unit8Array
+	-	The number 8 means bits and is accessible by each byte because 8 bits = 1 byte.
+	- As it is 1 byte size, it can handle numbers from 0 to 255. (Unit8 means Unsigned 8bit Int)
+- Unit16Array
+	- It's an accessible view object in an integer from of 2 bytes(16 bits). 
+	- Thus, the range that can be handled corresponds to 0 - 65535.
+- Unit32Array
+	- It's an accessible view object in an integer form in units of 4 bytes(32bits).
+	- Therefore, the range that can be handled corresponds to 0 - 4294967295.
+- Float64Array
+	- It's an accessible view object in a floating-point manner in units of 8 bytes(64bits).
+	- The range can be handled is from 5.0x10^-324 to 1.8x10^308
+
+![16](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f25571de-75fb-41a2-b492-6c188e49db3e)
+
+![17](https://github.com/jinscodes/Blog_nextJS/assets/87598134/cf91ee3f-9383-4ebf-a07b-634bfcebf296)
+
+> 💡 **NOTE**   
+> The object implemented by ArrayBuffer represents the part of the data, and the view object provides the context to convert it into a real data formatting array.
 
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Base64-Blob-ArrayBuffer-File-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%A0%95%EB%A7%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85)
