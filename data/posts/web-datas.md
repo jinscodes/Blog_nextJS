@@ -292,6 +292,26 @@ The main methods available in the created FileReader object are as follows.
 
 ![27](https://github.com/jinscodes/Blog_nextJS/assets/87598134/4f22c530-8e2c-490e-b402-6b7d2db6da6b)
 
+- readAsArrayBuffer(blob)
+	- Read data in ArrauBuffer format.
+	- In the case of readAsArrayBuffer, it is useful when low-level binary work is required for binary file targets. 
+	- In the case of most high-level tasks, since the File object inherits Blob, it is possible to immediately call methods such as slice without a separate read process.
+- readAsText(blob, [encoding]) 
+	- Read data in text form according to encoding method (default encoding method - utf-8).
+	- In the case of readAsText, it is useful if you need a character string in the form of text.
+- readAsDataURL(blob)
+	- Read data in base64 format data url.
+	- In the case of readAsDataURL, it is useful if resources must be addressed to src properties, such as img tags. 
+	- Alternatively, as covered in the previous chapter, there is a way to use URL.createObjectURL.
+- abort()
+	- Stop the operation immediately
+
+The list of events that occur in the process of reading data using the FileReader object is as follows.
+
+![28](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f21c7c58-99de-4f51-a1f2-434e0087e08b)
+
+- loadshort: When loading starts
+
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Base64-Blob-ArrayBuffer-File-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%A0%95%EB%A7%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85)
 
