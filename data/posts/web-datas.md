@@ -272,6 +272,25 @@ In fact, the fetch module provides a helper method that can be converted directl
 
 ![24](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e415e655-4dda-4c2e-8c25-e5218877d1bb)
 
+## File & FileReader
+Although files are a very familiar type to us, the File object in JavaScript is an extended object of the Blob object and is primarily responsible for functions related to the file system.
+
+The file system is an area of the OS/server, and it can be viewed as a standard to support it because functions such as sending and receiving files on a browser are required.
+
+There are two methods for handling files using JavaScript in a browser: using a File object or an input tag of html.
+
+![26](https://github.com/jinscodes/Blog_nextJS/assets/87598134/16110623-33a5-44a3-a40a-4d0f21c0bfc0)
+
+![25](https://github.com/jinscodes/Blog_nextJS/assets/87598134/bc7fa40c-0f3d-4bc1-adc7-44cece4e45c6)
+
+## FileReader Object
+FileReader is an object that is used to read the data from the object like Blob or File.
+
+The read data mainly uses events to deliver the data at the required timing.
+
+The main methods available in the created FileReader object are as follows.
+
+![27](https://github.com/jinscodes/Blog_nextJS/assets/87598134/4f22c530-8e2c-490e-b402-6b7d2db6da6b)
 
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Base64-Blob-ArrayBuffer-File-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%A0%95%EB%A7%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85)
