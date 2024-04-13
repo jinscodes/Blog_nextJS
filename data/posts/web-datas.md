@@ -173,7 +173,7 @@ In general, when transmitting video content, such as real-time broadcasting, rea
 
 In other words, there is a situation in which large data must be divided and transmitted in some way.
 
-![14](https://github.com/jinscodes/Blog_nextJS/assets/87598134/d4b2022c-60cc-40e2-8c67-653c6ac1d480)
+![14](https://github.com/jinscodes/Blog_nextJS/assets/87598134/513c9bb4-2845-4944-af19-6db5ec75cfe1)
 
 A buffer in JavaScript is an object that stores **"binary data"** in a **"memory space of a specific size"**.
 
@@ -242,6 +242,36 @@ In the case of a large-capacity blob, asynchronous processing can be performed u
 There is also a method of converting blob into ObjectURL and requesting fetch and converting it into array buffer at once.
 
 ![21](https://github.com/jinscodes/Blog_nextJS/assets/87598134/507c606e-a1a0-4b7a-8f73-d894a47edd09)
+
+## Buffer
+Node.js brought in Buffer type to deal with chunks of data.
+
+Buffer is the type to represent fixed size of chunk datas, many Node.js's API supports Buffer type.
+
+Importing a local file into the fs module is also actually importing it into a buffer.
+
+On the client, binary data is dealt with using Array Buffer. On the server(Node.js), binary data is dealt with using Buffer object.
+
+> 💡 **NOTE**   
+> If Node.js handles multimedia files, it is handled using a buffer unconditionally.
+
+![22](https://github.com/jinscodes/Blog_nextJS/assets/87598134/d4b2022c-60cc-40e2-8c67-653c6ac1d480)
+
+## Get Image From Server And Handle It
+If getting images from local, there is no complicated step to deal with it. However, to get images from the server and handle it, blob and arraybuffer is needed.
+
+![23](https://github.com/jinscodes/Blog_nextJS/assets/87598134/75136c5a-7b94-44e4-94c1-b193e440b7c6)
+
+1. Fetch image
+2. Convert result to blob
+3. Convert blob to arraybuffer through async
+4. Convert arraybuffer to buffer
+	1. (It's impossible to convert blob to buffer directly, so it's needed to follow above steps)
+
+In fact, the fetch module provides a helper method that can be converted directly into a buffer, so you can use it simply as below. (Still, it works as above internally.)
+
+![24](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e415e655-4dda-4c2e-8c25-e5218877d1bb)
+
 
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Base64-Blob-ArrayBuffer-File-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%A0%95%EB%A7%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85)
