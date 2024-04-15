@@ -311,10 +311,24 @@ The list of events that occur in the process of reading data using the FileReade
 ![28](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f21c7c58-99de-4f51-a1f2-434e0087e08b)
 
 - loadshort: When loading starts
+- progress: Performing a read
+- load: When reading is completed without error
+- abort: When abort() method is called
+- error: When an error occurs
+- loadend: When reading is completed regardless of success/failure
+
+If the reading is complete, the results can be accessed with the following properties.
+
+- reader.result: The results read when successful
+- reader.error: Error that occurred when the failure occurred
+
+The following is an example code that uses FileReader to add a file in a browser and converts the file into base64 and floats it as an image.
+
+![29](https://github.com/jinscodes/Blog_nextJS/assets/87598134/747bdfc6-6e93-4784-bdfd-f5aa89102882)
 
 ---
 [](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Base64-Blob-ArrayBuffer-File-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%A0%95%EB%A7%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85)
 
 [](https://dev.to/ionic/converting-a-base64-string-to-a-blob-in-javascript-35kl)
 
-[](https://curryyou.tistory.com/441)
+[](https://curryyou.tistory.com/441) 
