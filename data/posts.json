@@ -582,5 +582,13 @@
     "category": ["WebCS", "JavaScript"],
     "path": "web-datas",
     "featured": false
+  },
+  {
+    "title": "📱 Flutter: Push, and Pop",
+    "description": "",
+    "date": "2023-07-22",
+    "category": ["Flutter", "WebCS"],
+    "path": "flutter-build-stack",
+    "featured": false
   }
 ]
