@@ -75,6 +75,45 @@ Here is an example
 
 ![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/13f5ef00-080b-4544-ac7f-e180fb1edf5c)
 
+### Navigator.pushNamedAndRemoveUntil()
+`Navigator.pushNamedAndRemoveUntil()` do `push()` the pages and remove the pages in the stack.
+
+```dart
+Navigator.pushNamedAndRemoveUntil(context, newRouteName, (route) => false);
+```
+
+Remove all previous pages from stack
+
+```dart
+Navigator.pushNamedAndRemoveUntil(
+	context, 
+	ThirdScreen.routeName, 
+	(route) => false, 
+	arguments: {"update": true}
+);
+```
+
+Or, remove all before a particular page in the stack
+
+```dart
+Navigator.pushNamedAndRemoveUntil(
+	context,
+	ThridScreen.routeName,
+	ModalRoute.withName(SecondScreen.routeName),
+	arguments: {"update": true},
+);
+```
+
+There is an example 👇🏼
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f4bebbdd-1012-4303-b37d-62e1c07a7d67)
+
+### Navigator.pushReplacementNamed()
+`Navigator.pushReplacementNamed()` allows to remove the current page from the stack and put the page you want to move into the stack.
+
+```dart
+Navigator.pushReplacementNamed(context, ThridScreen.routeName);
+```
 
 ---
 [](https://medium.com/flutter-community/flutter-push-pop-push-1bb718b13c31)
