@@ -590,5 +590,13 @@
     "category": ["Flutter", "WebCS"],
     "path": "flutter-build-stack",
     "featured": false
+  },
+  {
+    "title": "📱 Flutter: Dismissible Widget For Swipe",
+    "description": "Let's use Dismissible widget to get rid of item with dragging.",
+    "date": "2023-07-25",
+    "category": ["Flutter"],
+    "path": "flutter-dismissible",
+    "featured": false
   }
 ]
