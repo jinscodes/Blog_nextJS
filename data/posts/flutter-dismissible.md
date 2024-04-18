@@ -13,6 +13,8 @@ This widget wrapped `List` widget, and then made it possible to remove the item 
 
 ![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9b632620-875f-4dea-945c-9b9816084a6e)
 
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ce2c3acb-1a85-47d0-824a-9608aea56665)
+
 `Dismissible` widget has two properties: **key**, **onDismissed**.
 
 ### key
@@ -26,6 +28,16 @@ It is a function that operates when an event for the widget occurs.
 ![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/70e54e62-2f15-4de6-8dd0-a3d034899039)
 
 At this time, the direction is received as an argument, which is an argument that can specify which function to execute depending on the direction.
+
+## Implement an exception screen in the absence of data
+Before showing the data, it should be checked for data. And if there is no data, an exception screen should be shown.
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/029bc084-e067-41e9-874c-7c2232a7ffb4)
+
+First, declare the mainContent variable to be displayed on the screen in the build method.
+
+Create a certain text widget to show as a default value and use the isNotEmpty attribute to put the widget to show when the contents are present.
+
 
 ---
 [](https://api.flutter.dev/flutter/widgets/Dismissible-class.html)
