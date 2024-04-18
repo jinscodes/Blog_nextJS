@@ -598,5 +598,13 @@
     "category": ["Flutter"],
     "path": "flutter-dismissible",
     "featured": false
+  },
+  {
+    "title": "📱 Flutter: Loading Animation: Package & Shimmer",
+    "description": "There are two main types of loading animation of flutter. It is a shimmer that looks transparent and loading that we commonly know.",
+    "date": "2023-07-28",
+    "category": ["Flutter"],
+    "path": "flutter-loading-animation",
+    "featured": false
   }
 ]
