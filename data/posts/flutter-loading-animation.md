@@ -62,3 +62,18 @@ Widget build(BuildContext context) {
 
 ### Details about loading animation
 The loading animation won't work the way we intended it to. Maybe if just follow the code above, the loading animation can go back to infinity.
+
+Because there is no standard for loading. (No reason to stop..)
+
+In other words, you just need to give a state that can distinguish whether it is a loading screen or not.
+
+In my case, they declared a boolean called _isLoad.
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/de30f8c5-a8ee-4978-9063-53fd99a4f9d5)
+
+---
+[](https://docs.flutter.dev/cookbook/effects/shimmer-loading)
+
+[](https://pub.dev/packages/loading_animation_widget)
+
+[](https://www.geeksforgeeks.org/flutter-loading-animation-widget/)
