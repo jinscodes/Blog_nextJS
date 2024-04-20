@@ -73,6 +73,10 @@ In my case, they declared a boolean called `_isLoad`.
 
 The above code is to change `_isLoading` to `false` after 3 seconds. If `_isLoading` is `true`, it shows the loading screen, and if it is `false`, it shows the normal screen.
 
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/372b2dea-2328-44e8-ac07-c2bcfdfd5ae0)
+
+If the code is configured in this way, loading can be used the way you want.
+
 ---
 [](https://docs.flutter.dev/cookbook/effects/shimmer-loading)
 
