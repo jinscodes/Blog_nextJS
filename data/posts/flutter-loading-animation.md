@@ -67,9 +67,11 @@ Because there is no standard for loading. (No reason to stop..)
 
 In other words, you just need to give a state that can distinguish whether it is a loading screen or not.
 
-In my case, they declared a boolean called _isLoad.
+In my case, they declared a boolean called `_isLoad`.
 
 ![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/de30f8c5-a8ee-4978-9063-53fd99a4f9d5)
+
+The above code is to change `_isLoading` to `false` after 3 seconds. If `_isLoading` is `true`, it shows the loading screen, and if it is `false`, it shows the normal screen.
 
 ---
 [](https://docs.flutter.dev/cookbook/effects/shimmer-loading)
