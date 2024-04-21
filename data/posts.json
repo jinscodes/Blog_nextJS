@@ -606,5 +606,13 @@
     "category": ["Flutter"],
     "path": "flutter-loading-animation",
     "featured": false
+  },
+  {
+    "title": "Compiling vs Transpiling",
+    "description": "",
+    "date": "2023-08-01",
+    "category": ["WebCS", "JavaScript"],
+    "path": "compile-transpile",
+    "featured": false
   }
 ]
