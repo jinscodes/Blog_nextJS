@@ -19,6 +19,12 @@ Transpiling is the process of taking source code written in one language and tra
 > - C++ ➡️ C
 > - coffescript ➡️ JavaScript
 
+
+#### 💡 Q? Then, is it okay to misintrepret a transpile as a compile?  
+Transfiler is also described as a source to source computer. It is also described as a type of compiler.
+
+So the term compile falls into a larger category and there's a concept of transpile in it.
+
 ## Transpile vs Compile
 Trans files and compilation are sometimes used in the same concept, but there are some differences.
 
