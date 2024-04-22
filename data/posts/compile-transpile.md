@@ -34,6 +34,13 @@ Compiling coverts code into lower level executable file (machine code) for compu
 
 While, Transpiling can be referred as 'source to source' compiler which translates one higher level language to another higher level language. For example, Typescript is higher level language which after transpiling is converted to JavaScript which is also another higher level language. Babel for example can transpile JavaScript ES6 syntax into ES5 syntax to get support from all the older browsers.
 
+### More About Details
+#### typescript (transpiler or compiler?)
+And in the case of a much-mentioned typecript, it's converted to javascript, which is compiling in many sites, but it's almost the same level of abstraction, so to be more precise, it's translated.
+
+#### transpile(or compile) concept used in sass
+Sass cannot operate directly on the web. Therefore, it can be used only after writing with a preprocessor and then compiling (or transpile) with css. Compile is possible in various ways, but in the JavaScript development environment, node-sass is mainly used to compile. Therefore, when writing the scss code, node-sass npm was installed.
+
 ---
 [](https://stackoverflow.com/questions/44931479/compiling-vs-transpiling)
 
