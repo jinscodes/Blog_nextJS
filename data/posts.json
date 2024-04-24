@@ -614,5 +614,13 @@
     "category": ["WebCS", "JavaScript"],
     "path": "compile-transpile",
     "featured": false
+  },
+  {
+    "title": "No More console.log - Various Console API",
+    "description": "We used to use console.log. There are a lot of console apis. Let's use them instead of console.log.",
+    "date": "2023-08-10",
+    "category": ["WebCS", "JavaScript"],
+    "path": "js-console",
+    "featured": false
   }
 ]
