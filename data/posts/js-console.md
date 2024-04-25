@@ -31,6 +31,11 @@ If you have experiences about C or Java, you know `printf()` method. This method
 
 ![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/5179f167-ba11-4050-ab95-f6495db1e420)
 
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/d4d2bbe0-05d8-4298-9d73-b4750fd805bd)
+
+These days, however, developers prefer to use it with `console.log('${a} is the number ${b} is the string')` as template literal grammar.
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c539c36a-95c6-424b-9571-7b7287d0a885)
 
 ---
 [](https://www.syncfusion.com/blogs/post/11-console-methods-in-javascript-for-effective-debugging)
