@@ -70,6 +70,19 @@ If the above method is not good for readability, it can also be applied by desig
 
 ![9](https://github.com/jinscodes/Blog_nextJS/assets/87598134/2dad66ee-3190-4f2e-8dfd-3e41ad766d08)
 
+### In Object Format
+To output values, we used to do as follow.
+
+![10](https://github.com/jinscodes/Blog_nextJS/assets/87598134/6a11b194-d0d0-43a8-919a-5628b5256286)
+
+However, when listed in this way, the more factors to be output, the more confusing the number value is.
+
+If hand over the factors to the `console.log()` using structural decomposition grammar, it is output in the form of an object.
+
+![11](https://github.com/jinscodes/Blog_nextJS/assets/87598134/cb3d870c-8dde-41c1-bb0c-b5a33fd1365d)
+
+![12](https://github.com/jinscodes/Blog_nextJS/assets/87598134/2d52e359-3221-4fdd-8b62-2584b6c8e9c1)
+
 ---
 [](https://www.syncfusion.com/blogs/post/11-console-methods-in-javascript-for-effective-debugging)
 
