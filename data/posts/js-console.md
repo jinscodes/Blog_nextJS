@@ -83,6 +83,45 @@ If hand over the factors to the `console.log()` using structural decomposition g
 
 ![12](https://github.com/jinscodes/Blog_nextJS/assets/87598134/2d52e359-3221-4fdd-8b62-2584b6c8e9c1)
 
+### Traps & Precautions for Console Logs
+There are things to be aware of when using `console.log` in your browser.
+
+![13](https://github.com/jinscodes/Blog_nextJS/assets/87598134/55c6895e-365c-452c-b726-fd85203bb200)
+
+For exampe, the line where the console is output is not yet put the value in obj, so of course the result will be {} empty.
+
+However, if press the arrow below, there is a value, a:1. In other words, the result value became something strangely mixed.
+
+![14](https://github.com/jinscodes/Blog_nextJS/assets/87598134/deffbf78-3053-4df7-be35-15295d7ca961)
+
+The reason this phenomenon occurs is that `console.log` logs references, so things that can change, such as objects, change the content in real time.
+
+Not only objects, but also arrangements.
+
+![15](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9e799bd6-020b-4009-9fd4-fa29775673ce)
+
+Since the array value push was post-processed through asynchronous, the immediate console result value is an empty array and the array length is 0, but if you press the arrow to look at the inside, you can see that the first index value is included and the length is also stamped as 1.
+
+### Other Styled Console
+It is convenient to use the console that is provided instead of styling the console.
+
+- `console.log`: black text without icon
+- `console.info`: bold text
+- `console.debug`: blue text
+- `console.warn`: yellow text with icon
+- `console.error`: red text with icon
+
+> **💡 NOTE**   
+> The style is little bit different from each browsers.
+
+`console.error` and `console.warn` show functional differences in that they not only output simple values but also display a stack of code lines that cause problems.
+
+Usually, there are people who habitually process error content as `console.log` to output error messages to the console screen, such as catch statements, but it is much wiser to use the `console.error` method than this, although it is not the wrong way. 
+
+This is because it displays the stack of accumulated function calls as well as the output of symbols on a red background, such as `console.warn`, on the console screen.
+
+![16](https://github.com/jinscodes/Blog_nextJS/assets/87598134/acd06256-96c5-4eb2-b979-a69adc115c49)
+
 ---
 [](https://www.syncfusion.com/blogs/post/11-console-methods-in-javascript-for-effective-debugging)
 
