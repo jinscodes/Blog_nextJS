@@ -144,6 +144,13 @@ If there are many values to be output on the console screen, it is a method to i
 
 Write the contents to be grouped in `console.group` and combine the group with `console.groupEnd` at the end to form one set.
 
+### Open&Close Group
+If you want to keep the group closed from the beginning, you can use `console.groupCollapsed`.
+
+![21](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f96e435e-5d99-463b-8221-fbb3dd97e783)
+
+![22](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f7ca9783-6796-4b32-ad3f-7a8318ed3078)
+
 ---
 [](https://www.syncfusion.com/blogs/post/11-console-methods-in-javascript-for-effective-debugging)
 
