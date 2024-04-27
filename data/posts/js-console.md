@@ -133,6 +133,17 @@ Just think of it as having an if statement and a `console.error` statement to ma
 
 ![18](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9f432109-f8c9-400b-b5fc-25c9612e956c)
 
+## console.group
+If there are many values to be output on the console screen, it is a method to increase readability by grouping them to distinguish what the output value is for. 
+
+`console.group` can be used overlappingly.
+
+![19](https://github.com/jinscodes/Blog_nextJS/assets/87598134/3045d974-9a41-4ba1-ade1-5b3a5e798264)
+
+![20](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e60f32b8-31ac-4cc4-b1bc-1ff52ba29549)
+
+Write the contents to be grouped in `console.group` and combine the group with `console.groupEnd` at the end to form one set.
+
 ---
 [](https://www.syncfusion.com/blogs/post/11-console-methods-in-javascript-for-effective-debugging)
 
