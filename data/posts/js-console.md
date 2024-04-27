@@ -122,6 +122,17 @@ This is because it displays the stack of accumulated function calls as well as t
 
 ![16](https://github.com/jinscodes/Blog_nextJS/assets/87598134/acd06256-96c5-4eb2-b979-a69adc115c49)
 
+## console.assert
+`assert` records messages and stack traces to the console only if the first argument is false, although it behaves like an error. If the first argument is true, it does nothing.
+
+Just think of it as having an if statement and a `console.error` statement to make it simpler with a single line of code.
+
+**if statement + console.error = console.assert**
+
+![17](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f5ebbf23-3e05-4561-af5d-80cca52c0d0b)
+
+![18](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9f432109-f8c9-400b-b5fc-25c9612e956c)
+
 ---
 [](https://www.syncfusion.com/blogs/post/11-console-methods-in-javascript-for-effective-debugging)
 
