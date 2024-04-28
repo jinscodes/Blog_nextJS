@@ -151,6 +151,18 @@ If you want to keep the group closed from the beginning, you can use `console.gr
 
 ![22](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f7ca9783-6796-4b32-ad3f-7a8318ed3078)
 
+## console.time
+This is a useful console method for checking the code execution time of JavaScript.
+
+Usually, we can get the current time through `Date.now()`, but rather than this cumbersome method, we can get the execution time simply and accurately through the console API.
+
+![23](https://github.com/jinscodes/Blog_nextJS/assets/87598134/92b51cf4-a069-453d-a69c-6354e70dcb56)
+
+![24](https://github.com/jinscodes/Blog_nextJS/assets/87598134/d947b54f-2ac8-4688-844e-7c5ef181a005)
+
+![25](https://github.com/jinscodes/Blog_nextJS/assets/87598134/7ca9e4e3-22cf-4f95-8715-9f595db49970)
+
+
 ---
 [](https://www.syncfusion.com/blogs/post/11-console-methods-in-javascript-for-effective-debugging)
 
