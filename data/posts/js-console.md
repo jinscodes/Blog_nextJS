@@ -162,6 +162,20 @@ Usually, we can get the current time through `Date.now()`, but rather than this 
 
 ![25](https://github.com/jinscodes/Blog_nextJS/assets/87598134/7ca9e4e3-22cf-4f95-8715-9f595db49970)
 
+## console.table
+In the case of an array containing objects with repeated and regular keys and values, it is possible to readably output in a table format like Excel.
+
+All of the latest web browsers are supported functions, which are convenient for using the console to determine the contents of array data.
+
+![26](https://github.com/jinscodes/Blog_nextJS/assets/87598134/7e3adb0b-80b4-430f-9c3f-32b9840c48cb)
+
+![27](https://github.com/jinscodes/Blog_nextJS/assets/87598134/3bdddd18-5f40-4ee4-837a-c146dfb9ec86)
+
+Not only array objects but also multidimensional arrays can be output in the form of a table.
+
+![28](https://github.com/jinscodes/Blog_nextJS/assets/87598134/d3acb256-315c-4d1b-af8d-1030e2d732d9)
+
+![29](https://github.com/jinscodes/Blog_nextJS/assets/87598134/68ca5568-7869-4d42-80ed-5e119ecfd4b0)
 
 ---
 [](https://www.syncfusion.com/blogs/post/11-console-methods-in-javascript-for-effective-debugging)
