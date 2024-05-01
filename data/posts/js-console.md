@@ -177,6 +177,17 @@ Not only array objects but also multidimensional arrays can be output in the for
 
 ![29](https://github.com/jinscodes/Blog_nextJS/assets/87598134/68ca5568-7869-4d42-80ed-5e119ecfd4b0)
 
+## console.dir
+It is also fine to use this method if you need to log an object.
+
+For example, if you output the body part of the DOM as it is in `console.log`, an html tag is output, but if you output it as `console.dir`, it can be confirmed that it is output to the console as a DOM object.
+
+```js
+console.log(document.body);
+
+console.dir(document.body);
+```
+
 ---
 [](https://www.syncfusion.com/blogs/post/11-console-methods-in-javascript-for-effective-debugging)
 
