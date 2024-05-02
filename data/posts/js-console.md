@@ -182,11 +182,23 @@ It is also fine to use this method if you need to log an object.
 
 For example, if you output the body part of the DOM as it is in `console.log`, an html tag is output, but if you output it as `console.dir`, it can be confirmed that it is output to the console as a DOM object.
 
-```js
-console.log(document.body);
+![30-0](https://github.com/jinscodes/Blog_nextJS/assets/87598134/64aed5cc-7c90-4741-a3ad-567ccc715a09)
 
-console.dir(document.body);
-```
+![30](https://github.com/jinscodes/Blog_nextJS/assets/87598134/5194a44e-959f-442f-adcd-077780ec0952)
+
+![31-0](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ee07b830-414b-426e-8e18-fe83a911b627)
+
+![31](https://github.com/jinscodes/Blog_nextJS/assets/87598134/8ce9227b-51a9-47ed-abf1-f75298278c39)
+
+## console.trace
+It automatically tracks the called function stack. It is advantageous to track functions if they are called from module files here and there.
+
+![34](https://github.com/jinscodes/Blog_nextJS/assets/87598134/72e6472b-4e36-4466-a224-976c1a4b25ce)
+
+![32](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e16b5bc0-83ff-4124-a7fd-6282bb91b45e)
+
+## console.count
+
 
 ---
 [](https://www.syncfusion.com/blogs/post/11-console-methods-in-javascript-for-effective-debugging)
