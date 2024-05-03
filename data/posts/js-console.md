@@ -198,7 +198,16 @@ It automatically tracks the called function stack. It is advantageous to track f
 ![32](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e16b5bc0-83ff-4124-a7fd-6282bb91b45e)
 
 ## console.count
+It can be used when you want to record the number of times a specific called value has been called.
 
+![34](https://github.com/jinscodes/Blog_nextJS/assets/87598134/cc28f683-9b11-40da-ae19-81d32f5359ad)
+
+## console.clear
+If the console screen is messy, it can be cleaned. If press the button at the top left of the picture below, it can be also cleaned.
+
+![36](https://github.com/jinscodes/Blog_nextJS/assets/87598134/35616808-5656-4499-a15d-e6a05c507492)
+
+![35](https://github.com/jinscodes/Blog_nextJS/assets/87598134/4218d2a1-c51a-40b9-9b13-6449abb77f4e)
 
 ---
 [](https://www.syncfusion.com/blogs/post/11-console-methods-in-javascript-for-effective-debugging)
