@@ -23,6 +23,10 @@ Example 👇🏼
 
 ![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/6a6ac9b2-a7c4-4539-810a-ab86128e405c)
 
+### Applying app icon: Android version
+
+### Applying app icon: IOS version
+
 ---
 [](https://velog.io/@adbr/flutter-1%EB%B6%84%EB%A7%8C%EC%97%90-App-Launcher-Icon-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
 
