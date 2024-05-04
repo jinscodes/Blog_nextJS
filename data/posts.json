@@ -622,5 +622,13 @@
     "category": ["WebCS", "JavaScript"],
     "path": "js-console",
     "featured": false
+  },
+  {
+    "title": "📱 Flutter: App Launcher Icons Setting",
+    "description": "Before uploading our app, we need to change the app logo from initial flutter logo to our logo. How to change the app launcher logo?",
+    "date": "2023-08-20",
+    "category": ["Flutter"],
+    "path": "flutter-launcher-icon",
+    "featured": false
   }
 ]
