@@ -630,5 +630,13 @@
     "category": ["Flutter"],
     "path": "flutter-launcher-icon",
     "featured": false
+  },
+  {
+    "title": "📚발표: CSR & SSG & ISR & SSR에 관하여",
+    "description": "",
+    "date": "0",
+    "category": ["WebCS"],
+    "path": "union-presentation",
+    "featured": false
   }
 ]
