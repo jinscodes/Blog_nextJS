@@ -23,7 +23,20 @@ Example 👇🏼
 
 ![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/6a6ac9b2-a7c4-4539-810a-ab86128e405c)
 
+If decompress the downloaded zip file, you can check the folder structure as follows.
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9191e77c-c0b8-4ee9-bd79-b7741008affd)
+
 ### Applying app icon: Android version
+In the plutter app root directory, the *android/app/src/main/res* folder is organized as shown in the picture below.
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9420d754-5c65-47bd-a701-b20972fd9b9c)
+
+If compare the various files in this *res* folder with the files we downloaded, you can see that the names are the same.
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e2e29f3e-e273-4ba7-9c15-d9a38b3ba9f7)
+
+Simply replace the folders with the same name in the res folder with the downloaded icon folder.
 
 ### Applying app icon: IOS version
 
