@@ -28,7 +28,7 @@ If decompress the downloaded zip file, you can check the folder structure as fol
 ![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9191e77c-c0b8-4ee9-bd79-b7741008affd)
 
 ### Applying app icon: Android version
-In the plutter app root directory, the *android/app/src/main/res* folder is organized as shown in the picture below.
+In the flutter app root directory, the *android/app/src/main/res* folder is organized as shown in the picture below.
 
 ![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9420d754-5c65-47bd-a701-b20972fd9b9c)
 
@@ -39,6 +39,19 @@ If compare the various files in this *res* folder with the files we downloaded, 
 Simply replace the folders with the same name in the res folder with the downloaded icon folder.
 
 ### Applying app icon: IOS version
+In IOS folder, we can see the *ios/Runner/Assets.xcassets*. The Assets.xcassets is consiting of like below image.
+
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/97b35d24-c892-4c2e-a154-cb20ac34adcf)
+
+If we look at the downloaded image folder, there is a folder called *AppIcon.appiconset*. If we look inside, there are images like *Assets.xcassets*.
+
+![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/3ef29f86-eeec-4744-87d8-4cc5dfc8d5ed)
+
+There is an important point here.
+
+Inside the AppIcon.appiconset in Assets.xcassets, there is a *contents.json* file.
+
+![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/445708bf-4dbb-4834-b516-6840af19c31c)
 
 ---
 [](https://velog.io/@adbr/flutter-1%EB%B6%84%EB%A7%8C%EC%97%90-App-Launcher-Icon-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
