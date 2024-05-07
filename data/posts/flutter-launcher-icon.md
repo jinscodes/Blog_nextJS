@@ -47,11 +47,40 @@ If we look at the downloaded image folder, there is a folder called *AppIcon.app
 
 ![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/3ef29f86-eeec-4744-87d8-4cc5dfc8d5ed)
 
+Replace the existing image with the downloaded images and it's done.
+
+### 🚨 Caution
+
 There is an important point here.
 
-Inside the AppIcon.appiconset in Assets.xcassets, there is a *contents.json* file.
+Inside the *AppIcon.appiconset* in *Assets.xcassets*, there is a *contents.json* file.
 
 ![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/445708bf-4dbb-4834-b516-6840af19c31c)
+
+The `filename` of the json file would be the same as the image you downloaded. If it is not the same, there is a possibility of an error. (It doesn't seem to be unconditional..?)
+
+In my case, the app icon was not applied, and when I checked on xcode, it said that there was an error in the image setting.
+
+You can change the name of the downloaded image or change the `filename` of the corresponding size in the json file to match the downloaded image.
+
+> 💡 **NOTE**   
+> The Json file is contained in the IOS folder downloaded from the above site. That's why it's better to replace the folder itself instead of just moving the image.   
+> ![8](https://github.com/jinscodes/Blog_nextJS/assets/87598134/16641a4a-8523-4442-8494-e88d05686f79)
+
+## Using Package
+![9](https://github.com/jinscodes/Blog_nextJS/assets/87598134/874eafa6-cfb6-42ec-91ad-84da35a1abac)
+
+[](https://pub.dev/packages/flutter_launcher_icons)
+
+The above package makes it easier to change the launcher icon than to replace the file.
+
+#### 1️⃣ Install
+
+Install the package using command or directly in the pubspec.yaml file.
+
+![10](https://github.com/jinscodes/Blog_nextJS/assets/87598134/76caa3aa-c7f1-4862-9ff4-7f9b0cd84676)
+
+#### 2️⃣ Setting
 
 ---
 [](https://velog.io/@adbr/flutter-1%EB%B6%84%EB%A7%8C%EC%97%90-App-Launcher-Icon-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
