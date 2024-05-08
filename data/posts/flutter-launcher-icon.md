@@ -82,6 +82,36 @@ Install the package using command or directly in the pubspec.yaml file.
 
 #### 2️⃣ Setting
 
+#### Upload image
+Upload the image file to `assets` folder.
+
+There are two things that we need to care about.
+
+1. Image must be 1024x1024
+1. Icon must not be transparent and must not include alpha.
+
+> 🚨 **NOTE**   
+> In my case, I always used `.png` format image so that there is no problem at all. However, in some blogs, they said some image format doesn't work well.
+
+> So, I recommend uploading the image with `.png` format to assets folder.
+
+#### Add information to yaml file 
+Before add needed information to yaml file, we'd better to check the **flutter_launcher_icons** package.
+
+When we install the package without developement command, it is placed to just dependencies. This package is not for user but setting, so I moved this package to dev_dependencies like below.
+
+![11](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f60357e7-6b9c-48b6-a7c4-474c7c0874e5)
+
+Declare `flutter_icons` in the same position as dev_dependencies.
+
+Elements of `flutter_icons` include `android`, `ios`, and `image_path`.
+
+So, it looks like 👇🏼
+
+![12](https://github.com/jinscodes/Blog_nextJS/assets/87598134/aea695a2-47ee-460b-894c-3846d1aebe88)
+
+#### Command
+
 ---
 [](https://velog.io/@adbr/flutter-1%EB%B6%84%EB%A7%8C%EC%97%90-App-Launcher-Icon-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
 
