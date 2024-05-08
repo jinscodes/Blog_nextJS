@@ -111,6 +111,27 @@ So, it looks like 👇🏼
 ![12](https://github.com/jinscodes/Blog_nextJS/assets/87598134/aea695a2-47ee-460b-894c-3846d1aebe88)
 
 #### Command
+Run the below command
+
+```bash
+flutter pub run flutter_launcher_icons:main
+```
+
+Done!!
+
+![13](https://github.com/jinscodes/Blog_nextJS/assets/87598134/3fe88343-9aa9-4a11-9652-1f6ce9512f24)
+
+When we are done, we can check the iamges on the Xcode's Runner.
+
+> We need to put each one in here by size, but the plug-ins did all instead of us!   
+> The icon is set according to the respective sizes of the ios android.
+
+> ![14](https://github.com/jinscodes/Blog_nextJS/assets/87598134/994f73a9-317d-4b62-ae01-016a0f4aeec0)
+
+Run the flutter, icon will be changed!
+
+#### Result
+![15](https://github.com/jinscodes/Blog_nextJS/assets/87598134/36949f34-8a09-4fc7-b081-688e9f2f7fcf)
 
 ---
 [](https://velog.io/@adbr/flutter-1%EB%B6%84%EB%A7%8C%EC%97%90-App-Launcher-Icon-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
