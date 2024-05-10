@@ -17,6 +17,19 @@ One of the main benefits of contextual use is the ability to share data across m
 ### Avoiding Prop Drilling
 Prop drilling is the process of transferring data from one component to another through Prop. If data has to be passed through multiple levels of components, it can be cumbersome and difficult to manage. Context eliminates the need for prop drilling by providing a centralized way to share data.
 
+## Usage
+In React, the data flow is one-way: from chilren to parent component. It's inefficient to deliver the global data step by step with props. To solve this problem, React provides Context API.
+
+Context allows subcomponents that need the data to access the upper component that has the data without having to pass it through to Props one by one. In other words, it is really convenient to deliver global data such as user information, themes, and language.
+
+Subcomponents that require data from higher components only need to receive the data using a useContext hook.
+useContext helps you easily obtain data classified by context.
+
+> 💡 **NOTE**   
+> Why does we usually use props instead of useContext?
+
+> Use context only when it is absolutely necessary. Using context can make it difficult to reuse componenets. It's to deliver global data to many components with various levels, which is the main purpose of the context. If the reason for using context is only for prop drilling, React officially suggests that compoent composition is better solution than using context.
+
 ---
 [](https://react.dev/reference/react/useContext)
 
