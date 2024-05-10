@@ -30,6 +30,40 @@ useContext helps you easily obtain data classified by context.
 
 > Use context only when it is absolutely necessary. Using context can make it difficult to reuse componenets. It's to deliver global data to many components with various levels, which is the main purpose of the context. If the reason for using context is only for prop drilling, React officially suggests that compoent composition is better solution than using context.
 
+### Example
+
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b770d000-e92c-450e-985d-4f53c0b0b286)
+
+Get data from the parent component and hand it over to the child component. The child component continues to do prop drilling with the data.
+
+We can useContext in these situations.
+
+#### 1️⃣ Make context.ts
+First, create ts to create context.   
+(You are free to name it)
+
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9825c27e-a4ba-4c6f-b8fc-eccafeba6ffc)
+
+`CreateContext` can be used to create the context. `CreateContext` contains generic types and initial values.
+
+The point here is that the initial value is going to be `undefined`, and the type should also be `undefined`.
+
+This is because our data have a possibiity to be undefined.
+
+#### 2️⃣ Set provider
+Secondly, wrap the components with provider in parent component.
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/41391bd4-9a61-4054-a1d7-a3efdda1f886)
+
+Wrap DataContext with the provider where you want to drop the data.
+
+Here, the poinst is that the value have to be needed. This value is the data you want to drop.
+
+> 💡 **NOTE**   
+> When creating the context, you can see why the undefined was designated as the initial value and type in this part.
+
+> No value was assigned to the data until fetch done. That is, it is undefined. That is why undefined is assigned to the type of createContext.
+
 ---
 [](https://react.dev/reference/react/useContext)
 
