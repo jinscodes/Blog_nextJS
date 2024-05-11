@@ -64,6 +64,17 @@ Here, the poinst is that the value have to be needed. This value is the data you
 
 > No value was assigned to the data until fetch done. That is, it is undefined. That is why undefined is assigned to the type of createContext.
 
+#### Get value in children component
+The first step is to import createContext to make react context.
+
+```tsx
+import { createContext } from "react";
+
+const dataFromContext = createContext(null);
+```
+
+When allocating the context to variable, initial value is null.
+
 ---
 [](https://react.dev/reference/react/useContext)
 
