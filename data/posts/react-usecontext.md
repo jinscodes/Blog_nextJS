@@ -67,13 +67,20 @@ Here, the poinst is that the value have to be needed. This value is the data you
 #### Get value in children component
 The first step is to import createContext to make react context.
 
-```tsx
-import { createContext } from "react";
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/62ed0473-1ce1-4788-8705-9c7413604956)
 
-const dataFromContext = createContext(null);
-```
+Go to children component and import the above code.
 
-When allocating the context to variable, initial value is null.
+If you want to use specific data in the context, get the data with brackets like below.
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a3334712-073a-4276-9818-3254d8e09d6c)
+
+## createContext's Initial Value
+Above, `undefined` is the initial value of the `createContext()`.
+
+Changing the inital value to 'hello'.
+
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/4e0a119a-29ba-4fc5-98fe-213b4fc202f9)
 
 ---
 [](https://react.dev/reference/react/useContext)
