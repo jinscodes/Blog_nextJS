@@ -86,6 +86,16 @@ Let's go into the parent component, remove the provider, and useContext to get t
 
 ![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/0ea07348-9171-450f-921f-c5afbf758c26)
 
+Print it throught console.log and we can see "hello" is printed.
+
+![8](https://github.com/jinscodes/Blog_nextJS/assets/87598134/90d445ac-236f-4451-b4bb-04384cc18d1b)
+
+What happen?
+
+If you have received the information from the useContext and the upper level did not wrap it in the context with a provider, that is, there is no value, so in this case, it will receive the initial value.
+
+However, the above code uses the `value` to hand over the value, so we don't need the initial value, so we give it a value as undefined.
+
 ---
 [](https://react.dev/reference/react/useContext)
 
