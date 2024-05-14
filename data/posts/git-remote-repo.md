@@ -56,6 +56,43 @@ $ git remote -v
 2. In the case of `git remote -v`, it shows remote repository's alias with url
 	1. ![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/dac1a2c3-1d79-4e4d-b570-0d207505814d)
 
+If there is no connected remote repository, there is nothing like the below image. 
+
+![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/52feca5f-4c8d-49fe-a0be-cd73409a108b)
+
+To connect the remote repository, repository url is necessary.
+
+![8](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ed909ef8-472f-497c-9486-be6b0c56c4c6)
+
+Copy the url and do 👇🏼
+
+```bash
+$ git remote add <alias> <url>
+```
+
+For example, 
+
+![9](https://github.com/jinscodes/Blog_nextJS/assets/87598134/94478b41-2a0d-42ce-8ad7-995ee56e9430)
+
+### Save contents to remote git repository
+If we done connecting, we can upload our contents into the remote git repository.
+
+First of all, `push` is needed.
+
+```bash
+$ git push <alias> <branch>
+```
+
+In this part, **alias** is the same nickname that we decided when connecting to git remote repository.
+
+And the **branch** means a branch(local) that contains what you want to push.
+
+![10](https://github.com/jinscodes/Blog_nextJS/assets/87598134/8beea573-a9d5-41eb-ba11-340ea6d67049)
+
+After pushing the codes, go to the github, and we can see our codes are posted well.
+
+![11](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b4d2bb7f-d992-4855-8663-ab79fdd07f4c)
+
 ---
 [](https://nemomemo.tistory.com/83)
 
