@@ -106,6 +106,48 @@ As a result, we can see Fetch URL, Push URL, and HEAD branch.
 
 ![12](https://github.com/jinscodes/test/assets/87598134/461ae7c7-984c-4633-8459-6549d0425227)
 
+## Other Commands About Git Remote Repository
+There is several commands related to remote git repository.
+
+- Bring codes from git remote repository
+- Change git repository name
+- Remove git repository connection
+
+### Bring codes from remote git repository
+If we want to get codes from git repository like fork, 
+
+```bash
+$ git fetch <Repository alias> <branch>
+
+# or
+
+$ git pull <Repository alias> <branch>
+```
+
+![13](https://github.com/jinscodes/Blog_nextJS/assets/87598134/5b94a285-83d6-48be-ac10-cb21af6b3cc7)
+
+### Change git repository name
+To change the name of alias, 
+
+```bash
+$ git remote rename <current repository alias> <new repository alias>
+```
+
+![14](https://github.com/jinscodes/Blog_nextJS/assets/87598134/83908a43-7e3e-4c30-9ada-dffc71e293b5)
+
+### Remove git repository connection
+To remove the connected remote git repository, 
+
+```bash
+$ git remote remove <Repository alias> 
+
+# or
+
+$ git remote rm <Repository alias>
+```
+
+![15](https://github.com/jinscodes/Blog_nextJS/assets/87598134/159233e0-10bd-4ac5-9f2a-c97f48f144a5)
+
 ---
 [](https://nemomemo.tistory.com/83)
 
