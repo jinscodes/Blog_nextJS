@@ -93,6 +93,19 @@ After pushing the codes, go to the github, and we can see our codes are posted w
 
 ![11](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b4d2bb7f-d992-4855-8663-ab79fdd07f4c)
 
+### Check remote git repository
+If the `git push` is successful, we need to make sure that our code went up successfully.
+
+To see if it's successful, 👇🏼
+
+```bash
+$ git remote show <Repository alias>
+```
+
+As a result, we can see Fetch URL, Push URL, and HEAD branch.
+
+![12](https://github.com/jinscodes/test/assets/87598134/461ae7c7-984c-4633-8459-6549d0425227)
+
 ---
 [](https://nemomemo.tistory.com/83)
 
