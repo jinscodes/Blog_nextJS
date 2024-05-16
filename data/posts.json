@@ -654,5 +654,13 @@
     "category": ["WebCS", "GIT"],
     "path": "git-remote-repo",
     "featured": false
+  },
+  {
+    "title": "Differences Between Dependencies and Dev-dependencies",
+    "description": "What's the differences between dependencies and dev-dependencies?",
+    "date": "2023-09-08",
+    "category": ["WebCS", "ReactJs", "JavaScript"],
+    "path": "dev-dependency",
+    "featured": false
   }
 ]
