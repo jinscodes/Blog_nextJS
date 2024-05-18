@@ -498,6 +498,10 @@ font-display: swap;
   margin-bottom: 20px;
   border-bottom: 2px solid #ffffff;
 }
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK .Gif_blog_title__CzTzs {
+  width: 750px;
+  height: auto;
+}
 .Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK h1 {
   display: flex;
   margin: 0;
@@ -584,7 +588,7 @@ font-display: swap;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 1300px;
+  width: 100%;
   gap: 30px;
 }
 
@@ -667,7 +671,7 @@ font-display: swap;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1300px;
+  width: 100%;
   margin-bottom: 60px;
 }
 .RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG {
