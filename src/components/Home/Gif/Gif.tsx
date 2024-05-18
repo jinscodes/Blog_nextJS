@@ -12,30 +12,6 @@ const Gif = () => {
         <div className={st.dark_bg_cover}>
           <div className={st.quote}>
             <Image className={st.heart} src={heart} alt="heart" />
-            {/* <h1>
-              FALL INTO THE
-              <Image
-                src={openBracket}
-                alt="open_bracket"
-                className={st.bracket}
-              />
-              <Image
-                src={openQuote}
-                alt="open_bracket"
-                className={`${st.svg_quote} ${st.open_quote}`}
-              />
-              HELLO WORLD
-              <Image
-                src={closeBracket}
-                alt="Close_bracket"
-                className={st.bracket}
-              />
-              <Image
-                src={closeQuote}
-                alt="Close_bracket"
-                className={`${st.svg_quote} ${st.close_quote}`}
-              />
-            </h1> */}
             <Image className={st.blog_title} src={blogTitle} alt="" />
             <p>LOREM IPSUM DOLOR SIT AMET</p>
             <div className={st.arrow_container}>
