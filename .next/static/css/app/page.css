@@ -678,66 +678,6 @@ font-display: swap;
     align-items: center;
   }
 }
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/ErrorPost.module.scss ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.ErrorPost_errorPost__YYf6C {
-  overflow: hidden;
-  display: flex;
-  width: calc(100% - 40px);
-  height: 200px;
-  border-radius: 12px;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-  transition: transform ease-in-out 0.1s;
-  color: black;
-  text-decoration: none;
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl {
-  width: 70%;
-  height: 100%;
-  padding: 15px;
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_category_container__pTa6J {
-  display: flex;
-  gap: 12px;
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_category_container__pTa6J > div:nth-child(2) {
-  background-color: rgba(0, 34, 255, 0.3);
-  color: rgba(0, 34, 255, 0.8);
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl p:first-child {
-  margin: 15px 0;
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl p:nth-child(2) {
-  width: 70%;
-  height: 40px;
-  font-size: 15px;
-  color: grey;
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_img__6fQTK {
-  width: 30%;
-  height: 100%;
-}
-
-@media all and (max-width: 767px) {
-  .ErrorPost_errorPost__YYf6C {
-    height: 250px;
-  }
-  .ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl {
-    width: 60%;
-  }
-  .ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl p:first-child {
-    height: 50px;
-    font-size: 19px;
-  }
-  .ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl p:nth-child(2) {
-    height: 75px;
-    font-size: 14px;
-  }
-  .ErrorPost_errorPost__YYf6C .ErrorPost_img__6fQTK {
-    width: 40%;
-  }
-}
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Err/Err.module.scss ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -754,6 +694,7 @@ font-display: swap;
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 1300px;
   gap: 30px;
 }
 
@@ -764,5 +705,62 @@ font-display: swap;
   .Err_err__wf6sQ .Err_err_container__izXhr {
     width: 100%;
     align-items: center;
+  }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/ErrorPost.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.ErrorPost_errorPost__YYf6C {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 240px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl {
+  width: 70%;
+  height: calc(100% - 30px);
+  padding: 15px;
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_category_container__pTa6J {
+  display: flex;
+  gap: 10px;
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_category_container__pTa6J > div:nth-child(2) {
+  background-color: rgba(0, 34, 255, 0.3);
+  color: rgba(0, 34, 255, 0.8);
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_category_container__pTa6J > div:nth-child(3) {
+  background-color: rgba(144, 0, 255, 0.3);
+  color: rgba(144, 0, 255, 0.8);
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_post_info_container__SOvte {
+  width: 100%;
+  height: calc(100% - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_post_info_container__SOvte p:first-child {
+  font-size: 20px;
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_post_info_container__SOvte p:nth-child(2) {
+  font-size: 14px;
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_post_image__U_1Vq {
+  width: 30%;
+  height: 100%;
+}
+
+@media all and (max-width: 767px) {
+  .ErrorPost_errorPost__YYf6C {
+    width: 80%;
+    height: 100%;
+    flex-direction: column-reverse;
+    border: 1px solid black;
   }
 }

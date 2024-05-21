@@ -18,8 +18,8 @@ interface Props {
 const NavClass = ({ datas, isMenu, setIsMenu }: Props) => {
   return (
     <div className={st.nav_class}>
-      {datas.map((el) => (
-        <div className={st.visible_menu}>
+      {datas.map((el, idx) => (
+        <div key={idx} className={st.visible_menu}>
           <div
             className={`${st.title} ${el.class === isMenu && st.active_menu}`}
             onClick={() =>
