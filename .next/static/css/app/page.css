@@ -756,6 +756,22 @@ font-display: swap;
   height: 100%;
 }
 
+@media all and (max-width: 1300px) {
+  .ErrorPost_errorPost__YYf6C {
+    width: 80%;
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+  .ErrorPost_errorPost__YYf6C .ErrorPost_post_image__U_1Vq {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl {
+    width: calc(100% - 30px);
+  }
+}
 @media all and (max-width: 767px) {
   .ErrorPost_errorPost__YYf6C {
     width: 80%;

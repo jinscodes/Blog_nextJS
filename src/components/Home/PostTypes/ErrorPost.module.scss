@@ -52,6 +52,26 @@
   }
 }
 
+// 테블릿
+@media all and (max-width: 1300px) {
+  .errorPost {
+    width: 80%;
+    height: 100%;
+    flex-direction: column-reverse;
+
+    .post_image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .inner_post_container {
+      width: calc(100% - 30px);
+    }
+  }
+}
+
 // 모바일
 @media all and (max-width: 767px) {
   .errorPost {
