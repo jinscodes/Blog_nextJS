@@ -1,6 +1,5 @@
 import CategoryPill from "components/CategoryPill/CategoryPill";
 import ProfileAndId from "components/ProfileAndId/ProfileAndId";
-import Image from "next/image";
 import Link from "next/link";
 import { Post } from "service/posts";
 import st from "./ErrorPost.module.scss";
@@ -23,20 +22,34 @@ const ErrorPost = ({ post }: Prop) => {
         </div>
         <div className={st.post_info_container}>
           <p>{post.title}</p>
-          <p className={st.description}>{post.description}</p>
+          <p>{post.description}</p>
+          <ProfileAndId date={post.date} size="sm" />
+        </div>
+      </div>
+      <img
+        className={st.post_image}
+        src={`/images/posts/${post.path}.png`}
+        alt=""
+      />
+      {/* <div className={st.inner_post_container}>
+        <div className={st.category_container}>
+          {post.category.map((el) => (
+            <CategoryPill category={el} />
+          ))}
+        </div>
+        <div className={st.post_info_container}>
+          <p>{post.title}</p>
+          <p>{post.description}</p>
           <div>
             <ProfileAndId date={post.date} size="sm" />
           </div>
         </div>
       </div>
-      <Image
+      <img
         className={st.img}
-        height="0"
-        width="0"
-        sizes="100vw"
         src={`/images/posts/${post.path}.png`}
         alt={post.path}
-      />
+      /> */}
     </Link>
   );
 };

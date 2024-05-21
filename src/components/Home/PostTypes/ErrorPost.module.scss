@@ -1,22 +1,22 @@
 .errorPost {
   overflow: hidden;
   display: flex;
-  width: calc(100% - 40px);
-  height: 200px;
+  width: 100%;
+  height: 240px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
   border-radius: 12px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-  transition: transform ease-in-out 0.1s;
-  color: black;
-  text-decoration: none;
 
   .inner_post_container {
     width: 70%;
-    height: 100%;
+    height: calc(100% - 30px);
     padding: 15px;
 
     .category_container {
       display: flex;
-      gap: 12px;
+      gap: 10px;
     }
 
     .category_container > div:nth-child(2) {
@@ -24,19 +24,29 @@
       color: rgba(0, 34, 255, 0.8);
     }
 
-    p:first-child {
-      margin: 15px 0;
+    .category_container > div:nth-child(3) {
+      background-color: rgba(144, 0, 255, 0.3);
+      color: rgba(144, 0, 255, 0.8);
     }
 
-    p:nth-child(2) {
-      width: 70%;
-      height: 40px;
-      font-size: 15px;
-      color: grey;
+    .post_info_container {
+      width: 100%;
+      height: calc(100% - 30px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      p:first-child {
+        font-size: 20px;
+      }
+
+      p:nth-child(2) {
+        font-size: 14px;
+      }
     }
   }
 
-  .img {
+  .post_image {
     width: 30%;
     height: 100%;
   }
@@ -45,24 +55,12 @@
 // 모바일
 @media all and (max-width: 767px) {
   .errorPost {
-    height: 250px;
+    width: 80%;
+    height: 100%;
+    flex-direction: column-reverse;
+    border: 1px solid black;
 
     .inner_post_container {
-      width: 60%;
-
-      p:first-child {
-        height: 50px;
-        font-size: 19px;
-      }
-
-      p:nth-child(2) {
-        height: 75px;
-        font-size: 14px;
-      }
-    }
-
-    .img {
-      width: 40%;
     }
   }
 }
