@@ -9,7 +9,15 @@
 // 테블릿 (맥북 해상도 이하)
 @media screen and (max-width: 1512px) {
   .nav_category {
-    margin: 0;
+    margin: 0 100px 0 0;
+    width: 100vw;
     height: 100%;
+  }
+}
+
+// 모바일
+@media screen and (max-width: 767px) {
+  .nav_category {
+    margin: 0;
   }
 }
