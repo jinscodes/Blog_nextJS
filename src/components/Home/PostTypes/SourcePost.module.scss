@@ -3,7 +3,7 @@
   position: relative;
   max-width: 520px;
   width: 40%;
-  height: 300px;
+  height: 320px;
   padding: 0 24px;
   border-radius: 24px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
@@ -58,6 +58,14 @@
 .opensource_card:hover {
   transform: scale(1.005);
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+}
+
+// 태블릿
+@media all and (max-width: 1300px) {
+  .opensource_card {
+    border: 2px solid green;
+    width: 80% !important;
+  }
 }
 
 // 모바일
