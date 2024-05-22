@@ -126,8 +126,19 @@
     height: 600px;
 
     .content_container {
+      overflow: hidden;
       display: flex;
       flex-direction: column;
+
+      .recent_posts {
+        overflow: hidden;
+        width: 90vw !important;
+      }
+
+      .popular_posts {
+        overflow: hidden;
+        width: 90vw !important;
+      }
     }
   }
 }
