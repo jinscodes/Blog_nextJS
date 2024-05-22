@@ -638,13 +638,22 @@ font-display: swap;
 
 @media all and (max-width: 1300px) {
   .SourcePost_opensource_card__MQrXu {
-    border: 2px solid green;
     width: 80% !important;
   }
 }
 @media all and (max-width: 767px) {
   .SourcePost_opensource_card__MQrXu {
     width: 80%;
+  }
+  .SourcePost_opensource_card__MQrXu .SourcePost_content_container__IetxT {
+    gap: 120px;
+  }
+}
+@media all and (max-width: 500px) {
+  .SourcePost_opensource_card__MQrXu {
+    border: 2px solid green;
+    width: 80%;
+    height: 340px;
   }
   .SourcePost_opensource_card__MQrXu .SourcePost_content_container__IetxT {
     gap: 120px;

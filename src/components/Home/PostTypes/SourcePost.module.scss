@@ -63,7 +63,6 @@
 // 태블릿
 @media all and (max-width: 1300px) {
   .opensource_card {
-    border: 2px solid green;
     width: 80% !important;
   }
 }
@@ -72,6 +71,19 @@
 @media all and (max-width: 767px) {
   .opensource_card {
     width: 80%;
+
+    .content_container {
+      gap: 120px;
+    }
+  }
+}
+
+// 모바일
+@media all and (max-width: 500px) {
+  .opensource_card {
+    border: 2px solid green;
+    width: 80%;
+    height: 340px;
 
     .content_container {
       gap: 120px;
