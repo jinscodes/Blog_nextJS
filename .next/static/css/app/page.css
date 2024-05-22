@@ -590,7 +590,7 @@ font-display: swap;
   position: relative;
   max-width: 520px;
   width: 40%;
-  height: 300px;
+  height: 320px;
   padding: 0 24px;
   border-radius: 24px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
@@ -636,9 +636,24 @@ font-display: swap;
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
 }
 
+@media all and (max-width: 1300px) {
+  .SourcePost_opensource_card__MQrXu {
+    width: 80% !important;
+  }
+}
 @media all and (max-width: 767px) {
   .SourcePost_opensource_card__MQrXu {
     width: 80%;
+  }
+  .SourcePost_opensource_card__MQrXu .SourcePost_content_container__IetxT {
+    gap: 120px;
+  }
+}
+@media all and (max-width: 500px) {
+  .SourcePost_opensource_card__MQrXu {
+    border: 2px solid green;
+    width: 80%;
+    height: 340px;
   }
   .SourcePost_opensource_card__MQrXu .SourcePost_content_container__IetxT {
     gap: 120px;
