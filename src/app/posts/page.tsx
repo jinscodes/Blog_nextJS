@@ -1,7 +1,9 @@
 import { getAllPosts } from "service/posts";
 
+import PostTitle from "assets/images/PostTitle.png";
 import AllPost from "components/Post/AllPost/AllPosts";
 
+import Image from "next/image";
 import st from "./PostPage.module.scss";
 
 const Posts = async () => {
@@ -11,13 +13,7 @@ const Posts = async () => {
     <div className={st.post_page}>
       <div className={st.background}>
         <div className={st.background_cover}>
-          <div className={st.title}>
-            <span>Do, </span>
-            <span>And Practice</span>
-            <div className={st.to_be}>
-              To Be A <p className={st.programmer}>"PROGRAMMER"</p>
-            </div>
-          </div>
+          <Image className={st.post_title} src={PostTitle} alt="" />
         </div>
       </div>
       <AllPost posts={posts} title="All Posts" />

@@ -436,8 +436,17 @@ font-display: swap;
     height: 600px;
   }
   .Footer_footer__Q5T55 .Footer_content_container__hBs20 {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+  }
+  .Footer_footer__Q5T55 .Footer_content_container__hBs20 .Footer_recent_posts__M3QdO {
+    overflow: hidden;
+    width: 90vw !important;
+  }
+  .Footer_footer__Q5T55 .Footer_content_container__hBs20 .Footer_popular_posts__94y28 {
+    overflow: hidden;
+    width: 90vw !important;
   }
 }
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\

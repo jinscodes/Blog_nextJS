@@ -22,32 +22,35 @@
       height: 100%;
       background-color: rgba($color: #000000, $alpha: 0.6);
 
-      .title {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 4rem;
-        color: white;
-        font-family: "Times New Roman", Times, serif;
-
-        .to_be {
-          display: flex;
-          gap: 15px;
-          margin-top: 30px;
-          .programmer {
-            color: orange;
-            margin: 0;
-          }
-        }
+      .post_title {
+        width: 800px;
+        height: auto;
       }
     }
   }
 }
 
+// 테블릿 (맥북 해상도 이하)
+@media screen and (max-width: 1512px) {
+  .post_title {
+    width: 700px !important;
+  }
+}
+
+// 테블릿 (맥북 해상도 이하)
+@media screen and (max-width: 1000px) {
+  .post_title {
+    width: 600px !important;
+  }
+}
+
 // 모바일
 @media screen and (max-width: 767px) {
-  .title {
-    font-size: 2.8rem !important;
+  .background {
+    border-radius: 0 !important;
+  }
+
+  .post_title {
+    width: 90vw !important;
   }
 }
