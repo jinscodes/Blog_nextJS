@@ -61,8 +61,12 @@ const NavMenu = ({ datas, isMenu }: Props) => {
       className={st.nav_menu}
     >
       {datas.class === isMenu &&
-        datas.menu.map((menu) => (
-          <Link href={`/posts/${menu.title}`} className={st.open_category_btn}>
+        datas.menu.map((menu, idx) => (
+          <Link
+            key={idx}
+            href={`/posts/${menu.title}`}
+            className={st.open_category_btn}
+          >
             <div>
               <Image
                 src={svgList[menu.svg]}

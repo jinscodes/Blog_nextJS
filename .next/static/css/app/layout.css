@@ -43,9 +43,10 @@
 
 @media screen and (max-width: 1512px) {
   .NavMenu_nav_menu__38pvH {
+    border: 1px solid red;
     position: absolute;
     top: 55px;
-    left: 400px;
+    left: 0;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
     z-index: 9999;
@@ -100,6 +101,10 @@
     height: 100%;
     margin: 0;
     background-color: transparent;
+  }
+  .NavClass_nav_class__wj3_M .NavClass_visible_menu__8VFkM {
+    border: 1px solid red;
+    position: relative;
   }
   .NavClass_nav_class__wj3_M .NavClass_title__4BSyO {
     margin: 0;

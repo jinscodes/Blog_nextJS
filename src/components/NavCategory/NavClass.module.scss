@@ -46,6 +46,11 @@
     margin: 0;
     background-color: transparent;
 
+    .visible_menu {
+      border: 1px solid red;
+      position: relative;
+    }
+
     .title {
       margin: 0;
     }

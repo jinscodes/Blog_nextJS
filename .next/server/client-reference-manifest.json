@@ -787,12 +787,12 @@
     "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/app/layout": [
       "static/css/app/layout.css"
     ],
+    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/app/about/page": [],
     "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/app/posts/[postPage]/[categorizedPostPage]/page": [
       "static/css/app/posts/[postPage]/[categorizedPostPage]/page.css"
     ],
     "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/app/posts/page": [
       "static/css/app/posts/page.css"
-    ],
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/app/about/page": []
+    ]
   }
 }
