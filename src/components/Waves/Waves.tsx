@@ -11,7 +11,7 @@ export const Waves = () => {
             xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28"
             preserveAspectRatio="none"
-            shapeRenderingshape-rendering="auto"
+            // shapeRenderingshape-rendering="auto"
           >
             <defs>
               <path
