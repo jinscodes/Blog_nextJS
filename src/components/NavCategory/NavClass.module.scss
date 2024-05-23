@@ -3,6 +3,10 @@
   margin: 0 12px 60px;
   background-color: rgb(240, 247, 252);
 
+  .visible_menu {
+    cursor: pointer;
+  }
+
   .title {
     display: flex;
     align-items: center;
@@ -47,7 +51,6 @@
     background-color: transparent;
 
     .visible_menu {
-      border: 1px solid red;
       position: relative;
     }
 

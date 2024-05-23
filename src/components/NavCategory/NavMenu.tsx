@@ -19,17 +19,20 @@ import WebCS from "../../../public/svg/WebCS.svg";
 import st from "./NavMenu.module.scss";
 
 import { DatasFromJson } from "components/NavCategory/NavCategory";
+import { Dispatch, SetStateAction } from "react";
 
 interface Props {
   datas: DatasFromJson;
   isMenu: string;
+  setIsMenu: Dispatch<SetStateAction<string | undefined>>;
+  coordinates: number;
 }
 
 interface SvgList {
   [key: string]: string;
 }
 
-const NavMenu = ({ datas, isMenu }: Props) => {
+const NavMenu = ({ datas, isMenu, setIsMenu, coordinates }: Props) => {
   const svgList: SvgList = {
     Javascript: Javascript,
     Reactjs: Reactjs,
@@ -47,18 +50,27 @@ const NavMenu = ({ datas, isMenu }: Props) => {
     Express: Express,
   };
 
+  const resetMenuState = () => {
+    setIsMenu(undefined);
+  };
+
   return (
     <div
       style={
         datas.class === isMenu
           ? {
               maxHeight: `${50 * datas.menu.length}px`,
+              left: `${coordinates}px`,
             }
           : {
               maxHeight: "0",
+              display: "none",
             }
       }
       className={st.nav_menu}
+      onClick={() => {
+        resetMenuState();
+      }}
     >
       {datas.class === isMenu &&
         datas.menu.map((menu, idx) => (

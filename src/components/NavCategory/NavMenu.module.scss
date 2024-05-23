@@ -46,15 +46,16 @@
 // 테블릿 (맥북 해상도 이하)
 @media screen and (max-width: 1512px) {
   .nav_menu {
-    border: 1px solid red;
-    position: absolute;
-    top: 55px;
+    position: fixed;
+    top: 90px;
     left: 0;
-    // top: 55px;
-    // left: 400px;
     background-color: rgba($color: #ffffff, $alpha: 0.9);
     border-radius: 12px;
     z-index: 9999;
+
+    .open_category_btn {
+      width: auto;
+    }
   }
 }
 
