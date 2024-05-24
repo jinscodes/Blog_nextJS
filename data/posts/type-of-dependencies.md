@@ -57,6 +57,43 @@ There is another dependency beside dependencies and devDependencies.
 
 It's peerDependencies.
 
+In package.json file, there is an object called as `peerDependencies` and it consists of all the packages that are exactly required in the project or to the person who is downloading and the version numbers should also be the same.
+
+That is the reason they were named as `peerDependencies`.
+
+The best example is ‘react’ which is common in every project to run similarly.
+
+To be specific, suppose you develop React-based component library.
+
+This library is based on React, so it must depend on React. In these cases, `peerDependencies` are used.
+
+It's actually a bit like telling people using this project to use the react ^17.0.0 version.
+
+Suppose installing this project, with the react 16.0.0 version already installed. In this app, the following module structure is created.
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/69c8f0bb-7bca-4611-9fd4-74d08df488bf)
+
+Here, you can see that the versions of the react are different. If the versions have different dependencies, npm and yarn inform the developer in different ways.
+
+> 💡 **NOTE**  
+> These dependencies are not automatically installed. `npm` gives a warning message whenever there is a `peerDependency` and these are different dependencies compared to the above-discussed dependencies.
+
+#### Yarn
+
+The warning is like below
+
+```terminal
+my-ui-library@0.0.1" has incorrect peer dependency "react@^17.0.0".
+```
+
+#### Npm
+
+Up to the npm version 3, `peerDependency` was automatically installed, but due to a number of problems, only warning messages were displayed from versions 4 to 6, and from version 7, package installation will not be possible if the `peerDependency` version is not correct.
+
+For npm@<=6 version and yarn, the installation is fine except for the warning message even if the `peerDependency` version and the installed `dependency` version do not match, but we don't know what errors will occur. Depending on the warning message, it is up to the developer to choose which version to actually install.
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/fdbd0b7f-6787-4408-8415-3797983b7cba)
+
 ---
 
 [](https://www.geeksforgeeks.org/difference-between-dependencies-devdependencies-and-peerdependencies/)
