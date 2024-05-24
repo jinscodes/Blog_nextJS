@@ -4,7 +4,7 @@ If you look at the **package.json** file, dependencies and devDependencies are w
 
 ![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9d556e1f-f420-4142-8980-54ee4278d82c)
 
-## Dependencies
+## dependencies
 
 In the **package.json** file, there is an object called dependencies and it consists of all the packages that are used in the project with its version number. So, whenever you install any library that is required in your project that library you can find it in the dependencies object.
 
@@ -25,11 +25,11 @@ After this module is installed, we can find the moment module with its version i
 
 ![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/ce6e7d4e-a51d-4eb1-871d-929dc90fb817)
 
-## Dev-dependencies
+## devDependencies
 
-In package.json file, there is an object called as `dev-dependencies` and it consists of all the packages that are used in the project in its development phase and not in the production or testing environment with its version number.
+In package.json file, there is an object called as `devDependencies` and it consists of all the packages that are used in the project in its development phase and not in the production or testing environment with its version number.
 
-So, whenever you want to install any library that is required only in your development phase then you can find it in the `dev-dependencies` object.
+So, whenever you want to install any library that is required only in your development phase then you can find it in the `devDependencies` object.
 
 Installing library as `dev-dependencies` is similar to installing `dependencies`.
 
@@ -50,6 +50,12 @@ For example, installing the bootstrap module.
 After this module is installed, we can find the bootstrap module with its version in `"devDependencies"` in `package.json` as shown below:
 
 ![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/cba11ecd-63c1-42c3-a8df-9face20a47b8)
+
+## peerDependencies
+
+There is another dependency beside dependencies and devDependencies.
+
+It's peerDependencies.
 
 ---
 
