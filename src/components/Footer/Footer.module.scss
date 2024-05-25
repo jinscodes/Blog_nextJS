@@ -120,6 +120,18 @@
   }
 }
 
+// 태블릿
+@media all and (max-width: 900px) {
+  .title {
+    border: 1px solid yellow;
+    width: 300px !important;
+
+    p {
+      width: 100% !important;
+    }
+  }
+}
+
 // 모바일
 @media all and (max-width: 767px) {
   .footer {

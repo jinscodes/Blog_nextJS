@@ -473,150 +473,6 @@ font-display: swap;
   margin: 60px 0;
   font-size: 36px;
 }
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/RecentPosts/RecentPosts.module.scss ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.RecentPosts_recent_posts__0uOw1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 60px;
-}
-.RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-.RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG .RecentPosts_other_posts_container__Ana5_ {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-@media all and (max-width: 767px) {
-  .RecentPosts_recent_posts__0uOw1 {
-    width: 100%;
-  }
-  .RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-  .RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG .RecentPosts_other_posts_container__Ana5_ {
-    align-items: center;
-  }
-}
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Err/Err.module.scss ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.Err_err__wf6sQ {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  margin-bottom: 60px;
-}
-.Err_err__wf6sQ .Err_err_container__izXhr {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1300px;
-  gap: 30px;
-}
-
-@media all and (max-width: 767px) {
-  .Err_err__wf6sQ {
-    width: 100%;
-  }
-  .Err_err__wf6sQ .Err_err_container__izXhr {
-    width: 100%;
-    align-items: center;
-  }
-}
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/ErrorPost.module.scss ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.ErrorPost_errorPost__YYf6C {
-  overflow: hidden;
-  display: flex;
-  width: 100%;
-  height: 240px;
-  color: black;
-  background-color: white;
-  text-decoration: none;
-  border-radius: 12px;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl {
-  width: 70%;
-  height: calc(100% - 30px);
-  padding: 15px;
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_category_container__pTa6J {
-  display: flex;
-  gap: 10px;
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_category_container__pTa6J > div:nth-child(2) {
-  background-color: rgba(0, 34, 255, 0.3);
-  color: rgba(0, 34, 255, 0.8);
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_category_container__pTa6J > div:nth-child(3) {
-  background-color: rgba(144, 0, 255, 0.3);
-  color: rgba(144, 0, 255, 0.8);
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_post_info_container__SOvte {
-  width: 100%;
-  height: calc(100% - 30px);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_post_info_container__SOvte p:first-child {
-  font-size: 20px;
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_post_info_container__SOvte p:nth-child(2) {
-  font-size: 14px;
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_post_image__U_1Vq {
-  width: 30%;
-  height: 100%;
-}
-
-@media all and (max-width: 1300px) {
-  .ErrorPost_errorPost__YYf6C {
-    width: 80%;
-    height: 100%;
-    flex-direction: column-reverse;
-  }
-  .ErrorPost_errorPost__YYf6C .ErrorPost_post_image__U_1Vq {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  .ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl {
-    width: calc(100% - 30px);
-  }
-}
-@media all and (max-width: 767px) {
-  .ErrorPost_errorPost__YYf6C {
-    width: 80%;
-    height: 100%;
-    flex-direction: column-reverse;
-  }
-  .ErrorPost_errorPost__YYf6C .ErrorPost_post_image__U_1Vq {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  .ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl {
-    width: calc(100% - 30px);
-  }
-}
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Gif/Gif.module.scss ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -816,5 +672,149 @@ font-display: swap;
   }
   .SourcePost_opensource_card__MQrXu .SourcePost_content_container__IetxT {
     gap: 120px;
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/RecentPosts/RecentPosts.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.RecentPosts_recent_posts__0uOw1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG .RecentPosts_other_posts_container__Ana5_ {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media all and (max-width: 767px) {
+  .RecentPosts_recent_posts__0uOw1 {
+    width: 100%;
+  }
+  .RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG .RecentPosts_other_posts_container__Ana5_ {
+    align-items: center;
+  }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Err/Err.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Err_err__wf6sQ {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.Err_err__wf6sQ .Err_err_container__izXhr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  gap: 30px;
+}
+
+@media all and (max-width: 767px) {
+  .Err_err__wf6sQ {
+    width: 100%;
+  }
+  .Err_err__wf6sQ .Err_err_container__izXhr {
+    width: 100%;
+    align-items: center;
+  }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/ErrorPost.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.ErrorPost_errorPost__YYf6C {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 240px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl {
+  width: 70%;
+  height: calc(100% - 30px);
+  padding: 15px;
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_category_container__pTa6J {
+  display: flex;
+  gap: 10px;
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_category_container__pTa6J > div:nth-child(2) {
+  background-color: rgba(0, 34, 255, 0.3);
+  color: rgba(0, 34, 255, 0.8);
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_category_container__pTa6J > div:nth-child(3) {
+  background-color: rgba(144, 0, 255, 0.3);
+  color: rgba(144, 0, 255, 0.8);
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_post_info_container__SOvte {
+  width: 100%;
+  height: calc(100% - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_post_info_container__SOvte p:first-child {
+  font-size: 20px;
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_post_info_container__SOvte p:nth-child(2) {
+  font-size: 14px;
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_post_image__U_1Vq {
+  width: 30%;
+  height: 100%;
+}
+
+@media all and (max-width: 1300px) {
+  .ErrorPost_errorPost__YYf6C {
+    width: 80%;
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+  .ErrorPost_errorPost__YYf6C .ErrorPost_post_image__U_1Vq {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl {
+    width: calc(100% - 30px);
+  }
+}
+@media all and (max-width: 767px) {
+  .ErrorPost_errorPost__YYf6C {
+    width: 80%;
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+  .ErrorPost_errorPost__YYf6C .ErrorPost_post_image__U_1Vq {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl {
+    width: calc(100% - 30px);
   }
 }
