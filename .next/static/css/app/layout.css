@@ -446,6 +446,15 @@ font-display: swap;
   font-size: 8px;
 }
 
+@media all and (max-width: 900px) {
+  .Footer_title__o3sfG {
+    border: 1px solid yellow;
+    width: 300px !important;
+  }
+  .Footer_title__o3sfG p {
+    width: 100% !important;
+  }
+}
 @media all and (max-width: 767px) {
   .Footer_footer__Q5T55 {
     height: 600px;

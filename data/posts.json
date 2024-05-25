@@ -662,5 +662,13 @@
     "category": ["WebCS", "ReactJs", "JavaScript"],
     "path": "type-of-dependencies",
     "featured": false
+  },
+  {
+    "title": "How To Use Zustand? Let's Apply It!",
+    "description": "React has several libraries that can handle status. Let's introduce zustand in one of them, this post.",
+    "date": "2023-09-15",
+    "category": ["ReactJs", "NextJs"],
+    "path": "start-zustand",
+    "featured": false
   }
 ]

@@ -38,7 +38,7 @@ const Footer = async () => {
                   height={0}
                   sizes="auto"
                 />
-                <div>
+                <div className={st.title}>
                   <p>{post.title}</p>
                   <p>{String(post.date)}</p>
                 </div>
@@ -56,7 +56,7 @@ const Footer = async () => {
                   height={0}
                   sizes="auto"
                 />
-                <div>
+                <div className={st.title}>
                   <p>{post.title}</p>
                   <p>{String(post.date)}</p>
                 </div>
