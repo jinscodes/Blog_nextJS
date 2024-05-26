@@ -45,6 +45,12 @@ The callback function passed to it is where we will define our state and the fun
 
 There is an example 👇🏼:
 
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/efce2a8f-ac9b-44bb-8a99-f0eacd32f45a)
+
+There is a `create` function that passes a `set` function to the callback function.
+
+This `set` function is used to manipulate the state in the store. States in zustand can be primitives, objects, or functions.
+
 ---
 
 [](https://refine.dev/blog/zustand-react-state/#introduction)
