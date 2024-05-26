@@ -15,9 +15,35 @@ Zustand is a state management library. It is compact, fast, and scalable. It is 
 It doesn’t rely on a provider. As a result, you don’t have to code as much React logic, which may lessen the things we tend to forget. It works based on simplified flux principles and primarily makes use of hooks.
 
 - It is faster than context. It gives you the option to choose a specific state.
-- It does state merging by default. Consider updating a single property of an object state, {x:1, y:2}. You can directly set {y:3}. Zustand will merge the data for you. You don’t have to distribute the old state and update properties like {…state, y:3}.
+- It does state merging by default.
 - It is extendable by default. Thus, you can use a variety of middleware types.
 - It is less opinionated. You don’t have to stick to one way of doing things. Even though there is a recommended approach, you are not required to adopt it.
+
+## Getting started with Zustand
+
+Let's start zustand.
+
+First of all, below the code to install the zustand library.
+
+```bash
+$ npm istall zustand
+
+or
+
+$ yarn add zustand
+```
+
+To use zustand, import a create function.
+
+```jsx
+import { create } from "zustand";
+```
+
+This function is called with a callback function and it returns a custom hook.
+
+The callback function passed to it is where we will define our state and the functions we can use to manipulate the state. The state and the functions are all in an object returned by this callback function.
+
+There is an example 👇🏼:
 
 ---
 
