@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: calc(100% - 20px);
   height: 130px;
   padding-left: 20px;
   color: rgb(90, 87, 99);
@@ -53,11 +53,4 @@
 .a_container:hover {
   background-color: rgba($color: lightblue, $alpha: 0.2);
   color: rgba(126, 122, 142, 0.7);
-}
-
-// mobile
-@media all and (max-width: 767px) {
-  .a_container {
-    width: calc(100% - 20px);
-  }
 }
