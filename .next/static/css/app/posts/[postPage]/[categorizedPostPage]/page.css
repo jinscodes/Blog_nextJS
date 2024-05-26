@@ -48,7 +48,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: calc(100% - 20px);
   height: 130px;
   padding-left: 20px;
   color: rgb(90, 87, 99);
@@ -91,12 +91,6 @@
 .A_a_container__zDYnP:hover {
   background-color: rgba(173, 216, 230, 0.2);
   color: rgba(126, 122, 142, 0.7);
-}
-
-@media all and (max-width: 767px) {
-  .A_a_container__zDYnP {
-    width: calc(100% - 20px);
-  }
 }
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Post/MarkdownViewer/StyledMarkdown/Blockquote.module.scss ***!
@@ -319,6 +313,12 @@
   margin-bottom: 120px;
 }
 
+@media all and (max-width: 900px) {
+  .slug_content_container__92knb {
+    width: calc(100% - 50px) !important;
+    padding: 0 25px;
+  }
+}
 @media all and (max-width: 767px) {
   .slug_content_container__92knb {
     width: calc(100% - 50px) !important;
