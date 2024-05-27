@@ -33,6 +33,8 @@ or
 $ yarn add zustand
 ```
 
+### create hook
+
 To use zustand, import a create function.
 
 ```jsx
@@ -45,11 +47,29 @@ The callback function passed to it is where we will define our state and the fun
 
 There is an example 👇🏼:
 
-![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/efce2a8f-ac9b-44bb-8a99-f0eacd32f45a)
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/278357b1-b5e8-462b-b5ed-c0e890b6902e)
 
 There is a `create` function that passes a `set` function to the callback function.
 
 This `set` function is used to manipulate the state in the store. States in zustand can be primitives, objects, or functions.
+
+In our above example, we have two states in our store: `count`, and `incrementCount`. The `useCounter` is a custom hook, we can use this hook in our components and we will be able to get the latest state in them.
+
+If we use the hook in components A, B, and C. Any change done to the state in B will be reflected in both A and C, and they will all re-render to reflect the new changes.
+
+### Get state from the hook
+
+The callback function is called by the custom hook returned by the `create` and passes the current state. So, we can get this state and use it.
+
+This is an example:
+
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/d059e0e4-aa3b-4039-affa-4542d7b2b79d)
+
+We called the `useCounter` as a custom hook returned by the `create` and passed a callback function `state => state.count`.
+
+Then, the function returns `count` part of the state and we can use it.
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/83e4005a-6188-4713-9c7d-aa41bafc97f8)
 
 ---
 
