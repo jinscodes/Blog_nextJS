@@ -67,9 +67,33 @@ This is an example:
 
 We called the `useCounter` as a custom hook returned by the `create` and passed a callback function `state => state.count`.
 
+### Use state in component
+
 Then, the function returns `count` part of the state and we can use it.
 
 ![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/83e4005a-6188-4713-9c7d-aa41bafc97f8)
+
+Now, we want to create a component where we can increase the value of the counter state.
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/7cf5d302-f80f-4db6-a519-16d47704cd85)
+
+Slice out the `incrementCount` function from the state (state have two: count & incrementCount). And then, set it to the `onClick` event of the button.
+
+Through this, we can see how the components are independent of each. But, also through this we can see the current state from the store. In other words, it's independent but be interrelated.
+
+Whenever the button is clicked, the function is executed and the state is updated. Whenever the state is changed, components are re-rendered to display the newest state value (in this example, ShowCount component is rendered to display the new count value).
+
+### Return the whole state
+
+Now, when we call the custom hook returned by the `create` function without a callback function, the hook will return the whole state of the store.
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/3728c27e-5259-4165-afd9-f44344351468)
+
+Without callback function, `useCount` will return the whole state in the store.
+
+The state holds the whole state in the useCounter store. So, we can get the counter state by doing like below 👇🏼
+
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a4543d32-21ab-4ee5-bf6d-65ebcffca2b1)
 
 ---
 
