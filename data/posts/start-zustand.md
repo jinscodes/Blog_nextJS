@@ -87,13 +87,35 @@ Whenever the button is clicked, the function is executed and the state is update
 
 Now, when we call the custom hook returned by the `create` function without a callback function, the hook will return the whole state of the store.
 
-![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/3728c27e-5259-4165-afd9-f44344351468)
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/0977a99f-c464-4aa6-953b-5b2b8fa75c00)
 
 Without callback function, `useCount` will return the whole state in the store.
 
 The state holds the whole state in the useCounter store. So, we can get the counter state by doing like below 👇🏼
 
-![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a4543d32-21ab-4ee5-bf6d-65ebcffca2b1)
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/d3c8de8b-d2c9-4d95-9fcb-b06f36b7438a)
+
+### Memorization
+
+Memoization is an optimization technique used to optimize the execution of functions by caching the results of expensive or time-consuming function calls.
+
+It involves storing the return value of a function associated with a specific set of input parameters so that if the function is called again with the same parameters, the cached result can be returned instead of re-evaluating the function.
+
+The goal of memoization is to improve performance and efficiency by avoiding redundant computations.
+
+Zustand give us the hook to add memorization. It exports a `shallow` function that we can use to add memoization to our state picks.
+
+```jsx
+import { shallow } from "zustand/shallow";
+```
+
+If we want to get `count` state from the store, we can do this 👇🏼
+
+```jsx
+const ShowCount = () => {
+  const count = useCount((state) => state.counter);
+};
+```
 
 ---
 
