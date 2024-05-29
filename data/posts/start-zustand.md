@@ -111,11 +111,17 @@ import { shallow } from "zustand/shallow";
 
 If we want to get `count` state from the store, we can do this 👇🏼
 
-```jsx
-const ShowCount = () => {
-  const count = useCount((state) => state.counter);
-};
-```
+![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/dcd7758b-dda8-403d-bb30-bb917130a3b4)
+
+Initial value of `count` is 0. Whenever the `counter` state is updated using `incrementCount`, the component is re-rendered.
+
+If the updated value of the `count` is 0, the componenet is re-rendered unnecessarily. How to prevent this uncessary re-rendering from occuring when the state is not changed?
+
+Zustand directs us to pass a comparator function as a second parameter to the custom hook. This comparator function will compare the previous slice state and the next slice state, if both are the same the component will not re-render, else the component will re-render.
+
+This is exactly what other React hooks do: useEffect, useMemo, and useCallback. The `shallow` function is a comparator function provided to us by Zustand. It shallowly compares the two-state slices using the `==` shallow equality operator.
+
+![8](https://github.com/jinscodes/Blog_nextJS/assets/87598134/5adee312-c8fc-4716-a2fb-b8fe3fa1eb9a)
 
 ---
 
