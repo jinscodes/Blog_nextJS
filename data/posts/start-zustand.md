@@ -123,6 +123,46 @@ This is exactly what other React hooks do: useEffect, useMemo, and useCallback. 
 
 ![8](https://github.com/jinscodes/Blog_nextJS/assets/87598134/5adee312-c8fc-4716-a2fb-b8fe3fa1eb9a)
 
+On each state change in the store, the `shallow` will determine if the component will re-render based on the previous and next value of the `count` state.
+
+We can use our custom-made comparator if we don't trust the `shallow` function. The comparator function takes two parameters, the first parameter is the previous value of the state slice while the second parameter is the next value of the state slice.
+
+![9](https://github.com/jinscodes/Blog_nextJS/assets/87598134/7438e28f-c192-416e-969f-fb59dff29a9e)
+
+So,
+
+![10](https://github.com/jinscodes/Blog_nextJS/assets/87598134/8f3ed2fb-2d14-44ca-8143-627b965bf942)
+
+Now, we have memoized our `useCount` hook. With this, we have made our application a bit faster, with no more unnecessary re-renders.
+
+### Updating the whole state
+
+How to update the state.
+
+When we created the `useCount` hook earlier on. Now, we will see how to update the state.
+
+We learned that zustand passes a function to the callback function passed to the `create` function. This function widely accepted to be referred to as `set` is used to update all or parts of the state.
+
+![1-2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/278357b1-b5e8-462b-b5ed-c0e890b6902e)
+
+Here, there is a `set` function. The `set` function will call this function and passs it the state as an argument. And then, it will update the state using the result of the function.
+
+In the callback function, it returns an object with a `count` property to update the state. (To update the `count`, get the `count` from the argument `state`)
+
+So, when we pass a function to the `set` function as an argument, the `set` function expects thate we return an object. We can pass an object to the `set` function.
+
+![11](https://github.com/jinscodes/Blog_nextJS/assets/87598134/0026cf37-6b7a-444e-902b-e69dc6ba1b0e)
+
+This will update the `count` state value to 9.
+
+### Clear the entire state
+
+We can clear the state in a zustand store by passing an empty object to the set function.
+
+![12](https://github.com/jinscodes/Blog_nextJS/assets/87598134/1b5f1069-cbf2-4e25-b2c6-bce7a8f7ab13)
+
+This will clear the state and the actions.
+
 ---
 
 [](https://refine.dev/blog/zustand-react-state/#introduction)
