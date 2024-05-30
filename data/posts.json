@@ -670,5 +670,13 @@
     "category": ["ReactJs", "NextJs"],
     "path": "start-zustand",
     "featured": false
+  },
+  {
+    "title": "How To Use Git Action?",
+    "description": "We use git action for automatic distribution. How should we use it?",
+    "date": "2023-09-21",
+    "category": ["GIT", "WebCS"],
+    "path": "git-action",
+    "featured": true
   }
 ]
