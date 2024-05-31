@@ -16,7 +16,6 @@ GitHub Actions have many keywords such as event, trigger, job, step, use, name, 
   - Up to 20 Workflows can be registered in a single repo
   - Jobs that exist in a workflow can run for 6 hours and automatically stop when exceeded
   - Github Free storage limit of 500MB, monthly run time of 2,000 minutes
-  - Github Pro is 1GB storage limit, 3,000 minutes per month
 
 ## Setting Project
 
@@ -52,6 +51,21 @@ If clicking the **`set up a workflow yourself ->`**, you can see the below page
 
 ![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/5ca00946-0868-40f2-8d1d-929c9d659f45)
 
+First, I recommend creating a `.github/workflows/` directory in the root path of the project and creating two GitHub Actions files.
+
+- .github/workflows/main.yml
+- .github/workflows/main.test.yml
+
+> 💡 **NOTE**  
+> Reason for separating into two file  
+> This is to use different GitHub Actions files for each branch.
+
+> This is because the main branch is a branch for real service distribution and the release branch is a branch for inspection purposes, so there is a high possibility of a difference in workflow between the two branches in the future.
+
+### Content of GitHub Actions
+
+#### 1-1) Event
+
 ---
 
 [](https://docs.github.com/ko/actions/learn-github-actions/understanding-github-actions)
@@ -63,3 +77,5 @@ If clicking the **`set up a workflow yourself ->`**, you can see the below page
 [](https://stackoverflow.com/questions/38774798/accessdenied-for-listobjects-for-s3-bucket-when-permissions-are-s3)
 
 [](https://zzsza.github.io/development/2020/06/06/github-action/)
+
+[](https://velog.io/@cataiden/ci-cd-with-github-actions-and-aws-codedeploy)
