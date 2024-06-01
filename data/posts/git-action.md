@@ -62,69 +62,13 @@ First, I recommend creating a `.github/workflows/` directory in the root path of
 
 > This is because the main branch is a branch for real service distribution and the release branch is a branch for inspection purposes, so there is a high possibility of a difference in workflow between the two branches in the future.
 
-### Content of GitHub Actions
+### Set up this workflow
 
-#### 1-1) Event
+Example of `.yml` file
 
-In each file, write the event that is triggered.
+Workflow with the name CI that runs when a push or pull request comes to the master branch.
 
-- main.yml
-  - Triggers when a merge event occurs from the release branch to the main branch
-  - Because /GitHub Actions doesn't support Merged event officially, we can detect the merged event to write the code like below
-  - (trigger conditions === main branch's PR is closed, and merged is true)
-
-```yml
-name: 🚀 Deploy workflow on production environment
-
-on:
-  pull_request:
-    branches: [main]
-      types: [closed]
-
-jobs:
-  deploy:
-    if: github.event.pull_request.merged == true
-```
-
-- main.test.yml
-  - Release branch is divided from develop branch and be pushed.
-  - It doesn't use PR
-  - Branch name includes version, so use Glob Pattern. For this, branch name should be wrapped quote(")
-  - If the release branch has the push event, it is triggered
-
-```yml
-name: 🚀 Deploy workflow on test environment
-
-on:
-  push:
-    branches: ["release/v**"]
-
-jobs:
-  deploy:
-```
-
-#### 1-2) GitHub Repository Envrionment
-
-For releasing, not only new version of the codes but also environment variables is needed.
-
-- main.yml
-  - environment = production
-
-```yml
-jobs:
-	deploy:
-		if: github.pull_request.merged == true
-		environment: production
-```
-
-- main.test.yml
-  - environment = test
-
-```yml
-jobs:
-	deploy:
-		environment: test
-```
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b09f06ae-d29c-431a-bd80-401eabda5f7c)
 
 ---
 
