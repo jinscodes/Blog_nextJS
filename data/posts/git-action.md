@@ -62,9 +62,13 @@ First, I recommend creating a `.github/workflows/` directory in the root path of
 
 > This is because the main branch is a branch for real service distribution and the release branch is a branch for inspection purposes, so there is a high possibility of a difference in workflow between the two branches in the future.
 
-### Content of GitHub Actions
+### Set up this workflow
 
-#### 1-1) Event
+Example of `.yml` file
+
+Workflow with the name CI that runs when a push or pull request comes to the master branch.
+
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b09f06ae-d29c-431a-bd80-401eabda5f7c)
 
 ---
 
@@ -79,3 +83,5 @@ First, I recommend creating a `.github/workflows/` directory in the root path of
 [](https://zzsza.github.io/development/2020/06/06/github-action/)
 
 [](https://velog.io/@cataiden/ci-cd-with-github-actions-and-aws-codedeploy)
+
+[](https://velog.io/@1nthek/GitHub-Action%EC%9C%BC%EB%A1%9C-AWS-S3%EC%97%90-%EB%B0%B0%ED%8F%AC-%EC%9E%90%EB%8F%99%ED%99%94)
