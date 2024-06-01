@@ -66,6 +66,66 @@ First, I recommend creating a `.github/workflows/` directory in the root path of
 
 #### 1-1) Event
 
+In each file, write the event that is triggered.
+
+- main.yml
+  - Triggers when a merge event occurs from the release branch to the main branch
+  - Because /GitHub Actions doesn't support Merged event officially, we can detect the merged event to write the code like below
+  - (trigger conditions === main branch's PR is closed, and merged is true)
+
+```yml
+name: 🚀 Deploy workflow on production environment
+
+on:
+  pull_request:
+    branches: [main]
+      types: [closed]
+
+jobs:
+  deploy:
+    if: github.event.pull_request.merged == true
+```
+
+- main.test.yml
+  - Release branch is divided from develop branch and be pushed.
+  - It doesn't use PR
+  - Branch name includes version, so use Glob Pattern. For this, branch name should be wrapped quote(")
+  - If the release branch has the push event, it is triggered
+
+```yml
+name: 🚀 Deploy workflow on test environment
+
+on:
+  push:
+    branches: ["release/v**"]
+
+jobs:
+  deploy:
+```
+
+#### 1-2) GitHub Repository Envrionment
+
+For releasing, not only new version of the codes but also environment variables is needed.
+
+- main.yml
+  - environment = production
+
+```yml
+jobs:
+	deploy:
+		if: github.pull_request.merged == true
+		environment: production
+```
+
+- main.test.yml
+  - environment = test
+
+```yml
+jobs:
+	deploy:
+		environment: test
+```
+
 ---
 
 [](https://docs.github.com/ko/actions/learn-github-actions/understanding-github-actions)
@@ -79,3 +139,5 @@ First, I recommend creating a `.github/workflows/` directory in the root path of
 [](https://zzsza.github.io/development/2020/06/06/github-action/)
 
 [](https://velog.io/@cataiden/ci-cd-with-github-actions-and-aws-codedeploy)
+
+[](https://velog.io/@1nthek/GitHub-Action%EC%9C%BC%EB%A1%9C-AWS-S3%EC%97%90-%EB%B0%B0%ED%8F%AC-%EC%9E%90%EB%8F%99%ED%99%94)
