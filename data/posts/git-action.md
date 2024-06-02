@@ -123,9 +123,12 @@ jobs:
 				echo test, and deploy your project.
 ```
 
-- Workflow consists of multiple jobs
+- Workflow consists of multiple **jobs**
 - If there are several jobs, it is executed parallelly as a default
 - Execute job named build, and there are two steps under the job(build)
+- **runs-on** specifies which OS to run on
+- There is the way to regist environment variable (above example, there is no code about environment)
+- **uses** of **steps** specifies which action to use. Specify when using an action that has already been created.
 
 ---
 
