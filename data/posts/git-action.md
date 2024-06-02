@@ -70,6 +70,63 @@ Workflow with the name CI that runs when a push or pull request comes to the mas
 
 ![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b09f06ae-d29c-431a-bd80-401eabda5f7c)
 
+#### name:
+
+Name of the workflow
+
+#### on:
+
+```yml
+on:
+	push:
+		branches: [ master ]
+	pull_request:
+		branches: [ master ]
+
+# or
+
+on:
+	push:
+	 branches:
+	 	- main
+		- master
+```
+
+- The part that is related to the event
+- Conditions for workflow's trigger
+- Being able to use `push`(Branch or Tag), `pull_request`, `schedule`
+- Being able to use it as an array
+
+```yml
+on: push
+
+# or
+
+on: [pull_request, issues]
+```
+
+#### jobs:
+
+```yml
+jobs:
+	build:
+		runs-on: ubuntu-latest
+
+		steps:
+		- uses: actions/checkout@v2
+		- name: Run a one-line script
+			run: echo Hello, world!
+
+		- name: Run a muli-line script
+			run: |
+				echo Add other actions to build,
+				echo test, and deploy your project.
+```
+
+- Workflow consists of multiple jobs
+- If there are several jobs, it is executed parallelly as a default
+- Execute job named build, and there are two steps under the job(build)
+
 ---
 
 [](https://docs.github.com/ko/actions/learn-github-actions/understanding-github-actions)
