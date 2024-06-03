@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import Aws from "assets/svg/Aws.svg";
+import Cicd from "assets/svg/Cicd.svg";
 import Apple from "../../../public/svg/Apple.svg";
 import Caret from "../../../public/svg/Caret.svg";
 import Codepen from "../../../public/svg/Codepen.svg";
@@ -48,6 +50,8 @@ const NavMenu = ({ datas, isMenu, setIsMenu, coordinates }: Props) => {
     WebCS: WebCS,
     Error: Error,
     Express: Express,
+    Cicd: Cicd,
+    Aws: Aws,
   };
 
   const resetMenuState = () => {

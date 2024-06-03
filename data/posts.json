@@ -675,7 +675,15 @@
     "title": "How To Use Git Action?",
     "description": "We use git action for automatic distribution. How should we use it?",
     "date": "2023-09-21",
-    "category": ["GIT", "WebCS"],
+    "category": ["GIT", "WebCS", "CICD"],
+    "path": "git-action",
+    "featured": true
+  },
+  {
+    "title": "Disable and automate aws cloud front deployment",
+    "description": "",
+    "date": "2023-09-29",
+    "category": ["WebCS", "CICD", "AWS"],
     "path": "git-action",
     "featured": true
   }

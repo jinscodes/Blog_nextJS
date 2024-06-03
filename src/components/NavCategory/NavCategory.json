@@ -83,6 +83,14 @@
       {
         "title": "GIT",
         "svg": "Git"
+      },
+      {
+        "title": "CICD",
+        "svg": "Cicd"
+      },
+      {
+        "title": "AWS",
+        "svg": "Aws"
       }
     ]
   },
