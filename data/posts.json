@@ -680,11 +680,11 @@
     "featured": true
   },
   {
-    "title": "Disable and automate aws cloud front deployment",
-    "description": "",
+    "title": "AWS Cloudfront: Invalidate Files To Remove Content, and Automating It!",
+    "description": "Sometimes, our website is not updated althoud we release our project to aws. How to solve it? Let's check it out!",
     "date": "2023-09-29",
-    "category": ["WebCS", "CICD", "AWS"],
-    "path": "git-action",
+    "category": ["CICD", "AWS"],
+    "path": "aws-invalidation",
     "featured": true
   }
 ]
