@@ -30,6 +30,7 @@ type Prop = {
 const CategorizedPostPage = async ({
   params: { categorizedPostPage },
 }: Prop) => {
+  const categories: string[] = [];
   const file = await getPostData(categorizedPostPage);
   const { title, category, content, date, next, prev } = file;
   const gifBgArr = [
@@ -47,12 +48,13 @@ const CategorizedPostPage = async ({
     gif_bg_12,
   ];
   const randomIdx = Math.floor(Math.random() * gifBgArr.length);
+  category.forEach((el) => categories.push(el));
 
   return (
     <section className={st.categorized_post_page}>
       <div className={st.img_container}>
         <div className={st.bg_cover}>
-          <p className={st.category}>{category}</p>
+          <p className={st.category}>{categories.join("/")}</p>
           <div className={st.bg_cover_title}>
             <Image src={Bookmark} alt="bookmark" />
             <p>{title}</p>
