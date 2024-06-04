@@ -2,6 +2,23 @@ I released company's introduction page with AWS S3 + CloudFront + Route53. After
 
 I fixed the codes and build the file. I uploaded build file to the AWS server. But, the changes was not reflected to the page.
 
+**What's the problem?**
+
+## Problem Analysis
+
+Do the service via CloudFront, the project modifications do not apply immediately.
+
+The reason for the issue is CloudFront's cache function, and it is said that the cache is maintained for 24 hours by default. Therefore, no matter how much you reload and rebuild and distribute changes, the modified contents are not reflected.
+
+CloudFront caches files at each edge and uses cached files without requesting Origin (the original file in the S3 bucket) until the TTL expires.
+
+If you want to apply the changes right away, you should remove the cache.
+
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/682b096f-96bb-46b5-badc-db96ae6cce17)
+
+> 💡 **NOTE**  
+> **S3** as file storage, **Route 53** as DNS, and **CloudFront** as Content Delivery Network (CDN)
+
 ---
 
 [](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html)
