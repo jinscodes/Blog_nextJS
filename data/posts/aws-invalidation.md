@@ -57,6 +57,8 @@ As the result, **invalidation** is progressing for a while, and then when it's d
 
 ![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9bbfde54-c424-4509-baeb-77b70cfa2c99)
 
+Once creating the invalidation, we can see the edited site.
+
 ---
 
 [](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html)
