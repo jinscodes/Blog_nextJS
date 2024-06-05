@@ -23,10 +23,39 @@ If you want to apply the changes right away, you should remove the cache.
 
 It's not difficult to get rid of the cache from the CloudFront.
 
-1. CloudFront - Distributions - Select Distribution - Invalidation tab - Create Invalidation
+First of all, go to the **CloudFront** page.
 
-2. Add the object path
-   1. To remove all caches, `/*`
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/4a5c6e13-268a-455f-bf7a-34e9999417c6)
+
+Click the **Distributions**.
+
+And then, check the distribution and click it.
+
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/3ab43733-a2ad-4769-b116-7d9e297d9c59)
+
+If you click the distribution, you can see the page like the below image.
+
+There are tabs. And we need an **Invalidations** tab.
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/19492cf1-6be1-4124-a716-6ea5c235cd6b)
+
+In **Invalidations**, there are invalidations that is already created.
+
+What we need is a **Create invalidation**.
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/26326007-35bb-4ecf-b6cd-9608a04c3604)
+
+Click the **Create invalidation** button. And there is **Object path**.
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/17c444cd-0c0d-4fa0-ab76-7727ad22f26c)
+
+To remove the all caches, write `/*` like this 👇🏼.
+
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e7e3106d-587e-40a8-839f-8e59745a702e)
+
+As the result, **invalidation** is progressing for a while, and then when it's done, there is a **check status** at the bottom of the card(?).
+
+![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/9bbfde54-c424-4509-baeb-77b70cfa2c99)
 
 ---
 
