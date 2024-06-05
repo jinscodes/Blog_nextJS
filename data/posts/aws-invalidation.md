@@ -19,6 +19,15 @@ If you want to apply the changes right away, you should remove the cache.
 > 💡 **NOTE**  
 > **S3** as file storage, **Route 53** as DNS, and **CloudFront** as Content Delivery Network (CDN)
 
+## How To Clear Cache
+
+It's not difficult to get rid of the cache from the CloudFront.
+
+1. CloudFront - Distributions - Select Distribution - Invalidation tab - Create Invalidation
+
+2. Add the object path
+   1. To remove all caches, `/*`
+
 ---
 
 [](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html)
