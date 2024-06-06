@@ -59,6 +59,11 @@ As the result, **invalidation** is progressing for a while, and then when it's d
 
 Once creating the invalidation, we can see the edited site.
 
+> 💡 **NOTE**  
+> Even if the invalidation setting is performed, it is correct that the cache is removed and the updated file is cached again to be reflected, but it only operates once at the time the invalidation was created, and updates were not made every time there was a change thereafter.
+
+> In other words, whenever there are some changes about the site and be needed to check it immediately, we must do the above sequence everytime.
+
 ---
 
 [](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html)
