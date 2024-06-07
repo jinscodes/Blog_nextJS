@@ -64,6 +64,26 @@ Once creating the invalidation, we can see the edited site.
 
 > In other words, whenever there are some changes about the site and be needed to check it immediately, we must do the above sequence everytime.
 
+## Automate AWS Invalidation
+
+It's quite cumbersome and inconvenient to invalidate whenever contents are needed to update.
+
+This is because we have to do the same process.
+
+In most case, **lambda** function is used to automate AWS Invalidtaion. However, in the case of static contents, we don't need to use lambda function because we already know when the contents are uploaded and when the cache is invalidated.
+
+### @aws-sdk/client-cloudfront
+
+To use CloudFront SDK, `@aws-sdk/client-cloudfront` is needed.
+
+```bash
+npm install @aws-sdk/client-cloudfront
+
+# or
+
+yarn add @aws-sdk/client-cloudfront
+```
+
 ---
 
 [](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html)
