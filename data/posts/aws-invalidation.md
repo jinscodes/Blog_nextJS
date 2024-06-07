@@ -84,6 +84,20 @@ npm install @aws-sdk/client-cloudfront
 yarn add @aws-sdk/client-cloudfront
 ```
 
+And then, set the CloudFrontClient
+
+```tsx
+const cloudfrontClient = new CloudFrontClient({
+  region: "",
+  credentials: {
+    accessKeyId: "",
+    secretAccessKey: "",
+  },
+});
+```
+
+- **region**:
+
 ---
 
 [](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html)
