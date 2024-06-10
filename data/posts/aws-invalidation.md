@@ -97,8 +97,6 @@ const cloudfrontClient = new CloudFrontClient({
 ```
 
 - **region**:
-  ]
-  ///
 
 ---
 
