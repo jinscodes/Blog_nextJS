@@ -97,6 +97,14 @@ const cloudfrontClient = new CloudFrontClient({
 ```
 
 - **region**: Write down the region of the original object. If you don't write it down, it won't be executed, so you have to write it down.
+- **accessKeyId**
+- **secretAccessKey**
+
+> You can check the region from S3 bucket's prodperties tab.
+
+> ![8](https://github.com/jinscodes/Blog_nextJS/assets/87598134/a1786a66-6840-4f73-ac89-748c75e5f633)
+
+### CreateInvalidationCommand
 
 ---
 
