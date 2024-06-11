@@ -96,7 +96,7 @@ const cloudfrontClient = new CloudFrontClient({
 });
 ```
 
-- **region**:
+- **region**: Write down the region of the original object. If you don't write it down, it won't be executed, so you have to write it down.
 
 ---
 
