@@ -106,9 +106,42 @@ const cloudfrontClient = new CloudFrontClient({
 
 ### CreateInvalidationCommand
 
+To invalidate the cache, use `CreateInvalidationCommand`.
+
+We create `info` and send this `info` to `CreateInvalidationCommand` object. And then, send this object to `CloudFrontClient`.
+
+```jsx
+const client = new CloudFrontClient(config);
+
+const cacheInvalidationInfo = {
+  DistributionId: "CDN ID",
+  InvalidationBatch: {
+    Paths: {
+      Quantity: pathList.length,
+      Items: pathList,
+    },
+    CallerReference: String(new Date().getTime()),
+  },
+};
+
+const command = new CreateInvalidationCommand(cacheInvalidationInfo);
+
+await this.cloudFrontClient.send(command);
+```
+
+If you want to know about the properties, go to the below link 👇🏼
+
+[](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/cloudfront/command/CreateInvalidationCommand/)
+
+About the above code, every properties(fields) are essential value.
+
+We can enter the path of the object to be invalidated in `InvalidationBatch.Paths.Items`.
+
 ---
 
 [](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html)
+
+[](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/cloudfront/command/CreateInvalidationCommand/)
 
 [](https://velog.io/@nawon5154/AWS-CloudFront-%EC%99%80-%EC%97%B0%EA%B2%B0%EB%90%9C-S3-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B3%80%EA%B2%BD-%EC%82%AC%ED%95%AD-%EB%B0%98%EC%98%81-%EC%95%88%EB%90%A8-%ED%98%84%EC%83%81)
 
