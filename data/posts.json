@@ -686,5 +686,13 @@
     "category": ["CICD", "AWS"],
     "path": "aws-invalidation",
     "featured": true
+  },
+  {
+    "title": "Understanding The Principle Of Zustand Operation",
+    "description": "Not only is it important to use the Zustand, but it is also important to understand how it operates. Let's check it out!",
+    "date": "2023-10-10",
+    "category": ["ReactJs", "NextJs"],
+    "path": "zustand-principle",
+    "featured": false
   }
 ]
