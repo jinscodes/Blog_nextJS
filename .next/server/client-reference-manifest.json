@@ -216,6 +216,14 @@
         "async": false
       }
     },
+    "(app-client)/./src/components/Home/PostTypes/OtherPosts.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/Home/PostTypes/OtherPosts.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./src/components/CategoryPill/CategoryPill.module.scss": {
       "*": {
         "id": "(sc_client)/./src/components/CategoryPill/CategoryPill.module.scss",
@@ -227,14 +235,6 @@
     "(app-client)/./src/components/ProfileAndId/ProfileAndId.module.scss": {
       "*": {
         "id": "(sc_client)/./src/components/ProfileAndId/ProfileAndId.module.scss",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./src/components/Home/PostTypes/OtherPosts.tsx": {
-      "*": {
-        "id": "(sc_client)/./src/components/Home/PostTypes/OtherPosts.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -267,14 +267,6 @@
     "(app-client)/./src/assets/svg/Calendar.svg": {
       "*": {
         "id": "(sc_client)/./src/assets/svg/Calendar.svg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./src/assets/images/PostTitle.png": {
-      "*": {
-        "id": "(sc_client)/./src/assets/images/PostTitle.png",
         "name": "*",
         "chunks": [],
         "async": false
@@ -367,7 +359,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
       "name": "*",
       "chunks": [
-        "app/posts/page:static/chunks/app/posts/page.js"
+        "app/posts/[postPage]/[categorizedPostPage]/page:static/chunks/app/posts/[postPage]/[categorizedPostPage]/page.js"
       ],
       "async": false
     },
@@ -375,7 +367,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/image-component.js",
       "name": "*",
       "chunks": [
-        "app/posts/page:static/chunks/app/posts/page.js"
+        "app/posts/[postPage]/[categorizedPostPage]/page:static/chunks/app/posts/[postPage]/[categorizedPostPage]/page.js"
       ],
       "async": false
     },
@@ -383,7 +375,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/posts/page:static/chunks/app/posts/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -391,7 +383,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/posts/page:static/chunks/app/posts/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -555,6 +547,14 @@
       ],
       "async": false
     },
+    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/components/Home/PostTypes/OtherPosts.tsx": {
+      "id": "(app-client)/./src/components/Home/PostTypes/OtherPosts.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
     "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/app/Home/Home.module.scss": {
       "id": "(app-client)/./src/app/Home/Home.module.scss",
       "name": "*",
@@ -607,7 +607,7 @@
       "id": "(app-client)/./src/components/CategoryPill/CategoryPill.module.scss",
       "name": "*",
       "chunks": [
-        "app/posts/page:static/chunks/app/posts/page.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -637,14 +637,6 @@
     },
     "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/components/ProfileAndId/ProfileAndId.module.scss": {
       "id": "(app-client)/./src/components/ProfileAndId/ProfileAndId.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/posts/page:static/chunks/app/posts/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/components/Home/PostTypes/OtherPosts.tsx": {
-      "id": "(app-client)/./src/components/Home/PostTypes/OtherPosts.tsx",
       "name": "*",
       "chunks": [
         "app/page:static/chunks/app/page.js"
@@ -738,46 +730,6 @@
         "app/posts/[postPage]/[categorizedPostPage]/page:static/chunks/app/posts/[postPage]/[categorizedPostPage]/page.js"
       ],
       "async": false
-    },
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/assets/images/PostTitle.png": {
-      "id": "(app-client)/./src/assets/images/PostTitle.png",
-      "name": "*",
-      "chunks": [
-        "app/posts/page:static/chunks/app/posts/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/app/posts/PostPage.module.scss": {
-      "id": "(app-client)/./src/app/posts/PostPage.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/posts/page:static/chunks/app/posts/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/components/Post/AllPost/AllPosts.module.scss": {
-      "id": "(app-client)/./src/components/Post/AllPost/AllPosts.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/posts/page:static/chunks/app/posts/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/components/ClassificationText/ClassificationText.module.scss": {
-      "id": "(app-client)/./src/components/ClassificationText/ClassificationText.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/posts/page:static/chunks/app/posts/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/components/Post/PostCard/PostCard.module.scss": {
-      "id": "(app-client)/./src/components/Post/PostCard/PostCard.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/posts/page:static/chunks/app/posts/page.js"
-      ],
-      "async": false
     }
   },
   "entryCSSFiles": {
@@ -789,9 +741,6 @@
     ],
     "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/app/posts/[postPage]/[categorizedPostPage]/page": [
       "static/css/app/posts/[postPage]/[categorizedPostPage]/page.css"
-    ],
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/app/posts/page": [
-      "static/css/app/posts/page.css"
     ]
   }
 }

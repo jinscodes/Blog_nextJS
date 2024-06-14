@@ -8,14 +8,15 @@ type Prop = {
 
 const A = ({ href }: Prop) => {
   return (
-    <span className={st.a_container}>
-      <span className={st.url}>
-        URL: <br /> {href}
+    <a href={href} className={st.a} target="_blank">
+      <span className={st.a_container}>
+        <span className={st.url}>
+          URL: <br /> {href}
+        </span>
+        <span className={st.cover_bg}></span>
+        <Image src={linkBg} alt="aImg" />
       </span>
-      <span className={st.cover_bg}></span>
-      <Image src={linkBg} alt="aImg" />
-      <a href={href} className={st.a} target="_blank"></a>
-    </span>
+    </a>
   );
 };
 
