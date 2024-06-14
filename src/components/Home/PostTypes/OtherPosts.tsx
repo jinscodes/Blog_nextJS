@@ -8,7 +8,7 @@ import { Post } from "service/posts";
 import CategoryPill from "components/CategoryPill/CategoryPill";
 import ProfileAndId from "components/ProfileAndId/ProfileAndId";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import st from "./OtherPosts.module.scss";
 
 interface Prop {
@@ -16,13 +16,10 @@ interface Prop {
 }
 
 const OtherPosts = ({ post }: Prop) => {
-  const titleRef = useRef<HTMLDivElement | null>(null);
   const [postTitle, setPostTitle] = useState<string>("");
   const { title, description, date, category, path } = post;
 
   useEffect(() => {
-    console.log(titleRef.current?.offsetHeight);
-    // height 52
     if (title.length > 32) {
       setPostTitle(title.slice(0, 32).concat("..."));
     } else {
@@ -47,9 +44,7 @@ const OtherPosts = ({ post }: Prop) => {
               <CategoryPill category={el} key={el} />
             ))}
           </div>
-          <div ref={titleRef} className={st.title}>
-            {postTitle}
-          </div>
+          <div className={st.title}>{postTitle}</div>
           <div className={st.description}>{description}</div>
         </div>
         <div className={st.profileId_container}>
