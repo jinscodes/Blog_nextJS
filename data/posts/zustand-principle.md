@@ -16,63 +16,21 @@ Zustand is based on an issue/subscription model and internally manages store sta
 
 Below code is an example:
 
-```js
-// vanilla.ts
-const createStoreImpl = (createState) => {
-  let state;
-  const listeners = new Set();
-
-  const setState = (partial, replace) => {
-    // ...
-  };
-
-  const getState = () => state;
-
-  const subscribe = (listener) => {
-    // ...
-  };
-
-  const api = { setState, getState, subscribe };
-  state = createState(setState, getState, api);
-
-  return api;
-};
-
-export const createStore = (createState) =>
-  createState ? createStoreImpl(createState) : createStoreImpl;
-```
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/0a3e6b21-be29-46b5-b26e-381159025833)
 
 ### setState
 
 Looking at the setState function that changes the state, if the factor is a function type, the current state is passed to the factor to define the next state. And if the nextState and state are different, the state is updated using Object.assign.
 
-```js
-const setState = (partial, replace) => {
-  const nextState = typeof partial === "function" ? partial(state) : partial;
-
-  if (!Object.is(nextState, state)) {
-    const previousState = state;
-    state =
-      replace ?? typeof nextState !== "object"
-        ? nextState
-        : Object.assign({}, state, nextState);
-
-    listeners.forEach((listener) => listener(state, previousState));
-  }
-};
-```
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/2ed08a40-c3a8-4b09-9f26-e394f2a515c9)
 
 ### subscribe
 
 A subscription function that subscribes to a state. A function that unsubscribe is also returning.
 
-```js
-const subscribe = (listener) => {
-  listeners.add(listener);
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/347468c4-b881-4587-8b89-86b10926927b)
 
-  return () => listeners.delete(listener);
-};
-```
+You can create a `store` using the code above and use the `subscribe`, `setState` function.
 
 ---
 
