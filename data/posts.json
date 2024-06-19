@@ -694,5 +694,13 @@
     "category": ["ReactJs", "NextJs"],
     "path": "zustand-principle",
     "featured": false
+  },
+  {
+    "title": "📘 React Hook: useSyncExternalStore",
+    "description": "",
+    "date": "2023-10-28",
+    "category": ["ReactJs"],
+    "path": "react-usesyncexternalstore",
+    "featured": false
   }
 ]

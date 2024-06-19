@@ -67,6 +67,10 @@ We can see that the api as the store that is made by `createStore` function is u
 
 ![9](https://github.com/jinscodes/Blog_nextJS/assets/87598134/2bef04d4-819d-4025-8adc-210039c7d7c7)
 
+> **`useSyncExternalStore`** is a React Hook that lets you subscribe to an external store.
+
+> More detail in 👉🏻 [](https://jay-h-blog.vercel.app/posts/ReactJs/react-usesyncexternalstore)
+
 ---
 
 [](https://ingg.dev/zustand-work/#zustand-code)
