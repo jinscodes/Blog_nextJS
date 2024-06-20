@@ -33,7 +33,27 @@ Compare to zustand and redux to build the store,
 
 ![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/43f00b18-b7e7-46eb-9721-49e43ae0f075)
 
-## Understanding The Principle of Zustand
+If explaining the differences in the above image as a diagram, we can the below images.
+
+![redux](https://github.com/jinscodes/Blog_nextJS/assets/87598134/8fc48630-1893-4f93-b4ba-bc64c131b4ab)
+
+**Action creators** ensure that the correct action is triggered for every user request. You can think of an action as an event that describes what happened in the application.
+
+**Dispatchers** will assist in sending those actions to the store.
+
+Later on, the **reducers** will decide how to handle the **state**. The reducer function changes the state by taking the current state and action object.
+
+It will return the new state if required, and the updated state modifications will render the UI.
+
+![zustand](https://github.com/jinscodes/Blog_nextJS/assets/87598134/587d22b7-04cd-4e5c-aafc-9d4e0677c00d)
+
+When a change request comes in, it is routed to the store. The store will decide how the state should be changed.
+
+The UI will be rendered with the updated changes once the store returns a new state.
+
+You don’t see any action creators, dispatchers, or reducers here. Instead, Zustand has a feature that lets you subscribe to state changes. This helps keep your UI in sync with your data.
+
+## Understanding The Principle of Zustand With Code
 
 Zustand is based on an issue/subscription model and internally manages store state as a clousre.
 
