@@ -5,7 +5,7 @@ type Prop = {
 };
 
 const UlAndLi = ({ props }: Prop) => {
-  return <ul {...props} className={st.ul}></ul>;
+  return <ul children={props.children} className={st.ul}></ul>;
 };
 
 export default UlAndLi;

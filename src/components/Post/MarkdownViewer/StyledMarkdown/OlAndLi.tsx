@@ -5,7 +5,7 @@ type Prop = {
 };
 
 const OlAndLi = ({ props }: Prop) => {
-  return <ol {...props} className={st.ol}></ol>;
+  return <ol children={props.children} className={st.ol}></ol>;
 };
 
 export default OlAndLi;

@@ -48,13 +48,13 @@ Current snapshot of the store that can be used in rendering logic.
 
 #### Caution
 
-- The store snapshot that getSnapshot returns must be immutable. Returns a new non-changeable snapshot if there is changeable data in the default store; otherwise returns the last cached snapshot.
+1. The store snapshot that getSnapshot returns must be immutable. Returns a new non-changeable snapshot if there is changeable data in the default store; otherwise returns the last cached snapshot.
 
-If another subscription function is delivered during re-rendering, React will use the newly delivered subscription function to re-subscribe the repository, which can be prevented by declaring a subscription outside the component.
+2. If another subscription function is delivered during re-rendering, React will use the newly delivered subscription function to re-subscribe the repository, which can be prevented by declaring a subscription outside the component.
 
-If a store changes during a non-blocking transition update, React returns to perform that update as blocking. Specifically, for all Transition updates, React calls getSnapshot once more just before applying the changes to the DOM. If it returns a different value than the first time it was called, React will start updating again, this time applying a blocking update so that all components on the screen reflect the same store version.
+3. If a store changes during a non-blocking transition update, React returns to perform that update as blocking. Specifically, for all Transition updates, React calls getSnapshot once more just before applying the changes to the DOM. If it returns a different value than the first time it was called, React will start updating again, this time applying a blocking update so that all components on the screen reflect the same store version.
 
-We do not recommend that you pause rendering based on the store value returned by useSyncExternalStore, because you cannot display the variant for the external store as a non-blocking transition update, triggering the nearest Suspense fallback and replacing it with a loading spinner on the screen, which is usually not good for UX.
+4. We do not recommend that you pause rendering based on the store value returned by useSyncExternalStore, because you cannot display the variant for the external store as a non-blocking transition update, triggering the nearest Suspense fallback and replacing it with a loading spinner on the screen, which is usually not good for UX.
 
 For example, the following is not recommended.
 
