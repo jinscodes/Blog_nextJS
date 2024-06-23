@@ -88,6 +88,26 @@ For example, the `todosStore` is implemented as an external store that stores da
 
 ## Usage: Browser API Subscription
 
+Another reason to add `useSyncExternalStore` is to subscribe some values that are exposed to the browser that is changed over time.
+
+For example, suppose that we want a component to indeicate whether a network connection is active. The browser exposes this information through `navigator.onLine` property.
+
+This value can be changed over time without the knowledge of React, so it's read through `useSyncExternalStore`.
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f6307270-01fd-4b7c-b2d0-fed9604d5986)
+
+To implement `getSnapshot` function, read the current value from browser API.
+
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e7d2b9d4-b3cf-49d5-86bb-efe49db52a7d)
+
+After, make the `subscribe` function. For instance, if `navigator.onLine` changes, the browser runs `online` and `offline` event in the `window` object.
+
+Subscribe the `callback` argument to the event, and then, return a function that clears the subscription.
+
+![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c15b61b3-27fb-493a-aa66-f1267baefc5a)
+
+React now knows how to read values from the external `navigator.onLine` API and how to subscribe to those changes. When the network is disconnected, the component is rerendered.
+
 ---
 
 [](https://react.dev/reference/react/useSyncExternalStore)
