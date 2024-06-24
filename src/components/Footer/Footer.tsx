@@ -28,8 +28,8 @@ const Footer = async () => {
         </svg>
         <div className={st.content_container}>
           <div className={st.recent_posts}>
-            {recentPosts.map((post) => (
-              <div>
+            {recentPosts.map((post, idx) => (
+              <div key={idx}>
                 <Image
                   src={`/images/posts/${post.path}.png`}
                   alt={post.title}
@@ -46,8 +46,8 @@ const Footer = async () => {
             ))}
           </div>
           <div className={st.popular_posts}>
-            {popularPosts.map((post) => (
-              <div>
+            {popularPosts.map((post, idx) => (
+              <div key={idx}>
                 <Image
                   src={`/images/posts/${post.path}.png`}
                   alt={post.title}

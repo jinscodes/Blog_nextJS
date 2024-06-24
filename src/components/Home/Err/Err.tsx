@@ -10,8 +10,8 @@ const Err = async () => {
     <section className={st.err}>
       <HomeTitle content="Error 🚨" />
       <div className={st.err_container}>
-        {posts.map((post) => (
-          <ErrorPost post={post} />
+        {posts.map((post, idx) => (
+          <ErrorPost post={post} key={idx} />
         ))}
       </div>
     </section>

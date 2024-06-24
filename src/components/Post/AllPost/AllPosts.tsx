@@ -14,9 +14,9 @@ const AllPosts = ({ posts, title }: Prop) => {
     <div className={st.all_post}>
       <ClassificationText content={title} />
       <div className={st.postcard_container}>
-        {posts.map((post) => (
+        {posts.map((post, idx) => (
           <>
-            <PostCard post={post} />
+            <PostCard post={post} key={idx} />
           </>
         ))}
       </div>
