@@ -126,6 +126,32 @@ Now, we can call `useOnlineStatus` without re-implementing the this logic in the
 
 ## useSyncExternalStore vs. useEffect
 
+We commonly might use `useEffect` Hook.
+
+However, `useEffect` hook doesn't provide current snapshots for each state update, and it's more prone to errors than the `useSyncExternalStore`. In addition, it causes infamous re-rendering problems.
+
+A major issue is the sequence of rendering. After the browser finishes painting, only the `useEffect` will fire. This delay introduces unexpected bugs and challenges in managing the correct chain of event.
+
+Here is the example 👇🏼
+
+![9](https://github.com/jinscodes/Blog_nextJS/assets/87598134/09739a49-340d-4fe4-b1c2-c99d4e4915b3)
+
+You might expect the counter app to run in a straightforward way where the state updates, the component re-renders, and then finally, the effect runs. However, things gets a little tricky here due to the delay with the API calls, and the sequence of events might not be what we expect.
+
+If the data doesn't depend on existing React APIs to process and is located externally, `useSyncExternalStore` can fix this performance gap and avoid all issues about the sequence.
+
+`useSyncExternalStore` also prevents the previously mentioned re-rendering problem that you are likely to face with useEffect whenever the state changes. Interestingly, states subscribed with useSyncExternalStore won’t re-render twice, fixing huge performance problems.
+
+## useSyncExternalStore vs. useState
+
+`useState` has a limitation to design a state in a per-component. In other words, the state is restricted to its own component and cannot be accessed globally.
+
+Surely, therer are some ways to use the state globally, such as using callbacks, force states globally, or using prop-drilling the state across the component. However, those approaches have the potential to slow down the React app.
+
+Unlike the `useState`, the `useSyncExternalStore` prevents this issue by setting up a global state that you can subscribe to from any React component, no matter how deeply nested it is. Even better, if you’re dealing with a non-React codebase, all you have to care about is the subscription event.
+
+`useSyncExternalStore` will send you proper snapshots of the current state of the global storage that you can consume in any React component.
+
 ---
 
 [](https://react.dev/reference/react/useSyncExternalStore)
