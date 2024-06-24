@@ -22,8 +22,8 @@ const SourcePost = ({ post }: Prop) => {
       <div className={st.gradient_bg}>
         <div className={st.content_container}>
           <div className={st.pill_container}>
-            {category.map((el) => (
-              <CategoryPill category={el} />
+            {category.map((el, idx) => (
+              <CategoryPill category={el} key={idx} />
             ))}
           </div>
           <div>

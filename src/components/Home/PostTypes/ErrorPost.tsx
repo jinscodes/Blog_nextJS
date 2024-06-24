@@ -16,8 +16,8 @@ const ErrorPost = ({ post }: Prop) => {
     >
       <div className={st.inner_post_container}>
         <div className={st.category_container}>
-          {post.category.map((el) => (
-            <CategoryPill category={el} />
+          {post.category.map((el, idx) => (
+            <CategoryPill category={el} key={idx} />
           ))}
         </div>
         <div className={st.post_info_container}>
@@ -31,25 +31,6 @@ const ErrorPost = ({ post }: Prop) => {
         src={`/images/posts/${post.path}.png`}
         alt=""
       />
-      {/* <div className={st.inner_post_container}>
-        <div className={st.category_container}>
-          {post.category.map((el) => (
-            <CategoryPill category={el} />
-          ))}
-        </div>
-        <div className={st.post_info_container}>
-          <p>{post.title}</p>
-          <p>{post.description}</p>
-          <div>
-            <ProfileAndId date={post.date} size="sm" />
-          </div>
-        </div>
-      </div>
-      <img
-        className={st.img}
-        src={`/images/posts/${post.path}.png`}
-        alt={post.path}
-      /> */}
     </Link>
   );
 };

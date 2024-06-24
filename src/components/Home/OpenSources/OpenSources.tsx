@@ -12,8 +12,8 @@ const OpenSources = async () => {
     <section className={st.open_sources}>
       <HomeTitle content="Open Sources 📚" />
       <div className={st.source_container}>
-        {posts.map((post) => (
-          <SourcePost post={post} />
+        {posts.map((post, idx) => (
+          <SourcePost post={post} key={idx} />
         ))}
       </div>
     </section>

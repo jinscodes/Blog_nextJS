@@ -44,6 +44,7 @@ const Categories = () => {
           <Link
             href={el.path ? `/posts/${el.path}` : `/posts/${el.title}`}
             className={st.flip_card}
+            key={idx}
           >
             <div key={idx} className={st.flip_card_box}>
               <div className={st.card_front}>
