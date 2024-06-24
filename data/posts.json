@@ -702,5 +702,13 @@
     "category": ["ReactJs"],
     "path": "react-usesyncexternalstore",
     "featured": false
+  },
+  {
+    "title": "Currying Function + React",
+    "description": "",
+    "date": "2023-11-05",
+    "category": ["WebCS", "JavaScript", "ReactJs"],
+    "path": "currying",
+    "featured": false
   }
 ]
