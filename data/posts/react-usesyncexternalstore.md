@@ -58,6 +58,12 @@ For example, the following is not recommended.
 
 ![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/41e9d116-cfe2-4804-9228-03476471db77)
 
+#### Use case for `useSyncExternalStore`
+
+- Caching data from external APIs
+- WebSocket connection
+- Managing browser storage
+
 ## Usage: External Store Subscription
 
 Almost React components read the data in `props`, `state` and `context`. However, sometimes the components need to read some data from some stores outside React that change over time.
@@ -108,6 +114,18 @@ Subscribe the `callback` argument to the event, and then, return a function that
 
 React now knows how to read values from the external `navigator.onLine` API and how to subscribe to those changes. When the network is disconnected, the component is rerendered.
 
+## Extract The Logic With Custom Hook
+
+Normaly, we don't use `useSyncExternalStore` in the component. Instead, call it in custom hook. This allows different components to use the same external repository.
+
+For example, this custom useOnlineStatusHook tracks whether the network is online.
+
+![8](https://github.com/jinscodes/Blog_nextJS/assets/87598134/26a8907d-c83b-4675-9db2-9f22a0ea0140)
+
+Now, we can call `useOnlineStatus` without re-implementing the this logic in the each other components.
+
+## useSyncExternalStore vs. useEffect
+
 ---
 
 [](https://react.dev/reference/react/useSyncExternalStore)
@@ -115,3 +133,5 @@ React now knows how to read values from the external `navigator.onLine` API and 
 [](https://junghyeonsu.com/posts/react-use-sync-external-store/)
 
 [](https://www.youtube.com/watch?v=dtS98IHP7xc)
+
+[](https://blog.logrocket.com/exploring-usesyncexternalstore-react-hook/)
