@@ -1,3 +1,15 @@
+## What's Currying?
+
+Currying is a functional programming technique where a function with multiple arguments is transformed into a sequence of functions, each taking a single argument.
+
+This allows us to partially apply arguments and create new functions with fewer parameters.
+
+![1](https://github.com/jinscodes/Blog_nextJS/assets/87598134/538065d1-2674-4709-99c1-2870664b3a26)
+
+> In the wikipedia, it defines the currying like this:
+
+> In mathematics and computer science, curring refers to the conversion of a function with multiple arguments (or tuples of multiple arguments) into a sequence of functions with a single argument.
+
 ---
 
 [](https://en.wikipedia.org/wiki/Currying)

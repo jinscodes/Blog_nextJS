@@ -705,7 +705,7 @@
   },
   {
     "title": "Currying Function + React",
-    "description": "",
+    "description": "Let's take a look at Currying Function!",
     "date": "2023-11-05",
     "category": ["WebCS", "JavaScript", "ReactJs"],
     "path": "currying",
