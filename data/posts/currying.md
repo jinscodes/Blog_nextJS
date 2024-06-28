@@ -14,7 +14,7 @@ This allows us to partially apply arguments and create new functions with fewer 
 
 #### Normal currying
 
-![2](https://github.com/unionc/massive-mail-sender/assets/87598134/7adc8965-6a1c-4519-8ea6-3246ff04ddfd)
+![2](https://github.com/jinscodes/Blog_nextJS/assets/87598134/c6b64018-9bf7-4bf5-a1b2-df3dabe0e52d)
 
 The above function operates in the following order.
 
@@ -35,7 +35,23 @@ The above function operates in the following order.
 
 It's possible to make it simpler with lodash.
 
-![3](https://github.com/unionc/massive-mail-sender/assets/87598134/5eadf4ff-84bf-4736-97e2-e5de75ba58d4)
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/4d9453d8-eda6-4f04-bf84-a6bea037bb7f)
+
+We defined `curriedSum` by transferring the function to an argument using `_.curry`, rather than having to define the curry function directly by the user using the rhodash library.
+
+#### Currying To Get Object Data
+
+**Not to use Currying**
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/8e61f3a9-1d49-4a7c-b1e4-ff54544b1bb6)
+
+In general, if you write the code, you write it as above. If you apply curring here, you can write the code as below.
+
+**Use Currying**
+
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/246d47fe-4c5c-447a-8b34-5e5d64342b90)
+
+When using curring, the order of factors is important, and it is said that it is important to design the code with this order because the preceding factors are less likely to fluctuate and the latter factors are more likely to fluctuate.
 
 ---
 
@@ -44,3 +60,5 @@ It's possible to make it simpler with lodash.
 [](https://medium.com/@knowledge.4ward/currying-react-c7cfc44f5c78)
 
 [](https://velog.io/@hustle-dev/Javascript-%EC%BB%A4%EB%A7%81%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90)
+
+[](https://developer-alle.tistory.com/407)
