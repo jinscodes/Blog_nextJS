@@ -53,6 +53,28 @@ In general, if you write the code, you write it as above. If you apply curring h
 
 When using curring, the order of factors is important, and it is said that it is important to design the code with this order because the preceding factors are less likely to fluctuate and the latter factors are more likely to fluctuate.
 
+## Usage Currying In React
+
+1️⃣ Creating Curried Functions
+
+In react, this can be especially handy when dealing with event handlers or utility functions.
+
+2️⃣ Partial Application
+
+By partially applying arguments to a curried function, we can create new functions that have some arguments already set. This helps reduce repetitive code and promotes code reusability.
+
+3️⃣ Example in React
+
+Instead of writing separate event handlers for each input field, we can use currying to create a single event handler that dynamically updates the state based on the input field.
+
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/4fa672bc-2cca-493a-ab95-928ecaa87960)
+
+`handleChange` is a curried function that takes fieldName as the first argument and returns another function that takes the event object.
+
+This way, we can create specific event handlers by partially applying the `fieldName`.
+
+By utilizing currying, we can eliminate repetitive code and improve the maintainability of our React components.
+
 ---
 
 [](https://en.wikipedia.org/wiki/Currying)
