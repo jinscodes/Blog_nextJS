@@ -710,5 +710,13 @@
     "category": ["WebCS", "JavaScript", "ReactJs"],
     "path": "currying",
     "featured": false
+  },
+  {
+    "title": "Differences Between Component And PureComponent",
+    "description": "What's the difference between React.Component and React.PureComponent",
+    "date": "2023-11-12",
+    "category": ["ReactJs", "NextJs"],
+    "path": "react-pure-component",
+    "featured": false
   }
 ]
