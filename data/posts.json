@@ -716,7 +716,7 @@
     "description": "What's the difference between React.Component and React.PureComponent",
     "date": "2023-11-12",
     "category": ["ReactJs", "NextJs"],
-    "path": "react-pure-component",
+    "path": "react-component-api",
     "featured": false
   }
 ]
