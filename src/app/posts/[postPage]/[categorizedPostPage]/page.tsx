@@ -17,7 +17,6 @@ import gif_bg_6 from "assets/images/backgrounds/6.gif";
 import gif_bg_7 from "assets/images/backgrounds/7.gif";
 import gif_bg_8 from "assets/images/backgrounds/8.gif";
 import gif_bg_9 from "assets/images/backgrounds/9.gif";
-import Bookmark from "assets/svg/Bookmark.svg";
 import Calendar from "assets/svg/Calendar.svg";
 import st from "./slug.module.scss";
 
@@ -56,8 +55,7 @@ const CategorizedPostPage = async ({
         <div className={st.bg_cover}>
           <p className={st.category}>{categories.join("/")}</p>
           <div className={st.bg_cover_title}>
-            <Image src={Bookmark} alt="bookmark" />
-            <p>{title}</p>
+            <p className={st.title}>{title}</p>
           </div>
           <div className={st.bg_cover_date}>
             <Image src={Calendar} alt="calendar" />

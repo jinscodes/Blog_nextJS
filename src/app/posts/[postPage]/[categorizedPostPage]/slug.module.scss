@@ -24,6 +24,15 @@
         justify-content: center;
         align-items: center;
         gap: 15px;
+
+        .title {
+          text-align: center;
+        }
+
+        .title::before {
+          content: url("../../../../assets/svg/Bookmark.svg");
+          margin-right: 12px;
+        }
       }
 
       .bg_cover_title > p {
