@@ -63,9 +63,8 @@ const MarkdownViewer = ({ content }: Prop) => {
           <Image
             src={image.src || ""}
             alt={image.alt || ""}
-            width={0}
-            height={0}
-            sizes="auto"
+            width={400}
+            height={200}
             className={st.image}
           />
         ),
