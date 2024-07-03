@@ -40,7 +40,15 @@ Whenever parents hava changes, a component is re-rendered in React. Normally, we
 
 React will not re-render when its parent re-renders if the parent's props, state, and context haven't changed.
 
-Class components can opt into this behavior by extending PureComponent:
+A React component should always have pure rendering logic. This means that it must return the same output if its props, state, and context haven’t changed.
+
+By using PureComponent, the component complies with this requirement, so React doesn’t need to re-render as long as its props and state haven’t changed. However, the component will still re-render if a context that it’s using changes.
+
+As an example,
+
+![3](https://github.com/jinscodes/Blog_nextJS/assets/87598134/e40f806d-e764-4730-a959-3d9521df09e0)
+
+About this code, `Greeting` component re-renders whenever the `name` is changed, but not when the `address` is changed.
 
 ---
 
