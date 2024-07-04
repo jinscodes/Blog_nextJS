@@ -50,6 +50,21 @@ As an example,
 
 About this code, `Greeting` component re-renders whenever the `name` is changed, but not when the `address` is changed.
 
+### Alternatives
+
+React recommended using function components instead of class components.
+
+If you have some existing class components using PureComponent, here is how you can convert them. This is the original code:
+
+When converting the above class components code to function components code, wrap it `memo`:
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/0db30756-5f31-470e-878a-d6ce23bb346c)
+
+> 💡 **NOTE**  
+> Unlike PureComponent, `memo` does not compare the new and the old state.
+
+> In function components, calling the `set` function with the same state already prevents re-renders by default, even without `memo`.
+
 ---
 
 [](https://react.dev/reference/react/Component)
