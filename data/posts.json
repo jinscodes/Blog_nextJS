@@ -718,5 +718,13 @@
     "category": ["ReactJs", "NextJs"],
     "path": "react-component-api",
     "featured": false
+  },
+  {
+    "title": "📘 React Hook: useMemo",
+    "description": "What's the useMemo? Let's get it!",
+    "date": "2023-11-19",
+    "category": ["ReactJs", "NextJs"],
+    "path": "react-usememo",
+    "featured": false
   }
 ]
