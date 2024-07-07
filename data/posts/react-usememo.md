@@ -14,6 +14,10 @@ Whenever the component is rendered, the `value` variable is reset.
 
 In other words, `calculate` function is unnecessarily recalled while rendering. If `calculate` function is heavy and complex, it's very uneffective.
 
+Therefore, we use the `useMemo` hook, and when we use Memo, we go through the order of reusing rendering => component function calling => memoized function.
+
+This eliminates the need to repeatedly execute the calculate function. As mentioned above, `useMemo` stores the initially calculated value in memory, so that even if a component continues to be rendered, the calculated value stored in memory can be retrieved and reused without calling the calculate again.
+
 ---
 
 [](https://react.dev/reference/react/useMemo)
