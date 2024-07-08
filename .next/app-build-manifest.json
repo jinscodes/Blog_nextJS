@@ -12,6 +12,12 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/posts/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/posts/page.css",
+      "static/chunks/app/posts/page.js"
+    ],
     "/posts/[postPage]/[categorizedPostPage]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
