@@ -59,6 +59,32 @@ During next renders, it will either return an already stored value from the last
 
 > Caching return values like this is also known as memoization, which is why this Hook is called useMemo.
 
+## Usage: Skipping expensive recalculations
+
+To cache the calculation between re-rendering, call `useMemo` and wrap the calculation at the top level of the component.
+
+![4](https://github.com/jinscodes/Blog_nextJS/assets/87598134/b4102843-adef-4c06-9ce1-a3848aec498f)
+
+Send two things to `useMemo`. First is a calculation function and the second is a list of dependencies.
+
+The result value of `useMemo` in the beginning rendering is the result value of the calculation function.
+
+In all subsequent renders, React compares the dependency list to the dependency list that was passed during the last renders. If the dependency has not changed (compared to Object.is ), `useMemo` returns a previously calculated value. If not, React runs the calculation again and returns a new value.
+
+In other words, `useMemo` caches the computational results between re-rendering until the dependency changes.
+
+Basically, react execute the whole component whenever this component is re-rendered.
+
+```jsx
+function TodoList({ todos, tab, theme }) {
+  const visibleTodos = filterTodos(todos, tab);
+
+  // ...
+}
+```
+
+As the above example, if `TodoList` updates the state or gets new props from the parent, `filterTodos` is re-executed.
+
 ---
 
 [](https://react.dev/reference/react/useMemo)
