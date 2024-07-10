@@ -55,8 +55,7 @@ During next renders, it will either return an already stored value from the last
 
 3. React will not throw away the cached value unless there is a specific reason to do that. For example, in development, React throws away the cache when you edit the file of your component. Both in development and in production, React will throw away the cache if your component suspends during the initial mount. In the future, React may add more features that take advantage of throwing away the cache—for example, if React adds built-in support for virtualized lists in the future, it would make sense to throw away the cache for items that scroll out of the virtualized table viewport. This should be fine if you rely on useMemo solely as a performance optimization. Otherwise, a state variable or a ref may be more appropriate.
 
-> 💡 **NOTE**
-
+> 💡 **NOTE**  
 > Caching return values like this is also known as memoization, which is why this Hook is called useMemo.
 
 ## Usage: Skipping expensive recalculations
@@ -75,15 +74,19 @@ In other words, `useMemo` caches the computational results between re-rendering 
 
 Basically, react execute the whole component whenever this component is re-rendered.
 
-```jsx
-function TodoList({ todos, tab, theme }) {
-  const visibleTodos = filterTodos(todos, tab);
-
-  // ...
-}
-```
+![5](https://github.com/jinscodes/Blog_nextJS/assets/87598134/80e61acb-944f-4414-9de2-a5bd813e835b)
 
 As the above example, if `TodoList` updates the state or gets new props from the parent, `filterTodos` is re-executed.
+
+Basically, in the most case, it's not a big deal because most calculations are so fast. However, if you are filtering or converting large arrays or performing costly calculations, it is recommended that you skip the calculations if the data has not changed.
+
+If `todos` and `tab` are the same as in the last rendering, you can reuse the previously calculated `visibleTodos` by wrapping the calculation with useMemo, as mentioned earlier.
+
+This type of caching is called **memoization**.
+
+> 💡 **NOTE**  
+> `useMemo` is only used for performance optimization.  
+> If the code doesn't work well without `useMemo`, you must find out the fundamental problems. After that, you need to use use useMemo to improve performance.
 
 ---
 
