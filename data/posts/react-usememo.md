@@ -88,6 +88,20 @@ This type of caching is called **memoization**.
 > `useMemo` is only used for performance optimization.  
 > If the code doesn't work well without `useMemo`, you must find out the fundamental problems. After that, you need to use use useMemo to improve performance.
 
+## Usage: Skipping component re-rendering
+
+Depending on the situation, `useMemo` can help sub component re-rendering performance optimize. To explain this, suppose that `TodoList` sends visibleTodos props to child component named `List`.
+
+![6](https://github.com/jinscodes/Blog_nextJS/assets/87598134/0a4f85a8-bdb9-452a-acea-b358e8b4e325)
+
+If you toggle theme prop, you'll see that the app pauses. However, when you remove `<List />` from JSX, it feels fast. This tells you that it's worth optimizing the List component.
+
+By default, React recursively renders all child components when the components are re-rendered. Therefore, when `ToDoList` is re-rendered with another theme, the List component is also re-rendered.
+
+Components that don't require much computation to re-render are fine, but if you've found it slow to re-render, you can wrap the `List` around `memo` and skip re-rendering when the props is the same as the last time it was rendered.
+
+![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/fb625c32-9812-4a6c-8d46-0a8714cd7e5c)
+
 ---
 
 [](https://react.dev/reference/react/useMemo)
