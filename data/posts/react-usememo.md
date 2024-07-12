@@ -102,6 +102,28 @@ Components that don't require much computation to re-render are fine, but if you
 
 ![7](https://github.com/jinscodes/Blog_nextJS/assets/87598134/fb625c32-9812-4a6c-8d46-0a8714cd7e5c)
 
+With this change, `List` will not renders all of the props if they are the same as they were in the last rendering. It's important to cache the computation here.
+
+## Usage: Memoizing a dependency of another Hook
+
+Let's assume that there is an operation that depends on the object created directly from the body of the component.
+
+![8](https://github.com/user-attachments/assets/bd3d1ec2-f04a-4e23-b3cf-2abfbf9f7c35)
+
+It's useless for the purpose of memoization to depend on the object like the above code. This is because when the component re-rendered, every codes in component are executed again. Codes that create `searchOptions` object are re-rendered whenever rendering. Because `searchOptions` are the dependencies of `useMemo` calls and are different every time, React recalculates `searchItems` each time knowing that the dependencies are different.
+
+To address this issue, memorize `searchOptions` object itself before forwarding it as a dependency.
+
+![9](https://github.com/user-attachments/assets/f352d282-c7bf-4150-988c-552cc7e2e902)
+
+In the above example, if the `text` doesn't changed, `searchOptions` object is not changed. However, there is another better way.
+
+It is to declare searchOptions inside the useMemo computation function.
+
+![10](https://github.com/user-attachments/assets/3fb89f08-a07d-49ea-832d-6d83f81eed6c)
+
+The operation now depends directly on the text (it cannot be changed "by mistake" because it is a string).
+
 ---
 
 [](https://react.dev/reference/react/useMemo)
