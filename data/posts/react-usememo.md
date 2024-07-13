@@ -124,6 +124,18 @@ It is to declare searchOptions inside the useMemo computation function.
 
 The operation now depends directly on the text (it cannot be changed "by mistake" because it is a string).
 
+## Usage: Memoizing functions
+
+Suppose the `Form` component is wrapped in `memo` and you want to pass the function to prop here.
+
+![11](https://github.com/user-attachments/assets/532bb27b-c532-48e9-8ed7-5c7441f47dd8)
+
+Just as `{}` creates another object, function declarations such as `function() {}` and expressions such as `() => {}` create a different function each time they are rendered. Creating a new function itself is not a problem and should not be avoided. However, if the `Form` component is not written down, you may want to skip rendering it again when the props have not changed. Always different prop can overshadow the purpose of the memoization.
+
+To note a function with `useMemo`, you must return another function from the computational function.
+
+![12](https://github.com/user-attachments/assets/16beb6f9-b0ac-4782-ac23-55e6f2e60310)
+
 ---
 
 [](https://react.dev/reference/react/useMemo)
