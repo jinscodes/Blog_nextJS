@@ -136,6 +136,12 @@ To note a function with `useMemo`, you must return another function from the com
 
 ![12](https://github.com/user-attachments/assets/16beb6f9-b0ac-4782-ac23-55e6f2e60310)
 
+This above way is not the best. It's quite normal to memoizing the function, so React has a built-in hook for this. Instead of using `useMemo`, try wrapping the function with `useCallback` not to write the overlapped function.
+
+![13](https://github.com/user-attachments/assets/bfe7c815-c87c-4e45-838d-8c12157e9f90)
+
+The above two examples behave exactly the same. The only advantage of `useCallback` is that it does not require the creation of additional nested functions inside.
+
 ---
 
 [](https://react.dev/reference/react/useMemo)
