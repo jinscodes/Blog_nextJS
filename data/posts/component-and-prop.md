@@ -4,7 +4,7 @@ The simplest way to define the component is to code JavaScript function
 
 ```jsx
 function Welcome(props) {
- return <h1>Hello, {props.name}</h1>;
+  return <h1>Hello, {props.name}</h1>;
 }
 ```
 
@@ -12,9 +12,9 @@ This function receives the data named props, and then return React element. Thes
 
 ```jsx
 class Welcome extends React.Component {
- render() {
-  return <h1>Hello, {this.props.name}</h1>;
- }
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
 }
 ```
 
@@ -25,7 +25,7 @@ This component is same as the above functional component. These compoonents are 
 Previously, only DOM tags are used to represent React elements. like:
 
 ```jsx
-const element = <div />
+const element = <div />;
 ```
 
 React elements can also be represented as custom components.
@@ -34,7 +34,7 @@ React elements can also be represented as custom components.
 const element = <Welcome name="Jay" />;
 ```
 
-When React finds elements that is written as a DOM tag component or custom component, it send JSX attributes and child to the components as a single object.   
+When React finds elements that is written as a DOM tag component or custom component, it send JSX attributes and child to the components as a single object.
 
 This Object is referred to `props`.
 
@@ -42,16 +42,17 @@ The below code is an example of rendering "Hello Jay".
 
 ```jsx
 function Welcome(props) {
- return <h1>Hello, {props.name}</h1>;
+  return <h1>Hello, {props.name}</h1>;
 }
 
-const root = ReactDOM.createRoot(document.getElementedById('root')); // create root
+const root = ReactDOM.createRoot(document.getElementedById("root")); // create root
 const element = <Welcome name="Jay" />; // create component
 root.render(element); // render element
 ```
 
 ## Component Composition
-> In general, component composition refers to increasing reuse by separating and recombining components into small units. 
+
+> In general, component composition refers to increasing reuse by separating and recombining components into small units.
 
 React has powerful composition model, and it's better to use composition for reusing instead of inheritance. Some components may not be able to predict which child elements will come in. It is particularly common in components such as Sidebar or Dialog or button. In this case, you'd better to use special children prop to print child elements.
 
@@ -59,11 +60,11 @@ There is an example
 
 ```js
 function FancyBorder(props) {
- return (
-  <div className={'FancyBorder FnacyBorder-' + props.color}>
-   {props.children}
-  </div>
- );
+  return (
+    <div className={"FancyBorder FnacyBorder-" + props.color}>
+      {props.children}
+    </div>
+  );
 }
 ```
 
@@ -71,16 +72,12 @@ In this way, you can overlay the JSX on other components to deliver any child.
 
 ```jsx
 function WelcomeDialog() {
- return (
-  <FancyBorder color="blue">
-   <h1 className="Dialog-title"> 
-    Welcome
-   </h1>
-	 <p className="Dialog-message">
-    Thank you for visiting our spacecraft!
-   </p>
-  </FancyBorder>
- );
+  return (
+    <FancyBorder color="blue">
+      <h1 className="Dialog-title">Welcome</h1>
+      <p className="Dialog-message">Thank you for visiting our spacecraft!</p>
+    </FancyBorder>
+  );
 }
 ```
 
@@ -115,11 +112,12 @@ function App() {
 ```
 
 ## What is Prop?
+
 > several key props (properties) that are essential for developing dynamic and interactive applications
 
 Props is...
 
-- Props(properties) is attributes that a parent component uses to pass values to child component   
+- Props(properties) is attributes that a parent component uses to pass values to child component
 
 * It has a one-way data flow because the parent component passes values to the child comonent
 
@@ -129,37 +127,37 @@ There is an example
 
 ```jsx
 function Parent() {
- return (
-  <>
-   <Children title="title" name="Jay" />
-  </>
- )
+  return (
+    <>
+      <Children title="title" name="Jay" />
+    </>
+  );
 }
 
 function Children(props) {
- return (
-  <div>
-   <h1>{props.title}</h1>
-   <h1>{props.name}</h1>
-  </div>
- )
+  return (
+    <div>
+      <h1>{props.title}</h1>
+      <h1>{props.name}</h1>
+    </div>
+  );
 }
 ```
 
 Props can be omitted by specifying each props name like this:
 
 ```jsx
-function Children({title, name}) {
- return (
-  <div>
-   <h1>{title}</h1>
-   <h1>{name}</h1>
-  </div>
- )
+function Children({ title, name }) {
+  return (
+    <div>
+      <h1>{title}</h1>
+      <h1>{name}</h1>
+    </div>
+  );
 }
 ```
 
-> 💡 When handing Props, Props can be only variable values or functions.   
+> 💡 When handing Props, Props can be only variable values or functions.
 
 > ❗️ Functions that change the state cannot be delivered. In other words, if you want to deliver a function that changes the state, you must either put it in a function and deliver the function or deliver an arrow function in the form of () ⇒ {return}.
 
@@ -170,16 +168,19 @@ function Children({title, name}) {
 ![](https://github.com/jinscodes/Blog_nextJS/assets/87598134/f2c3bb1d-38c2-4c9f-9323-91738ac03388)
 
 ## Props' Data Type
+
 Props' data type can use all JavaScript data types.
 
-**String type of property**   
+**String type of property**  
 If property's data type is `string`, use double quotes ("") to represent the property value.
+
 ```jsx
 <MyComponent stringProp="Hello">
 ```
 
-**Other type of property**   
+**Other type of property**  
 Other property's data type uses brace({}).
+
 ```jsx
 <MyComponent boolProp={true}>
 <MyComponent arrProp={['a', 'b', 'c']}>
@@ -188,6 +189,7 @@ Other property's data type uses brace({}).
 ```
 
 ---
+
 - `https://ko.legacy.reactjs.org/docs/components-and-props.html`
 - `https://ko.legacy.reactjs.org/docs/composition-vs-inheritance.html`
 - `https://life-with-coding.tistory.com/509`
