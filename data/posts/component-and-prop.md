@@ -1,4 +1,4 @@
-## What is Conponent?
+## What is Component?
 
 The simplest way to define the component is to code JavaScript function
 
