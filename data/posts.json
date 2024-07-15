@@ -726,5 +726,13 @@
     "category": ["ReactJs", "NextJs"],
     "path": "react-usememo",
     "featured": false
+  },
+  {
+    "title": "📚발표: Component와 Props",
+    "description": "",
+    "date": "0",
+    "category": ["WebCS", "ReactJs"],
+    "path": "union-presentation2",
+    "featured": false
   }
 ]
