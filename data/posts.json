@@ -734,5 +734,13 @@
     "category": ["WebCS", "ReactJs"],
     "path": "union-presentation2",
     "featured": false
+  },
+  {
+    "title": "Comparing Flutter State Management Framework: Bloc, Provider, and GetX",
+    "description": "There are few state management framework in flutter. Which is the best framework for our project?",
+    "date": "2023-11-28",
+    "category": ["Flutter"],
+    "path": "flutter-state-management",
+    "featured": false
   }
 ]
