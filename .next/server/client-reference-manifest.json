@@ -112,17 +112,17 @@
         "async": false
       }
     },
-    "(app-client)/./src/assets/svg/Calendar.svg": {
+    "(app-client)/./src/components/Post/MarkdownViewer/MarkdownViewer.tsx": {
       "*": {
-        "id": "(sc_client)/./src/assets/svg/Calendar.svg",
+        "id": "(sc_client)/./src/components/Post/MarkdownViewer/MarkdownViewer.tsx",
         "name": "*",
         "chunks": [],
         "async": false
       }
     },
-    "(app-client)/./src/components/Post/MarkdownViewer/MarkdownViewer.tsx": {
+    "(app-client)/./src/assets/svg/Calendar.svg": {
       "*": {
-        "id": "(sc_client)/./src/components/Post/MarkdownViewer/MarkdownViewer.tsx",
+        "id": "(sc_client)/./src/assets/svg/Calendar.svg",
         "name": "*",
         "chunks": [],
         "async": false
@@ -475,6 +475,14 @@
       ],
       "async": false
     },
+    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/components/Post/MarkdownViewer/MarkdownViewer.tsx": {
+      "id": "(app-client)/./src/components/Post/MarkdownViewer/MarkdownViewer.tsx",
+      "name": "*",
+      "chunks": [
+        "app/posts/[postPage]/[categorizedPostPage]/page:static/chunks/app/posts/[postPage]/[categorizedPostPage]/page.js"
+      ],
+      "async": false
+    },
     "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/assets/svg/Calendar.svg": {
       "id": "(app-client)/./src/assets/svg/Calendar.svg",
       "name": "*",
@@ -493,14 +501,6 @@
     },
     "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/components/Waves/Waves.module.scss": {
       "id": "(app-client)/./src/components/Waves/Waves.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/posts/[postPage]/[categorizedPostPage]/page:static/chunks/app/posts/[postPage]/[categorizedPostPage]/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/components/Post/MarkdownViewer/MarkdownViewer.tsx": {
-      "id": "(app-client)/./src/components/Post/MarkdownViewer/MarkdownViewer.tsx",
       "name": "*",
       "chunks": [
         "app/posts/[postPage]/[categorizedPostPage]/page:static/chunks/app/posts/[postPage]/[categorizedPostPage]/page.js"
