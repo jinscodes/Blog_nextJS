@@ -5,9 +5,15 @@
   .image {
     width: auto;
     height: auto;
-    min-height: 50px;
+    min-width: 300px;
     max-width: 100%;
+    min-height: 150px;
     border-radius: 12px;
+  }
+
+  .image_expanded {
+    height: 100%;
+    width: 100%;
   }
 
   .pre_container > div {
