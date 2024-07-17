@@ -226,9 +226,14 @@
 .MarkdownViewer_markdown__VX352 .MarkdownViewer_image__ZEedT {
   width: auto;
   height: auto;
-  min-height: 50px;
+  min-width: 300px;
   max-width: 100%;
+  min-height: 150px;
   border-radius: 12px;
+}
+.MarkdownViewer_markdown__VX352 .MarkdownViewer_image_expanded___B_w2 {
+  height: 100%;
+  width: 100%;
 }
 .MarkdownViewer_markdown__VX352 .MarkdownViewer_pre_container__sA01Y > div {
   border-radius: 12px;

@@ -16,6 +16,7 @@ import HrLine from "components/Post/MarkdownViewer/StyledMarkdown/HrLine";
 import OlAndLi from "components/Post/MarkdownViewer/StyledMarkdown/OlAndLi";
 import UlAndLi from "components/Post/MarkdownViewer/StyledMarkdown/UlAndLi";
 import Image from "next/image";
+import { useState } from "react";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import st from "./MarkdownViewer.module.scss";
 
@@ -24,6 +25,16 @@ interface Prop {
 }
 
 const MarkdownViewer = ({ content }: Prop) => {
+  const [imageAlt, setImageAlt] = useState<string>("");
+
+  const expandImage = (clickedAlt: string) => {
+    if (imageAlt === clickedAlt) {
+      setImageAlt("");
+    } else {
+      setImageAlt(clickedAlt);
+    }
+  };
+
   return (
     <Markdown
       className={st.markdown}
@@ -65,7 +76,13 @@ const MarkdownViewer = ({ content }: Prop) => {
             alt={image.alt || ""}
             width={400}
             height={200}
-            className={st.image}
+            className={`${st.image} ${
+              imageAlt === image.alt && st.image_expanded
+            }`}
+            onClick={(e) => {
+              console.log(e.currentTarget.alt);
+              expandImage(e.currentTarget.alt);
+            }}
           />
         ),
         h2: ({ node, ...props }) => <H2Underline props={props} />,
