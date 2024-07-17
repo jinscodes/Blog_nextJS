@@ -79,10 +79,7 @@ const MarkdownViewer = ({ content }: Prop) => {
             className={`${st.image} ${
               imageAlt === image.alt && st.image_expanded
             }`}
-            onClick={(e) => {
-              console.log(e.currentTarget.alt);
-              expandImage(e.currentTarget.alt);
-            }}
+            onClick={(e) => expandImage(e.currentTarget.alt)}
           />
         ),
         h2: ({ node, ...props }) => <H2Underline props={props} />,
