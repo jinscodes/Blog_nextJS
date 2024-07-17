@@ -14,6 +14,12 @@ When developing the application with Flutter, we must consider and choose archit
 
 ## MVVM Pattern
 
+Every libraries, GetX, Provider, and BLoC, are using MVVM pattern. MVVM creates classes by dividing them into the three section: **M**odel-**V**iew-**V**iew**M**odel.
+
+MVVM refers to the pattern that is consisting of **ViewModel** manipulating the Model's data and **View** showing **ViewModel**.
+
+![](https://github.com/user-attachments/assets/b6e44a57-c331-4f5c-9de3-507c0c8fb5d3)
+
 ---
 
 [](https://kkangsnote.tistory.com/247)
