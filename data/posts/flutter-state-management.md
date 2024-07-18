@@ -20,6 +20,12 @@ MVVM refers to the pattern that is consisting of **ViewModel** manipulating the 
 
 ![](https://github.com/user-attachments/assets/b6e44a57-c331-4f5c-9de3-507c0c8fb5d3)
 
+The MVVM pattern is mainly used when data needs to be processed.
+
+There is an example.
+
+![1](https://github.com/user-attachments/assets/9fb83644-9891-4bb5-b081-a1795c0f9122)
+
 ---
 
 [](https://kkangsnote.tistory.com/247)
