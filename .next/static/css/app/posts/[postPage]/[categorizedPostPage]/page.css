@@ -230,6 +230,7 @@
   max-width: 100%;
   min-height: 150px;
   border-radius: 12px;
+  cursor: pointer;
 }
 .MarkdownViewer_markdown__VX352 .MarkdownViewer_image_expanded___B_w2 {
   height: 100%;
