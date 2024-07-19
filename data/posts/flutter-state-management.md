@@ -26,6 +26,50 @@ There is an example.
 
 ![1](https://github.com/user-attachments/assets/9fb83644-9891-4bb5-b081-a1795c0f9122)
 
+In the traditional development method, when an action occurs, everything is handled in one function.
+
+The below example is
+
+1. It's not using viewmodel
+2. `exampleFunc` definition is complex → Get data, update screen, close screen if error occurs
+3. It's ambiguous to test this function
+
+```dart
+exampleFunc() {
+	// Get data
+	final data = await requestArticle();
+
+	// Update screen
+	view.updateTitle(data.title);
+	view.updateText(data.text);
+
+	// Close screen if error occurs
+	if (data.hasError) {
+		Navigator.pop();
+	}
+}
+```
+
+But, the MVVM pattern reflects the action result as data as shown below. When the result is obtained from the data, the purpose of writing the code becomes clear and the test becomes easier.
+
+1. Below example is using viewmodel
+2. `exampleFunc` definition is clear -> Get data from outside and store it inside
+3. Perform a function test by comparing data before and after function call
+
+```dart
+exampleFunc() {
+  this.data = await requestArticle();
+
+	if (data.hasError) {
+    emit(HasError());
+  }
+}
+```
+
+Furthermore, the MVVM architecture also applies the following rules.
+
+![2](https://github.com/user-attachments/assets/7d3b5a91-9300-4483-bb9a-e786a9b7b94b)
+
 ---
 
 [](https://kkangsnote.tistory.com/247)

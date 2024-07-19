@@ -290,7 +290,6 @@ font-display: swap;
   width: 100vw;
   margin: 0;
   font-size: 25px;
-  background-color: rgba(108, 180, 231, 0.1);
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
