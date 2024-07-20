@@ -48,11 +48,9 @@ Furthermore, the MVVM architecture also applies the following rules.
 
 ![5](https://github.com/user-attachments/assets/7d3b5a91-9300-4483-bb9a-e786a9b7b94b)
 
-## Types of State Management
+## Types of State Management: Stateful Widgets
 
 There are a range of state management solutions for various project complexibilties and developer preferences.
-
-#### Stateful Widgets
 
 As you know, stateful widgets are the mechanism in Flutter for handling the state. Flutter provides two classes: `StatefulWidget` and `State`.
 
@@ -75,6 +73,16 @@ The above code has the disadvantage that even if only clickCount is changed, `on
 ![9](https://github.com/user-attachments/assets/fea9d511-7f05-473e-909b-0401f5c0b17c)
 
 You can modify the code above to make it a minimal build. However, there are more parameters and callbacks, which complicates the code. It can be easily implemented with GetX at this time.
+
+## Types of State Management: Provider Package
+
+The popular state management package for Flutter is Provider. Through Provider, we can create and manage providers to hold the application's state. Widgets can listen to these providers for changes in the state. Provider is particularly useful for managing global or shared state.
+
+### Implementing MVVM Patterns with Provider
+
+Unlike GetX, Provider uses an object called Provider to provide a ViewModel using BuildContext dependency injection.
+
+When the screen is configured, the widget tree is configured as follows.
 
 ---
 
