@@ -18,13 +18,13 @@ Every libraries, GetX, Provider, and BLoC, are using MVVM pattern. MVVM creates 
 
 MVVM refers to the pattern that is consisting of **ViewModel** manipulating the Model's data and **View** showing **ViewModel**.
 
-![](https://github.com/user-attachments/assets/b6e44a57-c331-4f5c-9de3-507c0c8fb5d3)
+![1](https://github.com/user-attachments/assets/b6e44a57-c331-4f5c-9de3-507c0c8fb5d3)
 
 The MVVM pattern is mainly used when data needs to be processed.
 
 There is an example.
 
-![1](https://github.com/user-attachments/assets/9fb83644-9891-4bb5-b081-a1795c0f9122)
+![2](https://github.com/user-attachments/assets/9fb83644-9891-4bb5-b081-a1795c0f9122)
 
 In the traditional development method, when an action occurs, everything is handled in one function.
 
@@ -34,21 +34,7 @@ The below example is
 2. `exampleFunc` definition is complex → Get data, update screen, close screen if error occurs
 3. It's ambiguous to test this function
 
-```dart
-exampleFunc() {
-	// Get data
-	final data = await requestArticle();
-
-	// Update screen
-	view.updateTitle(data.title);
-	view.updateText(data.text);
-
-	// Close screen if error occurs
-	if (data.hasError) {
-		Navigator.pop();
-	}
-}
-```
+![3](https://github.com/user-attachments/assets/45f6e3d6-411f-4568-9a0e-c364ca702d29)
 
 But, the MVVM pattern reflects the action result as data as shown below. When the result is obtained from the data, the purpose of writing the code becomes clear and the test becomes easier.
 
@@ -56,19 +42,39 @@ But, the MVVM pattern reflects the action result as data as shown below. When th
 2. `exampleFunc` definition is clear -> Get data from outside and store it inside
 3. Perform a function test by comparing data before and after function call
 
-```dart
-exampleFunc() {
-  this.data = await requestArticle();
-
-	if (data.hasError) {
-    emit(HasError());
-  }
-}
-```
+![4](https://github.com/user-attachments/assets/c131ff1c-a2b8-46a7-a8d5-7e28bd0cec05)
 
 Furthermore, the MVVM architecture also applies the following rules.
 
-![2](https://github.com/user-attachments/assets/7d3b5a91-9300-4483-bb9a-e786a9b7b94b)
+![5](https://github.com/user-attachments/assets/7d3b5a91-9300-4483-bb9a-e786a9b7b94b)
+
+## Types of State Management
+
+There are a range of state management solutions for various project complexibilties and developer preferences.
+
+#### Stateful Widgets
+
+As you know, stateful widgets are the mechanism in Flutter for handling the state. Flutter provides two classes: `StatefulWidget` and `State`.
+
+The `StatefulWidget` represents the immutable part of the widget, while the `State` object holds the mutable state data. When the state changes, calling `setState()` triggers a rebuild of the widget, updating the UI.
+
+### Implementing MVVM Patterns with StatefulWidget
+
+![6](https://github.com/user-attachments/assets/0b895de5-3625-4e84-aca3-8aea4ff7b8aa)
+
+The below code is the part of the ListViewModel that serves as ViewModel.
+
+![7](https://github.com/user-attachments/assets/9d81e395-ce45-4947-9836-96e5ba9307a9)
+
+And then, the below code is the part of the ListPage that serves as View.
+
+![8](https://github.com/user-attachments/assets/7673bff9-6fe0-4a3c-bcb2-0f53b85a47dc)
+
+The above code has the disadvantage that even if only clickCount is changed, `onUpdated()` is called and the entire screen is updated. Complementing this is the minimal build, which updates only the relevant views when data changes.
+
+![9](https://github.com/user-attachments/assets/fea9d511-7f05-473e-909b-0401f5c0b17c)
+
+You can modify the code above to make it a minimal build. However, there are more parameters and callbacks, which complicates the code. It can be easily implemented with GetX at this time.
 
 ---
 
