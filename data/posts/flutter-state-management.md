@@ -84,6 +84,12 @@ Unlike GetX, Provider uses an object called Provider to provide a ViewModel usin
 
 When the screen is configured, the widget tree is configured as follows.
 
+![10](https://github.com/user-attachments/assets/985d5e33-5d2c-40c4-b914-a55ae6323c23)
+
+Let's see the code.
+
+![11](https://github.com/user-attachments/assets/389c0201-94ce-4cb4-b361-5538b5d936d4)
+
 ---
 
 [](https://kkangsnote.tistory.com/247)
