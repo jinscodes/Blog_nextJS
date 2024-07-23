@@ -635,7 +635,7 @@
     "title": "📚발표: CSR & SSG & ISR & SSR에 관하여",
     "description": "",
     "date": "0",
-    "category": ["WebCS"],
+    "category": [],
     "path": "union-presentation",
     "featured": false
   },
@@ -731,7 +731,7 @@
     "title": "📚발표: Component와 Props",
     "description": "",
     "date": "0",
-    "category": ["WebCS", "ReactJs"],
+    "category": [],
     "path": "union-presentation2",
     "featured": false
   },
@@ -741,6 +741,14 @@
     "date": "2023-11-28",
     "category": ["Flutter"],
     "path": "flutter-state-management",
+    "featured": false
+  },
+  {
+    "title": "📚발표: 리액트 생명주기란?",
+    "description": "",
+    "date": "0",
+    "category": ["WebCS"],
+    "path": "union-presentation3",
     "featured": false
   }
 ]
