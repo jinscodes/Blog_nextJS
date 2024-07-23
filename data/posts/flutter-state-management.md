@@ -90,6 +90,30 @@ Let's see the code.
 
 ![11](https://github.com/user-attachments/assets/389c0201-94ce-4cb4-b361-5538b5d936d4)
 
+If you want to update only certain parts of the screen, you can implement them separately.
+
+For example, if you create a widget that updates frequently to the point where you need to draw a new one every second, as shown below, you can implement it separately.
+
+![12](https://github.com/user-attachments/assets/c7c2c4a2-8061-40fe-85a4-e842f6ef6b99)
+
+Provider has the disadvantage of being able to listen only to view model streams, and it does not support one-time events such as creating warning windows, so it is inconvenient to implement them yourself. When using Provider, broke MVVM rules in cases like this.
+
+![13](https://github.com/user-attachments/assets/4ade69b0-193e-4b08-8393-551a6417e86c)
+
+## Types of State Management: BLoC Pattern
+
+The Bloc(Business Logic Component) pattern is commonly used for state management in Flutter, especially for complex applications. It separates the UI from the business logic and uses streams to manage and propagate state changes. The `flutter_bloc` package is widely adopted for implementing the Bloc pattern.
+
+### Implementing MVVM Patterns with BLoC
+
+BLoC is very similar to Provider. It feels like a Provider extension because it provides a few more features in addition to what Provider provides. There is only one big difference. The point is that Provider only notifies 'state has changed', while BLoC only notifies 'pre-defined state'.
+
+Let's take a look at the code below.
+
+![14](https://github.com/user-attachments/assets/6c7f8f07-7d9b-400a-b0c6-5fe63749f308)
+
+BLoC cannot have two states at the same time.
+
 ---
 
 [](https://kkangsnote.tistory.com/247)
