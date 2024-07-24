@@ -114,6 +114,24 @@ Let's take a look at the code below.
 
 BLoC cannot have two states at the same time.
 
+![15](https://github.com/user-attachments/assets/663270c0-8790-4e96-934f-14cb9e10d3e4)
+
+Because of these above things, ViewModel is naturally divided into different classes based on their characteristics. These different functions are separated and made into different cubits.
+
+Let's look at the figure below.
+
+![16](https://github.com/user-attachments/assets/872b7fb1-a823-4572-97de-39b77522d890)
+
+Let's see the widget tree comparing to Provider.
+
+![17](https://github.com/user-attachments/assets/d1cae206-9d13-4e29-a024-ad13879d46f9)
+
+Of course, Providers can develop code by separating classes like Cubit, but while Providers are autonomous, BLoC is forced to divide classes.
+
+Forced separation enables object-oriented encapsulation, but this separation is often more inconvenient. For example, if data sharing is required between Cubits, there is a lot of work to be done.
+
+MVVM patterns prohibit reference between ViewModel and instead recommend communicating at upper layers, view, or lower layers. BLoC uses the same rules. BLoC Repository is used in cases like this.
+
 ---
 
 [](https://kkangsnote.tistory.com/247)
