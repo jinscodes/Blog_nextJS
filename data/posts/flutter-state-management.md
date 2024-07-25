@@ -138,6 +138,35 @@ Below is the code using BLoC.
 
 ![19](https://github.com/user-attachments/assets/ad8180cd-5242-4163-9522-c36fb491cf55)
 
+## Types of State Management: GetX Package
+
+GetX is a powerful and lightweight state management library for Flutter.
+
+It provides a simplified and high-performance way to manage state, handle navigation, and inject dependencies. GetX is known for its simplicity and efficiency.
+
+### Implementing MVVM Patterns with GetX
+
+GetX is most popular package among three libraries in **pub.dev**.
+
+The class configuration is almost the same as when using StatefulWidget. Only the two below are different. I'll explain it in the comments in the code.
+
+- Register and import service and view model objects
+- Use Rx and Obx to update only relevant widgets
+  - Rx: a class that informs the outside when a variable value changes
+  - Obx: Widgets to redraw the screen when Rx changes occur
+
+![20](https://github.com/user-attachments/assets/da18a271-a4a1-4cfa-8d7e-d4dd89141950)
+
+Providers and BLoC always need to use BuildContext to get a view model, but GetX can call objects without BuildContext.
+
+![21](https://github.com/user-attachments/assets/0c81e451-ab11-4842-8949-43d753476487)
+
+While GetX uses the method of getting instances of the same type among view models that currently exist in memory, Providers and BLoC use dependency injection with BuildContext.
+
+BuildContext is one of the main concepts in which Flutter widgets work. In the development of declarative UI methods such as Flutter, children are drawn one by one from the top of the widget tree to draw a screen. When each widget is drawn on the screen, it receives a BuildContext. BuildContext indicates the location of the widget that you need to draw in the widget tree. When you draw a widget, you can trace back this value to know where the screen area you need to draw, theme values such as colors and fonts, and screen navigator information. Even if you don't have to pass every one of these values to the widget creator, you can get dependence injected through BuildContext.
+
+The widget tree figure below is a more detailed picture of how to use dependency injection using BuildContext.
+
 ---
 
 [](https://kkangsnote.tistory.com/247)
