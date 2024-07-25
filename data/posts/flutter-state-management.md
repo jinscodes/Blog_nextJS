@@ -132,6 +132,12 @@ Forced separation enables object-oriented encapsulation, but this separation is 
 
 MVVM patterns prohibit reference between ViewModel and instead recommend communicating at upper layers, view, or lower layers. BLoC uses the same rules. BLoC Repository is used in cases like this.
 
+![18](https://github.com/user-attachments/assets/09f2bc4e-be0d-4b77-ab54-094f0d90f603)
+
+Below is the code using BLoC.
+
+![19](https://github.com/user-attachments/assets/ad8180cd-5242-4163-9522-c36fb491cf55)
+
 ---
 
 [](https://kkangsnote.tistory.com/247)
