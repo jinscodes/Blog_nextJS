@@ -167,6 +167,22 @@ BuildContext is one of the main concepts in which Flutter widgets work. In the d
 
 The widget tree figure below is a more detailed picture of how to use dependency injection using BuildContext.
 
+**BuildContext Use Example 1. Inject Dependency**
+
+![22](https://github.com/user-attachments/assets/0a2b3a75-e890-4295-9e48-110dfde02de8)
+
+**BuildContext Example 2. Life Cycle Management**
+
+![23](https://github.com/user-attachments/assets/f184476d-8907-408a-9693-ae984569ef36)
+
+**BuildContext Usage Example 3. Changing Dependencies**
+
+![24](https://github.com/user-attachments/assets/6b710432-9307-4b8f-b96b-d796d6e36570)
+
+Object reference methods that do not go through BuildContext can potentially cause problems in unexpected places. As an example, while using GetX, there was a problem registering more than one instance of the same class, as shown below.
+
+![25](https://github.com/user-attachments/assets/23d8b058-399a-4d9d-bd85-88aded5c2399)
+
 ---
 
 [](https://kkangsnote.tistory.com/247)
