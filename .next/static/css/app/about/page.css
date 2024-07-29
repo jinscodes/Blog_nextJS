@@ -1,0 +1,52 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/about/page.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.page_about_page__w7rBF {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.page_about_page__w7rBF p:first-child {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 200px 0 0;
+}
+.page_about_page__w7rBF p:nth-child(2) {
+  font-size: 22px;
+  margin-top: 40px;
+}
+.page_about_page__w7rBF .page_developer__VXLbm {
+  margin: 36px 0 50px;
+}
+.page_about_page__w7rBF .page_walking_dog_container__iOk52 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.page_about_page__w7rBF .page_walking_dog_container__iOk52 img {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  animation: page_moveRight__Owbk0 5s linear infinite;
+}
+
+.page_link_page__5eSO9 {
+  border: 5px solid red;
+}
+.page_link_page__5eSO9 .page_laon__0Nfiz {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes page_moveRight__Owbk0 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200%); /* Adjust the distance to move */
+  }
+}
