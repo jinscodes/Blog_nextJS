@@ -22,6 +22,7 @@ const About = async () => {
       </div>
       <div className={st.link_page}>
         <Image className={st.laon} src={laon} alt="laon" />
+        <div className={st.content_container}>Content</div>
       </div>
     </>
   );
