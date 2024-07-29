@@ -1,0 +1,55 @@
+.about_page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  p:first-child {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 200px 0 0;
+  }
+
+  p:nth-child(2) {
+    font-size: 22px;
+    margin-top: 40px;
+  }
+
+  .developer {
+    margin: 36px 0 50px;
+  }
+
+  .walking_dog_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    img {
+      position: absolute;
+      top: 150px;
+      left: 0;
+      animation: moveRight 5s linear infinite;
+    }
+  }
+}
+
+.link_page {
+  border: 5px solid red;
+
+  .laon {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200%); /* Adjust the distance to move */
+  }
+}

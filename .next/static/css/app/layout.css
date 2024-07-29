@@ -537,18 +537,18 @@ font-display: swap;
   height: 360px;
   border-bottom: 1px solid rgba(183, 169, 154, 0.3);
 }
-.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_img__RfcfG {
+.Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_nav_bg__4iNuZ {
   height: 140px;
-  background-image: url(/_next/static/media/jjanggu_profile_bg.8b920f9e.jpeg);
-  background-size: contain;
+  width: 100%;
 }
 .Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_myself__2NWW6 {
   position: absolute;
-  top: 90px;
-  left: 75px;
-  width: 100px;
-  height: 100px;
+  top: 50px;
+  left: 50px;
+  width: 150px;
+  height: 150px;
   border-radius: 12px;
+  object-fit: cover;
 }
 .Nav_header__H7vAt .Nav_profile__sdGp5 .Nav_name_container__uZ_Yd {
   display: flex;

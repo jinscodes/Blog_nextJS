@@ -4,7 +4,9 @@ import Caret from "../../../public/svg/Caret.svg";
 
 import NavCategory from "components/NavCategory/NavCategory";
 
-import Myself from "assets/images/myself.png";
+// import Myself from "assets/images/myself.png";
+import Developer from "assets/images/developer.png";
+import NavBg from "assets/images/nav_bg.png";
 import Category from "assets/svg/Category.svg";
 import House from "assets/svg/House.svg";
 import Person from "assets/svg/Person.svg";
@@ -15,9 +17,16 @@ const Nav = () => {
   return (
     <header className={st.header}>
       <section className={st.profile}>
-        <div className={st.img}></div>
         <Image
-          src={Myself}
+          className={st.nav_bg}
+          src={NavBg}
+          alt="NavBg"
+          sizes="auto"
+          width={0}
+          height={0}
+        />
+        <Image
+          src={Developer}
           alt="myself"
           sizes="auto"
           width={0}

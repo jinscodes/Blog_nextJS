@@ -18,19 +18,19 @@
     height: 360px;
     border-bottom: 1px solid rgba(183, 169, 154, 0.3);
 
-    .img {
+    .nav_bg {
       height: 140px;
-      background-image: url("../../../public/images/jjanggu_profile_bg.jpeg");
-      background-size: contain;
+      width: 100%;
     }
 
     .myself {
       position: absolute;
-      top: 90px;
-      left: 75px;
-      width: 100px;
-      height: 100px;
+      top: 50px;
+      left: 50px;
+      width: 150px;
+      height: 150px;
       border-radius: 12px;
+      object-fit: cover;
     }
 
     .name_container {
