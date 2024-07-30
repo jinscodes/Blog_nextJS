@@ -7,11 +7,12 @@ export type Post = {
   date: Date;
   category: string[];
   path: string;
+  icon: string;
   featured: boolean;
 };
 
 export const getAllPosts = async (): Promise<Post[]> => {
-  const filePath = path.join(process.cwd(), "data", "about_posts.json");
+  const filePath = path.join(process.cwd(), "data", "aboutPosts.json");
 
   return readFile(filePath, "utf-8")
     .then<Post[]>(JSON.parse)

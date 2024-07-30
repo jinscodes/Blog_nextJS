@@ -1,0 +1,25 @@
+.text_button_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    padding-bottom: 6px;
+  }
+
+  .title {
+    font-size: 16px;
+    line-height: 1.5;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+  }
+}
+
+.text_button_container:hover {
+  background-color: rgba($color: #000000, $alpha: 0.2);
+  border-radius: 6px;
+}

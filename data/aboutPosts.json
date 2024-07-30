@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Example",
+    "description": "This is example",
+    "date": "2024-07-30",
+    "category": ["Example"],
+    "path": "example",
+    "icon": "📘",
+    "feautred": false
+  }
+]
