@@ -1,29 +1,3 @@
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/About/TextButton.module.scss ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.TextButton_text_button_container__K9T_o {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 30px;
-  cursor: pointer;
-}
-.TextButton_text_button_container__K9T_o .TextButton_icon__r7pxW {
-  width: 24px;
-  height: 24px;
-  margin-right: 4px;
-  padding-bottom: 6px;
-}
-.TextButton_text_button_container__K9T_o .TextButton_title__UFcq6 {
-  font-size: 16px;
-  line-height: 1.5;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.TextButton_text_button_container__K9T_o:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-}
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/about/page.module.scss ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -82,8 +56,10 @@
   object-fit: cover;
 }
 .page_link_page__5eSO9 .page_content_container__a9wCJ {
-  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
   width: 50%;
+  gap: 15px;
 }
 
 @keyframes page_moveRightDog__c8a7F {
@@ -93,4 +69,52 @@
   100% {
     transform: translateX(120%);
   }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/About/TextButton.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.TextButton_text_button_container__K9T_o {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  padding: 0 5px;
+  gap: 2px;
+}
+.TextButton_text_button_container__K9T_o .TextButton_dots__pvWbB {
+  width: 10px;
+  height: 100% !important;
+  color: rgba(0, 0, 0, 0.2) !important;
+  padding: 0 3px;
+}
+.TextButton_text_button_container__K9T_o .TextButton_content_container__JmxKf {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  padding: 1px 4px 1px;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+.TextButton_text_button_container__K9T_o .TextButton_icon__r7pxW {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+  padding-bottom: 6px;
+}
+.TextButton_text_button_container__K9T_o .TextButton_title__UFcq6 {
+  font-size: 16px;
+  line-height: 1.5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.TextButton_content_container__JmxKf:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.TextButton_dots__pvWbB:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
 }
