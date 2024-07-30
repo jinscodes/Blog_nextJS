@@ -27,7 +27,7 @@ const About = async () => {
         <Image className={st.laon} src={laon} alt="laon" />
         <div className={st.content_container}>
           {posts.map((post, idx) => (
-            <TextButton title={post.title} icon={post.icon} />
+            <TextButton title={post.title} icon={post.icon} path={post.path} />
           ))}
         </div>
       </div>

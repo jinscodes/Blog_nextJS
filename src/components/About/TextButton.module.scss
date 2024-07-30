@@ -3,7 +3,26 @@
   align-items: center;
   width: 100%;
   height: 30px;
-  cursor: pointer;
+  padding: 0 5px;
+  gap: 2px;
+
+  .dots {
+    width: 10px;
+    height: 100% !important;
+    color: rgba($color: #000000, $alpha: 0.2) !important;
+    padding: 0 3px;
+  }
+
+  .content_container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    padding: 1px 4px 1px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+  }
 
   .icon {
     width: 24px;
@@ -19,7 +38,12 @@
   }
 }
 
-.text_button_container:hover {
+.content_container:hover {
+  background-color: rgba($color: #000000, $alpha: 0.2);
+  border-radius: 6px;
+}
+
+.dots:hover {
   background-color: rgba($color: #000000, $alpha: 0.2);
   border-radius: 6px;
 }
