@@ -10,8 +10,6 @@ import st from "./page.module.scss";
 const About = async () => {
   const posts: Post[] = await getAllPosts();
 
-  console.log(posts);
-
   return (
     <>
       <div className={st.about_page}>
