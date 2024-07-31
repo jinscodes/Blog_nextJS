@@ -8,7 +8,7 @@ type Props = {
   };
 };
 
-export const PostPage = async ({ params: { postPage } }: Props) => {
+const PostPage = async ({ params: { postPage } }: Props) => {
   const classifiedPost = await getPostData(postPage);
 
   return (
@@ -24,4 +24,5 @@ export const PostPage = async ({ params: { postPage } }: Props) => {
     </section>
   );
 };
+
 export default PostPage;
