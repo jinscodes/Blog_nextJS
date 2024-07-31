@@ -24,6 +24,30 @@ DNS recursor는 네임서버들에게 물어 올바른 IP주소를 찾는데 책
 4. 최종적으로 DNS기록에서 `www.google.com`에 매칭되는 IP주소 찾기
 5. 찾은 주소를 DNS recursor로 보내기
 
+이 모든 요청들과 DNS recursor, IP주소는 작은 데이터 팻킷을 통해 보내집니다. 원하는 DNS기록을 가진 DNS서버에 도달할 때까지 클라이언트 ↔︎ 서버를 오가는 과정을 거칩니다.
+
+DNS에 대해 좀 더 자세히 알고싶다면 👇🏼
+
+[](https://jay-h-blog.vercel.app/posts/WebCS/internet-network-dns)
+
+**3️⃣ 브라우저가 TCP/IP 프로토콜을 사용해 서버에 연결**
+
+위 과정을 통해 IP주소를 알게 되었으면, TCP/IP를 사용해 서버에 연결하기 위한 신호를 보냅니다. 이 과정에서 TCP는 데이터를 잃지 않고 잘 보내기 위해 사용되며 IP는 주소에 알맞게 보내기 위한 역할을 수행합니다.
+
+![frame&packet](https://github.com/user-attachments/assets/b3e34e58-49c9-4528-b171-0f2048b557d0)
+
+TCP 연결을 하기 위해 3 way handshaking을 사용합니다. 3 way handshaking은 클라이언트와 서버의 연결성을 안정적으로 확보하기 위한 방법입니다.
+
+![3wayhandshaking](https://github.com/user-attachments/assets/828a0556-005a-46fa-ad6c-c92e3b586caf)
+
+Packet, IP, TCP등에 대해 좀더 자세히 알고싶다면 👇🏼
+
+[](https://jay-h-blog.vercel.app/posts/WebCS/internet-network-ip)
+
+[](https://jay-h-blog.vercel.app/posts/WebCS/internet-network-tcp)
+
+[](https://jay-h-blog.vercel.app/posts/WebCS/internet-network-port)
+
 ---
 
 [](https://brunch.co.kr/@seungjoonlernnx/100)
