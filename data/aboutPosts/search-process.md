@@ -16,7 +16,7 @@
 
 DNS recursor는 네임서버들에게 물어 올바른 IP주소를 찾는데 책임이 있다. 네임서버는 도메인 이름 구조에 기반해서 주소를 검색하게 됩니다. IP주소 검색은 아래 이미지의 과정을 거치게 됩니다.
 
-![1](https://github.com/user-attachments/assets/64e20910-5eaa-4016-b765-ffa614095e88)
+![dns](https://github.com/user-attachments/assets/64e20910-5eaa-4016-b765-ffa614095e88)
 
 1. DNS recursor가 root name server에 연락
 2. .com 도메인 name server로 리다이렉트
