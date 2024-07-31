@@ -4,7 +4,6 @@ import path from "path";
 export type Post = {
   title: string;
   date: Date;
-  category: string[];
   path: string;
   icon: string;
   featured: boolean;
