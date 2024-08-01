@@ -120,14 +120,6 @@
         "async": false
       }
     },
-    "(app-client)/./src/components/Post/MarkdownViewer/MarkdownViewer.tsx": {
-      "*": {
-        "id": "(sc_client)/./src/components/Post/MarkdownViewer/MarkdownViewer.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./src/assets/images/icons/Apple.jpeg": {
       "*": {
         "id": "(sc_client)/./src/assets/images/icons/Apple.jpeg",
@@ -259,6 +251,14 @@
     "(app-client)/./src/components/ProfileAndId/ProfileAndId.module.scss": {
       "*": {
         "id": "(sc_client)/./src/components/ProfileAndId/ProfileAndId.module.scss",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/Post/MarkdownViewer/MarkdownViewer.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/Post/MarkdownViewer/MarkdownViewer.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -483,22 +483,6 @@
       ],
       "async": false
     },
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/components/Post/MarkdownViewer/MarkdownViewer.tsx": {
-      "id": "(app-client)/./src/components/Post/MarkdownViewer/MarkdownViewer.tsx",
-      "name": "*",
-      "chunks": [
-        "app/about/[postPage]/page:static/chunks/app/about/[postPage]/page.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/app/about/[postPage]/page.module.scss": {
-      "id": "(app-client)/./src/app/about/[postPage]/page.module.scss",
-      "name": "*",
-      "chunks": [
-        "app/about/[postPage]/page:static/chunks/app/about/[postPage]/page.js"
-      ],
-      "async": false
-    },
     "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/assets/images/icons/Apple.jpeg": {
       "id": "(app-client)/./src/assets/images/icons/Apple.jpeg",
       "name": "*",
@@ -706,17 +690,33 @@
         "app/page:static/chunks/app/page.js"
       ],
       "async": false
+    },
+    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/components/Post/MarkdownViewer/MarkdownViewer.tsx": {
+      "id": "(app-client)/./src/components/Post/MarkdownViewer/MarkdownViewer.tsx",
+      "name": "*",
+      "chunks": [
+        "app/about/[postPage]/page:static/chunks/app/about/[postPage]/page.js"
+      ],
+      "async": false
+    },
+    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/app/about/[postPage]/page.module.scss": {
+      "id": "(app-client)/./src/app/about/[postPage]/page.module.scss",
+      "name": "*",
+      "chunks": [
+        "app/about/[postPage]/page:static/chunks/app/about/[postPage]/page.js"
+      ],
+      "async": false
     }
   },
   "entryCSSFiles": {
     "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/app/layout": [
       "static/css/app/layout.css"
     ],
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/app/about/[postPage]/page": [
-      "static/css/app/about/[postPage]/page.css"
-    ],
     "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/app/page": [
       "static/css/app/page.css"
+    ],
+    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/app/about/[postPage]/page": [
+      "static/css/app/about/[postPage]/page.css"
     ]
   }
 }

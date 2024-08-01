@@ -79,6 +79,9 @@
 .A_a_container__zDYnP .A_url__TK_fB {
   z-index: 2;
   color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .A_a_container__zDYnP a {
   position: absolute;

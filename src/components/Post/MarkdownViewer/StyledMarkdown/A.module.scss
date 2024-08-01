@@ -36,6 +36,9 @@
   .url {
     z-index: 2;
     color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   a {
