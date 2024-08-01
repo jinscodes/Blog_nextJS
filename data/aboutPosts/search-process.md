@@ -40,13 +40,7 @@ TCP 연결을 하기 위해 3 way handshaking을 사용합니다. 3 way handshak
 
 ![3wayhandshaking](https://github.com/user-attachments/assets/828a0556-005a-46fa-ad6c-c92e3b586caf)
 
-Packet, IP, TCP등에 대해 좀더 자세히 알고싶다면 👇🏼
-
-[](https://jay-h-blog.vercel.app/posts/WebCS/internet-network-ip)
-
-[](https://jay-h-blog.vercel.app/posts/WebCS/internet-network-tcp)
-
-[](https://jay-h-blog.vercel.app/posts/WebCS/internet-network-port)
+Packet, IP, TCP등에 대해 좀더 자세히 알고싶다면 👉🏻 [](https://jay-h-blog.vercel.app/posts/WebCS/internet-network-ip, "IP") [](https://jay-h-blog.vercel.app/posts/WebCS/internet-network-tcp, "TCP") [](https://jay-h-blog.vercel.app/posts/WebCS/internet-network-port, "PORT")
 
 ---
 
