@@ -36,9 +36,6 @@
   .url {
     z-index: 2;
     color: white;
-    // overflow: hidden;
-    // text-overflow: ellipsis;
-    // white-space: nowrap;
   }
 
   a {
@@ -53,4 +50,15 @@
 .a_container:hover {
   background-color: rgba($color: lightblue, $alpha: 0.2);
   color: rgba(126, 122, 142, 0.7);
+}
+
+.a_container_with_title {
+  color: rgba($color: rgb(103, 153, 246), $alpha: 1);
+  border-bottom: 2px solid rgba($color: rgb(103, 153, 246), $alpha: 1);
+
+  .chrome_icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
 }
