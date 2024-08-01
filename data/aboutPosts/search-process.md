@@ -40,6 +40,20 @@ TCP 연결을 하기 위해 3 way handshaking을 사용합니다. 3 way handshak
 
 Packet, IP, TCP등에 대해 좀더 자세히 알고싶다면 👉🏻 [](https://jay-h-blog.vercel.app/posts/WebCS/internet-network-ip, "IP") [](https://jay-h-blog.vercel.app/posts/WebCS/internet-network-tcp, "TCP") [](https://jay-h-blog.vercel.app/posts/WebCS/internet-network-port, "PORT")
 
+**4️⃣ Firewall & Https/SSL**
+
+TCP를 연결하는 중, Firewall과 SSL이라고 하는 접근 제한 방법이 있습니다. Firewall은 방화벽으로 불리며, 사용자가 사전에 정의한 정책을 기반으로 시스템에 대한 악의적인 접근을 차단하고 제어하기 위해 사용됩니다. SSL 또는 HTTPS는 취약점 보완으로 보안이 향샹된 웹 통신을 하기 위함입니다.
+
+이 과정을 통해 우리가 구글에 접근하는 것이 올바른 방식을 통해 접근하는지 검증합니다.
+
+**5️⃣ Load balancer**
+
+요즘은 Load balancer를 거치게 됩니다. Load balancer를 사용하는 이유는 구글이 컴퓨터 한대로 서비스를 제공하지 않기 때문에 트래픽을 잘 측정하고 여러대의 서버 중 트래픽을 받을 수 있는 서버에 전달하기 위함입니다. 이를 통해, 트래픽이 망가지거나 지연되지 않게 조절해줍니다.
+
+**6️⃣ 웹서버**
+
+TCP 연결이 완료된 후, 클라이언트는 GET 요청을 통해 서버에 웹페이지를 요구하게 됩니다. GET 요청 시에, 데이터를 보내게 되는데 그 데이터는 `www.google.com` 을 보내달라는 신호와 함께 전달 됩니다. 이 요청에는 브라우저 버전과 종류, 쿠키, 사용자의 정보 등의 내용이 함께 보내지게 되며, 구글은 사용자에게 필요한 내용을 요청한 방식에 맞춰 응답하게 됩니다.
+
 ---
 
 [](https://brunch.co.kr/@seungjoonlernnx/100)
