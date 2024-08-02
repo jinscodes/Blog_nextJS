@@ -6,7 +6,6 @@ export type Post = {
   date: Date;
   path: string;
   icon: string;
-  featured: boolean;
 };
 
 export type PostData = Post & {
@@ -20,7 +19,7 @@ export const getAllPosts = async (): Promise<Post[]> => {
 
   return readFile(filePath, "utf-8")
     .then<Post[]>(JSON.parse)
-    .then((posts) => posts.sort((a, b) => (a.date > b.date ? -1 : 1)));
+    .then((posts) => posts.sort((a, b) => (a.date < b.date ? -1 : 1)));
 };
 
 export const getPostData = async (fileName: string): Promise<PostData> => {

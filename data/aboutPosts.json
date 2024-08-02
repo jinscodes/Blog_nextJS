@@ -1,9 +1,14 @@
 [
   {
     "title": "브라우저 주소창에 google.com을 치면 발생하는 일",
-    "date": "2024-07-30",
+    "date": "2024-07-29",
     "path": "search-process",
-    "icon": "🛜",
-    "feautred": false
+    "icon": "🖥️"
+  },
+  {
+    "title": "브라우저 렌더링 과정",
+    "date": "2024-08-03",
+    "path": "browser-rendering",
+    "icon": "🌀"
   }
 ]
