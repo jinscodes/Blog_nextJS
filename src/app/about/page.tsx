@@ -1,7 +1,7 @@
+import developer from "assets/images/developer.png";
 import laon from "assets/images/laon.jpeg";
 import puppyWalking from "assets/images/puppy_walking.gif";
 import speechBubble from "assets/images/speech_bubble.png";
-import developer from "assets/svg/Developer.svg";
 import TextButton from "components/About/TextButton";
 import Image from "next/image";
 import { Post, getAllPosts } from "service/aboutPosts";

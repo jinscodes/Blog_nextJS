@@ -5,7 +5,6 @@
   width: 100vw;
   margin: 0;
   font-size: 25px;
-  // background-color: rgba($color: #6cb4e7, $alpha: 0.1);
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -17,16 +16,6 @@
 .main {
   margin-left: 250px;
   width: calc(100% - 250px);
-}
-
-@media (max-width: 820px) {
-  .main {
-    margin: 90px 2rem 0;
-    padding: 0 2rem;
-    width: calc(100% - 8rem);
-    background-color: rgba(197, 226, 247, 0.1);
-    border-radius: 18px;
-  }
 }
 
 @font-face {
@@ -52,6 +41,15 @@
     width: 100%;
   }
 }
+
+// @media (max-width: 820px) {
+//   .main {
+//     margin: 90px 2rem 0;
+//     padding: 0 2rem;
+//     width: calc(100% - 8rem);
+//     border-radius: 18px;
+//   }
+// }
 
 @media all and (max-width: 767px) {
   .main {

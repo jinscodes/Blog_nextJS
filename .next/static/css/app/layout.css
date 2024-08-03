@@ -302,15 +302,6 @@ font-display: swap;
   width: calc(100% - 250px);
 }
 
-@media (max-width: 820px) {
-  .layout_main__Hcx_E {
-    margin: 90px 2rem 0;
-    padding: 0 2rem;
-    width: calc(100% - 8rem);
-    background-color: rgba(197, 226, 247, 0.1);
-    border-radius: 18px;
-  }
-}
 @font-face {
   font-family: "mapleB";
   font-weight: 700;

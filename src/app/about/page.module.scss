@@ -19,6 +19,8 @@
   }
 
   .developer {
+    width: 350px;
+    height: 350px;
     margin: 36px 0 0;
   }
 
@@ -30,14 +32,12 @@
 
     .bubble {
       position: absolute;
-      top: 250px;
       left: 450px;
       z-index: 99;
     }
 
     .dog {
       position: absolute;
-      top: 320px;
       left: 0;
       width: 600px;
       height: 450px;

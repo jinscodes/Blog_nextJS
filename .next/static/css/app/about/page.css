@@ -20,6 +20,8 @@
   margin-top: 40px;
 }
 .page_about_page__w7rBF .page_developer__VXLbm {
+  width: 350px;
+  height: 350px;
   margin: 36px 0 0;
 }
 .page_about_page__w7rBF .page_walking_dog_container__iOk52 {
@@ -30,13 +32,11 @@
 }
 .page_about_page__w7rBF .page_walking_dog_container__iOk52 .page_bubble__5UKHZ {
   position: absolute;
-  top: 250px;
   left: 450px;
   z-index: 99;
 }
 .page_about_page__w7rBF .page_walking_dog_container__iOk52 .page_dog__KcbXo {
   position: absolute;
-  top: 320px;
   left: 0;
   width: 600px;
   height: 450px;
