@@ -2,14 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import Caret from "../../../public/svg/Caret.svg";
 
-import NavCategory from "components/NavCategory/NavCategory";
-
-// import Myself from "assets/images/myself.png";
 import Developer from "assets/images/developer.png";
 import NavBg from "assets/images/nav_bg.png";
 import Category from "assets/svg/Category.svg";
 import House from "assets/svg/House.svg";
 import Person from "assets/svg/Person.svg";
+import NavCategory from "components/NavCategory/NavCategory";
 
 import st from "./Nav.module.scss";
 
