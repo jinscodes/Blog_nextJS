@@ -80,6 +80,18 @@ DOM 트리를 생성하는 것과 마찬가지로, CSSOM 트리를 생성해야�
 
 ![cssom-tree](https://github.com/user-attachments/assets/05797019-e640-425b-87d3-0bb4928f753f)
 
+위 구조를 거쳐서 최종적으로 CSSOM이라는 트리 구조가 만들어집니다. 참고로 CSSOM은 CSS Object Model의 약자입니다.
+
+DOM 트리 생성 후, CSSOM 트리 생성까지 완료되면 아래와 같은 구조가 완성 됩니다.
+
+![dom-cssom](https://github.com/user-attachments/assets/cf2a07a1-ff5c-4cdf-9c5e-246099eb39bf)
+
+**3️⃣ 렌더링(Rendering) 트리 생성**
+
+DOM 트리와 CSSOM 트리가 완성되면, 이 둘을 결합한 렌더링 트리를 생성하게 됩니다. 렌더링 트리에는 페이지를 렌더링 하는데 필요한 노드만 포함됩니다.
+
+![rendering-tree](https://github.com/user-attachments/assets/74abb400-8c91-4e6f-9982-c10330cc87bf)
+
 ---
 
 [](https://velog.io/@zaman17/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EB%8C%80%EB%B9%84-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%88%9C%EC%84%9C%EC%99%80-%EC%9B%90%EB%A6%AC)
