@@ -241,7 +241,6 @@
   height: auto;
   min-width: 300px;
   max-width: 100%;
-  min-height: 150px;
   border-radius: 12px;
   cursor: pointer;
 }

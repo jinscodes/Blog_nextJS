@@ -76,6 +76,10 @@ HTTP 요청과 같은 네트워크 호출에 사용
 
 HTML 마크업 내에 직접 스타일을 선언하는 inline으로 스타일을 선언할 수도 있지만, head 태그에 외부 css파일을 참조하거나, head 태그 내부에 style 태그를 정의할 수도 있습니다. HTML과 마찬가지로 외부 css 파일에 정의된 스타일과 style 태그에 작성된 스타일을 브라우저가 이해하고 처리할 수 있는 형식으로 변환해야합니다.
 
+DOM 트리를 생성하는 것과 마찬가지로, CSSOM 트리를 생성해야합니다.
+
+![cssom-tree](https://github.com/user-attachments/assets/05797019-e640-425b-87d3-0bb4928f753f)
+
 ---
 
 [](https://velog.io/@zaman17/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EB%8C%80%EB%B9%84-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%88%9C%EC%84%9C%EC%99%80-%EC%9B%90%EB%A6%AC)
