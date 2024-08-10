@@ -10,5 +10,11 @@
     "date": "2024-08-03",
     "path": "browser-rendering",
     "icon": "🌀"
+  },
+  {
+    "title": "URI와 URL의 차이",
+    "date": "2024-08-10",
+    "path": "uri-and-url",
+    "icon": "💻"
   }
 ]
