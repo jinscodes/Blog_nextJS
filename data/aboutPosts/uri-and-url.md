@@ -6,6 +6,10 @@ URI는 단어 그대로 해석하면 대략적인 의미를 파악할 수 있습
 
 즉, URI의 의미를 통합하면 인터넷상의 리소르인 "자원" 자체를 식별하는 고유한 문자열 시퀀스 입니다.
 
+2️⃣ URL ( Uniformed Resource Locator ) - 통합 자원 지시자
+
+URL은 우리가 가장 흔하게 쓰는 개념으로서 Resource의 정확한 위치 정보를 나타냅니다. 즉, URL을 통해 Resource가 어디에 있는지 어떻게 접근할 수 있는지 알 수 있습니다.
+
 ---
 
 ()[https://hstory0208.tistory.com/entry/URI%EC%99%80-URL-%EB%B9%84%EC%8A%B7%ED%95%B4%EB%B3%B4%EC%9D%B4%EB%8A%94%EB%8D%B0-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%B4-%EB%AD%98%EA%B9%8C-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC]
