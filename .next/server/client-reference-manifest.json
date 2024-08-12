@@ -64,6 +64,14 @@
         "async": false
       }
     },
+    "(app-client)/./src/components/NavCategory/NavCategory.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/NavCategory/NavCategory.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./src/assets/images/developer.png": {
       "*": {
         "id": "(sc_client)/./src/assets/images/developer.png",
@@ -99,14 +107,6 @@
     "(app-client)/./src/assets/svg/Person.svg": {
       "*": {
         "id": "(sc_client)/./src/assets/svg/Person.svg",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./src/components/NavCategory/NavCategory.tsx": {
-      "*": {
-        "id": "(sc_client)/./src/components/NavCategory/NavCategory.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -411,6 +411,14 @@
       ],
       "async": false
     },
+    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/components/NavCategory/NavCategory.tsx": {
+      "id": "(app-client)/./src/components/NavCategory/NavCategory.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
     "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/assets/images/developer.png": {
       "id": "(app-client)/./src/assets/images/developer.png",
       "name": "*",
@@ -445,14 +453,6 @@
     },
     "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/assets/svg/Person.svg": {
       "id": "(app-client)/./src/assets/svg/Person.svg",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/components/NavCategory/NavCategory.tsx": {
-      "id": "(app-client)/./src/components/NavCategory/NavCategory.tsx",
       "name": "*",
       "chunks": [
         "app/layout:static/chunks/app/layout.js"
@@ -755,16 +755,16 @@
       ],
       "async": false
     },
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/app/about/[postPage]/page.module.scss": {
-      "id": "(app-client)/./src/app/about/[postPage]/page.module.scss",
+    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/components/Post/MarkdownViewer/MarkdownViewer.tsx": {
+      "id": "(app-client)/./src/components/Post/MarkdownViewer/MarkdownViewer.tsx",
       "name": "*",
       "chunks": [
         "app/about/[postPage]/page:static/chunks/app/about/[postPage]/page.js"
       ],
       "async": false
     },
-    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/components/Post/MarkdownViewer/MarkdownViewer.tsx": {
-      "id": "(app-client)/./src/components/Post/MarkdownViewer/MarkdownViewer.tsx",
+    "/Users/hanjinsung/Desktop/Repository/blog_nextJS/src/app/about/[postPage]/page.module.scss": {
+      "id": "(app-client)/./src/app/about/[postPage]/page.module.scss",
       "name": "*",
       "chunks": [
         "app/about/[postPage]/page:static/chunks/app/about/[postPage]/page.js"
