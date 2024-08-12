@@ -13,9 +13,13 @@ const About = async () => {
   return (
     <>
       <div className={st.about_page}>
-        <p>Frontend Developer & Mentor</p>
-        <p>I code beautifully simple things, and I love what I do.</p>
-        <Image className={st.developer} src={developer} alt="developer" />
+        <div className={st.text_container}>
+          <div>
+            <p>Frontend Developer & Mentor</p>
+            <p>I code beautifully simple things, and I love what I do.</p>
+          </div>
+          <Image className={st.developer} src={developer} alt="developer" />
+        </div>
         <div className={st.walking_dog_container}>
           <Image className={st.dog} src={puppyWalking} alt="puppyWalking" />
           <Image className={st.bubble} src={speechBubble} alt="speechBubble" />
