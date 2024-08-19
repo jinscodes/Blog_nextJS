@@ -59,12 +59,42 @@ HTTP의 무상태 프로토콜 특성 덕분에, Server-Client 아키텍쳐에 �
 
 > 캐시처리를 하는 이유는 대량의 요청 등을 효율적으로 처리하기 위해서입니다. 또한, 캐시 사용을 통해 응답 시간을 줄이고 REST server 트랜잭션을 방지하기 하기 때문에 전반적인 응답시간, 성능, 서버의 자원 이용률 등을 향상시킬 수 있습니다. 즉, 캐시 처리의 목표는 클라이언트 측의 성능을 향상시키는 동시에 서버 측의 확장성을 높이는 것입니다.
 
+##### 균일한 인터페이스
+
+균일한 인터페이스는 모든 RESTful 웹 서비스 설계의 기본 중 하나입니다. 이는 서버가 정해진 표준 형식으로 데이터를 전송하는 것을 나타내고 있음을 의미합니다. 여기서 형식이 정해진 리소스를 REST에서는 "표현"이라고 일컫습니다. API를 사용하는 클라이언트들에게 노출될, API 리소스에 대한 균일한 API 인터페이스를 결정해야합니다. REST에서 말하는 균일한 인터페이스를 얻으려면, 구성 요소의 동작을 안내하는 4가지의 제약이 있습니다.
+
+###### 리소스 식별 (Identification of Resources)
+
+리소스가 URI로 식별됩니다. 비디오, 문서, 이미지 등과 같은 이름을 지정할 수 있는 것은 모두 리소스에 해당합니다. 즉, 모든 리소스는 URI라는 고유 식별자를 통해 식별됩니다. HTTP를 통해 REST API를 빌드하면, URL을 사용하여 API에서 액세스하는 리소스를 식별 할 수 있습니다. REST 제약 조건을 충족하려면 각 URL이 단일 리소스에 매핑되어야 하며 이 리소스에 대한 모든 액세스는 해당 URL을 통해 수행됩니다. 즉, 특정 리소스는 오직 하나의 URL만 가져야 한다는 뜻입니다.
+
+###### 표현을 통한 자원 조작 (Manipulation Of Resource through Representations)
+
+특정 리소스를 나타내는 URL을 바꾸지 않고도, 표현(Representation)을 활용해서 리소스를 조작할 수 있다.
+
+> URL은 Resource Representation에 포함되지 않는 정보이다.
+
+RESTful 애플리케이션은 동일한 URI에서 동일한 리소스의 두 개 이상의 표현을 지원할 수 있습니다. 또한, HTTP 메서드인 GET, POST, PUT, DELETE 등을 활용해서 리소스를 조작할 수 있습니다. 자원에 대한 요청을 할 때는 서버 자원의 표현(Resource Representation)으로 응답합니다. 이 "표현"은 클라이언트가 이해하고 조작 할 수 있는 형식으로 리소스의 현재 상태를 캡처합니다. "표현"을 추상적으로 설명하면 ‘메타 데이터를 가진 바이트 덩어리’라고 할 수 있다. 이 메타 데이터를 "표현"의 미디어 타입이라고 한다.
+
+---
+
+**4️⃣ REST API**
+
+REST API는 Representational State Transfer API의 약자로 REST를 기반으로 API 서비스를 구현한 것을 말합니다. 최근 OpenAPI, 마이크로 서비스 등을 제공하는 업체 대부분은 REST API를 제공하고 있습니다. 여기서 OpenAPI는 누구나 사용할 수 있게 공개된 API를 말합니다. 또한, 마이크로 서비스는 하나의 큰 애플리케이션을 여러 개의 작은 애플리케이션으로 쪼개어 변경과 조합이 가능하도록 만든 아키텍처를 말합니다.
+
+REST API는 크게 3가지 특징을 가집니다. 사내 시스템들을 REST API를 기반으로 개발하면, 시스템을 분산하여 확장성과 재사용성을 높여 유지보수 및 운용을 편리하게 할 수 있습니다. 뿐만 아니라, REST는 HTTP 표준을 기반으로 구현하기 때문에, HTTP를 지원하는 모든 프로그램 언어로 Server-Client를 구현할 수 있습니다. 또한, REST API를 제작하면 델파이 클라이언트 뿐만 아니라, 자바, C#, 웹 등을 이용해 클라이언트를 제작할 수 있습니다.
+
+**5️⃣ REST API 설계 기본 규칙**
+
 ---
 
 [](https://xxsxkz.tistory.com/entry/HTTP-2)
+
+[](https://hahahoho5915.tistory.com/54#google_vignette)
 
 [](https://velog.io/@alwaysryu13/REST-%ED%86%B5%EC%8B%A0%EC%9D%B4%EB%9E%80-Java%EB%A1%9C-REST%ED%86%B5%EC%8B%A0%EA%B5%AC%ED%98%84%ED%95%B4%EB%B3%B4%EA%B8%B0)
 
 [](https://www.ibm.com/kr-ko/topics/rest-apis)
 
 [](https://khj93.tistory.com/entry/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-REST-API%EB%9E%80-REST-RESTful%EC%9D%B4%EB%9E%80)
+
+[](https://aws.amazon.com/ko/what-is/restful-api/#:~:text=%EA%B7%A0%EC%9D%BC%ED%95%9C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%8A%94%20%EB%AA%A8%EB%93%A0,%ED%91%9C%ED%98%84%EA%B3%BC%20%EB%8B%A4%EB%A5%BC%20%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.)
