@@ -163,6 +163,8 @@ RESTful API를 설계하는 것에는 몇가지 규칙이 있습니다. URI는 �
 
 또한, 자원에 대한 행위는 HTTP Method로 표현합니다. HTTP Method는 GET, PUT, POST, DELETE 등 입니다. URI에는 HTTP Method가 들어가면 안됩니다. 예를 들어, `GET /members/delete/1` 보다는 `DELETE /members/1`을 사용해야합니다. 뿐만 아니라, URI 행위에 대한 동사표현을 삼가해야합니다. 즉, CRUD 기능을 나타내는 것을 URI에 사용하지 않으면 됩니다. 예를 들어, `GET /members/show/1`보다 `GET /members/1`을 사용해야 바람직합니다. 마지막으로, 경로 부분 중 변하는 값은 유일한 값을 사용해야합니다. 이 말은 즉, student를 생성하는 API의 경우 `route: POST /students` 그리고 삭제하는 경우에는 `route: DELETE /students/12`이렇게 사용해야 합니다.
 
+슬래시 구분자(/)는 계층 관계를 나타내는데 사용합니다. 예를 들어, `http://restapi.example.com/houses/apartments` 이 경우 houses가 최상위 계층이며 apartments가 그 하위 계층임을 나타냅니다. 다만, URI의 마지막 문자로는 슬래시는 사용하지 않습니다. URI에 포함되는 모든 글자는 리소스의 유일한 식별자로 사용되어야 합니다.URI가 다르다는 것은 리소스가 다르다는 것을 뜻하기 때문에 역으로 리소스가 달라지면 URI도 달라져야합니다. 또한, REST API는 분명한 URI를 만들어 통신을 하기 때문에 혼동을 주지 않도록 URI의 마지막 경로는 슬래시로 끝내지 않습니다.
+
 ---
 
 [](https://xxsxkz.tistory.com/entry/HTTP-2)
