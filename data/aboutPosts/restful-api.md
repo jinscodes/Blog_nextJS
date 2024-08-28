@@ -165,6 +165,14 @@ RESTful API를 설계하는 것에는 몇가지 규칙이 있습니다. URI는 �
 
 슬래시 구분자(/)는 계층 관계를 나타내는데 사용합니다. 예를 들어, `http://restapi.example.com/houses/apartments` 이 경우 houses가 최상위 계층이며 apartments가 그 하위 계층임을 나타냅니다. 다만, URI의 마지막 문자로는 슬래시는 사용하지 않습니다. URI에 포함되는 모든 글자는 리소스의 유일한 식별자로 사용되어야 합니다.URI가 다르다는 것은 리소스가 다르다는 것을 뜻하기 때문에 역으로 리소스가 달라지면 URI도 달라져야합니다. 또한, REST API는 분명한 URI를 만들어 통신을 하기 때문에 혼동을 주지 않도록 URI의 마지막 경로는 슬래시로 끝내지 않습니다.
 
+하이픈(-)은 URI 가독성을 높이는데 사용합니다. 불가피하게 긴 URI 경로를 설정해야한다면, 가독성을 높이기 위해 하이픈을 사용합니다. 밑줄(\_)은 가독성을 높이는데 사용합니다. 밑줄은 보기 어렵거나 밑줄 때문에 문자가 가려지기도 하므로 가독성을 위해 밑줄은 사용하지 않습니다.
+
+URI 경로에는 소문자가 적합합니다. URI 경로에서 대문자는 대부분 사용하지 않습니다. 그 이유는 RFC 3986 URI 문법 형식을 사용하는데 URI 스키마와 호스트를 제외하고는 대소문자를 구별하도록 규정하기 때문입니다.
+
+파일 확장자는 URI에 포함되지 않습니다. REST API에서는 메시지 바디 내용의 포맷을 나타내기 위한 파일 확장자를 URI 안에 포함시키지 않습니다. 그 대신, Accept header를 사용합니다. 예를 들어 `http://restapi.example.com/members/soccer/345/photo.jpg` 이렇게 사용하지 않고 `GET / members/soccer/345/photo HTTP/1.1 Host: restapi.example.com Accept: image/jpg` 이렇게 사용하는 것이 옳바릅니다.
+
+리소스 간에 연관 관계가 있는 경우 "/리소스명/리소스 ID/관계가 있는 다른 리소스명"과 같은 형태로 사용합니다. 예를 들어, `GET : /users/{userid}/devices (일반적으로 소유 ‘has’의 관계를 표현할 때)`
+
 ---
 
 [](https://xxsxkz.tistory.com/entry/HTTP-2)
