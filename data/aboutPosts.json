@@ -22,5 +22,11 @@
     "date": "2024-08-15",
     "path": "restful-api",
     "icon": "📡"
+  },
+  {
+    "title": "Webpack, Babel, 그리고 Polyfill",
+    "date": "2024-08-28",
+    "path": "webpack-babel-polyfill",
+    "icon": "💾"
   }
 ]
