@@ -48,3 +48,7 @@
 - 런타임에 필요한 모듈을 동적으로 로딩하고 해석한다.
 - 런타임에 추가적인 모듈을 필요로 할 때 유용하다.
 - systemJS 등이 있다.
+
+---
+
+[](https://velog.io/@greencloud/%EA%B7%B8%EB%9E%98%EC%84%9C-webpack%EC%9D%B4-%EB%AD%94%EB%8D%B0)
