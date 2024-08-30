@@ -211,7 +211,7 @@
     "title": "Turn on the server with node express!",
     "description": "How to start node express? For the project whatever we want, we need to set the server. Let's make and design the server together.",
     "date": "2023-01-06",
-    "category": ["Express"],
+    "category": ["Node"],
     "path": "start-express",
     "featured": false
   },
@@ -763,7 +763,7 @@
     "title": "Introduction To Webpack",
     "description": "webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph from one or more entry points and then combines every module your project needs into one or more bundles, which are static assets to serve your content from.",
     "date": "2023-12-10",
-    "category": ["WebCS", "ReactJs", "Express"],
+    "category": ["WebCS", "ReactJs", "Node"],
     "path": "webpack",
     "featured": false
   }
