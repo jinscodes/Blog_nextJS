@@ -49,6 +49,13 @@
 - 런타임에 추가적인 모듈을 필요로 할 때 유용하다.
 - systemJS 등이 있다.
 
+> 요약
+>
+> 1. webpack은 정적 모듈 번들러 중 하나이다.
+> 2. 모듈은 기능에 따라 코드를 여러 단위로 분해한 것이다.
+> 3. 모듈 번들러는 JS 모듈을 브라우저에서 실행할 수 있는 단일 파일 묶음이다.
+> 4. webpack은 Entry, Output, Loaders, Plugins, Mode 등으로 유연하게 설정할 수 있다.
+
 ---
 
 [](https://velog.io/@greencloud/%EA%B7%B8%EB%9E%98%EC%84%9C-webpack%EC%9D%B4-%EB%AD%94%EB%8D%B0)
