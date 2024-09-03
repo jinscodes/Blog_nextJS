@@ -72,6 +72,20 @@
 
 ---
 
+**3️⃣ Polyfill은 무엇인가?**
+
+Polyfill은 개발자가 특정 기능이 지원되지 않은 브라우저를 위해 사용할 수 있는 코드 조각이나 플러그인을 의미한다. 브라우저에서 지원하지 않는 기능들을에 대한 호환성 작업을 처리한다(채워 넣는다)해서 polyfill이라고 칭한다.
+
+##### Babel-Polyfill
+
+Babel은 이러한 Polyfill을 손쉽게 지원하기 위해 babel-polyfill 기능을 지원한다. 앞서, 문법을 컴파일 해서 javascript로 compile 한다고 했음에도 불구하고 polyfill이 필요한 이유는 babel이 transpiler 역할만 하기 때문이다.
+
+즉, babel을 사용한다고 최신 함수를 사용할 수 있는 건 아니다. Babel은 문법을 변환하여 javascript 로 변환하는 transpiler 역할만 하기 때문에 지원되지 않는 기능들을 사용할 수 없다.
+
+앞에서 설명한대로 polyfill 은 프로그램이 처음에 시작될 때 지원하지 않는 기능들을 추가하는 것이다. 즉, babel 은 컴파일시에 실행되고 babel-polyfill 은 런타임에 실행되는 것입니다.
+
+---
+
 [](https://velog.io/@greencloud/%EA%B7%B8%EB%9E%98%EC%84%9C-webpack%EC%9D%B4-%EB%AD%94%EB%8D%B0)
 
 [](https://bravenamme.github.io/2020/02/12/what-is-babel/)
