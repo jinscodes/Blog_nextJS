@@ -28,5 +28,11 @@
     "date": "2024-08-28",
     "path": "webpack-babel-polyfill",
     "icon": "💾"
+  },
+  {
+    "title": "SPA, CSR, SSR의 차이 + SSG와 ISR이란?",
+    "date": "2024-09-04",
+    "path": "spa-csr-ssr",
+    "icon": "🖥️"
   }
 ]
