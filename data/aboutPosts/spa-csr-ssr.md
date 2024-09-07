@@ -7,3 +7,9 @@ SPA는 이름에서 알 수 있듯 단일 페이지 어플리케이션을 의미
 **2️⃣ SPA 단점**
 
 SPA도 무적은 아니다. 자바스크립트로 DOM 조작이 빈번하게 일어나기 때문에 브라우저의 성능을 저하한다는 문제가 있다. 이러한 문제를 해결하기 위한 방법으로 Virtual DOM이라는 개념이 생겼다. SPA 프레임워크인 React, Angular, Vue는 대표적으로 Virtual DOM을 이용해 SPA를 구현하는 기술들이다.
+
+##### Virtual DOM
+
+Virtual DOM 트리로 HTML 정보를 저장하고 있다가, 이 트리에 변경이 발생하면 모든 변화를 모아 단 한 번 브라우저를 호출해 화면을 갱신하는 방법을 사용한다. 이러한 방법을 통해 브랑줘와의 불필요한 상호작용을 줄이면서 사용자에게 빠른 인터렉션을 제공할 수 있게 된다.
+
+![virtualDOM](https://github.com/user-attachments/assets/96b5b2d1-6652-448b-a679-0e3f0dcb2188)
