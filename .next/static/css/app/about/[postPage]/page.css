@@ -247,6 +247,8 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Post/MarkdownViewer/MarkdownViewer.module.scss ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .MarkdownViewer_markdown__VX352 {
+  display: flex;
+  flex-direction: column;
   font-family: "Noto Sans";
   font-size: 20px;
 }
@@ -295,7 +297,8 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .page_section__gW6T3 .page_post_container__jB3HW {
-  width: 850px;
+  max-width: 850px;
+  width: 100%;
   padding-top: 200px;
 }
 .page_section__gW6T3 .page_post_container__jB3HW .page_title_container__YjA46 {
@@ -307,4 +310,15 @@
 }
 .page_section__gW6T3 .page_content_container__cv8Cg {
   margin-top: 15px;
+}
+
+@media all and (max-width: 850px) {
+  .page_title_container__YjA46 {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+  .page_content_container__cv8Cg {
+    min-width: calc(100% - 100px) !important;
+    padding: 0 25px;
+  }
 }

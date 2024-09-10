@@ -7,7 +7,8 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   .post_container {
-    width: 850px;
+    max-width: 850px;
+    width: 100%;
     padding-top: 200px;
 
     .title_container {
@@ -22,5 +23,18 @@
 
   .content_container {
     margin-top: 15px;
+  }
+}
+
+// mobile
+@media all and (max-width: 850px) {
+  .title_container {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+
+  .content_container {
+    min-width: calc(100% - 100px) !important;
+    padding: 0 25px;
   }
 }
