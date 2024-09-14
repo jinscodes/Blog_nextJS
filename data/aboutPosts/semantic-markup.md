@@ -16,12 +16,17 @@
 
 ![layout-tag](https://github.com/user-attachments/assets/cac8e470-1a14-41d8-9482-0036a6aaf276)
 
-레이아웃과 관련된 태그들이다. 위의 태그들은 직관적인 이름처럼 헤더, 푸터, 메인 콘텐츠와 사이드바에 이용할 수 있습니다.
+레이아웃과 관련된 태그들이다. 위의 태그들은 직관적인 이름처럼 헤더, 푸터, 메인 콘텐츠와
+사이드바에 이용할 수 있습니다.
 
 `<nav>` `<ul>` `<ol>` `<li>`
 
-![nav](https://github.com/user-attachments/assets/cac8e470-1a14-41d8-9482-0036a6aaf276)
+![nav](https://github.com/user-attachments/assets/cf6cc19f-0225-4bc7-aedd-581012e37e9e)
 
 `<nav>`는 GNB 등 내비게이션 메뉴를 묶을 때 주로 사용하는 태그이다. 보통 `<ul>` 태그와 함께 사용한다.
 
 여기서, `<ul>`은 unordered list를 의미하고, `<ol>`는 ordered list를 의미한다. `<li>`는 `ul`과 `ol`의 하위 태그로 사용한다.
+
+![ol-ul](https://github.com/user-attachments/assets/39b240cb-51c8-42de-8db5-864a61e4016c)
+
+`<ul>` 목차의 앞에 붙는 불릿이나, `<ol>` 목차의 순서를 나타내는 모양은 커스텀 가능하다.
