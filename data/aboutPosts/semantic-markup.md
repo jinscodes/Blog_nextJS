@@ -42,3 +42,21 @@ article과 section은 혼동하기 쉽다. `article`은 독립적으로 보여�
 ![Headings](https://github.com/user-attachments/assets/4cd5a69c-2a6f-4e26-bf62-40c1dcbe81d1)
 
 `h1`부터 `h6`까지는 제목의 스케일을 표현하기 위한 태그이다. 중요도는 순차적으로 `h1`이 가장 중요하고 갈수록 낮아진다. 폰트 사이즈가 아닌 해딩 태그를 사용하는 이유는 보조 도구를 사용하는 시각 장애인 또는 컴퓨터(검색 엔진)는 각 글씨를 굵기의 정도로 구분하기 힘들기 때문이다.
+
+**HTML Document Templates: `<b>` `<strong>` `<i>` `<em>` `<u>` `<ins>` `<s>` `<del>`**
+
+![templates](https://github.com/user-attachments/assets/7a0da1d4-335e-4de8-a31d-f14e48d9b9bb)
+
+HTML에서 서식을 표시할 때는 위와 같은 태그들을 쓴다. 우리가 보는 화면(결과)은 같지만 태그에 차이가 있다. 왼쪽의 `b`, `i`, `u`, `s`는 단순히 시각적으로 그렇게 ‘보이게’ 만들 뿐이지만 오른쪽에 있는 `strong`, `em`, `ins`, `del`은 의미적으로 ‘정보를 전달’한다.
+
+**Link: `<a>` `<button>`**
+
+![Link](https://github.com/user-attachments/assets/de24cca4-944a-4a71-88f7-c2a1f80bdf08)
+
+`a` 태그와 `button`의 차이는 동작 방식에 있다. `a`태그는 페이지를 말그대로 이동할 때 사용된다. 반면, `button`태그는 폼 제출이나 행 추가 등 행위(액션)을 취할 . 때 사용한다. 즉, 사용하기 전 특정 버튼이 어떤 목적으로 사용되는지 생각해보고 사용해야 적절하다.
+
+---
+
+[](https://yozm.wishket.com/magazine/detail/2495/)
+
+[](https://velog.io/@hoho_0815/%EC%8B%9C%EB%A7%A8%ED%8B%B1-%EB%A7%88%ED%81%AC%EC%97%85Semantic-Markup)
