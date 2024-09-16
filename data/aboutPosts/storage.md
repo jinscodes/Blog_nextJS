@@ -1,0 +1,21 @@
+**1️⃣ 로컬 스토리지(Local Storage)**
+
+로컬 스토리지는 웹 브라우저에 데이터를 저장하고 관리할 수 있는 웹 스토리지 객체로, 브라우저 내에 키-값을 저장할 수 있게 한다. 로컬 스토리지의 특징 중 하나는 key-value 쌍으로 데이터를 저장한다는 점이다. 하지만, 여기서 키, 값 모두 문자열이어야 한다는 특징이 있다. 만약, number나 object와 같이 다른 타입의 데이터를 넣더라도 모두 문자열로 변환된다. 또 다른 특징으로는, 데이터가 영구적으로 저장된다. 다시 말하자면, 로컬스토리지에 저장된 데이터는 영구적으로 저장되기 때문에 브라우저를 종료하더라도 계속 남아있다. 로컬스토리지는 대략 5MB~10MB정도 용량의 데이터를 저장할 수 있다.
+
+자바스크립트 기준으로 로컬 스토리지와 관련된 코드는 아래와 같다.
+
+![localStorage](https://github.com/user-attachments/assets/e818b616-db66-4c44-a4ac-48c12466d734)
+
+이처럼, `setItem`, `getItem`, `removeItem`, `clear`처럼 메서드를 사용할 수도 있고, 아래와 같이 일반 객체처럼 사용도 가능하다.
+
+![localStorage-object](https://github.com/user-attachments/assets/b9412a22-4e94-4923-80f0-11331c23c2aa)
+
+위와 같은 코드로 저장된 데이터는 브라우저 개발자 도구의 **Application>Storage>Local storage**에서 확인할 수 있다.
+
+**2️⃣ 세션 스토리지 (Session Storage)**
+
+**3️⃣ 쿠키 (Cookie)**
+
+---
+
+[](<https://velog.io/@jellyjw/%EB%A1%9C%EC%BB%AC%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%84%B8%EC%85%98%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%BF%A0%ED%82%A4%EC%9D%98-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EC%B0%A8%EC%9D%B4%EC%A0%90#:~:text=2.-,%EB%A1%9C%EC%BB%AC%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80(Local%20Storage),%EC%9D%84%20%EC%A0%80%EC%9E%A5%ED%95%A0%20%EC%88%98%20%EC%9E%88%EA%B2%8C%20%ED%95%B4%EC%A4%80%EB%8B%A4.>)
