@@ -26,6 +26,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={maple.className}>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="UsJTCqcbonDCWQSJ3jHs3BjFeP8JWdMq3ZcZ0eljW-Y"
+        />
+      </head>
       <body className={st.body}>
         <Nav />
         <main className={st.main}>
