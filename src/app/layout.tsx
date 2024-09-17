@@ -13,6 +13,9 @@ export const sans = Open_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Jay's blog",
   description: "This is Jay's engineering blog. Welcome!",
+  verification: {
+    google: "UsJTCqcbonDCWQSJ3jHs3BjFeP8JWdMq3ZcZ0eljW-Y",
+  },
 };
 
 export const maple = localFont({
