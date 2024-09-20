@@ -45,6 +45,8 @@
 
 ![cookie-maxage](https://github.com/user-attachments/assets/6df42bc9-b1b2-4d65-a599-e8639dc17c0e)
 
+마지막으로, 쿠키는 보안에 주의해야한다. 다른 스토리지보다 상대적으로 보안에 취약하기 때문에, 민감한 정보는 HTTPS와 같이 암호화된 프로토콜을 이용하여 데이터를 전송해야한다.
+
 ---
 
 [](<https://velog.io/@jellyjw/%EB%A1%9C%EC%BB%AC%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%84%B8%EC%85%98%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%BF%A0%ED%82%A4%EC%9D%98-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EC%B0%A8%EC%9D%B4%EC%A0%90#:~:text=2.-,%EB%A1%9C%EC%BB%AC%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80(Local%20Storage),%EC%9D%84%20%EC%A0%80%EC%9E%A5%ED%95%A0%20%EC%88%98%20%EC%9E%88%EA%B2%8C%20%ED%95%B4%EC%A4%80%EB%8B%A4.>)
