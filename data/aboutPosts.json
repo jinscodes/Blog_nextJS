@@ -46,5 +46,11 @@
     "date": "2024-09-17",
     "path": "storage",
     "icon": "🎒"
+  },
+  {
+    "title": "MVC과 MVVM 패턴",
+    "date": "2024-09-21",
+    "path": "mvc-mvvm-pattern",
+    "icon": "🌐"
   }
 ]
