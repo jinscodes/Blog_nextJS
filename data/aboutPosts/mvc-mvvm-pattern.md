@@ -43,6 +43,26 @@ MVC를 사용하는 이유는 애플리케이션에 필요한 3가지 목적을 
 
 MVC 패턴을 사용하는 프레임워크나 라이브러리에는 대표적으로 React, AngularJS, php의 코드이그나이터, 파이썬, django 등이 있다.
 
+**3️⃣ MVVM 패턴**
+
+MVVM 패턴은 Model, View, ViewModel의 약자로 프로그램의 비지니스 로직과 프레젠테이션 로직을 UI로 명확히 분리하는 패턴이다.
+
+![mvvm](https://github.com/user-attachments/assets/46d9fd90-ed1c-45a7-bc82-688a09f5f74e) <mvvm 패턴구조>
+
+![mvvm-model](https://github.com/user-attachments/assets/f0663604-8201-4b40-ae8b-e9025de6fbb8) <mvvm>
+
+##### Model
+
+데이터를 다루는 부분이다. 비즈니스 로직을 포함한다. 구체적으로는 데이터를 가져오고 저장하는 역할을 수행한다. 또한, 데이터베이스, 네트워크 요청 또는 파일 시스템과 같은 데이터 소스와 상호 작용한다는 특징이 있다.
+
+##### View
+
+레이아웃과 화면을 보여주는 역할을 한다. 사용자 인터페이스를 담당하는 부분이다. 그리고 사용자가 보는 화면을 표시하고, 사용자 입력을 처리한다. 보통, XAML과 같은 마크업 언어를 사용하여 디자인 한다.
+
+##### ViewModel
+
+ViewModel은 위의 Controller와 비슷하게 View와 Model 사이에서 중재자 역할을 수행한다. View에서 발생하는 이벤트를 감지하고, 해당 이벤트에 맞는 비즈니스 로직을 수행한다. 뿐만 아니라, Model과 상호작용하여 데이터를 가지고 오거나 업데이트하고, View에 데이터를 업데이트 하는 역할을 수행한다. 또한, View에 표시할 데이터를 가공하여 제공하는 역할도 한다.
+
 ---
 
 [](https://m.blog.naver.com/jhc9639/220967034588)
