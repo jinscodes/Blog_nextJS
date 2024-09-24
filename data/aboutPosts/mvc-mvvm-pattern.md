@@ -63,6 +63,25 @@ MVVM 패턴은 Model, View, ViewModel의 약자로 프로그램의 비지니스 
 
 ViewModel은 위의 Controller와 비슷하게 View와 Model 사이에서 중재자 역할을 수행한다. View에서 발생하는 이벤트를 감지하고, 해당 이벤트에 맞는 비즈니스 로직을 수행한다. 뿐만 아니라, Model과 상호작용하여 데이터를 가지고 오거나 업데이트하고, View에 데이터를 업데이트 하는 역할을 수행한다. 또한, View에 표시할 데이터를 가공하여 제공하는 역할도 한다.
 
+**4️⃣ MVVM 동작 및 특징**
+
+MVVM 패턴은 일련의 순서를 가지고 동작한다.
+
+1. 사용자의 Action들은 View를 통해 전달된다
+2. View에 Action이 전달되면, Command 패턴으로 ViewModel에 Action을 전달한다
+3. ViewModel은 Model에게 데이터를 요청한다
+4. Model은 ViewModel에게 요청받은 데이터를 응답한다
+5. ViewModel은 응답 받은 데이터를 가공하여 저장한다
+6. View는 ViewModel과 Data Binding을 하여 화면을 나타낸다
+
+##### 장점
+
+MVVM 패턴은 View와 Model 사이의 의존성이 없다. 의존성이 없기 때문에 테스트하기 수월하다. 또한, Command 패턴과 Data Binding을 사용하여 View와 ViewModel 사이의 의존성 또한 없앤 디자인패턴이다. MVC 패턴과 마찬가지로, 각각의 부분은 독립적이기 때문에(View와 ViewModel이 1:n 관계이기 때문) 모듈화 하여 효율적으로 개발할 수 있다.
+
+##### 단점
+
+MVVM 패턴의 단점은 ViewModel의 설계가 쉽지 않고, 뷰모델이 비대해질 수 있다. 또한, 데이터 바인딩으로 인한 메모리 소모가 심하다.
+
 ---
 
 [](https://m.blog.naver.com/jhc9639/220967034588)
