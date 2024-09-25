@@ -51,6 +51,12 @@
     "title": "MVC과 MVVM 패턴",
     "date": "2024-09-21",
     "path": "mvc-mvvm-pattern",
+    "icon": "💠"
+  },
+  {
+    "title": "HTTP와 HTTPS의 차이?",
+    "date": "2024-09-21",
+    "path": "http-https",
     "icon": "🌐"
   }
 ]
