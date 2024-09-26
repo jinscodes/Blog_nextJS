@@ -1,6 +1,6 @@
 **1️⃣ HTTP란 무엇인가?**
 
-HTTP는 Hyper Text Transition Protocol의 약자로, 네트워크를 통해 데이터를 전송하는 데 사용되는 프로토콜이다. 다른 말로, HTTP는 정보를 표현하기 위한 규정된 순서와 구문이다. 웹 사이트 콘텐츠 및 API 호출을 포함하여 인터넷을 통해 전송되는 대부분의 정보는 HTTP 프로토콜을 사용한다.
+HTTP는 Hyper Text Transfer Protocol의 약자로, 네트워크를 통해 데이터를 전송하는 데 사용되는 프로토콜이다. 다른 말로, HTTP는 정보를 표현하기 위한 규정된 순서와 구문이다. 웹 사이트 콘텐츠 및 API 호출을 포함하여 인터넷을 통해 전송되는 대부분의 정보는 HTTP 프로토콜을 사용한다.
 
 HTTP 메세지에는 요청(Request)와 응답(Response)라는 주요한 두가지 유형이 존재한다.
 
@@ -32,8 +32,16 @@ HTTP Request는 아래와 같은 부분을 포함하고 있다.
 
 본문은 추가 콘텐츠를 서버로 보낼 수 있는 HTTP 요청의 일부이다. 본문은 현재 요청을 제대로 처리하기 위해 서버에 필요한 추가 정보를 보내기 위함이다. 요청의 본문은 JSON 또는 XML의 파일 유형으로 되어있다. 위의 예시에서는 요청의 본문을 서버로 보내지 않았다.
 
+**2️⃣ HTTPS란 무엇인가?**
+
+HTTPS는 Hyper Text Transfer Protocol Security의 약자로 웹 브라우저와 웹 사이트 간에 데이터를 전송하는 데 사용되는 기본 프로토콜인 HTTP의 보안 버전이다. HTTPS는 데이터 전송의 보안을 강화하기 위해 암호화 한다.
+
+모든 웹사이트, 특히 로그인 자격 증명이 필요한 웹 사이트의 경우 무조건 HTTPS를 사용해야 한다. 크롭 등 최신 웹 브라우저에서는 HTTPS를 사용하는 웹과 사용하지 않는 웹이 다르게 표시된다(HTTPS가 아닌 브라우저는 안전하지 않은 브라우저로 취급). 그만큼 최신에는 HTTPS를 중시한다.
+
 ---
 
 [](https://www.cloudflare.com/ko-kr/learning/ssl/why-is-http-not-secure/)
 
 [](https://testmanager.tistory.com/346)
+
+[](https://www.cloudflare.com/ko-kr/learning/ssl/what-is-https/)
