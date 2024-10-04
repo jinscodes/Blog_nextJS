@@ -12,6 +12,10 @@ Dev community tried to improve the overall user and developer experience around 
 
 Not only was the overall size of the application a challenge, but also a huge gap between the code that developers write and the code that the browsers could understand is created. So, developers need helpers called polyfills to make sure that the browsers were able to interpret the code.
 
+To solve these issues, webpack is created. Webpack is a static module bundler.
+
+#### Why webpack is the answer
+
 ---
 
 [](https://webpack.js.org/api/)
