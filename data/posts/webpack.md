@@ -16,6 +16,8 @@ To solve these issues, webpack is created. Webpack is a static module bundler.
 
 #### Why webpack is the answer
 
+The webpack goes through the package and creates dependency graph which consists of various modules. Then, depending on this graph, it creates new package which consists of the minimum number of files required, often just a single bundle.js file which can be plugged in to the html file easily and used for the application.
+
 ---
 
 [](https://webpack.js.org/api/)
