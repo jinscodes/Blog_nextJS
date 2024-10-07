@@ -57,6 +57,31 @@
   align-items: center;
   margin-top: 180px;
 }
+.AllPosts_all_post__yXPwI .AllPosts_serach_container__tvtjk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -50px 0 50px;
+}
+.AllPosts_all_post__yXPwI .AllPosts_serach_container__tvtjk p {
+  font-size: 16px;
+  margin: 0 20px 0 5px;
+}
+.AllPosts_all_post__yXPwI .AllPosts_serach_container__tvtjk img {
+  width: 20px;
+  height: 20px;
+}
+.AllPosts_all_post__yXPwI .AllPosts_serach_container__tvtjk .AllPosts_search__pVICG {
+  box-sizing: border-box;
+  width: 300px;
+  height: 30px;
+  padding-left: 12px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+.AllPosts_all_post__yXPwI .AllPosts_serach_container__tvtjk .AllPosts_search__pVICG:focus {
+  outline: 1px solid black;
+}
 .AllPosts_all_post__yXPwI .AllPosts_postcard_container__zbxeV {
   display: grid;
   grid-template-columns: repeat(auto-fit, 350px);
