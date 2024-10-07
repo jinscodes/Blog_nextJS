@@ -4,6 +4,37 @@
   align-items: center;
   margin-top: 180px;
 
+  .serach_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -50px 0 50px;
+
+    p {
+      font-size: 16px;
+      margin: 0 20px 0 5px;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .search {
+      box-sizing: border-box;
+      width: 300px;
+      height: 30px;
+
+      padding-left: 12px;
+      border: 1px solid gray;
+      border-radius: 4px;
+    }
+
+    .search:focus {
+      outline: 1px solid black;
+    }
+  }
+
   .postcard_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 350px);
