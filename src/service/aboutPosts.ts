@@ -1,28 +1,16 @@
 import { readFile } from "fs/promises";
 import path from "path";
+import { AboutPost, AboutPostData } from "types/aboutPost";
 
-export type Post = {
-  title: string;
-  date: Date;
-  path: string;
-  icon: string;
-};
-
-export type PostData = Post & {
-  content: string;
-  next: Post | null;
-  prev: Post | null;
-};
-
-export const getAllPosts = async (): Promise<Post[]> => {
+export const getAllPosts = async (): Promise<AboutPost[]> => {
   const filePath = path.join(process.cwd(), "data", "aboutPosts.json");
 
   return readFile(filePath, "utf-8")
-    .then<Post[]>(JSON.parse)
+    .then<AboutPost[]>(JSON.parse)
     .then((posts) => posts.sort((a, b) => (a.date < b.date ? -1 : 1)));
 };
 
-export const getPostData = async (fileName: string): Promise<PostData> => {
+export const getPostData = async (fileName: string): Promise<AboutPostData> => {
   const filePath = path.join(
     process.cwd(),
     "data",

@@ -1,9 +1,9 @@
 import ClassificationText from "components/ClassificationText/ClassificationText";
 import PostCard from "components/Post/PostCard/PostCard";
-import { Post } from "service/posts";
 
 import search from "assets/svg/Search.svg";
 import Image from "next/image";
+import { Post } from "types/post";
 import st from "./AllPosts.module.scss";
 
 interface Prop {
@@ -13,8 +13,6 @@ interface Prop {
 }
 
 const AllPosts = ({ posts, title, type }: Prop) => {
-  console.log(type);
-
   return (
     <div className={st.all_post}>
       <ClassificationText content={title} />

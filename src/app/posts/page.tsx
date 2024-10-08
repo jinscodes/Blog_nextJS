@@ -1,9 +1,8 @@
-import { getAllPosts } from "service/posts";
-
 import PostTitle from "assets/images/PostTitle.png";
 import AllPost from "components/Post/AllPost/AllPosts";
 
 import Image from "next/image";
+import { getAllPosts } from "service/posts";
 import st from "./PostPage.module.scss";
 
 const Posts = async () => {
