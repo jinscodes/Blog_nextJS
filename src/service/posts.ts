@@ -49,9 +49,9 @@ export const getErrorPosts = async (): Promise<Post[]> => {
 };
 
 export const getClassedPosts = async (classedFile: string): Promise<Post[]> => {
-  const allPost = await getAllPosts();
+  const allPosts = await getAllPosts();
 
-  const filteredPosts = allPost.filter((posts) =>
+  const filteredPosts = allPosts.filter((posts) =>
     posts.category.includes(classedFile)
   );
 

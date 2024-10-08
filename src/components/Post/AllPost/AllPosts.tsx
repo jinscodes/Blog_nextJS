@@ -7,6 +7,7 @@ import arrow from "assets/svg/Arrow.svg";
 import search from "assets/svg/Search.svg";
 import Image from "next/image";
 import { useState } from "react";
+import { filteredPosts } from "service/filteredPosts";
 import { Post } from "types/post";
 import st from "./AllPosts.module.scss";
 
@@ -17,7 +18,14 @@ interface Prop {
 }
 
 const AllPosts = ({ posts, title, type }: Prop) => {
+  const [searchWord, setSearchWord] = useState<string>();
   const [isEmpty, setIsEmpty] = useState<boolean>(false);
+
+  const handleClick = () => {
+    filteredPosts(searchWord!);
+  };
+
+  console.log(searchWord);
 
   return (
     <div className={st.all_post}>
@@ -32,13 +40,19 @@ const AllPosts = ({ posts, title, type }: Prop) => {
             onChange={(e) => {
               if (e.currentTarget.value.length !== 0) {
                 setIsEmpty(true);
+                setSearchWord(e.currentTarget.value);
               } else {
                 setIsEmpty(false);
               }
             }}
           />
           {isEmpty && (
-            <Image src={arrow} alt="right-arrow" className={st.right_arrow} />
+            <Image
+              src={arrow}
+              alt="right-arrow"
+              className={st.right_arrow}
+              onClick={() => handleClick()}
+            />
           )}
         </div>
       )}
