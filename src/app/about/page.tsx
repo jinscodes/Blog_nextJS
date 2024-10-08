@@ -4,11 +4,12 @@ import puppyWalking from "assets/images/puppy_walking.gif";
 import speechBubble from "assets/images/speech_bubble.png";
 import TextButton from "components/About/TextButton";
 import Image from "next/image";
-import { Post, getAllPosts } from "service/aboutPosts";
+import { getAllPosts } from "service/aboutPosts";
+import { AboutPost } from "types/aboutPost";
 import st from "./page.module.scss";
 
 const About = async () => {
-  const posts: Post[] = await getAllPosts();
+  const posts: AboutPost[] = await getAllPosts();
 
   return (
     <>
@@ -28,7 +29,7 @@ const About = async () => {
       <div className={st.link_page}>
         <Image className={st.laon} src={laon} alt="laon" />
         <div className={st.content_container}>
-          {posts.map((post, idx) => (
+          {posts.map((post: AboutPost) => (
             <TextButton title={post.title} icon={post.icon} path={post.path} />
           ))}
         </div>
