@@ -1,7 +1,7 @@
 import CategoryPill from "components/CategoryPill/CategoryPill";
 import ProfileAndId from "components/ProfileAndId/ProfileAndId";
 import Link from "next/link";
-import { Post } from "service/posts";
+import { Post } from "types/post";
 import st from "./ErrorPost.module.scss";
 
 interface Prop {
