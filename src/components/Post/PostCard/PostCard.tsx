@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Post } from "service/posts";
-
 import CategoryPill from "components/CategoryPill/CategoryPill";
 import ProfileAndId from "components/ProfileAndId/ProfileAndId";
 
+import { Post } from "types/post";
 import st from "./PostCard.module.scss";
 
 interface Prop {
