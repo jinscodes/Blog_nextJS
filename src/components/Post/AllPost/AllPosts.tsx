@@ -14,10 +14,9 @@ import st from "./AllPosts.module.scss";
 interface Prop {
   posts: Post[];
   title: string;
-  type?: "all";
 }
 
-const AllPosts = ({ posts, title, type }: Prop) => {
+const AllPosts = ({ posts, title }: Prop) => {
   const [displayedPosts, setDisplayedPosts] = useState<Post[]>();
   const [searchWord, setSearchWord] = useState<string>();
   const [isEmpty, setIsEmpty] = useState<boolean>(false);
@@ -42,32 +41,30 @@ const AllPosts = ({ posts, title, type }: Prop) => {
     <div className={st.all_post}>
       <ClassificationText content={title} />
 
-      {type === "all" && (
-        <div className={st.serach_container}>
-          <Image src={search} alt="search-glass" />
-          <p>Search</p>
-          <input
-            className={st.search}
-            onKeyDown={(e) => activeEnter(e)}
-            onChange={(e) => {
-              if (e.currentTarget.value.length !== 0) {
-                setIsEmpty(true);
-                setSearchWord(e.currentTarget.value);
-              } else {
-                setIsEmpty(false);
-              }
-            }}
+      <div className={st.serach_container}>
+        <Image src={search} alt="search-glass" />
+        <p>Search</p>
+        <input
+          className={st.search}
+          onKeyDown={(e) => activeEnter(e)}
+          onChange={(e) => {
+            if (e.currentTarget.value.length !== 0) {
+              setIsEmpty(true);
+              setSearchWord(e.currentTarget.value);
+            } else {
+              setIsEmpty(false);
+            }
+          }}
+        />
+        {isEmpty && (
+          <Image
+            src={arrow}
+            alt="right-arrow"
+            className={st.right_arrow}
+            onClick={() => handleClick()}
           />
-          {isEmpty && (
-            <Image
-              src={arrow}
-              alt="right-arrow"
-              className={st.right_arrow}
-              onClick={() => handleClick()}
-            />
-          )}
-        </div>
-      )}
+        )}
+      </div>
 
       <div className={st.postcard_container}>
         {displayedPosts?.map((post, idx) => (
