@@ -1,7 +1,7 @@
 import st from "./ProfileAndId.module.scss";
 
 interface Props {
-  date: Date;
+  date: Date | string;
   size?: "sm";
 }
 
