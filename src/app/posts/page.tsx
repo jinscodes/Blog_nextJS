@@ -15,7 +15,7 @@ const Posts = async () => {
           <Image className={st.post_title} src={PostTitle} alt="" />
         </div>
       </div>
-      <AllPost posts={posts} title="All Posts" type="all" />
+      <AllPost posts={posts} title="All Posts" />
     </div>
   );
 };
