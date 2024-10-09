@@ -5,6 +5,7 @@
   margin-top: 180px;
 
   .serach_container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +25,6 @@
       box-sizing: border-box;
       width: 300px;
       height: 30px;
-
       padding-left: 12px;
       border: 1px solid gray;
       border-radius: 4px;
@@ -32,6 +32,11 @@
 
     .search:focus {
       outline: 1px solid black;
+    }
+
+    .right_arrow {
+      position: absolute;
+      right: 10px;
     }
   }
 
