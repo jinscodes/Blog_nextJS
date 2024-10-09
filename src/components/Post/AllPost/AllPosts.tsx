@@ -6,8 +6,8 @@ import PostCard from "components/Post/PostCard/PostCard";
 import arrow from "assets/svg/Arrow.svg";
 import search from "assets/svg/Search.svg";
 import Image from "next/image";
-import { useState } from "react";
-import { filteredPosts } from "service/filteredPosts";
+import { KeyboardEvent, useEffect, useState } from "react";
+import { filterPosts } from "service/filterPosts";
 import { Post } from "types/post";
 import st from "./AllPosts.module.scss";
 
@@ -18,14 +18,25 @@ interface Prop {
 }
 
 const AllPosts = ({ posts, title, type }: Prop) => {
+  const [displayedPosts, setDisplayedPosts] = useState<Post[]>();
   const [searchWord, setSearchWord] = useState<string>();
   const [isEmpty, setIsEmpty] = useState<boolean>(false);
 
   const handleClick = () => {
-    filteredPosts(searchWord!);
+    const filteredPosts = filterPosts(searchWord!);
+
+    setDisplayedPosts(filteredPosts);
   };
 
-  console.log(searchWord);
+  const activeEnter = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      handleClick();
+    }
+  };
+
+  useEffect(() => {
+    setDisplayedPosts(posts);
+  }, []);
 
   return (
     <div className={st.all_post}>
@@ -37,6 +48,7 @@ const AllPosts = ({ posts, title, type }: Prop) => {
           <p>Search</p>
           <input
             className={st.search}
+            onKeyDown={(e) => activeEnter(e)}
             onChange={(e) => {
               if (e.currentTarget.value.length !== 0) {
                 setIsEmpty(true);
@@ -58,7 +70,7 @@ const AllPosts = ({ posts, title, type }: Prop) => {
       )}
 
       <div className={st.postcard_container}>
-        {posts.map((post, idx) => (
+        {displayedPosts?.map((post, idx) => (
           <PostCard post={post} key={idx} />
         ))}
       </div>

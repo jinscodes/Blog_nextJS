@@ -1,10 +1,10 @@
 export type Post = {
   title: string;
   description: string;
-  date: Date;
+  date: Date | string;
   category: string[];
   path: string;
-  featured: boolean;
+  featured: boolean | undefined;
 };
 
 export type PostData = Post & {
