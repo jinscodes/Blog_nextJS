@@ -37,6 +37,8 @@ const AllPosts = ({ posts, title }: Prop) => {
     setDisplayedPosts(posts);
   }, []);
 
+  useEffect(() => {}, [searchWord]);
+
   return (
     <div className={st.all_post}>
       <ClassificationText content={title} />
@@ -50,10 +52,10 @@ const AllPosts = ({ posts, title }: Prop) => {
           onChange={(e) => {
             if (e.currentTarget.value.length !== 0) {
               setIsEmpty(true);
-              setSearchWord(e.currentTarget.value);
             } else {
               setIsEmpty(false);
             }
+            setSearchWord(e.currentTarget.value);
           }}
         />
         {isEmpty && (
