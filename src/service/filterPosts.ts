@@ -2,7 +2,7 @@ import { Post } from "types/post";
 import json from "../../data/posts.json";
 
 export const filterPosts = (title: string): Post[] => {
-  const trimedTitle: string = title?.trim();
+  const trimedTitle: string = title?.toLocaleLowerCase().trim();
   let filteredPosts;
 
   if (!trimedTitle) {
@@ -11,7 +11,9 @@ export const filterPosts = (title: string): Post[] => {
     );
     filteredPosts = excludePresentation.reverse();
   } else {
-    filteredPosts = json.filter((post) => post.title.includes(trimedTitle));
+    filteredPosts = json.filter((post) =>
+      post.title.toLocaleLowerCase().includes(trimedTitle)
+    );
   }
 
   return filteredPosts;
