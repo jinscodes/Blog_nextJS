@@ -37,8 +37,6 @@ const AllPosts = ({ posts, title }: Prop) => {
     setDisplayedPosts(posts);
   }, []);
 
-  useEffect(() => {}, [searchWord]);
-
   return (
     <div className={st.all_post}>
       <ClassificationText content={title} />
