@@ -1,20 +1,12 @@
 import { Post } from "types/post";
-import json from "../../data/posts.json";
+import postsData from "../../data/posts.json";
 
 export const filterPosts = (title: string): Post[] => {
-  const trimedTitle: string = title?.toLocaleLowerCase().trim();
-  let filteredPosts;
+  const trimedTitle: string = title?.toLowerCase().trim();
 
-  if (!trimedTitle) {
-    const excludePresentation = json.filter(
-      (post) => !post.title.includes("발표")
-    );
-    filteredPosts = excludePresentation.reverse();
-  } else {
-    filteredPosts = json.filter((post) =>
-      post.title.toLocaleLowerCase().includes(trimedTitle)
-    );
-  }
+  const filteredPosts = trimedTitle
+    ? postsData.filter((post) => post.title.toLowerCase().includes(trimedTitle))
+    : postsData.filter((post) => !post.title.includes("발표")).reverse();
 
   return filteredPosts;
 };
