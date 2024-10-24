@@ -21,6 +21,12 @@ To solve these issues, webpack is created. Webpack is a static module bundler.
 
 The webpack goes through the package and creates dependency graph which consists of various modules. Then, depending on this graph, it creates new package which consists of the minimum number of files required, often just a single bundle.js file which can be plugged in to the html file easily and used for the application.
 
+## Installation Phase
+
+##### npm init
+
+Make sure you have the latest nodeJS and the npm version installed locally on the computer.
+
 ---
 
 [](https://webpack.js.org/api/)
