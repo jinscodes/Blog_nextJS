@@ -60,7 +60,7 @@ const MarkdownViewer = ({ content }: Prop) => {
                 fontSize: "16px",
                 padding: "20px 20px",
                 lineHeight: "22px",
-                margin: "30px 0",
+                margin: "-10px 0 10px",
                 borderRadius: "12px",
               }}
               style={atomDark}
