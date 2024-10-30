@@ -766,5 +766,13 @@
     "category": ["WebCS", "ReactJs", "Node"],
     "path": "webpack",
     "featured": false
+  },
+  {
+    "title": "React Legacy: cloneElement",
+    "description": "Sometimes, we need to clone the elements. In React, There was cloneElement but it becames legacy. What's the alternatives?",
+    "date": "2024-02-15",
+    "category": ["WebCS", "ReactJs"],
+    "path": "react-clone-element",
+    "featured": false
   }
 ]
