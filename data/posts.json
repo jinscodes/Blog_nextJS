@@ -774,5 +774,13 @@
     "category": ["WebCS", "ReactJs"],
     "path": "react-clone-element",
     "featured": false
+  },
+  {
+    "title": "🚨Error: Xcode's license has not been agreed to",
+    "description": "When the license has not agreed, we face to the error about the license. How to agreed to the Xcode license agreements.",
+    "date": "2024-02-22",
+    "category": ["Error", "IOS", "Flutter"],
+    "path": "err-xcode-license",
+    "featured": false
   }
 ]

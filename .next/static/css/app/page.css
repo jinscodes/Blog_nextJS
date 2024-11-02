@@ -1,3 +1,167 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/NavCategory/NavMenu.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.NavMenu_nav_menu__38pvH {
+  overflow: hidden;
+  transition: max-height ease-in-out 0.3s;
+}
+.NavMenu_nav_menu__38pvH .NavMenu_open_category_btn__k_irr {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 16px);
+  height: 50px;
+  padding-left: 12px;
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+  background-color: transparent;
+  border: none;
+  border-radius: 12px;
+}
+.NavMenu_nav_menu__38pvH .NavMenu_open_category_btn__k_irr div {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.NavMenu_nav_menu__38pvH .NavMenu_open_category_btn__k_irr .NavMenu_caret__ZfqW3 {
+  margin-right: 10px;
+  transition: transform ease-in-out 0.3s;
+}
+.NavMenu_nav_menu__38pvH .NavMenu_open_category_btn__k_irr svg {
+  width: 25px;
+  height: 25px;
+}
+
+.NavMenu_open_category_btn__k_irr:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.NavMenu_open_category_btn__k_irr:hover .NavMenu_caret__ZfqW3 {
+  transform: translateX(4px);
+}
+
+@media screen and (max-width: 1512px) {
+  .NavMenu_nav_menu__38pvH {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    z-index: 9999;
+  }
+  .NavMenu_nav_menu__38pvH .NavMenu_open_category_btn__k_irr {
+    width: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .NavMenu_nav_menu__38pvH {
+    left: 180px;
+  }
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/NavCategory/NavClass.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.NavClass_nav_class__wj3_M {
+  width: calc(100% - 24px);
+  margin: 0 12px 60px;
+}
+.NavClass_nav_class__wj3_M .NavClass_visible_menu__8VFkM {
+  cursor: pointer;
+}
+.NavClass_nav_class__wj3_M .NavClass_title__4BSyO {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 42px;
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 0 12px;
+  border-radius: 8px;
+  transition: background-color ease-in-out 0.3s;
+}
+.NavClass_nav_class__wj3_M .NavClass_title__4BSyO .NavClass_caret__m_Hmq {
+  transition: transform ease-in-out 0.3s;
+}
+.NavClass_nav_class__wj3_M .NavClass_title__4BSyO .NavClass_active_caret__efSqp {
+  transform: rotate(90deg);
+}
+.NavClass_nav_class__wj3_M .NavClass_active_menu__LbUfr {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.NavClass_title__4BSyO:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.NavClass_title__4BSyO:hover .NavClass_caret__m_Hmq {
+  transform: rotate(90deg);
+}
+
+@media screen and (max-width: 1512px) {
+  .NavClass_nav_class__wj3_M {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: transparent;
+  }
+  .NavClass_nav_class__wj3_M .NavClass_visible_menu__8VFkM {
+    position: relative;
+  }
+  .NavClass_nav_class__wj3_M .NavClass_title__4BSyO {
+    margin: 0;
+  }
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/NavCategory/NavTotal.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.NavTotal_total__JsDXi {
+  margin: 15px 20px 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #282939;
+}
+
+@media screen and (max-width: 1512px) {
+  .NavTotal_total__JsDXi {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[3].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src/components/NavCategory/NavCategory.tsx","import":"","arguments":[{"src":"../../../public/fonts/MaplestoryLight.otf"}],"variableName":"maple"} ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+font-family: '__maple_022690';
+src: url(/_next/static/media/1390ed7ad69257b2-s.p.otf) format('opentype');
+font-display: swap;
+}@font-face {font-family: '__maple_Fallback_022690';src: local("Arial");ascent-override: 75.55%;descent-override: 23.55%;line-gap-override: 0.00%;size-adjust: 112.51%
+}.__className_022690 {font-family: '__maple_022690', '__maple_Fallback_022690'
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/NavCategory/NavCategory.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.NavCategory_nav_category__yLiJD {
+  overflow: scroll;
+  margin-top: 15px;
+  font-family: "Open Sans";
+}
+
+@media screen and (max-width: 1512px) {
+  .NavCategory_nav_category__yLiJD {
+    margin: 0 100px 0 0;
+    width: 100vw;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .NavCategory_nav_category__yLiJD {
+    margin: 0;
+  }
+}
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/CategoryPill/CategoryPill.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -181,170 +345,6 @@
     font-size: 1.2rem !important;
   }
 }
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/NavCategory/NavMenu.module.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.NavMenu_nav_menu__38pvH {
-  overflow: hidden;
-  transition: max-height ease-in-out 0.3s;
-}
-.NavMenu_nav_menu__38pvH .NavMenu_open_category_btn__k_irr {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: calc(100% - 16px);
-  height: 50px;
-  padding-left: 12px;
-  font-size: 12px;
-  text-decoration: none;
-  color: black;
-  background-color: transparent;
-  border: none;
-  border-radius: 12px;
-}
-.NavMenu_nav_menu__38pvH .NavMenu_open_category_btn__k_irr div {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-.NavMenu_nav_menu__38pvH .NavMenu_open_category_btn__k_irr .NavMenu_caret__ZfqW3 {
-  margin-right: 10px;
-  transition: transform ease-in-out 0.3s;
-}
-.NavMenu_nav_menu__38pvH .NavMenu_open_category_btn__k_irr svg {
-  width: 25px;
-  height: 25px;
-}
-
-.NavMenu_open_category_btn__k_irr:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.NavMenu_open_category_btn__k_irr:hover .NavMenu_caret__ZfqW3 {
-  transform: translateX(4px);
-}
-
-@media screen and (max-width: 1512px) {
-  .NavMenu_nav_menu__38pvH {
-    position: fixed;
-    top: 90px;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 12px;
-    z-index: 9999;
-  }
-  .NavMenu_nav_menu__38pvH .NavMenu_open_category_btn__k_irr {
-    width: auto;
-  }
-}
-@media screen and (max-width: 767px) {
-  .NavMenu_nav_menu__38pvH {
-    left: 180px;
-  }
-}
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/NavCategory/NavClass.module.scss ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.NavClass_nav_class__wj3_M {
-  width: calc(100% - 24px);
-  margin: 0 12px 60px;
-}
-.NavClass_nav_class__wj3_M .NavClass_visible_menu__8VFkM {
-  cursor: pointer;
-}
-.NavClass_nav_class__wj3_M .NavClass_title__4BSyO {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 42px;
-  font-size: 16px;
-  margin: 10px 0;
-  padding: 0 12px;
-  border-radius: 8px;
-  transition: background-color ease-in-out 0.3s;
-}
-.NavClass_nav_class__wj3_M .NavClass_title__4BSyO .NavClass_caret__m_Hmq {
-  transition: transform ease-in-out 0.3s;
-}
-.NavClass_nav_class__wj3_M .NavClass_title__4BSyO .NavClass_active_caret__efSqp {
-  transform: rotate(90deg);
-}
-.NavClass_nav_class__wj3_M .NavClass_active_menu__LbUfr {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.NavClass_title__4BSyO:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.NavClass_title__4BSyO:hover .NavClass_caret__m_Hmq {
-  transform: rotate(90deg);
-}
-
-@media screen and (max-width: 1512px) {
-  .NavClass_nav_class__wj3_M {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    background-color: transparent;
-  }
-  .NavClass_nav_class__wj3_M .NavClass_visible_menu__8VFkM {
-    position: relative;
-  }
-  .NavClass_nav_class__wj3_M .NavClass_title__4BSyO {
-    margin: 0;
-  }
-}
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/NavCategory/NavTotal.module.scss ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.NavTotal_total__JsDXi {
-  margin: 15px 20px 25px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #282939;
-}
-
-@media screen and (max-width: 1512px) {
-  .NavTotal_total__JsDXi {
-    display: none;
-    width: 0;
-    height: 0;
-  }
-}
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[3].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src/components/NavCategory/NavCategory.tsx","import":"","arguments":[{"src":"../../../public/fonts/MaplestoryLight.otf"}],"variableName":"maple"} ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-@font-face {
-font-family: '__maple_022690';
-src: url(/_next/static/media/1390ed7ad69257b2-s.p.otf) format('opentype');
-font-display: swap;
-}@font-face {font-family: '__maple_Fallback_022690';src: local("Arial");ascent-override: 75.55%;descent-override: 23.55%;line-gap-override: 0.00%;size-adjust: 112.51%
-}.__className_022690 {font-family: '__maple_022690', '__maple_Fallback_022690'
-}
-
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/NavCategory/NavCategory.module.scss ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.NavCategory_nav_category__yLiJD {
-  overflow: scroll;
-  margin-top: 15px;
-  font-family: "Open Sans";
-}
-
-@media screen and (max-width: 1512px) {
-  .NavCategory_nav_category__yLiJD {
-    margin: 0 100px 0 0;
-    width: 100vw;
-    height: 100%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .NavCategory_nav_category__yLiJD {
-    margin: 0;
-  }
-}
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/Home/Home.module.scss ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -472,47 +472,6 @@ font-display: swap;
   }
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/RecentPosts/RecentPosts.module.scss ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.RecentPosts_recent_posts__0uOw1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 60px;
-}
-.RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-.RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG .RecentPosts_other_posts_container__Ana5_ {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-@media all and (max-width: 767px) {
-  .RecentPosts_recent_posts__0uOw1 {
-    width: 100%;
-  }
-  .RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-  .RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG .RecentPosts_other_posts_container__Ana5_ {
-    align-items: center;
-  }
-}
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/HomeTitle/HomeTitle.module.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.HomeTitle_title__6iM97 {
-  margin: 60px 0;
-  font-size: 36px;
-}
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/OpenSources/OpenSources.module.scss ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .OpenSources_open_sources__gRaP6 {
@@ -617,94 +576,45 @@ font-display: swap;
     gap: 120px;
   }
 }
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Categories/Categories.module.scss ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.Categories_categories__N2HlC {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 1300px;
-}
-.Categories_categories__N2HlC .Categories_title__AVxO5 {
-  margin: 0;
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/HomeTitle/HomeTitle.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.HomeTitle_title__6iM97 {
+  margin: 60px 0;
   font-size: 36px;
 }
-.Categories_categories__N2HlC .Categories_container__90eq_ {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 200px);
-  grid-gap: 30px;
-  gap: 30px;
-  justify-content: center;
-  width: 100%;
-}
-.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle {
-  width: 200px;
-  height: 200px;
-  border-radius: 24px;
-  perspective: 1000px;
-  color: black;
-}
-.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_card_front__EjykI,
-.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_card_back__vIEoy {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 24px;
-  cursor: pointer;
-}
-.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_card_front__EjykI {
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/RecentPosts/RecentPosts.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.RecentPosts_recent_posts__0uOw1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  width: 100%;
+  margin-bottom: 60px;
 }
-.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_card_back__vIEoy {
+.RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG .RecentPosts_other_posts_container__Ana5_ {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.7);
-  transform: rotateY(180deg);
-}
-.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_rank__GKs1y {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25px;
-  height: 15px;
-  margin-top: 10px;
-  font-size: 10px;
-  border-radius: 12px;
-}
-.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle:hover .Categories_flip_card_box__kNAUY {
-  transform: rotateY(180deg);
-}
-.Categories_categories__N2HlC .Categories_container__90eq_ img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
-.Categories_categories__N2HlC .Categories_container__90eq_ h5,
-.Categories_categories__N2HlC .Categories_container__90eq_ h6 {
-  margin: 0;
+  gap: 40px;
 }
 
-@media screen and (max-width: 1512px) {
-  .Categories_categories__N2HlC {
+@media all and (max-width: 767px) {
+  .RecentPosts_recent_posts__0uOw1 {
     width: 100%;
+  }
+  .RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG .RecentPosts_other_posts_container__Ana5_ {
+    align-items: center;
   }
 }
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -815,5 +725,95 @@ font-display: swap;
   }
   .ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl {
     width: calc(100% - 30px);
+  }
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Categories/Categories.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Categories_categories__N2HlC {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1300px;
+}
+.Categories_categories__N2HlC .Categories_title__AVxO5 {
+  margin: 0;
+  font-size: 36px;
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-gap: 30px;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle {
+  width: 200px;
+  height: 200px;
+  border-radius: 24px;
+  perspective: 1000px;
+  color: black;
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_card_front__EjykI,
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_card_back__vIEoy {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  cursor: pointer;
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_card_front__EjykI {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_card_back__vIEoy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: rotateY(180deg);
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle .Categories_flip_card_box__kNAUY .Categories_rank__GKs1y {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 15px;
+  margin-top: 10px;
+  font-size: 10px;
+  border-radius: 12px;
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ .Categories_flip_card___4fle:hover .Categories_flip_card_box__kNAUY {
+  transform: rotateY(180deg);
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.Categories_categories__N2HlC .Categories_container__90eq_ h5,
+.Categories_categories__N2HlC .Categories_container__90eq_ h6 {
+  margin: 0;
+}
+
+@media screen and (max-width: 1512px) {
+  .Categories_categories__N2HlC {
+    width: 100%;
   }
 }
