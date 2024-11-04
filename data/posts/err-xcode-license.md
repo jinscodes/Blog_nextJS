@@ -28,3 +28,13 @@ If you agree to this, enter agree
 If you want to print, type print  
 If you want to cancel, it will tell you to type cancel.  
 We have to agree and use it, so enter agree.
+
+##### 3️⃣ Done
+
+![agreement-step-3](https://github.com/user-attachments/assets/90912950-19cb-4330-89e4-a53e2eccbf00)
+
+When we put "agree", it's done.
+
+---
+
+[](https://joyfulhome.tistory.com/233)
