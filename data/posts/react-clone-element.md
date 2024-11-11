@@ -1,6 +1,6 @@
 ## Intro
 
-Few years ago, I've seen the `cloneElement` function in the code that I was given by co-worker when I enter the company at the first time.
+Few years ago, I've seen the `cloneElement` in the code that I was given by co-worker when I enter the company at the first time.
 
 The purpose of `cloneElement` is to create a new React element using another elements as a starting point. Usually, it's used for overriding props of the element.
 
@@ -33,6 +33,7 @@ As a result, we can see the code looks like the below:
 ```jsx
 export default function List({ children }) {
   const [selectedIndex, setSelectedIndex] = useState(0);
+
   return (
     <div className="List">
       {Children.map(children, (child, index) =>
@@ -42,6 +43,26 @@ export default function List({ children }) {
       )}
 	)
 }
+```
+
+This above code looks like this if it's original JSX:
+
+```jsx
+<List>
+  <Row title="Cabbage" />
+  <Row title="Garlic" />
+  <Row title="Apple" />
+</List>
+```
+
+By cloning its children, the `List` can pass extra information to every `Row` inside. The result is:
+
+```jsx
+<List>
+  <Row title="Cabbage" isHighlighted={true} />
+  <Row title="Garlic" isHighlighted={false} />
+  <Row title="Apple" isHighlighted={false} />
+</List>
 ```
 
 ## Alternatives
