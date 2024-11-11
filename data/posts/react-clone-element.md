@@ -67,7 +67,55 @@ By cloning its children, the `List` can pass extra information to every `Row` in
 
 ## Alternatives
 
+However now, `cloneElement` is uncommon and can lead to fragile code.
+
+The reason is that cloning children makes it hard to tell how the data flows through the app. For this reason, alterantives are arise.
+
 ##### Passing data with a render prop
+
+We can consider accepting a render prop instead of using `cloneElement`.
+
+Like the below example, `List` receives `renderItem` as a prop.
+
+`List` calls `renderItem` for every item and passes `isHighlighted` as an argument:
+
+```jsx
+export default function List({ items, rednerItem }) {
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  return (
+    <div className="List">
+      {items.map((item, index) => {
+        const isHighlighted = index === selectedIndex;
+        return renderItem(item, isHighlighted);
+      })}
+    </div>
+  );
+}
+```
+
+Because `renderItem` prop is the things that specify how to render something, it's called **rendering prop**. So, we can pass a `renderItem` that renders `<Row>` through received `isHighlighted` value.
+
+```jsx
+<List
+  items={products}
+  renderItem={(product, isHighlighted) => (
+    <Row key={product.id} title={product.title} isHighlighted={isHighlighted} />
+  )}
+/>
+```
+
+It's the same as the below code:
+
+```jsx
+<List>
+  <Row title="Cabbage" isHighlighted={true} />
+  <Row title="Garlic" isHighlighted={false} />
+  <Row title="Apple" isHighlighted={false} />
+</List>
+```
+
+Unlike the `cloneElement`, we can clearly trace the source of the isHighlighted value. That's the main reason we use "passing data with render prop" instead of `cloneElement`.
 
 ---
 
