@@ -171,6 +171,50 @@ So, we don't need to consider whether to deliver `isHighlighted` or not. It migh
 
 ##### Extracting logic into a custom hook
 
+There is another alternative: Extracting the non-visual logic through custom hook. Also, it uses the information returned by the hook to decide what to render.
+
+For example, we could write a `useList` custom hook like the below:
+
+```jsx
+import { useState } from "react";
+
+export default function useList(items) {
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  function onNext() {
+    setSelectedIndex((i) => (i + 1) % items.length);
+  }
+
+  const selected = items[selectedIndex];
+
+  return [selected, onNext];
+}
+```
+
+This is the custom hook that we made. It can be used like this.
+
+```jsx
+export default function App() {
+  const [selected, onNext] = useList(products);
+
+  return (
+    <div className="List">
+      {products.map((product) => (
+        <Row
+          key={product.id}
+          title={product.title}
+          isHighlighted={selected === product}
+        />
+      ))}
+      <hr />
+      <button onClick={onNext}>Next</button>
+    </div>
+  );
+}
+```
+
+The data flow is explicit, but the state is inside the `useList` custom Hook that you can use from any component.
+
 ---
 
 [](https://react.dev/reference/react/cloneElement)
