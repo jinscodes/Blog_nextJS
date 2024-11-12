@@ -169,6 +169,8 @@ So, we don't need to consider whether to deliver `isHighlighted` or not. It migh
 />
 ```
 
+##### Extracting logic into a custom hook
+
 ---
 
 [](https://react.dev/reference/react/cloneElement)
