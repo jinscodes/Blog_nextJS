@@ -117,6 +117,58 @@ It's the same as the below code:
 
 Unlike the `cloneElement`, we can clearly trace the source of the isHighlighted value. That's the main reason we use "passing data with render prop" instead of `cloneElement`.
 
+##### Passing data through context
+
+In addition to render prop, there is also a method using context.
+
+As an example, we can call `createContext` to define a HighlightContext:
+
+```jsx
+export const HighlightContext = createContext(false);
+```
+
+In `<List />` component, it can wrap every item it renders into a HighlightContext provider.
+
+```jsx
+export default function List({ items, renderItem }) {
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  return (
+    <div className="List">
+      {items.map((item, index) => {
+        const isHighlighted = index === selectedIndex;
+
+        return (
+          <HighlightContext.Provider key={item.id} value={isHighlighted}>
+            {renderItem(item)}
+          </HighlightContext.Provider>
+        );
+      })}
+    </div>
+  );
+}
+```
+
+If we use this method, we don't need to pass the data through props. Instead of passing the data with props, just read context.
+
+In `<Row />` component, it reads context with a hook named useContext.
+
+```jsx
+export default function Row({ title }) {
+  const isHighlighted = useContext(HighlightContext);
+  // ...
+}
+```
+
+So, we don't need to consider whether to deliver `isHighlighted` or not. It might look like the below:
+
+```jsx
+<List
+  items={products}
+  renderItem={(product) => <Row title={product.title} />}
+/>
+```
+
 ---
 
 [](https://react.dev/reference/react/cloneElement)
