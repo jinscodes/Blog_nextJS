@@ -14,6 +14,36 @@ Using `=`, you can set a 'default value', which is the value to be allocated as 
 
 Complicated expressions or functions can be a default value.
 
+### Destructuring Object
+
+![des-object-default-ex](https://github.com/user-attachments/assets/16f3b0c6-e267-4b01-b67b-6c499c410ba9)
+
+The values stored in properties `options.title`, `optins.width`, and `options.height` are assigned to the corresponding variables.
+
+At this time, order is not matter.
+
+```jsx
+let options = {
+  title: "Menu",
+  width: 100,
+  height: 200,
+};
+
+let { width: w, height: h, title } = options;
+
+alert(title); // Menu
+alert(w); // 100
+alert(h); // 200
+```
+
+The colon is used like "property of destructuring obejct: target variable".
+
+In the above example, property `width` is assigned as `w` and `height` is assigned as `h`.
+
+Surly, we can set the default value by using `=`. Also, colon and equal operators can be used at the same time. As an example:
+
+![des-object-default-ex2](https://github.com/user-attachments/assets/bc14a5bb-7f31-41ca-9472-12a5c7a5ca42)
+
 ---
 
 [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
