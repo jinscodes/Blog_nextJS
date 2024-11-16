@@ -52,6 +52,14 @@ In the example below, the `size` property value of object `options` is another o
 
 ![nested-destructuring](https://github.com/user-attachments/assets/481d0bb9-3026-4357-b916-87efb3749784)
 
+The pattern on the left side of the substitution operator has the same structure as object `options` for extracting information.
+
+![nested-destructuring2](https://github.com/user-attachments/assets/4bc3e28c-21eb-4e92-9bc3-cfa8cb04f627)
+
+Desired values were stored for variables `width`, `height`, `item1`, and `item2`, and default values were stored for `title`.
+
+However, it should be noted that in the example above, there are no variables dedicated to `size` and `items`. Instead of the dedicated variables, we assigned the information within `size` and `items` to the variables.
+
 ---
 
 [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
