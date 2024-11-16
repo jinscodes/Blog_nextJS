@@ -2,6 +2,8 @@ Destructuring assignment is one of the features introduced in ES6. Also, it's al
 
 The destructuring assignment syntax is a JS expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
+## Types of Destructuring Assignment
+
 ### Destructuring Array
 
 ![des-array-ex](https://github.com/user-attachments/assets/7237694e-89dd-43be-9203-293604ee7271)
@@ -59,6 +61,18 @@ The pattern on the left side of the substitution operator has the same structure
 Desired values were stored for variables `width`, `height`, `item1`, and `item2`, and default values were stored for `title`.
 
 However, it should be noted that in the example above, there are no variables dedicated to `size` and `items`. Instead of the dedicated variables, we assigned the information within `size` and `items` to the variables.
+
+## Utilization of Destructuring Assignment
+
+### Skipping values in arrays
+
+We can change the order of values being assigned by changing the order of variable names. With arrays, we can also skip values.
+
+This allows you to assign only some values from an array and skip those you don’t care about. You can do this by leaving the place for variable name in a specific position empty.
+
+```jsx
+
+```
 
 ---
 
