@@ -44,6 +44,14 @@ Surly, we can set the default value by using `=`. Also, colon and equal operator
 
 ![des-object-default-ex2](https://github.com/user-attachments/assets/bc14a5bb-7f31-41ca-9472-12a5c7a5ca42)
 
+### Nested destructuring
+
+When an object or array includes an object or array with a different arrangement, a more complex pattern may be used to extract information about an overlapping array or object. This is called nested structuring.
+
+In the example below, the `size` property value of object `options` is another object. The `items` property has an array as a value.
+
+![nested-destructuring](https://github.com/user-attachments/assets/481d0bb9-3026-4357-b916-87efb3749784)
+
 ---
 
 [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
