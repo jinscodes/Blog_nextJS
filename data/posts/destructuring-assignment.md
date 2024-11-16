@@ -70,9 +70,7 @@ We can change the order of values being assigned by changing the order of variab
 
 This allows you to assign only some values from an array and skip those you don’t care about. You can do this by leaving the place for variable name in a specific position empty.
 
-```jsx
-
-```
+![skipping-value](https://github.com/user-attachments/assets/5b1cda21-4fbb-405f-8bcd-0a898c22938a)
 
 ---
 
