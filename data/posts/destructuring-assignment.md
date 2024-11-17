@@ -72,6 +72,26 @@ This allows you to assign only some values from an array and skip those you donâ
 
 ![skipping-value](https://github.com/user-attachments/assets/5b1cda21-4fbb-405f-8bcd-0a898c22938a)
 
+### Arrays, destructuring and rest operator
+
+Now, we know how to use destructuring assignment to assign individual values and also how to skip some. Here is another thing we can do when we use destructuring with array.
+
+It is **rest operator**.
+
+If we use rest operator, we can assign individual items to some variables. And then, we can assign any remaining items to another variable.
+
+![rest-operator](https://github.com/user-attachments/assets/15594ddb-956c-48e3-9a5a-8cb496ef4d79)
+
+If we use rest operator even if there are no remaining values, the result will be an empty array.
+
+For example:
+
+![rest-operator2](https://github.com/user-attachments/assets/d3522f05-78c4-416b-bcd5-9774705256ad)
+
+And lastly, there is one thing about using rest operator. When we want to use it, make sure to use it as the last. Any variables or empty spots for skipped values must come before it.
+
+![rest-operator3](https://github.com/user-attachments/assets/810a7ff4-f177-488e-85df-c6f1a7757efb)
+
 ---
 
 [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
