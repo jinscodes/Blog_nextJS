@@ -92,6 +92,23 @@ And lastly, there is one thing about using rest operator. When we want to use it
 
 ![rest-operator3](https://github.com/user-attachments/assets/810a7ff4-f177-488e-85df-c6f1a7757efb)
 
+### Swapping values
+
+There is another thing we can do with destructuring assignment. It's **swapping values**.
+
+We can declare two values and assign them some values. And then, we can swap those values. Here is the example:
+
+![swap-values](https://github.com/user-attachments/assets/7c325791-6483-4cc3-b54a-b72990e80e0c)
+
+On the left side, we can put variable like `[a, b]` which we want to swap.  
+On ther right side, we can put the same variables in the new order.
+
+As a result, `a` prints `"I am B"` and `b` prints `"I am A"`.
+
+We can swap values in an array itself so quickly by using destructuring. Like the below case, we can replace variable names with the specific indexes.
+
+![swap-values2](https://github.com/user-attachments/assets/6fbacb74-0fc7-419a-8c1c-ff14415a82a8)
+
 ---
 
 [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
