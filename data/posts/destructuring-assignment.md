@@ -109,6 +109,14 @@ We can swap values in an array itself so quickly by using destructuring. Like th
 
 ![swap-values2](https://github.com/user-attachments/assets/6fbacb74-0fc7-419a-8c1c-ff14415a82a8)
 
+### Changing variable names
+
+There is a way to change the variable name we want the value to be assigned to. What you have to do is to add colons(:) and new variable name right after the original variable name.
+
+Then we can use that new name to access that value.
+
+![changing-variables](https://github.com/user-attachments/assets/82a915e8-cb70-415a-bf38-b0dbe467e601)
+
 ---
 
 [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
