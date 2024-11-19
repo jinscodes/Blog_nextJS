@@ -117,6 +117,14 @@ Then we can use that new name to access that value.
 
 ![changing-variables](https://github.com/user-attachments/assets/82a915e8-cb70-415a-bf38-b0dbe467e601)
 
+### Computed property names
+
+We can also define property which value we want extract using computed property name.
+
+For instance, you can use value of a variable to specify property you are looking for. When you want to use computed property name you have to wrap it with square brackets.
+
+![changing-variables2](https://github.com/user-attachments/assets/2d1f16bf-c5a7-4f5a-aba5-d86726f12e0f)
+
 ---
 
 [](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
