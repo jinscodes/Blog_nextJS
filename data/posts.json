@@ -790,5 +790,13 @@
     "category": ["WebCS"],
     "path": "destructuring-assignment",
     "featured": false
+  },
+  {
+    "title": "Interpreter Language Vs. Compiled Language",
+    "description": "",
+    "date": "2024-04-09",
+    "category": ["WebCS"],
+    "path": "interpret-compiled-lang",
+    "featured": false
   }
 ]
