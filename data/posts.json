@@ -798,5 +798,13 @@
     "category": ["WebCS"],
     "path": "interpret-compiled-lang",
     "featured": false
+  },
+  {
+    "title": "The Reason Why We don't Put Index Into Key",
+    "description": "Some developers put index value into key prop. Do not! Why?",
+    "date": "2024-04-20",
+    "category": ["WebCS", "ReactJs", "NextJs"],
+    "path": "react-index-key",
+    "featured": false
   }
 ]
