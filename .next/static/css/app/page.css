@@ -208,6 +208,71 @@ font-display: swap;
 .ProfileAndId_info__9z_AU .ProfileAndId_sm_date__S_xgC {
   font-size: 14px;
 }
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/MainPost.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.MainPost_main_post__g97nN {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  height: 600px;
+  border-radius: 24px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  transition: transform ease-in-out 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.MainPost_main_post__g97nN .MainPost_img__bcbZq {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+.MainPost_main_post__g97nN .MainPost_content_container__nd0ts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  color: black;
+  padding: 24px;
+}
+.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_title__HQZ8p {
+  margin: 12px 0;
+  font-size: 32px;
+}
+.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_description__VA8We {
+  font-size: 12px;
+  color: darkgray;
+  margin-bottom: 12px;
+}
+.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_pill_container__e6jRH {
+  display: flex;
+  gap: 12px;
+}
+.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_pill_container__e6jRH div:nth-child(2) {
+  background-color: rgba(0, 34, 255, 0.3);
+  color: rgba(0, 34, 255, 0.8);
+}
+.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_pill_container__e6jRH div:nth-child(3) {
+  background-color: rgba(144, 0, 255, 0.3);
+  color: rgba(144, 0, 255, 0.8);
+}
+.MainPost_main_post__g97nN div h3,
+.MainPost_main_post__g97nN div p {
+  margin: 0;
+}
+
+.MainPost_main_post__g97nN:hover {
+  transform: scale(1.005);
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media all and (max-width: 767px) {
+  .MainPost_main_post__g97nN {
+    max-width: none;
+    width: 90%;
+  }
+}
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/OtherPosts.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -280,71 +345,6 @@ font-display: swap;
     font-size: 1.2rem !important;
   }
 }
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/MainPost.module.scss ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.MainPost_main_post__g97nN {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  height: 600px;
-  border-radius: 24px;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-  transition: transform ease-in-out 0.2s;
-  cursor: pointer;
-  text-decoration: none;
-}
-.MainPost_main_post__g97nN .MainPost_img__bcbZq {
-  width: 100%;
-  height: 210px;
-  object-fit: cover;
-}
-.MainPost_main_post__g97nN .MainPost_content_container__nd0ts {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  color: black;
-  padding: 24px;
-}
-.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_title__HQZ8p {
-  margin: 12px 0;
-  font-size: 32px;
-}
-.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_description__VA8We {
-  font-size: 12px;
-  color: darkgray;
-  margin-bottom: 12px;
-}
-.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_pill_container__e6jRH {
-  display: flex;
-  gap: 12px;
-}
-.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_pill_container__e6jRH div:nth-child(2) {
-  background-color: rgba(0, 34, 255, 0.3);
-  color: rgba(0, 34, 255, 0.8);
-}
-.MainPost_main_post__g97nN .MainPost_content_container__nd0ts .MainPost_pill_container__e6jRH div:nth-child(3) {
-  background-color: rgba(144, 0, 255, 0.3);
-  color: rgba(144, 0, 255, 0.8);
-}
-.MainPost_main_post__g97nN div h3,
-.MainPost_main_post__g97nN div p {
-  margin: 0;
-}
-
-.MainPost_main_post__g97nN:hover {
-  transform: scale(1.005);
-  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.3);
-}
-
-@media all and (max-width: 767px) {
-  .MainPost_main_post__g97nN {
-    max-width: none;
-    width: 90%;
-  }
-}
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/app/Home/Home.module.scss ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -373,102 +373,6 @@ font-display: swap;
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
-  }
-}
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Gif/Gif.module.scss ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.Gif_home_outline_container__Igv1o {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-}
-.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-image: url(/_next/static/media/Rain_Gif.20d62e54.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 835px;
-  color: #ffffff;
-  font-weight: 300;
-  font-family: "Open Sans";
-}
-.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK .Gif_heart__fQfsz {
-  padding-bottom: 30px;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #ffffff;
-}
-.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK .Gif_blog_title__CzTzs {
-  width: 800px;
-  height: auto;
-}
-.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK p {
-  font-size: 1.2rem;
-}
-.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK .Gif_arrow_container__J7rrk {
-  position: absolute;
-  bottom: 30px;
-  animation: Gif_arrowDown__KT2Xp 1s infinite;
-}
-
-.Gif_arrow__L1O2p {
-  width: 100%;
-  height: 40px;
-  margin-top: -5px;
-  animation: Gif_arrowDown__KT2Xp 1.5s infinite;
-}
-
-@keyframes Gif_arrowDown__KT2Xp {
-  60% {
-    opacity: 0.6;
-  }
-  80% {
-    opacity: 0.4;
-  }
-  100% {
-    transform: translateY(12px);
-    opacity: 0;
-  }
-}
-@media screen and (max-width: 1512px) {
-  .Gif_blog_title__CzTzs {
-    width: 780px !important;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .Gif_blog_title__CzTzs {
-    width: 700px !important;
-  }
-}
-@media screen and (max-width: 767px) {
-  .Gif_home_outline_container__Igv1o {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  .Gif_home_outline_container__Igv1o .Gif_heart__fQfsz {
-    padding-bottom: 15px !important;
-    margin-bottom: 20px;
-  }
-  .Gif_home_outline_container__Igv1o .Gif_blog_title__CzTzs {
-    width: 90vw !important;
   }
 }
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -569,113 +473,99 @@ font-display: swap;
   font-size: 36px;
 }
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Err/Err.module.scss ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Gif/Gif.module.scss ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.Err_err__wf6sQ {
+.Gif_home_outline_container__Igv1o {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   width: 100%;
-  align-items: center;
-  margin-bottom: 60px;
 }
-.Err_err__wf6sQ .Err_err_container__izXhr {
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/_next/static/media/Rain_Gif.20d62e54.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 {
+  position: absolute;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1300px;
-  gap: 30px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
-
-@media all and (max-width: 767px) {
-  .Err_err__wf6sQ {
-    width: 100%;
-  }
-  .Err_err__wf6sQ .Err_err_container__izXhr {
-    width: 100%;
-    align-items: center;
-  }
-}
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/ErrorPost.module.scss ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.ErrorPost_errorPost__YYf6C {
-  overflow: hidden;
-  display: flex;
-  width: 100%;
-  height: 240px;
-  color: black;
-  background-color: white;
-  text-decoration: none;
-  border-radius: 12px;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl {
-  width: 70%;
-  height: calc(100% - 30px);
-  padding: 15px;
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_category_container__pTa6J {
-  display: flex;
-  gap: 10px;
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_category_container__pTa6J > div:nth-child(2) {
-  background-color: rgba(0, 34, 255, 0.3);
-  color: rgba(0, 34, 255, 0.8);
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_category_container__pTa6J > div:nth-child(3) {
-  background-color: rgba(144, 0, 255, 0.3);
-  color: rgba(144, 0, 255, 0.8);
-}
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_post_info_container__SOvte {
-  width: 100%;
-  height: calc(100% - 30px);
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  width: 835px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Open Sans";
 }
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_post_info_container__SOvte p:first-child {
-  font-size: 20px;
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK .Gif_heart__fQfsz {
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffffff;
 }
-.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_post_info_container__SOvte p:nth-child(2) {
-  font-size: 14px;
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK .Gif_blog_title__CzTzs {
+  width: 800px;
+  height: auto;
 }
-.ErrorPost_errorPost__YYf6C .ErrorPost_post_image__U_1Vq {
-  width: 30%;
-  height: 100%;
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK p {
+  font-size: 1.2rem;
+}
+.Gif_home_outline_container__Igv1o .Gif_bg_img__G_4Ql .Gif_dark_bg_cover__SCD31 .Gif_quote__kNYhK .Gif_arrow_container__J7rrk {
+  position: absolute;
+  bottom: 30px;
+  animation: Gif_arrowDown__KT2Xp 1s infinite;
 }
 
-@media all and (max-width: 1300px) {
-  .ErrorPost_errorPost__YYf6C {
-    width: 80%;
-    height: 100%;
-    flex-direction: column-reverse;
+.Gif_arrow__L1O2p {
+  width: 100%;
+  height: 40px;
+  margin-top: -5px;
+  animation: Gif_arrowDown__KT2Xp 1.5s infinite;
+}
+
+@keyframes Gif_arrowDown__KT2Xp {
+  60% {
+    opacity: 0.6;
   }
-  .ErrorPost_errorPost__YYf6C .ErrorPost_post_image__U_1Vq {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  80% {
+    opacity: 0.4;
   }
-  .ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl {
-    width: calc(100% - 30px);
+  100% {
+    transform: translateY(12px);
+    opacity: 0;
   }
 }
-@media all and (max-width: 767px) {
-  .ErrorPost_errorPost__YYf6C {
-    width: 80%;
-    height: 100%;
-    flex-direction: column-reverse;
+@media screen and (max-width: 1512px) {
+  .Gif_blog_title__CzTzs {
+    width: 780px !important;
   }
-  .ErrorPost_errorPost__YYf6C .ErrorPost_post_image__U_1Vq {
+}
+@media screen and (max-width: 1000px) {
+  .Gif_blog_title__CzTzs {
+    width: 700px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Gif_home_outline_container__Igv1o {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
-  .ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl {
-    width: calc(100% - 30px);
+  .Gif_home_outline_container__Igv1o .Gif_heart__fQfsz {
+    padding-bottom: 15px !important;
+    margin-bottom: 20px;
+  }
+  .Gif_home_outline_container__Igv1o .Gif_blog_title__CzTzs {
+    width: 90vw !important;
   }
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -815,5 +705,115 @@ font-display: swap;
   }
   .RecentPosts_recent_posts__0uOw1 .RecentPosts_posts_container___rogG .RecentPosts_other_posts_container__Ana5_ {
     align-items: center;
+  }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/Err/Err.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Err_err__wf6sQ {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.Err_err__wf6sQ .Err_err_container__izXhr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  gap: 30px;
+}
+
+@media all and (max-width: 767px) {
+  .Err_err__wf6sQ {
+    width: 100%;
+  }
+  .Err_err__wf6sQ .Err_err_container__izXhr {
+    width: 100%;
+    align-items: center;
+  }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[3].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[3].oneOf[9].use[5]!./src/components/Home/PostTypes/ErrorPost.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.ErrorPost_errorPost__YYf6C {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 240px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl {
+  width: 70%;
+  height: calc(100% - 30px);
+  padding: 15px;
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_category_container__pTa6J {
+  display: flex;
+  gap: 10px;
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_category_container__pTa6J > div:nth-child(2) {
+  background-color: rgba(0, 34, 255, 0.3);
+  color: rgba(0, 34, 255, 0.8);
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_category_container__pTa6J > div:nth-child(3) {
+  background-color: rgba(144, 0, 255, 0.3);
+  color: rgba(144, 0, 255, 0.8);
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_post_info_container__SOvte {
+  width: 100%;
+  height: calc(100% - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_post_info_container__SOvte p:first-child {
+  font-size: 20px;
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl .ErrorPost_post_info_container__SOvte p:nth-child(2) {
+  font-size: 14px;
+}
+.ErrorPost_errorPost__YYf6C .ErrorPost_post_image__U_1Vq {
+  width: 30%;
+  height: 100%;
+}
+
+@media all and (max-width: 1300px) {
+  .ErrorPost_errorPost__YYf6C {
+    width: 80%;
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+  .ErrorPost_errorPost__YYf6C .ErrorPost_post_image__U_1Vq {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl {
+    width: calc(100% - 30px);
+  }
+}
+@media all and (max-width: 767px) {
+  .ErrorPost_errorPost__YYf6C {
+    width: 80%;
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+  .ErrorPost_errorPost__YYf6C .ErrorPost_post_image__U_1Vq {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .ErrorPost_errorPost__YYf6C .ErrorPost_inner_post_container__zIxZl {
+    width: calc(100% - 30px);
   }
 }
