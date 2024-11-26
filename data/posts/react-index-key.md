@@ -16,6 +16,16 @@ Why we don't do like this?
 
 ### Why key should not be index
 
+##### Unique key
+
+First of all, if the index is used as the key value, each component cannot be properly identified.
+
+For example, let's say that you have codes with values Bob, Joe, and Fred to form a list. React creates a DOM element for each individual and attaches the DOM element to that key. If the key is an index, each object could not actually be uniquely identified.
+
+Specifically, when Bob is removed, Joe is now the first item and Fred is the second. In other words, the index number is difficult to be a unique key value because it can change when certain elements are removed.
+
+##### Performance
+
 ---
 
 [](https://yozm.wishket.com/magazine/detail/2634/)
