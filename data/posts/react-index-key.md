@@ -21,3 +21,5 @@ Why we don't do like this?
 [](https://yozm.wishket.com/magazine/detail/2634/)
 
 [](https://react.dev/learn/rendering-lists)
+
+[](https://www.reddit.com/r/react/comments/1daj9nz/whats_so_bad_about_index_as_key/)
