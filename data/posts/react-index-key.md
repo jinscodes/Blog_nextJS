@@ -26,6 +26,18 @@ Specifically, when Bob is removed, Joe is now the first item and Fred is the sec
 
 ##### Performance
 
+Secondly, if the index value is given to the key, the performance may deteriorate when the array data is changed.
+
+![pitfall](https://github.com/user-attachments/assets/daac5650-5d51-4a69-b159-346a5d830927)
+
+Even in the official React document, it is recommended not to put the Index value in the key value. There are three main reasons.
+
+1. When you insert, delete, or rearrange items, the rendering order changes over time.
+
+2. In addition to the index value, the case of generating values on the spot is similar.
+
+3. The key is not actually delivered to the component and is used only in react.
+
 ---
 
 [](https://yozm.wishket.com/magazine/detail/2634/)
