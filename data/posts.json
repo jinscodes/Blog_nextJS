@@ -806,5 +806,13 @@
     "category": ["WebCS", "ReactJs", "NextJs"],
     "path": "react-index-key",
     "featured": false
+  },
+  {
+    "title": "localhost VS 127.0.0.1",
+    "description": "What Is The Differences Bewteen localhost and 127.0.0.1",
+    "date": "2024-04-30",
+    "category": ["WebCS"],
+    "path": "localhost-ip",
+    "featured": false
   }
 ]
