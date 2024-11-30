@@ -8,6 +8,12 @@ Unconciously, they didn't use it without thinking about it. But, that didn't mea
 
 ![localhost](https://github.com/user-attachments/assets/ebe83f0e-b4b5-4e8d-9b30-2b724cc83c56)
 
+localhost is a domain name that is essentially not different from the domain name used for Internet access. However, there is a difference in that it is easy to remember.
+
+The range of localhost is limited to local devices. As the name suggests, "local" means being in close proximity.
+
+For example, my friend Youngchul and I can use localhost on our respective computers to access individual page content in an independent environment.
+
 ##### From Domain Name to Program
 
 To understand local fully, we need to know the way to access the program through domain name.
