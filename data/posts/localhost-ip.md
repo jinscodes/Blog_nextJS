@@ -8,6 +8,36 @@ Unconciously, they didn't use it without thinking about it. But, that didn't mea
 
 ![localhost](https://github.com/user-attachments/assets/ebe83f0e-b4b5-4e8d-9b30-2b724cc83c56)
 
+##### From Domain Name to Program
+
+To understand local fully, we need to know the way to access the program through domain name.
+
+Take Google as an example.
+
+**1️⃣ If you enter `google.com`, DNS will first look up the `google.com` IP address**
+
+> **Why IP address?**
+
+> If someone sends me a package, the package form will include the address, name, and recipient of the apartment.
+
+> The courier delivery process considers the address as the destination to route, and eventually reaches the recipient.
+
+> Similarly, in networking, domain names act like apartment names and IP addresses act like physical addresses.
+
+> **Role of DNS**
+
+> Like a repository, it serves to map apartment addresses and apartment names.
+
+> Some domains may not be registered and an IP address may not be found, and in other cases, there may be multiple IP addresses.
+
+> Domain service providers typically provide DNS services to register the domain and its IP address with DNS.
+
+> **Where does the IP address from?**
+
+> For external services, a public IP address is required, which is typically provided by Internet service providers.
+
+> If my house uses SKB to use the Internet, I am requesting to allocate IP address to SKB gateway server.
+
 ---
 
 [](https://devocean.sk.com/blog/techBoardDetail.do?ID=165818&boardType=techBlog)
