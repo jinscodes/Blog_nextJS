@@ -38,6 +38,29 @@ Take Google as an example.
 
 > If my house uses SKB to use the Internet, I am requesting to allocate IP address to SKB gateway server.
 
+ㅤ
+ㅤ
+
+**2️⃣ Obtain an IP address, package it in a packet, and send it over the network**
+
+At this time, it goes through the process of exchanging and complying with the rules (protocols) between users.
+
+> **What is the port that developers are talking about?**
+
+> A computer can run and distribute multiple programs. So, what kind of Packet should I get? I'm thinking.
+
+> This is when the Port appears. Each program is associated with one or more Ports and prevents overlap.
+
+> If you specify a port in the request, it will lead to the correct program.
+
+> **Do we then designate a port when we access Google?**
+
+> I don't specify it separately!
+
+> This is because the default port, HTTP number 80 and HTTPS number 443, are used if not specified.
+
+> It is essential to inform you of a port at the start of the program, but some automatically select a port that is not being used
+
 ---
 
 [](https://devocean.sk.com/blog/techBoardDetail.do?ID=165818&boardType=techBlog)
