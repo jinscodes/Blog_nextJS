@@ -61,6 +61,20 @@ At this time, it goes through the process of exchanging and complying with the r
 
 > It is essential to inform you of a port at the start of the program, but some automatically select a port that is not being used
 
+### 127.0.0.1
+
+This is the IP address, the local IP address of the current device, and is only available on the device itself.
+
+This 127.0.0.1 can be used by your computer even when you are not connected to the Internet,
+
+It is convenient to develop and test programs. The programs we debug are linked to this IP address.
+
+##### Configuration of IP
+
+The common IP addresses we see are formalized as X.X.X.X, and are divided into four dotted segments.
+
+In practice, it is a 32-bit binary number, divided into four 8-bit segments, and displayed by converting the binary number into decimal.
+
 ---
 
 [](https://devocean.sk.com/blog/techBoardDetail.do?ID=165818&boardType=techBlog)
