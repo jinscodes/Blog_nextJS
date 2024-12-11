@@ -4,76 +4,28 @@ When the web developers did the local debugging, they usually saw the **localhos
 
 Unconciously, they didn't use it without thinking about it. But, that didn't mean that it's not important.
 
-### localhost
+### What is 127.0.0.1 Localhost?
 
-![localhost](https://github.com/user-attachments/assets/ebe83f0e-b4b5-4e8d-9b30-2b724cc83c56)
+127.0.0.1 is known as localhost or loopback address. At this point, localhost and loopback IP address is a universal home address for all computers. It means that when the computer tries to connect 127.0.0.1, it's connected to itself.
 
-##### From Domain Name to Program
+127.0.0.1 is special IP address. This is because unlike we've known that each computer has a unique IP, 127.0.0.1 always points the computer we use.
 
-To understand local fully, we need to know the way to access the program through domain name.
+For exmaple, if we run the sever, my computer tries to connect to the server by visiting **127.0.0.1** on Jay's computer. And then, I run the server and connect to the server on Roise's computer, it also points to **127.0.0.1**.
 
-Take Google as an example.
+In other words, the 127.0.0.1 IP allows the machine to communicate with itself. Therefore, localhost establishes a connection to itself used by the same end-user.
 
-**1️⃣ If you enter `google.com`, DNS will first look up the `google.com` IP address**
+> 💡 **NOTE**  
+> The most common localhost IP is 127.0.0.1 IP.  
+> The IPv4 network standard has provided the range from 127.0.0.1 to 127.255.255.255 for localhost.  
+> Unlike IPv4, IPv6 network standard has only one address: 1.
 
-> **Why IP address?**
+## So, What's The Differences Between Them?
 
-> If someone sends me a package, the package form will include the address, name, and recipient of the apartment.
+So, How does the localhost interpreted as 127.0.0.1?
 
-> The courier delivery process considers the address as the destination to route, and eventually reaches the recipient.
+Every computers can use 127.0.0.1 without DNS.
 
-> Similarly, in networking, domain names act like apartment names and IP addresses act like physical addresses.
-
-> **Role of DNS**
-
-> Like a repository, it serves to map apartment addresses and apartment names.
-
-> Some domains may not be registered and an IP address may not be found, and in other cases, there may be multiple IP addresses.
-
-> Domain service providers typically provide DNS services to register the domain and its IP address with DNS.
-
-> **Where does the IP address from?**
-
-> For external services, a public IP address is required, which is typically provided by Internet service providers.
-
-> If my house uses SKB to use the Internet, I am requesting to allocate IP address to SKB gateway server.
-
-ㅤ
-ㅤ
-
-**2️⃣ Obtain an IP address, package it in a packet, and send it over the network**
-
-At this time, it goes through the process of exchanging and complying with the rules (protocols) between users.
-
-> **What is the port that developers are talking about?**
-
-> A computer can run and distribute multiple programs. So, what kind of Packet should I get? I'm thinking.
-
-> This is when the Port appears. Each program is associated with one or more Ports and prevents overlap.
-
-> If you specify a port in the request, it will lead to the correct program.
-
-> **Do we then designate a port when we access Google?**
-
-> I don't specify it separately!
-
-> This is because the default port, HTTP number 80 and HTTPS number 443, are used if not specified.
-
-> It is essential to inform you of a port at the start of the program, but some automatically select a port that is not being used
-
-### 127.0.0.1
-
-This is the IP address, the local IP address of the current device, and is only available on the device itself.
-
-This 127.0.0.1 can be used by your computer even when you are not connected to the Internet,
-
-It is convenient to develop and test programs. The programs we debug are linked to this IP address.
-
-##### Configuration of IP
-
-The common IP addresses we see are formalized as X.X.X.X, and are divided into four dotted segments.
-
-In practice, it is a 32-bit binary number, divided into four 8-bit segments, and displayed by converting the binary number into decimal.
+![](https://github.com/user-attachments/assets/8ce8be5c-9bc5-4816-98ec-087fc3150c74)
 
 ---
 
