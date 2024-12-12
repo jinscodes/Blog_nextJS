@@ -19,6 +19,21 @@ In other words, the 127.0.0.1 IP allows the machine to communicate with itself. 
 > The IPv4 network standard has provided the range from 127.0.0.1 to 127.255.255.255 for localhost.  
 > Unlike IPv4, IPv6 network standard has only one address: 1.
 
+ㅤ
+ㅤ
+
+#### How Does a 127.0.0.1 Loopback Work?
+
+On our computer, when we request the localhost in any web browser, it's not forwarded as a typical TCP/IP request. The host computer's operating system manages the request. The connection is made on a local network and connects the hosting computer.
+
+This is the reason it's also called a Loopback address. The request is looped back and connected to the machine making the request.
+
+The below Diagram shows the working of the Loopback address as explained above.
+
+![diagram](https://github.com/user-attachments/assets/7ac3cdf1-3bbe-4915-a168-c1b146f73f4d)
+
+The following message is generated if we have not hosted a server on the machine when we connect through `http://localhost`.
+
 ## So, What's The Differences Between Them?
 
 So, How does the localhost interpreted as 127.0.0.1?
