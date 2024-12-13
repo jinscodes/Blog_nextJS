@@ -36,14 +36,14 @@ The following message is generated if we have not hosted a server on the machine
 
 ## So, What's The Differences Between Them?
 
-So, How does the localhost interpreted as 127.0.0.1?
+We already know the answer about the above questin.
 
-Every computers can use 127.0.0.1 without DNS.
-
-![](https://github.com/user-attachments/assets/8ce8be5c-9bc5-4816-98ec-087fc3150c74)
+**Localhost** is a domain name for accessing local network services, while **127.0.0.1** and **::1** are loopback IP adress for IPv4 and IPv6, respectively, used for device communication.
 
 ---
 
 [](https://devocean.sk.com/blog/techBoardDetail.do?ID=165818&boardType=techBlog)
 
 [](https://www.naukri.com/code360/library/127-0-0-1-localhost)
+
+[](https://medium.com/devgorilla/exploring-localhost-and-127-0-0-1-what-is-the-difference-c109ffce7f29#:~:text=TL%3BDR%3A%20This%20article%20explains,respectively%2C%20used%20for%20device%20communication.)
