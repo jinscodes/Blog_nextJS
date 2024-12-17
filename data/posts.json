@@ -814,5 +814,13 @@
     "category": ["WebCS"],
     "path": "localhost-ip",
     "featured": false
+  },
+  {
+    "title": "str[index] VS str.charAt(index)",
+    "description": "What's the difference between str[index] and str.charAt(index)?",
+    "date": "2024-05-20",
+    "category": ["WebCS"],
+    "path": "str-index-charAt",
+    "featured": true
   }
 ]
